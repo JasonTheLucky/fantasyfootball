@@ -1,0 +1,14 @@
+# Unmodified ESPN responses. These run to several megabytes per fetch, so they
+# ship in the workflow artifact rather than in git history.
+data/raw/
+
+# Local scratch space
+_testdata/
+_probe*.py
+_inspect.py
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

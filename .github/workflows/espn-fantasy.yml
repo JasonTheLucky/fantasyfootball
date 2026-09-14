@@ -1,0 +1,114 @@
+name: ESPN Fantasy Snapshot
+
+# Fetches a fresh, complete snapshot of the ESPN fantasy league directly from
+# ESPN's API on a GitHub runner. This deliberately bypasses any web retrieval or
+# cache layer: the runner makes the HTTP calls itself, sends the headers ESPN
+# requires (X-Fantasy-Filter for the player pool), and discovers the current
+# scoringPeriodId rather than hard-coding a week.
+#
+# Results are published two ways:
+#   1. committed to the data/ directory on the default branch (easiest to read)
+#   2. uploaded as the "espn-fantasy-data" workflow artifact (includes raw/)
+
+on:
+  workflow_dispatch:
+    inputs:
+      scoring_period:
+        description: "Override scoringPeriodId (leave blank to auto-detect)"
+        required: false
+        type: string
+      commit_data:
+        description: "Commit refreshed JSON to the data/ directory"
+        required: false
+        default: true
+        type: boolean
+  schedule:
+    # Every six hours. Cron is UTC; GitHub may delay scheduled runs under load.
+    - cron: "0 */6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/fetch_espn.py"
+      - ".github/workflows/espn-fantasy.yml"
+
+permissions:
+  contents: write
+
+# Never let two snapshots race to commit the same files.
+concurrency:
+  group: espn-fantasy-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    name: Fetch ESPN league snapshot
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      ESPN_LEAGUE_ID: "1787259003"
+      ESPN_SEASON: "2026"
+      ESPN_OUT_DIR: data
+      ESPN_SCORING_PERIOD: ${{ inputs.scoring_period }}
+      # Only needed if the league is ever made private. Absent secrets resolve to
+      # empty strings, which the script treats as "public league, no cookies".
+      ESPN_SWID: ${{ secrets.ESPN_SWID }}
+      ESPN_S2: ${{ secrets.ESPN_S2 }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch ESPN data
+        id: fetch
+        run: python scripts/fetch_espn.py
+
+      - name: Summarize snapshot
+        # Runs even on failure so the job summary always explains what happened.
+        if: always()
+        run: python scripts/summarize.py
+
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: espn-fantasy-data
+          path: data/
+          retention-days: 30
+          if-no-files-found: error
+
+      - name: Commit refreshed data
+        if: success() && (github.event_name != 'workflow_dispatch' || inputs.commit_data)
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # data/raw is gitignored, so only the normalized files are staged.
+          git add data
+
+          if git diff --cached --quiet; then
+            echo "No changes in league data; nothing to commit."
+            exit 0
+          fi
+
+          PERIOD=$(python -c "import json;print(json.load(open('data/metadata.json'))['scoringPeriodId'])")
+          STAMP=$(python -c "import json;print(json.load(open('data/metadata.json'))['fetched_at'])")
+          git commit -m "ESPN snapshot: week ${PERIOD} @ ${STAMP} [skip ci]"
+
+          # Rebase onto any commit that landed while we were fetching, then push.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt ${attempt}."
+              exit 0
+            fi
+            echo "Push failed (attempt ${attempt}); rebasing on origin/${GITHUB_REF_NAME}."
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          done
+          echo "::error::Could not push refreshed data after 3 attempts."
+          exit 1
