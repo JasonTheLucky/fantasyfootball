@@ -4,15 +4,15 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-14T19:29:57.722709+00:00` |
+| Fetched at (UTC) | `2026-09-14T21:57:41.366884+00:00` |
 | Scoring period (week) | **1** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 847 |
-| Fetch duration | 0.99s |
+| Fetch duration | 1.0s |
 | ESPN calls | 4 |
-| Workflow run | `34887240484` |
+| Workflow run | `34901618289` |
 
 ## Freshness and completeness gates
 
@@ -57,7 +57,7 @@
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Brock Bowers | TE | QUESTIONABLE | IR | NO |
+| Jason X | Brock Bowers | TE | OUT | IR | NO |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Ja'Kobi Lane | WR | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
@@ -70,10 +70,10 @@
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | WR | yes |
-| Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
+| Connor’s Team | TreVeyon Henderson | RB | OUT | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Brian Thomas Jr. | WR | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | QUESTIONABLE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Sam Darnold | QB | DOUBTFUL | BENCH | NO |
 | Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | FLEX | yes |
 
@@ -87,7 +87,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-231 total | 12 executed ownership changes | 27 lineup-only moves | 192 draft picks | 0 pending
+232 total | 12 executed ownership changes | 28 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
