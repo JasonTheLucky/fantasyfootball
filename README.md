@@ -135,3 +135,9 @@ Findings from building this, since they are easy to get wrong:
 - Public leagues need no authentication. If the league is ever made private, add
   `ESPN_SWID` and `ESPN_S2` repository secrets; the script picks them up
   automatically.
+
+## Maintenance
+
+`ESPN_SEASON` is pinned to `2026` in the workflow. ESPN does not publish a new
+season until roughly midsummer, so auto-detecting it would break during the
+offseason. Bump that value when the 2027 season opens.

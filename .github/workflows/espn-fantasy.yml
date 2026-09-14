@@ -47,6 +47,9 @@ jobs:
 
     env:
       ESPN_LEAGUE_ID: "1787259003"
+      # Pinned on purpose. The script can auto-detect the season, but ESPN does
+      # not publish a new season until roughly midsummer, so auto-detection would
+      # break during the offseason. Bump this to 2027 when that season opens.
       ESPN_SEASON: "2026"
       ESPN_OUT_DIR: data
       ESPN_SCORING_PERIOD: ${{ inputs.scoring_period }}
