@@ -4,15 +4,15 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-14T21:57:41.366884+00:00` |
+| Fetched at (UTC) | `2026-09-15T00:50:51.304781+00:00` |
 | Scoring period (week) | **1** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 847 |
-| Fetch duration | 1.0s |
+| Fetch duration | 1.06s |
 | ESPN calls | 4 |
-| Workflow run | `34901618289` |
+| Workflow run | `34914847580` |
 
 ## Freshness and completeness gates
 
@@ -31,10 +31,10 @@
 | --- | --- | --- | --- | --- |
 | Kelli's Top-Notch Team | 95.7 | The Bye Week Boys | 127.6 | NO |
 | Jason X | 129.7 | 🔥Certified Dumpster Fire 🔥 | 114.06 | NO |
-| Norberto's Gnarly Team | 69.86 | Connor’s Team | 83.32 | NO |
-| Giant Packer Fan | 116.26 | Commanders of Chaos | 108.76 | NO |
+| Norberto's Gnarly Team | 73.06 | Connor’s Team | 83.32 | NO |
+| Giant Packer Fan | 124.26 | Commanders of Chaos | 108.76 | NO |
 | Super Lamario Brothers | 124.26 | From Puka with Love | 141.4 | NO |
-| Nicole's Gnarly Team | 129.26 | Auto Draft Champion | 129.32 | NO |
+| Nicole's Gnarly Team | 130.26 | Auto Draft Champion | 129.32 | NO |
 
 ## Rosters
 
