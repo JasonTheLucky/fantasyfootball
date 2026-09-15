@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-15T06:32:51.488851+00:00` |
-| Scoring period (week) | **1** |
+| Fetched at (UTC) | `2026-09-15T12:27:00.372287+00:00` |
+| Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 847 |
 | Players in lookup index | 1041 |
-| Fetch duration | 1.62s |
+| Fetch duration | 1.01s |
 | ESPN calls | 4 |
-| Workflow run | `34937416102` |
+| Workflow run | `34968900279` |
 
 ## Freshness and completeness gates
 
@@ -27,16 +27,16 @@
 | Ownership reconciled, no conflicts | yes |
 | Player lookup index complete | yes |
 
-## Week 1 matchups
+## Week 2 matchups
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 95.7 | The Bye Week Boys | 128.8 | NO |
-| Jason X | 132.8 | 🔥Certified Dumpster Fire 🔥 | 114.06 | NO |
-| Norberto's Gnarly Team | 107.96 | Connor’s Team | 83.32 | NO |
-| Giant Packer Fan | 138.26 | Commanders of Chaos | 108.76 | NO |
-| Super Lamario Brothers | 124.26 | From Puka with Love | 141.4 | NO |
-| Nicole's Gnarly Team | 136.26 | Auto Draft Champion | 129.32 | NO |
+| Jason X | 0.0 | Kelli's Top-Notch Team | 0.0 | NO |
+| The Bye Week Boys | 0.0 | Norberto's Gnarly Team | 0.0 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 0.0 | Giant Packer Fan | 0.0 | NO |
+| Connor’s Team | 0.0 | Super Lamario Brothers | 0.0 | NO |
+| Commanders of Chaos | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
+| From Puka with Love | 0.0 | Auto Draft Champion | 0.0 | NO |
 
 ## Rosters
 
@@ -48,7 +48,7 @@
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
 | 5 | Norberto's Gnarly Team | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
-| 7 | Connor’s Team | Connor Hartland | 16 | 9 | 7 | 0 | 0 |
+| 7 | Connor’s Team | Connor Hartland | 16 | 8 | 8 | 0 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
@@ -71,7 +71,7 @@
 | Norberto's Gnarly Team | Jordan Mason | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | WR | yes |
+| Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | OUT | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Brian Thomas Jr. | WR | QUESTIONABLE | BENCH | NO |
@@ -89,24 +89,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-235 total | 12 executed ownership changes | 31 lineup-only moves | 192 draft picks | 0 pending
-
-Most recent ownership changes:
-
-| When | Team | Type | Moves |
-| --- | --- | --- | --- |
-| 2026-09-11T17:25 | The Bye Week Boys | FREEAGENT | ADD Ja'Kobi Lane, DROP Braelon Allen |
-| 2026-09-11T04:41 | Jason X | FREEAGENT | ADD Greg Dulcich, DROP Dalton Schultz |
-| 2026-09-10T22:51 | Jason X | FREEAGENT | ADD Dalton Schultz |
-| 2026-09-10T17:39 | Super Lamario Brothers | FREEAGENT | ADD Michael Mayer, DROP Alvin Kamara |
-| 2026-09-10T00:18 | The Bye Week Boys | FREEAGENT | ADD Brenton Strange, DROP Malachi Fields |
-| 2026-09-09T15:28 | Commanders of Chaos | FREEAGENT | ADD Bears D/ST, DROP Browns D/ST |
-| 2026-09-09T15:27 | Commanders of Chaos | FREEAGENT | ADD Jalen Nailor |
-| 2026-09-09T15:26 | Commanders of Chaos | ROSTER | DROP Zach Charbonnet |
-| 2026-09-08T21:12 | Connor’s Team | FREEAGENT | ADD Vikings D/ST, DROP Patriots D/ST |
-| 2026-09-08T21:11 | Connor’s Team | FREEAGENT | ADD Chase McLaughlin, DROP Harrison Mevis |
-| 2026-09-08T19:50 | The Bye Week Boys | FREEAGENT | ADD Malachi Fields |
-| 2026-09-08T07:18 | Connor’s Team | WAIVER | ADD Malik Willis, DROP Daniel Jones |
+2 total | 0 executed ownership changes | 2 lineup-only moves | 0 draft picks | 0 pending
 
 ## League format
 
