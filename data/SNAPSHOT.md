@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-15T02:11:10.806872+00:00` |
+| Fetched at (UTC) | `2026-09-15T06:32:51.488851+00:00` |
 | Scoring period (week) | **1** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 847 |
 | Players in lookup index | 1041 |
-| Fetch duration | 1.65s |
+| Fetch duration | 1.62s |
 | ESPN calls | 4 |
-| Workflow run | `34920192867` |
+| Workflow run | `34937416102` |
 
 ## Freshness and completeness gates
 
@@ -32,11 +32,11 @@
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
 | Kelli's Top-Notch Team | 95.7 | The Bye Week Boys | 128.8 | NO |
-| Jason X | 129.7 | 🔥Certified Dumpster Fire 🔥 | 114.06 | NO |
-| Norberto's Gnarly Team | 98.36 | Connor’s Team | 83.32 | NO |
-| Giant Packer Fan | 129.76 | Commanders of Chaos | 108.76 | NO |
+| Jason X | 132.8 | 🔥Certified Dumpster Fire 🔥 | 114.06 | NO |
+| Norberto's Gnarly Team | 107.96 | Connor’s Team | 83.32 | NO |
+| Giant Packer Fan | 138.26 | Commanders of Chaos | 108.76 | NO |
 | Super Lamario Brothers | 124.26 | From Puka with Love | 141.4 | NO |
-| Nicole's Gnarly Team | 132.26 | Auto Draft Champion | 129.32 | NO |
+| Nicole's Gnarly Team | 136.26 | Auto Draft Champion | 129.32 | NO |
 
 ## Rosters
 
@@ -64,7 +64,7 @@
 | The Bye Week Boys | Ja'Kobi Lane | WR | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
-| Auto Draft Champion | Dylan Sampson | RB | QUESTIONABLE | BENCH | NO |
+| Auto Draft Champion | Dylan Sampson | RB | OUT | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Norberto's Gnarly Team | De'Zhaun Stribling | WR | DOUBTFUL | BENCH | NO |
@@ -89,7 +89,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-232 total | 12 executed ownership changes | 28 lineup-only moves | 192 draft picks | 0 pending
+235 total | 12 executed ownership changes | 31 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
