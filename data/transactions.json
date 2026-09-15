@@ -1,15 +1,83 @@
 {
   "counts": {
-    "total": 2,
+    "total": 4,
     "ownership_changes": 0,
     "executed_ownership_changes": 0,
-    "lineup_only_moves": 2,
+    "lineup_only_moves": 4,
     "draft_picks": 0,
     "pending": 0
   },
   "executed_ownership_changes": [],
   "pending_transactions": [],
   "lineup_only_moves": [
+    {
+      "id": "a4c742b3-8184-48e6-9b3d-e2fbe362db4c",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-15T15:38:56.132000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4047646,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "IR",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "3f8df33a-0a9e-46f4-82ee-d6335c1e15ca",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-15T14:43:14.690000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 3128429,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4248528,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "9709bac6-cdf5-4f16-9aed-1670dc079d2f",
       "type": "ROSTER",
@@ -96,5 +164,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 2,
-  "fetched_at": "2026-09-15T12:26:59.358106+00:00"
+  "fetched_at": "2026-09-15T18:20:15.143918+00:00"
 }

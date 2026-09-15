@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-15T12:27:00.372287+00:00` |
+| Fetched at (UTC) | `2026-09-15T18:20:16.209365+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
-| Available players (FA + waivers) | 847 |
-| Players in lookup index | 1041 |
-| Fetch duration | 1.01s |
+| Available players (FA + waivers) | 848 |
+| Players in lookup index | 1042 |
+| Fetch duration | 1.07s |
 | ESPN calls | 4 |
-| Workflow run | `34968900279` |
+| Workflow run | `35006824300` |
 
 ## Freshness and completeness gates
 
@@ -48,7 +48,7 @@
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
 | 5 | Norberto's Gnarly Team | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
-| 7 | Connor’s Team | Connor Hartland | 16 | 8 | 8 | 0 | 0 |
+| 7 | Connor’s Team | Connor Hartland | 16 | 8 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
@@ -59,7 +59,7 @@
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Brock Bowers | TE | OUT | IR | NO |
+| Jason X | Brock Bowers | TE | QUESTIONABLE | IR | NO |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Ja'Kobi Lane | WR | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
@@ -71,11 +71,11 @@
 | Norberto's Gnarly Team | Jordan Mason | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | TreVeyon Henderson | RB | OUT | BENCH | NO |
+| Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | QUESTIONABLE | BENCH | NO |
+| Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Kelli's Top-Notch Team | Brian Thomas Jr. | WR | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | OUT | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Sam Darnold | QB | DOUBTFUL | BENCH | NO |
 | Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | FLEX | yes |
 
@@ -83,13 +83,13 @@
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 46 | 109 | 184 | 181 | 307 | 847 |
+| 20 | 46 | 109 | 184 | 182 | 307 | 848 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-2 total | 0 executed ownership changes | 2 lineup-only moves | 0 draft picks | 0 pending
+4 total | 0 executed ownership changes | 4 lineup-only moves | 0 draft picks | 0 pending
 
 ## League format
 
