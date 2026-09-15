@@ -4,15 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-15T00:50:51.304781+00:00` |
+| Fetched at (UTC) | `2026-09-15T02:11:10.806872+00:00` |
 | Scoring period (week) | **1** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 847 |
-| Fetch duration | 1.06s |
+| Players in lookup index | 1041 |
+| Fetch duration | 1.65s |
 | ESPN calls | 4 |
-| Workflow run | `34914847580` |
+| Workflow run | `34920192867` |
 
 ## Freshness and completeness gates
 
@@ -24,17 +25,18 @@
 | Player pool retrieved | yes |
 | Matchups retrieved | yes |
 | Ownership reconciled, no conflicts | yes |
+| Player lookup index complete | yes |
 
 ## Week 1 matchups
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 95.7 | The Bye Week Boys | 127.6 | NO |
+| Kelli's Top-Notch Team | 95.7 | The Bye Week Boys | 128.8 | NO |
 | Jason X | 129.7 | 🔥Certified Dumpster Fire 🔥 | 114.06 | NO |
-| Norberto's Gnarly Team | 73.06 | Connor’s Team | 83.32 | NO |
-| Giant Packer Fan | 124.26 | Commanders of Chaos | 108.76 | NO |
+| Norberto's Gnarly Team | 98.36 | Connor’s Team | 83.32 | NO |
+| Giant Packer Fan | 129.76 | Commanders of Chaos | 108.76 | NO |
 | Super Lamario Brothers | 124.26 | From Puka with Love | 141.4 | NO |
-| Nicole's Gnarly Team | 130.26 | Auto Draft Champion | 129.32 | NO |
+| Nicole's Gnarly Team | 132.26 | Auto Draft Champion | 129.32 | NO |
 
 ## Rosters
 
@@ -115,6 +117,7 @@ Scoring: `H2H_POINTS`. Starting lineup and bench: QB x1, RB x2, WR x2, TE x1, D/
 | File | Contents |
 | --- | --- |
 | `metadata.json` | Fetch timestamps, week, per-step success flags. Read first. |
+| `player_index.json` | **Name to owner lookup for every classified player. Use this to answer "who owns X?".** |
 | `ownership.json` | Positive ownership: player id to owner, plus availability. |
 | `rosters.json` | Every team's starters, bench, and IR. |
 | `available_players.json` | ESPN free agent and waiver pool. |
