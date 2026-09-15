@@ -44,9 +44,11 @@ import io
 import json
 import os
 import random
+import re
 import ssl
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -300,6 +302,54 @@ def normalize_player(entry_player: dict) -> dict:
         "auction_value_average": _round(ownership.get("auctionValueAverage")),
         "last_news_date": _ms_to_iso(entry_player.get("lastNewsDate")),
     }
+
+
+NAME_SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "v"}
+
+
+def _fold(name: str) -> str:
+    """Lowercase and strip accents, leaving punctuation in place."""
+    folded = unicodedata.normalize("NFKD", name or "")
+    folded = "".join(ch for ch in folded if not unicodedata.combining(ch))
+    return folded.lower().replace("&", " and ")
+
+
+def _strip_suffix(key: str) -> str:
+    parts = key.split()
+    while len(parts) > 2 and parts[-1] in NAME_SUFFIXES:
+        parts.pop()
+    return " ".join(parts)
+
+
+def normalize_name(name: str) -> str:
+    """The canonical lookup key: punctuation becomes whitespace.
+
+    "Amon-Ra St. Brown" -> "amon ra st brown"
+    """
+    return " ".join(re.sub(r"[^a-z0-9]+", " ", _fold(name)).split())
+
+
+def normalize_name_tight(name: str) -> str:
+    """Alternate key: punctuation is deleted rather than spaced.
+
+    Needed because punctuation inside a name is usually written without a space
+    when the punctuation is dropped:
+      "A.J. Brown"   -> "aj brown"     (not "a j brown")
+      "Ja'Marr Chase"-> "jamarr chase"
+      "Jaguars D/ST" -> "jaguars dst"
+    Indexing both forms is what lets "AJ Brown" and "A.J. Brown" both resolve.
+    """
+    return " ".join(re.sub(r"[^a-z0-9\s]+", "", _fold(name)).split())
+
+
+def name_keys(name: str) -> list[str]:
+    """Every lookup key a given player name should answer to."""
+    keys: list[str] = []
+    for key in (normalize_name(name), normalize_name_tight(name)):
+        for variant in (key, _strip_suffix(key)):
+            if variant and variant not in keys:
+                keys.append(variant)
+    return keys
 
 
 def _round(value: Any, digits: int = 2) -> Any:
@@ -585,6 +635,107 @@ def build_ownership(
     }
 
 
+def build_player_index(rosters: list[dict], available_players: list[dict]) -> dict:
+    """Build one flat, name-addressable table covering every classified player.
+
+    This exists so a consumer can answer "who owns X?" with a single exact
+    lookup, instead of re-deriving ownership from the much larger rosters and
+    player-pool files. Every player ESPN has classified appears exactly once,
+    labelled either ROSTERED (with the owning fantasy team) or AVAILABLE (with
+    ESPN's own FREEAGENT/WAIVERS status).
+
+    ``by_normalized_name`` maps both the suffix-preserving and suffix-stripped
+    name forms to player ids, so "Michael Pittman" and "Michael Pittman Jr."
+    both resolve. Names that map to more than one player are listed in
+    ``collisions``; resolve those by position and pro_team.
+    """
+    players: list[dict] = []
+
+    for team in rosters:
+        for bucket in ("starters", "bench", "injured_reserve"):
+            for player in team[bucket]:
+                players.append(
+                    {
+                        "player_id": player["player_id"],
+                        "name": player["name"],
+                        "normalized_name": normalize_name(player["name"]),
+                        "position": player["position"],
+                        "pro_team": player["pro_team"],
+                        "fantasy_status": "ROSTERED",
+                        "fantasy_team": team["team_name"],
+                        "fantasy_team_id": team["team_id"],
+                        "availability_status": None,
+                        "lineup_slot": player["lineup_slot"],
+                        "injury_status": player.get("injury_status"),
+                        "percent_owned": player.get("percent_owned"),
+                    }
+                )
+
+    for player in available_players:
+        players.append(
+            {
+                "player_id": player["player_id"],
+                "name": player["name"],
+                "normalized_name": normalize_name(player["name"]),
+                "position": player["position"],
+                "pro_team": player["pro_team"],
+                "fantasy_status": "AVAILABLE",
+                "fantasy_team": None,
+                "fantasy_team_id": None,
+                "availability_status": player.get("availability_status"),
+                "lineup_slot": None,
+                "injury_status": player.get("injury_status"),
+                "percent_owned": player.get("percent_owned"),
+            }
+        )
+
+    players.sort(key=lambda p: p["normalized_name"])
+
+    # Drop null-valued keys. Roughly a third of these records are available
+    # players that carry no fantasy team or lineup slot, and the nulls are pure
+    # payload. An absent key means null; this is stated in "usage" below.
+    players = [{k: v for k, v in p.items() if v is not None} for p in players]
+
+    by_name: dict[str, list[int]] = {}
+    for player in players:
+        for key in name_keys(player["name"]):
+            bucket = by_name.setdefault(key, [])
+            if player["player_id"] not in bucket:
+                bucket.append(player["player_id"])
+
+    collisions = {
+        name: ids for name, ids in sorted(by_name.items()) if len(ids) > 1
+    }
+
+    return {
+        "usage": (
+            "Authoritative ownership lookup for every classified player in this "
+            "league. To resolve a name: lowercase it, strip accents, then build two "
+            "candidate keys, one replacing each run of punctuation with a single "
+            "space ('A.J. Brown' -> 'a j brown') and one deleting punctuation "
+            "outright ('A.J. Brown' -> 'aj brown'); collapse whitespace in both. "
+            "Also try each key with a trailing Jr/Sr/II/III/IV/V removed. Look each "
+            "candidate up in by_normalized_name to get player_ids, then read the "
+            "record from players_by_id. Keys with null values are omitted from "
+            "records, so a missing fantasy_team means the player is not rostered. "
+            "Report ownership as unresolved only when every candidate key is absent "
+            "from by_normalized_name, or when several players survive "
+            "disambiguation by position and pro_team. A failed code search or a "
+            "partial file read is not grounds for declaring ownership unresolved."
+        ),
+        "counts": {
+            "total": len(players),
+            "rostered": sum(1 for p in players if p["fantasy_status"] == "ROSTERED"),
+            "available": sum(1 for p in players if p["fantasy_status"] == "AVAILABLE"),
+            "unique_name_keys": len(by_name),
+            "collisions": len(collisions),
+        },
+        "collisions": collisions,
+        "by_normalized_name": by_name,
+        "players_by_id": {str(p["player_id"]): p for p in players},
+    }
+
+
 # --------------------------------------------------------------------------
 # Fetch steps
 # --------------------------------------------------------------------------
@@ -741,11 +892,16 @@ def main(argv: list[str] | None = None) -> int:
     steps: dict[str, bool] = {}
     errors: list[str] = []
 
-    def write(name: str, payload: Any) -> None:
+    def write(name: str, payload: Any, compact: bool = False) -> None:
+        """Write a JSON file. ``compact`` drops indentation to keep large
+        lookup tables small enough to read in one pass."""
         path = os.path.join(out_dir, name)
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8") as handle:
-            json.dump(payload, handle, indent=2, sort_keys=False)
+            if compact:
+                json.dump(payload, handle, separators=(",", ":"), sort_keys=False)
+            else:
+                json.dump(payload, handle, indent=2, sort_keys=False)
             handle.write("\n")
         print(f"  wrote {os.path.relpath(path, out_dir)} ({os.path.getsize(path):,} bytes)")
 
@@ -758,7 +914,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Started {started_at.isoformat()}")
 
     # ---- 1. League core (settings, teams, members, status) ----------------
-    print("\n[1/6] league settings, teams, status")
+    print("\n[1/7] league settings, teams, status")
     try:
         league_raw = client.get(
             views=["mSettings", "mTeam", "mRoster", "mStandings"], label="league_core"
@@ -841,7 +997,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     # ---- 2. Rosters -------------------------------------------------------
-    print("\n[2/6] rosters for every team")
+    print("\n[2/7] rosters for every team")
     rosters = build_rosters(teams, members_by_id, lineup_slot_counts)
     teams_with_players = sum(1 for r in rosters if r["counts"]["total"] > 0)
     rosters_complete = (
@@ -874,7 +1030,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     # ---- 3. Transactions --------------------------------------------------
-    print("\n[3/6] transactions")
+    print("\n[3/7] transactions")
     teams_by_id = {r["team_id"]: r["team_name"] for r in rosters}
     transactions_payload: dict[str, Any]
     try:
@@ -907,7 +1063,7 @@ def main(argv: list[str] | None = None) -> int:
     write("transactions.json", transactions_payload)
 
     # ---- 4. Free agent / waiver pool -------------------------------------
-    print("\n[4/6] free agent + waiver pool (X-Fantasy-Filter)")
+    print("\n[4/7] free agent + waiver pool (X-Fantasy-Filter)")
     available: list[dict] = []
     try:
         available = fetch_player_pool(client, scoring_period_id, ["FREEAGENT", "WAIVERS"])
@@ -940,7 +1096,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     # ---- 5. Matchups for the current period ------------------------------
-    print("\n[5/6] matchups / boxscore for current period")
+    print("\n[5/7] matchups / boxscore for current period")
     try:
         matchup_raw = client.get(
             views=["mMatchupScore", "mBoxscore"],
@@ -984,7 +1140,7 @@ def main(argv: list[str] | None = None) -> int:
         steps["matchup_fetch_success"] = False
 
     # ---- 6. Ownership reconciliation -------------------------------------
-    print("\n[6/6] ownership reconciliation")
+    print("\n[6/7] ownership reconciliation")
     ownership = build_ownership(rosters, available)
     ownership.update(
         {
@@ -1010,6 +1166,37 @@ def main(argv: list[str] | None = None) -> int:
             f"{ownership['counts']['conflicts']} players appear both rostered and available"
         )
 
+    # ---- 7. Flat player index -------------------------------------------
+    print("\n[7/7] player lookup index")
+    player_index = build_player_index(rosters, available)
+    player_index.update(
+        {
+            "league_id": args.league_id,
+            "season": season,
+            "scoring_period_id": scoring_period_id,
+            "fetched_at": started_at.isoformat(),
+        }
+    )
+    write("player_index.json", player_index, compact=True)
+    index_counts = player_index["counts"]
+    steps["player_index_built"] = index_counts["total"] == (
+        ownership["counts"]["rostered"] + ownership["counts"]["available"]
+    )
+    print(
+        f"  {index_counts['total']} players | {index_counts['unique_name_keys']} name keys "
+        f"| {index_counts['collisions']} collision(s)"
+    )
+    if index_counts["collisions"]:
+        for name, ids in player_index["collisions"].items():
+            print(f"    collision: {name} -> {ids}")
+    if not steps["player_index_built"]:
+        message = (
+            f"player index has {index_counts['total']} rows but ownership counted "
+            f"{ownership['counts']['rostered'] + ownership['counts']['available']}"
+        )
+        print(f"  WARNING: {message}", file=sys.stderr)
+        errors.append(message)
+
     # ---- metadata --------------------------------------------------------
     metadata = build_metadata(
         started_at,
@@ -1025,6 +1212,7 @@ def main(argv: list[str] | None = None) -> int:
         ownership["counts"]["rostered"],
         ownership["counts"]["available"],
         league_name=settings.get("name"),
+        player_index_count=index_counts["total"],
     )
     write("metadata.json", metadata)
 
@@ -1087,6 +1275,7 @@ def build_metadata(
     rostered_count: int = 0,
     available_count: int = 0,
     league_name: str | None = None,
+    player_index_count: int = 0,
 ) -> dict:
     finished_at = datetime.now(timezone.utc)
     all_ok = all(steps.get(k, False) for k in ("league_fetch_success", "roster_fetch_success"))
@@ -1105,6 +1294,8 @@ def build_metadata(
         "team_count_complete": team_count == expected_team_count,
         "rostered_player_count": rostered_count,
         "available_player_count": available_count,
+        "player_index_count": player_index_count,
+        "player_index_built": steps.get("player_index_built", False),
         "roster_fetch_success": steps.get("roster_fetch_success", False),
         "transactions_fetch_success": steps.get("transactions_fetch_success", False),
         "player_pool_fetch_success": steps.get("player_pool_fetch_success", False),

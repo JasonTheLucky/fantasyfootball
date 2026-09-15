@@ -47,6 +47,7 @@ confirm the snapshot is usable, then go to the detail files.
 | --- | --- |
 | `SNAPSHOT.md` | One-page digest: freshness, gates, matchups, rosters, injuries. Start here. |
 | `metadata.json` | Fetch timestamp, `scoringPeriodId`, per-step success flags, every ESPN call made. |
+| `player_index.json` | Flat name-to-owner lookup for all 1,041 classified players. Use this to answer "who owns X?". |
 | `ownership.json` | The ownership gate. Player id to owning team, plus ESPN's availability list. |
 | `rosters.json` | All 12 teams: starters, bench, IR, open slots, records, acquisition counts. |
 | `available_players.json` | ESPN `FREEAGENT` + `WAIVERS` pool with ownership percentages. |
@@ -80,6 +81,53 @@ false, if `errors` is non-empty, or if `fetched_at` is older than you need.
 
 `ownership_reconciled` is only true when all rosters and the player pool were
 both retrieved **and** no player appeared in both lists.
+
+### Resolving a player name to an owner
+
+`player_index.json` exists so that answering "who owns MarShawn Lloyd?" is one
+exact lookup rather than a search across two multi-hundred-kilobyte files. It
+holds every classified player once (1,041 here: 194 rostered + 847 available) and
+is about a quarter the size of the files it replaces.
+
+```json
+{
+  "by_normalized_name": { "marshawn lloyd": [4429023] },
+  "players_by_id": {
+    "4429023": {
+      "player_id": 4429023,
+      "name": "MarShawn Lloyd",
+      "normalized_name": "marshawn lloyd",
+      "position": "RB",
+      "pro_team": "GB",
+      "fantasy_status": "ROSTERED",
+      "fantasy_team": "From Puka with Love",
+      "lineup_slot": "RB"
+    }
+  }
+}
+```
+
+To resolve a name, lowercase it, strip accents, then build candidate keys two
+ways and try each:
+
+1. Replace each run of punctuation with a space: `A.J. Brown` -> `a j brown`
+2. Delete punctuation outright: `A.J. Brown` -> `aj brown`
+3. Repeat both with a trailing `Jr`/`Sr`/`II`/`III`/`IV`/`V` removed
+
+Both forms are indexed, which is what makes `AJ Brown`, `A.J. Brown`,
+`Ja'Marr Chase`, `JaMarr Chase`, `Michael Pittman`, `Jaguars DST` and
+`Jaguars D/ST` all resolve. Keys with null values are omitted from records, so a
+missing `fantasy_team` means the player is not rostered.
+
+Declare ownership unresolved only when **every** candidate key is absent from
+`by_normalized_name`, or when several players survive disambiguation by
+`position` and `pro_team`. A failed code search or a truncated file read is not
+evidence of absence — GitHub code search does not reliably index large generated
+JSON, so searching for a name and finding nothing says nothing about the data.
+
+Names mapping to more than one player are listed in `collisions`. In this
+snapshot there is exactly one: two free agents named Josh Johnson, a QB and an
+RB, separated by `position`.
 
 ## Running it
 

@@ -68,6 +68,7 @@ def build() -> str:
         f"{metadata.get('expected_team_count')} |")
     add(f"| Rostered players | {metadata.get('rostered_player_count')} |")
     add(f"| Available players (FA + waivers) | {metadata.get('available_player_count')} |")
+    add(f"| Players in lookup index | {metadata.get('player_index_count')} |")
     add(f"| Fetch duration | {metadata.get('duration_seconds')}s |")
     add(f"| ESPN calls | {len(metadata.get('espn_calls') or [])} |")
     run_id = (metadata.get("github") or {}).get("run_id")
@@ -87,6 +88,7 @@ def build() -> str:
     add(f"| Matchups retrieved | {tick(metadata.get('matchup_fetch_success'))} |")
     add(f"| Ownership reconciled, no conflicts | "
         f"{tick(metadata.get('ownership_reconciled'))} |")
+    add(f"| Player lookup index complete | {tick(metadata.get('player_index_built'))} |")
     add("")
 
     errors = metadata.get("errors") or []
@@ -223,6 +225,8 @@ def build() -> str:
     add("| File | Contents |")
     add("| --- | --- |")
     add("| `metadata.json` | Fetch timestamps, week, per-step success flags. Read first. |")
+    add("| `player_index.json` | **Name to owner lookup for every classified player. "
+        "Use this to answer \"who owns X?\".** |")
     add("| `ownership.json` | Positive ownership: player id to owner, plus availability. |")
     add("| `rosters.json` | Every team's starters, bench, and IR. |")
     add("| `available_players.json` | ESPN free agent and waiver pool. |")
