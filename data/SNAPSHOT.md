@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-16T00:49:37.926324+00:00` |
+| Fetched at (UTC) | `2026-09-16T06:32:04.288601+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 194 |
-| Available players (FA + waivers) | 848 |
+| Rostered players | 193 |
+| Available players (FA + waivers) | 849 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.15s |
+| Fetch duration | 1.12s |
 | ESPN calls | 4 |
-| Workflow run | `35041592849` |
+| Workflow run | `35064135112` |
 
 ## Freshness and completeness gates
 
@@ -42,7 +42,7 @@
 
 | # | Team | Owner | Roster | Start | Bench | IR | Bench open |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
+| 1 | Jason X | Jason Prinsen | 16 | 9 | 7 | 0 | 0 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
@@ -59,7 +59,7 @@
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Brock Bowers | TE | QUESTIONABLE | IR | NO |
+| Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Ja'Kobi Lane | WR | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
@@ -83,13 +83,19 @@
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 46 | 109 | 184 | 182 | 307 | 848 |
+| 20 | 46 | 109 | 184 | 183 | 307 | 849 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-6 total | 0 executed ownership changes | 5 lineup-only moves | 0 draft picks | 0 pending
+8 total | 1 executed ownership changes | 6 lineup-only moves | 0 draft picks | 0 pending
+
+Most recent ownership changes:
+
+| When | Team | Type | Moves |
+| --- | --- | --- | --- |
+| 2026-09-16T02:41 | Jason X | ROSTER | DROP Greg Dulcich |
 
 ## League format
 

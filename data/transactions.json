@@ -1,15 +1,72 @@
 {
   "counts": {
-    "total": 6,
-    "ownership_changes": 1,
-    "executed_ownership_changes": 0,
-    "lineup_only_moves": 5,
+    "total": 8,
+    "ownership_changes": 2,
+    "executed_ownership_changes": 1,
+    "lineup_only_moves": 6,
     "draft_picks": 0,
     "pending": 0
   },
-  "executed_ownership_changes": [],
+  "executed_ownership_changes": [
+    {
+      "id": "d4385012-05d2-42b4-b1dd-925ff5864912",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-16T02:41:04.357000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "DROP",
+          "player_id": 4367209,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    }
+  ],
   "pending_transactions": [],
   "lineup_only_moves": [
+    {
+      "id": "d61962e3-5c95-46f2-8c8c-f4f04aac34a9",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-16T02:41:10.329000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4432665,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "IR",
+          "to_slot": "TE",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "72e713a3-5d7d-4d95-a9cc-752c6059c0d6",
       "type": "ROSTER",
@@ -201,6 +258,34 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "d4385012-05d2-42b4-b1dd-925ff5864912",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-16T02:41:04.357000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "DROP",
+          "player_id": 4367209,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "d590912c-88ca-44c5-80d9-0b99a86a12ed",
       "type": "WAIVER",
       "status": "CANCELED",
@@ -245,5 +330,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 2,
-  "fetched_at": "2026-09-16T00:49:36.780973+00:00"
+  "fetched_at": "2026-09-16T06:32:03.165928+00:00"
 }
