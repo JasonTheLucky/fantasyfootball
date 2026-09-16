@@ -61,6 +61,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
+        with:
+          # Check out the current branch tip rather than the SHA this run was
+          # pinned to at creation time. Scheduled runs pin GITHUB_SHA when they
+          # are queued, and a re-run reuses that same SHA, so without this the
+          # runner can execute an old copy of scripts/ and start from a data
+          # baseline several snapshots behind. Resolving the ref at run time
+          # keeps both current and lets the push fast-forward normally.
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v7
