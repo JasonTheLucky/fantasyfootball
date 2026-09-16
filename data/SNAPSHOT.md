@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-16T06:32:04.288601+00:00` |
+| Fetched at (UTC) | `2026-09-16T12:28:13.312929+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 193 |
-| Available players (FA + waivers) | 849 |
+| Rostered players | 194 |
+| Available players (FA + waivers) | 848 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.12s |
+| Fetch duration | 1.23s |
 | ESPN calls | 4 |
-| Workflow run | `35064135112` |
+| Workflow run | `35095993675` |
 
 ## Freshness and completeness gates
 
@@ -48,14 +48,14 @@
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
 | 5 | Norberto's Gnarly Team | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
-| 7 | Connor’s Team | Connor Hartland | 16 | 8 | 7 | 1 | 0 |
+| 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 16 | 9 | 7 | 0 | 0 |
 | 12 | Commanders of Chaos | Morgan Nadke | 16 | 9 | 7 | 0 | 0 |
 
-## Injury designations (19)
+## Injury designations (18)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -76,25 +76,30 @@
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Kelli's Top-Notch Team | Brian Thomas Jr. | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Sam Darnold | QB | DOUBTFUL | BENCH | NO |
 | Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | FLEX | yes |
 
 ## Available player pool by position
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 46 | 109 | 184 | 183 | 307 | 849 |
+| 20 | 46 | 109 | 184 | 182 | 307 | 848 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-8 total | 1 executed ownership changes | 6 lineup-only moves | 0 draft picks | 0 pending
+17 total | 7 executed ownership changes | 7 lineup-only moves | 0 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-16T11:56 | Jason X | FREEAGENT | ADD Kenyon Sadiq, DROP Tre Tucker |
+| 2026-09-16T07:13 | Norberto's Gnarly Team | WAIVER | ADD 49ers D/ST, DROP Chargers D/ST |
+| 2026-09-16T07:13 | Connor’s Team | WAIVER | ADD Cairo Santos, DROP Chase McLaughlin |
+| 2026-09-16T07:13 | Connor’s Team | WAIVER | ADD Devaughn Vele |
+| 2026-09-16T07:13 | Jason X | WAIVER | ADD Chiefs D/ST, DROP Jaguars D/ST |
+| 2026-09-16T07:13 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD C.J. Stroud, DROP Sam Darnold |
 | 2026-09-16T02:41 | Jason X | ROSTER | DROP Greg Dulcich |
 
 ## League format
