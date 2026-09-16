@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-16T18:21:16.886707+00:00` |
+| Fetched at (UTC) | `2026-09-16T18:58:26.816652+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.56s |
+| Fetch duration | 0.95s |
 | ESPN calls | 4 |
-| Workflow run | `35133857752` |
+| Workflow run | `35137704611` |
 
 ## Freshness and completeness gates
 
@@ -67,7 +67,7 @@
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Norberto's Gnarly Team | De'Zhaun Stribling | WR | DOUBTFUL | BENCH | NO |
-| Norberto's Gnarly Team | Jordan Mason | RB | QUESTIONABLE | BENCH | NO |
+| Norberto's Gnarly Team | Jordan Mason | RB | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
