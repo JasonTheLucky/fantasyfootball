@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-16T18:58:26.816652+00:00` |
+| Fetched at (UTC) | `2026-09-16T19:33:20.983871+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1042 |
-| Fetch duration | 0.95s |
+| Fetch duration | 1.03s |
 | ESPN calls | 4 |
-| Workflow run | `35137704611` |
+| Workflow run | `35141241449` |
 
 ## Freshness and completeness gates
 
@@ -80,18 +80,20 @@
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 46 | 109 | 184 | 182 | 307 | 848 |
+| 20 | 46 | 109 | 183 | 182 | 308 | 848 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-22 total | 10 executed ownership changes | 9 lineup-only moves | 0 draft picks | 0 pending
+24 total | 12 executed ownership changes | 9 lineup-only moves | 0 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-16T19:14 | Jason X | FREEAGENT | ADD Pat Freiermuth, DROP Kenyon Sadiq |
+| 2026-09-16T19:05 | The Bye Week Boys | FREEAGENT | ADD Demond Claiborne, DROP Antonio Williams |
 | 2026-09-16T14:33 | The Bye Week Boys | FREEAGENT | ADD Antonio Williams, DROP Ja'Kobi Lane |
 | 2026-09-16T12:47 | Super Lamario Brothers | FREEAGENT | ADD Buccaneers D/ST, DROP Lions D/ST |
 | 2026-09-16T12:46 | Super Lamario Brothers | FREEAGENT | ADD Kalif Raymond, DROP Rashid Shaheed |
