@@ -1,15 +1,55 @@
 {
   "counts": {
-    "total": 4,
-    "ownership_changes": 0,
+    "total": 6,
+    "ownership_changes": 1,
     "executed_ownership_changes": 0,
-    "lineup_only_moves": 4,
+    "lineup_only_moves": 5,
     "draft_picks": 0,
     "pending": 0
   },
   "executed_ownership_changes": [],
   "pending_transactions": [],
   "lineup_only_moves": [
+    {
+      "id": "72e713a3-5d7d-4d95-a9cc-752c6059c0d6",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-15T20:39:10.211000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4430539,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "TE",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 3046439,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "a4c742b3-8184-48e6-9b3d-e2fbe362db4c",
       "type": "ROSTER",
@@ -159,10 +199,51 @@
       ]
     }
   ],
-  "all_ownership_changes": [],
+  "all_ownership_changes": [
+    {
+      "id": "d590912c-88ca-44c5-80d9-0b99a86a12ed",
+      "type": "WAIVER",
+      "status": "CANCELED",
+      "execution_type": "CANCEL",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-15T22:00:37.511000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4569559,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4870847,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    }
+  ],
   "draft_picks": [],
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 2,
-  "fetched_at": "2026-09-15T18:20:15.143918+00:00"
+  "fetched_at": "2026-09-16T00:49:36.780973+00:00"
 }

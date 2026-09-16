@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-15T18:20:16.209365+00:00` |
+| Fetched at (UTC) | `2026-09-16T00:49:37.926324+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.07s |
+| Fetch duration | 1.15s |
 | ESPN calls | 4 |
-| Workflow run | `35006824300` |
+| Workflow run | `35041592849` |
 
 ## Freshness and completeness gates
 
@@ -64,7 +64,7 @@
 | The Bye Week Boys | Ja'Kobi Lane | WR | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
-| Auto Draft Champion | Dylan Sampson | RB | OUT | BENCH | NO |
+| Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Norberto's Gnarly Team | De'Zhaun Stribling | WR | DOUBTFUL | BENCH | NO |
@@ -89,7 +89,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-4 total | 0 executed ownership changes | 4 lineup-only moves | 0 draft picks | 0 pending
+6 total | 0 executed ownership changes | 5 lineup-only moves | 0 draft picks | 0 pending
 
 ## League format
 
