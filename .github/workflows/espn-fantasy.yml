@@ -92,26 +92,42 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # data/raw is gitignored, so only the normalized files are staged.
-          git add data
-
-          if git diff --cached --quiet; then
-            echo "No changes in league data; nothing to commit."
-            exit 0
-          fi
-
           PERIOD=$(python -c "import json;print(json.load(open('data/metadata.json'))['scoringPeriodId'])")
           STAMP=$(python -c "import json;print(json.load(open('data/metadata.json'))['fetched_at'])")
-          git commit -m "ESPN snapshot: week ${PERIOD} @ ${STAMP} [skip ci]"
 
-          # Rebase onto any commit that landed while we were fetching, then push.
-          for attempt in 1 2 3; do
-            if git push; then
+          # Never merge or rebase generated data. Every file in data/ is rewritten
+          # in full on each run, so combining two snapshots conflicts in every file
+          # and there is nothing meaningful to resolve. Instead, move HEAD to the
+          # current remote tip while leaving the working tree alone, so the freshly
+          # fetched files become a single new commit on top of whatever is on the
+          # branch now. The newest snapshot always wins, which is what we want.
+          #
+          # This also covers a stale checkout: a re-run reuses the original commit
+          # SHA, so the runner can start from a commit that is several snapshots
+          # behind. Re-fetching inside the loop keeps that case correct too.
+          for attempt in 1 2 3 4 5; do
+            git fetch --quiet origin "${GITHUB_REF_NAME}"
+            git reset --quiet --soft "origin/${GITHUB_REF_NAME}"
+
+            # data/raw is gitignored, so only the normalized files are staged.
+            # Staging just data/ preserves any non-data commits already on origin.
+            git add data
+
+            if git diff --cached --quiet; then
+              echo "Snapshot is identical to origin; nothing to commit."
+              exit 0
+            fi
+
+            git commit --quiet -m "ESPN snapshot: week ${PERIOD} @ ${STAMP} [skip ci]"
+
+            if git push --quiet origin "HEAD:${GITHUB_REF_NAME}"; then
               echo "Pushed on attempt ${attempt}."
               exit 0
             fi
-            echo "Push failed (attempt ${attempt}); rebasing on origin/${GITHUB_REF_NAME}."
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+
+            echo "Push rejected on attempt ${attempt}; retrying against the new tip."
+            sleep $(( attempt * 3 ))
           done
-          echo "::error::Could not push refreshed data after 3 attempts."
+
+          echo "::error::Could not push refreshed data after 5 attempts."
           exit 1
