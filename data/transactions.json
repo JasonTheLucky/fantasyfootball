@@ -1,13 +1,53 @@
 {
   "counts": {
-    "total": 24,
-    "ownership_changes": 15,
-    "executed_ownership_changes": 12,
-    "lineup_only_moves": 9,
+    "total": 27,
+    "ownership_changes": 16,
+    "executed_ownership_changes": 13,
+    "lineup_only_moves": 11,
     "draft_picks": 0,
     "pending": 0
   },
   "executed_ownership_changes": [
+    {
+      "id": "b4a59501-e160-4faa-89c8-5fe7990ff57e",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-16T20:27:29.388000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 5083315,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4361411,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "60abc326-c842-464e-a938-0809c80bdc74",
       "type": "FREEAGENT",
@@ -329,34 +369,6 @@
       ]
     },
     {
-      "id": "12390f8a-8774-438d-af45-b2e7b253839a",
-      "type": "WAIVER",
-      "status": "EXECUTED",
-      "execution_type": "PROCESS",
-      "is_pending": false,
-      "scoring_period_id": 2,
-      "team_id": 7,
-      "team": "Connor\u2019s Team",
-      "bid_amount": 5,
-      "proposed_date": "2026-09-16T07:13:36.292000+00:00",
-      "processed_date": "2026-09-16T07:13:36.366000+00:00",
-      "is_league_manager": false,
-      "items": [
-        {
-          "item_type": "ADD",
-          "player_id": 4569559,
-          "from_team_id": 0,
-          "from_team": null,
-          "to_team_id": 7,
-          "to_team": "Connor\u2019s Team",
-          "from_slot": null,
-          "to_slot": "WR",
-          "overall_pick_number": 0,
-          "is_keeper": false
-        }
-      ]
-    },
-    {
       "id": "5e2d9a10-e53e-487a-8154-ab8ee4870f03",
       "type": "WAIVER",
       "status": "EXECUTED",
@@ -391,6 +403,34 @@
           "to_team": null,
           "from_slot": "D/ST",
           "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "12390f8a-8774-438d-af45-b2e7b253839a",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 5,
+      "proposed_date": "2026-09-16T07:13:36.292000+00:00",
+      "processed_date": "2026-09-16T07:13:36.366000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4569559,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 7,
+          "to_team": "Connor\u2019s Team",
+          "from_slot": null,
+          "to_slot": "WR",
           "overall_pick_number": 0,
           "is_keeper": false
         }
@@ -467,6 +507,86 @@
   ],
   "pending_transactions": [],
   "lineup_only_moves": [
+    {
+      "id": "1751c44e-ac9a-44b5-8c81-a830976ed066",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-17T00:47:15.533000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4242355,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "TE",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 3040151,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "8d7db805-015d-439f-9dc2-2b7651eacc8e",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-16T23:29:57.191000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4723086,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 3929645,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "TE",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "b7d0c1f4-90df-445f-9f99-aade087639f0",
       "type": "ROSTER",
@@ -806,6 +926,46 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "b4a59501-e160-4faa-89c8-5fe7990ff57e",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-16T20:27:29.388000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 5083315,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4361411,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "60abc326-c842-464e-a938-0809c80bdc74",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -1126,74 +1286,6 @@
       ]
     },
     {
-      "id": "b67f1734-47af-403a-b775-0207794de091",
-      "type": "WAIVER",
-      "status": "FAILED_INVALIDPLAYERSOURCE",
-      "execution_type": "PROCESS",
-      "is_pending": false,
-      "scoring_period_id": 2,
-      "team_id": 6,
-      "team": "From Puka with Love",
-      "bid_amount": 5,
-      "proposed_date": "2026-09-16T07:13:36.292000+00:00",
-      "processed_date": "2026-09-16T07:13:36.366000+00:00",
-      "is_league_manager": false,
-      "items": [
-        {
-          "item_type": "ADD",
-          "player_id": 4569559,
-          "from_team_id": 0,
-          "from_team": null,
-          "to_team_id": 6,
-          "to_team": "From Puka with Love",
-          "from_slot": "WR",
-          "to_slot": null,
-          "overall_pick_number": 0,
-          "is_keeper": false
-        },
-        {
-          "item_type": "DROP",
-          "player_id": 4361432,
-          "from_team_id": 6,
-          "from_team": "From Puka with Love",
-          "to_team_id": 0,
-          "to_team": null,
-          "from_slot": "BENCH",
-          "to_slot": null,
-          "overall_pick_number": 0,
-          "is_keeper": false
-        }
-      ]
-    },
-    {
-      "id": "12390f8a-8774-438d-af45-b2e7b253839a",
-      "type": "WAIVER",
-      "status": "EXECUTED",
-      "execution_type": "PROCESS",
-      "is_pending": false,
-      "scoring_period_id": 2,
-      "team_id": 7,
-      "team": "Connor\u2019s Team",
-      "bid_amount": 5,
-      "proposed_date": "2026-09-16T07:13:36.292000+00:00",
-      "processed_date": "2026-09-16T07:13:36.366000+00:00",
-      "is_league_manager": false,
-      "items": [
-        {
-          "item_type": "ADD",
-          "player_id": 4569559,
-          "from_team_id": 0,
-          "from_team": null,
-          "to_team_id": 7,
-          "to_team": "Connor\u2019s Team",
-          "from_slot": null,
-          "to_slot": "WR",
-          "overall_pick_number": 0,
-          "is_keeper": false
-        }
-      ]
-    },
-    {
       "id": "ea952b44-c86d-40a9-b6ba-3351b72d473f",
       "type": "WAIVER",
       "status": "FAILED_INVALIDPLAYERSOURCE",
@@ -1268,6 +1360,74 @@
           "to_team": null,
           "from_slot": "D/ST",
           "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "b67f1734-47af-403a-b775-0207794de091",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 5,
+      "proposed_date": "2026-09-16T07:13:36.292000+00:00",
+      "processed_date": "2026-09-16T07:13:36.366000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4569559,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": "WR",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4361432,
+          "from_team_id": 6,
+          "from_team": "From Puka with Love",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "12390f8a-8774-438d-af45-b2e7b253839a",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 2,
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 5,
+      "proposed_date": "2026-09-16T07:13:36.292000+00:00",
+      "processed_date": "2026-09-16T07:13:36.366000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4569559,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 7,
+          "to_team": "Connor\u2019s Team",
+          "from_slot": null,
+          "to_slot": "WR",
           "overall_pick_number": 0,
           "is_keeper": false
         }
@@ -1386,5 +1546,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 2,
-  "fetched_at": "2026-09-16T19:41:37.308089+00:00"
+  "fetched_at": "2026-09-17T00:49:56.308284+00:00"
 }

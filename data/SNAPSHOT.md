@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-16T19:41:38.731075+00:00` |
+| Fetched at (UTC) | `2026-09-17T00:49:57.630275+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.42s |
+| Fetch duration | 1.32s |
 | ESPN calls | 4 |
-| Workflow run | `35142072205` |
+| Workflow run | `35168130437` |
 
 ## Freshness and completeness gates
 
@@ -55,26 +55,34 @@
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 16 | 9 | 7 | 0 | 0 |
 | 12 | Commanders of Chaos | Morgan Nadke | 16 | 9 | 7 | 0 | 0 |
 
-## Injury designations (16)
+## Injury designations (24)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
+| Jason X | Nico Collins | WR | QUESTIONABLE | WR | yes |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
+| Super Lamario Brothers | George Kittle | TE | QUESTIONABLE | BENCH | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
-| Norberto's Gnarly Team | De'Zhaun Stribling | WR | DOUBTFUL | BENCH | NO |
+| Norberto's Gnarly Team | Joe Burrow | QB | QUESTIONABLE | QB | yes |
+| Norberto's Gnarly Team | De'Zhaun Stribling | WR | OUT | BENCH | NO |
 | Norberto's Gnarly Team | Jordan Mason | RB | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
+| From Puka with Love | D'Andre Swift | RB | QUESTIONABLE | RB | yes |
+| From Puka with Love | Michael Pittman Jr. | WR | QUESTIONABLE | FLEX | yes |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
-| Connor’s Team | Alec Pierce | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
+| Nicole's Gnarly Team | RJ Harvey | RB | QUESTIONABLE | BENCH | NO |
+| Kelli's Top-Notch Team | Eddy Pineiro | K | QUESTIONABLE | K | yes |
+| Kelli's Top-Notch Team | Juwan Johnson | TE | QUESTIONABLE | TE | yes |
 | Kelli's Top-Notch Team | Brian Thomas Jr. | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | FLEX | yes |
+| Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
 
 ## Available player pool by position
 
@@ -86,12 +94,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-24 total | 12 executed ownership changes | 9 lineup-only moves | 0 draft picks | 0 pending
+27 total | 13 executed ownership changes | 11 lineup-only moves | 0 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-16T20:27 | Jason X | FREEAGENT | ADD Kenyon Sadiq, DROP Pat Freiermuth |
 | 2026-09-16T19:14 | Jason X | FREEAGENT | ADD Pat Freiermuth, DROP Kenyon Sadiq |
 | 2026-09-16T19:05 | The Bye Week Boys | FREEAGENT | ADD Demond Claiborne, DROP Antonio Williams |
 | 2026-09-16T14:33 | The Bye Week Boys | FREEAGENT | ADD Antonio Williams, DROP Ja'Kobi Lane |
@@ -100,10 +109,9 @@ Most recent ownership changes:
 | 2026-09-16T11:56 | Jason X | FREEAGENT | ADD Kenyon Sadiq, DROP Tre Tucker |
 | 2026-09-16T07:13 | Norberto's Gnarly Team | WAIVER | ADD 49ers D/ST, DROP Chargers D/ST |
 | 2026-09-16T07:13 | Connor’s Team | WAIVER | ADD Cairo Santos, DROP Chase McLaughlin |
-| 2026-09-16T07:13 | Connor’s Team | WAIVER | ADD Devaughn Vele |
 | 2026-09-16T07:13 | Jason X | WAIVER | ADD Chiefs D/ST, DROP Jaguars D/ST |
+| 2026-09-16T07:13 | Connor’s Team | WAIVER | ADD Devaughn Vele |
 | 2026-09-16T07:13 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD C.J. Stroud, DROP Sam Darnold |
-| 2026-09-16T02:41 | Jason X | ROSTER | DROP Greg Dulcich |
 
 ## League format
 
