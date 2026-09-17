@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-17T00:49:57.630275+00:00` |
+| Fetched at (UTC) | `2026-09-17T06:32:51.785431+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.32s |
+| Fetch duration | 1.51s |
 | ESPN calls | 4 |
-| Workflow run | `35168130437` |
+| Workflow run | `35190296236` |
 
 ## Freshness and completeness gates
 
@@ -61,7 +61,7 @@
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Nico Collins | WR | QUESTIONABLE | WR | yes |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
-| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
@@ -94,12 +94,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-27 total | 13 executed ownership changes | 11 lineup-only moves | 0 draft picks | 0 pending
+29 total | 14 executed ownership changes | 12 lineup-only moves | 0 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-17T00:53 | Super Lamario Brothers | FREEAGENT | ADD Tyler Bass, DROP Jake Bates |
 | 2026-09-16T20:27 | Jason X | FREEAGENT | ADD Kenyon Sadiq, DROP Pat Freiermuth |
 | 2026-09-16T19:14 | Jason X | FREEAGENT | ADD Pat Freiermuth, DROP Kenyon Sadiq |
 | 2026-09-16T19:05 | The Bye Week Boys | FREEAGENT | ADD Demond Claiborne, DROP Antonio Williams |
@@ -111,7 +112,6 @@ Most recent ownership changes:
 | 2026-09-16T07:13 | Connor’s Team | WAIVER | ADD Cairo Santos, DROP Chase McLaughlin |
 | 2026-09-16T07:13 | Jason X | WAIVER | ADD Chiefs D/ST, DROP Jaguars D/ST |
 | 2026-09-16T07:13 | Connor’s Team | WAIVER | ADD Devaughn Vele |
-| 2026-09-16T07:13 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD C.J. Stroud, DROP Sam Darnold |
 
 ## League format
 
