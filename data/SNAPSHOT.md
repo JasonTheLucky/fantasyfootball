@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-18T00:49:21.274722+00:00` |
+| Fetched at (UTC) | `2026-09-18T06:31:16.401283+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1042 |
-| Fetch duration | 0.97s |
+| Fetch duration | 1.07s |
 | ESPN calls | 4 |
-| Workflow run | `35292774751` |
+| Workflow run | `35315226138` |
 
 ## Freshness and completeness gates
 
@@ -31,10 +31,10 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Jason X | 0.0 | Kelli's Top-Notch Team | 2.8 | NO |
+| Jason X | 0.0 | Kelli's Top-Notch Team | 28.2 | NO |
 | The Bye Week Boys | -0.1 | Norberto's Gnarly Team | 0.0 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 0.0 | Giant Packer Fan | 20.38 | NO |
-| Connor’s Team | 3.5 | Super Lamario Brothers | 2.0 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 0.0 | Giant Packer Fan | 64.12 | NO |
+| Connor’s Team | 59.7 | Super Lamario Brothers | 5.0 | NO |
 | Commanders of Chaos | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
 | From Puka with Love | 0.0 | Auto Draft Champion | 0.0 | NO |
 
@@ -59,8 +59,9 @@
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Nico Collins | WR | QUESTIONABLE | WR | yes |
-| Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
+| Jason X | Nico Collins | WR | QUESTIONABLE | BENCH | NO |
+| Jason X | Brock Bowers | TE | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Chris Olave | WR | QUESTIONABLE | WR | yes |
@@ -80,10 +81,9 @@
 | Connor’s Team | Alec Pierce | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | QUESTIONABLE | BENCH | NO |
-| Kelli's Top-Notch Team | Eddy Pineiro | K | QUESTIONABLE | K | yes |
 | Kelli's Top-Notch Team | Brian Thomas Jr. | WR | QUESTIONABLE | BENCH | NO |
+| Kelli's Top-Notch Team | Eddy Pineiro | K | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Juwan Johnson | TE | QUESTIONABLE | BENCH | NO |
-| Kelli's Top-Notch Team | Samaje Perine | RB | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | FLEX | yes |
 | Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
@@ -92,18 +92,19 @@
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 46 | 109 | 184 | 182 | 307 | 848 |
+| 20 | 45 | 109 | 185 | 182 | 307 | 848 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-34 total | 15 executed ownership changes | 16 lineup-only moves | 0 draft picks | 0 pending
+38 total | 16 executed ownership changes | 19 lineup-only moves | 0 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-18T01:58 | Kelli's Top-Notch Team | FREEAGENT | ADD Harrison Mevis, DROP Samaje Perine |
 | 2026-09-18T00:16 | Jason X | FREEAGENT | ADD Kayshon Boutte, DROP Jonah Coleman |
 | 2026-09-17T00:53 | Super Lamario Brothers | FREEAGENT | ADD Tyler Bass, DROP Jake Bates |
 | 2026-09-16T20:27 | Jason X | FREEAGENT | ADD Kenyon Sadiq, DROP Pat Freiermuth |
@@ -115,7 +116,6 @@ Most recent ownership changes:
 | 2026-09-16T11:56 | Jason X | FREEAGENT | ADD Kenyon Sadiq, DROP Tre Tucker |
 | 2026-09-16T07:13 | Norberto's Gnarly Team | WAIVER | ADD 49ers D/ST, DROP Chargers D/ST |
 | 2026-09-16T07:13 | Connor’s Team | WAIVER | ADD Cairo Santos, DROP Chase McLaughlin |
-| 2026-09-16T07:13 | Jason X | WAIVER | ADD Chiefs D/ST, DROP Jaguars D/ST |
 
 ## League format
 
