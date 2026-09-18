@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-18T18:21:13.286207+00:00` |
+| Fetched at (UTC) | `2026-09-18T21:37:23.832471+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.36s |
+| Fetch duration | 1.14s |
 | ESPN calls | 4 |
-| Workflow run | `35379665472` |
+| Workflow run | `35397684670` |
 
 ## Freshness and completeness gates
 
@@ -42,7 +42,7 @@
 
 | # | Team | Owner | Roster | Start | Bench | IR | Bench open |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Jason X | Jason Prinsen | 16 | 9 | 7 | 0 | 0 |
+| 1 | Jason X | Jason Prinsen | 16 | 9 | 6 | 1 | 1 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
@@ -55,16 +55,16 @@
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 16 | 9 | 7 | 0 | 0 |
 | 12 | Commanders of Chaos | Morgan Nadke | 16 | 9 | 7 | 0 | 0 |
 
-## Injury designations (27)
+## Injury designations (22)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Nico Collins | WR | QUESTIONABLE | BENCH | NO |
-| Jason X | Brock Bowers | TE | QUESTIONABLE | BENCH | NO |
+| Jason X | Brock Bowers | TE | DOUBTFUL | BENCH | NO |
+| Jason X | Nico Collins | WR | OUT | IR | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Chris Olave | WR | QUESTIONABLE | WR | yes |
-| Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
+| Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | George Kittle | TE | QUESTIONABLE | BENCH | NO |
@@ -74,18 +74,13 @@
 | Norberto's Gnarly Team | Jordan Mason | RB | INJURY_RESERVE | BENCH | NO |
 | Norberto's Gnarly Team | Kaelon Black | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
-| From Puka with Love | D'Andre Swift | RB | QUESTIONABLE | RB | yes |
 | From Puka with Love | Michael Pittman Jr. | WR | QUESTIONABLE | FLEX | yes |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | Alec Pierce | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | QUESTIONABLE | BENCH | NO |
-| Kelli's Top-Notch Team | Brian Thomas Jr. | WR | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Eddy Pineiro | K | QUESTIONABLE | BENCH | NO |
-| Kelli's Top-Notch Team | Juwan Johnson | TE | QUESTIONABLE | BENCH | NO |
-| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | FLEX | yes |
-| Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
-| Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Zay Flowers | WR | DOUBTFUL | FLEX | yes |
 
 ## Available player pool by position
 
@@ -97,7 +92,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-41 total | 16 executed ownership changes | 22 lineup-only moves | 0 draft picks | 0 pending
+42 total | 16 executed ownership changes | 23 lineup-only moves | 0 draft picks | 0 pending
 
 Most recent ownership changes:
 
