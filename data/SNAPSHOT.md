@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-18T12:26:33.920159+00:00` |
+| Fetched at (UTC) | `2026-09-18T18:21:13.286207+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.09s |
+| Fetch duration | 1.36s |
 | ESPN calls | 4 |
-| Workflow run | `35344663342` |
+| Workflow run | `35379665472` |
 
 ## Freshness and completeness gates
 
@@ -55,14 +55,13 @@
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 16 | 9 | 7 | 0 | 0 |
 | 12 | Commanders of Chaos | Morgan Nadke | 16 | 9 | 7 | 0 | 0 |
 
-## Injury designations (28)
+## Injury designations (27)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Nico Collins | WR | QUESTIONABLE | BENCH | NO |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
-| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Chris Olave | WR | QUESTIONABLE | WR | yes |
 | Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
@@ -98,7 +97,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-38 total | 16 executed ownership changes | 19 lineup-only moves | 0 draft picks | 0 pending
+41 total | 16 executed ownership changes | 22 lineup-only moves | 0 draft picks | 0 pending
 
 Most recent ownership changes:
 
