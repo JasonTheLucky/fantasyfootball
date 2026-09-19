@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-18T21:37:23.832471+00:00` |
+| Fetched at (UTC) | `2026-09-19T00:48:06.506374+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 194 |
-| Available players (FA + waivers) | 848 |
+| Rostered players | 195 |
+| Available players (FA + waivers) | 847 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.14s |
+| Fetch duration | 1.26s |
 | ESPN calls | 4 |
-| Workflow run | `35397684670` |
+| Workflow run | `35410568042` |
 
 ## Freshness and completeness gates
 
@@ -42,7 +42,7 @@
 
 | # | Team | Owner | Roster | Start | Bench | IR | Bench open |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Jason X | Jason Prinsen | 16 | 9 | 6 | 1 | 1 |
+| 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
@@ -67,12 +67,12 @@
 | Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Super Lamario Brothers | George Kittle | TE | QUESTIONABLE | BENCH | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Norberto's Gnarly Team | Joe Burrow | QB | QUESTIONABLE | QB | yes |
 | Norberto's Gnarly Team | De'Zhaun Stribling | WR | OUT | BENCH | NO |
 | Norberto's Gnarly Team | Jordan Mason | RB | INJURY_RESERVE | BENCH | NO |
 | Norberto's Gnarly Team | Kaelon Black | RB | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Puka Nacua | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Michael Pittman Jr. | WR | QUESTIONABLE | FLEX | yes |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
@@ -86,18 +86,21 @@
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 45 | 109 | 185 | 182 | 307 | 848 |
+| 20 | 45 | 109 | 185 | 182 | 306 | 847 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-42 total | 16 executed ownership changes | 23 lineup-only moves | 0 draft picks | 0 pending
+47 total | 19 executed ownership changes | 25 lineup-only moves | 0 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-19T00:22 | Super Lamario Brothers | FREEAGENT | ADD Rashod Bateman, DROP Kalif Raymond |
+| 2026-09-18T23:23 | The Bye Week Boys | FREEAGENT | ADD Dalton Schultz, DROP Brenton Strange |
+| 2026-09-18T21:51 | Jason X | FREEAGENT | ADD Jaylin Noel |
 | 2026-09-18T01:58 | Kelli's Top-Notch Team | FREEAGENT | ADD Harrison Mevis, DROP Samaje Perine |
 | 2026-09-18T00:16 | Jason X | FREEAGENT | ADD Kayshon Boutte, DROP Jonah Coleman |
 | 2026-09-17T00:53 | Super Lamario Brothers | FREEAGENT | ADD Tyler Bass, DROP Jake Bates |
@@ -107,9 +110,6 @@ Most recent ownership changes:
 | 2026-09-16T14:33 | The Bye Week Boys | FREEAGENT | ADD Antonio Williams, DROP Ja'Kobi Lane |
 | 2026-09-16T12:47 | Super Lamario Brothers | FREEAGENT | ADD Buccaneers D/ST, DROP Lions D/ST |
 | 2026-09-16T12:46 | Super Lamario Brothers | FREEAGENT | ADD Kalif Raymond, DROP Rashid Shaheed |
-| 2026-09-16T11:56 | Jason X | FREEAGENT | ADD Kenyon Sadiq, DROP Tre Tucker |
-| 2026-09-16T07:13 | Norberto's Gnarly Team | WAIVER | ADD 49ers D/ST, DROP Chargers D/ST |
-| 2026-09-16T07:13 | Connor’s Team | WAIVER | ADD Cairo Santos, DROP Chase McLaughlin |
 
 ## League format
 
