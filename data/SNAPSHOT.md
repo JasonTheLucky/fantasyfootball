@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-19T12:24:25.029384+00:00` |
+| Fetched at (UTC) | `2026-09-19T18:19:13.210408+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 195 |
 | Available players (FA + waivers) | 847 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.08s |
+| Fetch duration | 1.38s |
 | ESPN calls | 4 |
-| Workflow run | `35442756629` |
+| Workflow run | `35460803106` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 | Norberto's Gnarly Team | Kaelon Black | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Puka Nacua | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
-| From Puka with Love | Michael Pittman Jr. | WR | QUESTIONABLE | FLEX | yes |
+| From Puka with Love | Michael Pittman Jr. | WR | OUT | FLEX | yes |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | QUESTIONABLE | BENCH | NO |

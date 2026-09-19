@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-09-19T12:24:25.029384+00:00",
-  "fetched_at_epoch": 1789820665,
-  "started_at": "2026-09-19T12:24:23.951428+00:00",
-  "duration_seconds": 1.08,
+  "fetched_at": "2026-09-19T18:19:13.210408+00:00",
+  "fetched_at_epoch": 1789841953,
+  "started_at": "2026-09-19T18:19:11.832560+00:00",
+  "duration_seconds": 1.38,
   "league_id": "1787259003",
   "league_name": "Home Heroes",
   "season": 2026,
@@ -37,43 +37,43 @@
   "espn_calls": [
     {
       "label": "league_core",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?view=mSettings&view=mTeam&view=mRoster&view=mStandings&cb=17898206639705856",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?view=mSettings&view=mTeam&view=mRoster&view=mStandings&cb=17898419518501001",
       "status": 200,
       "attempts": 1,
-      "bytes": 2360517,
-      "ms": 237
+      "bytes": 2360160,
+      "ms": 388
     },
     {
       "label": "transactions",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?view=mTransactions2&cb=17898206644649938",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?view=mTransactions2&cb=17898419524762396",
       "status": 200,
       "attempts": 1,
       "bytes": 29831,
-      "ms": 86
+      "ms": 101
     },
     {
       "label": "player_pool@0",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=2&view=kona_player_info&cb=17898206645556545",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=2&view=kona_player_info&cb=17898419525821890",
       "status": 200,
       "attempts": 1,
-      "bytes": 2793700,
-      "ms": 203
+      "bytes": 2793407,
+      "ms": 221
     },
     {
       "label": "matchups",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=2&view=mMatchupScore&view=mBoxscore&cb=17898206647969164",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=2&view=mMatchupScore&view=mBoxscore&cb=17898419528375352",
       "status": 200,
       "attempts": 1,
-      "bytes": 475368,
-      "ms": 122
+      "bytes": 475211,
+      "ms": 283
     }
   ],
   "github": {
-    "run_id": "35442756629",
-    "run_number": "28",
+    "run_id": "35460803106",
+    "run_number": "29",
     "run_attempt": "1",
     "workflow": "ESPN Fantasy Snapshot",
-    "sha": "12591bf501038400f27d31e82d14042d447f1917",
+    "sha": "c974868959100bcffeb2318e11a8498c29bc4a25",
     "ref": "refs/heads/main",
     "actor": "JasonTheLucky",
     "event_name": "schedule",
