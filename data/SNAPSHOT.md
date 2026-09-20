@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-19T18:19:13.210408+00:00` |
+| Fetched at (UTC) | `2026-09-20T00:55:17.205555+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 195 |
 | Available players (FA + waivers) | 847 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.38s |
+| Fetch duration | 1.06s |
 | ESPN calls | 4 |
-| Workflow run | `35460803106` |
+| Workflow run | `35480021221` |
 
 ## Freshness and completeness gates
 
@@ -69,7 +69,7 @@
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Norberto's Gnarly Team | Joe Burrow | QB | QUESTIONABLE | QB | yes |
-| Norberto's Gnarly Team | De'Zhaun Stribling | WR | OUT | BENCH | NO |
+| Norberto's Gnarly Team | De'Zhaun Stribling | WR | INJURY_RESERVE | BENCH | NO |
 | Norberto's Gnarly Team | Jordan Mason | RB | INJURY_RESERVE | BENCH | NO |
 | Norberto's Gnarly Team | Kaelon Black | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Puka Nacua | WR | QUESTIONABLE | WR | yes |
@@ -80,7 +80,7 @@
 | Nicole's Gnarly Team | RJ Harvey | RB | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Eddy Pineiro | K | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | QUESTIONABLE | BENCH | NO |
-| Commanders of Chaos | Zay Flowers | WR | DOUBTFUL | FLEX | yes |
+| Commanders of Chaos | Zay Flowers | WR | OUT | FLEX | yes |
 
 ## Available player pool by position
 
