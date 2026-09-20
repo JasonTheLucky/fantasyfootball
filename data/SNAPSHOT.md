@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-20T06:28:38.804769+00:00` |
+| Fetched at (UTC) | `2026-09-20T12:24:37.843569+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 195 |
 | Available players (FA + waivers) | 847 |
 | Players in lookup index | 1042 |
-| Fetch duration | 1.34s |
+| Fetch duration | 1.31s |
 | ESPN calls | 4 |
-| Workflow run | `35494319383` |
+| Workflow run | `35510522787` |
 
 ## Freshness and completeness gates
 
@@ -86,18 +86,20 @@
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 45 | 109 | 185 | 182 | 306 | 847 |
+| 20 | 45 | 109 | 185 | 181 | 307 | 847 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-47 total | 19 executed ownership changes | 25 lineup-only moves | 0 draft picks | 0 pending
+49 total | 21 executed ownership changes | 25 lineup-only moves | 0 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-20T11:23 | Jason X | FREEAGENT | ADD Brenton Strange, DROP Kayshon Boutte |
+| 2026-09-20T11:22 | Jason X | FREEAGENT | ADD Tre Tucker, DROP Jaylin Noel |
 | 2026-09-19T00:22 | Super Lamario Brothers | FREEAGENT | ADD Rashod Bateman, DROP Kalif Raymond |
 | 2026-09-18T23:23 | The Bye Week Boys | FREEAGENT | ADD Dalton Schultz, DROP Brenton Strange |
 | 2026-09-18T21:51 | Jason X | FREEAGENT | ADD Jaylin Noel |
@@ -108,8 +110,6 @@ Most recent ownership changes:
 | 2026-09-16T19:14 | Jason X | FREEAGENT | ADD Pat Freiermuth, DROP Kenyon Sadiq |
 | 2026-09-16T19:05 | The Bye Week Boys | FREEAGENT | ADD Demond Claiborne, DROP Antonio Williams |
 | 2026-09-16T14:33 | The Bye Week Boys | FREEAGENT | ADD Antonio Williams, DROP Ja'Kobi Lane |
-| 2026-09-16T12:47 | Super Lamario Brothers | FREEAGENT | ADD Buccaneers D/ST, DROP Lions D/ST |
-| 2026-09-16T12:46 | Super Lamario Brothers | FREEAGENT | ADD Kalif Raymond, DROP Rashid Shaheed |
 
 ## League format
 
