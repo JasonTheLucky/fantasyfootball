@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-20T18:20:07.418888+00:00` |
+| Fetched at (UTC) | `2026-09-21T00:54:09.080520+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
-| Available players (FA + waivers) | 846 |
-| Players in lookup index | 1042 |
-| Fetch duration | 1.07s |
+| Available players (FA + waivers) | 847 |
+| Players in lookup index | 1043 |
+| Fetch duration | 1.11s |
 | ESPN calls | 4 |
-| Workflow run | `35528711241` |
+| Workflow run | `35549137505` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Jason X | 6.8 | Kelli's Top-Notch Team | 43.1 | NO |
-| The Bye Week Boys | 38.5 | Norberto's Gnarly Team | 35.76 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 21.6 | Giant Packer Fan | 73.12 | NO |
-| Connor’s Team | 81.26 | Super Lamario Brothers | 69.14 | NO |
-| Commanders of Chaos | 17.7 | Nicole's Gnarly Team | 21.62 | NO |
-| From Puka with Love | 17.3 | Auto Draft Champion | 26.04 | NO |
+| Jason X | 101.0 | Kelli's Top-Notch Team | 85.68 | NO |
+| The Bye Week Boys | 112.46 | Norberto's Gnarly Team | 95.68 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 56.88 | Giant Packer Fan | 117.12 | NO |
+| Connor’s Team | 108.12 | Super Lamario Brothers | 116.6 | NO |
+| Commanders of Chaos | 83.04 | Nicole's Gnarly Team | 102.62 | NO |
+| From Puka with Love | 98.26 | Auto Draft Champion | 101.96 | NO |
 
 ## Rosters
 
@@ -55,15 +55,16 @@
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 16 | 9 | 7 | 0 | 0 |
 | 12 | Commanders of Chaos | Morgan Nadke | 16 | 9 | 7 | 0 | 0 |
 
-## Injury designations (23)
+## Injury designations (27)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Brock Bowers | TE | DOUBTFUL | BENCH | NO |
-| Jason X | Jayden Reed | WR | OUT | BENCH | NO |
+| Jason X | Brock Bowers | TE | OUT | BENCH | NO |
+| Jason X | Jayden Reed | WR | QUESTIONABLE | BENCH | NO |
 | Jason X | Nico Collins | WR | OUT | IR | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | Jonathon Brooks | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
@@ -71,29 +72,32 @@
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Norberto's Gnarly Team | De'Zhaun Stribling | WR | INJURY_RESERVE | BENCH | NO |
 | Norberto's Gnarly Team | Jordan Mason | RB | INJURY_RESERVE | BENCH | NO |
-| Norberto's Gnarly Team | Kaelon Black | RB | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Puka Nacua | WR | QUESTIONABLE | WR | yes |
-| From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
+| From Puka with Love | J.K. Dobbins | RB | QUESTIONABLE | FLEX | yes |
+| From Puka with Love | Caleb Douglas | WR | QUESTIONABLE | WR | yes |
+| From Puka with Love | Puka Nacua | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Michael Pittman Jr. | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
-| Nicole's Gnarly Team | RJ Harvey | RB | QUESTIONABLE | BENCH | NO |
+| Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
+| Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | QB | yes |
+| Nicole's Gnarly Team | RJ Harvey | RB | OUT | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
-| Kelli's Top-Notch Team | Eddy Pineiro | K | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Zay Flowers | WR | OUT | FLEX | yes |
+| Commanders of Chaos | Jayden Daniels | QB | DOUBTFUL | QB | yes |
+| Commanders of Chaos | Jadarian Price | RB | QUESTIONABLE | RB | yes |
 | Commanders of Chaos | Dallas Goedert | TE | QUESTIONABLE | BENCH | NO |
 
 ## Available player pool by position
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 45 | 109 | 185 | 181 | 306 | 846 |
+| 20 | 45 | 109 | 185 | 181 | 307 | 847 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-51 total | 22 executed ownership changes | 26 lineup-only moves | 0 draft picks | 0 pending
+52 total | 22 executed ownership changes | 27 lineup-only moves | 0 draft picks | 0 pending
 
 Most recent ownership changes:
 
