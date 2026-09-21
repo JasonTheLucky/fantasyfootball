@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-21T00:54:09.080520+00:00` |
+| Fetched at (UTC) | `2026-09-21T02:02:15.215426+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
-| Available players (FA + waivers) | 847 |
-| Players in lookup index | 1043 |
-| Fetch duration | 1.11s |
+| Available players (FA + waivers) | 848 |
+| Players in lookup index | 1044 |
+| Fetch duration | 1.33s |
 | ESPN calls | 4 |
-| Workflow run | `35549137505` |
+| Workflow run | `35552809314` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Jason X | 101.0 | Kelli's Top-Notch Team | 85.68 | NO |
-| The Bye Week Boys | 112.46 | Norberto's Gnarly Team | 95.68 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 56.88 | Giant Packer Fan | 117.12 | NO |
+| Jason X | 96.0 | Kelli's Top-Notch Team | 85.68 | NO |
+| The Bye Week Boys | 112.46 | Norberto's Gnarly Team | 100.98 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 68.48 | Giant Packer Fan | 127.32 | NO |
 | Connor’s Team | 108.12 | Super Lamario Brothers | 116.6 | NO |
 | Commanders of Chaos | 83.04 | Nicole's Gnarly Team | 102.62 | NO |
-| From Puka with Love | 98.26 | Auto Draft Champion | 101.96 | NO |
+| From Puka with Love | 98.26 | Auto Draft Champion | 103.76 | NO |
 
 ## Rosters
 
@@ -55,7 +55,7 @@
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 16 | 9 | 7 | 0 | 0 |
 | 12 | Commanders of Chaos | Morgan Nadke | 16 | 9 | 7 | 0 | 0 |
 
-## Injury designations (27)
+## Injury designations (28)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -77,6 +77,7 @@
 | From Puka with Love | Puka Nacua | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Michael Pittman Jr. | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
+| Connor’s Team | Alec Pierce | WR | OUT | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | QB | yes |
@@ -91,7 +92,7 @@
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 45 | 109 | 185 | 181 | 307 | 847 |
+| 20 | 45 | 109 | 185 | 181 | 308 | 848 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
