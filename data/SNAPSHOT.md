@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-21T12:26:48.898719+00:00` |
+| Fetched at (UTC) | `2026-09-21T18:21:54.684361+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.13s |
+| Fetch duration | 1.37s |
 | ESPN calls | 4 |
-| Workflow run | `35599571368` |
+| Workflow run | `35637886713` |
 
 ## Freshness and completeness gates
 
@@ -80,7 +80,7 @@
 | Connor’s Team | Alec Pierce | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
-| Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | QB | yes |
+| Nicole's Gnarly Team | Caleb Williams | QB | DOUBTFUL | QB | yes |
 | Nicole's Gnarly Team | RJ Harvey | RB | OUT | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
 | Commanders of Chaos | Zay Flowers | WR | OUT | FLEX | yes |
