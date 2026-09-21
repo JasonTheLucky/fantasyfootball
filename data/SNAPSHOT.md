@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-21T02:02:15.215426+00:00` |
+| Fetched at (UTC) | `2026-09-21T06:42:01.438278+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.33s |
+| Fetch duration | 1.31s |
 | ESPN calls | 4 |
-| Workflow run | `35552809314` |
+| Workflow run | `35569587948` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Jason X | 96.0 | Kelli's Top-Notch Team | 85.68 | NO |
-| The Bye Week Boys | 112.46 | Norberto's Gnarly Team | 100.98 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 68.48 | Giant Packer Fan | 127.32 | NO |
+| Jason X | 92.0 | Kelli's Top-Notch Team | 85.68 | NO |
+| The Bye Week Boys | 112.46 | Norberto's Gnarly Team | 119.18 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 82.78 | Giant Packer Fan | 148.22 | NO |
 | Connor’s Team | 108.12 | Super Lamario Brothers | 116.6 | NO |
-| Commanders of Chaos | 83.04 | Nicole's Gnarly Team | 102.62 | NO |
-| From Puka with Love | 98.26 | Auto Draft Champion | 103.76 | NO |
+| Commanders of Chaos | 83.04 | Nicole's Gnarly Team | 113.62 | NO |
+| From Puka with Love | 98.26 | Auto Draft Champion | 107.66 | NO |
 
 ## Rosters
 
@@ -77,7 +77,7 @@
 | From Puka with Love | Puka Nacua | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Michael Pittman Jr. | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | Alec Pierce | WR | OUT | BENCH | NO |
+| Connor’s Team | Alec Pierce | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | QB | yes |
