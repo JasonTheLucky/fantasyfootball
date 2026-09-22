@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-21T18:21:54.684361+00:00` |
+| Fetched at (UTC) | `2026-09-22T00:49:50.462846+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.37s |
+| Fetch duration | 1.84s |
 | ESPN calls | 4 |
-| Workflow run | `35637886713` |
+| Workflow run | `35673520194` |
 
 ## Freshness and completeness gates
 
@@ -31,10 +31,10 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Jason X | 92.0 | Kelli's Top-Notch Team | 85.68 | NO |
-| The Bye Week Boys | 112.46 | Norberto's Gnarly Team | 119.18 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 82.78 | Giant Packer Fan | 148.22 | NO |
-| Connor’s Team | 108.12 | Super Lamario Brothers | 116.6 | NO |
+| Jason X | 95.4 | Kelli's Top-Notch Team | 86.68 | NO |
+| The Bye Week Boys | 112.46 | Norberto's Gnarly Team | 120.58 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 94.28 | Giant Packer Fan | 148.22 | NO |
+| Connor’s Team | 121.12 | Super Lamario Brothers | 116.6 | NO |
 | Commanders of Chaos | 83.04 | Nicole's Gnarly Team | 113.62 | NO |
 | From Puka with Love | 98.26 | Auto Draft Champion | 107.66 | NO |
 
@@ -55,18 +55,18 @@
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 16 | 9 | 7 | 0 | 0 |
 | 12 | Commanders of Chaos | Morgan Nadke | 16 | 9 | 7 | 0 | 0 |
 
-## Injury designations (28)
+## Injury designations (29)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
+| Jason X | Jaxson Dart | QB | QUESTIONABLE | QB | yes |
 | Jason X | Brock Bowers | TE | OUT | BENCH | NO |
 | Jason X | Jayden Reed | WR | QUESTIONABLE | BENCH | NO |
 | Jason X | Nico Collins | WR | OUT | IR | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Jonathon Brooks | RB | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | Jonathon Brooks | RB | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
-| Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
@@ -74,19 +74,20 @@
 | Norberto's Gnarly Team | Jordan Mason | RB | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | J.K. Dobbins | RB | QUESTIONABLE | FLEX | yes |
 | From Puka with Love | Caleb Douglas | WR | QUESTIONABLE | WR | yes |
-| From Puka with Love | Puka Nacua | WR | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Puka Nacua | WR | OUT | BENCH | NO |
 | From Puka with Love | Michael Pittman Jr. | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | Alec Pierce | WR | QUESTIONABLE | BENCH | NO |
+| Connor’s Team | Alec Pierce | WR | DOUBTFUL | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Caleb Williams | QB | DOUBTFUL | QB | yes |
 | Nicole's Gnarly Team | RJ Harvey | RB | OUT | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
+| 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Zay Flowers | WR | OUT | FLEX | yes |
 | Commanders of Chaos | Jayden Daniels | QB | DOUBTFUL | QB | yes |
 | Commanders of Chaos | Jadarian Price | RB | QUESTIONABLE | RB | yes |
-| Commanders of Chaos | Dallas Goedert | TE | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Dallas Goedert | TE | DOUBTFUL | BENCH | NO |
 
 ## Available player pool by position
 
