@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-22T06:31:40.417428+00:00` |
-| Scoring period (week) | **2** |
+| Fetched at (UTC) | `2026-09-22T12:27:16.181700+00:00` |
+| Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.05s |
+| Fetch duration | 1.2s |
 | ESPN calls | 4 |
-| Workflow run | `35695221106` |
+| Workflow run | `35727253035` |
 
 ## Freshness and completeness gates
 
@@ -27,16 +27,16 @@
 | Ownership reconciled, no conflicts | yes |
 | Player lookup index complete | yes |
 
-## Week 2 matchups
+## Week 3 matchups
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Jason X | 102.3 | Kelli's Top-Notch Team | 88.68 | NO |
-| The Bye Week Boys | 112.46 | Norberto's Gnarly Team | 127.48 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 109.48 | Giant Packer Fan | 148.22 | NO |
-| Connor’s Team | 149.62 | Super Lamario Brothers | 116.6 | NO |
-| Commanders of Chaos | 83.04 | Nicole's Gnarly Team | 113.62 | NO |
-| From Puka with Love | 98.26 | Auto Draft Champion | 107.66 | NO |
+| Kelli's Top-Notch Team | 0.0 | Norberto's Gnarly Team | 0.0 | NO |
+| Giant Packer Fan | 0.0 | Jason X | 0.0 | NO |
+| Super Lamario Brothers | 0.0 | The Bye Week Boys | 0.0 | NO |
+| Nicole's Gnarly Team | 0.0 | 🔥Certified Dumpster Fire 🔥 | 0.0 | NO |
+| Auto Draft Champion | 0.0 | Connor’s Team | 0.0 | NO |
+| From Puka with Love | 0.0 | Commanders of Chaos | 0.0 | NO |
 
 ## Rosters
 
@@ -63,7 +63,7 @@
 | Jason X | Brock Bowers | TE | OUT | BENCH | NO |
 | Jason X | Jayden Reed | WR | QUESTIONABLE | BENCH | NO |
 | Jason X | Nico Collins | WR | OUT | IR | NO |
-| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
+| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jonathon Brooks | RB | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
@@ -100,24 +100,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-54 total | 22 executed ownership changes | 29 lineup-only moves | 0 draft picks | 0 pending
-
-Most recent ownership changes:
-
-| When | Team | Type | Moves |
-| --- | --- | --- | --- |
-| 2026-09-20T12:59 | From Puka with Love | FREEAGENT | ADD Darnell Mooney |
-| 2026-09-20T11:23 | Jason X | FREEAGENT | ADD Brenton Strange, DROP Kayshon Boutte |
-| 2026-09-20T11:22 | Jason X | FREEAGENT | ADD Tre Tucker, DROP Jaylin Noel |
-| 2026-09-19T00:22 | Super Lamario Brothers | FREEAGENT | ADD Rashod Bateman, DROP Kalif Raymond |
-| 2026-09-18T23:23 | The Bye Week Boys | FREEAGENT | ADD Dalton Schultz, DROP Brenton Strange |
-| 2026-09-18T21:51 | Jason X | FREEAGENT | ADD Jaylin Noel |
-| 2026-09-18T01:58 | Kelli's Top-Notch Team | FREEAGENT | ADD Harrison Mevis, DROP Samaje Perine |
-| 2026-09-18T00:16 | Jason X | FREEAGENT | ADD Kayshon Boutte, DROP Jonah Coleman |
-| 2026-09-17T00:53 | Super Lamario Brothers | FREEAGENT | ADD Tyler Bass, DROP Jake Bates |
-| 2026-09-16T20:27 | Jason X | FREEAGENT | ADD Kenyon Sadiq, DROP Pat Freiermuth |
-| 2026-09-16T19:14 | Jason X | FREEAGENT | ADD Pat Freiermuth, DROP Kenyon Sadiq |
-| 2026-09-16T19:05 | The Bye Week Boys | FREEAGENT | ADD Demond Claiborne, DROP Antonio Williams |
+0 total | 0 executed ownership changes | 0 lineup-only moves | 0 draft picks | 0 pending
 
 ## League format
 
