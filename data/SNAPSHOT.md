@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-22T00:49:50.462846+00:00` |
+| Fetched at (UTC) | `2026-09-22T06:31:40.417428+00:00` |
 | Scoring period (week) | **2** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.84s |
+| Fetch duration | 1.05s |
 | ESPN calls | 4 |
-| Workflow run | `35673520194` |
+| Workflow run | `35695221106` |
 
 ## Freshness and completeness gates
 
@@ -31,10 +31,10 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Jason X | 95.4 | Kelli's Top-Notch Team | 86.68 | NO |
-| The Bye Week Boys | 112.46 | Norberto's Gnarly Team | 120.58 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 94.28 | Giant Packer Fan | 148.22 | NO |
-| Connor’s Team | 121.12 | Super Lamario Brothers | 116.6 | NO |
+| Jason X | 102.3 | Kelli's Top-Notch Team | 88.68 | NO |
+| The Bye Week Boys | 112.46 | Norberto's Gnarly Team | 127.48 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 109.48 | Giant Packer Fan | 148.22 | NO |
+| Connor’s Team | 149.62 | Super Lamario Brothers | 116.6 | NO |
 | Commanders of Chaos | 83.04 | Nicole's Gnarly Team | 113.62 | NO |
 | From Puka with Love | 98.26 | Auto Draft Champion | 107.66 | NO |
 
@@ -55,7 +55,7 @@
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 16 | 9 | 7 | 0 | 0 |
 | 12 | Commanders of Chaos | Morgan Nadke | 16 | 9 | 7 | 0 | 0 |
 
-## Injury designations (29)
+## Injury designations (30)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -87,6 +87,7 @@
 | Commanders of Chaos | Zay Flowers | WR | OUT | FLEX | yes |
 | Commanders of Chaos | Jayden Daniels | QB | DOUBTFUL | QB | yes |
 | Commanders of Chaos | Jadarian Price | RB | QUESTIONABLE | RB | yes |
+| Commanders of Chaos | Malik Nabers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Dallas Goedert | TE | DOUBTFUL | BENCH | NO |
 
 ## Available player pool by position
@@ -99,7 +100,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-53 total | 22 executed ownership changes | 28 lineup-only moves | 0 draft picks | 0 pending
+54 total | 22 executed ownership changes | 29 lineup-only moves | 0 draft picks | 0 pending
 
 Most recent ownership changes:
 

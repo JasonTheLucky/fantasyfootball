@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 53,
+    "total": 54,
     "ownership_changes": 25,
     "executed_ownership_changes": 22,
-    "lineup_only_moves": 28,
+    "lineup_only_moves": 29,
     "draft_picks": 0,
     "pending": 0
   },
@@ -843,6 +843,46 @@
   ],
   "pending_transactions": [],
   "lineup_only_moves": [
+    {
+      "id": "ecf2a223-83d2-41c6-a803-ae103d850fe2",
+      "type": "FUTURE_ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 11,
+      "team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-22T02:34:24.634000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4432577,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "QB",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4038941,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "QB",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "3a50bfc1-2474-4f3c-9016-4acc1e9a1507",
       "type": "FUTURE_ROSTER",
@@ -2910,5 +2950,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 2,
-  "fetched_at": "2026-09-22T00:49:48.622690+00:00"
+  "fetched_at": "2026-09-22T06:31:39.371432+00:00"
 }
