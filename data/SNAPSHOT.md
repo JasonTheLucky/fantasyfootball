@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-22T12:27:16.181700+00:00` |
+| Fetched at (UTC) | `2026-09-22T18:24:05.437675+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.2s |
+| Fetch duration | 1.62s |
 | ESPN calls | 4 |
-| Workflow run | `35727253035` |
+| Workflow run | `35766883936` |
 
 ## Freshness and completeness gates
 
@@ -59,7 +59,7 @@
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Jaxson Dart | QB | QUESTIONABLE | QB | yes |
+| Jason X | Jaxson Dart | QB | DOUBTFUL | QB | yes |
 | Jason X | Brock Bowers | TE | OUT | BENCH | NO |
 | Jason X | Jayden Reed | WR | QUESTIONABLE | BENCH | NO |
 | Jason X | Nico Collins | WR | OUT | IR | NO |
@@ -72,10 +72,10 @@
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Norberto's Gnarly Team | De'Zhaun Stribling | WR | INJURY_RESERVE | BENCH | NO |
 | Norberto's Gnarly Team | Jordan Mason | RB | INJURY_RESERVE | BENCH | NO |
-| From Puka with Love | J.K. Dobbins | RB | QUESTIONABLE | FLEX | yes |
-| From Puka with Love | Caleb Douglas | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Puka Nacua | WR | OUT | BENCH | NO |
 | From Puka with Love | Michael Pittman Jr. | WR | OUT | BENCH | NO |
+| From Puka with Love | J.K. Dobbins | RB | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Caleb Douglas | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Alec Pierce | WR | DOUBTFUL | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
@@ -100,7 +100,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-0 total | 0 executed ownership changes | 0 lineup-only moves | 0 draft picks | 0 pending
+2 total | 0 executed ownership changes | 2 lineup-only moves | 0 draft picks | 0 pending
 
 ## League format
 
