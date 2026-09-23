@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 300,
+    "total": 301,
     "ownership_changes": 38,
     "executed_ownership_changes": 35,
-    "lineup_only_moves": 70,
+    "lineup_only_moves": 71,
     "draft_picks": 192,
     "pending": 0,
     "failed": 2,
@@ -1474,6 +1474,34 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "a86e79a8-b4d4-4828-9cbd-3626f2872f20",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 5,
+      "team": "Norberto's Gnarly Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-23T02:34:12.572000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4360569,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "IR",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "6a90d023-43d9-44bb-9ab0-774cf11eb2e4",
       "type": "ROSTER",
@@ -11080,13 +11108,13 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 6,
+    "0": 7,
     "1": 238,
     "2": 56,
-    "3": 6
+    "3": 7
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 3,
-  "fetched_at": "2026-09-23T02:09:35.073590+00:00"
+  "fetched_at": "2026-09-23T06:32:56.461371+00:00"
 }

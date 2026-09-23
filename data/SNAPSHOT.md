@@ -4,7 +4,7 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-23T02:09:36.893954+00:00` |
+| Fetched at (UTC) | `2026-09-23T06:32:58.285187+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
@@ -13,7 +13,7 @@
 | Players in lookup index | 1044 |
 | Fetch duration | 1.82s |
 | ESPN calls | 7 |
-| Workflow run | `35809226268` |
+| Workflow run | `35827258804` |
 
 ## Freshness and completeness gates
 
@@ -46,7 +46,7 @@
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
-| 5 | Norberto's Gnarly Team | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
+| 5 | Norberto's Gnarly Team | Norberto Vargas | 16 | 9 | 6 | 1 | 1 |
 | 6 | From Puka with Love | Brandon Daab | 17 | 9 | 7 | 1 | 0 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
@@ -89,7 +89,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Norberto's Gnarly Team | De'Zhaun Stribling | WR | INJURY_RESERVE | BENCH | NO |
-| Norberto's Gnarly Team | Jordan Mason | RB | INJURY_RESERVE | BENCH | NO |
+| Norberto's Gnarly Team | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Puka Nacua | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Michael Pittman Jr. | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | J.K. Dobbins | RB | QUESTIONABLE | BENCH | NO |
@@ -117,7 +117,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-300 total | 35 executed ownership changes | 70 lineup-only moves | 192 draft picks | 0 pending
+301 total | 35 executed ownership changes | 71 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
