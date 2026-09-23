@@ -364,12 +364,49 @@ def _ms_to_iso(ms: Any) -> str | None:
     return datetime.fromtimestamp(ms / 1000, tz=timezone.utc).isoformat()
 
 
+def _dollars(value: Any) -> Any:
+    """Keep whole dollar amounts as ints so they render as $200, not $200.0."""
+    if isinstance(value, (int, float)):
+        rounded = round(float(value), 2)
+        return int(rounded) if rounded.is_integer() else rounded
+    return value
+
+
+def _faab_block(budget: int | None, transaction_counter: dict) -> dict | None:
+    """Per-team FAAB position, or None when the league does not use a budget."""
+    if budget is None:
+        return None
+    spent = transaction_counter.get("acquisitionBudgetSpent") or 0
+    return {
+        "budget": _dollars(budget),
+        "spent": _dollars(spent),
+        "remaining": _dollars(budget - spent),
+        "percent_remaining": _round(100.0 * (budget - spent) / budget, 1) if budget else None,
+    }
+
+
+def faab_budget(acquisition_settings: dict | None) -> int | None:
+    """The per-team FAAB budget, or None when the league does not use one.
+
+    ESPN exposes this as ``acquisitionBudget`` but it is only meaningful when
+    ``isUsingAcquisitionBudget`` is set; leagues on pure waiver priority still
+    report a budget value that means nothing.
+    """
+    settings = acquisition_settings or {}
+    if not settings.get("isUsingAcquisitionBudget"):
+        return None
+    budget = settings.get("acquisitionBudget")
+    return budget if isinstance(budget, (int, float)) else None
+
+
 def build_rosters(
     teams: list[dict],
     members_by_id: dict[str, dict],
     lineup_slot_counts: dict[str, int],
+    acquisition_settings: dict | None = None,
 ) -> list[dict]:
     """Normalize every team's roster into starters / bench / IR buckets."""
+    budget = faab_budget(acquisition_settings)
     starting_slot_counts = {
         int(slot): count
         for slot, count in (lineup_slot_counts or {}).items()
@@ -446,6 +483,7 @@ def build_rosters(
                 "acquisition_budget_spent": transaction_counter.get("acquisitionBudgetSpent"),
                 "trades_used": transaction_counter.get("trades"),
                 "drops_used": transaction_counter.get("drops"),
+                "faab": _faab_block(budget, transaction_counter),
                 "counts": {
                     "total": len(entries),
                     "starters": len(starters),
@@ -530,6 +568,34 @@ def normalize_transactions(raw_transactions: list[dict], teams_by_id: dict[int, 
         t for t in (ownership_changes + lineup_moves) if t.get("is_pending")
     ]
 
+    # ESPN keeps losing and invalid waiver claims in the log with a FAILED_*
+    # status. These must never be read as acquisitions or as FAAB spend.
+    failed = [
+        t
+        for t in (ownership_changes + lineup_moves)
+        if (t.get("status") or "").startswith("FAILED")
+    ]
+
+    waiver_bids = [
+        {
+            "team_id": t.get("team_id"),
+            "team": t.get("team"),
+            "bid_amount": t.get("bid_amount"),
+            "status": t.get("status"),
+            "succeeded": t.get("status") == "EXECUTED",
+            "scoring_period_id": t.get("scoring_period_id"),
+            "date": t.get("processed_date") or t.get("proposed_date"),
+            "players_added": [
+                i.get("player_id")
+                for i in t.get("items") or []
+                if i.get("item_type") == "ADD"
+            ],
+        }
+        for t in ownership_changes
+        if t.get("type") == "WAIVER" and (t.get("bid_amount") or 0)
+    ]
+    waiver_bids.sort(key=lambda b: (b.get("date") or ""), reverse=True)
+
     return {
         "counts": {
             "total": len(raw_transactions),
@@ -538,9 +604,14 @@ def normalize_transactions(raw_transactions: list[dict], teams_by_id: dict[int, 
             "lineup_only_moves": len(lineup_moves),
             "draft_picks": len(draft_picks),
             "pending": len(pending),
+            "failed": len(failed),
+            "waiver_bids": len(waiver_bids),
+            "waiver_bids_won": sum(1 for b in waiver_bids if b["succeeded"]),
         },
+        "waiver_bids": waiver_bids,
         "executed_ownership_changes": executed_ownership,
         "pending_transactions": pending,
+        "failed_transactions": failed,
         "lineup_only_moves": lineup_moves,
         "all_ownership_changes": ownership_changes,
         "draft_picks": draft_picks,
@@ -614,6 +685,8 @@ def build_ownership(
                 "bench_open": team["capacity"]["bench_open"],
                 "ir_open": team["capacity"]["ir_open"],
                 "roster_size": team["counts"]["total"],
+                "faab": team.get("faab"),
+                "waiver_rank": team.get("waiver_rank"),
                 "injury_designations": [
                     {
                         "player_id": p["player_id"],
@@ -739,6 +812,46 @@ def build_player_index(rosters: list[dict], available_players: list[dict]) -> di
 # --------------------------------------------------------------------------
 # Fetch steps
 # --------------------------------------------------------------------------
+
+
+def fetch_transactions(
+    client: EspnClient, current_period: int
+) -> tuple[list[dict], dict[str, int]]:
+    """Collect the full transaction history by walking every scoring period.
+
+    ``mTransactions2`` is scoped to a scoring period, and calling it without a
+    ``scoringPeriodId`` returns only the *current* period. That is a quiet trap:
+    in week 1 the call happened to include the draft and every early move, so it
+    looked like a complete history, then the same call in week 2 returned four
+    lineup tweaks. Walking the periods and merging by transaction id restores the
+    whole log, including every waiver bid.
+
+    Periods overlap in what they return, so dedupe by id is required.
+    """
+    merged: dict[str, dict] = {}
+    per_period: dict[str, int] = {}
+
+    # Period 0 mirrors the current period; 1..current covers everything so far.
+    for period in [0] + list(range(1, max(current_period, 1) + 1)):
+        try:
+            payload = client.get(
+                views="mTransactions2",
+                params={"scoringPeriodId": period},
+                label=f"transactions@{period}",
+            )
+        except FetchError as exc:
+            print(f"  WARNING: transactions period {period}: {exc}", file=sys.stderr)
+            continue
+        rows = payload.get("transactions") or []
+        per_period[str(period)] = len(rows)
+        for row in rows:
+            key = row.get("id") or (
+                f"{row.get('type')}:{row.get('teamId')}:{row.get('proposedDate')}"
+                f":{row.get('scoringPeriodId')}"
+            )
+            merged[key] = row
+
+    return list(merged.values()), per_period
 
 
 def fetch_player_pool(
@@ -972,6 +1085,38 @@ def main(argv: list[str] | None = None) -> int:
                 "position_limits": roster_settings.get("positionLimits"),
                 "roster_locktype": roster_settings.get("rosterLocktimeType"),
             },
+            "faab": {
+                "enabled": bool(
+                    (settings.get("acquisitionSettings") or {}).get(
+                        "isUsingAcquisitionBudget"
+                    )
+                ),
+                "budget_per_team": faab_budget(settings.get("acquisitionSettings")),
+                "minimum_bid": (settings.get("acquisitionSettings") or {}).get(
+                    "minimumBid"
+                ),
+                "acquisition_type": (settings.get("acquisitionSettings") or {}).get(
+                    "acquisitionType"
+                ),
+                "waiver_process_days": (settings.get("acquisitionSettings") or {}).get(
+                    "waiverProcessDays"
+                ),
+                "waiver_process_hour": (settings.get("acquisitionSettings") or {}).get(
+                    "waiverProcessHour"
+                ),
+                "note": (
+                    "Remaining budget per team is in rosters.json under each team's "
+                    "faab block, and in ownership.json under team_needs. Those "
+                    "figures come from ESPN's own per-team ledger "
+                    "(transactionCounter.acquisitionBudgetSpent), which is what the "
+                    "ESPN UI displays and is the authoritative number to quote. "
+                    "transactions.json also lists every waiver bid under "
+                    "waiver_bids with a succeeded flag; do not sum those to derive "
+                    "remaining budget. Failed claims (status FAILED_*) are real bids "
+                    "that were never charged, and ESPN's ledger can legitimately "
+                    "disagree with a naive sum of winning bids."
+                ),
+            },
             "acquisition_settings": settings.get("acquisitionSettings"),
             "schedule_settings": settings.get("scheduleSettings"),
             "trade_settings": settings.get("tradeSettings"),
@@ -998,7 +1143,9 @@ def main(argv: list[str] | None = None) -> int:
 
     # ---- 2. Rosters -------------------------------------------------------
     print("\n[2/7] rosters for every team")
-    rosters = build_rosters(teams, members_by_id, lineup_slot_counts)
+    rosters = build_rosters(
+        teams, members_by_id, lineup_slot_counts, settings.get("acquisitionSettings")
+    )
     teams_with_players = sum(1 for r in rosters if r["counts"]["total"] > 0)
     rosters_complete = (
         len(rosters) == expected_team_count and teams_with_players == expected_team_count
@@ -1034,18 +1181,22 @@ def main(argv: list[str] | None = None) -> int:
     teams_by_id = {r["team_id"]: r["team_name"] for r in rosters}
     transactions_payload: dict[str, Any]
     try:
-        # NOTE: mTransactions2 returns 400 if an X-Fantasy-Filter is supplied,
-        # so this request intentionally sends none.
-        tx_raw = client.get(views="mTransactions2", label="transactions")
-        write_raw("transactions_raw.json", tx_raw)
-        raw_transactions = tx_raw.get("transactions") or []
+        # NOTE: mTransactions2 returns 400 if an X-Fantasy-Filter is supplied, so
+        # these requests intentionally send none. It is also period-scoped, hence
+        # the walk across scoring periods.
+        raw_transactions, per_period = fetch_transactions(client, scoring_period_id)
+        write_raw("transactions_raw.json", {"transactions": raw_transactions})
         transactions_payload = normalize_transactions(raw_transactions, teams_by_id)
-        steps["transactions_fetch_success"] = True
+        transactions_payload["rows_per_scoring_period"] = per_period
+        steps["transactions_fetch_success"] = len(raw_transactions) > 0
         counts = transactions_payload["counts"]
         print(
-            f"  {counts['total']} total | {counts['executed_ownership_changes']} executed "
-            f"ownership changes | {counts['draft_picks']} draft picks"
+            f"  {counts['total']} total across {len(per_period)} periods | "
+            f"{counts['executed_ownership_changes']} executed ownership changes | "
+            f"{counts['waiver_bids']} waiver bids | {counts['draft_picks']} draft picks"
         )
+        if not raw_transactions:
+            errors.append("transaction history came back empty")
     except FetchError as exc:
         print(f"  WARNING: {exc}", file=sys.stderr)
         errors.append(str(exc))

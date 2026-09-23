@@ -49,9 +49,9 @@ confirm the snapshot is usable, then go to the detail files.
 | `metadata.json` | Fetch timestamp, `scoringPeriodId`, per-step success flags, every ESPN call made. |
 | `player_index.json` | Flat name-to-owner lookup for all 1,041 classified players. Use this to answer "who owns X?". |
 | `ownership.json` | The ownership gate. Player id to owning team, plus ESPN's availability list. |
-| `rosters.json` | All 12 teams: starters, bench, IR, open slots, records, acquisition counts. |
+| `rosters.json` | All 12 teams: starters, bench, IR, open slots, records, FAAB remaining. |
 | `available_players.json` | ESPN `FREEAGENT` + `WAIVERS` pool with ownership percentages. |
-| `transactions.json` | Ownership changes separated from lineup-only shuffles and draft picks. |
+| `transactions.json` | Full history across all scoring periods: ownership changes, `waiver_bids` with FAAB amounts, failed claims, lineup-only shuffles, draft picks. |
 | `matchups.json` | Current-period matchups with live scores and win probability. |
 | `league.json` | Settings, scoring rules, roster slots, teams, waiver rules. |
 | `raw/` | Unmodified ESPN responses. In the workflow artifact only, gitignored (several MB per run). |
@@ -129,6 +129,30 @@ Names mapping to more than one player are listed in `collisions`. In this
 snapshot there is exactly one: two free agents named Josh Johnson, a QB and an
 RB, separated by `position`.
 
+### FAAB budgets
+
+This league uses FAAB with a **$200** per-team budget and a $0 minimum bid
+(`isUsingAcquisitionBudget` is set, so the budget is meaningful). Remaining
+budget appears in three places:
+
+- `league.json` -> `faab` for the league-wide settings
+- `rosters.json` -> each team's `faab` block: `budget`, `spent`, `remaining`, `percent_remaining`
+- `ownership.json` -> `team_needs`, alongside open roster slots, for waiver planning
+- `SNAPSHOT.md` has a ranked table
+
+Quote `remaining` from those files. It derives from ESPN's own per-team ledger
+(`transactionCounter.acquisitionBudgetSpent`), which is what the ESPN UI shows.
+
+**Do not sum `bid_amount` from the transaction log to compute remaining budget.**
+`transactions.json` -> `waiver_bids` lists every bid with a `succeeded` flag, and
+failed claims (`status` beginning `FAILED_`) were never charged. ESPN's ledger can
+also legitimately disagree with a sum of winning bids: in this league one team
+has a $1 executed week-1 claim that its ledger does not count. Use `waiver_bids`
+for narrative ("who bid what, and who lost a claim"), not for arithmetic on
+budgets.
+
+Waiver rank is still present and breaks ties between equal bids.
+
 ## Running it
 
 **Manually:** Actions tab -> "ESPN Fantasy Snapshot" -> Run workflow. Optional
@@ -169,6 +193,16 @@ Findings from building this, since they are easy to get wrong:
 - Base URL: `https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003`
 - `mTransactions2` returns **HTTP 400 if you send an `X-Fantasy-Filter` header.**
   Send no filter for that view.
+- `mTransactions2` is **scoped to a scoring period**, and calling it with no
+  `scoringPeriodId` returns only the *current* period. This is a quiet trap: in
+  week 1 the bare call happened to include the draft and every early move, so it
+  looked like full history; the identical call in week 2 returned four lineup
+  tweaks. The script now walks periods `0..current` and merges by transaction id,
+  which restores the full log (298 rows here versus 4). Periods overlap, so
+  deduping is required.
+- Waiver claims that lose or are invalid stay in the log with a
+  `FAILED_*` status (for example `FAILED_INVALIDPLAYERSOURCE`). They carry a real
+  `bidAmount` but were never charged, so never count them as acquisitions.
 - The `communication/` activity endpoint returns **401** for a public league, so
   it is not used. `mTransactions2` covers transactions.
 - `scoringPeriodId` is at the payload top level; `status` carries

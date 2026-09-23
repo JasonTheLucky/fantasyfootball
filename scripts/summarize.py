@@ -135,6 +135,32 @@ def build() -> str:
             )
         add("")
 
+    # ---- FAAB -----------------------------------------------------------
+    faab_settings = league.get("faab") or {}
+    if faab_settings.get("enabled") and teams:
+        budget = faab_settings.get("budget_per_team")
+        add(f"## FAAB remaining (budget ${budget} per team)")
+        add("")
+        add("| Team | Remaining | Spent | % left | Waiver rank |")
+        add("| --- | --- | --- | --- | --- |")
+        ranked = sorted(
+            teams,
+            key=lambda t: -((t.get("faab") or {}).get("remaining") or 0),
+        )
+        for team in ranked:
+            faab = team.get("faab") or {}
+            add(
+                f"| {team.get('team_name')} | **${faab.get('remaining')}** "
+                f"| ${faab.get('spent')} | {faab.get('percent_remaining')}% "
+                f"| {team.get('waiver_rank')} |"
+            )
+        add("")
+        add(f"Minimum bid ${faab_settings.get('minimum_bid')}. Waivers process at "
+            f"{faab_settings.get('waiver_process_hour')}:00 UTC on "
+            f"{', '.join(faab_settings.get('waiver_process_days') or [])}. "
+            "Waiver rank breaks ties between equal bids.")
+        add("")
+
     # ---- injuries -------------------------------------------------------
     needs = ownership.get("team_needs") or []
     designated = [
