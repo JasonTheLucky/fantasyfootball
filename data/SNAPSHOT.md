@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-23T06:32:58.285187+00:00` |
+| Fetched at (UTC) | `2026-09-23T12:28:00.763025+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 195 |
 | Available players (FA + waivers) | 849 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.82s |
+| Fetch duration | 1.41s |
 | ESPN calls | 7 |
-| Workflow run | `35827258804` |
+| Workflow run | `35860622749` |
 
 ## Freshness and completeness gates
 
@@ -59,28 +59,28 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| The Bye Week Boys | **$200** | $0 | 100.0% | 8 |
-| Auto Draft Champion | **$200** | $0 | 100.0% | 6 |
-| Super Lamario Brothers | **$200** | $0 | 100.0% | 4 |
-| From Puka with Love | **$200** | $0 | 100.0% | 7 |
-| Giant Packer Fan | **$200** | $0 | 100.0% | 12 |
-| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 11 |
+| Auto Draft Champion | **$200** | $0 | 100.0% | 4 |
+| From Puka with Love | **$200** | $0 | 100.0% | 5 |
+| Giant Packer Fan | **$200** | $0 | 100.0% | 7 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 6 |
 | Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 1 |
 | Commanders of Chaos | **$200** | $0 | 100.0% | 2 |
-| Norberto's Gnarly Team | **$199** | $1 | 99.5% | 10 |
-| Jason X | **$197** | $3 | 98.5% | 9 |
-| Connor’s Team | **$195** | $5 | 97.5% | 5 |
-| 🔥Certified Dumpster Fire 🔥 | **$190** | $10 | 95.0% | 3 |
+| Super Lamario Brothers | **$197** | $3 | 98.5% | 12 |
+| The Bye Week Boys | **$195** | $5 | 97.5% | 10 |
+| Connor’s Team | **$195** | $5 | 97.5% | 3 |
+| Norberto's Gnarly Team | **$194** | $6 | 97.0% | 11 |
+| 🔥Certified Dumpster Fire 🔥 | **$183** | $17 | 91.5% | 9 |
+| Jason X | **$122** | $78 | 61.0% | 8 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (28)
+## Injury designations (27)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
+| Jason X | Nico Collins | WR | QUESTIONABLE | FLEX | yes |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
-| Jason X | Jaxson Dart | QB | DOUBTFUL | QB | yes |
-| Jason X | Nico Collins | WR | QUESTIONABLE | BENCH | NO |
+| Jason X | Jaxson Dart | QB | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jonathon Brooks | RB | DOUBTFUL | BENCH | NO |
@@ -88,7 +88,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
-| Norberto's Gnarly Team | De'Zhaun Stribling | WR | INJURY_RESERVE | BENCH | NO |
 | Norberto's Gnarly Team | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Puka Nacua | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Michael Pittman Jr. | WR | QUESTIONABLE | BENCH | NO |
@@ -111,30 +110,30 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 45 | 109 | 185 | 181 | 309 | 849 |
+| 20 | 45 | 108 | 183 | 182 | 311 | 849 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-301 total | 35 executed ownership changes | 71 lineup-only moves | 192 draft picks | 0 pending
+317 total | 43 executed ownership changes | 74 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-23T07:51 | Super Lamario Brothers | WAIVER | ADD Packers D/ST, DROP Buccaneers D/ST |
+| 2026-09-23T07:51 | Norberto's Gnarly Team | WAIVER | ADD Oronde Gadsden, DROP De'Zhaun Stribling |
+| 2026-09-23T07:51 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD Joshua Palmer, DROP Keenan Allen |
+| 2026-09-23T07:51 | The Bye Week Boys | WAIVER | ADD Alvin Kamara, DROP Wan'Dale Robinson |
+| 2026-09-23T07:51 | Jason X | WAIVER | ADD Jonah Coleman, DROP Chiefs D/ST |
+| 2026-09-23T07:51 | Jason X | WAIVER | ADD Bengals D/ST, DROP Kenyon Sadiq |
+| 2026-09-23T07:51 | Jason X | WAIVER | ADD Dontayvion Wicks, DROP Quentin Johnston |
+| 2026-09-23T07:51 | Jason X | WAIVER | ADD Bryce Young, DROP Brenton Strange |
 | 2026-09-23T01:57 | Jason X | ROSTER | DROP Jayden Reed |
 | 2026-09-20T12:59 | From Puka with Love | FREEAGENT | ADD Darnell Mooney |
 | 2026-09-20T11:23 | Jason X | FREEAGENT | ADD Brenton Strange, DROP Kayshon Boutte |
 | 2026-09-20T11:22 | Jason X | FREEAGENT | ADD Tre Tucker, DROP Jaylin Noel |
-| 2026-09-19T00:22 | Super Lamario Brothers | FREEAGENT | ADD Rashod Bateman, DROP Kalif Raymond |
-| 2026-09-18T23:23 | The Bye Week Boys | FREEAGENT | ADD Dalton Schultz, DROP Brenton Strange |
-| 2026-09-18T21:51 | Jason X | FREEAGENT | ADD Jaylin Noel |
-| 2026-09-18T01:58 | Kelli's Top-Notch Team | FREEAGENT | ADD Harrison Mevis, DROP Samaje Perine |
-| 2026-09-18T00:16 | Jason X | FREEAGENT | ADD Kayshon Boutte, DROP Jonah Coleman |
-| 2026-09-17T00:53 | Super Lamario Brothers | FREEAGENT | ADD Tyler Bass, DROP Jake Bates |
-| 2026-09-16T20:27 | Jason X | FREEAGENT | ADD Kenyon Sadiq, DROP Pat Freiermuth |
-| 2026-09-16T19:14 | Jason X | FREEAGENT | ADD Pat Freiermuth, DROP Kenyon Sadiq |
 
 ## League format
 
