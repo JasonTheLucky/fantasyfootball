@@ -105,6 +105,22 @@
     },
     "roster_locktype": "INDIVIDUAL_GAME"
   },
+  "faab": {
+    "enabled": true,
+    "budget_per_team": 200,
+    "minimum_bid": 0,
+    "acquisition_type": "WAIVERS_TRADITIONAL",
+    "waiver_process_days": [
+      "MONDAY",
+      "WEDNESDAY",
+      "THURSDAY",
+      "FRIDAY",
+      "SATURDAY",
+      "SUNDAY"
+    ],
+    "waiver_process_hour": 11,
+    "note": "Remaining budget per team is in rosters.json under each team's faab block, and in ownership.json under team_needs. Those figures come from ESPN's own per-team ledger (transactionCounter.acquisitionBudgetSpent), which is what the ESPN UI displays and is the authoritative number to quote. transactions.json also lists every waiver bid under waiver_bids with a succeeded flag; do not sum those to derive remaining budget. Failed claims (status FAILED_*) are real bids that were never charged, and ESPN's ledger can legitimately disagree with a naive sum of winning bids."
+  },
   "acquisition_settings": {
     "acquisitionBudget": 200,
     "acquisitionLimit": -1,

@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-23T00:47:43.433175+00:00` |
+| Fetched at (UTC) | `2026-09-23T01:44:29.334447+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.27s |
-| ESPN calls | 4 |
-| Workflow run | `35803583078` |
+| Fetch duration | 1.56s |
+| ESPN calls | 7 |
+| Workflow run | `35807526305` |
 
 ## Freshness and completeness gates
 
@@ -54,6 +54,25 @@
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 16 | 9 | 7 | 0 | 0 |
 | 12 | Commanders of Chaos | Morgan Nadke | 16 | 9 | 7 | 0 | 0 |
+
+## FAAB remaining (budget $200 per team)
+
+| Team | Remaining | Spent | % left | Waiver rank |
+| --- | --- | --- | --- | --- |
+| The Bye Week Boys | **$200** | $0 | 100.0% | 8 |
+| Auto Draft Champion | **$200** | $0 | 100.0% | 6 |
+| Super Lamario Brothers | **$200** | $0 | 100.0% | 4 |
+| From Puka with Love | **$200** | $0 | 100.0% | 7 |
+| Giant Packer Fan | **$200** | $0 | 100.0% | 12 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 11 |
+| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 1 |
+| Commanders of Chaos | **$200** | $0 | 100.0% | 2 |
+| Norberto's Gnarly Team | **$199** | $1 | 99.5% | 10 |
+| Jason X | **$197** | $3 | 98.5% | 9 |
+| Connor’s Team | **$195** | $5 | 97.5% | 5 |
+| 🔥Certified Dumpster Fire 🔥 | **$190** | $10 | 95.0% | 3 |
+
+Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
 ## Injury designations (29)
 
@@ -99,7 +118,24 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-4 total | 0 executed ownership changes | 4 lineup-only moves | 0 draft picks | 0 pending
+298 total | 34 executed ownership changes | 69 lineup-only moves | 192 draft picks | 0 pending
+
+Most recent ownership changes:
+
+| When | Team | Type | Moves |
+| --- | --- | --- | --- |
+| 2026-09-20T12:59 | From Puka with Love | FREEAGENT | ADD Darnell Mooney |
+| 2026-09-20T11:23 | Jason X | FREEAGENT | ADD Brenton Strange, DROP Kayshon Boutte |
+| 2026-09-20T11:22 | Jason X | FREEAGENT | ADD Tre Tucker, DROP Jaylin Noel |
+| 2026-09-19T00:22 | Super Lamario Brothers | FREEAGENT | ADD Rashod Bateman, DROP Kalif Raymond |
+| 2026-09-18T23:23 | The Bye Week Boys | FREEAGENT | ADD Dalton Schultz, DROP Brenton Strange |
+| 2026-09-18T21:51 | Jason X | FREEAGENT | ADD Jaylin Noel |
+| 2026-09-18T01:58 | Kelli's Top-Notch Team | FREEAGENT | ADD Harrison Mevis, DROP Samaje Perine |
+| 2026-09-18T00:16 | Jason X | FREEAGENT | ADD Kayshon Boutte, DROP Jonah Coleman |
+| 2026-09-17T00:53 | Super Lamario Brothers | FREEAGENT | ADD Tyler Bass, DROP Jake Bates |
+| 2026-09-16T20:27 | Jason X | FREEAGENT | ADD Kenyon Sadiq, DROP Pat Freiermuth |
+| 2026-09-16T19:14 | Jason X | FREEAGENT | ADD Pat Freiermuth, DROP Kenyon Sadiq |
+| 2026-09-16T19:05 | The Bye Week Boys | FREEAGENT | ADD Demond Claiborne, DROP Antonio Williams |
 
 ## League format
 
