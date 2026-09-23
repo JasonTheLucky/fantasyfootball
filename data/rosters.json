@@ -2,7 +2,7 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 3,
-  "fetched_at": "2026-09-23T01:53:18.461481+00:00",
+  "fetched_at": "2026-09-23T02:09:35.073590+00:00",
   "team_count": 12,
   "expected_team_count": 12,
   "complete": true,
@@ -33,7 +33,7 @@
       "acquisitions_used": 10,
       "acquisition_budget_spent": 3,
       "trades_used": 0,
-      "drops_used": 9,
+      "drops_used": 10,
       "faab": {
         "budget": 200,
         "spent": 3,
@@ -41,16 +41,16 @@
         "percent_remaining": 98.5
       },
       "counts": {
-        "total": 17,
+        "total": 16,
         "starters": 9,
         "bench": 7,
-        "injured_reserve": 1
+        "injured_reserve": 0
       },
       "capacity": {
         "bench_capacity": 7,
         "bench_open": 0,
         "ir_capacity": 1,
-        "ir_open": 0
+        "ir_open": 1
       },
       "open_starting_slots": {},
       "starters": [
@@ -369,7 +369,9 @@
           "applied_total": 2.4,
           "keeper_value": 0,
           "lineup_locked": false,
-          "pending_transaction_ids": null
+          "pending_transaction_ids": [
+            "b1132b6e-9dd5-4550-b9a9-f386b4dd52b8"
+          ]
         },
         {
           "player_id": 4686361,
@@ -451,6 +453,53 @@
         }
       ],
       "bench": [
+        {
+          "player_id": 4258173,
+          "name": "Nico Collins",
+          "first_name": "Nico",
+          "last_name": "Collins",
+          "position": "WR",
+          "position_id": 3,
+          "pro_team": "HOU",
+          "pro_team_id": 34,
+          "jersey": null,
+          "active": true,
+          "injured": false,
+          "injury_status": "QUESTIONABLE",
+          "eligible_slots": [
+            "RB/WR",
+            "WR",
+            "WR/TE",
+            "FLEX",
+            "OP",
+            "BENCH",
+            "IR"
+          ],
+          "eligible_slot_ids": [
+            3,
+            4,
+            5,
+            23,
+            7,
+            20,
+            21
+          ],
+          "droppable": true,
+          "percent_owned": 99.09,
+          "percent_started": 33.17,
+          "percent_change": -0.22,
+          "auction_value_average": 27.92,
+          "last_news_date": "2026-09-19T19:55:49+00:00",
+          "lineup_slot_id": 20,
+          "lineup_slot": "BENCH",
+          "acquisition_type": "DRAFT",
+          "acquisition_date": "2026-09-07T00:49:42.482000+00:00",
+          "roster_injury_status": "NORMAL",
+          "applied_total": 0.0,
+          "keeper_value": 53,
+          "lineup_locked": false,
+          "pending_transaction_ids": null
+        },
         {
           "player_id": 3128429,
           "name": "Courtland Sutton",
@@ -540,53 +589,6 @@
           "roster_injury_status": "NORMAL",
           "applied_total": 14.3,
           "keeper_value": 1,
-          "lineup_locked": false,
-          "pending_transaction_ids": null
-        },
-        {
-          "player_id": 4362249,
-          "name": "Jayden Reed",
-          "first_name": "Jayden",
-          "last_name": "Reed",
-          "position": "WR",
-          "position_id": 3,
-          "pro_team": "GB",
-          "pro_team_id": 9,
-          "jersey": null,
-          "active": true,
-          "injured": false,
-          "injury_status": "DOUBTFUL",
-          "eligible_slots": [
-            "RB/WR",
-            "WR",
-            "WR/TE",
-            "FLEX",
-            "OP",
-            "BENCH",
-            "IR"
-          ],
-          "eligible_slot_ids": [
-            3,
-            4,
-            5,
-            23,
-            7,
-            20,
-            21
-          ],
-          "droppable": true,
-          "percent_owned": 64.26,
-          "percent_started": 3.78,
-          "percent_change": -1.02,
-          "auction_value_average": 1.13,
-          "last_news_date": "2026-09-22T22:16:25+00:00",
-          "lineup_slot_id": 20,
-          "lineup_slot": "BENCH",
-          "acquisition_type": "DRAFT",
-          "acquisition_date": "2026-09-07T00:49:42.482000+00:00",
-          "roster_injury_status": "NORMAL",
-          "applied_total": 1.4,
-          "keeper_value": 0,
           "lineup_locked": false,
           "pending_transaction_ids": null
         },
@@ -682,7 +684,9 @@
           "applied_total": 3.7,
           "keeper_value": 0,
           "lineup_locked": false,
-          "pending_transaction_ids": null
+          "pending_transaction_ids": [
+            "be8e098c-94af-4072-b788-5996e078ebdd"
+          ]
         },
         {
           "player_id": 4428718,
@@ -774,58 +778,12 @@
           "applied_total": 3.7,
           "keeper_value": 0,
           "lineup_locked": false,
-          "pending_transaction_ids": null
+          "pending_transaction_ids": [
+            "351a5c44-a56f-4c75-ab8b-47271865b932"
+          ]
         }
       ],
-      "injured_reserve": [
-        {
-          "player_id": 4258173,
-          "name": "Nico Collins",
-          "first_name": "Nico",
-          "last_name": "Collins",
-          "position": "WR",
-          "position_id": 3,
-          "pro_team": "HOU",
-          "pro_team_id": 34,
-          "jersey": null,
-          "active": true,
-          "injured": false,
-          "injury_status": "QUESTIONABLE",
-          "eligible_slots": [
-            "RB/WR",
-            "WR",
-            "WR/TE",
-            "FLEX",
-            "OP",
-            "BENCH",
-            "IR"
-          ],
-          "eligible_slot_ids": [
-            3,
-            4,
-            5,
-            23,
-            7,
-            20,
-            21
-          ],
-          "droppable": true,
-          "percent_owned": 99.09,
-          "percent_started": 33.17,
-          "percent_change": -0.22,
-          "auction_value_average": 27.92,
-          "last_news_date": "2026-09-19T19:55:49+00:00",
-          "lineup_slot_id": 21,
-          "lineup_slot": "IR",
-          "acquisition_type": "DRAFT",
-          "acquisition_date": "2026-09-07T00:49:42.482000+00:00",
-          "roster_injury_status": "NORMAL",
-          "applied_total": 0.0,
-          "keeper_value": 53,
-          "lineup_locked": false,
-          "pending_transaction_ids": null
-        }
-      ]
+      "injured_reserve": []
     },
     {
       "team_id": 2,

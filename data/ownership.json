@@ -1,15 +1,15 @@
 {
   "explanation": "Ownership is resolved positively. rostered_players covers every player on all league rosters (starters, bench, IR). available_players is ESPN's own FREEAGENT/WAIVERS pool, not an inference from roster absence. A player absent from both lists is unknown to this snapshot and must not be treated as available.",
   "counts": {
-    "rostered": 196,
-    "available": 848,
+    "rostered": 195,
+    "available": 849,
     "available_by_position": {
       "D/ST": 20,
       "K": 45,
       "QB": 109,
       "RB": 185,
       "TE": 181,
-      "WR": 308
+      "WR": 309
     },
     "conflicts": 0
   },
@@ -111,7 +111,6 @@
     4361741,
     4362081,
     4362238,
-    4362249,
     4362619,
     4362628,
     4366031,
@@ -661,6 +660,7 @@
     4362162,
     4362186,
     4362227,
+    4362249,
     4362452,
     4362477,
     4362478,
@@ -1162,6 +1162,17 @@
       "status": "ROSTERED",
       "injury_status": null
     },
+    "4258173": {
+      "player_id": 4258173,
+      "name": "Nico Collins",
+      "position": "WR",
+      "pro_team": "HOU",
+      "owner_team_id": 1,
+      "owner_team_name": "Jason X",
+      "lineup_slot": "BENCH",
+      "status": "ROSTERED",
+      "injury_status": "QUESTIONABLE"
+    },
     "3128429": {
       "player_id": 3128429,
       "name": "Courtland Sutton",
@@ -1183,17 +1194,6 @@
       "lineup_slot": "BENCH",
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
-    },
-    "4362249": {
-      "player_id": 4362249,
-      "name": "Jayden Reed",
-      "position": "WR",
-      "pro_team": "GB",
-      "owner_team_id": 1,
-      "owner_team_name": "Jason X",
-      "lineup_slot": "BENCH",
-      "status": "ROSTERED",
-      "injury_status": "DOUBTFUL"
     },
     "4832955": {
       "player_id": 4832955,
@@ -1238,17 +1238,6 @@
       "lineup_slot": "BENCH",
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
-    },
-    "4258173": {
-      "player_id": 4258173,
-      "name": "Nico Collins",
-      "position": "WR",
-      "pro_team": "HOU",
-      "owner_team_id": 1,
-      "owner_team_name": "Jason X",
-      "lineup_slot": "IR",
-      "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
     },
     "4430807": {
       "player_id": 4430807,
@@ -3240,6 +3229,16 @@
       "waiver_process_date": "2026-09-23T07:00:00+00:00",
       "percent_owned": 65.48,
       "injury_status": null
+    },
+    "4362249": {
+      "player_id": 4362249,
+      "name": "Jayden Reed",
+      "position": "WR",
+      "pro_team": "GB",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-09-24T07:00:00+00:00",
+      "percent_owned": 64.26,
+      "injury_status": "DOUBTFUL"
     },
     "4426385": {
       "player_id": 4426385,
@@ -11708,8 +11707,8 @@
       "team_name": "Jason X",
       "open_starting_slots": {},
       "bench_open": 0,
-      "ir_open": 0,
-      "roster_size": 17,
+      "ir_open": 1,
+      "roster_size": 16,
       "faab": {
         "budget": 200,
         "spent": 3,
@@ -11737,21 +11736,12 @@
           "is_starting": true
         },
         {
-          "player_id": 4362249,
-          "name": "Jayden Reed",
-          "position": "WR",
-          "pro_team": "GB",
-          "injury_status": "DOUBTFUL",
-          "lineup_slot": "BENCH",
-          "is_starting": false
-        },
-        {
           "player_id": 4258173,
           "name": "Nico Collins",
           "position": "WR",
           "pro_team": "HOU",
           "injury_status": "QUESTIONABLE",
-          "lineup_slot": "IR",
+          "lineup_slot": "BENCH",
           "is_starting": false
         }
       ]
@@ -12170,5 +12160,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 3,
-  "fetched_at": "2026-09-23T01:53:18.461481+00:00"
+  "fetched_at": "2026-09-23T02:09:35.073590+00:00"
 }

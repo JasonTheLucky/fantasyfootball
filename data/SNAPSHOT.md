@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-23T01:53:19.908578+00:00` |
+| Fetched at (UTC) | `2026-09-23T02:09:36.893954+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 196 |
-| Available players (FA + waivers) | 848 |
+| Rostered players | 195 |
+| Available players (FA + waivers) | 849 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.45s |
+| Fetch duration | 1.82s |
 | ESPN calls | 7 |
-| Workflow run | `35808139071` |
+| Workflow run | `35809226268` |
 
 ## Freshness and completeness gates
 
@@ -42,7 +42,7 @@
 
 | # | Team | Owner | Roster | Start | Bench | IR | Bench open |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
+| 1 | Jason X | Jason Prinsen | 16 | 9 | 7 | 0 | 0 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
@@ -74,14 +74,13 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (29)
+## Injury designations (28)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
 | Jason X | Jaxson Dart | QB | DOUBTFUL | QB | yes |
-| Jason X | Jayden Reed | WR | DOUBTFUL | BENCH | NO |
-| Jason X | Nico Collins | WR | QUESTIONABLE | IR | NO |
+| Jason X | Nico Collins | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jonathon Brooks | RB | DOUBTFUL | BENCH | NO |
@@ -112,18 +111,19 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 45 | 109 | 185 | 181 | 308 | 848 |
+| 20 | 45 | 109 | 185 | 181 | 309 | 849 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-298 total | 34 executed ownership changes | 69 lineup-only moves | 192 draft picks | 0 pending
+300 total | 35 executed ownership changes | 70 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-23T01:57 | Jason X | ROSTER | DROP Jayden Reed |
 | 2026-09-20T12:59 | From Puka with Love | FREEAGENT | ADD Darnell Mooney |
 | 2026-09-20T11:23 | Jason X | FREEAGENT | ADD Brenton Strange, DROP Kayshon Boutte |
 | 2026-09-20T11:22 | Jason X | FREEAGENT | ADD Tre Tucker, DROP Jaylin Noel |
@@ -135,7 +135,6 @@ Most recent ownership changes:
 | 2026-09-17T00:53 | Super Lamario Brothers | FREEAGENT | ADD Tyler Bass, DROP Jake Bates |
 | 2026-09-16T20:27 | Jason X | FREEAGENT | ADD Kenyon Sadiq, DROP Pat Freiermuth |
 | 2026-09-16T19:14 | Jason X | FREEAGENT | ADD Pat Freiermuth, DROP Kenyon Sadiq |
-| 2026-09-16T19:05 | The Bye Week Boys | FREEAGENT | ADD Demond Claiborne, DROP Antonio Williams |
 
 ## League format
 
