@@ -36,7 +36,12 @@ any of the 12 rosters, so he's probably available."
 scripts/fetch_espn.py                fetches and normalizes ESPN data
 scripts/summarize.py                 renders the digest
 data/                                committed output (refreshed by the workflow)
+docs/daily-report-prompt.md          the daily report prompt that consumes it
 ```
+
+The prompt that turns this snapshot into the daily report lives in
+[docs/daily-report-prompt.md](docs/daily-report-prompt.md), including its FAAB
+bidding rules and validation gates.
 
 ## Output files
 
