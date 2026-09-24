@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-24T00:49:12.332638+00:00` |
+| Fetched at (UTC) | `2026-09-24T06:32:21.959007+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.3s |
+| Fetch duration | 1.45s |
 | ESPN calls | 7 |
-| Workflow run | `35940128131` |
+| Workflow run | `35964961911` |
 
 ## Freshness and completeness gates
 
@@ -85,7 +85,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Jonathon Brooks | RB | INJURY_RESERVE | BENCH | NO |
+| The Bye Week Boys | Keon Coleman | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Terrance Ferguson | TE | QUESTIONABLE | BENCH | NO |
@@ -121,18 +121,21 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 45 | 108 | 180 | 183 | 313 | 848 |
+| 19 | 45 | 108 | 181 | 183 | 312 | 848 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-328 total | 51 executed ownership changes | 77 lineup-only moves | 192 draft picks | 0 pending
+332 total | 54 executed ownership changes | 78 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-24T03:59 | The Bye Week Boys | FREEAGENT | ADD Keon Coleman, DROP Jonathon Brooks |
+| 2026-09-24T00:53 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
+| 2026-09-24T00:53 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
 | 2026-09-23T20:00 | Super Lamario Brothers | FREEAGENT | ADD Tyler Badie, DROP Kalif Raymond |
 | 2026-09-23T16:21 | Jason X | FREEAGENT | ADD Patriots D/ST |
 | 2026-09-23T16:21 | Jason X | FREEAGENT | ADD Zach Charbonnet |
@@ -142,9 +145,6 @@ Most recent ownership changes:
 | 2026-09-23T13:00 | Super Lamario Brothers | FREEAGENT | ADD Kalif Raymond, DROP Michael Mayer |
 | 2026-09-23T12:56 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Sam Darnold, DROP Joshua Palmer |
 | 2026-09-23T07:51 | Super Lamario Brothers | WAIVER | ADD Packers D/ST, DROP Buccaneers D/ST |
-| 2026-09-23T07:51 | Burrow's Bunch | WAIVER | ADD Oronde Gadsden, DROP De'Zhaun Stribling |
-| 2026-09-23T07:51 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD Joshua Palmer, DROP Keenan Allen |
-| 2026-09-23T07:51 | The Bye Week Boys | WAIVER | ADD Alvin Kamara, DROP Wan'Dale Robinson |
 
 ## League format
 
