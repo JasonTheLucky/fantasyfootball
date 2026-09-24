@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-24T12:28:23.303309+00:00` |
+| Fetched at (UTC) | `2026-09-24T18:23:18.887309+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 847 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.79s |
+| Fetch duration | 1.36s |
 | ESPN calls | 7 |
-| Workflow run | `35999249792` |
+| Workflow run | `36040855818` |
 
 ## Freshness and completeness gates
 
@@ -105,7 +105,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Jaylen Warren | RB | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
-| Nicole's Gnarly Team | Caleb Williams | QB | DOUBTFUL | QB | yes |
+| Nicole's Gnarly Team | Caleb Williams | QB | DOUBTFUL | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
 | 🔥Certified Dumpster Fire 🔥 | Sam Darnold | QB | QUESTIONABLE | BENCH | NO |
@@ -127,12 +127,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-338 total | 58 executed ownership changes | 80 lineup-only moves | 192 draft picks | 0 pending
+340 total | 59 executed ownership changes | 81 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-24T18:00 | Super Lamario Brothers | FREEAGENT | ADD Giants D/ST, DROP Packers D/ST |
 | 2026-09-24T11:25 | Commanders of Chaos | FREEAGENT | ADD Ryan Flournoy, DROP Jalen Nailor |
 | 2026-09-24T11:24 | Commanders of Chaos | FREEAGENT | ADD Panthers D/ST, DROP Bears D/ST |
 | 2026-09-24T11:23 | Commanders of Chaos | FREEAGENT | ADD Kaleb Johnson, DROP Omarion Hampton |
@@ -144,7 +145,6 @@ Most recent ownership changes:
 | 2026-09-23T16:21 | Jason X | FREEAGENT | ADD Patriots D/ST |
 | 2026-09-23T16:21 | Jason X | FREEAGENT | ADD Zach Charbonnet |
 | 2026-09-23T16:15 | Jason X | ROSTER | DROP Jaxson Dart |
-| 2026-09-23T13:18 | From Puka with Love | FREEAGENT | ADD Emanuel Wilson, DROP Darnell Mooney |
 
 ## League format
 
