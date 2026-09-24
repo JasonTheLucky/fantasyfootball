@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-23T18:23:39.065767+00:00` |
+| Fetched at (UTC) | `2026-09-24T00:49:12.332638+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
 | Available players (FA + waivers) | 848 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.64s |
+| Fetch duration | 1.3s |
 | ESPN calls | 7 |
-| Workflow run | `35902130763` |
+| Workflow run | `35940128131` |
 
 ## Freshness and completeness gates
 
@@ -74,20 +74,24 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (31)
+## Injury designations (38)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Nico Collins | WR | QUESTIONABLE | FLEX | yes |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
+| Jason X | Jonah Coleman | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
+| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jonathon Brooks | RB | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
+| Auto Draft Champion | Terrance Ferguson | TE | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
+| Burrow's Bunch | Aaron Jones Sr. | RB | QUESTIONABLE | RB | yes |
 | Burrow's Bunch | Tony Pollard | RB | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Puka Nacua | WR | QUESTIONABLE | BENCH | NO |
@@ -95,6 +99,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | From Puka with Love | J.K. Dobbins | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Caleb Douglas | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
+| Connor’s Team | Travis Etienne Jr. | RB | QUESTIONABLE | RB | yes |
 | Connor’s Team | Alec Pierce | WR | OUT | BENCH | NO |
 | Connor’s Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
@@ -108,24 +113,27 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Commanders of Chaos | Jayden Daniels | QB | OUT | QB | yes |
 | Commanders of Chaos | Jadarian Price | RB | QUESTIONABLE | RB | yes |
 | Commanders of Chaos | Malik Nabers | WR | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Dallas Goedert | TE | DOUBTFUL | BENCH | NO |
 
 ## Available player pool by position
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 45 | 108 | 181 | 183 | 312 | 848 |
+| 19 | 45 | 108 | 180 | 183 | 313 | 848 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-327 total | 50 executed ownership changes | 77 lineup-only moves | 192 draft picks | 0 pending
+328 total | 51 executed ownership changes | 77 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-23T20:00 | Super Lamario Brothers | FREEAGENT | ADD Tyler Badie, DROP Kalif Raymond |
 | 2026-09-23T16:21 | Jason X | FREEAGENT | ADD Patriots D/ST |
 | 2026-09-23T16:21 | Jason X | FREEAGENT | ADD Zach Charbonnet |
 | 2026-09-23T16:15 | Jason X | ROSTER | DROP Jaxson Dart |
@@ -137,7 +145,6 @@ Most recent ownership changes:
 | 2026-09-23T07:51 | Burrow's Bunch | WAIVER | ADD Oronde Gadsden, DROP De'Zhaun Stribling |
 | 2026-09-23T07:51 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD Joshua Palmer, DROP Keenan Allen |
 | 2026-09-23T07:51 | The Bye Week Boys | WAIVER | ADD Alvin Kamara, DROP Wan'Dale Robinson |
-| 2026-09-23T07:51 | Jason X | WAIVER | ADD Jonah Coleman, DROP Chiefs D/ST |
 
 ## League format
 
