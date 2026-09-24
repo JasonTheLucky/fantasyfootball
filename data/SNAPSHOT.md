@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-24T06:32:21.959007+00:00` |
+| Fetched at (UTC) | `2026-09-24T12:28:23.303309+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 196 |
-| Available players (FA + waivers) | 848 |
+| Rostered players | 197 |
+| Available players (FA + waivers) | 847 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.45s |
+| Fetch duration | 1.79s |
 | ESPN calls | 7 |
-| Workflow run | `35964961911` |
+| Workflow run | `35999249792` |
 
 ## Freshness and completeness gates
 
@@ -53,7 +53,7 @@
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 16 | 9 | 7 | 0 | 0 |
-| 12 | Commanders of Chaos | Morgan Nadke | 16 | 9 | 7 | 0 | 0 |
+| 12 | Commanders of Chaos | Morgan Nadke | 17 | 9 | 7 | 1 | 0 |
 
 ## FAAB remaining (budget $200 per team)
 
@@ -110,29 +110,33 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
 | 🔥Certified Dumpster Fire 🔥 | Sam Darnold | QB | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | FLEX | yes |
-| Commanders of Chaos | Jayden Daniels | QB | OUT | QB | yes |
 | Commanders of Chaos | Jadarian Price | RB | QUESTIONABLE | RB | yes |
 | Commanders of Chaos | Malik Nabers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Dallas Goedert | TE | DOUBTFUL | BENCH | NO |
+| Commanders of Chaos | Jayden Daniels | QB | OUT | IR | NO |
 
 ## Available player pool by position
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 45 | 108 | 181 | 183 | 312 | 848 |
+| 19 | 45 | 107 | 181 | 183 | 312 | 847 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-332 total | 54 executed ownership changes | 78 lineup-only moves | 192 draft picks | 0 pending
+338 total | 58 executed ownership changes | 80 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-24T11:25 | Commanders of Chaos | FREEAGENT | ADD Ryan Flournoy, DROP Jalen Nailor |
+| 2026-09-24T11:24 | Commanders of Chaos | FREEAGENT | ADD Panthers D/ST, DROP Bears D/ST |
+| 2026-09-24T11:23 | Commanders of Chaos | FREEAGENT | ADD Kaleb Johnson, DROP Omarion Hampton |
+| 2026-09-24T11:22 | Commanders of Chaos | FREEAGENT | ADD Geno Smith |
 | 2026-09-24T03:59 | The Bye Week Boys | FREEAGENT | ADD Keon Coleman, DROP Jonathon Brooks |
 | 2026-09-24T00:53 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
 | 2026-09-24T00:53 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
@@ -141,10 +145,6 @@ Most recent ownership changes:
 | 2026-09-23T16:21 | Jason X | FREEAGENT | ADD Zach Charbonnet |
 | 2026-09-23T16:15 | Jason X | ROSTER | DROP Jaxson Dart |
 | 2026-09-23T13:18 | From Puka with Love | FREEAGENT | ADD Emanuel Wilson, DROP Darnell Mooney |
-| 2026-09-23T13:02 | Super Lamario Brothers | FREEAGENT | ADD Chase McLaughlin, DROP Tyler Bass |
-| 2026-09-23T13:00 | Super Lamario Brothers | FREEAGENT | ADD Kalif Raymond, DROP Michael Mayer |
-| 2026-09-23T12:56 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Sam Darnold, DROP Joshua Palmer |
-| 2026-09-23T07:51 | Super Lamario Brothers | WAIVER | ADD Packers D/ST, DROP Buccaneers D/ST |
 
 ## League format
 
