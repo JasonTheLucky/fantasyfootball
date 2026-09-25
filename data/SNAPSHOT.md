@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-25T12:28:21.272414+00:00` |
+| Fetched at (UTC) | `2026-09-25T18:21:59.494419+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 847 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.5s |
+| Fetch duration | 1.23s |
 | ESPN calls | 7 |
-| Workflow run | `36135097771` |
+| Workflow run | `36172939870` |
 
 ## Freshness and completeness gates
 
@@ -79,7 +79,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
-| Jason X | Nico Collins | WR | QUESTIONABLE | BENCH | NO |
+| Jason X | Nico Collins | WR | DOUBTFUL | BENCH | NO |
 | Jason X | Jonah Coleman | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | FLEX | yes |
@@ -94,9 +94,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Burrow's Bunch | Aaron Jones Sr. | RB | QUESTIONABLE | RB | yes |
 | Burrow's Bunch | Tony Pollard | RB | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
-| From Puka with Love | Puka Nacua | WR | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Puka Nacua | WR | DOUBTFUL | BENCH | NO |
 | From Puka with Love | Michael Pittman Jr. | WR | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Caleb Douglas | WR | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | QUESTIONABLE | RB | yes |
 | Connor’s Team | Cairo Santos | K | QUESTIONABLE | K | yes |
@@ -126,7 +126,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-344 total | 59 executed ownership changes | 85 lineup-only moves | 192 draft picks | 0 pending
+345 total | 59 executed ownership changes | 86 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
