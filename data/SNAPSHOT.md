@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-26T12:24:38.341207+00:00` |
+| Fetched at (UTC) | `2026-09-26T18:21:03.608836+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 847 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.62s |
+| Fetch duration | 2.27s |
 | ESPN calls | 7 |
-| Workflow run | `36241818216` |
+| Workflow run | `36262216406` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (30)
+## Injury designations (29)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -86,7 +86,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
-| The Bye Week Boys | Keon Coleman | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
@@ -97,7 +96,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Cairo Santos | K | QUESTIONABLE | K | yes |
-| Connor’s Team | Alec Pierce | WR | OUT | BENCH | NO |
+| Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Jaylen Warren | RB | QUESTIONABLE | FLEX | yes |
@@ -119,12 +118,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-350 total | 61 executed ownership changes | 88 lineup-only moves | 192 draft picks | 0 pending
+351 total | 62 executed ownership changes | 88 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-26T14:38 | The Bye Week Boys | FREEAGENT | ADD Kayshon Boutte, DROP Keon Coleman |
 | 2026-09-26T01:17 | Super Lamario Brothers | FREEAGENT | ADD Eli Heidenreich, DROP Tyler Badie |
 | 2026-09-26T01:15 | Commanders of Chaos | FREEAGENT | ADD Omarion Hampton, DROP Keaton Mitchell |
 | 2026-09-24T18:00 | Super Lamario Brothers | FREEAGENT | ADD Giants D/ST, DROP Packers D/ST |
@@ -136,7 +136,6 @@ Most recent ownership changes:
 | 2026-09-24T00:53 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
 | 2026-09-24T00:53 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
 | 2026-09-23T20:00 | Super Lamario Brothers | FREEAGENT | ADD Tyler Badie, DROP Kalif Raymond |
-| 2026-09-23T16:21 | Jason X | FREEAGENT | ADD Patriots D/ST |
 
 ## League format
 
