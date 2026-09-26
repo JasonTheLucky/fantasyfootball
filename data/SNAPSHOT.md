@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-26T00:48:56.010771+00:00` |
+| Fetched at (UTC) | `2026-09-26T06:30:40.829243+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 847 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.35s |
+| Fetch duration | 1.4s |
 | ESPN calls | 7 |
-| Workflow run | `36206211497` |
+| Workflow run | `36223901145` |
 
 ## Freshness and completeness gates
 
@@ -105,7 +105,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Caleb Williams | QB | DOUBTFUL | BENCH | NO |
 | Nicole's Gnarly Team | Tank Bigsby | RB | QUESTIONABLE | BENCH | NO |
-| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | FLEX | yes |
+| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | WR | yes |
 | Commanders of Chaos | Dallas Goedert | TE | DOUBTFUL | BENCH | NO |
 | Commanders of Chaos | Jayden Daniels | QB | OUT | IR | NO |
 
@@ -119,12 +119,14 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-345 total | 59 executed ownership changes | 86 lineup-only moves | 192 draft picks | 0 pending
+350 total | 61 executed ownership changes | 88 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-26T01:17 | Super Lamario Brothers | FREEAGENT | ADD Eli Heidenreich, DROP Tyler Badie |
+| 2026-09-26T01:15 | Commanders of Chaos | FREEAGENT | ADD Omarion Hampton, DROP Keaton Mitchell |
 | 2026-09-24T18:00 | Super Lamario Brothers | FREEAGENT | ADD Giants D/ST, DROP Packers D/ST |
 | 2026-09-24T11:25 | Commanders of Chaos | FREEAGENT | ADD Ryan Flournoy, DROP Jalen Nailor |
 | 2026-09-24T11:24 | Commanders of Chaos | FREEAGENT | ADD Panthers D/ST, DROP Bears D/ST |
@@ -135,8 +137,6 @@ Most recent ownership changes:
 | 2026-09-24T00:53 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
 | 2026-09-23T20:00 | Super Lamario Brothers | FREEAGENT | ADD Tyler Badie, DROP Kalif Raymond |
 | 2026-09-23T16:21 | Jason X | FREEAGENT | ADD Patriots D/ST |
-| 2026-09-23T16:21 | Jason X | FREEAGENT | ADD Zach Charbonnet |
-| 2026-09-23T16:15 | Jason X | ROSTER | DROP Jaxson Dart |
 
 ## League format
 

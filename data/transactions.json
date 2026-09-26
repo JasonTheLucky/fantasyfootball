@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 345,
-    "ownership_changes": 67,
-    "executed_ownership_changes": 59,
-    "lineup_only_moves": 86,
+    "total": 350,
+    "ownership_changes": 70,
+    "executed_ownership_changes": 61,
+    "lineup_only_moves": 88,
     "draft_picks": 192,
     "pending": 0,
     "failed": 7,
@@ -241,6 +241,86 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "d7d8bdf3-b64e-4c20-9181-8b26199d2bdd",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-26T01:17:08.821000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 5081508,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4362748,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "ae0f79b1-a552-4a60-8abf-1f0af74b4caa",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 12,
+      "team": "Commanders of Chaos",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-26T01:15:43.442000+00:00",
+      "processed_date": null,
+      "is_league_manager": true,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4685382,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 12,
+          "to_team": "Commanders of Chaos",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4596334,
+          "from_team_id": 12,
+          "from_team": "Commanders of Chaos",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "e0d5b614-0b4c-4058-bf9a-94f0fa9a5418",
       "type": "FREEAGENT",
@@ -2668,6 +2748,86 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "ed7eb4e5-1236-4bdf-b310-d32593a8584f",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 12,
+      "team": "Commanders of Chaos",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-26T01:25:04.095000+00:00",
+      "processed_date": null,
+      "is_league_manager": true,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 5083754,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4685382,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "cc630263-11c3-484c-a67a-60ef27f7ac86",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 12,
+      "team": "Commanders of Chaos",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-26T01:24:48.157000+00:00",
+      "processed_date": null,
+      "is_league_manager": true,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4429615,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "WR",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 5083754,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "WR",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "18957c83-6698-43f9-8331-89120c94b48f",
       "type": "ROSTER",
@@ -6110,6 +6270,126 @@
     }
   ],
   "all_ownership_changes": [
+    {
+      "id": "d7d8bdf3-b64e-4c20-9181-8b26199d2bdd",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-26T01:17:08.821000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 5081508,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4362748,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "d5785d77-5c63-42c6-b738-11cefcd81699",
+      "type": "WAIVER",
+      "status": "CANCELED",
+      "execution_type": "CANCEL",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-26T01:16:28.395000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4685382,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4429059,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "ae0f79b1-a552-4a60-8abf-1f0af74b4caa",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 12,
+      "team": "Commanders of Chaos",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-26T01:15:43.442000+00:00",
+      "processed_date": null,
+      "is_league_manager": true,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4685382,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 12,
+          "to_team": "Commanders of Chaos",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4596334,
+          "from_team_id": 12,
+          "from_team": "Commanders of Chaos",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "e0d5b614-0b4c-4058-bf9a-94f0fa9a5418",
       "type": "FREEAGENT",
@@ -13952,13 +14232,13 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 51,
+    "0": 56,
     "1": 238,
     "2": 56,
-    "3": 51
+    "3": 56
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 3,
-  "fetched_at": "2026-09-26T00:48:54.661278+00:00"
+  "fetched_at": "2026-09-26T06:30:39.431162+00:00"
 }
