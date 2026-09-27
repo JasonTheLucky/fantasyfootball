@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 351,
-    "ownership_changes": 71,
-    "executed_ownership_changes": 62,
-    "lineup_only_moves": 88,
+    "total": 357,
+    "ownership_changes": 72,
+    "executed_ownership_changes": 63,
+    "lineup_only_moves": 93,
     "draft_picks": 192,
     "pending": 0,
     "failed": 7,
@@ -241,6 +241,46 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "e2437c5c-9730-4976-896a-2bc2877ae780",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-27T15:47:55.782000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4569603,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 5081508,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "e1738e0f-0866-4aaf-9af6-b77ffc03bf4e",
       "type": "FREEAGENT",
@@ -2788,6 +2828,206 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "db24a106-6139-4a6c-aaae-e68656ef9a76",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 12,
+      "team": "Commanders of Chaos",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-27T16:51:02.481000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4429615,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "WR",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4373678,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "WR",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "0db37f72-45a6-44a7-8616-c1f8b48588b8",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-27T15:50:47.012000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4034949,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4574716,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "64b57491-da45-4c94-9da1-7b2ca4a02ed8",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-27T15:50:37.608000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 3929645,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "TE",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4723086,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "783e7b10-1f1c-41a7-a6e2-9fd97f151392",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-27T15:50:24.213000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4574716,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4034949,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "c43496d6-1110-4c7b-8338-8f22d391495b",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-27T15:49:15.627000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4360939,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4569173,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "ed7eb4e5-1236-4bdf-b310-d32593a8584f",
       "type": "ROSTER",
@@ -6310,6 +6550,46 @@
     }
   ],
   "all_ownership_changes": [
+    {
+      "id": "e2437c5c-9730-4976-896a-2bc2877ae780",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 3,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-27T15:47:55.782000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4569603,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 5081508,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "e1738e0f-0866-4aaf-9af6-b77ffc03bf4e",
       "type": "FREEAGENT",
@@ -14312,13 +14592,13 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 57,
+    "0": 63,
     "1": 238,
     "2": 56,
-    "3": 57
+    "3": 63
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 3,
-  "fetched_at": "2026-09-27T12:26:18.845486+00:00"
+  "fetched_at": "2026-09-27T18:21:30.520742+00:00"
 }

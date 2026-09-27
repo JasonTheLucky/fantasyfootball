@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-27T12:26:20.187420+00:00` |
+| Fetched at (UTC) | `2026-09-27T18:21:31.932109+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 847 |
 | Players in lookup index | 1044 |
-| Fetch duration | 1.34s |
+| Fetch duration | 1.41s |
 | ESPN calls | 7 |
-| Workflow run | `36318976220` |
+| Workflow run | `36340337083` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 0.0 | Burrow's Bunch | 0.0 | NO |
-| Giant Packer Fan | 0.0 | Jason X | 22.6 | NO |
-| Super Lamario Brothers | 23.0 | The Bye Week Boys | 37.3 | NO |
-| Nicole's Gnarly Team | 6.6 | 🔥Certified Dumpster Fire 🔥 | 30.4 | NO |
-| Auto Draft Champion | 0.0 | Connor’s Team | 0.0 | NO |
-| From Puka with Love | 0.0 | Commanders of Chaos | 2.6 | NO |
+| Kelli's Top-Notch Team | 17.7 | Burrow's Bunch | 47.92 | NO |
+| Giant Packer Fan | 37.78 | Jason X | 55.04 | NO |
+| Super Lamario Brothers | 38.2 | The Bye Week Boys | 55.56 | NO |
+| Nicole's Gnarly Team | 25.24 | 🔥Certified Dumpster Fire 🔥 | 48.0 | NO |
+| Auto Draft Champion | 28.6 | Connor’s Team | 21.38 | NO |
+| From Puka with Love | 20.6 | Commanders of Chaos | 20.9 | NO |
 
 ## Rosters
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (26)
+## Injury designations (22)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -82,26 +82,22 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Nico Collins | WR | OUT | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
-| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
-| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
+| Super Lamario Brothers | De'Von Achane | RB | QUESTIONABLE | RB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Puka Nacua | WR | DOUBTFUL | BENCH | NO |
-| From Puka with Love | Michael Pittman Jr. | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
-| Giant Packer Fan | Jaylen Warren | RB | QUESTIONABLE | FLEX | yes |
-| Giant Packer Fan | Adonai Mitchell | WR | QUESTIONABLE | BENCH | NO |
+| Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
-| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | WR | yes |
+| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Dallas Goedert | TE | OUT | BENCH | NO |
 | Commanders of Chaos | Jayden Daniels | QB | OUT | IR | NO |
 
@@ -109,18 +105,19 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 45 | 107 | 181 | 183 | 312 | 847 |
+| 19 | 45 | 107 | 182 | 183 | 311 | 847 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-351 total | 62 executed ownership changes | 88 lineup-only moves | 192 draft picks | 0 pending
+357 total | 63 executed ownership changes | 93 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-27T15:47 | Super Lamario Brothers | FREEAGENT | ADD Malik Washington, DROP Eli Heidenreich |
 | 2026-09-26T14:38 | The Bye Week Boys | FREEAGENT | ADD Kayshon Boutte, DROP Keon Coleman |
 | 2026-09-26T01:17 | Super Lamario Brothers | FREEAGENT | ADD Eli Heidenreich, DROP Tyler Badie |
 | 2026-09-26T01:15 | Commanders of Chaos | FREEAGENT | ADD Omarion Hampton, DROP Keaton Mitchell |
@@ -132,7 +129,6 @@ Most recent ownership changes:
 | 2026-09-24T03:59 | The Bye Week Boys | FREEAGENT | ADD Keon Coleman, DROP Jonathon Brooks |
 | 2026-09-24T00:53 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
 | 2026-09-24T00:53 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
-| 2026-09-23T20:00 | Super Lamario Brothers | FREEAGENT | ADD Tyler Badie, DROP Kalif Raymond |
 
 ## League format
 
