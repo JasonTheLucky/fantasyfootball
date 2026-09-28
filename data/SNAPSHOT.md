@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-27T18:21:31.932109+00:00` |
+| Fetched at (UTC) | `2026-09-28T00:57:16.559030+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
-| Available players (FA + waivers) | 847 |
-| Players in lookup index | 1044 |
-| Fetch duration | 1.41s |
+| Available players (FA + waivers) | 851 |
+| Players in lookup index | 1048 |
+| Fetch duration | 1.55s |
 | ESPN calls | 7 |
-| Workflow run | `36340337083` |
+| Workflow run | `36364101987` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 17.7 | Burrow's Bunch | 47.92 | NO |
-| Giant Packer Fan | 37.78 | Jason X | 55.04 | NO |
-| Super Lamario Brothers | 38.2 | The Bye Week Boys | 55.56 | NO |
-| Nicole's Gnarly Team | 25.24 | 🔥Certified Dumpster Fire 🔥 | 48.0 | NO |
-| Auto Draft Champion | 28.6 | Connor’s Team | 21.38 | NO |
-| From Puka with Love | 20.6 | Commanders of Chaos | 20.9 | NO |
+| Kelli's Top-Notch Team | 134.58 | Burrow's Bunch | 117.38 | NO |
+| Giant Packer Fan | 152.66 | Jason X | 145.5 | NO |
+| Super Lamario Brothers | 106.74 | The Bye Week Boys | 101.18 | NO |
+| Nicole's Gnarly Team | 91.74 | 🔥Certified Dumpster Fire 🔥 | 106.18 | NO |
+| Auto Draft Champion | 125.1 | Connor’s Team | 61.46 | NO |
+| From Puka with Love | 99.54 | Commanders of Chaos | 67.58 | NO |
 
 ## Rosters
 
@@ -74,30 +74,35 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (22)
+## Injury designations (27)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
 | Jason X | Nico Collins | WR | OUT | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
+| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
+| Auto Draft Champion | Terrance Ferguson | TE | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Super Lamario Brothers | De'Von Achane | RB | QUESTIONABLE | RB | yes |
+| Super Lamario Brothers | De'Von Achane | RB | DOUBTFUL | RB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
-| From Puka with Love | Puka Nacua | WR | DOUBTFUL | BENCH | NO |
+| From Puka with Love | Puka Nacua | WR | OUT | BENCH | NO |
 | From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
+| Connor’s Team | Travis Etienne Jr. | RB | QUESTIONABLE | RB | yes |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
+| Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | RB | yes |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
-| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Justin Jefferson | WR | QUESTIONABLE | WR | yes |
+| Commanders of Chaos | Baker Mayfield | QB | QUESTIONABLE | QB | yes |
 | Commanders of Chaos | Dallas Goedert | TE | OUT | BENCH | NO |
 | Commanders of Chaos | Jayden Daniels | QB | OUT | IR | NO |
 
@@ -105,7 +110,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 45 | 107 | 182 | 183 | 311 | 847 |
+| 19 | 45 | 107 | 183 | 184 | 313 | 851 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
