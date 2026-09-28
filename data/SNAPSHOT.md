@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-28T12:32:10.160449+00:00` |
+| Fetched at (UTC) | `2026-09-28T18:24:44.521119+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
-| Available players (FA + waivers) | 851 |
-| Players in lookup index | 1048 |
-| Fetch duration | 1.56s |
+| Available players (FA + waivers) | 853 |
+| Players in lookup index | 1050 |
+| Fetch duration | 1.59s |
 | ESPN calls | 7 |
-| Workflow run | `36422433467` |
+| Workflow run | `36464977359` |
 
 ## Freshness and completeness gates
 
@@ -86,7 +86,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Super Lamario Brothers | De'Von Achane | RB | DOUBTFUL | RB | yes |
+| Super Lamario Brothers | De'Von Achane | RB | OUT | RB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Puka Nacua | WR | OUT | BENCH | NO |
@@ -101,7 +101,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Justin Jefferson | WR | QUESTIONABLE | WR | yes |
-| Commanders of Chaos | Baker Mayfield | QB | QUESTIONABLE | QB | yes |
+| Commanders of Chaos | Baker Mayfield | QB | OUT | QB | yes |
 | Commanders of Chaos | Dallas Goedert | TE | OUT | BENCH | NO |
 | Commanders of Chaos | Jayden Daniels | QB | OUT | IR | NO |
 
@@ -109,13 +109,13 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 45 | 107 | 183 | 184 | 313 | 851 |
+| 19 | 45 | 107 | 184 | 184 | 314 | 853 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-357 total | 63 executed ownership changes | 93 lineup-only moves | 192 draft picks | 0 pending
+360 total | 63 executed ownership changes | 96 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
