@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-28T00:57:16.559030+00:00` |
+| Fetched at (UTC) | `2026-09-28T06:45:27.658546+00:00` |
 | Scoring period (week) | **3** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1048 |
-| Fetch duration | 1.55s |
+| Fetch duration | 2.35s |
 | ESPN calls | 7 |
-| Workflow run | `36364101987` |
+| Workflow run | `36388030346` |
 
 ## Freshness and completeness gates
 
@@ -33,9 +33,9 @@
 | --- | --- | --- | --- | --- |
 | Kelli's Top-Notch Team | 134.58 | Burrow's Bunch | 117.38 | NO |
 | Giant Packer Fan | 152.66 | Jason X | 145.5 | NO |
-| Super Lamario Brothers | 106.74 | The Bye Week Boys | 101.18 | NO |
-| Nicole's Gnarly Team | 91.74 | 🔥Certified Dumpster Fire 🔥 | 106.18 | NO |
-| Auto Draft Champion | 125.1 | Connor’s Team | 61.46 | NO |
+| Super Lamario Brothers | 106.74 | The Bye Week Boys | 107.58 | NO |
+| Nicole's Gnarly Team | 91.74 | 🔥Certified Dumpster Fire 🔥 | 120.28 | NO |
+| Auto Draft Champion | 125.1 | Connor’s Team | 80.96 | NO |
 | From Puka with Love | 99.54 | Commanders of Chaos | 67.58 | NO |
 
 ## Rosters
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (27)
+## Injury designations (26)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -85,7 +85,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
-| Auto Draft Champion | Terrance Ferguson | TE | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | De'Von Achane | RB | DOUBTFUL | RB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
