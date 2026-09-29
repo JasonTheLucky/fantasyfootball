@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-29T12:30:54.233810+00:00` |
+| Fetched at (UTC) | `2026-09-29T18:24:43.730715+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 856 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.85s |
+| Fetch duration | 1.52s |
 | ESPN calls | 8 |
-| Workflow run | `36568593873` |
+| Workflow run | `36611839644` |
 
 ## Freshness and completeness gates
 
@@ -78,33 +78,33 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Nico Collins | WR | OUT | BENCH | NO |
+| Jason X | Nico Collins | WR | QUESTIONABLE | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
-| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
-| The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
+| The Bye Week Boys | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Terrance Ferguson | TE | DOUBTFUL | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
-| From Puka with Love | Puka Nacua | WR | OUT | BENCH | NO |
-| From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
+| From Puka with Love | Puka Nacua | WR | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Caleb Douglas | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | OUT | RB | yes |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Josh Allen | QB | QUESTIONABLE | QB | yes |
-| Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
+| Giant Packer Fan | Adonai Mitchell | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | RB | yes |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
-| Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
+| Nicole's Gnarly Team | Caleb Williams | QB | DOUBTFUL | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | OUT | BENCH | NO |
 | Commanders of Chaos | Justin Jefferson | WR | QUESTIONABLE | WR | yes |
 | Commanders of Chaos | Baker Mayfield | QB | OUT | QB | yes |
-| Commanders of Chaos | Dallas Goedert | TE | OUT | BENCH | NO |
-| Commanders of Chaos | Jayden Daniels | QB | OUT | IR | NO |
+| Commanders of Chaos | Dallas Goedert | TE | DOUBTFUL | BENCH | NO |
+| Commanders of Chaos | Jayden Daniels | QB | QUESTIONABLE | IR | NO |
 
 ## Available player pool by position
 
@@ -116,7 +116,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-369 total | 66 executed ownership changes | 102 lineup-only moves | 192 draft picks | 0 pending
+372 total | 66 executed ownership changes | 103 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
