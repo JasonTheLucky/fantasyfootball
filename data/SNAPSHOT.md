@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-29T06:33:32.971594+00:00` |
-| Scoring period (week) | **3** |
+| Fetched at (UTC) | `2026-09-29T12:30:54.233810+00:00` |
+| Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 197 |
-| Available players (FA + waivers) | 853 |
+| Rostered players | 194 |
+| Available players (FA + waivers) | 856 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.51s |
-| ESPN calls | 7 |
-| Workflow run | `36531677167` |
+| Fetch duration | 1.85s |
+| ESPN calls | 8 |
+| Workflow run | `36568593873` |
 
 ## Freshness and completeness gates
 
@@ -27,16 +27,16 @@
 | Ownership reconciled, no conflicts | yes |
 | Player lookup index complete | yes |
 
-## Week 3 matchups
+## Week 4 matchups
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 143.58 | Burrow's Bunch | 117.38 | NO |
-| Giant Packer Fan | 152.66 | Jason X | 145.5 | NO |
-| Super Lamario Brothers | 106.74 | The Bye Week Boys | 120.08 | NO |
-| Nicole's Gnarly Team | 91.74 | 🔥Certified Dumpster Fire 🔥 | 120.28 | NO |
-| Auto Draft Champion | 137.72 | Connor’s Team | 90.96 | NO |
-| From Puka with Love | 109.34 | Commanders of Chaos | 67.58 | NO |
+| Giant Packer Fan | 0.0 | Kelli's Top-Notch Team | 0.0 | NO |
+| Burrow's Bunch | 0.0 | Super Lamario Brothers | 0.0 | NO |
+| Jason X | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
+| The Bye Week Boys | 0.0 | Auto Draft Champion | 0.0 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 0.0 | From Puka with Love | 0.0 | NO |
+| Connor’s Team | 0.0 | Commanders of Chaos | 0.0 | NO |
 
 ## Rosters
 
@@ -45,9 +45,9 @@
 | 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
-| 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
+| 4 | Super Lamario Brothers | Jeffrey Clark | 15 | 9 | 6 | 0 | 1 |
 | 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 6 | 1 | 1 |
-| 6 | From Puka with Love | Brandon Daab | 17 | 9 | 7 | 1 | 0 |
+| 6 | From Puka with Love | Brandon Daab | 15 | 9 | 5 | 1 | 2 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
@@ -59,22 +59,22 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| Auto Draft Champion | **$200** | $0 | 100.0% | 4 |
-| From Puka with Love | **$200** | $0 | 100.0% | 5 |
-| Giant Packer Fan | **$200** | $0 | 100.0% | 7 |
+| Auto Draft Champion | **$200** | $0 | 100.0% | 10 |
+| From Puka with Love | **$200** | $0 | 100.0% | 7 |
+| Giant Packer Fan | **$200** | $0 | 100.0% | 12 |
 | Nicole's Gnarly Team | **$200** | $0 | 100.0% | 6 |
-| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 1 |
-| Commanders of Chaos | **$200** | $0 | 100.0% | 2 |
-| Super Lamario Brothers | **$197** | $3 | 98.5% | 12 |
-| The Bye Week Boys | **$195** | $5 | 97.5% | 10 |
+| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 4 |
+| Commanders of Chaos | **$200** | $0 | 100.0% | 1 |
+| Super Lamario Brothers | **$197** | $3 | 98.5% | 2 |
+| The Bye Week Boys | **$195** | $5 | 97.5% | 9 |
 | Connor’s Team | **$195** | $5 | 97.5% | 3 |
-| Burrow's Bunch | **$194** | $6 | 97.0% | 11 |
-| 🔥Certified Dumpster Fire 🔥 | **$183** | $17 | 91.5% | 9 |
-| Jason X | **$122** | $78 | 61.0% | 8 |
+| Burrow's Bunch | **$194** | $6 | 97.0% | 8 |
+| 🔥Certified Dumpster Fire 🔥 | **$183** | $17 | 91.5% | 5 |
+| Jason X | **$122** | $78 | 61.0% | 11 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (28)
+## Injury designations (27)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -87,7 +87,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Terrance Ferguson | TE | DOUBTFUL | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Super Lamario Brothers | De'Von Achane | RB | INJURY_RESERVE | RB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Puka Nacua | WR | OUT | BENCH | NO |
@@ -111,18 +110,21 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 45 | 107 | 184 | 184 | 314 | 853 |
+| 19 | 45 | 107 | 186 | 184 | 315 | 856 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-360 total | 63 executed ownership changes | 96 lineup-only moves | 192 draft picks | 0 pending
+369 total | 66 executed ownership changes | 102 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-29T10:53 | Super Lamario Brothers | ROSTER | DROP De'Von Achane |
+| 2026-09-29T10:25 | From Puka with Love | ROSTER | DROP Makai Lemon |
+| 2026-09-29T10:24 | From Puka with Love | ROSTER | DROP MarShawn Lloyd |
 | 2026-09-27T15:47 | Super Lamario Brothers | FREEAGENT | ADD Malik Washington, DROP Eli Heidenreich |
 | 2026-09-26T14:38 | The Bye Week Boys | FREEAGENT | ADD Kayshon Boutte, DROP Keon Coleman |
 | 2026-09-26T01:17 | Super Lamario Brothers | FREEAGENT | ADD Eli Heidenreich, DROP Tyler Badie |
@@ -132,9 +134,6 @@ Most recent ownership changes:
 | 2026-09-24T11:24 | Commanders of Chaos | FREEAGENT | ADD Panthers D/ST, DROP Bears D/ST |
 | 2026-09-24T11:23 | Commanders of Chaos | FREEAGENT | ADD Kaleb Johnson, DROP Omarion Hampton |
 | 2026-09-24T11:22 | Commanders of Chaos | FREEAGENT | ADD Geno Smith |
-| 2026-09-24T03:59 | The Bye Week Boys | FREEAGENT | ADD Keon Coleman, DROP Jonathon Brooks |
-| 2026-09-24T00:53 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
-| 2026-09-24T00:53 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
 
 ## League format
 
