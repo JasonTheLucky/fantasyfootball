@@ -1,16 +1,160 @@
 {
   "counts": {
-    "total": 374,
-    "ownership_changes": 77,
-    "executed_ownership_changes": 66,
+    "total": 392,
+    "ownership_changes": 95,
+    "executed_ownership_changes": 76,
     "lineup_only_moves": 105,
     "draft_picks": 192,
     "pending": 0,
-    "failed": 7,
-    "waiver_bids": 19,
-    "waiver_bids_won": 13
+    "failed": 15,
+    "waiver_bids": 31,
+    "waiver_bids_won": 19
   },
   "waiver_bids": [
+    {
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 2,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.029000+00:00",
+      "players_added": [
+        2973405
+      ]
+    },
+    {
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 5,
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "succeeded": false,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.029000+00:00",
+      "players_added": [
+        4685247
+      ]
+    },
+    {
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 15,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.029000+00:00",
+      "players_added": [
+        4596334
+      ]
+    },
+    {
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 20,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.025000+00:00",
+      "players_added": [
+        4682745
+      ]
+    },
+    {
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 16,
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "succeeded": false,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.025000+00:00",
+      "players_added": [
+        4685247
+      ]
+    },
+    {
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 15,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.025000+00:00",
+      "players_added": [
+        5083315
+      ]
+    },
+    {
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 21,
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "succeeded": false,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.025000+00:00",
+      "players_added": [
+        4711533
+      ]
+    },
+    {
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 20,
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "succeeded": false,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.025000+00:00",
+      "players_added": [
+        4711533
+      ]
+    },
+    {
+      "team_id": 5,
+      "team": "Burrow's Bunch",
+      "bid_amount": 15,
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "succeeded": false,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.025000+00:00",
+      "players_added": [
+        4685247
+      ]
+    },
+    {
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 22,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.024000+00:00",
+      "players_added": [
+        4685247
+      ]
+    },
+    {
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 35,
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "succeeded": false,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.024000+00:00",
+      "players_added": [
+        4711533
+      ]
+    },
+    {
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 119,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 4,
+      "date": "2026-09-30T07:20:29.024000+00:00",
+      "players_added": [
+        4711533
+      ]
+    },
     {
       "team_id": 5,
       "team": "Burrow's Bunch",
@@ -241,6 +385,370 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "02095300-450a-4b64-9a00-c9f6aaa9389b",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T12:21:06.369000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16003,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "D/ST",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16004,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "75161060-bde5-450e-a8b3-022d30447c82",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T12:18:29.931000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4571557,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4686361,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "6f92fc8a-f5ab-4a3b-a521-3e867c62c138",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T12:17:25.388000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 3122840,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4428718,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "2f3739cc-e458-45c0-befe-7f7f2a87b8a5",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 2,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 2973405,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4871023,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "409ea6db-df08-40fb-ba62-bda7e7d37359",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16002,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "D/ST",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16019,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "689204d3-be9e-45cd-b464-02d02cc5bd6c",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 15,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4596334,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "7a0e408f-aa2f-4704-8aaf-fa42daa4003f",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 20,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4682745,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "5c0f1e74-1b16-4e44-bb37-fa290a7b6d33",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 15,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 5083315,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "95141c1f-a3e7-4484-a02e-a2b054ed4290",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 22,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.024000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4685247,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4360939,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "8d0ac521-2b72-459c-b3d2-06b65c5324e2",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 119,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.024000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4711533,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16017,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "648c0f23-a850-4aac-885c-8c7af1fada35",
       "type": "ROSTER",
@@ -2642,6 +3150,302 @@
   ],
   "pending_transactions": [],
   "failed_transactions": [
+    {
+      "id": "45ce3c42-19a2-436b-9062-cb09ac8de46e",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4682745,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4832846,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "eb41de0b-3bc4-4f3d-bb08-55c3433440a0",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 5083315,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4242355,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "fd6cede7-8cf4-40a9-b5fe-812ee8eb7520",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 5,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4685247,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 7,
+          "to_team": "Connor\u2019s Team",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4362619,
+          "from_team_id": 7,
+          "from_team": "Connor\u2019s Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "10b6c82d-bca1-45cc-8e66-3cb58855d9a5",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 16,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4685247,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4832846,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "d46bf5ea-c505-4f71-a38e-3fabc5fe03e5",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 21,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4711533,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4832846,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "f1a09f28-bf84-4a4d-8844-3c7dc36b53b1",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 20,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4711533,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4361432,
+          "from_team_id": 6,
+          "from_team": "From Puka with Love",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "f11b8008-6d60-4faf-a8b8-f7863c18f15e",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 5,
+      "team": "Burrow's Bunch",
+      "bid_amount": 15,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4685247,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 5,
+          "to_team": "Burrow's Bunch",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "bac7d299-6a63-43a5-9dfe-64791741ece6",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 35,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.024000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4711533,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "437a300d-9cbc-4b06-9bd3-0ab79745965d",
       "type": "WAIVER",
@@ -7162,6 +7966,666 @@
     }
   ],
   "all_ownership_changes": [
+    {
+      "id": "02095300-450a-4b64-9a00-c9f6aaa9389b",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T12:21:06.369000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16003,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "D/ST",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16004,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "75161060-bde5-450e-a8b3-022d30447c82",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T12:18:29.931000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4571557,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4686361,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "6f92fc8a-f5ab-4a3b-a521-3e867c62c138",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T12:17:25.388000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 3122840,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4428718,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "45ce3c42-19a2-436b-9062-cb09ac8de46e",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4682745,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4832846,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "2f3739cc-e458-45c0-befe-7f7f2a87b8a5",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 2,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 2973405,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4871023,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "eb41de0b-3bc4-4f3d-bb08-55c3433440a0",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 5083315,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4242355,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "409ea6db-df08-40fb-ba62-bda7e7d37359",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16002,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "D/ST",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16019,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "fd6cede7-8cf4-40a9-b5fe-812ee8eb7520",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 5,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4685247,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 7,
+          "to_team": "Connor\u2019s Team",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4362619,
+          "from_team_id": 7,
+          "from_team": "Connor\u2019s Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "689204d3-be9e-45cd-b464-02d02cc5bd6c",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 15,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.029000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4596334,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "7a0e408f-aa2f-4704-8aaf-fa42daa4003f",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 20,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4682745,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "10b6c82d-bca1-45cc-8e66-3cb58855d9a5",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 16,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4685247,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4832846,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "5c0f1e74-1b16-4e44-bb37-fa290a7b6d33",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 15,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 5083315,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "d46bf5ea-c505-4f71-a38e-3fabc5fe03e5",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 21,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4711533,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4832846,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "f1a09f28-bf84-4a4d-8844-3c7dc36b53b1",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 20,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4711533,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4361432,
+          "from_team_id": 6,
+          "from_team": "From Puka with Love",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "f11b8008-6d60-4faf-a8b8-f7863c18f15e",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 5,
+      "team": "Burrow's Bunch",
+      "bid_amount": 15,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.025000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4685247,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 5,
+          "to_team": "Burrow's Bunch",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "95141c1f-a3e7-4484-a02e-a2b054ed4290",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 22,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.024000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4685247,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4360939,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "bac7d299-6a63-43a5-9dfe-64791741ece6",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 35,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.024000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4711533,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "8d0ac521-2b72-459c-b3d2-06b65c5324e2",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 119,
+      "proposed_date": "2026-09-30T07:20:29.002000+00:00",
+      "processed_date": "2026-09-30T07:20:29.024000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4711533,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16017,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "a28683be-3997-473d-b472-8e42e4d1eb21",
       "type": "WAIVER",
@@ -15368,14 +16832,14 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 12,
+    "0": 30,
     "1": 238,
     "2": 56,
     "3": 68,
-    "4": 12
+    "4": 30
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 4,
-  "fetched_at": "2026-09-30T06:33:59.904819+00:00"
+  "fetched_at": "2026-09-30T12:33:14.402041+00:00"
 }
