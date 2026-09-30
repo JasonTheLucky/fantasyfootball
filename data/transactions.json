@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 373,
+    "total": 374,
     "ownership_changes": 77,
     "executed_ownership_changes": 66,
-    "lineup_only_moves": 104,
+    "lineup_only_moves": 105,
     "draft_picks": 192,
     "pending": 0,
     "failed": 7,
@@ -2912,6 +2912,58 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "e594abac-4f71-4964-b161-6ef3ee0ef7b6",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T01:14:18.356000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4430878,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "WR",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4258173,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "WR",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 3128429,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "10bb75d0-e98a-4e16-8612-819d5d610771",
       "type": "ROSTER",
@@ -15316,14 +15368,14 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 11,
+    "0": 12,
     "1": 238,
     "2": 56,
     "3": 68,
-    "4": 11
+    "4": 12
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 4,
-  "fetched_at": "2026-09-30T00:55:12.958052+00:00"
+  "fetched_at": "2026-09-30T06:33:59.904819+00:00"
 }

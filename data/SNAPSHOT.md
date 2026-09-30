@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-30T00:55:14.967167+00:00` |
+| Fetched at (UTC) | `2026-09-30T06:34:02.088586+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 194 |
 | Available players (FA + waivers) | 856 |
 | Players in lookup index | 1050 |
-| Fetch duration | 2.01s |
+| Fetch duration | 2.18s |
 | ESPN calls | 8 |
-| Workflow run | `36652604477` |
+| Workflow run | `36678880177` |
 
 ## Freshness and completeness gates
 
@@ -78,7 +78,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Nico Collins | WR | QUESTIONABLE | BENCH | NO |
+| Jason X | Nico Collins | WR | QUESTIONABLE | WR | yes |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
 | The Bye Week Boys | Jaylen Waddle | WR | QUESTIONABLE | FLEX | yes |
@@ -117,7 +117,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-373 total | 66 executed ownership changes | 104 lineup-only moves | 192 draft picks | 0 pending
+374 total | 66 executed ownership changes | 105 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
