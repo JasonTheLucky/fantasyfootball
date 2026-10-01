@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-01T06:34:15.325683+00:00` |
+| Fetched at (UTC) | `2026-10-01T12:30:33.017816+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.96s |
+| Fetch duration | 2.38s |
 | ESPN calls | 8 |
-| Workflow run | `36825466024` |
+| Workflow run | `36862200946` |
 
 ## Freshness and completeness gates
 
@@ -59,22 +59,22 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| Auto Draft Champion | **$200** | $0 | 100.0% | 8 |
-| Giant Packer Fan | **$200** | $0 | 100.0% | 9 |
-| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 5 |
-| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 3 |
+| Auto Draft Champion | **$200** | $0 | 100.0% | 7 |
+| Giant Packer Fan | **$200** | $0 | 100.0% | 8 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 4 |
+| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 2 |
 | Commanders of Chaos | **$200** | $0 | 100.0% | 1 |
-| The Bye Week Boys | **$195** | $5 | 97.5% | 7 |
-| Connor’s Team | **$195** | $5 | 97.5% | 2 |
-| Burrow's Bunch | **$194** | $6 | 97.0% | 6 |
-| 🔥Certified Dumpster Fire 🔥 | **$183** | $17 | 91.5% | 4 |
-| From Puka with Love | **$170** | $30 | 85.0% | 11 |
-| Super Lamario Brothers | **$153** | $47 | 76.5% | 12 |
-| Jason X | **$3** | $197 | 1.5% | 10 |
+| The Bye Week Boys | **$195** | $5 | 97.5% | 6 |
+| Burrow's Bunch | **$194** | $6 | 97.0% | 5 |
+| Connor’s Team | **$193** | $7 | 96.5% | 12 |
+| 🔥Certified Dumpster Fire 🔥 | **$183** | $17 | 91.5% | 3 |
+| From Puka with Love | **$170** | $30 | 85.0% | 10 |
+| Super Lamario Brothers | **$153** | $47 | 76.5% | 11 |
+| Jason X | **$3** | $197 | 1.5% | 9 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (42)
+## Injury designations (41)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -105,7 +105,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | Travis Etienne Jr. | RB | OUT | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Chris Godwin Jr. | WR | QUESTIONABLE | BENCH | NO |
-| Connor’s Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Bucky Irving | RB | QUESTIONABLE | RB | yes |
 | Giant Packer Fan | Adonai Mitchell | WR | DOUBTFUL | BENCH | NO |
@@ -125,18 +124,19 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 45 | 107 | 182 | 183 | 316 | 853 |
+| 20 | 45 | 107 | 183 | 183 | 315 | 853 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-404 total | 82 executed ownership changes | 110 lineup-only moves | 192 draft picks | 0 pending
+406 total | 83 executed ownership changes | 111 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-01T07:38 | Connor’s Team | WAIVER | ADD Carnell Tate, DROP Tyjae Spears |
 | 2026-10-01T05:46 | The Bye Week Boys | FREEAGENT | ADD Tyreek Hill, DROP Kayshon Boutte |
 | 2026-10-01T03:28 | Connor’s Team | FREEAGENT | ADD Marcus Mariota, DROP Malik Willis |
 | 2026-09-30T18:48 | Nicole's Gnarly Team | TRADE_DECLINE | - |
@@ -148,7 +148,6 @@ Most recent ownership changes:
 | 2026-09-30T12:17 | Jason X | FREEAGENT | ADD Deshaun Watson, DROP Tre Tucker |
 | 2026-09-30T07:20 | Super Lamario Brothers | WAIVER | ADD Kalif Raymond, DROP Carnell Tate |
 | 2026-09-30T07:20 | Super Lamario Brothers | WAIVER | ADD Bills D/ST, DROP Giants D/ST |
-| 2026-09-30T07:20 | From Puka with Love | WAIVER | ADD Keaton Mitchell |
 
 ## League format
 
