@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-09-30T18:23:59.912211+00:00` |
+| Fetched at (UTC) | `2026-10-01T01:02:20.297530+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.75s |
+| Fetch duration | 1.79s |
 | ESPN calls | 8 |
-| Workflow run | `36758267285` |
+| Workflow run | `36799131992` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (33)
+## Injury designations (41)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -82,33 +82,41 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Rachaad White | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
-| The Bye Week Boys | Jaylen Waddle | WR | QUESTIONABLE | FLEX | yes |
-| The Bye Week Boys | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | WR | yes |
+| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
+| The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Terrance Ferguson | TE | DOUBTFUL | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
+| Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | QB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Super Lamario Brothers | Jaylen Wright | RB | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Tony Pollard | RB | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Puka Nacua | WR | QUESTIONABLE | WR | yes |
+| From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Caleb Douglas | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Kenyon Sadiq | TE | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Keaton Mitchell | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | OUT | RB | yes |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
+| Connor’s Team | Chris Godwin Jr. | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
-| Giant Packer Fan | Josh Allen | QB | QUESTIONABLE | BENCH | NO |
+| Giant Packer Fan | Bucky Irving | RB | QUESTIONABLE | RB | yes |
 | Giant Packer Fan | Adonai Mitchell | WR | DOUBTFUL | BENCH | NO |
-| Nicole's Gnarly Team | Breece Hall | RB | DOUBTFUL | RB | yes |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
+| Nicole's Gnarly Team | Breece Hall | RB | DOUBTFUL | BENCH | NO |
 | Nicole's Gnarly Team | Caleb Williams | QB | DOUBTFUL | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | BENCH | NO |
 | Commanders of Chaos | Justin Jefferson | WR | QUESTIONABLE | WR | yes |
+| Commanders of Chaos | Jadarian Price | RB | QUESTIONABLE | RB | yes |
 | Commanders of Chaos | Baker Mayfield | QB | OUT | QB | yes |
+| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Dallas Goedert | TE | DOUBTFUL | BENCH | NO |
 | Commanders of Chaos | Jayden Daniels | QB | QUESTIONABLE | IR | NO |
 
@@ -122,12 +130,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-397 total | 79 executed ownership changes | 107 lineup-only moves | 192 draft picks | 0 pending
+400 total | 80 executed ownership changes | 108 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-09-30T18:48 | Nicole's Gnarly Team | TRADE_DECLINE | - |
 | 2026-09-30T15:18 | Super Lamario Brothers | FREEAGENT | ADD Will Reichard, DROP Chase McLaughlin |
 | 2026-09-30T15:10 | The Bye Week Boys | FREEAGENT | ADD Kendre Miller, DROP Demond Claiborne |
 | 2026-09-30T14:27 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Keenan Allen, DROP Justin Herbert |
@@ -139,7 +148,6 @@ Most recent ownership changes:
 | 2026-09-30T07:20 | From Puka with Love | WAIVER | ADD Keaton Mitchell |
 | 2026-09-30T07:20 | Super Lamario Brothers | WAIVER | ADD Jaylen Wright |
 | 2026-09-30T07:20 | From Puka with Love | WAIVER | ADD Kenyon Sadiq |
-| 2026-09-30T07:20 | Super Lamario Brothers | WAIVER | ADD Braelon Allen, DROP Rashod Bateman |
 
 ## League format
 

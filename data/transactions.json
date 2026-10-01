@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 397,
-    "ownership_changes": 98,
-    "executed_ownership_changes": 79,
-    "lineup_only_moves": 107,
+    "total": 400,
+    "ownership_changes": 100,
+    "executed_ownership_changes": 80,
+    "lineup_only_moves": 108,
     "draft_picks": 192,
     "pending": 0,
     "failed": 15,
@@ -385,6 +385,21 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "05dd5e2a-2db9-4ef4-8e7b-dcf0c31079c8",
+      "type": "TRADE_DECLINE",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 9,
+      "team": "Nicole's Gnarly Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T18:48:05.207000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": []
+    },
     {
       "id": "f315b4ea-ba38-4a65-bacf-c12b1290c866",
       "type": "FREEAGENT",
@@ -3836,6 +3851,46 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "1f45d304-277b-4289-a14c-b347b0a288a2",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 9,
+      "team": "Nicole's Gnarly Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T18:48:37.084000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4568490,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "RB",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4427366,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "RB",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "9745d20d-e74b-4b03-b0d2-f55cfc3d8d8b",
       "type": "ROSTER",
@@ -8166,6 +8221,73 @@
     }
   ],
   "all_ownership_changes": [
+    {
+      "id": "bb85241b-6f72-4537-a36e-11773160eb35",
+      "type": "TRADE_PROPOSAL",
+      "status": "CANCELED",
+      "execution_type": "CANCEL",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T18:53:42.193000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "TRADE",
+          "player_id": 4241985,
+          "from_team_id": 6,
+          "from_team": "From Puka with Love",
+          "to_team_id": 9,
+          "to_team": "Nicole's Gnarly Team",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "TRADE",
+          "player_id": 4259545,
+          "from_team_id": 6,
+          "from_team": "From Puka with Love",
+          "to_team_id": 9,
+          "to_team": "Nicole's Gnarly Team",
+          "from_slot": "RB",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "TRADE",
+          "player_id": 4362238,
+          "from_team_id": 9,
+          "from_team": "Nicole's Gnarly Team",
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": "RB",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "05dd5e2a-2db9-4ef4-8e7b-dcf0c31079c8",
+      "type": "TRADE_DECLINE",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 9,
+      "team": "Nicole's Gnarly Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-09-30T18:48:05.207000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": []
+    },
     {
       "id": "f315b4ea-ba38-4a65-bacf-c12b1290c866",
       "type": "FREEAGENT",
@@ -17152,14 +17274,14 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 35,
+    "0": 38,
     "1": 238,
     "2": 56,
     "3": 68,
-    "4": 35
+    "4": 38
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 4,
-  "fetched_at": "2026-09-30T18:23:58.157458+00:00"
+  "fetched_at": "2026-10-01T01:02:18.502633+00:00"
 }
