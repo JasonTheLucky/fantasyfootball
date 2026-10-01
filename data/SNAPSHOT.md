@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-01T01:02:20.297530+00:00` |
+| Fetched at (UTC) | `2026-10-01T06:34:15.325683+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.79s |
+| Fetch duration | 1.96s |
 | ESPN calls | 8 |
-| Workflow run | `36799131992` |
+| Workflow run | `36825466024` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (41)
+## Injury designations (42)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -86,6 +86,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | Tyreek Hill | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Terrance Ferguson | TE | DOUBTFUL | BENCH | NO |
@@ -101,7 +102,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | From Puka with Love | Kenyon Sadiq | TE | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Keaton Mitchell | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | Travis Etienne Jr. | RB | OUT | RB | yes |
+| Connor’s Team | Travis Etienne Jr. | RB | OUT | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Chris Godwin Jr. | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
@@ -130,12 +131,14 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-400 total | 80 executed ownership changes | 108 lineup-only moves | 192 draft picks | 0 pending
+404 total | 82 executed ownership changes | 110 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-01T05:46 | The Bye Week Boys | FREEAGENT | ADD Tyreek Hill, DROP Kayshon Boutte |
+| 2026-10-01T03:28 | Connor’s Team | FREEAGENT | ADD Marcus Mariota, DROP Malik Willis |
 | 2026-09-30T18:48 | Nicole's Gnarly Team | TRADE_DECLINE | - |
 | 2026-09-30T15:18 | Super Lamario Brothers | FREEAGENT | ADD Will Reichard, DROP Chase McLaughlin |
 | 2026-09-30T15:10 | The Bye Week Boys | FREEAGENT | ADD Kendre Miller, DROP Demond Claiborne |
@@ -146,8 +149,6 @@ Most recent ownership changes:
 | 2026-09-30T07:20 | Super Lamario Brothers | WAIVER | ADD Kalif Raymond, DROP Carnell Tate |
 | 2026-09-30T07:20 | Super Lamario Brothers | WAIVER | ADD Bills D/ST, DROP Giants D/ST |
 | 2026-09-30T07:20 | From Puka with Love | WAIVER | ADD Keaton Mitchell |
-| 2026-09-30T07:20 | Super Lamario Brothers | WAIVER | ADD Jaylen Wright |
-| 2026-09-30T07:20 | From Puka with Love | WAIVER | ADD Kenyon Sadiq |
 
 ## League format
 
