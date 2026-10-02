@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-01T18:25:29.914449+00:00` |
+| Fetched at (UTC) | `2026-10-02T00:52:47.669465+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.49s |
+| Fetch duration | 1.81s |
 | ESPN calls | 8 |
-| Workflow run | `36906704516` |
+| Workflow run | `36948182979` |
 
 ## Freshness and completeness gates
 
@@ -31,10 +31,10 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Giant Packer Fan | 0.0 | Kelli's Top-Notch Team | 0.0 | NO |
+| Giant Packer Fan | 6.9 | Kelli's Top-Notch Team | 10.0 | NO |
 | Burrow's Bunch | 0.0 | Super Lamario Brothers | 0.0 | NO |
 | Jason X | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
-| The Bye Week Boys | 0.0 | Auto Draft Champion | 0.0 | NO |
+| The Bye Week Boys | 0.0 | Auto Draft Champion | 0.3 | NO |
 | 🔥Certified Dumpster Fire 🔥 | 0.0 | From Puka with Love | 0.0 | NO |
 | Connor’s Team | 0.0 | Commanders of Chaos | 0.0 | NO |
 
@@ -74,11 +74,11 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (41)
+## Injury designations (38)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Nico Collins | WR | QUESTIONABLE | WR | yes |
+| Jason X | Nico Collins | WR | QUESTIONABLE | FLEX | yes |
 | Jason X | Rachaad White | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
@@ -91,33 +91,30 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Terrance Ferguson | TE | DOUBTFUL | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | QB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
-| Super Lamario Brothers | Jaylen Wright | RB | QUESTIONABLE | BENCH | NO |
-| Burrow's Bunch | Tony Pollard | RB | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Puka Nacua | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
+| From Puka with Love | D'Andre Swift | RB | QUESTIONABLE | RB | yes |
 | From Puka with Love | Caleb Douglas | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Kenyon Sadiq | TE | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Keaton Mitchell | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | Travis Etienne Jr. | RB | OUT | BENCH | NO |
+| Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | Chris Godwin Jr. | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Bucky Irving | RB | QUESTIONABLE | RB | yes |
 | Giant Packer Fan | Adonai Mitchell | WR | DOUBTFUL | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Breece Hall | RB | DOUBTFUL | BENCH | NO |
 | Nicole's Gnarly Team | Caleb Williams | QB | DOUBTFUL | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Justin Jefferson | WR | QUESTIONABLE | WR | yes |
 | Commanders of Chaos | Jadarian Price | RB | QUESTIONABLE | RB | yes |
-| Commanders of Chaos | Baker Mayfield | QB | OUT | QB | yes |
-| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Dallas Goedert | TE | DOUBTFUL | BENCH | NO |
+| Commanders of Chaos | Baker Mayfield | QB | OUT | BENCH | NO |
 | Commanders of Chaos | Jayden Daniels | QB | QUESTIONABLE | IR | NO |
 
 ## Available player pool by position
@@ -130,12 +127,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-411 total | 84 executed ownership changes | 115 lineup-only moves | 192 draft picks | 0 pending
+417 total | 85 executed ownership changes | 120 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-01T18:39 | Commanders of Chaos | FREEAGENT | ADD Chiefs D/ST, DROP Panthers D/ST |
 | 2026-10-01T16:33 | The Bye Week Boys | FREEAGENT | ADD Darren Waller, DROP Hunter Henry |
 | 2026-10-01T07:38 | Connor’s Team | WAIVER | ADD Carnell Tate, DROP Tyjae Spears |
 | 2026-10-01T05:46 | The Bye Week Boys | FREEAGENT | ADD Tyreek Hill, DROP Kayshon Boutte |
@@ -147,7 +145,6 @@ Most recent ownership changes:
 | 2026-09-30T12:21 | Jason X | FREEAGENT | ADD Bears D/ST, DROP Bengals D/ST |
 | 2026-09-30T12:18 | Jason X | FREEAGENT | ADD Spencer Shrader, DROP Cam Little |
 | 2026-09-30T12:17 | Jason X | FREEAGENT | ADD Deshaun Watson, DROP Tre Tucker |
-| 2026-09-30T07:20 | From Puka with Love | WAIVER | ADD Keaton Mitchell |
 
 ## League format
 
