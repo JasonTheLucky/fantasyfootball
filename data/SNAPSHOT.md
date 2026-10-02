@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-02T00:52:47.669465+00:00` |
+| Fetched at (UTC) | `2026-10-02T06:33:12.182333+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.81s |
+| Fetch duration | 2.02s |
 | ESPN calls | 8 |
-| Workflow run | `36948182979` |
+| Workflow run | `36974088696` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Giant Packer Fan | 6.9 | Kelli's Top-Notch Team | 10.0 | NO |
+| Giant Packer Fan | 15.6 | Kelli's Top-Notch Team | 5.0 | NO |
 | Burrow's Bunch | 0.0 | Super Lamario Brothers | 0.0 | NO |
 | Jason X | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
-| The Bye Week Boys | 0.0 | Auto Draft Champion | 0.3 | NO |
+| The Bye Week Boys | 0.0 | Auto Draft Champion | 21.6 | NO |
 | 🔥Certified Dumpster Fire 🔥 | 0.0 | From Puka with Love | 0.0 | NO |
-| Connor’s Team | 0.0 | Commanders of Chaos | 0.0 | NO |
+| Connor’s Team | 0.0 | Commanders of Chaos | 11.7 | NO |
 
 ## Rosters
 
