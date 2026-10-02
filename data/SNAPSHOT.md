@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-02T06:33:12.182333+00:00` |
+| Fetched at (UTC) | `2026-10-02T12:29:55.911705+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 2.02s |
+| Fetch duration | 1.85s |
 | ESPN calls | 8 |
-| Workflow run | `36974088696` |
+| Workflow run | `37007015312` |
 
 ## Freshness and completeness gates
 
@@ -66,7 +66,7 @@
 | Commanders of Chaos | **$200** | $0 | 100.0% | 1 |
 | The Bye Week Boys | **$195** | $5 | 97.5% | 6 |
 | Burrow's Bunch | **$194** | $6 | 97.0% | 5 |
-| Connor’s Team | **$193** | $7 | 96.5% | 12 |
+| Connor’s Team | **$188** | $12 | 94.0% | 12 |
 | 🔥Certified Dumpster Fire 🔥 | **$183** | $17 | 91.5% | 3 |
 | From Puka with Love | **$170** | $30 | 85.0% | 10 |
 | Super Lamario Brothers | **$153** | $47 | 76.5% | 11 |
@@ -127,12 +127,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-417 total | 85 executed ownership changes | 120 lineup-only moves | 192 draft picks | 0 pending
+418 total | 86 executed ownership changes | 120 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-02T07:05 | Connor’s Team | WAIVER | ADD Cam Little, DROP Cairo Santos |
 | 2026-10-01T18:39 | Commanders of Chaos | FREEAGENT | ADD Chiefs D/ST, DROP Panthers D/ST |
 | 2026-10-01T16:33 | The Bye Week Boys | FREEAGENT | ADD Darren Waller, DROP Hunter Henry |
 | 2026-10-01T07:38 | Connor’s Team | WAIVER | ADD Carnell Tate, DROP Tyjae Spears |
@@ -144,7 +145,6 @@ Most recent ownership changes:
 | 2026-09-30T14:27 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Keenan Allen, DROP Justin Herbert |
 | 2026-09-30T12:21 | Jason X | FREEAGENT | ADD Bears D/ST, DROP Bengals D/ST |
 | 2026-09-30T12:18 | Jason X | FREEAGENT | ADD Spencer Shrader, DROP Cam Little |
-| 2026-09-30T12:17 | Jason X | FREEAGENT | ADD Deshaun Watson, DROP Tre Tucker |
 
 ## League format
 

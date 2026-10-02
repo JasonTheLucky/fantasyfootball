@@ -1,16 +1,28 @@
 {
   "counts": {
-    "total": 417,
-    "ownership_changes": 105,
-    "executed_ownership_changes": 85,
+    "total": 418,
+    "ownership_changes": 106,
+    "executed_ownership_changes": 86,
     "lineup_only_moves": 120,
     "draft_picks": 192,
     "pending": 0,
     "failed": 15,
-    "waiver_bids": 32,
-    "waiver_bids_won": 20
+    "waiver_bids": 33,
+    "waiver_bids_won": 21
   },
   "waiver_bids": [
+    {
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 5,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 4,
+      "date": "2026-10-02T07:05:01.639000+00:00",
+      "players_added": [
+        4686361
+      ]
+    },
     {
       "team_id": 7,
       "team": "Connor\u2019s Team",
@@ -397,6 +409,46 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "b1c800b6-55b0-473a-84c7-d7d542317b26",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 5,
+      "proposed_date": "2026-10-02T07:05:01.616000+00:00",
+      "processed_date": "2026-10-02T07:05:01.639000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4686361,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 7,
+          "to_team": "Connor\u2019s Team",
+          "from_slot": null,
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 17427,
+          "from_team_id": 7,
+          "from_team": "Connor\u2019s Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "2113ed81-d0fe-4bf1-b131-3a3942a59b7b",
       "type": "FREEAGENT",
@@ -8901,6 +8953,46 @@
     }
   ],
   "all_ownership_changes": [
+    {
+      "id": "b1c800b6-55b0-473a-84c7-d7d542317b26",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 4,
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 5,
+      "proposed_date": "2026-10-02T07:05:01.616000+00:00",
+      "processed_date": "2026-10-02T07:05:01.639000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4686361,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 7,
+          "to_team": "Connor\u2019s Team",
+          "from_slot": null,
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 17427,
+          "from_team_id": 7,
+          "from_team": "Connor\u2019s Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "2113ed81-d0fe-4bf1-b131-3a3942a59b7b",
       "type": "FREEAGENT",
@@ -18154,14 +18246,14 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 55,
+    "0": 56,
     "1": 238,
     "2": 56,
     "3": 68,
-    "4": 55
+    "4": 56
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 4,
-  "fetched_at": "2026-10-02T06:33:10.165530+00:00"
+  "fetched_at": "2026-10-02T12:29:54.062146+00:00"
 }
