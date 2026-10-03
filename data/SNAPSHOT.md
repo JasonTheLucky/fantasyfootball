@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-03T13:51:05.831597+00:00` |
+| Fetched at (UTC) | `2026-10-03T18:49:42.281227+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.59s |
+| Fetch duration | 1.43s |
 | ESPN calls | 8 |
-| Workflow run | `37127580055` |
+| Workflow run | `37145654781` |
 
 ## Freshness and completeness gates
 
@@ -98,12 +98,12 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
-| Giant Packer Fan | Terry McLaurin | WR | QUESTIONABLE | WR | yes |
+| Giant Packer Fan | Terry McLaurin | WR | DOUBTFUL | WR | yes |
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Breece Hall | RB | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | QUESTIONABLE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Justin Jefferson | WR | OUT | WR | yes |
 | Commanders of Chaos | Jadarian Price | RB | OUT | RB | yes |
@@ -122,7 +122,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-425 total | 87 executed ownership changes | 125 lineup-only moves | 192 draft picks | 0 pending
+427 total | 87 executed ownership changes | 126 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
