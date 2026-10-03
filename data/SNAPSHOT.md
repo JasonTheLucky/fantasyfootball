@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-02T18:24:59.848051+00:00` |
+| Fetched at (UTC) | `2026-10-03T00:50:04.603253+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.42s |
+| Fetch duration | 2.01s |
 | ESPN calls | 8 |
-| Workflow run | `37047258069` |
+| Workflow run | `37083690938` |
 
 ## Freshness and completeness gates
 
@@ -74,36 +74,30 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (39)
+## Injury designations (33)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Nico Collins | WR | QUESTIONABLE | FLEX | yes |
 | Jason X | Rachaad White | RB | OUT | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
-| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
-| The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
-| Auto Draft Champion | Terrance Ferguson | TE | DOUBTFUL | BENCH | NO |
+| Auto Draft Champion | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
-| From Puka with Love | Puka Nacua | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
-| From Puka with Love | D'Andre Swift | RB | QUESTIONABLE | RB | yes |
 | From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
 | From Puka with Love | Kenyon Sadiq | TE | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Keaton Mitchell | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
-| Giant Packer Fan | Bucky Irving | RB | QUESTIONABLE | RB | yes |
 | Giant Packer Fan | Terry McLaurin | WR | QUESTIONABLE | WR | yes |
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
@@ -111,10 +105,10 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Justin Jefferson | WR | QUESTIONABLE | WR | yes |
-| Commanders of Chaos | Jadarian Price | RB | QUESTIONABLE | RB | yes |
-| Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
-| Commanders of Chaos | Dallas Goedert | TE | DOUBTFUL | BENCH | NO |
+| Commanders of Chaos | Justin Jefferson | WR | OUT | WR | yes |
+| Commanders of Chaos | Jadarian Price | RB | OUT | RB | yes |
+| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Dallas Goedert | TE | OUT | BENCH | NO |
 | Commanders of Chaos | Baker Mayfield | QB | OUT | BENCH | NO |
 | Commanders of Chaos | Jayden Daniels | QB | OUT | IR | NO |
 
@@ -128,7 +122,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-420 total | 86 executed ownership changes | 122 lineup-only moves | 192 draft picks | 0 pending
+423 total | 86 executed ownership changes | 124 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
