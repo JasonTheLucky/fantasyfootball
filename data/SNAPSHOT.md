@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-03T00:50:04.603253+00:00` |
+| Fetched at (UTC) | `2026-10-03T06:32:14.037749+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 2.01s |
+| Fetch duration | 1.55s |
 | ESPN calls | 8 |
-| Workflow run | `37083690938` |
+| Workflow run | `37103381221` |
 
 ## Freshness and completeness gates
 
@@ -122,12 +122,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-423 total | 86 executed ownership changes | 124 lineup-only moves | 192 draft picks | 0 pending
+424 total | 87 executed ownership changes | 124 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-03T01:36 | The Bye Week Boys | TRADE_DECLINE | - |
 | 2026-10-02T07:05 | Connor’s Team | WAIVER | ADD Cam Little, DROP Cairo Santos |
 | 2026-10-01T18:39 | Commanders of Chaos | FREEAGENT | ADD Chiefs D/ST, DROP Panthers D/ST |
 | 2026-10-01T16:33 | The Bye Week Boys | FREEAGENT | ADD Darren Waller, DROP Hunter Henry |
@@ -139,7 +140,6 @@ Most recent ownership changes:
 | 2026-09-30T15:10 | The Bye Week Boys | FREEAGENT | ADD Kendre Miller, DROP Demond Claiborne |
 | 2026-09-30T14:27 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Keenan Allen, DROP Justin Herbert |
 | 2026-09-30T12:21 | Jason X | FREEAGENT | ADD Bears D/ST, DROP Bengals D/ST |
-| 2026-09-30T12:18 | Jason X | FREEAGENT | ADD Spencer Shrader, DROP Cam Little |
 
 ## League format
 
