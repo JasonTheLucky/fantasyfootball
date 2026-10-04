@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-04T14:02:41.037500+00:00` |
+| Fetched at (UTC) | `2026-10-04T19:07:45.035218+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.7s |
+| Fetch duration | 1.89s |
 | ESPN calls | 8 |
-| Workflow run | `37207798429` |
+| Workflow run | `37227070712` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Giant Packer Fan | 15.6 | Kelli's Top-Notch Team | 5.0 | NO |
-| Burrow's Bunch | 0.0 | Super Lamario Brothers | 0.0 | NO |
-| Jason X | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
-| The Bye Week Boys | 0.0 | Auto Draft Champion | 21.6 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 3.4 | From Puka with Love | 1.2 | NO |
-| Connor’s Team | 0.0 | Commanders of Chaos | 11.7 | NO |
+| Giant Packer Fan | 46.98 | Kelli's Top-Notch Team | 29.8 | NO |
+| Burrow's Bunch | 28.46 | Super Lamario Brothers | 55.48 | NO |
+| Jason X | 69.3 | Nicole's Gnarly Team | 49.6 | NO |
+| The Bye Week Boys | 44.84 | Auto Draft Champion | 48.4 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 75.8 | From Puka with Love | 60.2 | NO |
+| Connor’s Team | 40.82 | Commanders of Chaos | 69.96 | NO |
 
 ## Rosters
 
@@ -74,13 +74,14 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (33)
+## Injury designations (34)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Rachaad White | RB | OUT | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
+| The Bye Week Boys | DJ Moore | WR | DOUBTFUL | WR | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
@@ -89,24 +90,24 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
+| Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | QB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
+| Burrow's Bunch | Ja'Marr Chase | WR | OUT | WR | yes |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
-| From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
-| From Puka with Love | Kenyon Sadiq | TE | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
+| Connor’s Team | Marcus Mariota | QB | DOUBTFUL | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Terry McLaurin | WR | OUT | WR | yes |
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
-| Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Breece Hall | RB | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
+| Kelli's Top-Notch Team | Saquon Barkley | RB | OUT | RB | yes |
 | 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Justin Jefferson | WR | OUT | BENCH | NO |
-| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | BENCH | NO |
 | Commanders of Chaos | Dallas Goedert | TE | OUT | BENCH | NO |
 | Commanders of Chaos | Baker Mayfield | QB | OUT | BENCH | NO |
