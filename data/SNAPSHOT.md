@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-03T18:49:42.281227+00:00` |
+| Fetched at (UTC) | `2026-10-04T01:25:17.396305+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.43s |
+| Fetch duration | 1.55s |
 | ESPN calls | 8 |
-| Workflow run | `37145654781` |
+| Workflow run | `37167950738` |
 
 ## Freshness and completeness gates
 
@@ -106,7 +106,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Justin Jefferson | WR | OUT | WR | yes |
-| Commanders of Chaos | Jadarian Price | RB | OUT | RB | yes |
+| Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | RB | yes |
 | Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Dallas Goedert | TE | OUT | BENCH | NO |
 | Commanders of Chaos | Baker Mayfield | QB | OUT | BENCH | NO |
