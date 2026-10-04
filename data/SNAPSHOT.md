@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-04T01:25:17.396305+00:00` |
+| Fetched at (UTC) | `2026-10-04T08:10:34.637870+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.55s |
+| Fetch duration | 1.93s |
 | ESPN calls | 8 |
-| Workflow run | `37167950738` |
+| Workflow run | `37188062153` |
 
 ## Freshness and completeness gates
 
@@ -81,9 +81,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Rachaad White | RB | OUT | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
-| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
+| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
@@ -116,18 +116,19 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 45 | 107 | 183 | 183 | 315 | 853 |
+| 20 | 45 | 107 | 184 | 183 | 314 | 853 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-427 total | 87 executed ownership changes | 126 lineup-only moves | 192 draft picks | 0 pending
+430 total | 88 executed ownership changes | 128 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-04T06:31 | The Bye Week Boys | FREEAGENT | ADD Makai Lemon, DROP Kendre Miller |
 | 2026-10-03T01:36 | The Bye Week Boys | TRADE_DECLINE | - |
 | 2026-10-02T07:05 | Connor’s Team | WAIVER | ADD Cam Little, DROP Cairo Santos |
 | 2026-10-01T18:39 | Commanders of Chaos | FREEAGENT | ADD Chiefs D/ST, DROP Panthers D/ST |
@@ -139,7 +140,6 @@ Most recent ownership changes:
 | 2026-09-30T15:18 | Super Lamario Brothers | FREEAGENT | ADD Will Reichard, DROP Chase McLaughlin |
 | 2026-09-30T15:10 | The Bye Week Boys | FREEAGENT | ADD Kendre Miller, DROP Demond Claiborne |
 | 2026-09-30T14:27 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Keenan Allen, DROP Justin Herbert |
-| 2026-09-30T12:21 | Jason X | FREEAGENT | ADD Bears D/ST, DROP Bengals D/ST |
 
 ## League format
 
