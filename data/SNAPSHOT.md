@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-04T08:10:34.637870+00:00` |
+| Fetched at (UTC) | `2026-10-04T14:02:41.037500+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.93s |
+| Fetch duration | 1.7s |
 | ESPN calls | 8 |
-| Workflow run | `37188062153` |
+| Workflow run | `37207798429` |
 
 ## Freshness and completeness gates
 
@@ -35,7 +35,7 @@
 | Burrow's Bunch | 0.0 | Super Lamario Brothers | 0.0 | NO |
 | Jason X | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
 | The Bye Week Boys | 0.0 | Auto Draft Champion | 21.6 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 0.0 | From Puka with Love | 0.0 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 3.4 | From Puka with Love | 1.2 | NO |
 | Connor’s Team | 0.0 | Commanders of Chaos | 11.7 | NO |
 
 ## Rosters
@@ -91,23 +91,23 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
-| From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
+| From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
 | From Puka with Love | Kenyon Sadiq | TE | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
-| Giant Packer Fan | Terry McLaurin | WR | DOUBTFUL | WR | yes |
+| Giant Packer Fan | Terry McLaurin | WR | OUT | WR | yes |
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Breece Hall | RB | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Justin Jefferson | WR | OUT | WR | yes |
-| Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | RB | yes |
+| Commanders of Chaos | Justin Jefferson | WR | OUT | BENCH | NO |
 | Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | BENCH | NO |
 | Commanders of Chaos | Dallas Goedert | TE | OUT | BENCH | NO |
 | Commanders of Chaos | Baker Mayfield | QB | OUT | BENCH | NO |
 | Commanders of Chaos | Jayden Daniels | QB | OUT | IR | NO |
@@ -122,7 +122,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-430 total | 88 executed ownership changes | 128 lineup-only moves | 192 draft picks | 0 pending
+440 total | 88 executed ownership changes | 138 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
