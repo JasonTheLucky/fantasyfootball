@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-04T19:07:45.035218+00:00` |
+| Fetched at (UTC) | `2026-10-05T00:58:46.292687+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1050 |
-| Fetch duration | 1.89s |
+| Fetch duration | 1.64s |
 | ESPN calls | 8 |
-| Workflow run | `37227070712` |
+| Workflow run | `37249569043` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Giant Packer Fan | 46.98 | Kelli's Top-Notch Team | 29.8 | NO |
-| Burrow's Bunch | 28.46 | Super Lamario Brothers | 55.48 | NO |
-| Jason X | 69.3 | Nicole's Gnarly Team | 49.6 | NO |
-| The Bye Week Boys | 44.84 | Auto Draft Champion | 48.4 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 75.8 | From Puka with Love | 60.2 | NO |
-| Connor’s Team | 40.82 | Commanders of Chaos | 69.96 | NO |
+| Giant Packer Fan | 63.12 | Kelli's Top-Notch Team | 68.92 | NO |
+| Burrow's Bunch | 113.22 | Super Lamario Brothers | 112.48 | NO |
+| Jason X | 120.82 | Nicole's Gnarly Team | 144.1 | NO |
+| The Bye Week Boys | 81.58 | Auto Draft Champion | 96.8 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 136.62 | From Puka with Love | 112.4 | NO |
+| Connor’s Team | 78.26 | Commanders of Chaos | 110.46 | NO |
 
 ## Rosters
 
@@ -74,17 +74,17 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (34)
+## Injury designations (39)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Rachaad White | RB | OUT | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
-| The Bye Week Boys | DJ Moore | WR | DOUBTFUL | WR | yes |
+| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
-| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | Jalen Coker | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
@@ -92,21 +92,26 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | QB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
-| Burrow's Bunch | Ja'Marr Chase | WR | OUT | WR | yes |
+| Burrow's Bunch | Ja'Marr Chase | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
+| From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Marcus Mariota | QB | DOUBTFUL | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
+| Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | WR | yes |
 | Giant Packer Fan | Terry McLaurin | WR | OUT | WR | yes |
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Breece Hall | RB | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
-| Kelli's Top-Notch Team | Saquon Barkley | RB | OUT | RB | yes |
+| Nicole's Gnarly Team | Tank Bigsby | RB | QUESTIONABLE | BENCH | NO |
+| Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
+| 🔥Certified Dumpster Fire 🔥 | Tee Higgins | WR | QUESTIONABLE | WR | yes |
 | 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
+| Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | RB | yes |
 | Commanders of Chaos | Justin Jefferson | WR | OUT | BENCH | NO |
 | Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | BENCH | NO |
 | Commanders of Chaos | Dallas Goedert | TE | OUT | BENCH | NO |
