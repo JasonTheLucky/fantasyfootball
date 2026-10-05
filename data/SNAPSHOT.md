@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-05T06:48:06.915773+00:00` |
+| Fetched at (UTC) | `2026-10-05T12:31:21.260257+00:00` |
 | Scoring period (week) | **4** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
-| Available players (FA + waivers) | 853 |
-| Players in lookup index | 1050 |
-| Fetch duration | 1.64s |
+| Available players (FA + waivers) | 854 |
+| Players in lookup index | 1051 |
+| Fetch duration | 1.74s |
 | ESPN calls | 8 |
-| Workflow run | `37274255424` |
+| Workflow run | `37310094779` |
 
 ## Freshness and completeness gates
 
@@ -122,7 +122,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 45 | 107 | 184 | 183 | 314 | 853 |
+| 20 | 45 | 107 | 184 | 183 | 315 | 854 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
