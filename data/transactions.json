@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 442,
+    "total": 444,
     "ownership_changes": 111,
     "executed_ownership_changes": 89,
-    "lineup_only_moves": 139,
+    "lineup_only_moves": 141,
     "draft_picks": 192,
     "pending": 0,
     "failed": 15,
@@ -4198,6 +4198,86 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "da6da88a-21f9-40c8-8f88-02bab18bdfa7",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-06T10:46:32.611000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4688813,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "WR",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4361432,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "WR",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "43bbe39d-7eae-40a2-bbb8-5750d92d83f2",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 0,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-06T07:26:38.800000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 3117256,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "TE",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 2576925,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "a62513b7-1617-4133-8b12-d42e09de9d3b",
       "type": "FUTURE_ROSTER",
@@ -19227,14 +19307,15 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 80,
+    "0": 1,
     "1": 238,
     "2": 56,
     "3": 68,
-    "4": 80
+    "4": 81,
+    "5": 1
   },
   "league_id": "1787259003",
   "season": 2026,
-  "scoring_period_id": 4,
-  "fetched_at": "2026-10-06T06:33:23.942316+00:00"
+  "scoring_period_id": 5,
+  "fetched_at": "2026-10-06T12:29:02.259703+00:00"
 }

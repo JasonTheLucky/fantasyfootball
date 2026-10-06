@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-10-06T06:33:25.771830+00:00",
-  "fetched_at_epoch": 1791268405,
-  "started_at": "2026-10-06T06:33:23.942316+00:00",
-  "duration_seconds": 1.83,
+  "fetched_at": "2026-10-06T12:29:04.076865+00:00",
+  "fetched_at_epoch": 1791289744,
+  "started_at": "2026-10-06T12:29:02.259703+00:00",
+  "duration_seconds": 1.82,
   "league_id": "1787259003",
   "league_name": "Home Heroes",
   "season": 2026,
-  "scoringPeriodId": 4,
+  "scoringPeriodId": 5,
   "scoring_period_detail": {
-    "espn_scoring_period_id": 4,
-    "latest_scoring_period": 4,
-    "current_matchup_period": 4,
+    "espn_scoring_period_id": 5,
+    "latest_scoring_period": 5,
+    "current_matchup_period": 5,
     "first_scoring_period": 1,
     "final_scoring_period": 17,
     "is_active": true,
@@ -37,75 +37,83 @@
   "espn_calls": [
     {
       "label": "league_core",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?view=mSettings&view=mTeam&view=mRoster&view=mStandings&cb=17912684039568997",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?view=mSettings&view=mTeam&view=mRoster&view=mStandings&cb=17912897422782168",
       "status": 200,
       "attempts": 1,
-      "bytes": 3179923,
-      "ms": 314
-    },
-    {
-      "label": "transactions@0",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=0&view=mTransactions2&cb=17912684045236794",
-      "status": 200,
-      "attempts": 1,
-      "bytes": 50264,
-      "ms": 129
-    },
-    {
-      "label": "transactions@1",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=1&view=mTransactions2&cb=17912684046529088",
-      "status": 200,
-      "attempts": 1,
-      "bytes": 109166,
-      "ms": 134
-    },
-    {
-      "label": "transactions@2",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=2&view=mTransactions2&cb=17912684047864381",
-      "status": 200,
-      "attempts": 1,
-      "bytes": 35364,
-      "ms": 151
-    },
-    {
-      "label": "transactions@3",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=3&view=mTransactions2&cb=17912684049386615",
-      "status": 200,
-      "attempts": 1,
-      "bytes": 43165,
-      "ms": 126
-    },
-    {
-      "label": "transactions@4",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=4&view=mTransactions2&cb=17912684050635405",
-      "status": 200,
-      "attempts": 1,
-      "bytes": 50264,
-      "ms": 87
-    },
-    {
-      "label": "player_pool@0",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=4&view=kona_player_info&cb=17912684051751326",
-      "status": 200,
-      "attempts": 1,
-      "bytes": 3155153,
+      "bytes": 3113699,
       "ms": 264
     },
     {
-      "label": "matchups",
-      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=4&view=mMatchupScore&view=mBoxscore&cb=17912684054707119",
+      "label": "transactions@0",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=0&view=mTransactions2&cb=17912897428544561",
       "status": 200,
       "attempts": 1,
-      "bytes": 697313,
-      "ms": 209
+      "bytes": 1581,
+      "ms": 156
+    },
+    {
+      "label": "transactions@1",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=1&view=mTransactions2&cb=17912897430107852",
+      "status": 200,
+      "attempts": 1,
+      "bytes": 109166,
+      "ms": 91
+    },
+    {
+      "label": "transactions@2",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=2&view=mTransactions2&cb=17912897431009680",
+      "status": 200,
+      "attempts": 1,
+      "bytes": 35364,
+      "ms": 84
+    },
+    {
+      "label": "transactions@3",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=3&view=mTransactions2&cb=17912897431858714",
+      "status": 200,
+      "attempts": 1,
+      "bytes": 43165,
+      "ms": 101
+    },
+    {
+      "label": "transactions@4",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=4&view=mTransactions2&cb=17912897432863716",
+      "status": 200,
+      "attempts": 1,
+      "bytes": 50879,
+      "ms": 82
+    },
+    {
+      "label": "transactions@5",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=5&view=mTransactions2&cb=17912897433671764",
+      "status": 200,
+      "attempts": 1,
+      "bytes": 1581,
+      "ms": 114
+    },
+    {
+      "label": "player_pool@0",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=5&view=kona_player_info&cb=17912897435165847",
+      "status": 200,
+      "attempts": 1,
+      "bytes": 2988449,
+      "ms": 288
+    },
+    {
+      "label": "matchups",
+      "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/1787259003?scoringPeriodId=5&view=mMatchupScore&view=mBoxscore&cb=17912897438461162",
+      "status": 200,
+      "attempts": 1,
+      "bytes": 572832,
+      "ms": 121
     }
   ],
   "github": {
-    "run_id": "37424383182",
-    "run_number": "99",
+    "run_id": "37463535317",
+    "run_number": "100",
     "run_attempt": "1",
     "workflow": "ESPN Fantasy Snapshot",
-    "sha": "3820d6584489545aeed99c31b43c951270f06e69",
+    "sha": "d34bf11d85c10327f17bf93721183830855d3422",
     "ref": "refs/heads/main",
     "actor": "JasonTheLucky",
     "event_name": "schedule",
