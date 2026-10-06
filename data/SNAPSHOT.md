@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-06T12:29:04.076865+00:00` |
+| Fetched at (UTC) | `2026-10-06T18:23:35.340212+00:00` |
 | Scoring period (week) | **5** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1051 |
-| Fetch duration | 1.82s |
+| Fetch duration | 1.68s |
 | ESPN calls | 9 |
-| Workflow run | `37463535317` |
+| Workflow run | `37510933650` |
 
 ## Freshness and completeness gates
 
@@ -78,13 +78,13 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Rachaad White | RB | OUT | BENCH | NO |
+| Jason X | Rachaad White | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
-| The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
-| The Bye Week Boys | Rico Dowdle | RB | OUT | BENCH | NO |
-| The Bye Week Boys | Jalen Coker | WR | OUT | BENCH | NO |
+| The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
@@ -96,28 +96,28 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Jeremiyah Love | RB | QUESTIONABLE | RB | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
+| From Puka with Love | Caleb Douglas | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Marcus Mariota | QB | DOUBTFUL | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | WR | yes |
-| Giant Packer Fan | Terry McLaurin | WR | OUT | WR | yes |
-| Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
-| Nicole's Gnarly Team | Breece Hall | RB | OUT | BENCH | NO |
+| Giant Packer Fan | Terry McLaurin | WR | QUESTIONABLE | WR | yes |
+| Giant Packer Fan | Adonai Mitchell | WR | DOUBTFUL | BENCH | NO |
+| Nicole's Gnarly Team | Breece Hall | RB | DOUBTFUL | BENCH | NO |
 | Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Tank Bigsby | RB | OUT | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
 | 🔥Certified Dumpster Fire 🔥 | Tee Higgins | WR | QUESTIONABLE | WR | yes |
-| 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | OUT | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | RB | yes |
-| Commanders of Chaos | Justin Jefferson | WR | OUT | BENCH | NO |
+| Commanders of Chaos | Justin Jefferson | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | BENCH | NO |
-| Commanders of Chaos | Dallas Goedert | TE | OUT | BENCH | NO |
+| Commanders of Chaos | Dallas Goedert | TE | DOUBTFUL | BENCH | NO |
 | Commanders of Chaos | Baker Mayfield | QB | OUT | BENCH | NO |
-| Commanders of Chaos | Jayden Daniels | QB | OUT | IR | NO |
+| Commanders of Chaos | Jayden Daniels | QB | QUESTIONABLE | IR | NO |
 
 ## Available player pool by position
 
@@ -129,7 +129,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-444 total | 89 executed ownership changes | 141 lineup-only moves | 192 draft picks | 0 pending
+453 total | 89 executed ownership changes | 150 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
