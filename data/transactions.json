@@ -1,7 +1,7 @@
 {
   "counts": {
-    "total": 453,
-    "ownership_changes": 111,
+    "total": 454,
+    "ownership_changes": 112,
     "executed_ownership_changes": 89,
     "lineup_only_moves": 150,
     "draft_picks": 192,
@@ -10261,6 +10261,46 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "99904702-c876-41ba-8687-e8e56c5b82b5",
+      "type": "WAIVER",
+      "status": "CANCELED",
+      "execution_type": "CANCEL",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-06T22:10:13.567000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4635008,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 2576925,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "269a5f2a-e62f-44cc-9b39-5e05a0941eaa",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -19691,15 +19731,15 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 10,
+    "0": 11,
     "1": 238,
     "2": 56,
     "3": 68,
     "4": 81,
-    "5": 10
+    "5": 11
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 5,
-  "fetched_at": "2026-10-06T18:23:33.655717+00:00"
+  "fetched_at": "2026-10-07T00:55:40.909173+00:00"
 }
