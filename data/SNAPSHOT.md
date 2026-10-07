@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-07T06:32:50.411079+00:00` |
+| Fetched at (UTC) | `2026-10-07T12:30:45.944612+00:00` |
 | Scoring period (week) | **5** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1051 |
-| Fetch duration | 2.15s |
+| Fetch duration | 1.85s |
 | ESPN calls | 9 |
-| Workflow run | `37582082196` |
+| Workflow run | `37621484350` |
 
 ## Freshness and completeness gates
 
@@ -59,22 +59,22 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| Auto Draft Champion | **$200** | $0 | 100.0% | 8 |
-| Giant Packer Fan | **$200** | $0 | 100.0% | 12 |
-| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 10 |
-| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 4 |
+| Auto Draft Champion | **$200** | $0 | 100.0% | 5 |
+| Giant Packer Fan | **$200** | $0 | 100.0% | 8 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 7 |
+| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 2 |
 | Commanders of Chaos | **$200** | $0 | 100.0% | 1 |
-| The Bye Week Boys | **$195** | $5 | 97.5% | 11 |
-| Burrow's Bunch | **$194** | $6 | 97.0% | 6 |
-| Connor’s Team | **$188** | $12 | 94.0% | 2 |
-| 🔥Certified Dumpster Fire 🔥 | **$183** | $17 | 91.5% | 7 |
-| From Puka with Love | **$170** | $30 | 85.0% | 5 |
-| Super Lamario Brothers | **$153** | $47 | 76.5% | 3 |
-| Jason X | **$3** | $197 | 1.5% | 9 |
+| Burrow's Bunch | **$194** | $6 | 97.0% | 4 |
+| Connor’s Team | **$182** | $18 | 91.0% | 10 |
+| 🔥Certified Dumpster Fire 🔥 | **$173** | $27 | 86.5% | 9 |
+| The Bye Week Boys | **$172** | $28 | 86.0% | 12 |
+| From Puka with Love | **$170** | $30 | 85.0% | 3 |
+| Super Lamario Brothers | **$140** | $60 | 70.0% | 11 |
+| Jason X | **$3** | $197 | 1.5% | 6 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (41)
+## Injury designations (39)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -100,7 +100,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | Marcus Mariota | QB | DOUBTFUL | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | WR | yes |
 | Giant Packer Fan | Terry McLaurin | WR | QUESTIONABLE | WR | yes |
@@ -111,7 +110,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
 | 🔥Certified Dumpster Fire 🔥 | Tee Higgins | WR | QUESTIONABLE | WR | yes |
 | 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Joe Mixon | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | RB | yes |
 | Commanders of Chaos | Justin Jefferson | WR | QUESTIONABLE | BENCH | NO |
@@ -124,30 +122,30 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 45 | 107 | 183 | 183 | 315 | 853 |
+| 19 | 45 | 107 | 182 | 184 | 316 | 853 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-454 total | 89 executed ownership changes | 150 lineup-only moves | 192 draft picks | 0 pending
+466 total | 97 executed ownership changes | 152 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-07T08:07 | Jason X | FREEAGENT | ADD Jaguars D/ST, DROP Wan'Dale Robinson |
+| 2026-10-07T07:56 | Jason X | FREEAGENT | ADD Wan'Dale Robinson, DROP Dontayvion Wicks |
+| 2026-10-07T07:44 | The Bye Week Boys | WAIVER | ADD Tre' Harris, DROP Makai Lemon |
+| 2026-10-07T07:44 | Super Lamario Brothers | WAIVER | ADD Bengals D/ST, DROP Bills D/ST |
+| 2026-10-07T07:44 | Connor’s Team | WAIVER | ADD MarShawn Lloyd, DROP Marcus Mariota |
+| 2026-10-07T07:44 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD Kirk Cousins, DROP Joe Mixon |
+| 2026-10-07T07:44 | Super Lamario Brothers | WAIVER | ADD Roman Wilson, DROP Kalif Raymond |
+| 2026-10-07T07:44 | The Bye Week Boys | WAIVER | ADD Will Shipley, DROP Darren Waller |
 | 2026-10-05T22:35 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Joe Mixon |
 | 2026-10-04T06:31 | The Bye Week Boys | FREEAGENT | ADD Makai Lemon, DROP Kendre Miller |
 | 2026-10-03T01:36 | The Bye Week Boys | TRADE_DECLINE | - |
 | 2026-10-02T07:05 | Connor’s Team | WAIVER | ADD Cam Little, DROP Cairo Santos |
-| 2026-10-01T18:39 | Commanders of Chaos | FREEAGENT | ADD Chiefs D/ST, DROP Panthers D/ST |
-| 2026-10-01T16:33 | The Bye Week Boys | FREEAGENT | ADD Darren Waller, DROP Hunter Henry |
-| 2026-10-01T07:38 | Connor’s Team | WAIVER | ADD Carnell Tate, DROP Tyjae Spears |
-| 2026-10-01T05:46 | The Bye Week Boys | FREEAGENT | ADD Tyreek Hill, DROP Kayshon Boutte |
-| 2026-10-01T03:28 | Connor’s Team | FREEAGENT | ADD Marcus Mariota, DROP Malik Willis |
-| 2026-09-30T18:48 | Nicole's Gnarly Team | TRADE_DECLINE | - |
-| 2026-09-30T15:18 | Super Lamario Brothers | FREEAGENT | ADD Will Reichard, DROP Chase McLaughlin |
-| 2026-09-30T15:10 | The Bye Week Boys | FREEAGENT | ADD Kendre Miller, DROP Demond Claiborne |
 
 ## League format
 
