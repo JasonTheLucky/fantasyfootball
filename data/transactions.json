@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 466,
-    "ownership_changes": 122,
-    "executed_ownership_changes": 97,
-    "lineup_only_moves": 152,
+    "total": 468,
+    "ownership_changes": 123,
+    "executed_ownership_changes": 98,
+    "lineup_only_moves": 153,
     "draft_picks": 192,
     "pending": 0,
     "failed": 17,
@@ -11,18 +11,6 @@
     "waiver_bids_won": 27
   },
   "waiver_bids": [
-    {
-      "team_id": 2,
-      "team": "The Bye Week Boys",
-      "bid_amount": 2,
-      "status": "EXECUTED",
-      "succeeded": true,
-      "scoring_period_id": 5,
-      "date": "2026-10-07T07:44:01.847000+00:00",
-      "players_added": [
-        4686612
-      ]
-    },
     {
       "team_id": 4,
       "team": "Super Lamario Brothers",
@@ -45,6 +33,18 @@
       "date": "2026-10-07T07:44:01.847000+00:00",
       "players_added": [
         4685279
+      ]
+    },
+    {
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 2,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 5,
+      "date": "2026-10-07T07:44:01.847000+00:00",
+      "players_added": [
+        4686612
       ]
     },
     {
@@ -506,6 +506,46 @@
   ],
   "executed_ownership_changes": [
     {
+      "id": "f72832a0-08a8-4f72-b64f-9ad79e6c6e01",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 11,
+      "team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-07T14:27:37.320000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4249087,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 11,
+          "to_team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+          "from_slot": null,
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 2473037,
+          "from_team_id": 11,
+          "from_team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "25e32bb1-b11d-4453-bc41-49c4013ad711",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -586,46 +626,6 @@
       ]
     },
     {
-      "id": "c9df1cc9-7216-4bfd-84e8-a2bb402d6c74",
-      "type": "WAIVER",
-      "status": "EXECUTED",
-      "execution_type": "PROCESS",
-      "is_pending": false,
-      "scoring_period_id": 5,
-      "team_id": 2,
-      "team": "The Bye Week Boys",
-      "bid_amount": 2,
-      "proposed_date": "2026-10-07T07:44:01.763000+00:00",
-      "processed_date": "2026-10-07T07:44:01.847000+00:00",
-      "is_league_manager": false,
-      "items": [
-        {
-          "item_type": "ADD",
-          "player_id": 4686612,
-          "from_team_id": 0,
-          "from_team": null,
-          "to_team_id": 2,
-          "to_team": "The Bye Week Boys",
-          "from_slot": null,
-          "to_slot": "BENCH",
-          "overall_pick_number": 0,
-          "is_keeper": false
-        },
-        {
-          "item_type": "DROP",
-          "player_id": 4870795,
-          "from_team_id": 2,
-          "from_team": "The Bye Week Boys",
-          "to_team_id": 0,
-          "to_team": null,
-          "from_slot": "BENCH",
-          "to_slot": null,
-          "overall_pick_number": 0,
-          "is_keeper": false
-        }
-      ]
-    },
-    {
       "id": "f80a2419-4e72-4cd6-b6a5-5dc5aaa34de4",
       "type": "WAIVER",
       "status": "EXECUTED",
@@ -659,6 +659,46 @@
           "to_team_id": 0,
           "to_team": null,
           "from_slot": "D/ST",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "c9df1cc9-7216-4bfd-84e8-a2bb402d6c74",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 2,
+      "proposed_date": "2026-10-07T07:44:01.763000+00:00",
+      "processed_date": "2026-10-07T07:44:01.847000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4686612,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4870795,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
           "to_slot": null,
           "overall_pick_number": 0,
           "is_keeper": false
@@ -4694,6 +4734,58 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "06e6f5f8-8fd1-435f-894a-c59c3b0b4631",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-07T15:58:08.241000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 3054850,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "RB",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4430807,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "RB",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4431545,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "af5e85d8-37e0-4fe7-aa73-f446e54e55df",
       "type": "ROSTER",
@@ -10837,6 +10929,46 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "f72832a0-08a8-4f72-b64f-9ad79e6c6e01",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 11,
+      "team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-07T14:27:37.320000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4249087,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 11,
+          "to_team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+          "from_slot": null,
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 2473037,
+          "from_team_id": 11,
+          "from_team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "25e32bb1-b11d-4453-bc41-49c4013ad711",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -10917,46 +11049,6 @@
       ]
     },
     {
-      "id": "c9df1cc9-7216-4bfd-84e8-a2bb402d6c74",
-      "type": "WAIVER",
-      "status": "EXECUTED",
-      "execution_type": "PROCESS",
-      "is_pending": false,
-      "scoring_period_id": 5,
-      "team_id": 2,
-      "team": "The Bye Week Boys",
-      "bid_amount": 2,
-      "proposed_date": "2026-10-07T07:44:01.763000+00:00",
-      "processed_date": "2026-10-07T07:44:01.847000+00:00",
-      "is_league_manager": false,
-      "items": [
-        {
-          "item_type": "ADD",
-          "player_id": 4686612,
-          "from_team_id": 0,
-          "from_team": null,
-          "to_team_id": 2,
-          "to_team": "The Bye Week Boys",
-          "from_slot": null,
-          "to_slot": "BENCH",
-          "overall_pick_number": 0,
-          "is_keeper": false
-        },
-        {
-          "item_type": "DROP",
-          "player_id": 4870795,
-          "from_team_id": 2,
-          "from_team": "The Bye Week Boys",
-          "to_team_id": 0,
-          "to_team": null,
-          "from_slot": "BENCH",
-          "to_slot": null,
-          "overall_pick_number": 0,
-          "is_keeper": false
-        }
-      ]
-    },
-    {
       "id": "f80a2419-4e72-4cd6-b6a5-5dc5aaa34de4",
       "type": "WAIVER",
       "status": "EXECUTED",
@@ -11025,6 +11117,46 @@
         {
           "item_type": "DROP",
           "player_id": 2576925,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "c9df1cc9-7216-4bfd-84e8-a2bb402d6c74",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 2,
+      "proposed_date": "2026-10-07T07:44:01.763000+00:00",
+      "processed_date": "2026-10-07T07:44:01.847000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4686612,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4870795,
           "from_team_id": 2,
           "from_team": "The Bye Week Boys",
           "to_team_id": 0,
@@ -20707,15 +20839,15 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 23,
+    "0": 25,
     "1": 238,
     "2": 56,
     "3": 68,
     "4": 81,
-    "5": 23
+    "5": 25
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 5,
-  "fetched_at": "2026-10-07T12:30:44.092200+00:00"
+  "fetched_at": "2026-10-07T18:24:42.802663+00:00"
 }

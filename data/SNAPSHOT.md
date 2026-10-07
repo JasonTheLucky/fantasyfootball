@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-07T12:30:45.944612+00:00` |
+| Fetched at (UTC) | `2026-10-07T18:24:44.483854+00:00` |
 | Scoring period (week) | **5** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1051 |
-| Fetch duration | 1.85s |
+| Fetch duration | 1.68s |
 | ESPN calls | 9 |
-| Workflow run | `37621484350` |
+| Workflow run | `37666600886` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (39)
+## Injury designations (41)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -91,6 +91,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | QB | yes |
+| Super Lamario Brothers | Rhamondre Stevenson | RB | QUESTIONABLE | RB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Burrow's Bunch | Ja'Marr Chase | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
@@ -109,6 +110,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Tank Bigsby | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
 | 🔥Certified Dumpster Fire 🔥 | Tee Higgins | WR | QUESTIONABLE | WR | yes |
+| 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | RB | yes |
@@ -128,16 +130,17 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-466 total | 97 executed ownership changes | 152 lineup-only moves | 192 draft picks | 0 pending
+468 total | 98 executed ownership changes | 153 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-07T14:27 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Matt Gay, DROP Jason Myers |
 | 2026-10-07T08:07 | Jason X | FREEAGENT | ADD Jaguars D/ST, DROP Wan'Dale Robinson |
 | 2026-10-07T07:56 | Jason X | FREEAGENT | ADD Wan'Dale Robinson, DROP Dontayvion Wicks |
-| 2026-10-07T07:44 | The Bye Week Boys | WAIVER | ADD Tre' Harris, DROP Makai Lemon |
 | 2026-10-07T07:44 | Super Lamario Brothers | WAIVER | ADD Bengals D/ST, DROP Bills D/ST |
+| 2026-10-07T07:44 | The Bye Week Boys | WAIVER | ADD Tre' Harris, DROP Makai Lemon |
 | 2026-10-07T07:44 | Connor’s Team | WAIVER | ADD MarShawn Lloyd, DROP Marcus Mariota |
 | 2026-10-07T07:44 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD Kirk Cousins, DROP Joe Mixon |
 | 2026-10-07T07:44 | Super Lamario Brothers | WAIVER | ADD Roman Wilson, DROP Kalif Raymond |
@@ -145,7 +148,6 @@ Most recent ownership changes:
 | 2026-10-05T22:35 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Joe Mixon |
 | 2026-10-04T06:31 | The Bye Week Boys | FREEAGENT | ADD Makai Lemon, DROP Kendre Miller |
 | 2026-10-03T01:36 | The Bye Week Boys | TRADE_DECLINE | - |
-| 2026-10-02T07:05 | Connor’s Team | WAIVER | ADD Cam Little, DROP Cairo Santos |
 
 ## League format
 
