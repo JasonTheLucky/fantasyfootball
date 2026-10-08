@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 475,
-    "ownership_changes": 124,
-    "executed_ownership_changes": 99,
-    "lineup_only_moves": 159,
+    "total": 477,
+    "ownership_changes": 125,
+    "executed_ownership_changes": 100,
+    "lineup_only_moves": 160,
     "draft_picks": 192,
     "pending": 0,
     "failed": 17,
@@ -505,6 +505,21 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "8c851a56-ca20-42f1-a079-15e9b7418fcf",
+      "type": "TRADE_DECLINE",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-08T09:58:46.635000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": []
+    },
     {
       "id": "f65cca6b-d7d4-4dec-9637-5b69466c65d6",
       "type": "FREEAGENT",
@@ -4774,6 +4789,46 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "d015ebb1-7d44-4b4e-b64a-9a89275f8ce2",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-08T10:00:01.707000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4034949,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4574716,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "5a82b894-24df-4b9a-b98c-4f2afce4b4e9",
       "type": "ROSTER",
@@ -11208,6 +11263,21 @@
     }
   ],
   "all_ownership_changes": [
+    {
+      "id": "8c851a56-ca20-42f1-a079-15e9b7418fcf",
+      "type": "TRADE_DECLINE",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-08T09:58:46.635000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": []
+    },
     {
       "id": "f65cca6b-d7d4-4dec-9637-5b69466c65d6",
       "type": "FREEAGENT",
@@ -21159,15 +21229,15 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 32,
+    "0": 34,
     "1": 238,
     "2": 56,
     "3": 68,
     "4": 81,
-    "5": 32
+    "5": 34
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 5,
-  "fetched_at": "2026-10-08T06:34:54.529112+00:00"
+  "fetched_at": "2026-10-08T12:30:13.662803+00:00"
 }

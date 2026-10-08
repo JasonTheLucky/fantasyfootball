@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-08T06:34:56.603714+00:00` |
+| Fetched at (UTC) | `2026-10-08T12:30:15.280218+00:00` |
 | Scoring period (week) | **5** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 854 |
 | Players in lookup index | 1052 |
-| Fetch duration | 2.07s |
+| Fetch duration | 1.62s |
 | ESPN calls | 9 |
-| Workflow run | `37738388574` |
+| Workflow run | `37777297236` |
 
 ## Freshness and completeness gates
 
@@ -143,12 +143,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-475 total | 99 executed ownership changes | 159 lineup-only moves | 192 draft picks | 0 pending
+477 total | 100 executed ownership changes | 160 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-08T09:58 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
 | 2026-10-07T22:22 | Kelli's Top-Notch Team | FREEAGENT | ADD Tyjae Spears, DROP Calvin Ridley |
 | 2026-10-07T14:27 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Matt Gay, DROP Jason Myers |
 | 2026-10-07T08:07 | Jason X | FREEAGENT | ADD Jaguars D/ST, DROP Wan'Dale Robinson |
@@ -160,7 +161,6 @@ Most recent ownership changes:
 | 2026-10-07T07:44 | Super Lamario Brothers | WAIVER | ADD Roman Wilson, DROP Kalif Raymond |
 | 2026-10-07T07:44 | The Bye Week Boys | WAIVER | ADD Will Shipley, DROP Darren Waller |
 | 2026-10-05T22:35 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Joe Mixon |
-| 2026-10-04T06:31 | The Bye Week Boys | FREEAGENT | ADD Makai Lemon, DROP Kendre Miller |
 
 ## League format
 
