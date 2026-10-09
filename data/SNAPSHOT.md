@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-09T00:56:49.625315+00:00` |
+| Fetched at (UTC) | `2026-10-09T06:33:53.905559+00:00` |
 | Scoring period (week) | **5** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 199 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.54s |
+| Fetch duration | 2.41s |
 | ESPN calls | 9 |
-| Workflow run | `37867301717` |
+| Workflow run | `37894171052` |
 
 ## Freshness and completeness gates
 
@@ -32,10 +32,10 @@
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
 | Kelli's Top-Notch Team | 0.0 | Super Lamario Brothers | 0.0 | NO |
-| Nicole's Gnarly Team | 4.2 | Giant Packer Fan | 8.0 | NO |
-| Auto Draft Champion | 0.0 | Burrow's Bunch | 4.9 | NO |
-| From Puka with Love | 1.84 | Jason X | 0.0 | NO |
-| Commanders of Chaos | 1.0 | The Bye Week Boys | 10.7 | NO |
+| Nicole's Gnarly Team | 20.1 | Giant Packer Fan | 33.5 | NO |
+| Auto Draft Champion | 0.0 | Burrow's Bunch | 30.0 | NO |
+| From Puka with Love | 14.64 | Jason X | 0.0 | NO |
+| Commanders of Chaos | 5.0 | The Bye Week Boys | 14.2 | NO |
 | Connor’s Team | 0.0 | 🔥Certified Dumpster Fire 🔥 | 0.0 | NO |
 
 ## Rosters
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (53)
+## Injury designations (54)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -115,6 +115,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Giant Packer Fan | Terry McLaurin | WR | QUESTIONABLE | WR | yes |
 | Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | DOUBTFUL | BENCH | NO |
+| Nicole's Gnarly Team | CeeDee Lamb | WR | QUESTIONABLE | WR | yes |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Breece Hall | RB | DOUBTFUL | BENCH | NO |
 | Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
