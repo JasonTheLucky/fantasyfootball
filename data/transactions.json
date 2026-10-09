@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 500,
+    "total": 501,
     "ownership_changes": 135,
     "executed_ownership_changes": 110,
-    "lineup_only_moves": 173,
+    "lineup_only_moves": 174,
     "draft_picks": 192,
     "pending": 0,
     "failed": 17,
@@ -5104,6 +5104,46 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "e9f2367a-2473-46df-b6fb-88589cd35cfc",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 11,
+      "team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-09T12:10:01.970000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4239993,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "WR",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4047650,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "WR",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "c5cb0bc4-dcd5-4b7c-81e2-0019adf8853f",
       "type": "ROSTER",
@@ -22343,15 +22383,15 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 57,
+    "0": 58,
     "1": 238,
     "2": 56,
     "3": 68,
     "4": 81,
-    "5": 57
+    "5": 58
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 5,
-  "fetched_at": "2026-10-09T06:33:51.496382+00:00"
+  "fetched_at": "2026-10-09T12:28:07.922488+00:00"
 }
