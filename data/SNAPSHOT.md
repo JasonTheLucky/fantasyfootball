@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-10T12:26:35.623969+00:00` |
+| Fetched at (UTC) | `2026-10-10T18:22:22.673096+00:00` |
 | Scoring period (week) | **5** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 200 |
 | Available players (FA + waivers) | 852 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.62s |
+| Fetch duration | 1.68s |
 | ESPN calls | 9 |
-| Workflow run | `38051958234` |
+| Workflow run | `38075497655` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (44)
+## Injury designations (45)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -114,6 +114,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Tank Bigsby | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | OUT | BENCH | NO |
+| Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Tee Higgins | WR | QUESTIONABLE | FLEX | yes |
 | 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Keenan Allen | WR | QUESTIONABLE | BENCH | NO |
@@ -133,7 +134,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-504 total | 112 executed ownership changes | 175 lineup-only moves | 192 draft picks | 0 pending
+506 total | 112 executed ownership changes | 177 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
