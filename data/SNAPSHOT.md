@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-11T01:00:17.549943+00:00` |
+| Fetched at (UTC) | `2026-10-11T06:31:31.192131+00:00` |
 | Scoring period (week) | **5** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 200 |
 | Available players (FA + waivers) | 852 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.8s |
+| Fetch duration | 2.03s |
 | ESPN calls | 9 |
-| Workflow run | `38100328445` |
+| Workflow run | `38118335061` |
 
 ## Freshness and completeness gates
 
@@ -74,12 +74,12 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (44)
+## Injury designations (43)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Jonah Coleman | RB | INJURY_RESERVE | BENCH | NO |
-| Jason X | Zach Charbonnet | RB | OUT | IR | NO |
+| Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
+| Jason X | Jonah Coleman | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
@@ -99,7 +99,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Michael Pittman Jr. | WR | INJURY_RESERVE | BENCH | NO |
-| From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Carnell Tate | WR | QUESTIONABLE | WR | yes |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
@@ -133,12 +132,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-507 total | 113 executed ownership changes | 177 lineup-only moves | 192 draft picks | 0 pending
+509 total | 114 executed ownership changes | 178 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-11T02:35 | From Puka with Love | FREEAGENT | ADD Makai Lemon, DROP Caleb Douglas |
 | 2026-10-10T20:16 | The Bye Week Boys | FREEAGENT | ADD Antonio Williams, DROP Rico Dowdle |
 | 2026-10-10T00:07 | Jason X | FREEAGENT | ADD Patriots D/ST, DROP Bears D/ST |
 | 2026-10-09T18:15 | Super Lamario Brothers | FREEAGENT | ADD Aaron Rodgers |
@@ -150,7 +150,6 @@ Most recent ownership changes:
 | 2026-10-08T20:58 | Burrow's Bunch | FREEAGENT | ADD Browns D/ST |
 | 2026-10-08T18:32 | Jason X | FREEAGENT | ADD Jacoby Brissett, DROP Deshaun Watson |
 | 2026-10-08T14:26 | Commanders of Chaos | FREEAGENT | ADD Commanders D/ST |
-| 2026-10-08T14:24 | Commanders of Chaos | ROSTER | DROP Baker Mayfield |
 
 ## League format
 
