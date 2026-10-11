@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-10T18:22:22.673096+00:00` |
+| Fetched at (UTC) | `2026-10-11T01:00:17.549943+00:00` |
 | Scoring period (week) | **5** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 200 |
 | Available players (FA + waivers) | 852 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.68s |
+| Fetch duration | 1.8s |
 | ESPN calls | 9 |
-| Workflow run | `38075497655` |
+| Workflow run | `38100328445` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (45)
+## Injury designations (44)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -82,7 +82,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Zach Charbonnet | RB | OUT | IR | NO |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | OUT | BENCH | NO |
@@ -99,7 +98,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Burrow's Bunch | Ja'Marr Chase | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Michael Pittman Jr. | WR | OUT | BENCH | NO |
+| From Puka with Love | Michael Pittman Jr. | WR | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Caleb Douglas | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Carnell Tate | WR | QUESTIONABLE | WR | yes |
@@ -128,18 +127,19 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 45 | 107 | 182 | 184 | 316 | 852 |
+| 18 | 45 | 107 | 183 | 184 | 315 | 852 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-506 total | 112 executed ownership changes | 177 lineup-only moves | 192 draft picks | 0 pending
+507 total | 113 executed ownership changes | 177 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-10T20:16 | The Bye Week Boys | FREEAGENT | ADD Antonio Williams, DROP Rico Dowdle |
 | 2026-10-10T00:07 | Jason X | FREEAGENT | ADD Patriots D/ST, DROP Bears D/ST |
 | 2026-10-09T18:15 | Super Lamario Brothers | FREEAGENT | ADD Aaron Rodgers |
 | 2026-10-08T22:31 | The Bye Week Boys | FREEAGENT | ADD Mike Gesicki, DROP Dalton Schultz |
@@ -151,7 +151,6 @@ Most recent ownership changes:
 | 2026-10-08T18:32 | Jason X | FREEAGENT | ADD Jacoby Brissett, DROP Deshaun Watson |
 | 2026-10-08T14:26 | Commanders of Chaos | FREEAGENT | ADD Commanders D/ST |
 | 2026-10-08T14:24 | Commanders of Chaos | ROSTER | DROP Baker Mayfield |
-| 2026-10-08T13:39 | 🔥Certified Dumpster Fire 🔥 | TRADE_DECLINE | - |
 
 ## League format
 
