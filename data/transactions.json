@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 509,
-    "ownership_changes": 139,
-    "executed_ownership_changes": 114,
-    "lineup_only_moves": 178,
+    "total": 516,
+    "ownership_changes": 142,
+    "executed_ownership_changes": 117,
+    "lineup_only_moves": 182,
     "draft_picks": 192,
     "pending": 0,
     "failed": 17,
@@ -505,6 +505,114 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "a783afde-fa40-4c6c-bd60-7b46e548e045",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 9,
+      "team": "Nicole's Gnarly Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-11T12:25:13.728000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4689936,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 9,
+          "to_team": "Nicole's Gnarly Team",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "fca367e8-af51-4ccd-a33a-07d7ada719df",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 9,
+      "team": "Nicole's Gnarly Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-11T12:24:37.349000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 3122840,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 9,
+          "to_team": "Nicole's Gnarly Team",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4429013,
+          "from_team_id": 9,
+          "from_team": "Nicole's Gnarly Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "55b4d423-d95f-4f78-89e9-a65cb9f9c408",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-11T11:57:34.603000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16020,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 10,
+          "to_team": "Kelli's Top-Notch Team",
+          "from_slot": null,
+          "to_slot": "D/ST",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16023,
+          "from_team_id": 10,
+          "from_team": "Kelli's Top-Notch Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "9babaa77-902a-47da-9b73-d8ea82c71be1",
       "type": "FREEAGENT",
@@ -5252,6 +5360,154 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "0f40596f-5018-41e7-9977-f695be57e500",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 9,
+      "team": "Nicole's Gnarly Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-11T12:25:22.856000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4689936,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 3055899,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "9c8fe1ab-ccca-404a-9dbb-22bc8e66ff81",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 9,
+      "team": "Nicole's Gnarly Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-11T12:24:59.703000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4427366,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "IR",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "d58a1fb3-83ad-4c81-813f-1262c0197268",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 9,
+      "team": "Nicole's Gnarly Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-11T12:24:42.208000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 3122840,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "QB",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 3139477,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "QB",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "c3d7b6d8-a8c0-42bd-80c9-cd6f91714126",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-11T11:56:20.124000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4574716,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4034949,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "b2a42b17-dcca-4a4c-bcbd-04d278698b02",
       "type": "ROSTER",
@@ -12398,6 +12654,114 @@
     }
   ],
   "all_ownership_changes": [
+    {
+      "id": "a783afde-fa40-4c6c-bd60-7b46e548e045",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 9,
+      "team": "Nicole's Gnarly Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-11T12:25:13.728000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4689936,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 9,
+          "to_team": "Nicole's Gnarly Team",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "fca367e8-af51-4ccd-a33a-07d7ada719df",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 9,
+      "team": "Nicole's Gnarly Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-11T12:24:37.349000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 3122840,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 9,
+          "to_team": "Nicole's Gnarly Team",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4429013,
+          "from_team_id": 9,
+          "from_team": "Nicole's Gnarly Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "55b4d423-d95f-4f78-89e9-a65cb9f9c408",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 5,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-11T11:57:34.603000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16020,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 10,
+          "to_team": "Kelli's Top-Notch Team",
+          "from_slot": null,
+          "to_slot": "D/ST",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16023,
+          "from_team_id": 10,
+          "from_team": "Kelli's Top-Notch Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "9babaa77-902a-47da-9b73-d8ea82c71be1",
       "type": "FREEAGENT",
@@ -22827,15 +23191,15 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 66,
+    "0": 73,
     "1": 238,
     "2": 56,
     "3": 68,
     "4": 81,
-    "5": 66
+    "5": 73
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 5,
-  "fetched_at": "2026-10-11T06:31:29.164212+00:00"
+  "fetched_at": "2026-10-11T12:27:58.816555+00:00"
 }

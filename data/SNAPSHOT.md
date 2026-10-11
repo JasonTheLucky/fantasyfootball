@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-11T06:31:31.192131+00:00` |
+| Fetched at (UTC) | `2026-10-11T12:28:00.754437+00:00` |
 | Scoring period (week) | **5** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 200 |
-| Available players (FA + waivers) | 852 |
+| Rostered players | 201 |
+| Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 2.03s |
+| Fetch duration | 1.94s |
 | ESPN calls | 9 |
-| Workflow run | `38118335061` |
+| Workflow run | `38139349160` |
 
 ## Freshness and completeness gates
 
@@ -50,7 +50,7 @@
 | 6 | From Puka with Love | Brandon Daab | 17 | 9 | 7 | 1 | 0 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
-| 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
+| 9 | Nicole's Gnarly Team | Nicole Brandau | 17 | 9 | 7 | 1 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 17 | 9 | 7 | 1 | 0 |
 | 12 | Commanders of Chaos | Morgan Nadke | 17 | 9 | 7 | 1 | 0 |
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (43)
+## Injury designations (42)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -108,9 +108,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | CeeDee Lamb | WR | QUESTIONABLE | WR | yes |
-| Nicole's Gnarly Team | Breece Hall | RB | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | BENCH | NO |
-| Nicole's Gnarly Team | Tank Bigsby | RB | INJURY_RESERVE | BENCH | NO |
+| Nicole's Gnarly Team | Breece Hall | RB | OUT | IR | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | OUT | BENCH | NO |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Tee Higgins | WR | QUESTIONABLE | FLEX | yes |
@@ -126,18 +125,21 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 45 | 107 | 183 | 184 | 315 | 852 |
+| 18 | 44 | 106 | 184 | 184 | 315 | 851 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-509 total | 114 executed ownership changes | 178 lineup-only moves | 192 draft picks | 0 pending
+516 total | 117 executed ownership changes | 182 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-11T12:25 | Nicole's Gnarly Team | FREEAGENT | ADD Jake Bates |
+| 2026-10-11T12:24 | Nicole's Gnarly Team | FREEAGENT | ADD Deshaun Watson, DROP Tank Bigsby |
+| 2026-10-11T11:57 | Kelli's Top-Notch Team | FREEAGENT | ADD Jets D/ST, DROP Steelers D/ST |
 | 2026-10-11T02:35 | From Puka with Love | FREEAGENT | ADD Makai Lemon, DROP Caleb Douglas |
 | 2026-10-10T20:16 | The Bye Week Boys | FREEAGENT | ADD Antonio Williams, DROP Rico Dowdle |
 | 2026-10-10T00:07 | Jason X | FREEAGENT | ADD Patriots D/ST, DROP Bears D/ST |
@@ -147,9 +149,6 @@ Most recent ownership changes:
 | 2026-10-08T21:03 | Burrow's Bunch | ROSTER | DROP Daniel Carlson |
 | 2026-10-08T21:03 | Burrow's Bunch | FREEAGENT | ADD Nick Folk |
 | 2026-10-08T20:58 | Burrow's Bunch | ROSTER | DROP 49ers D/ST |
-| 2026-10-08T20:58 | Burrow's Bunch | FREEAGENT | ADD Browns D/ST |
-| 2026-10-08T18:32 | Jason X | FREEAGENT | ADD Jacoby Brissett, DROP Deshaun Watson |
-| 2026-10-08T14:26 | Commanders of Chaos | FREEAGENT | ADD Commanders D/ST |
 
 ## League format
 
