@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-12T01:01:46.127746+00:00` |
+| Fetched at (UTC) | `2026-10-12T06:49:03.084698+00:00` |
 | Scoring period (week) | **5** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 2.28s |
+| Fetch duration | 1.73s |
 | ESPN calls | 9 |
-| Workflow run | `38190280725` |
+| Workflow run | `38214392288` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 97.56 | Super Lamario Brothers | 132.9 | NO |
-| Nicole's Gnarly Team | 98.9 | Giant Packer Fan | 174.5 | NO |
-| Auto Draft Champion | 94.12 | Burrow's Bunch | 179.0 | NO |
+| Kelli's Top-Notch Team | 97.56 | Super Lamario Brothers | 151.9 | NO |
+| Nicole's Gnarly Team | 94.9 | Giant Packer Fan | 174.5 | NO |
+| Auto Draft Champion | 94.12 | Burrow's Bunch | 190.0 | NO |
 | From Puka with Love | 79.54 | Jason X | 165.68 | NO |
-| Commanders of Chaos | 87.26 | The Bye Week Boys | 75.04 | NO |
-| Connor’s Team | 99.46 | 🔥Certified Dumpster Fire 🔥 | 39.32 | NO |
+| Commanders of Chaos | 96.86 | The Bye Week Boys | 99.14 | NO |
+| Connor’s Team | 99.46 | 🔥Certified Dumpster Fire 🔥 | 65.02 | NO |
 
 ## Rosters
 
