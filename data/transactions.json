@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 524,
+    "total": 525,
     "ownership_changes": 142,
     "executed_ownership_changes": 117,
-    "lineup_only_moves": 190,
+    "lineup_only_moves": 191,
     "draft_picks": 192,
     "pending": 0,
     "failed": 17,
@@ -5360,6 +5360,46 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "b5212679-4920-4fe9-b1f7-6e3b70cecfb5",
+      "type": "FUTURE_ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 6,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-13T02:35:15.495000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4685472,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "WR",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4569603,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "WR",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "69fa04af-2ae8-4254-b6d7-8f49205c21b9",
       "type": "FUTURE_ROSTER",
@@ -23511,15 +23551,15 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 81,
+    "0": 82,
     "1": 238,
     "2": 56,
     "3": 68,
     "4": 81,
-    "5": 81
+    "5": 82
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 5,
-  "fetched_at": "2026-10-13T00:57:25.976483+00:00"
+  "fetched_at": "2026-10-13T06:36:36.773676+00:00"
 }
