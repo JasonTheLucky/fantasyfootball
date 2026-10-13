@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-13T12:30:54.396741+00:00` |
+| Fetched at (UTC) | `2026-10-13T18:25:38.340261+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 854 |
 | Players in lookup index | 1052 |
-| Fetch duration | 2.0s |
+| Fetch duration | 1.62s |
 | ESPN calls | 10 |
-| Workflow run | `38397826669` |
+| Workflow run | `38446613798` |
 
 ## Freshness and completeness gates
 
@@ -43,12 +43,12 @@
 | # | Team | Owner | Roster | Start | Bench | IR | Bench open |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
-| 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
+| 2 | The Bye Week Boys | Ravinder Battu | 17 | 8 | 8 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
-| 4 | Super Lamario Brothers | Jeffrey Clark | 15 | 9 | 6 | 0 | 1 |
+| 4 | Super Lamario Brothers | Jeffrey Clark | 15 | 9 | 5 | 1 | 2 |
 | 5 | Burrow's Bunch | Norberto Vargas | 17 | 9 | 7 | 1 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 8 | 7 | 1 | 0 |
-| 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
+| 7 | Connor’s Team | Connor Hartland | 17 | 8 | 8 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 17 | 9 | 7 | 1 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
@@ -81,9 +81,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Jaxon Smith-Njigba | WR | QUESTIONABLE | WR | yes |
 | Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | IR | NO |
-| The Bye Week Boys | DeVonta Smith | WR | OUT | FLEX | yes |
+| The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
-| The Bye Week Boys | DJ Moore | WR | OUT | BENCH | NO |
+| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Will Shipley | RB | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Tre' Harris | WR | DOUBTFUL | BENCH | NO |
@@ -92,30 +92,30 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Super Lamario Brothers | Lamar Jackson | QB | OUT | QB | yes |
+| Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | QB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
-| Super Lamario Brothers | Jordan Addison | WR | OUT | BENCH | NO |
+| Super Lamario Brothers | Jordan Addison | WR | QUESTIONABLE | IR | NO |
 | Burrow's Bunch | KC Concepcion | WR | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Michael Pittman Jr. | WR | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | RB | yes |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
+| Connor’s Team | TreVeyon Henderson | RB | DOUBTFUL | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | TE | yes |
 | Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
-| Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
+| Giant Packer Fan | Adonai Mitchell | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | CeeDee Lamb | WR | QUESTIONABLE | WR | yes |
-| Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
+| Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
-| Nicole's Gnarly Team | Breece Hall | RB | OUT | IR | NO |
-| Kelli's Top-Notch Team | Saquon Barkley | RB | OUT | BENCH | NO |
+| Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | IR | NO |
+| Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | DOUBTFUL | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | OUT | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Kyle Monangai | RB | OUT | BENCH | NO |
+| Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | IR | NO |
 
 ## Available player pool by position
@@ -128,7 +128,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-540 total | 120 executed ownership changes | 203 lineup-only moves | 192 draft picks | 0 pending
+548 total | 120 executed ownership changes | 209 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
