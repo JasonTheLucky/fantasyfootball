@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-12T18:24:01.443430+00:00` |
+| Fetched at (UTC) | `2026-10-13T00:57:27.632344+00:00` |
 | Scoring period (week) | **5** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 2.01s |
+| Fetch duration | 1.66s |
 | ESPN calls | 9 |
-| Workflow run | `38290623516` |
+| Workflow run | `38329778700` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 97.56 | Super Lamario Brothers | 151.9 | NO |
-| Nicole's Gnarly Team | 94.9 | Giant Packer Fan | 174.5 | NO |
+| Kelli's Top-Notch Team | 101.46 | Super Lamario Brothers | 151.9 | NO |
+| Nicole's Gnarly Team | 94.9 | Giant Packer Fan | 176.18 | NO |
 | Auto Draft Champion | 94.12 | Burrow's Bunch | 190.0 | NO |
-| From Puka with Love | 79.54 | Jason X | 165.68 | NO |
-| Commanders of Chaos | 96.86 | The Bye Week Boys | 99.14 | NO |
-| Connor’s Team | 99.46 | 🔥Certified Dumpster Fire 🔥 | 65.02 | NO |
+| From Puka with Love | 87.74 | Jason X | 165.68 | NO |
+| Commanders of Chaos | 96.86 | The Bye Week Boys | 100.14 | NO |
+| Connor’s Team | 99.46 | 🔥Certified Dumpster Fire 🔥 | 77.82 | NO |
 
 ## Rosters
 
@@ -78,11 +78,12 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
+| Jason X | Jaxon Smith-Njigba | WR | QUESTIONABLE | WR | yes |
 | Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | IR | NO |
-| The Bye Week Boys | Tre' Harris | WR | QUESTIONABLE | WR | yes |
+| The Bye Week Boys | Tre' Harris | WR | DOUBTFUL | WR | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
-| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | DJ Moore | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Will Shipley | RB | DOUBTFUL | BENCH | NO |
@@ -93,7 +94,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Super Lamario Brothers | Jordan Addison | WR | OUT | BENCH | NO |
-| Super Lamario Brothers | Roman Wilson | WR | DOUBTFUL | BENCH | NO |
+| Super Lamario Brothers | Roman Wilson | WR | OUT | BENCH | NO |
 | Super Lamario Brothers | Lamar Jackson | QB | OUT | IR | NO |
 | Burrow's Bunch | KC Concepcion | WR | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
@@ -110,10 +111,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | CeeDee Lamb | WR | QUESTIONABLE | WR | yes |
 | Nicole's Gnarly Team | Caleb Williams | QB | OUT | BENCH | NO |
-| Nicole's Gnarly Team | Deebo Samuel Sr. | WR | QUESTIONABLE | BENCH | NO |
+| Nicole's Gnarly Team | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Breece Hall | RB | OUT | IR | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | OUT | BENCH | NO |
-| Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | DOUBTFUL | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
@@ -130,7 +130,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-522 total | 117 executed ownership changes | 188 lineup-only moves | 192 draft picks | 0 pending
+524 total | 117 executed ownership changes | 190 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
