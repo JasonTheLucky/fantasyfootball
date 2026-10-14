@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-14T12:28:05.954829+00:00` |
+| Fetched at (UTC) | `2026-10-14T18:23:20.088497+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 2.22s |
+| Fetch duration | 2.05s |
 | ESPN calls | 10 |
-| Workflow run | `38563995182` |
+| Workflow run | `38614702867` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (38)
+## Injury designations (39)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -84,7 +84,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
-| The Bye Week Boys | Tyreek Hill | WR | OUT | BENCH | NO |
+| The Bye Week Boys | Tyreek Hill | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Will Shipley | RB | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Quinshon Judkins | RB | QUESTIONABLE | FLEX | yes |
@@ -94,6 +94,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | QB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Super Lamario Brothers | Jordan Addison | WR | QUESTIONABLE | IR | NO |
+| Burrow's Bunch | Tony Pollard | RB | QUESTIONABLE | RB | yes |
 | Burrow's Bunch | KC Concepcion | WR | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
@@ -105,11 +106,11 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | TE | yes |
 | Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
-| Giant Packer Fan | Adonai Mitchell | WR | QUESTIONABLE | BENCH | NO |
+| Giant Packer Fan | Adonai Mitchell | WR | DOUBTFUL | BENCH | NO |
 | Nicole's Gnarly Team | CeeDee Lamb | WR | QUESTIONABLE | WR | yes |
 | Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
-| Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | IR | NO |
+| Nicole's Gnarly Team | Breece Hall | RB | DOUBTFUL | IR | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | DOUBTFUL | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | QUESTIONABLE | BENCH | NO |
@@ -127,7 +128,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-564 total | 129 executed ownership changes | 211 lineup-only moves | 192 draft picks | 0 pending
+566 total | 129 executed ownership changes | 213 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
