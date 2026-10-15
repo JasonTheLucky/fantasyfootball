@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-15T06:31:16.829726+00:00` |
+| Fetched at (UTC) | `2026-10-15T12:27:48.302534+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.66s |
+| Fetch duration | 2.25s |
 | ESPN calls | 10 |
-| Workflow run | `38692887106` |
+| Workflow run | `38734798683` |
 
 ## Freshness and completeness gates
 
@@ -60,17 +60,17 @@
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
 | Auto Draft Champion | **$200** | $0 | 100.0% | 4 |
-| Giant Packer Fan | **$200** | $0 | 100.0% | 7 |
+| Giant Packer Fan | **$200** | $0 | 100.0% | 6 |
 | Nicole's Gnarly Team | **$200** | $0 | 100.0% | 5 |
 | Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 2 |
 | Commanders of Chaos | **$200** | $0 | 100.0% | 1 |
-| Burrow's Bunch | **$184** | $16 | 92.0% | 8 |
+| Burrow's Bunch | **$184** | $16 | 92.0% | 7 |
 | Connor’s Team | **$182** | $18 | 91.0% | 3 |
-| 🔥Certified Dumpster Fire 🔥 | **$172** | $28 | 86.0% | 11 |
-| From Puka with Love | **$165** | $35 | 82.5% | 9 |
-| The Bye Week Boys | **$155** | $45 | 77.5% | 10 |
-| Super Lamario Brothers | **$135** | $65 | 67.5% | 12 |
-| Jason X | **$3** | $197 | 1.5% | 6 |
+| 🔥Certified Dumpster Fire 🔥 | **$172** | $28 | 86.0% | 10 |
+| From Puka with Love | **$165** | $35 | 82.5% | 8 |
+| The Bye Week Boys | **$155** | $45 | 77.5% | 9 |
+| Super Lamario Brothers | **$135** | $65 | 67.5% | 11 |
+| Jason X | **$2** | $198 | 1.0% | 12 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
@@ -125,18 +125,19 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 42 | 106 | 183 | 184 | 318 | 851 |
+| 18 | 42 | 107 | 183 | 184 | 317 | 851 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-571 total | 130 executed ownership changes | 217 lineup-only moves | 192 draft picks | 0 pending
+573 total | 131 executed ownership changes | 217 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-15T07:16 | Jason X | WAIVER | ADD Wan'Dale Robinson, DROP Jacoby Brissett |
 | 2026-10-14T18:39 | From Puka with Love | FREEAGENT | ADD Cyrus Allen, DROP Michael Pittman Jr. |
 | 2026-10-14T07:51 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD Darren Waller, DROP Kirk Cousins |
 | 2026-10-14T07:51 | Super Lamario Brothers | WAIVER | ADD 49ers D/ST, DROP Bengals D/ST |
@@ -148,7 +149,6 @@ Most recent ownership changes:
 | 2026-10-14T07:51 | The Bye Week Boys | WAIVER | ADD Brenton Strange, DROP Mike Gesicki |
 | 2026-10-14T07:51 | The Bye Week Boys | WAIVER | ADD Dameon Pierce, DROP Antonio Williams |
 | 2026-10-13T10:51 | Super Lamario Brothers | ROSTER | DROP Roman Wilson |
-| 2026-10-13T10:51 | Super Lamario Brothers | ROSTER | DROP Jake Ferguson |
 
 ## League format
 
