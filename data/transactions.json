@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 566,
-    "ownership_changes": 161,
-    "executed_ownership_changes": 129,
-    "lineup_only_moves": 213,
+    "total": 568,
+    "ownership_changes": 162,
+    "executed_ownership_changes": 130,
+    "lineup_only_moves": 214,
     "draft_picks": 192,
     "pending": 0,
     "failed": 20,
@@ -613,6 +613,46 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "5642a5f3-0378-4fc5-a54a-68920e3df70d",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 6,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-14T18:39:39.488000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4912218,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4035687,
+          "from_team_id": 6,
+          "from_team": "From Puka with Love",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "cfd5c46d-1e05-4007-997f-9f84fe585d67",
       "type": "WAIVER",
@@ -5984,6 +6024,46 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "d25b0366-c65a-4a06-9020-8b52511bab63",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 6,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-14T21:48:07.629000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4685247,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4241985,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "c0dc5e96-1f3b-45cc-ab95-0ddafab7e071",
       "type": "ROSTER",
@@ -14554,6 +14634,46 @@
     }
   ],
   "all_ownership_changes": [
+    {
+      "id": "5642a5f3-0378-4fc5-a54a-68920e3df70d",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 6,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-14T18:39:39.488000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4912218,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4035687,
+          "from_team_id": 6,
+          "from_team": "From Puka with Love",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "cfd5c46d-1e05-4007-997f-9f84fe585d67",
       "type": "WAIVER",
@@ -25767,16 +25887,16 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 39,
+    "0": 41,
     "1": 238,
     "2": 56,
     "3": 68,
     "4": 81,
     "5": 84,
-    "6": 39
+    "6": 41
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 6,
-  "fetched_at": "2026-10-14T18:23:18.034035+00:00"
+  "fetched_at": "2026-10-15T00:45:11.922289+00:00"
 }
