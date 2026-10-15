@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-15T00:45:13.920171+00:00` |
+| Fetched at (UTC) | `2026-10-15T06:31:16.829726+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 2.0s |
+| Fetch duration | 1.66s |
 | ESPN calls | 10 |
-| Workflow run | `38661802630` |
+| Workflow run | `38692887106` |
 
 ## Freshness and completeness gates
 
@@ -105,9 +105,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
-| Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | TE | yes |
+| Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | FLEX | yes |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | WR | yes |
-| Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
+| Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | DOUBTFUL | BENCH | NO |
 | Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
@@ -131,7 +131,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-568 total | 130 executed ownership changes | 214 lineup-only moves | 192 draft picks | 0 pending
+571 total | 130 executed ownership changes | 217 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
