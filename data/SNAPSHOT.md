@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-15T12:27:48.302534+00:00` |
+| Fetched at (UTC) | `2026-10-15T18:21:51.881687+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 2.25s |
+| Fetch duration | 1.74s |
 | ESPN calls | 10 |
-| Workflow run | `38734798683` |
+| Workflow run | `38784967862` |
 
 ## Freshness and completeness gates
 
@@ -74,12 +74,13 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (42)
+## Injury designations (44)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
 | Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
+| Jason X | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
@@ -89,6 +90,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Chris Olave | WR | QUESTIONABLE | WR | yes |
 | Auto Draft Champion | Quinshon Judkins | RB | QUESTIONABLE | FLEX | yes |
+| Auto Draft Champion | Jalen Hurts | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
@@ -97,8 +99,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Super Lamario Brothers | Jordan Addison | WR | QUESTIONABLE | IR | NO |
 | Burrow's Bunch | KC Concepcion | WR | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
-| From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Jeremiyah Love | RB | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Josh Downs | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
@@ -125,18 +127,20 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 42 | 107 | 183 | 184 | 317 | 851 |
+| 18 | 42 | 107 | 182 | 184 | 318 | 851 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-573 total | 131 executed ownership changes | 217 lineup-only moves | 192 draft picks | 0 pending
+586 total | 133 executed ownership changes | 228 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-15T16:32 | Jason X | FREEAGENT | ADD Rico Dowdle, DROP Courtland Sutton |
+| 2026-10-15T16:23 | Burrow's Bunch | FREEAGENT | ADD Steelers D/ST, DROP Browns D/ST |
 | 2026-10-15T07:16 | Jason X | WAIVER | ADD Wan'Dale Robinson, DROP Jacoby Brissett |
 | 2026-10-14T18:39 | From Puka with Love | FREEAGENT | ADD Cyrus Allen, DROP Michael Pittman Jr. |
 | 2026-10-14T07:51 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD Darren Waller, DROP Kirk Cousins |
@@ -144,11 +148,9 @@ Most recent ownership changes:
 | 2026-10-14T07:51 | Super Lamario Brothers | WAIVER | ADD Jason Myers |
 | 2026-10-14T07:51 | Super Lamario Brothers | WAIVER | ADD Pat Freiermuth |
 | 2026-10-14T07:51 | The Bye Week Boys | WAIVER | ADD Kendrick Bourne, DROP Tre' Harris |
-| 2026-10-14T07:51 | From Puka with Love | WAIVER | ADD Dominic Zvada |
 | 2026-10-14T07:51 | Burrow's Bunch | WAIVER | ADD Jameis Winston, DROP Wan'Dale Robinson |
 | 2026-10-14T07:51 | The Bye Week Boys | WAIVER | ADD Brenton Strange, DROP Mike Gesicki |
-| 2026-10-14T07:51 | The Bye Week Boys | WAIVER | ADD Dameon Pierce, DROP Antonio Williams |
-| 2026-10-13T10:51 | Super Lamario Brothers | ROSTER | DROP Roman Wilson |
+| 2026-10-14T07:51 | From Puka with Love | WAIVER | ADD Dominic Zvada |
 
 ## League format
 
