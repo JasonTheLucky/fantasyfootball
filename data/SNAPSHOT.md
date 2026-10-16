@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-16T12:27:35.237395+00:00` |
+| Fetched at (UTC) | `2026-10-16T18:21:04.938934+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 2.33s |
+| Fetch duration | 2.7s |
 | ESPN calls | 10 |
-| Workflow run | `38900632732` |
+| Workflow run | `38946638502` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (44)
+## Injury designations (43)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -91,7 +91,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | QB | yes |
+| Super Lamario Brothers | Lamar Jackson | QB | OUT | BENCH | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Super Lamario Brothers | Jordan Addison | WR | QUESTIONABLE | IR | NO |
 | Burrow's Bunch | KC Concepcion | WR | QUESTIONABLE | BENCH | NO |
@@ -103,21 +103,20 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
-| Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | FLEX | yes |
+| Giant Packer Fan | Rashee Rice | WR | OUT | FLEX | yes |
 | Giant Packer Fan | Terry McLaurin | WR | QUESTIONABLE | WR | yes |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | WR | yes |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
-| Giant Packer Fan | Adonai Mitchell | WR | DOUBTFUL | BENCH | NO |
+| Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | WR | yes |
 | Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
-| Nicole's Gnarly Team | Breece Hall | RB | DOUBTFUL | IR | NO |
+| Nicole's Gnarly Team | Breece Hall | RB | OUT | IR | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Darren Waller | TE | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | WR | yes |
 | Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | RB | yes |
@@ -133,7 +132,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-595 total | 136 executed ownership changes | 234 lineup-only moves | 192 draft picks | 0 pending
+599 total | 136 executed ownership changes | 238 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
