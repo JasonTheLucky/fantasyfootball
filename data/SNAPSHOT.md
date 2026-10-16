@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-15T18:21:51.881687+00:00` |
+| Fetched at (UTC) | `2026-10-16T00:45:05.021471+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.74s |
+| Fetch duration | 1.87s |
 | ESPN calls | 10 |
-| Workflow run | `38784967862` |
+| Workflow run | `38831243017` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Nicole's Gnarly Team | 0.0 | Kelli's Top-Notch Team | 0.0 | NO |
-| Super Lamario Brothers | 0.0 | Auto Draft Champion | 0.0 | NO |
-| Giant Packer Fan | 0.0 | From Puka with Love | 0.0 | NO |
+| Nicole's Gnarly Team | 3.9 | Kelli's Top-Notch Team | 0.0 | NO |
+| Super Lamario Brothers | 5.0 | Auto Draft Champion | 0.0 | NO |
+| Giant Packer Fan | 11.0 | From Puka with Love | 1.3 | NO |
 | Burrow's Bunch | 0.0 | Commanders of Chaos | 0.0 | NO |
-| Jason X | 0.0 | Connor’s Team | 0.0 | NO |
-| The Bye Week Boys | 0.0 | 🔥Certified Dumpster Fire 🔥 | 0.0 | NO |
+| Jason X | 3.1 | Connor’s Team | 0.0 | NO |
+| The Bye Week Boys | 11.8 | 🔥Certified Dumpster Fire 🔥 | 0.0 | NO |
 
 ## Rosters
 
@@ -74,16 +74,14 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (44)
+## Injury designations (45)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
 | Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
-| Jason X | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | IR | NO |
-| The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | FLEX | yes |
-| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
+| The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Will Shipley | RB | DOUBTFUL | BENCH | NO |
@@ -101,26 +99,29 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Jeremiyah Love | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Josh Downs | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | FLEX | yes |
+| Giant Packer Fan | Terry McLaurin | WR | QUESTIONABLE | WR | yes |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | WR | yes |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | DOUBTFUL | BENCH | NO |
+| Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | WR | yes |
 | Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Breece Hall | RB | DOUBTFUL | IR | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | DOUBTFUL | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | QUESTIONABLE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Darren Waller | TE | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | WR | yes |
+| Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | RB | yes |
 | Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | IR | NO |
 
 ## Available player pool by position
@@ -133,12 +134,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-586 total | 133 executed ownership changes | 228 lineup-only moves | 192 draft picks | 0 pending
+592 total | 134 executed ownership changes | 233 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-15T18:23 | Commanders of Chaos | FREEAGENT | ADD Colts D/ST, DROP Commanders D/ST |
 | 2026-10-15T16:32 | Jason X | FREEAGENT | ADD Rico Dowdle, DROP Courtland Sutton |
 | 2026-10-15T16:23 | Burrow's Bunch | FREEAGENT | ADD Steelers D/ST, DROP Browns D/ST |
 | 2026-10-15T07:16 | Jason X | WAIVER | ADD Wan'Dale Robinson, DROP Jacoby Brissett |
@@ -150,7 +152,6 @@ Most recent ownership changes:
 | 2026-10-14T07:51 | The Bye Week Boys | WAIVER | ADD Kendrick Bourne, DROP Tre' Harris |
 | 2026-10-14T07:51 | Burrow's Bunch | WAIVER | ADD Jameis Winston, DROP Wan'Dale Robinson |
 | 2026-10-14T07:51 | The Bye Week Boys | WAIVER | ADD Brenton Strange, DROP Mike Gesicki |
-| 2026-10-14T07:51 | From Puka with Love | WAIVER | ADD Dominic Zvada |
 
 ## League format
 
