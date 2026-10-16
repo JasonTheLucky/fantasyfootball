@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-16T06:30:52.792954+00:00` |
+| Fetched at (UTC) | `2026-10-16T12:27:35.237395+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.75s |
+| Fetch duration | 2.33s |
 | ESPN calls | 10 |
-| Workflow run | `38861619105` |
+| Workflow run | `38900632732` |
 
 ## Freshness and completeness gates
 
@@ -133,12 +133,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-594 total | 135 executed ownership changes | 234 lineup-only moves | 192 draft picks | 0 pending
+595 total | 136 executed ownership changes | 234 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-16T10:18 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
 | 2026-10-16T01:39 | The Bye Week Boys | FREEAGENT | ADD Kirk Cousins, DROP Will Shipley |
 | 2026-10-15T18:23 | Commanders of Chaos | FREEAGENT | ADD Colts D/ST, DROP Commanders D/ST |
 | 2026-10-15T16:32 | Jason X | FREEAGENT | ADD Rico Dowdle, DROP Courtland Sutton |
@@ -150,7 +151,6 @@ Most recent ownership changes:
 | 2026-10-14T07:51 | Super Lamario Brothers | WAIVER | ADD Jason Myers |
 | 2026-10-14T07:51 | Super Lamario Brothers | WAIVER | ADD Pat Freiermuth |
 | 2026-10-14T07:51 | The Bye Week Boys | WAIVER | ADD Kendrick Bourne, DROP Tre' Harris |
-| 2026-10-14T07:51 | Burrow's Bunch | WAIVER | ADD Jameis Winston, DROP Wan'Dale Robinson |
 
 ## League format
 
