@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-16T00:45:05.021471+00:00` |
+| Fetched at (UTC) | `2026-10-16T06:30:52.792954+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.87s |
+| Fetch duration | 1.75s |
 | ESPN calls | 10 |
-| Workflow run | `38831243017` |
+| Workflow run | `38861619105` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Nicole's Gnarly Team | 3.9 | Kelli's Top-Notch Team | 0.0 | NO |
-| Super Lamario Brothers | 5.0 | Auto Draft Champion | 0.0 | NO |
-| Giant Packer Fan | 11.0 | From Puka with Love | 1.3 | NO |
+| Nicole's Gnarly Team | 14.6 | Kelli's Top-Notch Team | 0.0 | NO |
+| Super Lamario Brothers | 7.0 | Auto Draft Champion | 0.0 | NO |
+| Giant Packer Fan | 11.0 | From Puka with Love | 5.2 | NO |
 | Burrow's Bunch | 0.0 | Commanders of Chaos | 0.0 | NO |
-| Jason X | 3.1 | Connor’s Team | 0.0 | NO |
-| The Bye Week Boys | 11.8 | 🔥Certified Dumpster Fire 🔥 | 0.0 | NO |
+| Jason X | 27.4 | Connor’s Team | 0.0 | NO |
+| The Bye Week Boys | 12.4 | 🔥Certified Dumpster Fire 🔥 | 0.0 | NO |
 
 ## Rosters
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (45)
+## Injury designations (44)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -84,7 +84,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Will Shipley | RB | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Chris Olave | WR | QUESTIONABLE | WR | yes |
 | Auto Draft Champion | Quinshon Judkins | RB | QUESTIONABLE | FLEX | yes |
@@ -128,18 +127,19 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 42 | 107 | 182 | 184 | 318 | 851 |
+| 18 | 42 | 106 | 183 | 184 | 318 | 851 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-592 total | 134 executed ownership changes | 233 lineup-only moves | 192 draft picks | 0 pending
+594 total | 135 executed ownership changes | 234 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-16T01:39 | The Bye Week Boys | FREEAGENT | ADD Kirk Cousins, DROP Will Shipley |
 | 2026-10-15T18:23 | Commanders of Chaos | FREEAGENT | ADD Colts D/ST, DROP Commanders D/ST |
 | 2026-10-15T16:32 | Jason X | FREEAGENT | ADD Rico Dowdle, DROP Courtland Sutton |
 | 2026-10-15T16:23 | Burrow's Bunch | FREEAGENT | ADD Steelers D/ST, DROP Browns D/ST |
@@ -151,7 +151,6 @@ Most recent ownership changes:
 | 2026-10-14T07:51 | Super Lamario Brothers | WAIVER | ADD Pat Freiermuth |
 | 2026-10-14T07:51 | The Bye Week Boys | WAIVER | ADD Kendrick Bourne, DROP Tre' Harris |
 | 2026-10-14T07:51 | Burrow's Bunch | WAIVER | ADD Jameis Winston, DROP Wan'Dale Robinson |
-| 2026-10-14T07:51 | The Bye Week Boys | WAIVER | ADD Brenton Strange, DROP Mike Gesicki |
 
 ## League format
 
