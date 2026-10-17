@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-17T00:45:59.006985+00:00` |
+| Fetched at (UTC) | `2026-10-17T06:27:29.731229+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.79s |
+| Fetch duration | 2.89s |
 | ESPN calls | 10 |
-| Workflow run | `38987860631` |
+| Workflow run | `39009967549` |
 
 ## Freshness and completeness gates
 
@@ -126,18 +126,19 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 42 | 107 | 183 | 184 | 317 | 851 |
+| 18 | 42 | 107 | 184 | 184 | 316 | 851 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-603 total | 138 executed ownership changes | 240 lineup-only moves | 192 draft picks | 0 pending
+605 total | 139 executed ownership changes | 241 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-17T02:54 | Super Lamario Brothers | FREEAGENT | ADD Germie Bernard, DROP Jaylen Wright |
 | 2026-10-17T00:16 | The Bye Week Boys | FREEAGENT | ADD Ja'Kobi Lane, DROP Kirk Cousins |
 | 2026-10-16T20:23 | Jason X | TRADE_DECLINE | - |
 | 2026-10-16T10:18 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
@@ -149,7 +150,6 @@ Most recent ownership changes:
 | 2026-10-14T18:39 | From Puka with Love | FREEAGENT | ADD Cyrus Allen, DROP Michael Pittman Jr. |
 | 2026-10-14T07:51 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD Darren Waller, DROP Kirk Cousins |
 | 2026-10-14T07:51 | Super Lamario Brothers | WAIVER | ADD 49ers D/ST, DROP Bengals D/ST |
-| 2026-10-14T07:51 | Super Lamario Brothers | WAIVER | ADD Jason Myers |
 
 ## League format
 
