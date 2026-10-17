@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-17T12:23:01.550050+00:00` |
+| Fetched at (UTC) | `2026-10-17T18:18:19.672382+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.77s |
+| Fetch duration | 1.96s |
 | ESPN calls | 10 |
-| Workflow run | `39032291490` |
+| Workflow run | `39057495032` |
 
 ## Freshness and completeness gates
 
@@ -96,6 +96,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Super Lamario Brothers | Jordan Addison | WR | QUESTIONABLE | BENCH | NO |
+| Super Lamario Brothers | Pat Freiermuth | TE | QUESTIONABLE | BENCH | NO |
 | Super Lamario Brothers | Lamar Jackson | QB | OUT | IR | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Jeremiyah Love | RB | OUT | BENCH | NO |
@@ -114,10 +115,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Breece Hall | RB | OUT | IR | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | OUT | BENCH | NO |
 | Kelli's Top-Notch Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | DK Metcalf | WR | QUESTIONABLE | WR | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | QUESTIONABLE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Kyle Monangai | RB | OUT | RB | yes |
 | Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | IR | NO |
@@ -132,7 +132,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-605 total | 139 executed ownership changes | 241 lineup-only moves | 192 draft picks | 0 pending
+607 total | 139 executed ownership changes | 243 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
