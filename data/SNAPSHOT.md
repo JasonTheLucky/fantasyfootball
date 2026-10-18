@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-18T12:23:28.026075+00:00` |
+| Fetched at (UTC) | `2026-10-18T18:18:37.496062+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 201 |
-| Available players (FA + waivers) | 851 |
+| Rostered players | 202 |
+| Available players (FA + waivers) | 850 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.85s |
+| Fetch duration | 3.02s |
 | ESPN calls | 10 |
-| Workflow run | `39127067167` |
+| Workflow run | `39153558550` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Nicole's Gnarly Team | 14.6 | Kelli's Top-Notch Team | 0.0 | NO |
-| Super Lamario Brothers | 7.0 | Auto Draft Champion | 0.0 | NO |
-| Giant Packer Fan | 11.0 | From Puka with Love | 5.2 | NO |
-| Burrow's Bunch | 0.0 | Commanders of Chaos | 0.0 | NO |
-| Jason X | 27.4 | Connor’s Team | 0.0 | NO |
-| The Bye Week Boys | 12.4 | 🔥Certified Dumpster Fire 🔥 | 0.0 | NO |
+| Nicole's Gnarly Team | 39.0 | Kelli's Top-Notch Team | 26.0 | NO |
+| Super Lamario Brothers | 35.7 | Auto Draft Champion | 7.34 | NO |
+| Giant Packer Fan | 27.4 | From Puka with Love | 52.5 | NO |
+| Burrow's Bunch | 47.6 | Commanders of Chaos | 32.8 | NO |
+| Jason X | 89.12 | Connor’s Team | 24.36 | NO |
+| The Bye Week Boys | 72.44 | 🔥Certified Dumpster Fire 🔥 | 52.68 | NO |
 
 ## Rosters
 
@@ -44,7 +44,7 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
-| 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
+| 3 | Auto Draft Champion | Amanda Spence | 17 | 9 | 7 | 1 | 0 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 17 | 9 | 7 | 1 | 0 |
 | 5 | Burrow's Bunch | Norberto Vargas | 17 | 9 | 7 | 1 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 17 | 9 | 7 | 1 | 0 |
@@ -74,68 +74,64 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (41)
+## Injury designations (33)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
-| Jason X | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Ja'Kobi Lane | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
-| Auto Draft Champion | Chris Olave | WR | QUESTIONABLE | WR | yes |
-| Auto Draft Champion | Quinshon Judkins | RB | QUESTIONABLE | FLEX | yes |
-| Auto Draft Champion | Tyler Warren | TE | QUESTIONABLE | TE | yes |
+| Auto Draft Champion | Quinshon Judkins | RB | OUT | BENCH | NO |
+| Auto Draft Champion | Tyler Warren | TE | OUT | BENCH | NO |
 | Auto Draft Champion | Jalen Hurts | QB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
-| Auto Draft Champion | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Super Lamario Brothers | Jordan Addison | WR | QUESTIONABLE | BENCH | NO |
-| Super Lamario Brothers | Pat Freiermuth | TE | QUESTIONABLE | BENCH | NO |
 | Super Lamario Brothers | Lamar Jackson | QB | OUT | IR | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
+| From Puka with Love | Romeo Doubs | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Jeremiyah Love | RB | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | A.J. Brown | WR | QUESTIONABLE | IR | NO |
+| Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Rashee Rice | WR | OUT | FLEX | yes |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | WR | yes |
-| Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Breece Hall | RB | OUT | IR | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | OUT | BENCH | NO |
-| Kelli's Top-Notch Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Kyle Monangai | RB | OUT | RB | yes |
+| Commanders of Chaos | Kyle Monangai | RB | OUT | BENCH | NO |
 | Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | IR | NO |
 
 ## Available player pool by position
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 42 | 107 | 184 | 184 | 316 | 851 |
+| 18 | 42 | 107 | 183 | 184 | 316 | 850 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-608 total | 139 executed ownership changes | 244 lineup-only moves | 192 draft picks | 0 pending
+628 total | 143 executed ownership changes | 260 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-18T16:51 | Auto Draft Champion | FREEAGENT | ADD Michael Mayer, DROP Terrance Ferguson |
+| 2026-10-18T16:50 | Auto Draft Champion | FREEAGENT | ADD Jaleel McLaughlin |
+| 2026-10-18T13:58 | Jason X | FREEAGENT | ADD Najee Harris, DROP Emmett Johnson |
+| 2026-10-18T13:20 | Commanders of Chaos | FREEAGENT | ADD Kendre Miller, DROP Kaleb Johnson |
 | 2026-10-17T02:54 | Super Lamario Brothers | FREEAGENT | ADD Germie Bernard, DROP Jaylen Wright |
 | 2026-10-17T00:16 | The Bye Week Boys | FREEAGENT | ADD Ja'Kobi Lane, DROP Kirk Cousins |
 | 2026-10-16T20:23 | Jason X | TRADE_DECLINE | - |
@@ -144,10 +140,6 @@ Most recent ownership changes:
 | 2026-10-15T18:23 | Commanders of Chaos | FREEAGENT | ADD Colts D/ST, DROP Commanders D/ST |
 | 2026-10-15T16:32 | Jason X | FREEAGENT | ADD Rico Dowdle, DROP Courtland Sutton |
 | 2026-10-15T16:23 | Burrow's Bunch | FREEAGENT | ADD Steelers D/ST, DROP Browns D/ST |
-| 2026-10-15T07:16 | Jason X | WAIVER | ADD Wan'Dale Robinson, DROP Jacoby Brissett |
-| 2026-10-14T18:39 | From Puka with Love | FREEAGENT | ADD Cyrus Allen, DROP Michael Pittman Jr. |
-| 2026-10-14T07:51 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD Darren Waller, DROP Kirk Cousins |
-| 2026-10-14T07:51 | Super Lamario Brothers | WAIVER | ADD 49ers D/ST, DROP Bengals D/ST |
 
 ## League format
 
