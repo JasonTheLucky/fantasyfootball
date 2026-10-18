@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-17T18:18:19.672382+00:00` |
+| Fetched at (UTC) | `2026-10-18T00:51:10.366159+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 851 |
 | Players in lookup index | 1052 |
-| Fetch duration | 1.96s |
+| Fetch duration | 2.13s |
 | ESPN calls | 10 |
-| Workflow run | `39057495032` |
+| Workflow run | `39084286183` |
 
 ## Freshness and completeness gates
 
@@ -74,23 +74,22 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (43)
+## Injury designations (41)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Rachaad White | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
 | Jason X | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Ja'Kobi Lane | WR | INJURY_RESERVE | BENCH | NO |
+| The Bye Week Boys | Ja'Kobi Lane | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Chris Olave | WR | QUESTIONABLE | WR | yes |
 | Auto Draft Champion | Quinshon Judkins | RB | QUESTIONABLE | FLEX | yes |
 | Auto Draft Champion | Tyler Warren | TE | QUESTIONABLE | TE | yes |
-| Auto Draft Champion | Jalen Hurts | QB | OUT | BENCH | NO |
+| Auto Draft Champion | Jalen Hurts | QB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
@@ -104,9 +103,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | A.J. Brown | WR | INJURY_RESERVE | IR | NO |
+| Connor’s Team | A.J. Brown | WR | QUESTIONABLE | IR | NO |
 | Giant Packer Fan | Rashee Rice | WR | OUT | FLEX | yes |
-| Giant Packer Fan | Terry McLaurin | WR | QUESTIONABLE | WR | yes |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | WR | yes |
@@ -132,7 +130,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-607 total | 139 executed ownership changes | 243 lineup-only moves | 192 draft picks | 0 pending
+608 total | 139 executed ownership changes | 244 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
