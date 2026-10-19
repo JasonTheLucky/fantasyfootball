@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-19T12:29:06.168081+00:00` |
+| Fetched at (UTC) | `2026-10-19T18:23:38.462683+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 202 |
 | Available players (FA + waivers) | 852 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.61s |
+| Fetch duration | 1.81s |
 | ESPN calls | 10 |
-| Workflow run | `39252388108` |
+| Workflow run | `39302091263` |
 
 ## Freshness and completeness gates
 
@@ -123,7 +123,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-630 total | 143 executed ownership changes | 262 lineup-only moves | 192 draft picks | 0 pending
+632 total | 143 executed ownership changes | 264 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
