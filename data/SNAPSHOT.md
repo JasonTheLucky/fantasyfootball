@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-18T18:18:37.496062+00:00` |
+| Fetched at (UTC) | `2026-10-19T00:50:49.428905+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 202 |
-| Available players (FA + waivers) | 850 |
-| Players in lookup index | 1052 |
-| Fetch duration | 3.02s |
+| Available players (FA + waivers) | 852 |
+| Players in lookup index | 1054 |
+| Fetch duration | 2.02s |
 | ESPN calls | 10 |
-| Workflow run | `39153558550` |
+| Workflow run | `39182594162` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Nicole's Gnarly Team | 39.0 | Kelli's Top-Notch Team | 26.0 | NO |
-| Super Lamario Brothers | 35.7 | Auto Draft Champion | 7.34 | NO |
-| Giant Packer Fan | 27.4 | From Puka with Love | 52.5 | NO |
-| Burrow's Bunch | 47.6 | Commanders of Chaos | 32.8 | NO |
-| Jason X | 89.12 | Connor’s Team | 24.36 | NO |
-| The Bye Week Boys | 72.44 | 🔥Certified Dumpster Fire 🔥 | 52.68 | NO |
+| Nicole's Gnarly Team | 80.48 | Kelli's Top-Notch Team | 75.3 | NO |
+| Super Lamario Brothers | 71.22 | Auto Draft Champion | 94.26 | NO |
+| Giant Packer Fan | 68.8 | From Puka with Love | 85.48 | NO |
+| Burrow's Bunch | 107.78 | Commanders of Chaos | 89.3 | NO |
+| Jason X | 111.54 | Connor’s Team | 79.4 | NO |
+| The Bye Week Boys | 94.14 | 🔥Certified Dumpster Fire 🔥 | 119.88 | NO |
 
 ## Rosters
 
@@ -74,14 +74,13 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (33)
+## Injury designations (34)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | IR | NO |
-| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | DJ Moore | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Tyreek Hill | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Quinshon Judkins | RB | OUT | BENCH | NO |
@@ -95,7 +94,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Romeo Doubs | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Jeremiyah Love | RB | OUT | BENCH | NO |
+| From Puka with Love | Ladd McConkey | WR | OUT | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
+| Connor’s Team | Dalton Kincaid | TE | QUESTIONABLE | TE | yes |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Rashee Rice | WR | OUT | FLEX | yes |
@@ -116,13 +117,13 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 42 | 107 | 183 | 184 | 316 | 850 |
+| 18 | 42 | 107 | 183 | 185 | 317 | 852 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-628 total | 143 executed ownership changes | 260 lineup-only moves | 192 draft picks | 0 pending
+630 total | 143 executed ownership changes | 262 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
