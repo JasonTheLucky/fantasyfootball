@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-19T00:50:49.428905+00:00` |
+| Fetched at (UTC) | `2026-10-19T06:42:00.136790+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 202 |
 | Available players (FA + waivers) | 852 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.02s |
+| Fetch duration | 1.65s |
 | ESPN calls | 10 |
-| Workflow run | `39182594162` |
+| Workflow run | `39211403136` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Nicole's Gnarly Team | 80.48 | Kelli's Top-Notch Team | 75.3 | NO |
-| Super Lamario Brothers | 71.22 | Auto Draft Champion | 94.26 | NO |
-| Giant Packer Fan | 68.8 | From Puka with Love | 85.48 | NO |
-| Burrow's Bunch | 107.78 | Commanders of Chaos | 89.3 | NO |
-| Jason X | 111.54 | Connor’s Team | 79.4 | NO |
-| The Bye Week Boys | 94.14 | 🔥Certified Dumpster Fire 🔥 | 119.88 | NO |
+| Nicole's Gnarly Team | 103.58 | Kelli's Top-Notch Team | 75.3 | NO |
+| Super Lamario Brothers | 83.02 | Auto Draft Champion | 94.26 | NO |
+| Giant Packer Fan | 68.8 | From Puka with Love | 95.82 | NO |
+| Burrow's Bunch | 121.08 | Commanders of Chaos | 90.3 | NO |
+| Jason X | 117.24 | Connor’s Team | 80.6 | NO |
+| The Bye Week Boys | 105.14 | 🔥Certified Dumpster Fire 🔥 | 119.88 | NO |
 
 ## Rosters
 
@@ -94,7 +94,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Romeo Doubs | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Jeremiyah Love | RB | OUT | BENCH | NO |
-| From Puka with Love | Ladd McConkey | WR | OUT | BENCH | NO |
+| From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Dalton Kincaid | TE | QUESTIONABLE | TE | yes |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
