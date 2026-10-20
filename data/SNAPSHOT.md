@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-20T06:30:27.138585+00:00` |
-| Scoring period (week) | **6** |
+| Fetched at (UTC) | `2026-10-20T12:27:47.227721+00:00` |
+| Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 202 |
-| Available players (FA + waivers) | 852 |
+| Rostered players | 200 |
+| Available players (FA + waivers) | 854 |
 | Players in lookup index | 1054 |
-| Fetch duration | 1.94s |
-| ESPN calls | 10 |
-| Workflow run | `39380739832` |
+| Fetch duration | 2.53s |
+| ESPN calls | 11 |
+| Workflow run | `39422411712` |
 
 ## Freshness and completeness gates
 
@@ -27,16 +27,16 @@
 | Ownership reconciled, no conflicts | yes |
 | Player lookup index complete | yes |
 
-## Week 6 matchups
+## Week 7 matchups
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Nicole's Gnarly Team | 115.98 | Kelli's Top-Notch Team | 97.66 | NO |
-| Super Lamario Brothers | 105.92 | Auto Draft Champion | 124.96 | NO |
-| Giant Packer Fan | 72.5 | From Puka with Love | 95.82 | NO |
-| Burrow's Bunch | 121.08 | Commanders of Chaos | 113.3 | NO |
-| Jason X | 132.94 | Connor’s Team | 80.6 | NO |
-| The Bye Week Boys | 105.14 | 🔥Certified Dumpster Fire 🔥 | 119.88 | NO |
+| Kelli's Top-Notch Team | 0.0 | Auto Draft Champion | 0.0 | NO |
+| From Puka with Love | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
+| Commanders of Chaos | 0.0 | Super Lamario Brothers | 0.0 | NO |
+| Connor’s Team | 0.0 | Giant Packer Fan | 0.0 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 0.0 | Burrow's Bunch | 0.0 | NO |
+| The Bye Week Boys | 0.0 | Jason X | 0.0 | NO |
 
 ## Rosters
 
@@ -47,8 +47,8 @@
 | 3 | Auto Draft Champion | Amanda Spence | 17 | 9 | 7 | 1 | 0 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 17 | 9 | 7 | 1 | 0 |
 | 5 | Burrow's Bunch | Norberto Vargas | 17 | 9 | 7 | 1 | 0 |
-| 6 | From Puka with Love | Brandon Daab | 17 | 9 | 7 | 1 | 0 |
-| 7 | Connor’s Team | Connor Hartland | 17 | 8 | 8 | 1 | 0 |
+| 6 | From Puka with Love | Brandon Daab | 15 | 9 | 5 | 1 | 2 |
+| 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 17 | 9 | 7 | 1 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
@@ -59,17 +59,17 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| Auto Draft Champion | **$200** | $0 | 100.0% | 4 |
-| Giant Packer Fan | **$200** | $0 | 100.0% | 6 |
-| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 5 |
-| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 2 |
+| Auto Draft Champion | **$200** | $0 | 100.0% | 8 |
+| Giant Packer Fan | **$200** | $0 | 100.0% | 11 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 9 |
+| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 3 |
 | Commanders of Chaos | **$200** | $0 | 100.0% | 1 |
-| Burrow's Bunch | **$184** | $16 | 92.0% | 7 |
-| Connor’s Team | **$182** | $18 | 91.0% | 3 |
-| 🔥Certified Dumpster Fire 🔥 | **$172** | $28 | 86.0% | 10 |
-| From Puka with Love | **$165** | $35 | 82.5% | 8 |
-| The Bye Week Boys | **$155** | $45 | 77.5% | 9 |
-| Super Lamario Brothers | **$135** | $65 | 67.5% | 11 |
+| Burrow's Bunch | **$184** | $16 | 92.0% | 10 |
+| Connor’s Team | **$182** | $18 | 91.0% | 2 |
+| 🔥Certified Dumpster Fire 🔥 | **$172** | $28 | 86.0% | 6 |
+| From Puka with Love | **$165** | $35 | 82.5% | 5 |
+| The Bye Week Boys | **$155** | $45 | 77.5% | 7 |
+| Super Lamario Brothers | **$135** | $65 | 67.5% | 4 |
 | Jason X | **$2** | $198 | 1.0% | 12 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
@@ -92,10 +92,10 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Super Lamario Brothers | Jordan Addison | WR | QUESTIONABLE | BENCH | NO |
 | Super Lamario Brothers | Lamar Jackson | QB | OUT | IR | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
-| From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | WR | yes |
-| From Puka with Love | Jeremiyah Love | RB | OUT | BENCH | NO |
+| From Puka with Love | Jeremiyah Love | RB | OUT | RB | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
+| From Puka with Love | Tank Dell | WR | INJURY_RESERVE | BENCH | NO |
+| From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | WR | yes |
 | Connor’s Team | Davante Adams | WR | OUT | FLEX | yes |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
@@ -118,18 +118,20 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 42 | 107 | 183 | 185 | 317 | 852 |
+| 18 | 43 | 107 | 183 | 185 | 318 | 854 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-634 total | 143 executed ownership changes | 266 lineup-only moves | 192 draft picks | 0 pending
+648 total | 145 executed ownership changes | 278 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-20T11:09 | From Puka with Love | ROSTER | DROP Cyrus Allen |
+| 2026-10-20T11:09 | From Puka with Love | ROSTER | DROP Dominic Zvada |
 | 2026-10-18T16:51 | Auto Draft Champion | FREEAGENT | ADD Michael Mayer, DROP Terrance Ferguson |
 | 2026-10-18T16:50 | Auto Draft Champion | FREEAGENT | ADD Jaleel McLaughlin |
 | 2026-10-18T13:58 | Jason X | FREEAGENT | ADD Najee Harris, DROP Emmett Johnson |
@@ -140,8 +142,6 @@ Most recent ownership changes:
 | 2026-10-16T10:18 | Kelli's Top-Notch Team | TRADE_DECLINE | - |
 | 2026-10-16T01:39 | The Bye Week Boys | FREEAGENT | ADD Kirk Cousins, DROP Will Shipley |
 | 2026-10-15T18:23 | Commanders of Chaos | FREEAGENT | ADD Colts D/ST, DROP Commanders D/ST |
-| 2026-10-15T16:32 | Jason X | FREEAGENT | ADD Rico Dowdle, DROP Courtland Sutton |
-| 2026-10-15T16:23 | Burrow's Bunch | FREEAGENT | ADD Steelers D/ST, DROP Browns D/ST |
 
 ## League format
 
