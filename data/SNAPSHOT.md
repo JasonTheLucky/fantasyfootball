@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-20T00:47:09.954035+00:00` |
+| Fetched at (UTC) | `2026-10-20T06:30:27.138585+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 202 |
 | Available players (FA + waivers) | 852 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.28s |
+| Fetch duration | 1.94s |
 | ESPN calls | 10 |
-| Workflow run | `39349678174` |
+| Workflow run | `39380739832` |
 
 ## Freshness and completeness gates
 
@@ -31,11 +31,11 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Nicole's Gnarly Team | 113.38 | Kelli's Top-Notch Team | 85.56 | NO |
-| Super Lamario Brothers | 102.32 | Auto Draft Champion | 107.36 | NO |
+| Nicole's Gnarly Team | 115.98 | Kelli's Top-Notch Team | 97.66 | NO |
+| Super Lamario Brothers | 105.92 | Auto Draft Champion | 124.96 | NO |
 | Giant Packer Fan | 72.5 | From Puka with Love | 95.82 | NO |
-| Burrow's Bunch | 121.08 | Commanders of Chaos | 92.0 | NO |
-| Jason X | 117.44 | Connor’s Team | 80.6 | NO |
+| Burrow's Bunch | 121.08 | Commanders of Chaos | 113.3 | NO |
+| Jason X | 132.94 | Connor’s Team | 80.6 | NO |
 | The Bye Week Boys | 105.14 | 🔥Certified Dumpster Fire 🔥 | 119.88 | NO |
 
 ## Rosters
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (33)
+## Injury designations (35)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -101,8 +101,10 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Rashee Rice | WR | OUT | FLEX | yes |
+| Giant Packer Fan | Terry McLaurin | WR | OUT | WR | yes |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
+| Nicole's Gnarly Team | Mike Evans | WR | DOUBTFUL | WR | yes |
 | Nicole's Gnarly Team | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Breece Hall | RB | OUT | IR | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | OUT | BENCH | NO |
@@ -122,7 +124,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-632 total | 143 executed ownership changes | 264 lineup-only moves | 192 draft picks | 0 pending
+634 total | 143 executed ownership changes | 266 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
