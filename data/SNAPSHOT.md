@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-19T18:23:38.462683+00:00` |
+| Fetched at (UTC) | `2026-10-20T00:47:09.954035+00:00` |
 | Scoring period (week) | **6** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 202 |
 | Available players (FA + waivers) | 852 |
 | Players in lookup index | 1054 |
-| Fetch duration | 1.81s |
+| Fetch duration | 2.28s |
 | ESPN calls | 10 |
-| Workflow run | `39302091263` |
+| Workflow run | `39349678174` |
 
 ## Freshness and completeness gates
 
@@ -31,11 +31,11 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Nicole's Gnarly Team | 103.58 | Kelli's Top-Notch Team | 75.3 | NO |
-| Super Lamario Brothers | 83.02 | Auto Draft Champion | 94.26 | NO |
-| Giant Packer Fan | 68.8 | From Puka with Love | 95.82 | NO |
-| Burrow's Bunch | 121.08 | Commanders of Chaos | 90.3 | NO |
-| Jason X | 117.24 | Connor’s Team | 80.6 | NO |
+| Nicole's Gnarly Team | 113.38 | Kelli's Top-Notch Team | 85.56 | NO |
+| Super Lamario Brothers | 102.32 | Auto Draft Champion | 107.36 | NO |
+| Giant Packer Fan | 72.5 | From Puka with Love | 95.82 | NO |
+| Burrow's Bunch | 121.08 | Commanders of Chaos | 92.0 | NO |
+| Jason X | 117.44 | Connor’s Team | 80.6 | NO |
 | The Bye Week Boys | 105.14 | 🔥Certified Dumpster Fire 🔥 | 119.88 | NO |
 
 ## Rosters
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (34)
+## Injury designations (33)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -92,23 +92,22 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Super Lamario Brothers | Jordan Addison | WR | QUESTIONABLE | BENCH | NO |
 | Super Lamario Brothers | Lamar Jackson | QB | OUT | IR | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
-| From Puka with Love | Romeo Doubs | WR | QUESTIONABLE | WR | yes |
+| From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | WR | yes |
 | From Puka with Love | Jeremiyah Love | RB | OUT | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | Dalton Kincaid | TE | QUESTIONABLE | TE | yes |
+| Connor’s Team | A.J. Brown | WR | QUESTIONABLE | WR | yes |
+| Connor’s Team | Davante Adams | WR | OUT | FLEX | yes |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Rashee Rice | WR | OUT | FLEX | yes |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | OUT | BENCH | NO |
-| Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | WR | yes |
 | Nicole's Gnarly Team | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Breece Hall | RB | OUT | IR | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | OUT | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Kyle Monangai | RB | OUT | BENCH | NO |
 | Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | IR | NO |
