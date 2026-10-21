@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-20T18:22:36.370118+00:00` |
+| Fetched at (UTC) | `2026-10-21T00:46:24.412312+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 197 |
-| Available players (FA + waivers) | 857 |
+| Rostered players | 196 |
+| Available players (FA + waivers) | 858 |
 | Players in lookup index | 1054 |
-| Fetch duration | 1.73s |
+| Fetch duration | 2.44s |
 | ESPN calls | 11 |
-| Workflow run | `39474156044` |
+| Workflow run | `39523315497` |
 
 ## Freshness and completeness gates
 
@@ -42,7 +42,7 @@
 
 | # | Team | Owner | Roster | Start | Bench | IR | Bench open |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
+| 1 | Jason X | Jason Prinsen | 16 | 9 | 6 | 1 | 1 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 17 | 9 | 7 | 1 | 0 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
@@ -97,13 +97,13 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | WR | yes |
-| Connor’s Team | Davante Adams | WR | OUT | FLEX | yes |
+| Connor’s Team | Davante Adams | WR | INJURY_RESERVE | FLEX | yes |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | DOUBTFUL | BENCH | NO |
-| Giant Packer Fan | Terry McLaurin | WR | DOUBTFUL | IR | NO |
+| Giant Packer Fan | Terry McLaurin | WR | OUT | IR | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | WR | yes |
 | Nicole's Gnarly Team | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | IR | NO |
@@ -118,18 +118,19 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 44 | 107 | 184 | 185 | 318 | 857 |
+| 19 | 44 | 107 | 185 | 185 | 318 | 858 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-663 total | 149 executed ownership changes | 288 lineup-only moves | 192 draft picks | 0 pending
+664 total | 150 executed ownership changes | 288 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-20T21:57 | Jason X | ROSTER | DROP Najee Harris |
 | 2026-10-20T18:08 | Jason X | TRADE_UPHOLD | - |
 | 2026-10-20T17:26 | From Puka with Love | ROSTER | DROP Eagles D/ST |
 | 2026-10-20T17:22 | Super Lamario Brothers | ROSTER | DROP Jason Myers |
@@ -141,7 +142,6 @@ Most recent ownership changes:
 | 2026-10-18T13:58 | Jason X | FREEAGENT | ADD Najee Harris, DROP Emmett Johnson |
 | 2026-10-18T13:20 | Commanders of Chaos | FREEAGENT | ADD Kendre Miller, DROP Kaleb Johnson |
 | 2026-10-17T02:54 | Super Lamario Brothers | FREEAGENT | ADD Germie Bernard, DROP Jaylen Wright |
-| 2026-10-17T00:16 | The Bye Week Boys | FREEAGENT | ADD Ja'Kobi Lane, DROP Kirk Cousins |
 
 ## League format
 

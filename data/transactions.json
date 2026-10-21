@@ -1,8 +1,8 @@
 {
   "counts": {
-    "total": 663,
-    "ownership_changes": 183,
-    "executed_ownership_changes": 149,
+    "total": 664,
+    "ownership_changes": 184,
+    "executed_ownership_changes": 150,
     "lineup_only_moves": 288,
     "draft_picks": 192,
     "pending": 0,
@@ -625,6 +625,34 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "b40d10aa-b241-4e1a-bb0a-ef41c6c5ef8c",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 7,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-20T21:57:57.254000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "DROP",
+          "player_id": 4241457,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "9c93c437-72e2-4e5c-beaf-acbc1b7b7453",
       "type": "TRADE_UPHOLD",
@@ -18220,6 +18248,34 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "b40d10aa-b241-4e1a-bb0a-ef41c6c5ef8c",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 7,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-20T21:57:57.254000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "DROP",
+          "player_id": 4241457,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "9c93c437-72e2-4e5c-beaf-acbc1b7b7453",
       "type": "TRADE_UPHOLD",
       "status": "EXECUTED",
@@ -30165,17 +30221,17 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 25,
+    "0": 26,
     "1": 238,
     "2": 56,
     "3": 68,
     "4": 81,
     "5": 84,
     "6": 111,
-    "7": 25
+    "7": 26
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 7,
-  "fetched_at": "2026-10-20T18:22:34.638971+00:00"
+  "fetched_at": "2026-10-21T00:46:21.972591+00:00"
 }
