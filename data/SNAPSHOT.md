@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-21T12:27:05.941023+00:00` |
+| Fetched at (UTC) | `2026-10-21T18:22:47.066707+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 201 |
-| Available players (FA + waivers) | 853 |
+| Rostered players | 199 |
+| Available players (FA + waivers) | 855 |
 | Players in lookup index | 1054 |
-| Fetch duration | 3.07s |
+| Fetch duration | 1.8s |
 | ESPN calls | 11 |
-| Workflow run | `39599663370` |
+| Workflow run | `39652155876` |
 
 ## Freshness and completeness gates
 
@@ -45,12 +45,12 @@
 | 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 17 | 9 | 7 | 1 | 0 |
-| 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
+| 4 | Super Lamario Brothers | Jeffrey Clark | 15 | 9 | 6 | 0 | 1 |
 | 5 | Burrow's Bunch | Norberto Vargas | 17 | 9 | 7 | 1 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 17 | 9 | 7 | 1 | 0 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 6 | 1 | 1 |
-| 9 | Nicole's Gnarly Team | Nicole Brandau | 17 | 9 | 7 | 1 | 0 |
+| 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 17 | 9 | 7 | 1 | 0 |
 | 12 | Commanders of Chaos | Morgan Nadke | 17 | 9 | 7 | 1 | 0 |
@@ -96,17 +96,17 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | WR | yes |
-| Connor’s Team | Davante Adams | WR | INJURY_RESERVE | FLEX | yes |
+| Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
-| Giant Packer Fan | Adonai Mitchell | WR | DOUBTFUL | BENCH | NO |
+| Giant Packer Fan | Adonai Mitchell | WR | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Terry McLaurin | WR | OUT | IR | NO |
-| Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | WR | yes |
-| Nicole's Gnarly Team | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
-| Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | IR | NO |
+| Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | RB | yes |
+| Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
+| Kelli's Top-Notch Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
@@ -117,18 +117,22 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 44 | 107 | 183 | 185 | 316 | 853 |
+| 19 | 44 | 106 | 184 | 185 | 317 | 855 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-684 total | 160 executed ownership changes | 294 lineup-only moves | 192 draft picks | 0 pending
+695 total | 164 executed ownership changes | 301 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-21T16:26 | 🔥Certified Dumpster Fire 🔥 | TRADE_DECLINE | - |
+| 2026-10-21T13:49 | Nicole's Gnarly Team | ROSTER | DROP Deebo Samuel Sr. |
+| 2026-10-21T13:36 | Jason X | FREEAGENT | ADD Kirk Cousins, DROP Patriots D/ST |
+| 2026-10-21T13:33 | Jason X | FREEAGENT | ADD Bengals D/ST, DROP Jaguars D/ST |
 | 2026-10-21T12:26 | The Bye Week Boys | FREEAGENT | ADD Tyler Higbee, DROP Brenton Strange |
 | 2026-10-21T12:24 | The Bye Week Boys | FREEAGENT | ADD Omar Cooper Jr., DROP Tyreek Hill |
 | 2026-10-21T09:44 | Kelli's Top-Notch Team | FREEAGENT | ADD Chris Boswell, DROP Harrison Mevis |
@@ -137,10 +141,6 @@ Most recent ownership changes:
 | 2026-10-21T07:16 | Super Lamario Brothers | WAIVER | ADD Browns D/ST, DROP 49ers D/ST |
 | 2026-10-21T07:16 | From Puka with Love | WAIVER | ADD Bam Knight |
 | 2026-10-21T07:16 | 🔥Certified Dumpster Fire 🔥 | WAIVER | ADD Hunter Henry, DROP Darren Waller |
-| 2026-10-21T07:16 | From Puka with Love | WAIVER | ADD Tre Tucker |
-| 2026-10-21T07:16 | From Puka with Love | WAIVER | ADD DeMario Douglas |
-| 2026-10-20T21:57 | Jason X | ROSTER | DROP Najee Harris |
-| 2026-10-20T18:08 | Jason X | TRADE_UPHOLD | - |
 
 ## League format
 
