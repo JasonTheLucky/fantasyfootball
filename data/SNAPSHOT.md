@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-22T00:46:31.153675+00:00` |
+| Fetched at (UTC) | `2026-10-22T06:30:40.929133+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 200 |
-| Available players (FA + waivers) | 854 |
+| Rostered players | 199 |
+| Available players (FA + waivers) | 855 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.62s |
+| Fetch duration | 2.52s |
 | ESPN calls | 11 |
-| Workflow run | `39701695236` |
+| Workflow run | `39734368621` |
 
 ## Freshness and completeness gates
 
@@ -49,7 +49,7 @@
 | 5 | Burrow's Bunch | Norberto Vargas | 17 | 9 | 7 | 1 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 17 | 9 | 7 | 1 | 0 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
-| 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 6 | 1 | 1 |
+| 8 | Giant Packer Fan | Brian Seehafer | 15 | 9 | 5 | 1 | 2 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 17 | 9 | 7 | 1 | 0 |
@@ -109,9 +109,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Giant Packer Fan | Travis Kelce | TE | QUESTIONABLE | TE | yes |
 | Giant Packer Fan | Jordan Love | QB | QUESTIONABLE | QB | yes |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | WR | yes |
-| Giant Packer Fan | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | QUESTIONABLE | BENCH | NO |
+| Giant Packer Fan | Justin Jefferson | WR | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Terry McLaurin | WR | OUT | IR | NO |
 | Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | RB | yes |
 | Nicole's Gnarly Team | Emeka Egbuka | WR | QUESTIONABLE | FLEX | yes |
@@ -121,26 +121,27 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Justin Jefferson | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Kyle Monangai | RB | OUT | BENCH | NO |
+| Commanders of Chaos | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | IR | NO |
 
 ## Available player pool by position
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 44 | 106 | 183 | 185 | 317 | 854 |
+| 20 | 44 | 105 | 184 | 185 | 317 | 855 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-698 total | 165 executed ownership changes | 303 lineup-only moves | 192 draft picks | 0 pending
+700 total | 166 executed ownership changes | 304 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-22T02:17 | The Bye Week Boys | FREEAGENT | ADD Tanner McKee, DROP Tyler Allgeier |
 | 2026-10-21T19:28 | Super Lamario Brothers | FREEAGENT | ADD Roschon Johnson |
 | 2026-10-21T16:26 | 🔥Certified Dumpster Fire 🔥 | TRADE_DECLINE | - |
 | 2026-10-21T13:49 | Nicole's Gnarly Team | ROSTER | DROP Deebo Samuel Sr. |
@@ -152,7 +153,6 @@ Most recent ownership changes:
 | 2026-10-21T07:16 | Jason X | WAIVER | ADD Emmett Johnson |
 | 2026-10-21T07:16 | From Puka with Love | WAIVER | ADD Bears D/ST |
 | 2026-10-21T07:16 | Super Lamario Brothers | WAIVER | ADD Browns D/ST, DROP 49ers D/ST |
-| 2026-10-21T07:16 | From Puka with Love | WAIVER | ADD Bam Knight |
 
 ## League format
 
