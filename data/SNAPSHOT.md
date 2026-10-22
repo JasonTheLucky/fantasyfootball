@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-22T12:27:40.045367+00:00` |
+| Fetched at (UTC) | `2026-10-22T18:21:35.727470+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 199 |
 | Available players (FA + waivers) | 855 |
 | Players in lookup index | 1054 |
-| Fetch duration | 1.96s |
+| Fetch duration | 2.46s |
 | ESPN calls | 11 |
-| Workflow run | `39778493820` |
+| Workflow run | `39830599258` |
 
 ## Freshness and completeness gates
 
@@ -80,7 +80,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
 | Jason X | Christian Watson | WR | QUESTIONABLE | FLEX | yes |
-| Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
+| Jason X | Zach Charbonnet | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Jonah Coleman | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | Jaylen Waddle | WR | QUESTIONABLE | FLEX | yes |
@@ -129,18 +129,20 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 43 | 105 | 185 | 185 | 317 | 855 |
+| 20 | 43 | 106 | 184 | 185 | 317 | 855 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-701 total | 167 executed ownership changes | 304 lineup-only moves | 192 draft picks | 0 pending
+709 total | 169 executed ownership changes | 310 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-22T17:44 | Commanders of Chaos | FREEAGENT | ADD Tyrone Tracy Jr. |
+| 2026-10-22T17:43 | Commanders of Chaos | ROSTER | DROP Geno Smith |
 | 2026-10-22T07:13 | Connor’s Team | WAIVER | ADD Jason Myers, DROP Chris Rodriguez Jr. |
 | 2026-10-22T02:17 | The Bye Week Boys | FREEAGENT | ADD Tanner McKee, DROP Tyler Allgeier |
 | 2026-10-21T19:28 | Super Lamario Brothers | FREEAGENT | ADD Roschon Johnson |
@@ -151,8 +153,6 @@ Most recent ownership changes:
 | 2026-10-21T12:26 | The Bye Week Boys | FREEAGENT | ADD Tyler Higbee, DROP Brenton Strange |
 | 2026-10-21T12:24 | The Bye Week Boys | FREEAGENT | ADD Omar Cooper Jr., DROP Tyreek Hill |
 | 2026-10-21T09:44 | Kelli's Top-Notch Team | FREEAGENT | ADD Chris Boswell, DROP Harrison Mevis |
-| 2026-10-21T07:16 | Jason X | WAIVER | ADD Emmett Johnson |
-| 2026-10-21T07:16 | From Puka with Love | WAIVER | ADD Bears D/ST |
 
 ## League format
 
