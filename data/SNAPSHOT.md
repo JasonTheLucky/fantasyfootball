@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-22T06:30:40.929133+00:00` |
+| Fetched at (UTC) | `2026-10-22T12:27:40.045367+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 199 |
 | Available players (FA + waivers) | 855 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.52s |
+| Fetch duration | 1.96s |
 | ESPN calls | 11 |
-| Workflow run | `39734368621` |
+| Workflow run | `39778493820` |
 
 ## Freshness and completeness gates
 
@@ -59,18 +59,18 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| Auto Draft Champion | **$200** | $0 | 100.0% | 5 |
-| Giant Packer Fan | **$200** | $0 | 100.0% | 8 |
-| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 6 |
-| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 3 |
+| Auto Draft Champion | **$200** | $0 | 100.0% | 4 |
+| Giant Packer Fan | **$200** | $0 | 100.0% | 7 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 5 |
+| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 2 |
 | Commanders of Chaos | **$200** | $0 | 100.0% | 1 |
-| Burrow's Bunch | **$184** | $16 | 92.0% | 7 |
-| Connor’s Team | **$182** | $18 | 91.0% | 2 |
-| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 9 |
-| The Bye Week Boys | **$155** | $45 | 77.5% | 4 |
-| From Puka with Love | **$150** | $50 | 75.0% | 12 |
-| Super Lamario Brothers | **$135** | $65 | 67.5% | 10 |
-| Jason X | **$2** | $198 | 1.0% | 11 |
+| Burrow's Bunch | **$184** | $16 | 92.0% | 6 |
+| Connor’s Team | **$182** | $18 | 91.0% | 12 |
+| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 8 |
+| The Bye Week Boys | **$155** | $45 | 77.5% | 3 |
+| From Puka with Love | **$150** | $50 | 75.0% | 11 |
+| Super Lamario Brothers | **$135** | $65 | 67.5% | 9 |
+| Jason X | **$2** | $198 | 1.0% | 10 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
@@ -129,18 +129,19 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 44 | 105 | 184 | 185 | 317 | 855 |
+| 20 | 43 | 105 | 185 | 185 | 317 | 855 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-700 total | 166 executed ownership changes | 304 lineup-only moves | 192 draft picks | 0 pending
+701 total | 167 executed ownership changes | 304 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-22T07:13 | Connor’s Team | WAIVER | ADD Jason Myers, DROP Chris Rodriguez Jr. |
 | 2026-10-22T02:17 | The Bye Week Boys | FREEAGENT | ADD Tanner McKee, DROP Tyler Allgeier |
 | 2026-10-21T19:28 | Super Lamario Brothers | FREEAGENT | ADD Roschon Johnson |
 | 2026-10-21T16:26 | 🔥Certified Dumpster Fire 🔥 | TRADE_DECLINE | - |
@@ -152,7 +153,6 @@ Most recent ownership changes:
 | 2026-10-21T09:44 | Kelli's Top-Notch Team | FREEAGENT | ADD Chris Boswell, DROP Harrison Mevis |
 | 2026-10-21T07:16 | Jason X | WAIVER | ADD Emmett Johnson |
 | 2026-10-21T07:16 | From Puka with Love | WAIVER | ADD Bears D/ST |
-| 2026-10-21T07:16 | Super Lamario Brothers | WAIVER | ADD Browns D/ST, DROP 49ers D/ST |
 
 ## League format
 
