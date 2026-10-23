@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-23T06:31:06.937740+00:00` |
+| Fetched at (UTC) | `2026-10-23T12:25:49.128233+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 199 |
 | Available players (FA + waivers) | 855 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.44s |
+| Fetch duration | 2.06s |
 | ESPN calls | 11 |
-| Workflow run | `39911958634` |
+| Workflow run | `39953223649` |
 
 ## Freshness and completeness gates
 
