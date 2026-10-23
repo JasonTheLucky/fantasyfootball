@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-23T12:25:49.128233+00:00` |
+| Fetched at (UTC) | `2026-10-23T18:22:00.126227+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 199 |
 | Available players (FA + waivers) | 855 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.06s |
+| Fetch duration | 2.05s |
 | ESPN calls | 11 |
-| Workflow run | `39953223649` |
+| Workflow run | `40002669567` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (47)
+## Injury designations (42)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -85,45 +85,40 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | Jaylen Waddle | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
-| Auto Draft Champion | Quinshon Judkins | RB | QUESTIONABLE | FLEX | yes |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
-| Auto Draft Champion | Tyler Warren | TE | QUESTIONABLE | BENCH | NO |
+| Auto Draft Champion | Tyler Warren | TE | OUT | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | QB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | RB | yes |
 | Super Lamario Brothers | Matthew Golden | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | George Pickens | WR | QUESTIONABLE | WR | yes |
-| Burrow's Bunch | KC Concepcion | WR | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Mike Washington Jr. | RB | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
 | From Puka with Love | Puka Nacua | WR | QUESTIONABLE | WR | yes |
-| From Puka with Love | Jeremiyah Love | RB | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Jeremiyah Love | RB | OUT | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
-| Giant Packer Fan | Bucky Irving | RB | QUESTIONABLE | FLEX | yes |
 | Giant Packer Fan | Travis Kelce | TE | QUESTIONABLE | TE | yes |
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
-| Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Adonai Mitchell | WR | QUESTIONABLE | BENCH | NO |
 | Giant Packer Fan | Terry McLaurin | WR | OUT | IR | NO |
 | Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | RB | yes |
-| Nicole's Gnarly Team | Emeka Egbuka | WR | QUESTIONABLE | FLEX | yes |
+| Nicole's Gnarly Team | Emeka Egbuka | WR | OUT | FLEX | yes |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | DOUBTFUL | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | QUESTIONABLE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Baker Mayfield | QB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Dallas Goedert | TE | QUESTIONABLE | TE | yes |
 | Commanders of Chaos | Kyle Monangai | RB | OUT | BENCH | NO |
-| Commanders of Chaos | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Rashee Rice | WR | OUT | BENCH | NO |
 | Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | IR | NO |
 
 ## Available player pool by position
