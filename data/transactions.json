@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 718,
-    "ownership_changes": 208,
-    "executed_ownership_changes": 170,
-    "lineup_only_moves": 318,
+    "total": 722,
+    "ownership_changes": 210,
+    "executed_ownership_changes": 172,
+    "lineup_only_moves": 320,
     "draft_picks": 192,
     "pending": 0,
     "failed": 22,
@@ -685,6 +685,86 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "986b7eb3-b99b-433d-8669-9b5c72fc36ce",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 7,
+      "team_id": 3,
+      "team": "Auto Draft Champion",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-23T02:21:26.847000+00:00",
+      "processed_date": null,
+      "is_league_manager": true,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4431459,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 3,
+          "to_team": "Auto Draft Champion",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4040715,
+          "from_team_id": 3,
+          "from_team": "Auto Draft Champion",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "4020f7fd-373e-4fb9-ace9-a7134971ee01",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 7,
+      "team_id": 3,
+      "team": "Auto Draft Champion",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-23T01:59:35.868000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 5082424,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 3,
+          "to_team": "Auto Draft Champion",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4431459,
+          "from_team_id": 3,
+          "from_team": "Auto Draft Champion",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "af1b3e05-031b-4831-b88e-20a050b9f140",
       "type": "FREEAGENT",
@@ -7484,6 +7564,86 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "306c1903-309a-40ba-b152-0cf52f8069c5",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 7,
+      "team_id": 4,
+      "team": "Super Lamario Brothers",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-23T04:35:29.320000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 3916387,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "QB",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 8439,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "QB",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "00327cd1-3c28-47c8-9c2e-a867e392c5d8",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 7,
+      "team_id": 3,
+      "team": "Auto Draft Champion",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-23T01:59:42.790000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 5082424,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4362081,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "d1dd3d00-11d7-492d-aae0-c7024d375e2e",
       "type": "ROSTER",
@@ -20303,6 +20463,86 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "986b7eb3-b99b-433d-8669-9b5c72fc36ce",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 7,
+      "team_id": 3,
+      "team": "Auto Draft Champion",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-23T02:21:26.847000+00:00",
+      "processed_date": null,
+      "is_league_manager": true,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4431459,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 3,
+          "to_team": "Auto Draft Champion",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4040715,
+          "from_team_id": 3,
+          "from_team": "Auto Draft Champion",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "4020f7fd-373e-4fb9-ace9-a7134971ee01",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 7,
+      "team_id": 3,
+      "team": "Auto Draft Champion",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-23T01:59:35.868000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 5082424,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 3,
+          "to_team": "Auto Draft Champion",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4431459,
+          "from_team_id": 3,
+          "from_team": "Auto Draft Champion",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "af1b3e05-031b-4831-b88e-20a050b9f140",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -33091,17 +33331,17 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 80,
+    "0": 84,
     "1": 238,
     "2": 56,
     "3": 68,
     "4": 81,
     "5": 84,
     "6": 111,
-    "7": 80
+    "7": 84
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 7,
-  "fetched_at": "2026-10-23T00:48:06.330210+00:00"
+  "fetched_at": "2026-10-23T06:31:04.494010+00:00"
 }

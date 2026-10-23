@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-23T00:48:08.739906+00:00` |
+| Fetched at (UTC) | `2026-10-23T06:31:06.937740+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 199 |
 | Available players (FA + waivers) | 855 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.41s |
+| Fetch duration | 2.44s |
 | ESPN calls | 11 |
-| Workflow run | `39880252508` |
+| Workflow run | `39911958634` |
 
 ## Freshness and completeness gates
 
@@ -31,11 +31,11 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 2.1 | Auto Draft Champion | 0.0 | NO |
-| From Puka with Love | 12.7 | Nicole's Gnarly Team | 0.0 | NO |
-| Commanders of Chaos | 3.0 | Super Lamario Brothers | 0.0 | NO |
-| Connor’s Team | 5.28 | Giant Packer Fan | 0.0 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 0.0 | Burrow's Bunch | 10.4 | NO |
+| Kelli's Top-Notch Team | 19.9 | Auto Draft Champion | 0.0 | NO |
+| From Puka with Love | 22.0 | Nicole's Gnarly Team | 10.9 | NO |
+| Commanders of Chaos | 22.5 | Super Lamario Brothers | 0.0 | NO |
+| Connor’s Team | 41.54 | Giant Packer Fan | 0.0 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 14.1 | Burrow's Bunch | 25.7 | NO |
 | The Bye Week Boys | 0.0 | Jason X | 0.0 | NO |
 
 ## Rosters
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (48)
+## Injury designations (47)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -88,13 +88,12 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Quinshon Judkins | RB | QUESTIONABLE | FLEX | yes |
-| Auto Draft Champion | Tyler Warren | TE | QUESTIONABLE | BENCH | NO |
-| Auto Draft Champion | Jalen Hurts | QB | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Dylan Sampson | RB | INJURY_RESERVE | BENCH | NO |
+| Auto Draft Champion | Tyler Warren | TE | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
+| Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | QB | yes |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | RB | yes |
 | Super Lamario Brothers | Matthew Golden | WR | QUESTIONABLE | WR | yes |
-| Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | George Pickens | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | KC Concepcion | WR | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Mike Washington Jr. | RB | QUESTIONABLE | BENCH | NO |
@@ -131,18 +130,20 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 43 | 106 | 184 | 185 | 317 | 855 |
+| 20 | 42 | 107 | 184 | 185 | 317 | 855 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-718 total | 170 executed ownership changes | 318 lineup-only moves | 192 draft picks | 0 pending
+722 total | 172 executed ownership changes | 320 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-23T02:21 | Auto Draft Champion | FREEAGENT | ADD Tyler Warren, DROP Jalen Hurts |
+| 2026-10-23T01:59 | Auto Draft Champion | FREEAGENT | ADD Dominic Zvada, DROP Tyler Warren |
 | 2026-10-22T18:23 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Baker Mayfield, DROP Sam Darnold |
 | 2026-10-22T17:44 | Commanders of Chaos | FREEAGENT | ADD Tyrone Tracy Jr. |
 | 2026-10-22T17:43 | Commanders of Chaos | ROSTER | DROP Geno Smith |
@@ -153,8 +154,6 @@ Most recent ownership changes:
 | 2026-10-21T13:49 | Nicole's Gnarly Team | ROSTER | DROP Deebo Samuel Sr. |
 | 2026-10-21T13:36 | Jason X | FREEAGENT | ADD Kirk Cousins, DROP Patriots D/ST |
 | 2026-10-21T13:33 | Jason X | FREEAGENT | ADD Bengals D/ST, DROP Jaguars D/ST |
-| 2026-10-21T12:26 | The Bye Week Boys | FREEAGENT | ADD Tyler Higbee, DROP Brenton Strange |
-| 2026-10-21T12:24 | The Bye Week Boys | FREEAGENT | ADD Omar Cooper Jr., DROP Tyreek Hill |
 
 ## League format
 
