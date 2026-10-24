@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-24T00:45:07.078006+00:00` |
+| Fetched at (UTC) | `2026-10-24T06:28:00.044783+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 200 |
 | Available players (FA + waivers) | 854 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.16s |
+| Fetch duration | 1.87s |
 | ESPN calls | 11 |
-| Workflow run | `40046500011` |
+| Workflow run | `40070302023` |
 
 ## Freshness and completeness gates
 
@@ -91,7 +91,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | RB | yes |
 | Burrow's Bunch | Mike Washington Jr. | RB | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Jordan Mason | RB | INJURY_RESERVE | IR | NO |
-| From Puka with Love | Puka Nacua | WR | QUESTIONABLE | WR | yes |
+| From Puka with Love | Puka Nacua | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Jeremiyah Love | RB | OUT | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Tank Dell | WR | INJURY_RESERVE | BENCH | NO |
@@ -124,7 +124,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-726 total | 175 executed ownership changes | 321 lineup-only moves | 192 draft picks | 0 pending
+728 total | 175 executed ownership changes | 323 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
