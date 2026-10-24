@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-24T06:28:00.044783+00:00` |
+| Fetched at (UTC) | `2026-10-24T12:22:58.237226+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 200 |
 | Available players (FA + waivers) | 854 |
 | Players in lookup index | 1054 |
-| Fetch duration | 1.87s |
+| Fetch duration | 2.36s |
 | ESPN calls | 11 |
-| Workflow run | `40070302023` |
+| Workflow run | `40093682039` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (35)
+## Injury designations (34)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -103,7 +103,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Emeka Egbuka | WR | OUT | FLEX | yes |
 | Nicole's Gnarly Team | Mike Evans | WR | OUT | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
-| Kelli's Top-Notch Team | Tyjae Spears | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | OUT | BENCH | NO |
@@ -124,12 +123,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-728 total | 175 executed ownership changes | 323 lineup-only moves | 192 draft picks | 0 pending
+729 total | 176 executed ownership changes | 323 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-24T09:44 | Kelli's Top-Notch Team | FREEAGENT | ADD Kendre Miller, DROP Tyjae Spears |
 | 2026-10-23T18:54 | Giant Packer Fan | FREEAGENT | ADD Tyler Allgeier |
 | 2026-10-23T18:53 | Giant Packer Fan | FREEAGENT | ADD Ted Hurst III |
 | 2026-10-23T18:50 | Giant Packer Fan | ROSTER | DROP Terry McLaurin |
@@ -141,7 +141,6 @@ Most recent ownership changes:
 | 2026-10-22T07:13 | Connor’s Team | WAIVER | ADD Jason Myers, DROP Chris Rodriguez Jr. |
 | 2026-10-22T02:17 | The Bye Week Boys | FREEAGENT | ADD Tanner McKee, DROP Tyler Allgeier |
 | 2026-10-21T19:28 | Super Lamario Brothers | FREEAGENT | ADD Roschon Johnson |
-| 2026-10-21T16:26 | 🔥Certified Dumpster Fire 🔥 | TRADE_DECLINE | - |
 
 ## League format
 
