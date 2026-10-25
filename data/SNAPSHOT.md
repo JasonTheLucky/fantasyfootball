@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-25T06:28:04.635012+00:00` |
+| Fetched at (UTC) | `2026-10-25T12:23:34.566305+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.19s |
+| Fetch duration | 1.91s |
 | ESPN calls | 11 |
-| Workflow run | `40169172249` |
+| Workflow run | `40192886562` |
 
 ## Freshness and completeness gates
 
@@ -74,12 +74,11 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (30)
+## Injury designations (29)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
-| Jason X | Rico Dowdle | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Jonah Coleman | RB | QUESTIONABLE | IR | NO |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
@@ -99,7 +98,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | RB | yes |
 | Nicole's Gnarly Team | Emeka Egbuka | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | OUT | BENCH | NO |
-| Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | RB | yes |
+| Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | OUT | BENCH | NO |
@@ -119,7 +118,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-738 total | 178 executed ownership changes | 330 lineup-only moves | 192 draft picks | 0 pending
+739 total | 178 executed ownership changes | 331 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
