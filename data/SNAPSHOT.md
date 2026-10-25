@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-25T00:50:41.825222+00:00` |
+| Fetched at (UTC) | `2026-10-25T06:28:04.635012+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1054 |
-| Fetch duration | 1.97s |
+| Fetch duration | 2.19s |
 | ESPN calls | 11 |
-| Workflow run | `40148263402` |
+| Workflow run | `40169172249` |
 
 ## Freshness and completeness gates
 
@@ -119,12 +119,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-737 total | 177 executed ownership changes | 330 lineup-only moves | 192 draft picks | 0 pending
+738 total | 178 executed ownership changes | 330 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-25T03:02 | The Bye Week Boys | FREEAGENT | ADD Geno Smith, DROP Tanner McKee |
 | 2026-10-24T20:25 | Super Lamario Brothers | FREEAGENT | ADD Konata Mumpfield |
 | 2026-10-24T09:44 | Kelli's Top-Notch Team | FREEAGENT | ADD Kendre Miller, DROP Tyjae Spears |
 | 2026-10-23T18:54 | Giant Packer Fan | FREEAGENT | ADD Tyler Allgeier |
@@ -136,7 +137,6 @@ Most recent ownership changes:
 | 2026-10-22T17:44 | Commanders of Chaos | FREEAGENT | ADD Tyrone Tracy Jr. |
 | 2026-10-22T17:43 | Commanders of Chaos | ROSTER | DROP Geno Smith |
 | 2026-10-22T07:13 | Connor’s Team | WAIVER | ADD Jason Myers, DROP Chris Rodriguez Jr. |
-| 2026-10-22T02:17 | The Bye Week Boys | FREEAGENT | ADD Tanner McKee, DROP Tyler Allgeier |
 
 ## League format
 
