@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-26T00:49:14.531609+00:00` |
+| Fetched at (UTC) | `2026-10-26T06:41:09.883111+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.13s |
+| Fetch duration | 3.08s |
 | ESPN calls | 11 |
-| Workflow run | `40251174993` |
+| Workflow run | `40281256416` |
 
 ## Freshness and completeness gates
 
@@ -32,11 +32,11 @@
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
 | Kelli's Top-Notch Team | 91.12 | Auto Draft Champion | 106.82 | NO |
-| From Puka with Love | 93.2 | Nicole's Gnarly Team | 67.92 | NO |
-| Commanders of Chaos | 96.4 | Super Lamario Brothers | 107.88 | NO |
-| Connor’s Team | 110.64 | Giant Packer Fan | 118.06 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 132.72 | Burrow's Bunch | 136.78 | NO |
-| The Bye Week Boys | 75.68 | Jason X | 85.82 | NO |
+| From Puka with Love | 112.8 | Nicole's Gnarly Team | 74.6 | NO |
+| Commanders of Chaos | 85.4 | Super Lamario Brothers | 107.88 | NO |
+| Connor’s Team | 118.64 | Giant Packer Fan | 120.96 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 132.72 | Burrow's Bunch | 143.18 | NO |
+| The Bye Week Boys | 74.68 | Jason X | 116.72 | NO |
 
 ## Rosters
 
@@ -118,7 +118,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-746 total | 179 executed ownership changes | 337 lineup-only moves | 192 draft picks | 0 pending
+753 total | 179 executed ownership changes | 344 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
