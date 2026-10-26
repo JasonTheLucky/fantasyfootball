@@ -1,7 +1,7 @@
 {
   "counts": {
-    "total": 753,
-    "ownership_changes": 217,
+    "total": 754,
+    "ownership_changes": 218,
     "executed_ownership_changes": 179,
     "lineup_only_moves": 344,
     "draft_picks": 192,
@@ -21619,6 +21619,46 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "8b3e6b5c-e1ba-4fec-a4ee-7c52331f4236",
+      "type": "WAIVER",
+      "status": "CANCELED",
+      "execution_type": "CANCEL",
+      "is_pending": false,
+      "scoring_period_id": 7,
+      "team_id": 11,
+      "team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-26T14:16:26.288000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4431459,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 11,
+          "to_team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+          "from_slot": null,
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 3116365,
+          "from_team_id": 11,
+          "from_team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "c2147814-293c-4c36-8427-23017e5583fd",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -34719,17 +34759,17 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 115,
+    "0": 116,
     "1": 238,
     "2": 56,
     "3": 68,
     "4": 81,
     "5": 84,
     "6": 111,
-    "7": 115
+    "7": 116
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 7,
-  "fetched_at": "2026-10-26T13:52:49.426282+00:00"
+  "fetched_at": "2026-10-26T18:28:45.446913+00:00"
 }

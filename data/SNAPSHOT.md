@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-26T13:52:51.960374+00:00` |
+| Fetched at (UTC) | `2026-10-26T18:28:47.285066+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.53s |
+| Fetch duration | 1.84s |
 | ESPN calls | 11 |
-| Workflow run | `40334466186` |
+| Workflow run | `40378066413` |
 
 ## Freshness and completeness gates
 
@@ -36,7 +36,7 @@
 | Commanders of Chaos | 85.4 | Super Lamario Brothers | 107.88 | NO |
 | Connor’s Team | 118.64 | Giant Packer Fan | 120.96 | NO |
 | 🔥Certified Dumpster Fire 🔥 | 132.72 | Burrow's Bunch | 143.18 | NO |
-| The Bye Week Boys | 74.68 | Jason X | 116.72 | NO |
+| The Bye Week Boys | 74.68 | Jason X | 118.72 | NO |
 
 ## Rosters
 
@@ -118,7 +118,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-753 total | 179 executed ownership changes | 344 lineup-only moves | 192 draft picks | 0 pending
+754 total | 179 executed ownership changes | 344 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
