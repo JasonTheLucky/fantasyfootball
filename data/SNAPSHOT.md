@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-25T18:19:39.218813+00:00` |
+| Fetched at (UTC) | `2026-10-26T00:49:14.531609+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1054 |
-| Fetch duration | 3.08s |
+| Fetch duration | 2.13s |
 | ESPN calls | 11 |
-| Workflow run | `40220695726` |
+| Workflow run | `40251174993` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 50.8 | Auto Draft Champion | 65.22 | NO |
-| From Puka with Love | 27.0 | Nicole's Gnarly Team | 23.6 | NO |
-| Commanders of Chaos | 60.9 | Super Lamario Brothers | 60.48 | NO |
-| Connor’s Team | 62.24 | Giant Packer Fan | 61.7 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 38.08 | Burrow's Bunch | 65.32 | NO |
-| The Bye Week Boys | 23.14 | Jason X | 29.6 | NO |
+| Kelli's Top-Notch Team | 91.12 | Auto Draft Champion | 106.82 | NO |
+| From Puka with Love | 93.2 | Nicole's Gnarly Team | 67.92 | NO |
+| Commanders of Chaos | 96.4 | Super Lamario Brothers | 107.88 | NO |
+| Connor’s Team | 110.64 | Giant Packer Fan | 118.06 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 132.72 | Burrow's Bunch | 136.78 | NO |
+| The Bye Week Boys | 75.68 | Jason X | 85.82 | NO |
 
 ## Rosters
 
@@ -74,22 +74,21 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (30)
+## Injury designations (29)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
+| Jason X | Cam Skattebo | RB | QUESTIONABLE | RB | yes |
 | Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
-| Jason X | Jonah Coleman | RB | QUESTIONABLE | IR | NO |
+| The Bye Week Boys | Jaylen Waddle | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
-| Auto Draft Champion | Christian McCaffrey | RB | QUESTIONABLE | RB | yes |
 | Auto Draft Champion | Tyler Warren | TE | OUT | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Super Lamario Brothers | Lamar Jackson | QB | OUT | IR | NO |
-| Burrow's Bunch | Mike Washington Jr. | RB | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Puka Nacua | WR | QUESTIONABLE | BENCH | NO |
+| Burrow's Bunch | Aaron Jones Sr. | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Jeremiyah Love | RB | OUT | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
@@ -119,7 +118,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-743 total | 179 executed ownership changes | 334 lineup-only moves | 192 draft picks | 0 pending
+746 total | 179 executed ownership changes | 337 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
