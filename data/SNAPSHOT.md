@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-27T00:47:52.400749+00:00` |
+| Fetched at (UTC) | `2026-10-27T06:31:07.133146+00:00` |
 | Scoring period (week) | **7** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
 | Available players (FA + waivers) | 853 |
 | Players in lookup index | 1054 |
-| Fetch duration | 2.18s |
+| Fetch duration | 2.25s |
 | ESPN calls | 11 |
-| Workflow run | `40428644539` |
+| Workflow run | `40461566887` |
 
 ## Freshness and completeness gates
 
@@ -32,11 +32,11 @@
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
 | Kelli's Top-Notch Team | 91.12 | Auto Draft Champion | 106.82 | NO |
-| From Puka with Love | 118.76 | Nicole's Gnarly Team | 82.5 | NO |
-| Commanders of Chaos | 97.4 | Super Lamario Brothers | 107.88 | NO |
+| From Puka with Love | 136.08 | Nicole's Gnarly Team | 99.0 | NO |
+| Commanders of Chaos | 120.2 | Super Lamario Brothers | 107.88 | NO |
 | Connor’s Team | 118.64 | Giant Packer Fan | 120.96 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 132.72 | Burrow's Bunch | 143.18 | NO |
-| The Bye Week Boys | 78.68 | Jason X | 118.72 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 132.72 | Burrow's Bunch | 158.88 | NO |
+| The Bye Week Boys | 98.18 | Jason X | 118.72 | NO |
 
 ## Rosters
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (32)
+## Injury designations (33)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -102,6 +102,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Breece Hall | RB | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Emeka Egbuka | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | OUT | BENCH | NO |
+| Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | OUT | BENCH | NO |
