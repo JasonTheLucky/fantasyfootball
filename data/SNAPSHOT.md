@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-27T06:31:07.133146+00:00` |
-| Scoring period (week) | **7** |
+| Fetched at (UTC) | `2026-10-27T12:28:12.302293+00:00` |
+| Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 201 |
-| Available players (FA + waivers) | 853 |
-| Players in lookup index | 1054 |
-| Fetch duration | 2.25s |
-| ESPN calls | 11 |
-| Workflow run | `40461566887` |
+| Available players (FA + waivers) | 854 |
+| Players in lookup index | 1055 |
+| Fetch duration | 2.62s |
+| ESPN calls | 12 |
+| Workflow run | `40503964314` |
 
 ## Freshness and completeness gates
 
@@ -27,16 +27,16 @@
 | Ownership reconciled, no conflicts | yes |
 | Player lookup index complete | yes |
 
-## Week 7 matchups
+## Week 8 matchups
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 91.12 | Auto Draft Champion | 106.82 | NO |
-| From Puka with Love | 136.08 | Nicole's Gnarly Team | 99.0 | NO |
-| Commanders of Chaos | 120.2 | Super Lamario Brothers | 107.88 | NO |
-| Connor’s Team | 118.64 | Giant Packer Fan | 120.96 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 132.72 | Burrow's Bunch | 158.88 | NO |
-| The Bye Week Boys | 98.18 | Jason X | 118.72 | NO |
+| From Puka with Love | 0.0 | Kelli's Top-Notch Team | 0.0 | NO |
+| Auto Draft Champion | 0.0 | Commanders of Chaos | 0.0 | NO |
+| Nicole's Gnarly Team | 0.0 | Connor’s Team | 0.0 | NO |
+| Super Lamario Brothers | 0.0 | 🔥Certified Dumpster Fire 🔥 | 0.0 | NO |
+| Giant Packer Fan | 0.0 | The Bye Week Boys | 0.0 | NO |
+| Burrow's Bunch | 0.0 | Jason X | 0.0 | NO |
 
 ## Rosters
 
@@ -59,18 +59,18 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| Auto Draft Champion | **$200** | $0 | 100.0% | 4 |
-| Giant Packer Fan | **$200** | $0 | 100.0% | 7 |
-| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 5 |
-| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 2 |
-| Commanders of Chaos | **$200** | $0 | 100.0% | 1 |
-| Burrow's Bunch | **$184** | $16 | 92.0% | 6 |
-| Connor’s Team | **$182** | $18 | 91.0% | 12 |
-| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 8 |
-| The Bye Week Boys | **$155** | $45 | 77.5% | 3 |
-| From Puka with Love | **$150** | $50 | 75.0% | 11 |
-| Super Lamario Brothers | **$135** | $65 | 67.5% | 9 |
-| Jason X | **$2** | $198 | 1.0% | 10 |
+| Auto Draft Champion | **$200** | $0 | 100.0% | 9 |
+| Giant Packer Fan | **$200** | $0 | 100.0% | 10 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 7 |
+| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 1 |
+| Commanders of Chaos | **$200** | $0 | 100.0% | 4 |
+| Burrow's Bunch | **$184** | $16 | 92.0% | 12 |
+| Connor’s Team | **$182** | $18 | 91.0% | 2 |
+| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 6 |
+| The Bye Week Boys | **$155** | $45 | 77.5% | 5 |
+| From Puka with Love | **$150** | $50 | 75.0% | 8 |
+| Super Lamario Brothers | **$135** | $65 | 67.5% | 3 |
+| Jason X | **$2** | $198 | 1.0% | 11 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
@@ -78,21 +78,21 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Cam Skattebo | RB | QUESTIONABLE | RB | yes |
+| Jason X | Cam Skattebo | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Zach Charbonnet | RB | OUT | BENCH | NO |
-| The Bye Week Boys | Jaylen Waddle | WR | QUESTIONABLE | WR | yes |
+| The Bye Week Boys | DeVonta Smith | WR | OUT | WR | yes |
+| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
-| The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
-| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | Jaylen Waddle | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Christian McCaffrey | RB | QUESTIONABLE | RB | yes |
 | Auto Draft Champion | Tyler Warren | TE | OUT | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
+| Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | RB | yes |
 | Super Lamario Brothers | Matthew Golden | WR | QUESTIONABLE | WR | yes |
-| Super Lamario Brothers | Josh Jacobs | RB | DAY_TO_DAY | BENCH | NO |
 | Super Lamario Brothers | Lamar Jackson | QB | OUT | IR | NO |
 | Burrow's Bunch | Aaron Jones Sr. | RB | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Jeremiyah Love | RB | OUT | BENCH | NO |
+| From Puka with Love | Jeremiyah Love | RB | OUT | RB | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Amon-Ra St. Brown | WR | QUESTIONABLE | FLEX | yes |
@@ -116,13 +116,13 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 42 | 107 | 183 | 185 | 316 | 853 |
+| 20 | 42 | 107 | 184 | 185 | 316 | 854 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-754 total | 179 executed ownership changes | 344 lineup-only moves | 192 draft picks | 0 pending
+761 total | 179 executed ownership changes | 351 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
