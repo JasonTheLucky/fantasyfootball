@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-28T00:37:18.436412+00:00` |
+| Fetched at (UTC) | `2026-10-28T06:23:23.275545+00:00` |
 | Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 198 |
-| Available players (FA + waivers) | 857 |
+| Rostered players | 196 |
+| Available players (FA + waivers) | 859 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.57s |
+| Fetch duration | 1.91s |
 | ESPN calls | 12 |
-| Workflow run | `40609900061` |
+| Workflow run | `40643531982` |
 
 ## Freshness and completeness gates
 
@@ -46,7 +46,7 @@
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 17 | 9 | 7 | 1 | 0 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
-| 5 | Burrow's Bunch | Norberto Vargas | 17 | 9 | 7 | 1 | 0 |
+| 5 | Burrow's Bunch | Norberto Vargas | 15 | 9 | 6 | 0 | 1 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
@@ -115,18 +115,20 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 42 | 107 | 186 | 185 | 317 | 857 |
+| 20 | 42 | 108 | 186 | 186 | 317 | 859 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-779 total | 184 executed ownership changes | 362 lineup-only moves | 192 draft picks | 0 pending
+782 total | 186 executed ownership changes | 363 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-28T02:26 | Burrow's Bunch | ROSTER | DROP Oronde Gadsden |
+| 2026-10-28T02:26 | Burrow's Bunch | ROSTER | DROP Jameis Winston |
 | 2026-10-27T19:02 | Jason X | TRADE_DECLINE | - |
 | 2026-10-27T17:10 | From Puka with Love | ROSTER | DROP Bam Knight |
 | 2026-10-27T16:02 | The Bye Week Boys | TRADE_DECLINE | - |
@@ -137,8 +139,6 @@ Most recent ownership changes:
 | 2026-10-24T20:25 | Super Lamario Brothers | FREEAGENT | ADD Konata Mumpfield |
 | 2026-10-24T09:44 | Kelli's Top-Notch Team | FREEAGENT | ADD Kendre Miller, DROP Tyjae Spears |
 | 2026-10-23T18:54 | Giant Packer Fan | FREEAGENT | ADD Tyler Allgeier |
-| 2026-10-23T18:53 | Giant Packer Fan | FREEAGENT | ADD Ted Hurst III |
-| 2026-10-23T18:50 | Giant Packer Fan | ROSTER | DROP Terry McLaurin |
 
 ## League format
 
