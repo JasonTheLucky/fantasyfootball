@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-27T18:15:21.050368+00:00` |
+| Fetched at (UTC) | `2026-10-28T00:37:18.436412+00:00` |
 | Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.44s |
+| Fetch duration | 2.57s |
 | ESPN calls | 12 |
-| Workflow run | `40558220135` |
+| Workflow run | `40609900061` |
 
 ## Freshness and completeness gates
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (33)
+## Injury designations (32)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -82,7 +82,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Zach Charbonnet | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | FLEX | yes |
-| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Jaylen Waddle | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Dameon Pierce | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
@@ -107,7 +106,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Tyrone Tracy Jr. | RB | OUT | RB | yes |
+| Commanders of Chaos | Tyrone Tracy Jr. | RB | INJURY_RESERVE | RB | yes |
 | Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Jadarian Price | RB | INJURY_RESERVE | IR | NO |
@@ -122,12 +121,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-773 total | 183 executed ownership changes | 357 lineup-only moves | 192 draft picks | 0 pending
+779 total | 184 executed ownership changes | 362 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-27T19:02 | Jason X | TRADE_DECLINE | - |
 | 2026-10-27T17:10 | From Puka with Love | ROSTER | DROP Bam Knight |
 | 2026-10-27T16:02 | The Bye Week Boys | TRADE_DECLINE | - |
 | 2026-10-27T14:57 | Jason X | ROSTER | DROP Wan'Dale Robinson |
@@ -139,7 +139,6 @@ Most recent ownership changes:
 | 2026-10-23T18:54 | Giant Packer Fan | FREEAGENT | ADD Tyler Allgeier |
 | 2026-10-23T18:53 | Giant Packer Fan | FREEAGENT | ADD Ted Hurst III |
 | 2026-10-23T18:50 | Giant Packer Fan | ROSTER | DROP Terry McLaurin |
-| 2026-10-23T02:21 | Auto Draft Champion | FREEAGENT | ADD Tyler Warren, DROP Jalen Hurts |
 
 ## League format
 
