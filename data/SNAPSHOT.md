@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-28T06:23:23.275545+00:00` |
+| Fetched at (UTC) | `2026-10-28T12:20:16.205779+00:00` |
 | Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 196 |
-| Available players (FA + waivers) | 859 |
+| Rostered players | 197 |
+| Available players (FA + waivers) | 858 |
 | Players in lookup index | 1055 |
-| Fetch duration | 1.91s |
+| Fetch duration | 1.84s |
 | ESPN calls | 12 |
-| Workflow run | `40643531982` |
+| Workflow run | `40686948240` |
 
 ## Freshness and completeness gates
 
@@ -46,7 +46,7 @@
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 17 | 9 | 7 | 1 | 0 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
-| 5 | Burrow's Bunch | Norberto Vargas | 15 | 9 | 6 | 0 | 1 |
+| 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
@@ -59,18 +59,18 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| Auto Draft Champion | **$200** | $0 | 100.0% | 9 |
-| Giant Packer Fan | **$200** | $0 | 100.0% | 10 |
-| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 7 |
+| Auto Draft Champion | **$200** | $0 | 100.0% | 7 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 5 |
 | Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 1 |
-| Commanders of Chaos | **$200** | $0 | 100.0% | 4 |
-| Burrow's Bunch | **$184** | $16 | 92.0% | 12 |
+| Commanders of Chaos | **$200** | $0 | 100.0% | 3 |
+| Giant Packer Fan | **$195** | $5 | 97.5% | 10 |
 | Connor’s Team | **$182** | $18 | 91.0% | 2 |
-| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 6 |
-| The Bye Week Boys | **$155** | $45 | 77.5% | 5 |
-| From Puka with Love | **$150** | $50 | 75.0% | 8 |
-| Super Lamario Brothers | **$135** | $65 | 67.5% | 3 |
-| Jason X | **$2** | $198 | 1.0% | 11 |
+| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 4 |
+| Burrow's Bunch | **$164** | $36 | 82.0% | 9 |
+| From Puka with Love | **$150** | $50 | 75.0% | 6 |
+| Super Lamario Brothers | **$135** | $65 | 67.5% | 11 |
+| The Bye Week Boys | **$111** | $89 | 55.5% | 12 |
+| Jason X | **$2** | $198 | 1.0% | 8 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
@@ -115,30 +115,30 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 42 | 108 | 186 | 186 | 317 | 859 |
+| 20 | 41 | 109 | 185 | 185 | 318 | 858 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-782 total | 186 executed ownership changes | 363 lineup-only moves | 192 draft picks | 0 pending
+797 total | 194 executed ownership changes | 365 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-28T12:18 | The Bye Week Boys | FREEAGENT | ADD Chig Okonkwo, DROP Tyler Higbee |
+| 2026-10-28T09:48 | Kelli's Top-Notch Team | FREEAGENT | ADD Chad Ryland, DROP Eddy Pineiro |
+| 2026-10-28T07:23 | The Bye Week Boys | WAIVER | ADD Samaje Perine, DROP Geno Smith |
+| 2026-10-28T07:23 | Super Lamario Brothers | WAIVER | ADD Malik Willis, DROP Aaron Rodgers |
+| 2026-10-28T07:23 | The Bye Week Boys | WAIVER | ADD Courtland Sutton, DROP Kendrick Bourne |
+| 2026-10-28T07:23 | Burrow's Bunch | WAIVER | ADD Brenton Strange |
+| 2026-10-28T07:23 | Giant Packer Fan | WAIVER | ADD Tyler Bass, DROP Justice Hill |
+| 2026-10-28T07:23 | The Bye Week Boys | WAIVER | ADD Seth McGowan, DROP Christian Kirk |
 | 2026-10-28T02:26 | Burrow's Bunch | ROSTER | DROP Oronde Gadsden |
 | 2026-10-28T02:26 | Burrow's Bunch | ROSTER | DROP Jameis Winston |
 | 2026-10-27T19:02 | Jason X | TRADE_DECLINE | - |
 | 2026-10-27T17:10 | From Puka with Love | ROSTER | DROP Bam Knight |
-| 2026-10-27T16:02 | The Bye Week Boys | TRADE_DECLINE | - |
-| 2026-10-27T14:57 | Jason X | ROSTER | DROP Wan'Dale Robinson |
-| 2026-10-27T13:28 | Super Lamario Brothers | ROSTER | DROP Roschon Johnson |
-| 2026-10-25T15:30 | The Bye Week Boys | FREEAGENT | ADD Christian Kirk, DROP Ja'Kobi Lane |
-| 2026-10-25T03:02 | The Bye Week Boys | FREEAGENT | ADD Geno Smith, DROP Tanner McKee |
-| 2026-10-24T20:25 | Super Lamario Brothers | FREEAGENT | ADD Konata Mumpfield |
-| 2026-10-24T09:44 | Kelli's Top-Notch Team | FREEAGENT | ADD Kendre Miller, DROP Tyjae Spears |
-| 2026-10-23T18:54 | Giant Packer Fan | FREEAGENT | ADD Tyler Allgeier |
 
 ## League format
 
