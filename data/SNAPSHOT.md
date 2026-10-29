@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-29T00:36:40.397074+00:00` |
+| Fetched at (UTC) | `2026-10-29T06:23:22.954656+00:00` |
 | Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 858 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.14s |
+| Fetch duration | 2.46s |
 | ESPN calls | 12 |
-| Workflow run | `40795161559` |
+| Workflow run | `40828889083` |
 
 ## Freshness and completeness gates
 
@@ -85,9 +85,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | Jeremiyah Love | RB | QUESTIONABLE | RB | yes |
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
-| Auto Draft Champion | Christian McCaffrey | RB | QUESTIONABLE | RB | yes |
 | Auto Draft Champion | Michael Wilson | WR | QUESTIONABLE | WR | yes |
-| Auto Draft Champion | Dylan Sampson | RB | QUESTIONABLE | BENCH | NO |
+| Auto Draft Champion | Dylan Sampson | RB | QUESTIONABLE | RB | yes |
+| Auto Draft Champion | Christian McCaffrey | RB | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Tyler Warren | TE | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Super Lamario Brothers | Lamar Jackson | QB | QUESTIONABLE | QB | yes |
@@ -130,18 +130,20 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 41 | 109 | 186 | 185 | 317 | 858 |
+| 19 | 42 | 109 | 186 | 185 | 317 | 858 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-815 total | 198 executed ownership changes | 375 lineup-only moves | 192 draft picks | 0 pending
+822 total | 200 executed ownership changes | 380 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-29T02:10 | Auto Draft Champion | FREEAGENT | ADD Commanders D/ST, DROP Dominic Zvada |
+| 2026-10-29T01:12 | Jason X | FREEAGENT | ADD Jaydon Blue, DROP Emmett Johnson |
 | 2026-10-28T21:40 | The Bye Week Boys | FREEAGENT | ADD Caleb Douglas |
 | 2026-10-28T21:38 | The Bye Week Boys | ROSTER | DROP Dameon Pierce |
 | 2026-10-28T13:14 | Super Lamario Brothers | FREEAGENT | ADD Jaguars D/ST, DROP Browns D/ST |
@@ -152,8 +154,6 @@ Most recent ownership changes:
 | 2026-10-28T07:23 | Super Lamario Brothers | WAIVER | ADD Malik Willis, DROP Aaron Rodgers |
 | 2026-10-28T07:23 | The Bye Week Boys | WAIVER | ADD Courtland Sutton, DROP Kendrick Bourne |
 | 2026-10-28T07:23 | Giant Packer Fan | WAIVER | ADD Tyler Bass, DROP Justice Hill |
-| 2026-10-28T07:23 | Burrow's Bunch | WAIVER | ADD Brenton Strange |
-| 2026-10-28T07:23 | The Bye Week Boys | WAIVER | ADD Seth McGowan, DROP Christian Kirk |
 
 ## League format
 
