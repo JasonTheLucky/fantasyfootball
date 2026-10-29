@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-29T12:20:48.489282+00:00` |
+| Fetched at (UTC) | `2026-10-29T18:17:02.829444+00:00` |
 | Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 197 |
-| Available players (FA + waivers) | 858 |
+| Rostered players | 198 |
+| Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.91s |
+| Fetch duration | 2.39s |
 | ESPN calls | 12 |
-| Workflow run | `40872471579` |
+| Workflow run | `40929306028` |
 
 ## Freshness and completeness gates
 
@@ -47,7 +47,7 @@
 | 3 | Auto Draft Champion | Amanda Spence | 17 | 9 | 7 | 1 | 0 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 16 | 9 | 7 | 0 | 0 |
 | 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
-| 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
+| 6 | From Puka with Love | Brandon Daab | 17 | 9 | 7 | 1 | 0 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
@@ -98,21 +98,21 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Burrow's Bunch | Ja'Marr Chase | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | George Pickens | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | Aaron Jones Sr. | RB | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Amon-Ra St. Brown | WR | QUESTIONABLE | WR | yes |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | FLEX | yes |
 | Connor’s Team | Kenny Gainwell | RB | QUESTIONABLE | RB | yes |
-| Connor’s Team | Dalton Kincaid | TE | QUESTIONABLE | TE | yes |
 | Connor’s Team | Carnell Tate | WR | QUESTIONABLE | WR | yes |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
+| Connor’s Team | Dalton Kincaid | TE | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Jahmyr Gibbs | RB | QUESTIONABLE | RB | yes |
 | Giant Packer Fan | Tyler Allgeier | RB | QUESTIONABLE | BENCH | NO |
-| Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | BENCH | NO |
-| Nicole's Gnarly Team | Emeka Egbuka | WR | QUESTIONABLE | BENCH | NO |
+| Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | RB | yes |
+| Nicole's Gnarly Team | Emeka Egbuka | WR | QUESTIONABLE | WR | yes |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | QUESTIONABLE | FLEX | yes |
@@ -130,18 +130,20 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 42 | 109 | 186 | 185 | 317 | 858 |
+| 19 | 42 | 109 | 186 | 185 | 316 | 857 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-826 total | 202 executed ownership changes | 382 lineup-only moves | 192 draft picks | 0 pending
+834 total | 204 executed ownership changes | 388 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-29T15:37 | Jason X | TRADE_DECLINE | - |
+| 2026-10-29T13:58 | From Puka with Love | FREEAGENT | ADD Antonio Williams |
 | 2026-10-29T09:39 | Kelli's Top-Notch Team | FREEAGENT | ADD Wan'Dale Robinson, DROP Brian Thomas Jr. |
 | 2026-10-29T07:09 | Kelli's Top-Notch Team | WAIVER | ADD Geno Smith, DROP Jared Goff |
 | 2026-10-29T02:10 | Auto Draft Champion | FREEAGENT | ADD Commanders D/ST, DROP Dominic Zvada |
@@ -152,8 +154,6 @@ Most recent ownership changes:
 | 2026-10-28T13:13 | Super Lamario Brothers | FREEAGENT | ADD Greg Dulcich, DROP Pat Freiermuth |
 | 2026-10-28T12:18 | The Bye Week Boys | FREEAGENT | ADD Chig Okonkwo, DROP Tyler Higbee |
 | 2026-10-28T09:48 | Kelli's Top-Notch Team | FREEAGENT | ADD Chad Ryland, DROP Eddy Pineiro |
-| 2026-10-28T07:23 | The Bye Week Boys | WAIVER | ADD Samaje Perine, DROP Geno Smith |
-| 2026-10-28T07:23 | Super Lamario Brothers | WAIVER | ADD Malik Willis, DROP Aaron Rodgers |
 
 ## League format
 
