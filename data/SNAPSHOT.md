@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-29T06:23:22.954656+00:00` |
+| Fetched at (UTC) | `2026-10-29T12:20:48.489282+00:00` |
 | Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 197 |
 | Available players (FA + waivers) | 858 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.46s |
+| Fetch duration | 2.91s |
 | ESPN calls | 12 |
-| Workflow run | `40828889083` |
+| Workflow run | `40872471579` |
 
 ## Freshness and completeness gates
 
@@ -59,18 +59,18 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| Auto Draft Champion | **$200** | $0 | 100.0% | 7 |
-| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 5 |
-| Kelli's Top-Notch Team | **$200** | $0 | 100.0% | 1 |
-| Commanders of Chaos | **$200** | $0 | 100.0% | 3 |
-| Giant Packer Fan | **$195** | $5 | 97.5% | 10 |
-| Connor’s Team | **$182** | $18 | 91.0% | 2 |
-| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 4 |
-| Burrow's Bunch | **$164** | $36 | 82.0% | 9 |
-| From Puka with Love | **$150** | $50 | 75.0% | 6 |
-| Super Lamario Brothers | **$135** | $65 | 67.5% | 11 |
-| The Bye Week Boys | **$111** | $89 | 55.5% | 12 |
-| Jason X | **$2** | $198 | 1.0% | 8 |
+| Auto Draft Champion | **$200** | $0 | 100.0% | 6 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 4 |
+| Commanders of Chaos | **$200** | $0 | 100.0% | 2 |
+| Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 12 |
+| Giant Packer Fan | **$195** | $5 | 97.5% | 9 |
+| Connor’s Team | **$182** | $18 | 91.0% | 1 |
+| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 3 |
+| Burrow's Bunch | **$164** | $36 | 82.0% | 8 |
+| From Puka with Love | **$150** | $50 | 75.0% | 5 |
+| Super Lamario Brothers | **$135** | $65 | 67.5% | 10 |
+| The Bye Week Boys | **$111** | $89 | 55.5% | 11 |
+| Jason X | **$2** | $198 | 1.0% | 7 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
@@ -136,12 +136,14 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-822 total | 200 executed ownership changes | 380 lineup-only moves | 192 draft picks | 0 pending
+826 total | 202 executed ownership changes | 382 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-29T09:39 | Kelli's Top-Notch Team | FREEAGENT | ADD Wan'Dale Robinson, DROP Brian Thomas Jr. |
+| 2026-10-29T07:09 | Kelli's Top-Notch Team | WAIVER | ADD Geno Smith, DROP Jared Goff |
 | 2026-10-29T02:10 | Auto Draft Champion | FREEAGENT | ADD Commanders D/ST, DROP Dominic Zvada |
 | 2026-10-29T01:12 | Jason X | FREEAGENT | ADD Jaydon Blue, DROP Emmett Johnson |
 | 2026-10-28T21:40 | The Bye Week Boys | FREEAGENT | ADD Caleb Douglas |
@@ -152,8 +154,6 @@ Most recent ownership changes:
 | 2026-10-28T09:48 | Kelli's Top-Notch Team | FREEAGENT | ADD Chad Ryland, DROP Eddy Pineiro |
 | 2026-10-28T07:23 | The Bye Week Boys | WAIVER | ADD Samaje Perine, DROP Geno Smith |
 | 2026-10-28T07:23 | Super Lamario Brothers | WAIVER | ADD Malik Willis, DROP Aaron Rodgers |
-| 2026-10-28T07:23 | The Bye Week Boys | WAIVER | ADD Courtland Sutton, DROP Kendrick Bourne |
-| 2026-10-28T07:23 | Giant Packer Fan | WAIVER | ADD Tyler Bass, DROP Justice Hill |
 
 ## League format
 
