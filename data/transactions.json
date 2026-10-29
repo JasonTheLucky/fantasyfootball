@@ -1,8 +1,8 @@
 {
   "counts": {
-    "total": 809,
-    "ownership_changes": 242,
-    "executed_ownership_changes": 196,
+    "total": 815,
+    "ownership_changes": 248,
+    "executed_ownership_changes": 198,
     "lineup_only_moves": 375,
     "draft_picks": 192,
     "pending": 0,
@@ -781,6 +781,62 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "b5fecb27-615b-469d-9e90-b948bf11d0e0",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 8,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-28T21:40:17.286000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4869645,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "6c3fb1d8-f518-4a23-a223-dbf0bd81a846",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 8,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-28T21:38:16.198000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "DROP",
+          "player_id": 4360238,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "a341ea9b-8b82-4968-87c0-94bb71ce7ed5",
       "type": "FREEAGENT",
@@ -23845,6 +23901,233 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "b5fecb27-615b-469d-9e90-b948bf11d0e0",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 8,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-28T21:40:17.286000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4869645,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "6c3fb1d8-f518-4a23-a223-dbf0bd81a846",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 8,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-28T21:38:16.198000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "DROP",
+          "player_id": 4360238,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "ec3c611f-00a0-45c7-8fd7-db28643c53f0",
+      "type": "TRADE_ACCEPT",
+      "status": null,
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 8,
+      "team_id": 12,
+      "team": "Commanders of Chaos",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-28T21:06:34.636000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "DROP",
+          "player_id": 4360516,
+          "from_team_id": 12,
+          "from_team": "Commanders of Chaos",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "RB",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4373678,
+          "from_team_id": 12,
+          "from_team": "Commanders of Chaos",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "ab36c6ed-c84b-40dc-a600-ad9e906f842d",
+      "type": "TRADE_PROPOSAL",
+      "status": "CANCELED",
+      "execution_type": "CANCEL",
+      "is_pending": false,
+      "scoring_period_id": 8,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-28T20:32:11.815000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "TRADE",
+          "player_id": 4426348,
+          "from_team_id": 12,
+          "from_team": "Commanders of Chaos",
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "TRADE",
+          "player_id": 4697815,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 12,
+          "to_team": "Commanders of Chaos",
+          "from_slot": "FLEX",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "TRADE",
+          "player_id": 4685720,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 12,
+          "to_team": "Commanders of Chaos",
+          "from_slot": "QB",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "54245a95-fffc-45b3-b8ac-548d36ed0bcc",
+      "type": "TRADE_PROPOSAL",
+      "status": "CANCELED",
+      "execution_type": "CANCEL",
+      "is_pending": false,
+      "scoring_period_id": 8,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-28T19:34:12.367000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "TRADE",
+          "player_id": 3116389,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "TRADE",
+          "player_id": 4361579,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": "RB",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "TRADE",
+          "player_id": 4882093,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": "RB",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "TRADE",
+          "player_id": 4711533,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": "RB",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "698ba57f-2641-464a-a5af-abcf45d2ab9b",
+      "type": "TRADE_ACCEPT",
+      "status": null,
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 8,
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-10-28T18:27:49.705000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": []
+    },
+    {
       "id": "a341ea9b-8b82-4968-87c0-94bb71ce7ed5",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -37834,7 +38117,7 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 52,
+    "0": 58,
     "1": 238,
     "2": 56,
     "3": 68,
@@ -37842,10 +38125,10 @@
     "5": 84,
     "6": 111,
     "7": 119,
-    "8": 52
+    "8": 58
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 8,
-  "fetched_at": "2026-10-28T18:16:57.475257+00:00"
+  "fetched_at": "2026-10-29T00:36:38.253137+00:00"
 }
