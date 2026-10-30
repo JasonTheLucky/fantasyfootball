@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-30T00:37:09.053595+00:00` |
+| Fetched at (UTC) | `2026-10-30T06:23:14.560217+00:00` |
 | Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.14s |
+| Fetch duration | 2.6s |
 | ESPN calls | 12 |
-| Workflow run | `40980799226` |
+| Workflow run | `41013759171` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| From Puka with Love | 0.0 | Kelli's Top-Notch Team | 3.8 | NO |
-| Auto Draft Champion | 0.0 | Commanders of Chaos | 0.0 | NO |
-| Nicole's Gnarly Team | 0.0 | Connor’s Team | 0.0 | NO |
-| Super Lamario Brothers | 2.1 | 🔥Certified Dumpster Fire 🔥 | 0.0 | NO |
-| Giant Packer Fan | 0.0 | The Bye Week Boys | 0.0 | NO |
-| Burrow's Bunch | 0.0 | Jason X | 4.8 | NO |
+| From Puka with Love | 0.0 | Kelli's Top-Notch Team | 24.9 | NO |
+| Auto Draft Champion | 0.0 | Commanders of Chaos | 11.8 | NO |
+| Nicole's Gnarly Team | 17.3 | Connor’s Team | 20.9 | NO |
+| Super Lamario Brothers | 23.2 | 🔥Certified Dumpster Fire 🔥 | 0.0 | NO |
+| Giant Packer Fan | 0.0 | The Bye Week Boys | 9.6 | NO |
+| Burrow's Bunch | 0.0 | Jason X | 19.3 | NO |
 
 ## Rosters
 
@@ -74,12 +74,13 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (43)
+## Injury designations (44)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Treylon Burks | WR | QUESTIONABLE | FLEX | yes |
+| Jason X | Christian Watson | WR | QUESTIONABLE | WR | yes |
 | Jason X | Cam Skattebo | RB | QUESTIONABLE | BENCH | NO |
+| Jason X | Treylon Burks | WR | QUESTIONABLE | BENCH | NO |
 | Jason X | Tank Bigsby | RB | INJURY_RESERVE | BENCH | NO |
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
@@ -132,7 +133,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-851 total | 210 executed ownership changes | 398 lineup-only moves | 192 draft picks | 0 pending
+852 total | 210 executed ownership changes | 399 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
