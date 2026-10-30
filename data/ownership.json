@@ -5,10 +5,10 @@
     "available": 857,
     "available_by_position": {
       "D/ST": 19,
-      "K": 42,
-      "QB": 109,
-      "RB": 186,
-      "TE": 185,
+      "K": 41,
+      "QB": 110,
+      "RB": 185,
+      "TE": 186,
       "WR": 316
     },
     "conflicts": 0
@@ -30,7 +30,6 @@
     -16003,
     10621,
     12483,
-    14880,
     15818,
     15847,
     15864,
@@ -56,6 +55,7 @@
     3122840,
     3128429,
     3139477,
+    3150744,
     3915416,
     3915511,
     3916148,
@@ -81,6 +81,7 @@
     4241463,
     4241474,
     4241478,
+    4241555,
     4241985,
     4242335,
     4242512,
@@ -93,7 +94,6 @@
     4360234,
     4360248,
     4360310,
-    4360516,
     4360569,
     4360635,
     4360689,
@@ -110,11 +110,9 @@
     4362628,
     4363538,
     4366031,
-    4367209,
     4371733,
     4372016,
     4373626,
-    4373678,
     4374302,
     4379399,
     4385690,
@@ -129,6 +127,7 @@
     4427366,
     4428331,
     4428718,
+    4429013,
     4429023,
     4429059,
     4429086,
@@ -153,6 +152,7 @@
     4432710,
     4567048,
     4567104,
+    4567156,
     4567750,
     4568490,
     4569173,
@@ -170,11 +170,11 @@
     4599739,
     4608686,
     4612826,
+    4678008,
     4683062,
     4685247,
     4685261,
     4685278,
-    4685279,
     4685382,
     4685415,
     4685472,
@@ -243,6 +243,7 @@
     12460,
     14012,
     14163,
+    14880,
     14881,
     14993,
     15168,
@@ -395,7 +396,6 @@
     3139602,
     3144991,
     3149687,
-    3150744,
     3676833,
     3722362,
     3728262,
@@ -552,7 +552,6 @@
     4241464,
     4241476,
     4241479,
-    4241555,
     4241588,
     4241802,
     4241820,
@@ -629,6 +628,7 @@
     4360405,
     4360423,
     4360438,
+    4360516,
     4360637,
     4360698,
     4360739,
@@ -688,6 +688,7 @@
     4366963,
     4367178,
     4367186,
+    4367209,
     4367510,
     4367567,
     4368003,
@@ -713,6 +714,7 @@
     4373273,
     4373632,
     4373634,
+    4373678,
     4373684,
     4374033,
     4374045,
@@ -780,7 +782,6 @@
     4429001,
     4429006,
     4429012,
-    4429013,
     4429022,
     4429025,
     4429033,
@@ -863,7 +864,6 @@
     4566192,
     4567095,
     4567096,
-    4567156,
     4567216,
     4567506,
     4567747,
@@ -920,7 +920,6 @@
     4635008,
     4635009,
     4678006,
-    4678008,
     4682509,
     4682648,
     4682652,
@@ -938,6 +937,7 @@
     4685116,
     4685201,
     4685246,
+    4685279,
     4685307,
     4685350,
     4685381,
@@ -1094,7 +1094,7 @@
       "owner_team_name": "Jason X",
       "lineup_slot": "TE",
       "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
+      "injury_status": "ACTIVE"
     },
     "4882093": {
       "player_id": 4882093,
@@ -1115,28 +1115,6 @@
       "owner_team_id": 1,
       "owner_team_name": "Jason X",
       "lineup_slot": "WR",
-      "status": "ROSTERED",
-      "injury_status": "ACTIVE"
-    },
-    "4697815": {
-      "player_id": 4697815,
-      "name": "Rachaad White",
-      "position": "RB",
-      "pro_team": "WSH",
-      "owner_team_id": 1,
-      "owner_team_name": "Jason X",
-      "lineup_slot": "FLEX",
-      "status": "ROSTERED",
-      "injury_status": "ACTIVE"
-    },
-    "4685720": {
-      "player_id": 4685720,
-      "name": "Bryce Young",
-      "position": "QB",
-      "pro_team": "CAR",
-      "owner_team_id": 1,
-      "owner_team_name": "Jason X",
-      "lineup_slot": "QB",
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
@@ -1173,6 +1151,28 @@
       "status": "ROSTERED",
       "injury_status": null
     },
+    "4567156": {
+      "player_id": 4567156,
+      "name": "Treylon Burks",
+      "position": "WR",
+      "pro_team": "WSH",
+      "owner_team_id": 1,
+      "owner_team_name": "Jason X",
+      "lineup_slot": "FLEX",
+      "status": "ROSTERED",
+      "injury_status": "QUESTIONABLE"
+    },
+    "4426348": {
+      "player_id": 4426348,
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "pro_team": "WSH",
+      "owner_team_id": 1,
+      "owner_team_name": "Jason X",
+      "lineup_slot": "QB",
+      "status": "ROSTERED",
+      "injury_status": "ACTIVE"
+    },
     "4258173": {
       "player_id": 4258173,
       "name": "Nico Collins",
@@ -1206,17 +1206,6 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
-    "4426385": {
-      "player_id": 4426385,
-      "name": "Zach Charbonnet",
-      "position": "RB",
-      "pro_team": "SEA",
-      "owner_team_id": 1,
-      "owner_team_name": "Jason X",
-      "lineup_slot": "BENCH",
-      "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
-    },
     "4038815": {
       "player_id": 4038815,
       "name": "Rico Dowdle",
@@ -1228,27 +1217,49 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
-    "14880": {
-      "player_id": 14880,
-      "name": "Kirk Cousins",
-      "position": "QB",
-      "pro_team": "LV",
+    "3150744": {
+      "player_id": 3150744,
+      "name": "Chase McLaughlin",
+      "position": "K",
+      "pro_team": "TB",
       "owner_team_id": 1,
       "owner_team_name": "Jason X",
       "lineup_slot": "BENCH",
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
-    "4685279": {
-      "player_id": 4685279,
-      "name": "Jaydon Blue",
+    "4241555": {
+      "player_id": 4241555,
+      "name": "Elijah Mitchell",
       "position": "RB",
-      "pro_team": "FA",
+      "pro_team": "PHI",
       "owner_team_id": 1,
       "owner_team_name": "Jason X",
       "lineup_slot": "BENCH",
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
+    },
+    "4429013": {
+      "player_id": 4429013,
+      "name": "Tank Bigsby",
+      "position": "RB",
+      "pro_team": "PHI",
+      "owner_team_id": 1,
+      "owner_team_name": "Jason X",
+      "lineup_slot": "BENCH",
+      "status": "ROSTERED",
+      "injury_status": "INJURY_RESERVE"
+    },
+    "4678008": {
+      "player_id": 4678008,
+      "name": "Jonathon Brooks",
+      "position": "RB",
+      "pro_team": "CAR",
+      "owner_team_id": 1,
+      "owner_team_name": "Jason X",
+      "lineup_slot": "IR",
+      "status": "ROSTERED",
+      "injury_status": "INJURY_RESERVE"
     },
     "4361579": {
       "player_id": 4361579,
@@ -1523,7 +1534,7 @@
       "owner_team_name": "Auto Draft Champion",
       "lineup_slot": "RB",
       "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
+      "injury_status": "ACTIVE"
     },
     "-16028": {
       "player_id": -16028,
@@ -1624,17 +1635,6 @@
       "status": "ROSTERED",
       "injury_status": "INJURY_RESERVE"
     },
-    "3043078": {
-      "player_id": 3043078,
-      "name": "Derrick Henry",
-      "position": "RB",
-      "pro_team": "BAL",
-      "owner_team_id": 4,
-      "owner_team_name": "Super Lamario Brothers",
-      "lineup_slot": "FLEX",
-      "status": "ROSTERED",
-      "injury_status": "ACTIVE"
-    },
     "3916387": {
       "player_id": 3916387,
       "name": "Lamar Jackson",
@@ -1657,17 +1657,6 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
-    "4701936": {
-      "player_id": 4701936,
-      "name": "Matthew Golden",
-      "position": "WR",
-      "pro_team": "GB",
-      "owner_team_id": 4,
-      "owner_team_name": "Super Lamario Brothers",
-      "lineup_slot": "WR",
-      "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
-    },
     "4429205": {
       "player_id": 4429205,
       "name": "Jordan Addison",
@@ -1679,6 +1668,17 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
+    "4569603": {
+      "player_id": 4569603,
+      "name": "Malik Washington",
+      "position": "WR",
+      "pro_team": "MIA",
+      "owner_team_id": 4,
+      "owner_team_name": "Super Lamario Brothers",
+      "lineup_slot": "FLEX",
+      "status": "ROSTERED",
+      "injury_status": "QUESTIONABLE"
+    },
     "4685247": {
       "player_id": 4685247,
       "name": "Braelon Allen",
@@ -1688,7 +1688,7 @@
       "owner_team_name": "Super Lamario Brothers",
       "lineup_slot": "RB",
       "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
+      "injury_status": "ACTIVE"
     },
     "4567104": {
       "player_id": 4567104,
@@ -1701,17 +1701,6 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
-    "4367209": {
-      "player_id": 4367209,
-      "name": "Greg Dulcich",
-      "position": "TE",
-      "pro_team": "MIA",
-      "owner_team_id": 4,
-      "owner_team_name": "Super Lamario Brothers",
-      "lineup_slot": "TE",
-      "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
-    },
     "-16030": {
       "player_id": -16030,
       "name": "Jaguars D/ST",
@@ -1723,6 +1712,28 @@
       "status": "ROSTERED",
       "injury_status": null
     },
+    "4374302": {
+      "player_id": 4374302,
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "pro_team": "DET",
+      "owner_team_id": 4,
+      "owner_team_name": "Super Lamario Brothers",
+      "lineup_slot": "WR",
+      "status": "ROSTERED",
+      "injury_status": "ACTIVE"
+    },
+    "4360248": {
+      "player_id": 4360248,
+      "name": "Kyle Pitts Sr.",
+      "position": "TE",
+      "pro_team": "ATL",
+      "owner_team_id": 4,
+      "owner_team_name": "Super Lamario Brothers",
+      "lineup_slot": "TE",
+      "status": "ROSTERED",
+      "injury_status": "ACTIVE"
+    },
     "3040151": {
       "player_id": 3040151,
       "name": "George Kittle",
@@ -1733,17 +1744,6 @@
       "lineup_slot": "BENCH",
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
-    },
-    "4569603": {
-      "player_id": 4569603,
-      "name": "Malik Washington",
-      "position": "WR",
-      "pro_team": "MIA",
-      "owner_team_id": 4,
-      "owner_team_name": "Super Lamario Brothers",
-      "lineup_slot": "BENCH",
-      "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
     },
     "4241985": {
       "player_id": 4241985,
@@ -1809,7 +1809,7 @@
       "owner_team_name": "Burrow's Bunch",
       "lineup_slot": "WR",
       "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
+      "injury_status": "ACTIVE"
     },
     "4567048": {
       "player_id": 4567048,
@@ -1866,17 +1866,6 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
-    "4361050": {
-      "player_id": 4361050,
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "pro_team": "NYG",
-      "owner_team_id": 5,
-      "owner_team_name": "Burrow's Bunch",
-      "lineup_slot": "TE",
-      "status": "ROSTERED",
-      "injury_status": "ACTIVE"
-    },
     "10621": {
       "player_id": 10621,
       "name": "Nick Folk",
@@ -1898,6 +1887,17 @@
       "lineup_slot": "D/ST",
       "status": "ROSTERED",
       "injury_status": null
+    },
+    "4430539": {
+      "player_id": 4430539,
+      "name": "Brenton Strange",
+      "position": "TE",
+      "pro_team": "JAX",
+      "owner_team_id": 5,
+      "owner_team_name": "Burrow's Bunch",
+      "lineup_slot": "TE",
+      "status": "ROSTERED",
+      "injury_status": "ACTIVE"
     },
     "4432620": {
       "player_id": 4432620,
@@ -1932,6 +1932,17 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
+    "4361050": {
+      "player_id": 4361050,
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "pro_team": "NYG",
+      "owner_team_id": 5,
+      "owner_team_name": "Burrow's Bunch",
+      "lineup_slot": "BENCH",
+      "status": "ROSTERED",
+      "injury_status": "ACTIVE"
+    },
     "4870653": {
       "player_id": 4870653,
       "name": "KC Concepcion",
@@ -1959,17 +1970,6 @@
       "name": "Kaelon Black",
       "position": "RB",
       "pro_team": "SF",
-      "owner_team_id": 5,
-      "owner_team_name": "Burrow's Bunch",
-      "lineup_slot": "BENCH",
-      "status": "ROSTERED",
-      "injury_status": "ACTIVE"
-    },
-    "4430539": {
-      "player_id": 4430539,
-      "name": "Brenton Strange",
-      "position": "TE",
-      "pro_team": "JAX",
       "owner_team_id": 5,
       "owner_team_name": "Burrow's Bunch",
       "lineup_slot": "BENCH",
@@ -2163,17 +2163,6 @@
       "status": "ROSTERED",
       "injury_status": "INJURY_RESERVE"
     },
-    "4374302": {
-      "player_id": 4374302,
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "pro_team": "DET",
-      "owner_team_id": 7,
-      "owner_team_name": "Connor\u2019s Team",
-      "lineup_slot": "WR",
-      "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
-    },
     "4047646": {
       "player_id": 4047646,
       "name": "A.J. Brown",
@@ -2196,28 +2185,6 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
-    "4432710": {
-      "player_id": 4432710,
-      "name": "TreVeyon Henderson",
-      "position": "RB",
-      "pro_team": "NE",
-      "owner_team_id": 7,
-      "owner_team_name": "Connor\u2019s Team",
-      "lineup_slot": "RB",
-      "status": "ROSTERED",
-      "injury_status": "ACTIVE"
-    },
-    "4360248": {
-      "player_id": 4360248,
-      "name": "Kyle Pitts Sr.",
-      "position": "TE",
-      "pro_team": "ATL",
-      "owner_team_id": 7,
-      "owner_team_name": "Connor\u2019s Team",
-      "lineup_slot": "TE",
-      "status": "ROSTERED",
-      "injury_status": "ACTIVE"
-    },
     "4371733": {
       "player_id": 4371733,
       "name": "Kenny Gainwell",
@@ -2226,6 +2193,17 @@
       "owner_team_id": 7,
       "owner_team_name": "Connor\u2019s Team",
       "lineup_slot": "RB",
+      "status": "ROSTERED",
+      "injury_status": "QUESTIONABLE"
+    },
+    "4385690": {
+      "player_id": 4385690,
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "pro_team": "BUF",
+      "owner_team_id": 7,
+      "owner_team_name": "Connor\u2019s Team",
+      "lineup_slot": "TE",
       "status": "ROSTERED",
       "injury_status": "QUESTIONABLE"
     },
@@ -2262,6 +2240,28 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
+    "3043078": {
+      "player_id": 3043078,
+      "name": "Derrick Henry",
+      "position": "RB",
+      "pro_team": "BAL",
+      "owner_team_id": 7,
+      "owner_team_name": "Connor\u2019s Team",
+      "lineup_slot": "RB",
+      "status": "ROSTERED",
+      "injury_status": "ACTIVE"
+    },
+    "4701936": {
+      "player_id": 4701936,
+      "name": "Matthew Golden",
+      "position": "WR",
+      "pro_team": "GB",
+      "owner_team_id": 7,
+      "owner_team_name": "Connor\u2019s Team",
+      "lineup_slot": "WR",
+      "status": "ROSTERED",
+      "injury_status": "ACTIVE"
+    },
     "16800": {
       "player_id": 16800,
       "name": "Davante Adams",
@@ -2272,6 +2272,17 @@
       "lineup_slot": "BENCH",
       "status": "ROSTERED",
       "injury_status": "INJURY_RESERVE"
+    },
+    "4432710": {
+      "player_id": 4432710,
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "pro_team": "NE",
+      "owner_team_id": 7,
+      "owner_team_name": "Connor\u2019s Team",
+      "lineup_slot": "BENCH",
+      "status": "ROSTERED",
+      "injury_status": "QUESTIONABLE"
     },
     "4360078": {
       "player_id": 4360078,
@@ -2294,17 +2305,6 @@
       "lineup_slot": "BENCH",
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
-    },
-    "4385690": {
-      "player_id": 4385690,
-      "name": "Dalton Kincaid",
-      "position": "TE",
-      "pro_team": "BUF",
-      "owner_team_id": 7,
-      "owner_team_name": "Connor\u2019s Team",
-      "lineup_slot": "BENCH",
-      "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
     },
     "4569559": {
       "player_id": 4569559,
@@ -2359,7 +2359,7 @@
       "owner_team_name": "Giant Packer Fan",
       "lineup_slot": "RB",
       "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
+      "injury_status": "ACTIVE"
     },
     "3918298": {
       "player_id": 3918298,
@@ -2394,17 +2394,6 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
-    "4683062": {
-      "player_id": 4683062,
-      "name": "Xavier Worthy",
-      "position": "WR",
-      "pro_team": "KC",
-      "owner_team_id": 8,
-      "owner_team_name": "Giant Packer Fan",
-      "lineup_slot": "WR",
-      "status": "ROSTERED",
-      "injury_status": "ACTIVE"
-    },
     "-16007": {
       "player_id": -16007,
       "name": "Broncos D/ST",
@@ -2416,17 +2405,6 @@
       "status": "ROSTERED",
       "injury_status": null
     },
-    "2971573": {
-      "player_id": 2971573,
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "pro_team": "HOU",
-      "owner_team_id": 8,
-      "owner_team_name": "Giant Packer Fan",
-      "lineup_slot": "K",
-      "status": "ROSTERED",
-      "injury_status": "ACTIVE"
-    },
     "4036133": {
       "player_id": 4036133,
       "name": "T.J. Hockenson",
@@ -2435,6 +2413,17 @@
       "owner_team_id": 8,
       "owner_team_name": "Giant Packer Fan",
       "lineup_slot": "TE",
+      "status": "ROSTERED",
+      "injury_status": "ACTIVE"
+    },
+    "4832800": {
+      "player_id": 4832800,
+      "name": "Denzel Boston",
+      "position": "WR",
+      "pro_team": "CLE",
+      "owner_team_id": 8,
+      "owner_team_name": "Giant Packer Fan",
+      "lineup_slot": "WR",
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
@@ -2449,6 +2438,17 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
+    "3917232": {
+      "player_id": 3917232,
+      "name": "Tyler Bass",
+      "position": "K",
+      "pro_team": "BUF",
+      "owner_team_id": 8,
+      "owner_team_name": "Giant Packer Fan",
+      "lineup_slot": "K",
+      "status": "ROSTERED",
+      "injury_status": "ACTIVE"
+    },
     "15847": {
       "player_id": 15847,
       "name": "Travis Kelce",
@@ -2458,7 +2458,7 @@
       "owner_team_name": "Giant Packer Fan",
       "lineup_slot": "BENCH",
       "status": "ROSTERED",
-      "injury_status": "ACTIVE"
+      "injury_status": "QUESTIONABLE"
     },
     "4036378": {
       "player_id": 4036378,
@@ -2471,11 +2471,22 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
-    "4832800": {
-      "player_id": 4832800,
-      "name": "Denzel Boston",
+    "4683062": {
+      "player_id": 4683062,
+      "name": "Xavier Worthy",
       "position": "WR",
-      "pro_team": "CLE",
+      "pro_team": "KC",
+      "owner_team_id": 8,
+      "owner_team_name": "Giant Packer Fan",
+      "lineup_slot": "BENCH",
+      "status": "ROSTERED",
+      "injury_status": "ACTIVE"
+    },
+    "2971573": {
+      "player_id": 2971573,
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "pro_team": "HOU",
       "owner_team_id": 8,
       "owner_team_name": "Giant Packer Fan",
       "lineup_slot": "BENCH",
@@ -2514,17 +2525,6 @@
       "lineup_slot": "BENCH",
       "status": "ROSTERED",
       "injury_status": "QUESTIONABLE"
-    },
-    "3917232": {
-      "player_id": 3917232,
-      "name": "Tyler Bass",
-      "position": "K",
-      "pro_team": "BUF",
-      "owner_team_id": 8,
-      "owner_team_name": "Giant Packer Fan",
-      "lineup_slot": "BENCH",
-      "status": "ROSTERED",
-      "injury_status": "ACTIVE"
     },
     "4241389": {
       "player_id": 4241389,
@@ -2656,7 +2656,7 @@
       "owner_team_name": "Nicole's Gnarly Team",
       "lineup_slot": "BENCH",
       "status": "ROSTERED",
-      "injury_status": "ACTIVE"
+      "injury_status": "QUESTIONABLE"
     },
     "3139477": {
       "player_id": 3139477,
@@ -2931,7 +2931,7 @@
       "owner_team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
       "lineup_slot": "FLEX",
       "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
+      "injury_status": "ACTIVE"
     },
     "-16014": {
       "player_id": -16014,
@@ -3153,25 +3153,14 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
-    "4360516": {
-      "player_id": 4360516,
-      "name": "Tyrone Tracy Jr.",
+    "4697815": {
+      "player_id": 4697815,
+      "name": "Rachaad White",
       "position": "RB",
-      "pro_team": "NYG",
-      "owner_team_id": 12,
-      "owner_team_name": "Commanders of Chaos",
-      "lineup_slot": "RB",
-      "status": "ROSTERED",
-      "injury_status": "INJURY_RESERVE"
-    },
-    "4426348": {
-      "player_id": 4426348,
-      "name": "Jayden Daniels",
-      "position": "QB",
       "pro_team": "WSH",
       "owner_team_id": 12,
       "owner_team_name": "Commanders of Chaos",
-      "lineup_slot": "BENCH",
+      "lineup_slot": "RB",
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
@@ -3208,17 +3197,6 @@
       "status": "ROSTERED",
       "injury_status": "QUESTIONABLE"
     },
-    "4373678": {
-      "player_id": 4373678,
-      "name": "Khalil Shakir",
-      "position": "WR",
-      "pro_team": "BUF",
-      "owner_team_id": 12,
-      "owner_team_name": "Commanders of Chaos",
-      "lineup_slot": "BENCH",
-      "status": "ROSTERED",
-      "injury_status": "ACTIVE"
-    },
     "4685382": {
       "player_id": 4685382,
       "name": "Omarion Hampton",
@@ -3241,6 +3219,28 @@
       "status": "ROSTERED",
       "injury_status": "QUESTIONABLE"
     },
+    "4426385": {
+      "player_id": 4426385,
+      "name": "Zach Charbonnet",
+      "position": "RB",
+      "pro_team": "SEA",
+      "owner_team_id": 12,
+      "owner_team_name": "Commanders of Chaos",
+      "lineup_slot": "BENCH",
+      "status": "ROSTERED",
+      "injury_status": "QUESTIONABLE"
+    },
+    "4685720": {
+      "player_id": 4685720,
+      "name": "Bryce Young",
+      "position": "QB",
+      "pro_team": "CAR",
+      "owner_team_id": 12,
+      "owner_team_name": "Commanders of Chaos",
+      "lineup_slot": "BENCH",
+      "status": "ROSTERED",
+      "injury_status": "ACTIVE"
+    },
     "4685512": {
       "player_id": 4685512,
       "name": "Jadarian Price",
@@ -3261,7 +3261,7 @@
       "pro_team": "DET",
       "status": "WAIVERS",
       "waiver_process_date": "2026-10-30T07:00:00+00:00",
-      "percent_owned": 90.36,
+      "percent_owned": 90.26,
       "injury_status": "ACTIVE"
     },
     "3126486": {
@@ -3271,7 +3271,7 @@
       "pro_team": "SF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 71.46,
+      "percent_owned": 71.3,
       "injury_status": "QUESTIONABLE"
     },
     "-16017": {
@@ -3281,8 +3281,28 @@
       "pro_team": "NE",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 68.97,
+      "percent_owned": 70.17,
       "injury_status": null
+    },
+    "14880": {
+      "player_id": 14880,
+      "name": "Kirk Cousins",
+      "position": "QB",
+      "pro_team": "LV",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-10-31T07:00:00+00:00",
+      "percent_owned": 59.68,
+      "injury_status": "ACTIVE"
+    },
+    "4373678": {
+      "player_id": 4373678,
+      "name": "Khalil Shakir",
+      "position": "WR",
+      "pro_team": "BUF",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-10-31T07:00:00+00:00",
+      "percent_owned": 59.59,
+      "injury_status": "ACTIVE"
     },
     "-16005": {
       "player_id": -16005,
@@ -3291,7 +3311,7 @@
       "pro_team": "CLE",
       "status": "WAIVERS",
       "waiver_process_date": "2026-10-30T07:00:00+00:00",
-      "percent_owned": 55.64,
+      "percent_owned": 56.31,
       "injury_status": null
     },
     "4361411": {
@@ -3301,7 +3321,7 @@
       "pro_team": "PIT",
       "status": "WAIVERS",
       "waiver_process_date": "2026-10-30T07:00:00+00:00",
-      "percent_owned": 51.04,
+      "percent_owned": 50.28,
       "injury_status": "ACTIVE"
     },
     "4242355": {
@@ -3311,17 +3331,7 @@
       "pro_team": "DAL",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 48.89,
-      "injury_status": "ACTIVE"
-    },
-    "4034949": {
-      "player_id": 4034949,
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "pro_team": "SF",
-      "status": "WAIVERS",
-      "waiver_process_date": "2026-10-30T07:00:00+00:00",
-      "percent_owned": 47.11,
+      "percent_owned": 48.23,
       "injury_status": "ACTIVE"
     },
     "8439": {
@@ -3331,7 +3341,7 @@
       "pro_team": "PIT",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 46.03,
+      "percent_owned": 45.04,
       "injury_status": "ACTIVE"
     },
     "3121422": {
@@ -3341,8 +3351,18 @@
       "pro_team": "WSH",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 45.32,
+      "percent_owned": 43.98,
       "injury_status": "INJURY_RESERVE"
+    },
+    "4034949": {
+      "player_id": 4034949,
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "pro_team": "SF",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-10-30T07:00:00+00:00",
+      "percent_owned": 43.8,
+      "injury_status": "ACTIVE"
     },
     "4035687": {
       "player_id": 4035687,
@@ -3351,7 +3371,7 @@
       "pro_team": "PIT",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 43.94,
+      "percent_owned": 43.56,
       "injury_status": "INJURY_RESERVE"
     },
     "4432773": {
@@ -3361,7 +3381,7 @@
       "pro_team": "JAX",
       "status": "WAIVERS",
       "waiver_process_date": "2026-10-31T07:00:00+00:00",
-      "percent_owned": 41.34,
+      "percent_owned": 41.06,
       "injury_status": "ACTIVE"
     },
     "-16025": {
@@ -3371,7 +3391,7 @@
       "pro_team": "SF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 41.11,
+      "percent_owned": 39.24,
       "injury_status": null
     },
     "-16021": {
@@ -3381,7 +3401,7 @@
       "pro_team": "PHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 37.74,
+      "percent_owned": 37.03,
       "injury_status": null
     },
     "4040715": {
@@ -3391,18 +3411,8 @@
       "pro_team": "PHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 37.74,
+      "percent_owned": 36.73,
       "injury_status": "INJURY_RESERVE"
-    },
-    "3150744": {
-      "player_id": 3150744,
-      "name": "Chase McLaughlin",
-      "position": "K",
-      "pro_team": "TB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 37.11,
-      "injury_status": "ACTIVE"
     },
     "4038941": {
       "player_id": 4038941,
@@ -3411,28 +3421,8 @@
       "pro_team": "LAC",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 35.98,
+      "percent_owned": 35.48,
       "injury_status": "ACTIVE"
-    },
-    "4678008": {
-      "player_id": 4678008,
-      "name": "Jonathon Brooks",
-      "position": "RB",
-      "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 35.09,
-      "injury_status": "INJURY_RESERVE"
-    },
-    "4360238": {
-      "player_id": 4360238,
-      "name": "Dameon Pierce",
-      "position": "RB",
-      "pro_team": "PHI",
-      "status": "WAIVERS",
-      "waiver_process_date": "2026-10-30T07:00:00+00:00",
-      "percent_owned": 31.88,
-      "injury_status": "INJURY_RESERVE"
     },
     "4429160": {
       "player_id": 4429160,
@@ -3441,7 +3431,7 @@
       "pro_team": "MIA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 31.17,
+      "percent_owned": 30.91,
       "injury_status": "INJURY_RESERVE"
     },
     "3912547": {
@@ -3451,8 +3441,18 @@
       "pro_team": "SEA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 30.61,
+      "percent_owned": 30.54,
       "injury_status": "ACTIVE"
+    },
+    "4360238": {
+      "player_id": 4360238,
+      "name": "Dameon Pierce",
+      "position": "RB",
+      "pro_team": "PHI",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-10-30T07:00:00+00:00",
+      "percent_owned": 28.46,
+      "injury_status": "INJURY_RESERVE"
     },
     "4635008": {
       "player_id": 4635008,
@@ -3461,37 +3461,7 @@
       "pro_team": "BUF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 28.08,
-      "injury_status": "ACTIVE"
-    },
-    "5082424": {
-      "player_id": 5082424,
-      "name": "Dominic Zvada",
-      "position": "K",
-      "pro_team": "NYG",
-      "status": "WAIVERS",
-      "waiver_process_date": "2026-10-30T07:00:00+00:00",
-      "percent_owned": 27.83,
-      "injury_status": "ACTIVE"
-    },
-    "4032473": {
-      "player_id": 4032473,
-      "name": "Rashid Shaheed",
-      "position": "WR",
-      "pro_team": "SEA",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 26.99,
-      "injury_status": "QUESTIONABLE"
-    },
-    "3117256": {
-      "player_id": 3117256,
-      "name": "Dalton Schultz",
-      "position": "TE",
-      "pro_team": "HOU",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 26.98,
+      "percent_owned": 28.13,
       "injury_status": "ACTIVE"
     },
     "-16027": {
@@ -3501,18 +3471,8 @@
       "pro_team": "TB",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 26.97,
+      "percent_owned": 27.55,
       "injury_status": null
-    },
-    "4429025": {
-      "player_id": 4429025,
-      "name": "Quentin Johnston",
-      "position": "WR",
-      "pro_team": "LAC",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 26.39,
-      "injury_status": "ACTIVE"
     },
     "-16008": {
       "player_id": -16008,
@@ -3521,8 +3481,38 @@
       "pro_team": "DET",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 26.09,
+      "percent_owned": 26.98,
       "injury_status": null
+    },
+    "4032473": {
+      "player_id": 4032473,
+      "name": "Rashid Shaheed",
+      "position": "WR",
+      "pro_team": "SEA",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 26.8,
+      "injury_status": "QUESTIONABLE"
+    },
+    "3117256": {
+      "player_id": 3117256,
+      "name": "Dalton Schultz",
+      "position": "TE",
+      "pro_team": "HOU",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 26.44,
+      "injury_status": "ACTIVE"
+    },
+    "4429025": {
+      "player_id": 4429025,
+      "name": "Quentin Johnston",
+      "position": "WR",
+      "pro_team": "LAC",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 26.19,
+      "injury_status": "ACTIVE"
     },
     "3116406": {
       "player_id": 3116406,
@@ -3531,7 +3521,7 @@
       "pro_team": "FA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 26.05,
+      "percent_owned": 25.74,
       "injury_status": "QUESTIONABLE"
     },
     "4428557": {
@@ -3541,7 +3531,7 @@
       "pro_team": "TEN",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 26.02,
+      "percent_owned": 25.63,
       "injury_status": "QUESTIONABLE"
     },
     "17427": {
@@ -3551,7 +3541,7 @@
       "pro_team": "CHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 25.28,
+      "percent_owned": 25.38,
       "injury_status": "ACTIVE"
     },
     "4428850": {
@@ -3561,8 +3551,18 @@
       "pro_team": "PHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 24.01,
+      "percent_owned": 23.69,
       "injury_status": "QUESTIONABLE"
+    },
+    "5082424": {
+      "player_id": 5082424,
+      "name": "Dominic Zvada",
+      "position": "K",
+      "pro_team": "NYG",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-10-30T07:00:00+00:00",
+      "percent_owned": 23.64,
+      "injury_status": "ACTIVE"
     },
     "5083315": {
       "player_id": 5083315,
@@ -3571,7 +3571,17 @@
       "pro_team": "NYJ",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 23.83,
+      "percent_owned": 23.41,
+      "injury_status": "ACTIVE"
+    },
+    "2578570": {
+      "player_id": 2578570,
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "pro_team": "ARI",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 22.9,
       "injury_status": "ACTIVE"
     },
     "4689114": {
@@ -3581,27 +3591,17 @@
       "pro_team": "NYG",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 22.84,
+      "percent_owned": 22.66,
       "injury_status": "INJURY_RESERVE"
-    },
-    "2578570": {
-      "player_id": 2578570,
-      "name": "Jacoby Brissett",
-      "position": "QB",
-      "pro_team": "ARI",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 22.59,
-      "injury_status": "ACTIVE"
     },
     "4362249": {
       "player_id": 4362249,
       "name": "Jayden Reed",
       "position": "WR",
       "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 20.56,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 20.35,
       "injury_status": "INJURY_RESERVE"
     },
     "4710714": {
@@ -3611,7 +3611,7 @@
       "pro_team": "SF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 20.28,
+      "percent_owned": 20.22,
       "injury_status": "INJURY_RESERVE"
     },
     "4574716": {
@@ -3621,7 +3621,27 @@
       "pro_team": "FA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 20.11,
+      "percent_owned": 19.76,
+      "injury_status": "ACTIVE"
+    },
+    "-16009": {
+      "player_id": -16009,
+      "name": "Packers D/ST",
+      "position": "D/ST",
+      "pro_team": "GB",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 17.76,
+      "injury_status": null
+    },
+    "4360423": {
+      "player_id": 4360423,
+      "name": "Michael Penix Jr.",
+      "position": "QB",
+      "pro_team": "ATL",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 17.61,
       "injury_status": "ACTIVE"
     },
     "4433970": {
@@ -3631,28 +3651,8 @@
       "pro_team": "NYG",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 17.22,
+      "percent_owned": 16.71,
       "injury_status": "ACTIVE"
-    },
-    "4360423": {
-      "player_id": 4360423,
-      "name": "Michael Penix Jr.",
-      "position": "QB",
-      "pro_team": "ATL",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 17.01,
-      "injury_status": "ACTIVE"
-    },
-    "-16009": {
-      "player_id": -16009,
-      "name": "Packers D/ST",
-      "position": "D/ST",
-      "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 16.58,
-      "injury_status": null
     },
     "-16006": {
       "player_id": -16006,
@@ -3661,28 +3661,8 @@
       "pro_team": "DAL",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 15.67,
+      "percent_owned": 15.56,
       "injury_status": null
-    },
-    "-16029": {
-      "player_id": -16029,
-      "name": "Panthers D/ST",
-      "position": "D/ST",
-      "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 15.52,
-      "injury_status": null
-    },
-    "4586312": {
-      "player_id": 4586312,
-      "name": "Jaylin Noel",
-      "position": "WR",
-      "pro_team": "HOU",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 14.23,
-      "injury_status": "INJURY_RESERVE"
     },
     "3116164": {
       "player_id": 3116164,
@@ -3691,7 +3671,7 @@
       "pro_team": "CIN",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 14.2,
+      "percent_owned": 14.54,
       "injury_status": "ACTIVE"
     },
     "2573401": {
@@ -3701,38 +3681,18 @@
       "pro_team": "LAR",
       "status": "WAIVERS",
       "waiver_process_date": "2026-10-30T07:00:00+00:00",
-      "percent_owned": 14.15,
+      "percent_owned": 13.63,
       "injury_status": "ACTIVE"
     },
-    "-16010": {
-      "player_id": -16010,
-      "name": "Titans D/ST",
+    "-16029": {
+      "player_id": -16029,
+      "name": "Panthers D/ST",
       "position": "D/ST",
-      "pro_team": "TEN",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 14.11,
+      "pro_team": "CAR",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 13.42,
       "injury_status": null
-    },
-    "4426386": {
-      "player_id": 4426386,
-      "name": "Roschon Johnson",
-      "position": "RB",
-      "pro_team": "CHI",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 12.89,
-      "injury_status": "ACTIVE"
-    },
-    "4869461": {
-      "player_id": 4869461,
-      "name": "Trey Smack",
-      "position": "K",
-      "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 12.82,
-      "injury_status": "ACTIVE"
     },
     "4870847": {
       "player_id": 4870847,
@@ -3741,8 +3701,28 @@
       "pro_team": "BAL",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 12.7,
+      "percent_owned": 12.84,
       "injury_status": "ACTIVE"
+    },
+    "4869461": {
+      "player_id": 4869461,
+      "name": "Trey Smack",
+      "position": "K",
+      "pro_team": "GB",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 12.82,
+      "injury_status": "ACTIVE"
+    },
+    "4586312": {
+      "player_id": 4586312,
+      "name": "Jaylin Noel",
+      "position": "WR",
+      "pro_team": "HOU",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 12.79,
+      "injury_status": "INJURY_RESERVE"
     },
     "3917792": {
       "player_id": 3917792,
@@ -3751,17 +3731,7 @@
       "pro_team": "IND",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 12.58,
-      "injury_status": "ACTIVE"
-    },
-    "4596334": {
-      "player_id": 4596334,
-      "name": "Keaton Mitchell",
-      "position": "RB",
-      "pro_team": "LAC",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 12.44,
+      "percent_owned": 12.39,
       "injury_status": "ACTIVE"
     },
     "4570037": {
@@ -3771,77 +3741,17 @@
       "pro_team": "LAR",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 12.42,
+      "percent_owned": 12.35,
       "injury_status": "INJURY_RESERVE"
     },
-    "4427728": {
-      "player_id": 4427728,
-      "name": "Bam Knight",
+    "4596334": {
+      "player_id": 4596334,
+      "name": "Keaton Mitchell",
       "position": "RB",
-      "pro_team": "ARI",
+      "pro_team": "LAC",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 12.4,
-      "injury_status": "ACTIVE"
-    },
-    "4832955": {
-      "player_id": 4832955,
-      "name": "Emmett Johnson",
-      "position": "RB",
-      "pro_team": "KC",
-      "status": "WAIVERS",
-      "waiver_process_date": "2026-10-30T07:00:00+00:00",
-      "percent_owned": 12.24,
-      "injury_status": "ACTIVE"
-    },
-    "4362619": {
-      "player_id": 4362619,
-      "name": "Chris Rodriguez Jr.",
-      "position": "RB",
-      "pro_team": "JAX",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 12.0,
-      "injury_status": "ACTIVE"
-    },
-    "2973405": {
-      "player_id": 2973405,
-      "name": "Kalif Raymond",
-      "position": "WR",
-      "pro_team": "CHI",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 11.84,
-      "injury_status": "ACTIVE"
-    },
-    "4360939": {
-      "player_id": 4360939,
-      "name": "Rashod Bateman",
-      "position": "WR",
-      "pro_team": "BAL",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 10.96,
-      "injury_status": "ACTIVE"
-    },
-    "4568263": {
-      "player_id": 4568263,
-      "name": "Ryan Fitzgerald",
-      "position": "K",
-      "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 10.85,
-      "injury_status": "ACTIVE"
-    },
-    "4715355": {
-      "player_id": 4715355,
-      "name": "Darius Cooper",
-      "position": "WR",
-      "pro_team": "PHI",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 10.76,
+      "percent_owned": 12.22,
       "injury_status": "ACTIVE"
     },
     "4430968": {
@@ -3851,7 +3761,97 @@
       "pro_team": "LAC",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 10.68,
+      "percent_owned": 12.21,
+      "injury_status": "ACTIVE"
+    },
+    "4832955": {
+      "player_id": 4832955,
+      "name": "Emmett Johnson",
+      "position": "RB",
+      "pro_team": "KC",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-10-30T07:00:00+00:00",
+      "percent_owned": 12.15,
+      "injury_status": "ACTIVE"
+    },
+    "4362619": {
+      "player_id": 4362619,
+      "name": "Chris Rodriguez Jr.",
+      "position": "RB",
+      "pro_team": "JAX",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 12.13,
+      "injury_status": "ACTIVE"
+    },
+    "4427728": {
+      "player_id": 4427728,
+      "name": "Bam Knight",
+      "position": "RB",
+      "pro_team": "ARI",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 11.85,
+      "injury_status": "ACTIVE"
+    },
+    "4426386": {
+      "player_id": 4426386,
+      "name": "Roschon Johnson",
+      "position": "RB",
+      "pro_team": "CHI",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 11.77,
+      "injury_status": "ACTIVE"
+    },
+    "-16010": {
+      "player_id": -16010,
+      "name": "Titans D/ST",
+      "position": "D/ST",
+      "pro_team": "TEN",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 11.59,
+      "injury_status": null
+    },
+    "2973405": {
+      "player_id": 2973405,
+      "name": "Kalif Raymond",
+      "position": "WR",
+      "pro_team": "CHI",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 11.36,
+      "injury_status": "ACTIVE"
+    },
+    "4360939": {
+      "player_id": 4360939,
+      "name": "Rashod Bateman",
+      "position": "WR",
+      "pro_team": "BAL",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 10.87,
+      "injury_status": "ACTIVE"
+    },
+    "4715355": {
+      "player_id": 4715355,
+      "name": "Darius Cooper",
+      "position": "WR",
+      "pro_team": "PHI",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 10.47,
+      "injury_status": "ACTIVE"
+    },
+    "4568263": {
+      "player_id": 4568263,
+      "name": "Ryan Fitzgerald",
+      "position": "K",
+      "pro_team": "CAR",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 10.1,
       "injury_status": "ACTIVE"
     },
     "-16024": {
@@ -3861,17 +3861,27 @@
       "pro_team": "LAC",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 9.93,
+      "percent_owned": 9.82,
       "injury_status": null
+    },
+    "4808766": {
+      "player_id": 4808766,
+      "name": "Mason Taylor",
+      "position": "TE",
+      "pro_team": "NYJ",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 9.66,
+      "injury_status": "ACTIVE"
     },
     "2576925": {
       "player_id": 2576925,
       "name": "Darren Waller",
       "position": "TE",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 9.63,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 9.52,
       "injury_status": "ACTIVE"
     },
     "3895856": {
@@ -3881,7 +3891,7 @@
       "pro_team": "SF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 9.32,
+      "percent_owned": 8.89,
       "injury_status": "ACTIVE"
     },
     "2977187": {
@@ -3891,17 +3901,17 @@
       "pro_team": "SEA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 8.82,
+      "percent_owned": 8.79,
       "injury_status": "ACTIVE"
     },
-    "4808766": {
-      "player_id": 4808766,
-      "name": "Mason Taylor",
-      "position": "TE",
-      "pro_team": "NYJ",
+    "4038441": {
+      "player_id": 4038441,
+      "name": "Justice Hill",
+      "position": "RB",
+      "pro_team": "BAL",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 8.16,
+      "percent_owned": 7.86,
       "injury_status": "ACTIVE"
     },
     "4431492": {
@@ -3911,28 +3921,8 @@
       "pro_team": "PIT",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 7.9,
+      "percent_owned": 7.74,
       "injury_status": "INJURY_RESERVE"
-    },
-    "4038441": {
-      "player_id": 4038441,
-      "name": "Justice Hill",
-      "position": "RB",
-      "pro_team": "BAL",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 7.88,
-      "injury_status": "ACTIVE"
-    },
-    "4242557": {
-      "player_id": 4242557,
-      "name": "Colby Parkinson",
-      "position": "TE",
-      "pro_team": "LAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 7.04,
-      "injury_status": "QUESTIONABLE"
     },
     "4576297": {
       "player_id": 4576297,
@@ -3941,18 +3931,28 @@
       "pro_team": "SEA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 6.88,
+      "percent_owned": 7.11,
       "injury_status": "ACTIVE"
     },
-    "2969939": {
-      "player_id": 2969939,
-      "name": "Jameis Winston",
-      "position": "QB",
+    "4360516": {
+      "player_id": 4360516,
+      "name": "Tyrone Tracy Jr.",
+      "position": "RB",
       "pro_team": "NYG",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-10-31T07:00:00+00:00",
+      "percent_owned": 7.06,
+      "injury_status": "INJURY_RESERVE"
+    },
+    "4242557": {
+      "player_id": 4242557,
+      "name": "Colby Parkinson",
+      "position": "TE",
+      "pro_team": "LAR",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 6.85,
-      "injury_status": "ACTIVE"
+      "percent_owned": 6.91,
+      "injury_status": "QUESTIONABLE"
     },
     "-16002": {
       "player_id": -16002,
@@ -3961,67 +3961,17 @@
       "pro_team": "BUF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 6.83,
+      "percent_owned": 6.73,
       "injury_status": null
     },
-    "3050478": {
-      "player_id": 3050478,
-      "name": "Jake Elliott",
-      "position": "K",
-      "pro_team": "PHI",
+    "2969939": {
+      "player_id": 2969939,
+      "name": "Jameis Winston",
+      "position": "QB",
+      "pro_team": "NYG",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 6.19,
-      "injury_status": "ACTIVE"
-    },
-    "4429013": {
-      "player_id": 4429013,
-      "name": "Tank Bigsby",
-      "position": "RB",
-      "pro_team": "PHI",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 5.99,
-      "injury_status": "INJURY_RESERVE"
-    },
-    "3925357": {
-      "player_id": 3925357,
-      "name": "Calvin Ridley",
-      "position": "WR",
-      "pro_team": "TEN",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 5.94,
-      "injury_status": "QUESTIONABLE"
-    },
-    "3045523": {
-      "player_id": 3045523,
-      "name": "Kendrick Bourne",
-      "position": "WR",
-      "pro_team": "ARI",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 5.92,
-      "injury_status": "ACTIVE"
-    },
-    "4567156": {
-      "player_id": 4567156,
-      "name": "Treylon Burks",
-      "position": "WR",
-      "pro_team": "WSH",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 5.89,
-      "injury_status": "QUESTIONABLE"
-    },
-    "4429835": {
-      "player_id": 4429835,
-      "name": "George Holani",
-      "position": "RB",
-      "pro_team": "SEA",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 5.81,
+      "percent_owned": 6.47,
       "injury_status": "ACTIVE"
     },
     "-16001": {
@@ -4031,8 +3981,38 @@
       "pro_team": "ATL",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 5.54,
+      "percent_owned": 6.29,
       "injury_status": null
+    },
+    "3050478": {
+      "player_id": 3050478,
+      "name": "Jake Elliott",
+      "position": "K",
+      "pro_team": "PHI",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 6.09,
+      "injury_status": "ACTIVE"
+    },
+    "3045523": {
+      "player_id": 3045523,
+      "name": "Kendrick Bourne",
+      "position": "WR",
+      "pro_team": "ARI",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 6.07,
+      "injury_status": "ACTIVE"
+    },
+    "3925357": {
+      "player_id": 3925357,
+      "name": "Calvin Ridley",
+      "position": "WR",
+      "pro_team": "TEN",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 5.87,
+      "injury_status": "QUESTIONABLE"
     },
     "-16013": {
       "player_id": -16013,
@@ -4041,8 +4021,18 @@
       "pro_team": "LV",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 5.5,
+      "percent_owned": 5.69,
       "injury_status": null
+    },
+    "4429835": {
+      "player_id": 4429835,
+      "name": "George Holani",
+      "position": "RB",
+      "pro_team": "SEA",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 5.66,
+      "injury_status": "ACTIVE"
     },
     "4430802": {
       "player_id": 4430802,
@@ -4051,7 +4041,17 @@
       "pro_team": "PIT",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 5.05,
+      "percent_owned": 4.98,
+      "injury_status": "ACTIVE"
+    },
+    "4685279": {
+      "player_id": 4685279,
+      "name": "Jaydon Blue",
+      "position": "RB",
+      "pro_team": "FA",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 4.93,
       "injury_status": "ACTIVE"
     },
     "2985659": {
@@ -4061,7 +4061,7 @@
       "pro_team": "DEN",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 4.86,
+      "percent_owned": 4.92,
       "injury_status": "ACTIVE"
     },
     "4682648": {
@@ -4071,7 +4071,7 @@
       "pro_team": "NYG",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 4.78,
+      "percent_owned": 4.74,
       "injury_status": "ACTIVE"
     },
     "4685201": {
@@ -4081,18 +4081,8 @@
       "pro_team": "PHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 4.67,
+      "percent_owned": 4.55,
       "injury_status": "ACTIVE"
-    },
-    "-16019": {
-      "player_id": -16019,
-      "name": "Giants D/ST",
-      "position": "D/ST",
-      "pro_team": "NYG",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 4.51,
-      "injury_status": null
     },
     "4431545": {
       "player_id": 4431545,
@@ -4101,17 +4091,37 @@
       "pro_team": "PHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 4.45,
+      "percent_owned": 4.28,
       "injury_status": "INJURY_RESERVE"
+    },
+    "-16019": {
+      "player_id": -16019,
+      "name": "Giants D/ST",
+      "position": "D/ST",
+      "pro_team": "NYG",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 4.13,
+      "injury_status": null
     },
     "4249836": {
       "player_id": 4249836,
       "name": "Pierre Strong Jr.",
       "position": "RB",
       "pro_team": "GB",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 4.08,
+      "injury_status": "ACTIVE"
+    },
+    "4688380": {
+      "player_id": 4688380,
+      "name": "Cam Ward",
+      "position": "QB",
+      "pro_team": "TEN",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 4.4,
+      "percent_owned": 3.97,
       "injury_status": "ACTIVE"
     },
     "-16011": {
@@ -4121,17 +4131,17 @@
       "pro_team": "IND",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 4.16,
+      "percent_owned": 3.84,
       "injury_status": null
     },
-    "4688380": {
-      "player_id": 4688380,
-      "name": "Cam Ward",
-      "position": "QB",
-      "pro_team": "TEN",
+    "4382466": {
+      "player_id": 4382466,
+      "name": "Jalen Nailor",
+      "position": "WR",
+      "pro_team": "LV",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 4.0,
+      "percent_owned": 3.43,
       "injury_status": "ACTIVE"
     },
     "4429022": {
@@ -4141,17 +4151,7 @@
       "pro_team": "HOU",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 3.5,
-      "injury_status": "ACTIVE"
-    },
-    "4382466": {
-      "player_id": 4382466,
-      "name": "Jalen Nailor",
-      "position": "WR",
-      "pro_team": "LV",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 3.44,
+      "percent_owned": 3.43,
       "injury_status": "ACTIVE"
     },
     "4682745": {
@@ -4161,17 +4161,17 @@
       "pro_team": "MIA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 3.33,
+      "percent_owned": 3.24,
       "injury_status": "ACTIVE"
     },
-    "4035671": {
-      "player_id": 4035671,
-      "name": "Tyler Huntley",
-      "position": "QB",
-      "pro_team": "BAL",
+    "4040761": {
+      "player_id": 4040761,
+      "name": "Devin Singletary",
+      "position": "RB",
+      "pro_team": "NYG",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 3.25,
+      "percent_owned": 3.22,
       "injury_status": "ACTIVE"
     },
     "4837248": {
@@ -4181,18 +4181,8 @@
       "pro_team": "LV",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 3.21,
+      "percent_owned": 3.19,
       "injury_status": "ACTIVE"
-    },
-    "2991662": {
-      "player_id": 2991662,
-      "name": "Mack Hollins",
-      "position": "WR",
-      "pro_team": "NE",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 3.2,
-      "injury_status": "INJURY_RESERVE"
     },
     "3045147": {
       "player_id": 3045147,
@@ -4204,14 +4194,24 @@
       "percent_owned": 3.16,
       "injury_status": "INJURY_RESERVE"
     },
-    "4040761": {
-      "player_id": 4040761,
-      "name": "Devin Singletary",
-      "position": "RB",
-      "pro_team": "NYG",
+    "2991662": {
+      "player_id": 2991662,
+      "name": "Mack Hollins",
+      "position": "WR",
+      "pro_team": "NE",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 3.09,
+      "percent_owned": 3.14,
+      "injury_status": "INJURY_RESERVE"
+    },
+    "4035671": {
+      "player_id": 4035671,
+      "name": "Tyler Huntley",
+      "position": "QB",
+      "pro_team": "BAL",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 3.08,
       "injury_status": "ACTIVE"
     },
     "4243331": {
@@ -4221,7 +4221,7 @@
       "pro_team": "TB",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 3.01,
+      "percent_owned": 2.97,
       "injury_status": "ACTIVE"
     },
     "4361409": {
@@ -4241,8 +4241,8 @@
       "pro_team": "BUF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 2.89,
-      "injury_status": "ACTIVE"
+      "percent_owned": 2.85,
+      "injury_status": "QUESTIONABLE"
     },
     "4241457": {
       "player_id": 4241457,
@@ -4251,17 +4251,7 @@
       "pro_team": "FA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 2.73,
-      "injury_status": "ACTIVE"
-    },
-    "3886598": {
-      "player_id": 3886598,
-      "name": "Jauan Jennings",
-      "position": "WR",
-      "pro_team": "MIN",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 2.54,
+      "percent_owned": 2.6,
       "injury_status": "ACTIVE"
     },
     "4686612": {
@@ -4271,97 +4261,17 @@
       "pro_team": "LAC",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 2.53,
+      "percent_owned": 2.5,
       "injury_status": "QUESTIONABLE"
     },
-    "3149687": {
-      "player_id": 3149687,
-      "name": "Chris Brooks",
-      "position": "RB",
-      "pro_team": "GB",
+    "3886598": {
+      "player_id": 3886598,
+      "name": "Jauan Jennings",
+      "position": "WR",
+      "pro_team": "MIN",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 2.49,
-      "injury_status": "INJURY_RESERVE"
-    },
-    "-16018": {
-      "player_id": -16018,
-      "name": "Saints D/ST",
-      "position": "D/ST",
-      "pro_team": "NO",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 2.42,
-      "injury_status": null
-    },
-    "4384852": {
-      "player_id": 4384852,
-      "name": "Dohnte Meyers",
-      "position": "WR",
-      "pro_team": "CIN",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 2.29,
-      "injury_status": "ACTIVE"
-    },
-    "4695193": {
-      "player_id": 4695193,
-      "name": "Efton Chism III",
-      "position": "WR",
-      "pro_team": "NE",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 2.22,
-      "injury_status": "ACTIVE"
-    },
-    "3915411": {
-      "player_id": 3915411,
-      "name": "Ty Johnson",
-      "position": "RB",
-      "pro_team": "BUF",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 2.19,
-      "injury_status": "ACTIVE"
-    },
-    "4695404": {
-      "player_id": 4695404,
-      "name": "Isaiah Davis",
-      "position": "RB",
-      "pro_team": "NYJ",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 2.16,
-      "injury_status": "ACTIVE"
-    },
-    "3051876": {
-      "player_id": 3051876,
-      "name": "Evan Engram",
-      "position": "TE",
-      "pro_team": "DEN",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 2.11,
-      "injury_status": "ACTIVE"
-    },
-    "4686422": {
-      "player_id": 4686422,
-      "name": "Xavier Hutchinson",
-      "position": "WR",
-      "pro_team": "HOU",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 2.0,
-      "injury_status": "ACTIVE"
-    },
-    "5123663": {
-      "player_id": 5123663,
-      "name": "Isaac TeSlaa",
-      "position": "WR",
-      "pro_team": "DET",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 1.96,
       "injury_status": "ACTIVE"
     },
     "3124679": {
@@ -4371,7 +4281,97 @@
       "pro_team": "NYJ",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.96,
+      "percent_owned": 2.46,
+      "injury_status": "ACTIVE"
+    },
+    "3149687": {
+      "player_id": 3149687,
+      "name": "Chris Brooks",
+      "position": "RB",
+      "pro_team": "GB",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 2.43,
+      "injury_status": "INJURY_RESERVE"
+    },
+    "-16018": {
+      "player_id": -16018,
+      "name": "Saints D/ST",
+      "position": "D/ST",
+      "pro_team": "NO",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 2.3,
+      "injury_status": null
+    },
+    "4384852": {
+      "player_id": 4384852,
+      "name": "Dohnte Meyers",
+      "position": "WR",
+      "pro_team": "CIN",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 2.26,
+      "injury_status": "ACTIVE"
+    },
+    "3915411": {
+      "player_id": 3915411,
+      "name": "Ty Johnson",
+      "position": "RB",
+      "pro_team": "BUF",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 2.22,
+      "injury_status": "ACTIVE"
+    },
+    "4695193": {
+      "player_id": 4695193,
+      "name": "Efton Chism III",
+      "position": "WR",
+      "pro_team": "NE",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 2.17,
+      "injury_status": "ACTIVE"
+    },
+    "3051876": {
+      "player_id": 3051876,
+      "name": "Evan Engram",
+      "position": "TE",
+      "pro_team": "DEN",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 2.08,
+      "injury_status": "ACTIVE"
+    },
+    "4695404": {
+      "player_id": 4695404,
+      "name": "Isaiah Davis",
+      "position": "RB",
+      "pro_team": "NYJ",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 2.04,
+      "injury_status": "ACTIVE"
+    },
+    "4686422": {
+      "player_id": 4686422,
+      "name": "Xavier Hutchinson",
+      "position": "WR",
+      "pro_team": "HOU",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 1.98,
+      "injury_status": "ACTIVE"
+    },
+    "5123663": {
+      "player_id": 5123663,
+      "name": "Isaac TeSlaa",
+      "position": "WR",
+      "pro_team": "DET",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 1.94,
       "injury_status": "ACTIVE"
     },
     "4428209": {
@@ -4384,16 +4384,6 @@
       "percent_owned": 1.93,
       "injury_status": "INJURY_RESERVE"
     },
-    "4241555": {
-      "player_id": 4241555,
-      "name": "Elijah Mitchell",
-      "position": "RB",
-      "pro_team": "PHI",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 1.91,
-      "injury_status": "ACTIVE"
-    },
     "3068267": {
       "player_id": 3068267,
       "name": "Austin Ekeler",
@@ -4401,7 +4391,7 @@
       "pro_team": "WSH",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.89,
+      "percent_owned": 1.82,
       "injury_status": "ACTIVE"
     },
     "4877706": {
@@ -4421,7 +4411,7 @@
       "pro_team": "TEN",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.81,
+      "percent_owned": 1.78,
       "injury_status": "ACTIVE"
     },
     "4595342": {
@@ -4431,7 +4421,7 @@
       "pro_team": "LAC",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.81,
+      "percent_owned": 1.77,
       "injury_status": "ACTIVE"
     },
     "4258620": {
@@ -4441,7 +4431,7 @@
       "pro_team": "CLE",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.68,
+      "percent_owned": 1.74,
       "injury_status": "ACTIVE"
     },
     "4569923": {
@@ -4451,7 +4441,7 @@
       "pro_team": "NE",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.63,
+      "percent_owned": 1.64,
       "injury_status": "ACTIVE"
     },
     "4869961": {
@@ -4464,24 +4454,14 @@
       "percent_owned": 1.58,
       "injury_status": "ACTIVE"
     },
-    "4259619": {
-      "player_id": 4259619,
-      "name": "Blake Grupe",
-      "position": "K",
-      "pro_team": "LAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 1.48,
-      "injury_status": "INJURY_RESERVE"
-    },
-    "2576980": {
-      "player_id": 2576980,
-      "name": "Marcus Mariota",
-      "position": "QB",
-      "pro_team": "WSH",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 1.48,
+    "4431487": {
+      "player_id": 4431487,
+      "name": "Savion Williams",
+      "position": "WR",
+      "pro_team": "GB",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 1.46,
       "injury_status": "ACTIVE"
     },
     "4870612": {
@@ -4491,17 +4471,17 @@
       "pro_team": "ATL",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.46,
+      "percent_owned": 1.45,
       "injury_status": "ACTIVE"
     },
-    "4431487": {
-      "player_id": 4431487,
-      "name": "Savion Williams",
-      "position": "WR",
-      "pro_team": "GB",
+    "2576980": {
+      "player_id": 2576980,
+      "name": "Marcus Mariota",
+      "position": "QB",
+      "pro_team": "WSH",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.43,
+      "percent_owned": 1.42,
       "injury_status": "ACTIVE"
     },
     "3123076": {
@@ -4511,8 +4491,38 @@
       "pro_team": "LAC",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.4,
+      "percent_owned": 1.38,
       "injury_status": "INJURY_RESERVE"
+    },
+    "4259619": {
+      "player_id": 4259619,
+      "name": "Blake Grupe",
+      "position": "K",
+      "pro_team": "LAR",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 1.37,
+      "injury_status": "INJURY_RESERVE"
+    },
+    "4367209": {
+      "player_id": 4367209,
+      "name": "Greg Dulcich",
+      "position": "TE",
+      "pro_team": "MIA",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-10-31T07:00:00+00:00",
+      "percent_owned": 1.33,
+      "injury_status": "QUESTIONABLE"
+    },
+    "4831959": {
+      "player_id": 4831959,
+      "name": "Eli Raridon",
+      "position": "TE",
+      "pro_team": "NE",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 1.27,
+      "injury_status": "ACTIVE"
     },
     "3051909": {
       "player_id": 3051909,
@@ -4521,17 +4531,7 @@
       "pro_team": "NO",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.28,
-      "injury_status": "ACTIVE"
-    },
-    "4819231": {
-      "player_id": 4819231,
-      "name": "Kaleb Johnson",
-      "position": "RB",
-      "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 1.2,
+      "percent_owned": 1.18,
       "injury_status": "ACTIVE"
     },
     "3676833": {
@@ -4544,15 +4544,15 @@
       "percent_owned": 1.17,
       "injury_status": "QUESTIONABLE"
     },
-    "4831959": {
-      "player_id": 4831959,
-      "name": "Eli Raridon",
-      "position": "TE",
-      "pro_team": "NE",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 1.14,
-      "injury_status": "ACTIVE"
+    "4819231": {
+      "player_id": 4819231,
+      "name": "Kaleb Johnson",
+      "position": "RB",
+      "pro_team": "GB",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 1.15,
+      "injury_status": "OUT"
     },
     "4600981": {
       "player_id": 4600981,
@@ -4561,7 +4561,7 @@
       "pro_team": "DEN",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.11,
+      "percent_owned": 1.1,
       "injury_status": "INJURY_RESERVE"
     },
     "16733": {
@@ -4571,7 +4571,7 @@
       "pro_team": "MIN",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.09,
+      "percent_owned": 1.07,
       "injury_status": "ACTIVE"
     },
     "3116385": {
@@ -4581,7 +4581,7 @@
       "pro_team": "FA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.07,
+      "percent_owned": 1.04,
       "injury_status": "QUESTIONABLE"
     },
     "16731": {
@@ -4591,7 +4591,7 @@
       "pro_team": "SF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 1.04,
+      "percent_owned": 0.98,
       "injury_status": "ACTIVE"
     },
     "4431268": {
@@ -4601,37 +4601,7 @@
       "pro_team": "TEN",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.96,
-      "injury_status": "ACTIVE"
-    },
-    "4912218": {
-      "player_id": 4912218,
-      "name": "Cyrus Allen",
-      "position": "WR",
-      "pro_team": "KC",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.87,
-      "injury_status": "ACTIVE"
-    },
-    "3043116": {
-      "player_id": 3043116,
-      "name": "Demarcus Robinson",
-      "position": "WR",
-      "pro_team": "SF",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.87,
-      "injury_status": "INJURY_RESERVE"
-    },
-    "4912274": {
-      "player_id": 4912274,
-      "name": "Sione Vaki",
-      "position": "RB",
-      "pro_team": "DET",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.86,
+      "percent_owned": 0.95,
       "injury_status": "ACTIVE"
     },
     "5081335": {
@@ -4641,7 +4611,37 @@
       "pro_team": "WSH",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.84,
+      "percent_owned": 0.89,
+      "injury_status": "ACTIVE"
+    },
+    "3043116": {
+      "player_id": 3043116,
+      "name": "Demarcus Robinson",
+      "position": "WR",
+      "pro_team": "SF",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.86,
+      "injury_status": "INJURY_RESERVE"
+    },
+    "4912218": {
+      "player_id": 4912218,
+      "name": "Cyrus Allen",
+      "position": "WR",
+      "pro_team": "KC",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.85,
+      "injury_status": "ACTIVE"
+    },
+    "4912274": {
+      "player_id": 4912274,
+      "name": "Sione Vaki",
+      "position": "RB",
+      "pro_team": "DET",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.83,
       "injury_status": "ACTIVE"
     },
     "4040655": {
@@ -4649,16 +4649,6 @@
       "name": "Darnell Mooney",
       "position": "WR",
       "pro_team": "NYG",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.83,
-      "injury_status": "ACTIVE"
-    },
-    "4596472": {
-      "player_id": 4596472,
-      "name": "Jalon Daniels",
-      "position": "QB",
-      "pro_team": "TB",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.82,
@@ -4671,7 +4661,17 @@
       "pro_team": "CLE",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.8,
+      "percent_owned": 0.79,
+      "injury_status": "ACTIVE"
+    },
+    "4596472": {
+      "player_id": 4596472,
+      "name": "Jalon Daniels",
+      "position": "QB",
+      "pro_team": "TB",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.78,
       "injury_status": "ACTIVE"
     },
     "4613202": {
@@ -4681,28 +4681,8 @@
       "pro_team": "NE",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.79,
+      "percent_owned": 0.78,
       "injury_status": "ACTIVE"
-    },
-    "4430034": {
-      "player_id": 4430034,
-      "name": "Xavier Legette",
-      "position": "WR",
-      "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.74,
-      "injury_status": "INJURY_RESERVE"
-    },
-    "-16015": {
-      "player_id": -16015,
-      "name": "Dolphins D/ST",
-      "position": "D/ST",
-      "pro_team": "MIA",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.72,
-      "injury_status": null
     },
     "15683": {
       "player_id": 15683,
@@ -4711,18 +4691,18 @@
       "pro_team": "BAL",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.72,
+      "percent_owned": 0.73,
       "injury_status": "ACTIVE"
     },
-    "5082630": {
-      "player_id": 5082630,
-      "name": "Jalen Royals",
+    "4430034": {
+      "player_id": 4430034,
+      "name": "Xavier Legette",
       "position": "WR",
-      "pro_team": "KC",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.7,
-      "injury_status": "ACTIVE"
+      "pro_team": "CAR",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 0.73,
+      "injury_status": "INJURY_RESERVE"
     },
     "4429676": {
       "player_id": 4429676,
@@ -4731,18 +4711,28 @@
       "pro_team": "DAL",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.69,
+      "percent_owned": 0.71,
       "injury_status": "ACTIVE"
     },
-    "-16022": {
-      "player_id": -16022,
-      "name": "Cardinals D/ST",
+    "-16015": {
+      "player_id": -16015,
+      "name": "Dolphins D/ST",
       "position": "D/ST",
-      "pro_team": "ARI",
+      "pro_team": "MIA",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.7,
+      "injury_status": null
+    },
+    "5082630": {
+      "player_id": 5082630,
+      "name": "Jalen Royals",
+      "position": "WR",
+      "pro_team": "KC",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.67,
-      "injury_status": null
+      "injury_status": "ACTIVE"
     },
     "4686472": {
       "player_id": 4686472,
@@ -4752,23 +4742,33 @@
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.67,
-      "injury_status": "QUESTIONABLE"
+      "injury_status": "ACTIVE"
     },
-    "4431466": {
-      "player_id": 4431466,
-      "name": "Jordan Watkins",
-      "position": "WR",
-      "pro_team": "SF",
+    "-16022": {
+      "player_id": -16022,
+      "name": "Cardinals D/ST",
+      "position": "D/ST",
+      "pro_team": "ARI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.65,
-      "injury_status": "ACTIVE"
+      "percent_owned": 0.64,
+      "injury_status": null
     },
     "4430656": {
       "player_id": 4430656,
       "name": "Myles Price",
       "position": "WR",
       "pro_team": "MIN",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.64,
+      "injury_status": "ACTIVE"
+    },
+    "4431466": {
+      "player_id": 4431466,
+      "name": "Jordan Watkins",
+      "position": "WR",
+      "pro_team": "SF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.63,
@@ -4791,16 +4791,6 @@
       "pro_team": "BUF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.59,
-      "injury_status": "ACTIVE"
-    },
-    "4569371": {
-      "player_id": 4569371,
-      "name": "Isaiah Williams",
-      "position": "WR",
-      "pro_team": "NYJ",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
       "percent_owned": 0.58,
       "injury_status": "ACTIVE"
     },
@@ -4811,7 +4801,17 @@
       "pro_team": "SF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.58,
+      "percent_owned": 0.57,
+      "injury_status": "ACTIVE"
+    },
+    "4569371": {
+      "player_id": 4569371,
+      "name": "Isaiah Williams",
+      "position": "WR",
+      "pro_team": "NYJ",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.56,
       "injury_status": "ACTIVE"
     },
     "4434153": {
@@ -4821,7 +4821,7 @@
       "pro_team": "CHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.58,
+      "percent_owned": 0.56,
       "injury_status": "ACTIVE"
     },
     "4258595": {
@@ -4831,18 +4831,8 @@
       "pro_team": "CHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.55,
+      "percent_owned": 0.53,
       "injury_status": "INJURY_RESERVE"
-    },
-    "4372780": {
-      "player_id": 4372780,
-      "name": "Tommy Tremble",
-      "position": "TE",
-      "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.55,
-      "injury_status": "ACTIVE"
     },
     "4431431": {
       "player_id": 4431431,
@@ -4854,15 +4844,25 @@
       "percent_owned": 0.53,
       "injury_status": "ACTIVE"
     },
-    "4383429": {
-      "player_id": 4383429,
-      "name": "Jacob Saylors",
-      "position": "RB",
-      "pro_team": "DET",
+    "4372780": {
+      "player_id": 4372780,
+      "name": "Tommy Tremble",
+      "position": "TE",
+      "pro_team": "CAR",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 0.53,
+      "injury_status": "ACTIVE"
+    },
+    "4869748": {
+      "player_id": 4869748,
+      "name": "Zavion Thomas",
+      "position": "WR",
+      "pro_team": "CHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.51,
-      "injury_status": "QUESTIONABLE"
+      "percent_owned": 0.52,
+      "injury_status": "ACTIVE"
     },
     "4240603": {
       "player_id": 4240603,
@@ -4874,14 +4874,14 @@
       "percent_owned": 0.51,
       "injury_status": "INJURY_RESERVE"
     },
-    "4869748": {
-      "player_id": 4869748,
-      "name": "Zavion Thomas",
-      "position": "WR",
-      "pro_team": "CHI",
+    "4383429": {
+      "player_id": 4383429,
+      "name": "Jacob Saylors",
+      "position": "RB",
+      "pro_team": "DET",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.51,
+      "percent_owned": 0.5,
       "injury_status": "ACTIVE"
     },
     "16339": {
@@ -4891,7 +4891,7 @@
       "pro_team": "LAR",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.47,
+      "percent_owned": 0.48,
       "injury_status": "ACTIVE"
     },
     "4685555": {
@@ -4899,6 +4899,16 @@
       "name": "Nicholas Singleton",
       "position": "RB",
       "pro_team": "TEN",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.47,
+      "injury_status": "ACTIVE"
+    },
+    "4430871": {
+      "player_id": 4430871,
+      "name": "Sean Tucker",
+      "position": "RB",
+      "pro_team": "TB",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.47,
@@ -4921,17 +4931,7 @@
       "pro_team": "BUF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.46,
-      "injury_status": "ACTIVE"
-    },
-    "4430871": {
-      "player_id": 4430871,
-      "name": "Sean Tucker",
-      "position": "RB",
-      "pro_team": "TB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.46,
+      "percent_owned": 0.45,
       "injury_status": "ACTIVE"
     },
     "3924327": {
@@ -4941,7 +4941,7 @@
       "pro_team": "SEA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.45,
+      "percent_owned": 0.44,
       "injury_status": "QUESTIONABLE"
     },
     "4241479": {
@@ -4951,7 +4951,7 @@
       "pro_team": "ATL",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.45,
+      "percent_owned": 0.44,
       "injury_status": "ACTIVE"
     },
     "2573079": {
@@ -4961,7 +4961,7 @@
       "pro_team": "MIN",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.44,
+      "percent_owned": 0.43,
       "injury_status": "ACTIVE"
     },
     "15835": {
@@ -4971,7 +4971,7 @@
       "pro_team": "PHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.44,
+      "percent_owned": 0.43,
       "injury_status": "ACTIVE"
     },
     "15168": {
@@ -4981,7 +4981,7 @@
       "pro_team": "CHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.42,
+      "percent_owned": 0.41,
       "injury_status": "ACTIVE"
     },
     "3124084": {
@@ -5004,11 +5004,11 @@
       "percent_owned": 0.41,
       "injury_status": "ACTIVE"
     },
-    "4575665": {
-      "player_id": 4575665,
-      "name": "Jacob Cowing",
-      "position": "WR",
-      "pro_team": "SF",
+    "3127586": {
+      "player_id": 3127586,
+      "name": "Jeremy McNichols",
+      "position": "RB",
+      "pro_team": "WSH",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.4,
@@ -5021,7 +5021,17 @@
       "pro_team": "PIT",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.39,
+      "percent_owned": 0.38,
+      "injury_status": "ACTIVE"
+    },
+    "4575665": {
+      "player_id": 4575665,
+      "name": "Jacob Cowing",
+      "position": "WR",
+      "pro_team": "SF",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.38,
       "injury_status": "ACTIVE"
     },
     "4431280": {
@@ -5044,21 +5054,21 @@
       "percent_owned": 0.37,
       "injury_status": "ACTIVE"
     },
-    "4601080": {
-      "player_id": 4601080,
-      "name": "Raheim Sanders",
-      "position": "RB",
-      "pro_team": "CLE",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.37,
-      "injury_status": "INJURY_RESERVE"
-    },
     "4596602": {
       "player_id": 4596602,
       "name": "Brashard Smith",
       "position": "RB",
       "pro_team": "KC",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.36,
+      "injury_status": "INJURY_RESERVE"
+    },
+    "4601080": {
+      "player_id": 4601080,
+      "name": "Raheim Sanders",
+      "position": "RB",
+      "pro_team": "CLE",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.36,
@@ -5073,36 +5083,6 @@
       "waiver_process_date": null,
       "percent_owned": 0.35,
       "injury_status": "INJURY_RESERVE"
-    },
-    "4360698": {
-      "player_id": 4360698,
-      "name": "Joe Milton",
-      "position": "QB",
-      "pro_team": "PHI",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.34,
-      "injury_status": "ACTIVE"
-    },
-    "3051889": {
-      "player_id": 3051889,
-      "name": "Laquon Treadwell",
-      "position": "WR",
-      "pro_team": "IND",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.34,
-      "injury_status": "ACTIVE"
-    },
-    "4360797": {
-      "player_id": 4360797,
-      "name": "Tutu Atwell",
-      "position": "WR",
-      "pro_team": "LAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.34,
-      "injury_status": "ACTIVE"
     },
     "4832846": {
       "player_id": 4832846,
@@ -5124,11 +5104,31 @@
       "percent_owned": 0.33,
       "injury_status": "ACTIVE"
     },
-    "3127586": {
-      "player_id": 3127586,
-      "name": "Jeremy McNichols",
-      "position": "RB",
-      "pro_team": "WSH",
+    "4360698": {
+      "player_id": 4360698,
+      "name": "Joe Milton",
+      "position": "QB",
+      "pro_team": "PHI",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.33,
+      "injury_status": "ACTIVE"
+    },
+    "3051889": {
+      "player_id": 3051889,
+      "name": "Laquon Treadwell",
+      "position": "WR",
+      "pro_team": "IND",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.33,
+      "injury_status": "ACTIVE"
+    },
+    "4360797": {
+      "player_id": 4360797,
+      "name": "Tutu Atwell",
+      "position": "WR",
+      "pro_team": "LAR",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.33,
@@ -5142,7 +5142,7 @@
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.32,
-      "injury_status": "QUESTIONABLE"
+      "injury_status": "ACTIVE"
     },
     "4362478": {
       "player_id": 4362478,
@@ -5159,16 +5159,6 @@
       "name": "Noah Fant",
       "position": "TE",
       "pro_team": "NO",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.31,
-      "injury_status": "ACTIVE"
-    },
-    "4683153": {
-      "player_id": 4683153,
-      "name": "Skyler Bell",
-      "position": "WR",
-      "pro_team": "BUF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.3,
@@ -5189,8 +5179,8 @@
       "name": "Trevor Etienne",
       "position": "RB",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.3,
       "injury_status": "ACTIVE"
     },
@@ -5199,6 +5189,16 @@
       "name": "LeQuint Allen Jr.",
       "position": "RB",
       "pro_team": "JAX",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.29,
+      "injury_status": "QUESTIONABLE"
+    },
+    "4683153": {
+      "player_id": 4683153,
+      "name": "Skyler Bell",
+      "position": "WR",
+      "pro_team": "BUF",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.29,
@@ -5229,25 +5229,15 @@
       "name": "AJ Dillon",
       "position": "RB",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.26,
-      "injury_status": "ACTIVE"
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 0.25,
+      "injury_status": "OUT"
     },
     "4431574": {
       "player_id": 4431574,
       "name": "Eli Stowers",
       "position": "TE",
-      "pro_team": "PHI",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.25,
-      "injury_status": "ACTIVE"
-    },
-    "4241372": {
-      "player_id": 4241372,
-      "name": "Hollywood Brown",
-      "position": "WR",
       "pro_team": "PHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
@@ -5269,18 +5259,8 @@
       "name": "Brycen Tremayne",
       "position": "WR",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.24,
-      "injury_status": "ACTIVE"
-    },
-    "2983509": {
-      "player_id": 2983509,
-      "name": "Dare Ogunbowale",
-      "position": "RB",
-      "pro_team": "HOU",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.24,
       "injury_status": "ACTIVE"
     },
@@ -5289,6 +5269,16 @@
       "name": "Dylan Laube",
       "position": "RB",
       "pro_team": "LV",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.24,
+      "injury_status": "ACTIVE"
+    },
+    "4241372": {
+      "player_id": 4241372,
+      "name": "Hollywood Brown",
+      "position": "WR",
+      "pro_team": "PHI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.24,
@@ -5309,6 +5299,16 @@
       "name": "Noah Gray",
       "position": "TE",
       "pro_team": "KC",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.24,
+      "injury_status": "ACTIVE"
+    },
+    "2983509": {
+      "player_id": 2983509,
+      "name": "Dare Ogunbowale",
+      "position": "RB",
+      "pro_team": "HOU",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.23,
@@ -5349,8 +5349,8 @@
       "name": "Skyy Moore",
       "position": "WR",
       "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.22,
       "injury_status": "INJURY_RESERVE"
     },
@@ -5389,16 +5389,6 @@
       "name": "Joe Flacco",
       "position": "QB",
       "pro_team": "CIN",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.19,
-      "injury_status": "ACTIVE"
-    },
-    "4362523": {
-      "player_id": 4362523,
-      "name": "Will Mallory",
-      "position": "TE",
-      "pro_team": "IND",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.19,
@@ -5454,6 +5444,16 @@
       "percent_owned": 0.18,
       "injury_status": "QUESTIONABLE"
     },
+    "4362523": {
+      "player_id": 4362523,
+      "name": "Will Mallory",
+      "position": "TE",
+      "pro_team": "IND",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.18,
+      "injury_status": "ACTIVE"
+    },
     "4678006": {
       "player_id": 4678006,
       "name": "Elijah Arroyo",
@@ -5471,14 +5471,14 @@
       "pro_team": "NYJ",
       "status": "FREEAGENT",
       "waiver_process_date": null,
-      "percent_owned": 0.16,
+      "percent_owned": 0.17,
       "injury_status": "ACTIVE"
     },
-    "4243371": {
-      "player_id": 4243371,
-      "name": "Riley Patterson",
-      "position": "K",
-      "pro_team": "FA",
+    "4039050": {
+      "player_id": 4039050,
+      "name": "Devin Duvernay",
+      "position": "WR",
+      "pro_team": "ARI",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.16,
@@ -5523,6 +5523,16 @@
       "waiver_process_date": null,
       "percent_owned": 0.15,
       "injury_status": "OUT"
+    },
+    "4243371": {
+      "player_id": 4243371,
+      "name": "Riley Patterson",
+      "position": "K",
+      "pro_team": "FA",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.15,
+      "injury_status": "ACTIVE"
     },
     "4362748": {
       "player_id": 4362748,
@@ -5634,11 +5644,11 @@
       "percent_owned": 0.13,
       "injury_status": "ACTIVE"
     },
-    "4039050": {
-      "player_id": 4039050,
-      "name": "Devin Duvernay",
-      "position": "WR",
-      "pro_team": "ARI",
+    "4426553": {
+      "player_id": 4426553,
+      "name": "Davis Allen",
+      "position": "TE",
+      "pro_team": "LAR",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.13,
@@ -5662,16 +5672,6 @@
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.13,
-      "injury_status": "ACTIVE"
-    },
-    "4426553": {
-      "player_id": 4426553,
-      "name": "Davis Allen",
-      "position": "TE",
-      "pro_team": "LAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.12,
       "injury_status": "ACTIVE"
     },
     "5088338": {
@@ -5709,10 +5709,10 @@
       "name": "Jonnu Smith",
       "position": "TE",
       "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.12,
-      "injury_status": "ACTIVE"
+      "injury_status": "OUT"
     },
     "4569682": {
       "player_id": 4569682,
@@ -5732,7 +5732,7 @@
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.11,
-      "injury_status": "ACTIVE"
+      "injury_status": "QUESTIONABLE"
     },
     "4240391": {
       "player_id": 4240391,
@@ -5799,10 +5799,10 @@
       "name": "Ja'Tavion Sanders",
       "position": "TE",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.1,
-      "injury_status": "ACTIVE"
+      "injury_status": "OUT"
     },
     "5160110": {
       "player_id": 5160110,
@@ -5839,8 +5839,8 @@
       "name": "Bo Melton",
       "position": "WR",
       "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.09,
       "injury_status": "ACTIVE"
     },
@@ -5879,8 +5879,8 @@
       "name": "John Metchie III",
       "position": "WR",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.09,
       "injury_status": "ACTIVE"
     },
@@ -5939,8 +5939,8 @@
       "name": "Chris Brazzell II",
       "position": "WR",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.08,
       "injury_status": "INJURY_RESERVE"
     },
@@ -5964,16 +5964,6 @@
       "percent_owned": 0.08,
       "injury_status": "ACTIVE"
     },
-    "4692835": {
-      "player_id": 4692835,
-      "name": "Jalen Brooks",
-      "position": "WR",
-      "pro_team": "ARI",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.08,
-      "injury_status": "INJURY_RESERVE"
-    },
     "3115293": {
       "player_id": 3115293,
       "name": "Kyle Allen",
@@ -5989,6 +5979,16 @@
       "name": "LaJohntay Wester",
       "position": "WR",
       "pro_team": "BAL",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.08,
+      "injury_status": "ACTIVE"
+    },
+    "3043234": {
+      "player_id": 3043234,
+      "name": "Zane Gonzalez",
+      "position": "K",
+      "pro_team": "MIA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.08,
@@ -6084,6 +6084,16 @@
       "percent_owned": 0.07,
       "injury_status": "OUT"
     },
+    "4692835": {
+      "player_id": 4692835,
+      "name": "Jalen Brooks",
+      "position": "WR",
+      "pro_team": "ARI",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.07,
+      "injury_status": "INJURY_RESERVE"
+    },
     "3052096": {
       "player_id": 3052096,
       "name": "Johnny Mundt",
@@ -6144,16 +6154,6 @@
       "percent_owned": 0.07,
       "injury_status": "ACTIVE"
     },
-    "2998565": {
-      "player_id": 2998565,
-      "name": "Mo Alie-Cox",
-      "position": "TE",
-      "pro_team": "IND",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.07,
-      "injury_status": "ACTIVE"
-    },
     "3917914": {
       "player_id": 3917914,
       "name": "Olamide Zaccheaus",
@@ -6189,18 +6189,8 @@
       "name": "Tyrod Taylor",
       "position": "QB",
       "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.07,
-      "injury_status": "ACTIVE"
-    },
-    "3043234": {
-      "player_id": 3043234,
-      "name": "Zane Gonzalez",
-      "position": "K",
-      "pro_team": "MIA",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.07,
       "injury_status": "ACTIVE"
     },
@@ -6309,8 +6299,8 @@
       "name": "Kenny Pickett",
       "position": "QB",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.06,
       "injury_status": "ACTIVE"
     },
@@ -6319,6 +6309,16 @@
       "name": "Matt Hibner",
       "position": "TE",
       "pro_team": "BAL",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.06,
+      "injury_status": "ACTIVE"
+    },
+    "2998565": {
+      "player_id": 2998565,
+      "name": "Mo Alie-Cox",
+      "position": "TE",
+      "pro_team": "IND",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.06,
@@ -6402,15 +6402,15 @@
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.05,
-      "injury_status": "ACTIVE"
+      "injury_status": "QUESTIONABLE"
     },
     "4635009": {
       "player_id": 4635009,
       "name": "J. Michael Sturdivant",
       "position": "WR",
       "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.05,
       "injury_status": "ACTIVE"
     },
@@ -6459,8 +6459,8 @@
       "name": "Luke Musgrave",
       "position": "TE",
       "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.05,
       "injury_status": "OUT"
     },
@@ -6669,16 +6669,6 @@
       "name": "DeAndre Hopkins",
       "position": "WR",
       "pro_team": "FA",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.04,
-      "injury_status": "ACTIVE"
-    },
-    "4427238": {
-      "player_id": 4427238,
-      "name": "Dillon Gabriel",
-      "position": "QB",
-      "pro_team": "CLE",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.04,
@@ -7024,6 +7014,16 @@
       "percent_owned": 0.03,
       "injury_status": "ACTIVE"
     },
+    "4709392": {
+      "player_id": 4709392,
+      "name": "Anthony Tyus III",
+      "position": "RB",
+      "pro_team": "CAR",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
+      "percent_owned": 0.03,
+      "injury_status": "ACTIVE"
+    },
     "4432722": {
       "player_id": 4432722,
       "name": "Athan Kaliakmanis",
@@ -7099,8 +7099,8 @@
       "name": "David Moore",
       "position": "WR",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.03,
       "injury_status": "ACTIVE"
     },
@@ -7129,6 +7129,16 @@
       "name": "Derius Davis",
       "position": "WR",
       "pro_team": "LAC",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.03,
+      "injury_status": "ACTIVE"
+    },
+    "4427238": {
+      "player_id": 4427238,
+      "name": "Dillon Gabriel",
+      "position": "QB",
+      "pro_team": "CLE",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.03,
@@ -7199,8 +7209,8 @@
       "name": "Josh Whyle",
       "position": "TE",
       "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.03,
       "injury_status": "ACTIVE"
     },
@@ -7269,8 +7279,8 @@
       "name": "Mitchell Evans",
       "position": "TE",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.03,
       "injury_status": "ACTIVE"
     },
@@ -7449,16 +7459,6 @@
       "name": "Anthony Smith",
       "position": "WR",
       "pro_team": "FA",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.02,
-      "injury_status": "ACTIVE"
-    },
-    "4709392": {
-      "player_id": 4709392,
-      "name": "Anthony Tyus III",
-      "position": "RB",
-      "pro_team": "CAR",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.02,
@@ -7769,10 +7769,10 @@
       "name": "Haynes King",
       "position": "QB",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.02,
-      "injury_status": "ACTIVE"
+      "injury_status": "OUT"
     },
     "4239944": {
       "player_id": 4239944,
@@ -7979,8 +7979,8 @@
       "name": "Luke Lachey",
       "position": "TE",
       "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.02,
       "injury_status": "ACTIVE"
     },
@@ -7989,8 +7989,8 @@
       "name": "Mark Redman",
       "position": "TE",
       "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.02,
       "injury_status": "ACTIVE"
     },
@@ -8119,16 +8119,6 @@
       "name": "Sal Cannella",
       "position": "TE",
       "pro_team": "FA",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.02,
-      "injury_status": "ACTIVE"
-    },
-    "4241820": {
-      "player_id": 4241820,
-      "name": "Sam Ehlinger",
-      "position": "QB",
-      "pro_team": "DEN",
       "status": "FREEAGENT",
       "waiver_process_date": null,
       "percent_owned": 0.02,
@@ -8279,8 +8269,8 @@
       "name": "Ainias Smith",
       "position": "WR",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.01,
       "injury_status": "ACTIVE"
     },
@@ -8679,8 +8669,8 @@
       "name": "Coleman Owen",
       "position": "WR",
       "pro_team": "GB",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.01,
       "injury_status": "ACTIVE"
     },
@@ -8807,16 +8797,6 @@
     "4808830": {
       "player_id": 4808830,
       "name": "Damien Martinez",
-      "position": "RB",
-      "pro_team": "FA",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.01,
-      "injury_status": "ACTIVE"
-    },
-    "4367510": {
-      "player_id": 4367510,
-      "name": "Dante Miller",
       "position": "RB",
       "pro_team": "FA",
       "status": "FREEAGENT",
@@ -9049,8 +9029,8 @@
       "name": "Feleipe Franks",
       "position": "TE",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.01,
       "injury_status": "ACTIVE"
     },
@@ -9199,8 +9179,8 @@
       "name": "Ja'seem Reed",
       "position": "WR",
       "pro_team": "CAR",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-04T08:00:00+00:00",
       "percent_owned": 0.01,
       "injury_status": "ACTIVE"
     },
@@ -9493,6 +9473,16 @@
       "waiver_process_date": null,
       "percent_owned": 0.01,
       "injury_status": "INJURY_RESERVE"
+    },
+    "4039274": {
+      "player_id": 4039274,
+      "name": "Jonathan Ward",
+      "position": "RB",
+      "pro_team": "FA",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.01,
+      "injury_status": "ACTIVE"
     },
     "4243004": {
       "player_id": 4243004,
@@ -10214,6 +10204,16 @@
       "percent_owned": 0.01,
       "injury_status": "ACTIVE"
     },
+    "4241820": {
+      "player_id": 4241820,
+      "name": "Sam Ehlinger",
+      "position": "QB",
+      "pro_team": "DEN",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.01,
+      "injury_status": "ACTIVE"
+    },
     "3914397": {
       "player_id": 3914397,
       "name": "Scotty Miller",
@@ -10804,6 +10804,16 @@
       "percent_owned": 0.0,
       "injury_status": "QUESTIONABLE"
     },
+    "4367510": {
+      "player_id": 4367510,
+      "name": "Dante Miller",
+      "position": "RB",
+      "pro_team": "FA",
+      "status": "FREEAGENT",
+      "waiver_process_date": null,
+      "percent_owned": 0.0,
+      "injury_status": "ACTIVE"
+    },
     "4036431": {
       "player_id": 4036431,
       "name": "Darrynton Evans",
@@ -11188,16 +11198,6 @@
       "player_id": 4362489,
       "name": "John Stephens Jr.",
       "position": "TE",
-      "pro_team": "FA",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 0.0,
-      "injury_status": "ACTIVE"
-    },
-    "4039274": {
-      "player_id": 4039274,
-      "name": "Jonathan Ward",
-      "position": "RB",
       "pro_team": "FA",
       "status": "FREEAGENT",
       "waiver_process_date": null,
@@ -11831,8 +11831,8 @@
       "team_name": "Jason X",
       "open_starting_slots": {},
       "bench_open": 0,
-      "ir_open": 1,
-      "roster_size": 16,
+      "ir_open": 0,
+      "roster_size": 17,
       "faab": {
         "budget": 200,
         "spent": 198,
@@ -11842,12 +11842,12 @@
       "waiver_rank": 7,
       "injury_designations": [
         {
-          "player_id": 4432665,
-          "name": "Brock Bowers",
-          "position": "TE",
-          "pro_team": "LV",
+          "player_id": 4567156,
+          "name": "Treylon Burks",
+          "position": "WR",
+          "pro_team": "WSH",
           "injury_status": "QUESTIONABLE",
-          "lineup_slot": "TE",
+          "lineup_slot": "FLEX",
           "is_starting": true
         },
         {
@@ -11860,12 +11860,21 @@
           "is_starting": false
         },
         {
-          "player_id": 4426385,
-          "name": "Zach Charbonnet",
+          "player_id": 4429013,
+          "name": "Tank Bigsby",
           "position": "RB",
-          "pro_team": "SEA",
-          "injury_status": "QUESTIONABLE",
+          "pro_team": "PHI",
+          "injury_status": "INJURY_RESERVE",
           "lineup_slot": "BENCH",
+          "is_starting": false
+        },
+        {
+          "player_id": 4678008,
+          "name": "Jonathon Brooks",
+          "position": "RB",
+          "pro_team": "CAR",
+          "injury_status": "INJURY_RESERVE",
+          "lineup_slot": "IR",
           "is_starting": false
         }
       ]
@@ -11948,15 +11957,6 @@
           "is_starting": true
         },
         {
-          "player_id": 5081397,
-          "name": "Dylan Sampson",
-          "position": "RB",
-          "pro_team": "CLE",
-          "injury_status": "QUESTIONABLE",
-          "lineup_slot": "RB",
-          "is_starting": true
-        },
-        {
           "player_id": 3117251,
           "name": "Christian McCaffrey",
           "position": "RB",
@@ -11989,9 +11989,9 @@
       "team_id": 4,
       "team_name": "Super Lamario Brothers",
       "open_starting_slots": {},
-      "bench_open": 0,
+      "bench_open": 1,
       "ir_open": 1,
-      "roster_size": 16,
+      "roster_size": 15,
       "faab": {
         "budget": 200,
         "spent": 65,
@@ -12010,40 +12010,13 @@
           "is_starting": true
         },
         {
-          "player_id": 4701936,
-          "name": "Matthew Golden",
-          "position": "WR",
-          "pro_team": "GB",
-          "injury_status": "QUESTIONABLE",
-          "lineup_slot": "WR",
-          "is_starting": true
-        },
-        {
-          "player_id": 4685247,
-          "name": "Braelon Allen",
-          "position": "RB",
-          "pro_team": "NYJ",
-          "injury_status": "QUESTIONABLE",
-          "lineup_slot": "RB",
-          "is_starting": true
-        },
-        {
-          "player_id": 4367209,
-          "name": "Greg Dulcich",
-          "position": "TE",
-          "pro_team": "MIA",
-          "injury_status": "QUESTIONABLE",
-          "lineup_slot": "TE",
-          "is_starting": true
-        },
-        {
           "player_id": 4569603,
           "name": "Malik Washington",
           "position": "WR",
           "pro_team": "MIA",
           "injury_status": "QUESTIONABLE",
-          "lineup_slot": "BENCH",
-          "is_starting": false
+          "lineup_slot": "FLEX",
+          "is_starting": true
         }
       ]
     },
@@ -12062,15 +12035,6 @@
       },
       "waiver_rank": 8,
       "injury_designations": [
-        {
-          "player_id": 4362628,
-          "name": "Ja'Marr Chase",
-          "position": "WR",
-          "pro_team": "CIN",
-          "injury_status": "QUESTIONABLE",
-          "lineup_slot": "WR",
-          "is_starting": true
-        },
         {
           "player_id": 4426354,
           "name": "George Pickens",
@@ -12151,15 +12115,6 @@
       "waiver_rank": 1,
       "injury_designations": [
         {
-          "player_id": 4374302,
-          "name": "Amon-Ra St. Brown",
-          "position": "WR",
-          "pro_team": "DET",
-          "injury_status": "QUESTIONABLE",
-          "lineup_slot": "WR",
-          "is_starting": true
-        },
-        {
           "player_id": 4047646,
           "name": "A.J. Brown",
           "position": "WR",
@@ -12175,6 +12130,15 @@
           "pro_team": "TB",
           "injury_status": "QUESTIONABLE",
           "lineup_slot": "RB",
+          "is_starting": true
+        },
+        {
+          "player_id": 4385690,
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "pro_team": "BUF",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "TE",
           "is_starting": true
         },
         {
@@ -12196,20 +12160,20 @@
           "is_starting": false
         },
         {
+          "player_id": 4432710,
+          "name": "TreVeyon Henderson",
+          "position": "RB",
+          "pro_team": "NE",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BENCH",
+          "is_starting": false
+        },
+        {
           "player_id": 4360078,
           "name": "Alec Pierce",
           "position": "WR",
           "pro_team": "IND",
           "injury_status": "INJURY_RESERVE",
-          "lineup_slot": "BENCH",
-          "is_starting": false
-        },
-        {
-          "player_id": 4385690,
-          "name": "Dalton Kincaid",
-          "position": "TE",
-          "pro_team": "BUF",
-          "injury_status": "QUESTIONABLE",
           "lineup_slot": "BENCH",
           "is_starting": false
         },
@@ -12240,13 +12204,13 @@
       "waiver_rank": 9,
       "injury_designations": [
         {
-          "player_id": 4429795,
-          "name": "Jahmyr Gibbs",
-          "position": "RB",
-          "pro_team": "DET",
+          "player_id": 15847,
+          "name": "Travis Kelce",
+          "position": "TE",
+          "pro_team": "KC",
           "injury_status": "QUESTIONABLE",
-          "lineup_slot": "RB",
-          "is_starting": true
+          "lineup_slot": "BENCH",
+          "is_starting": false
         },
         {
           "player_id": 4373626,
@@ -12300,6 +12264,15 @@
           "injury_status": "QUESTIONABLE",
           "lineup_slot": "BENCH",
           "is_starting": false
+        },
+        {
+          "player_id": 4568490,
+          "name": "RJ Harvey",
+          "position": "RB",
+          "pro_team": "DEN",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BENCH",
+          "is_starting": false
         }
       ]
     },
@@ -12344,15 +12317,6 @@
       },
       "waiver_rank": 3,
       "injury_designations": [
-        {
-          "player_id": 2976212,
-          "name": "Stefon Diggs",
-          "position": "WR",
-          "pro_team": "WSH",
-          "injury_status": "QUESTIONABLE",
-          "lineup_slot": "FLEX",
-          "is_starting": true
-        },
         {
           "player_id": 4035538,
           "name": "David Montgomery",
@@ -12407,15 +12371,6 @@
       "waiver_rank": 2,
       "injury_designations": [
         {
-          "player_id": 4360516,
-          "name": "Tyrone Tracy Jr.",
-          "position": "RB",
-          "pro_team": "NYG",
-          "injury_status": "INJURY_RESERVE",
-          "lineup_slot": "RB",
-          "is_starting": true
-        },
-        {
           "player_id": 3916433,
           "name": "Jakobi Meyers",
           "position": "WR",
@@ -12443,6 +12398,15 @@
           "is_starting": false
         },
         {
+          "player_id": 4426385,
+          "name": "Zach Charbonnet",
+          "position": "RB",
+          "pro_team": "SEA",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BENCH",
+          "is_starting": false
+        },
+        {
           "player_id": 4685512,
           "name": "Jadarian Price",
           "position": "RB",
@@ -12457,5 +12421,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 8,
-  "fetched_at": "2026-10-29T18:17:00.438349+00:00"
+  "fetched_at": "2026-10-30T00:37:06.914277+00:00"
 }
