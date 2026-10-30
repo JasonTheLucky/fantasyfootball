@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-10-30T06:23:14.560217+00:00` |
+| Fetched at (UTC) | `2026-10-30T12:20:45.079377+00:00` |
 | Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.6s |
+| Fetch duration | 2.5s |
 | ESPN calls | 12 |
-| Workflow run | `41013759171` |
+| Workflow run | `41054615355` |
 
 ## Freshness and completeness gates
 
@@ -62,14 +62,14 @@
 | Auto Draft Champion | **$200** | $0 | 100.0% | 6 |
 | Nicole's Gnarly Team | **$200** | $0 | 100.0% | 4 |
 | Commanders of Chaos | **$200** | $0 | 100.0% | 2 |
-| Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 12 |
+| Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 11 |
 | Giant Packer Fan | **$195** | $5 | 97.5% | 9 |
 | Connor’s Team | **$182** | $18 | 91.0% | 1 |
 | 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 3 |
 | Burrow's Bunch | **$164** | $36 | 82.0% | 8 |
 | From Puka with Love | **$150** | $50 | 75.0% | 5 |
 | Super Lamario Brothers | **$135** | $65 | 67.5% | 10 |
-| The Bye Week Boys | **$111** | $89 | 55.5% | 11 |
+| The Bye Week Boys | **$111** | $89 | 55.5% | 12 |
 | Jason X | **$2** | $198 | 1.0% | 7 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
@@ -127,18 +127,19 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 41 | 110 | 185 | 186 | 316 | 857 |
+| 19 | 41 | 110 | 184 | 186 | 317 | 857 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-852 total | 210 executed ownership changes | 399 lineup-only moves | 192 draft picks | 0 pending
+853 total | 211 executed ownership changes | 399 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-10-30T07:00 | The Bye Week Boys | WAIVER | ADD Emmett Johnson, DROP Courtland Sutton |
 | 2026-10-29T23:48 | Jason X | FREEAGENT | ADD Tank Bigsby, DROP Jaydon Blue |
 | 2026-10-29T22:25 | Jason X | FREEAGENT | ADD Elijah Mitchell |
 | 2026-10-29T22:24 | Jason X | FREEAGENT | ADD Chase McLaughlin |
@@ -150,7 +151,6 @@ Most recent ownership changes:
 | 2026-10-29T09:39 | Kelli's Top-Notch Team | FREEAGENT | ADD Wan'Dale Robinson, DROP Brian Thomas Jr. |
 | 2026-10-29T07:09 | Kelli's Top-Notch Team | WAIVER | ADD Geno Smith, DROP Jared Goff |
 | 2026-10-29T02:10 | Auto Draft Champion | FREEAGENT | ADD Commanders D/ST, DROP Dominic Zvada |
-| 2026-10-29T01:12 | Jason X | FREEAGENT | ADD Jaydon Blue, DROP Emmett Johnson |
 
 ## League format
 
