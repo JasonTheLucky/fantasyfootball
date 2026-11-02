@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-02T00:33:38.383972+00:00` |
+| Fetched at (UTC) | `2026-11-02T06:27:24.765723+00:00` |
 | Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.18s |
+| Fetch duration | 2.39s |
 | ESPN calls | 12 |
-| Workflow run | `41367782294` |
+| Workflow run | `41399994400` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| From Puka with Love | 81.8 | Kelli's Top-Notch Team | 102.3 | NO |
-| Auto Draft Champion | 89.7 | Commanders of Chaos | 59.18 | NO |
+| From Puka with Love | 81.8 | Kelli's Top-Notch Team | 114.7 | NO |
+| Auto Draft Champion | 103.7 | Commanders of Chaos | 80.38 | NO |
 | Nicole's Gnarly Team | 64.5 | Connor’s Team | 96.96 | NO |
-| Super Lamario Brothers | 107.7 | 🔥Certified Dumpster Fire 🔥 | 116.08 | NO |
-| Giant Packer Fan | 153.46 | The Bye Week Boys | 82.6 | NO |
-| Burrow's Bunch | 148.98 | Jason X | 109.7 | NO |
+| Super Lamario Brothers | 107.7 | 🔥Certified Dumpster Fire 🔥 | 128.88 | NO |
+| Giant Packer Fan | 156.46 | The Bye Week Boys | 85.8 | NO |
+| Burrow's Bunch | 148.98 | Jason X | 124.68 | NO |
 
 ## Rosters
 
@@ -102,7 +102,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Emeka Egbuka | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | OUT | TE | yes |
+| 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | QUESTIONABLE | TE | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | OUT | BENCH | NO |
@@ -120,7 +120,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-876 total | 221 executed ownership changes | 412 lineup-only moves | 192 draft picks | 0 pending
+877 total | 221 executed ownership changes | 412 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 

@@ -1,7 +1,7 @@
 {
   "counts": {
-    "total": 876,
-    "ownership_changes": 272,
+    "total": 877,
+    "ownership_changes": 273,
     "executed_ownership_changes": 221,
     "lineup_only_moves": 412,
     "draft_picks": 192,
@@ -26216,6 +26216,70 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "1e45425c-9f4f-4e7c-a55a-a4fcc2926b36",
+      "type": "TRADE_PROPOSAL",
+      "status": "CANCELED",
+      "execution_type": "CANCEL",
+      "is_pending": false,
+      "scoring_period_id": 8,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-02T03:48:53.967000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "TRADE",
+          "player_id": 4595348,
+          "from_team_id": 4,
+          "from_team": "Super Lamario Brothers",
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "TRADE",
+          "player_id": 4702555,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": "FLEX",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "TRADE",
+          "player_id": 3046779,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "TRADE",
+          "player_id": 4258173,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 4,
+          "to_team": "Super Lamario Brothers",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "86315a15-7593-453a-b9af-4e8c2ce828ee",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -41283,7 +41347,7 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 119,
+    "0": 120,
     "1": 238,
     "2": 56,
     "3": 68,
@@ -41291,10 +41355,10 @@
     "5": 84,
     "6": 111,
     "7": 119,
-    "8": 119
+    "8": 120
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 8,
-  "fetched_at": "2026-11-02T00:33:36.206823+00:00"
+  "fetched_at": "2026-11-02T06:27:22.372005+00:00"
 }
