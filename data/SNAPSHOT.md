@@ -4,7 +4,7 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-01T18:12:42.735783+00:00` |
+| Fetched at (UTC) | `2026-11-02T00:33:38.383972+00:00` |
 | Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
@@ -13,7 +13,7 @@
 | Players in lookup index | 1055 |
 | Fetch duration | 2.18s |
 | ESPN calls | 12 |
-| Workflow run | `41335414037` |
+| Workflow run | `41367782294` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| From Puka with Love | 1.36 | Kelli's Top-Notch Team | 40.64 | NO |
-| Auto Draft Champion | 1.46 | Commanders of Chaos | 11.8 | NO |
-| Nicole's Gnarly Team | 27.2 | Connor’s Team | 32.6 | NO |
-| Super Lamario Brothers | 37.9 | 🔥Certified Dumpster Fire 🔥 | 2.6 | NO |
-| Giant Packer Fan | 10.84 | The Bye Week Boys | 13.04 | NO |
-| Burrow's Bunch | 18.3 | Jason X | 29.7 | NO |
+| From Puka with Love | 81.8 | Kelli's Top-Notch Team | 102.3 | NO |
+| Auto Draft Champion | 89.7 | Commanders of Chaos | 59.18 | NO |
+| Nicole's Gnarly Team | 64.5 | Connor’s Team | 96.96 | NO |
+| Super Lamario Brothers | 107.7 | 🔥Certified Dumpster Fire 🔥 | 116.08 | NO |
+| Giant Packer Fan | 153.46 | The Bye Week Boys | 82.6 | NO |
+| Burrow's Bunch | 148.98 | Jason X | 109.7 | NO |
 
 ## Rosters
 
@@ -74,20 +74,23 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (27)
+## Injury designations (31)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Christian Watson | WR | QUESTIONABLE | WR | yes |
 | Jason X | Cam Skattebo | RB | QUESTIONABLE | BENCH | NO |
-| Jason X | Treylon Burks | WR | QUESTIONABLE | BENCH | NO |
 | Jason X | Tyjae Spears | RB | OUT | BENCH | NO |
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
+| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
+| The Bye Week Boys | Jeremiyah Love | RB | QUESTIONABLE | RB | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
+| Auto Draft Champion | Michael Wilson | WR | QUESTIONABLE | WR | yes |
+| Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | QB | yes |
 | Auto Draft Champion | Christian McCaffrey | RB | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | BENCH | NO |
+| Super Lamario Brothers | Lamar Jackson | QB | OUT | QB | yes |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | OUT | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
@@ -99,6 +102,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Emeka Egbuka | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | OUT | TE | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | OUT | BENCH | NO |
