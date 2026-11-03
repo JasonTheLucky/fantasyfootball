@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-03T06:20:19.512676+00:00` |
-| Scoring period (week) | **8** |
+| Fetched at (UTC) | `2026-11-03T12:17:20.469218+00:00` |
+| Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.33s |
-| ESPN calls | 12 |
-| Workflow run | `41589208350` |
+| Fetch duration | 2.87s |
+| ESPN calls | 13 |
+| Workflow run | `41634421389` |
 
 ## Freshness and completeness gates
 
@@ -27,16 +27,16 @@
 | Ownership reconciled, no conflicts | yes |
 | Player lookup index complete | yes |
 
-## Week 8 matchups
+## Week 9 matchups
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| From Puka with Love | 119.7 | Kelli's Top-Notch Team | 126.2 | NO |
-| Auto Draft Champion | 103.7 | Commanders of Chaos | 80.38 | NO |
-| Nicole's Gnarly Team | 91.18 | Connor’s Team | 98.96 | NO |
-| Super Lamario Brothers | 107.7 | 🔥Certified Dumpster Fire 🔥 | 128.88 | NO |
-| Giant Packer Fan | 156.46 | The Bye Week Boys | 86.8 | NO |
-| Burrow's Bunch | 167.58 | Jason X | 150.48 | NO |
+| Kelli's Top-Notch Team | 0.0 | Commanders of Chaos | 0.0 | NO |
+| Connor’s Team | 0.0 | From Puka with Love | 0.0 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 0.0 | Auto Draft Champion | 0.0 | NO |
+| The Bye Week Boys | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
+| Jason X | 0.0 | Super Lamario Brothers | 0.0 | NO |
+| Burrow's Bunch | 0.0 | Giant Packer Fan | 0.0 | NO |
 
 ## Rosters
 
@@ -59,18 +59,18 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 3 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 6 |
 | Commanders of Chaos | **$200** | $0 | 100.0% | 2 |
-| Auto Draft Champion | **$198** | $2 | 99.0% | 11 |
-| Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 9 |
-| Giant Packer Fan | **$195** | $5 | 97.5% | 7 |
-| Connor’s Team | **$182** | $18 | 91.0% | 1 |
-| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 12 |
-| Burrow's Bunch | **$164** | $36 | 82.0% | 6 |
-| From Puka with Love | **$150** | $50 | 75.0% | 4 |
-| Super Lamario Brothers | **$135** | $65 | 67.5% | 8 |
-| The Bye Week Boys | **$111** | $89 | 55.5% | 10 |
-| Jason X | **$2** | $198 | 1.0% | 5 |
+| Auto Draft Champion | **$198** | $2 | 99.0% | 9 |
+| Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 4 |
+| Giant Packer Fan | **$195** | $5 | 97.5% | 11 |
+| Connor’s Team | **$182** | $18 | 91.0% | 3 |
+| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 8 |
+| Burrow's Bunch | **$164** | $36 | 82.0% | 12 |
+| From Puka with Love | **$150** | $50 | 75.0% | 7 |
+| Super Lamario Brothers | **$135** | $65 | 67.5% | 1 |
+| The Bye Week Boys | **$111** | $89 | 55.5% | 5 |
+| Jason X | **$2** | $198 | 1.0% | 10 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
@@ -124,7 +124,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-878 total | 221 executed ownership changes | 413 lineup-only moves | 192 draft picks | 0 pending
+880 total | 221 executed ownership changes | 415 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
