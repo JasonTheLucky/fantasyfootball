@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-03T00:30:30.545857+00:00` |
+| Fetched at (UTC) | `2026-11-03T06:20:19.512676+00:00` |
 | Scoring period (week) | **8** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.34s |
+| Fetch duration | 2.33s |
 | ESPN calls | 12 |
-| Workflow run | `41553324903` |
+| Workflow run | `41589208350` |
 
 ## Freshness and completeness gates
 
@@ -31,12 +31,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| From Puka with Love | 81.8 | Kelli's Top-Notch Team | 114.7 | NO |
+| From Puka with Love | 119.7 | Kelli's Top-Notch Team | 126.2 | NO |
 | Auto Draft Champion | 103.7 | Commanders of Chaos | 80.38 | NO |
-| Nicole's Gnarly Team | 64.5 | Connor’s Team | 96.96 | NO |
+| Nicole's Gnarly Team | 91.18 | Connor’s Team | 98.96 | NO |
 | Super Lamario Brothers | 107.7 | 🔥Certified Dumpster Fire 🔥 | 128.88 | NO |
-| Giant Packer Fan | 156.46 | The Bye Week Boys | 85.8 | NO |
-| Burrow's Bunch | 148.98 | Jason X | 124.68 | NO |
+| Giant Packer Fan | 156.46 | The Bye Week Boys | 86.8 | NO |
+| Burrow's Bunch | 167.58 | Jason X | 150.48 | NO |
 
 ## Rosters
 
@@ -74,10 +74,11 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (32)
+## Injury designations (35)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
+| Jason X | Bhayshul Tuten | RB | QUESTIONABLE | RB | yes |
 | Jason X | Christian Watson | WR | QUESTIONABLE | WR | yes |
 | Jason X | Cam Skattebo | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Tyjae Spears | RB | OUT | BENCH | NO |
@@ -103,12 +104,14 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Emeka Egbuka | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
+| Kelli's Top-Notch Team | Justice Hill | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | QUESTIONABLE | TE | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Matthew Stafford | QB | QUESTIONABLE | QB | yes |
+| Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Kyle Monangai | RB | OUT | BENCH | NO |
 
 ## Available player pool by position
