@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-04T00:30:21.400803+00:00` |
+| Fetched at (UTC) | `2026-11-04T06:20:40.777442+00:00` |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 195 |
 | Available players (FA + waivers) | 860 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.39s |
+| Fetch duration | 2.14s |
 | ESPN calls | 13 |
-| Workflow run | `41747290399` |
+| Workflow run | `41784870183` |
 
 ## Freshness and completeness gates
 
@@ -46,7 +46,7 @@
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 15 | 9 | 5 | 1 | 2 |
-| 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
+| 5 | Burrow's Bunch | Norberto Vargas | 16 | 8 | 8 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 15 | 9 | 5 | 1 | 2 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
@@ -123,12 +123,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-891 total | 224 executed ownership changes | 423 lineup-only moves | 192 draft picks | 0 pending
+895 total | 225 executed ownership changes | 426 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-04T03:52 | Jason X | TRADE_DECLINE | - |
 | 2026-11-03T18:21 | From Puka with Love | ROSTER | DROP Josh Downs |
 | 2026-11-03T18:18 | From Puka with Love | ROSTER | DROP Emanuel Wilson |
 | 2026-11-03T13:55 | Super Lamario Brothers | ROSTER | DROP Konata Mumpfield |
@@ -140,7 +141,6 @@ Most recent ownership changes:
 | 2026-10-31T07:23 | Auto Draft Champion | WAIVER | ADD Khalil Shakir, DROP Michael Mayer |
 | 2026-10-31T03:54 | Jason X | FREEAGENT | ADD Tyjae Spears, DROP Elijah Mitchell |
 | 2026-10-30T16:19 | Auto Draft Champion | ROSTER | DROP Jaleel McLaughlin |
-| 2026-10-30T16:06 | Jason X | FREEAGENT | ADD Jared Goff, DROP Tank Bigsby |
 
 ## League format
 
