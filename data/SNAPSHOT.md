@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-03T18:13:52.781058+00:00` |
+| Fetched at (UTC) | `2026-11-04T00:30:21.400803+00:00` |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 197 |
-| Available players (FA + waivers) | 858 |
+| Rostered players | 195 |
+| Available players (FA + waivers) | 860 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.69s |
+| Fetch duration | 2.39s |
 | ESPN calls | 13 |
-| Workflow run | `41691733925` |
+| Workflow run | `41747290399` |
 
 ## Freshness and completeness gates
 
@@ -47,7 +47,7 @@
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
 | 4 | Super Lamario Brothers | Jeffrey Clark | 15 | 9 | 5 | 1 | 2 |
 | 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
-| 6 | From Puka with Love | Brandon Daab | 17 | 9 | 7 | 1 | 0 |
+| 6 | From Puka with Love | Brandon Daab | 15 | 9 | 5 | 1 | 2 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (35)
+## Injury designations (34)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -84,8 +84,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Tyjae Spears | RB | OUT | BENCH | NO |
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | WR | yes |
-| The Bye Week Boys | Tyler Loop | K | DOUBTFUL | K | yes |
-| The Bye Week Boys | Jeremiyah Love | RB | QUESTIONABLE | RB | yes |
+| The Bye Week Boys | Tyler Loop | K | INJURY_RESERVE | K | yes |
+| The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | RB | yes |
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | QUESTIONABLE | WR | yes |
@@ -104,7 +104,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Emeka Egbuka | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
-| Kelli's Top-Notch Team | Justice Hill | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | QUESTIONABLE | TE | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
@@ -118,18 +117,20 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 42 | 110 | 184 | 187 | 316 | 858 |
+| 19 | 42 | 110 | 185 | 187 | 317 | 860 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-886 total | 222 executed ownership changes | 420 lineup-only moves | 192 draft picks | 0 pending
+891 total | 224 executed ownership changes | 423 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-03T18:21 | From Puka with Love | ROSTER | DROP Josh Downs |
+| 2026-11-03T18:18 | From Puka with Love | ROSTER | DROP Emanuel Wilson |
 | 2026-11-03T13:55 | Super Lamario Brothers | ROSTER | DROP Konata Mumpfield |
 | 2026-11-01T15:29 | Connor’s Team | FREEAGENT | ADD Tez Johnson, DROP Cam Little |
 | 2026-10-31T16:15 | Kelli's Top-Notch Team | FREEAGENT | ADD Justice Hill, DROP Bo Nix |
@@ -140,8 +141,6 @@ Most recent ownership changes:
 | 2026-10-31T03:54 | Jason X | FREEAGENT | ADD Tyjae Spears, DROP Elijah Mitchell |
 | 2026-10-30T16:19 | Auto Draft Champion | ROSTER | DROP Jaleel McLaughlin |
 | 2026-10-30T16:06 | Jason X | FREEAGENT | ADD Jared Goff, DROP Tank Bigsby |
-| 2026-10-30T14:01 | Super Lamario Brothers | FREEAGENT | ADD Kimani Vidal |
-| 2026-10-30T07:00 | The Bye Week Boys | WAIVER | ADD Emmett Johnson, DROP Courtland Sutton |
 
 ## League format
 
