@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-04T12:17:26.487571+00:00` |
+| Fetched at (UTC) | `2026-11-04T18:13:40.398916+00:00` |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
 | Available players (FA + waivers) | 859 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.29s |
+| Fetch duration | 2.47s |
 | ESPN calls | 13 |
-| Workflow run | `41827963325` |
+| Workflow run | `41884965044` |
 
 ## Freshness and completeness gates
 
@@ -35,7 +35,7 @@
 | Connor’s Team | 0.0 | From Puka with Love | 0.0 | NO |
 | 🔥Certified Dumpster Fire 🔥 | 0.0 | Auto Draft Champion | 0.0 | NO |
 | The Bye Week Boys | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
-| Jason X | 0.0 | Super Lamario Brothers | 0.0 | NO |
+| Jason X | 0.0 | Cole-Train | 0.0 | NO |
 | Burrow's Bunch | 0.0 | Giant Packer Fan | 0.0 | NO |
 
 ## Rosters
@@ -45,7 +45,7 @@
 | 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
-| 4 | Super Lamario Brothers | Jeffrey Clark | 15 | 9 | 5 | 1 | 2 |
+| 4 | Cole-Train | Jeffrey Clark | 15 | 9 | 5 | 1 | 2 |
 | 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
@@ -68,13 +68,13 @@
 | 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 4 |
 | Burrow's Bunch | **$144** | $56 | 72.0% | 9 |
 | From Puka with Love | **$125** | $75 | 62.5% | 7 |
-| Super Lamario Brothers | **$115** | $85 | 57.5% | 8 |
+| Cole-Train | **$115** | $85 | 57.5% | 8 |
 | The Bye Week Boys | **$100** | $100 | 50.0% | 12 |
 | Jason X | **$1** | $199 | 0.5% | 11 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (36)
+## Injury designations (38)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -93,8 +93,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | QB | yes |
 | Auto Draft Champion | Christian McCaffrey | RB | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Super Lamario Brothers | Lamar Jackson | QB | OUT | IR | NO |
-| From Puka with Love | Deebo Samuel Sr. | WR | QUESTIONABLE | BENCH | NO |
+| Cole-Train | Lamar Jackson | QB | OUT | IR | NO |
+| From Puka with Love | Deebo Samuel Sr. | WR | QUESTIONABLE | FLEX | yes |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
@@ -106,6 +106,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Emeka Egbuka | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
+| Nicole's Gnarly Team | Deshaun Watson | QB | QUESTIONABLE | BENCH | NO |
+| Kelli's Top-Notch Team | Garrett Wilson | WR | QUESTIONABLE | WR | yes |
 | 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | QUESTIONABLE | TE | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
@@ -125,7 +127,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-909 total | 233 executed ownership changes | 428 lineup-only moves | 192 draft picks | 0 pending
+913 total | 233 executed ownership changes | 432 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
@@ -136,13 +138,13 @@ Most recent ownership changes:
 | 2026-11-04T09:08 | Jason X | WAIVER | ADD Buccaneers D/ST, DROP Spencer Shrader |
 | 2026-11-04T09:08 | The Bye Week Boys | WAIVER | ADD Terrance Ferguson, DROP Samaje Perine |
 | 2026-11-04T09:08 | Connor’s Team | WAIVER | ADD Cam Little, DROP Jason Myers |
-| 2026-11-04T09:08 | Super Lamario Brothers | WAIVER | ADD Devin Singletary, DROP Kimani Vidal |
+| 2026-11-04T09:08 | Cole-Train | WAIVER | ADD Devin Singletary, DROP Kimani Vidal |
 | 2026-11-04T09:08 | Burrow's Bunch | WAIVER | ADD Bills D/ST, DROP Mike Washington Jr. |
 | 2026-11-04T09:08 | From Puka with Love | WAIVER | ADD Deebo Samuel Sr. |
 | 2026-11-04T03:52 | Jason X | TRADE_DECLINE | - |
 | 2026-11-03T18:21 | From Puka with Love | ROSTER | DROP Josh Downs |
 | 2026-11-03T18:18 | From Puka with Love | ROSTER | DROP Emanuel Wilson |
-| 2026-11-03T13:55 | Super Lamario Brothers | ROSTER | DROP Konata Mumpfield |
+| 2026-11-03T13:55 | Cole-Train | ROSTER | DROP Konata Mumpfield |
 
 ## League format
 
