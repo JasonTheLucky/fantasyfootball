@@ -62,6 +62,32 @@ from typing import Any, Iterable
 
 READ_HOST = "https://lm-api-reads.fantasy.espn.com"
 
+# ESPN's public NFL injury feed. A different host from the fantasy API, and the
+# only place that carries an expected return date. No authentication needed.
+#
+# The fantasy API gives only injuryStatus (ACTIVE / QUESTIONABLE / OUT /
+# INJURY_RESERVE / DOUBTFUL / DAY_TO_DAY / SUSPENSION) and an `injured` boolean.
+# This feed adds returnDate, the injury type and location, an IR versus IR-R
+# designation (IR-R means designated to return), and a one-line beat note.
+#
+# The feed omits athlete.id, but every record's links carry it as /id/<digits>/,
+# so the join stays on ESPN player id rather than on names. Verified against
+# this league's pool: ids recovered from 800 of 800 records, 419 of them present
+# in player_index.json, and the id join agreed with a name join on all 419 with
+# zero disagreements.
+INJURY_FEED_URL = (
+    "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+)
+ATHLETE_ID_IN_LINK = re.compile(r"/id/(\d+)")
+
+# ESPN reports a season-ending injury by setting returnDate to the Super Bowl.
+# Anything at or beyond this is reported as out for the season rather than as a
+# date that reads like a real return.
+SEASON_ENDING_RETURN_MONTH = (2, 1)   # (month, day) from which a date is "season"
+
+# NFL statuses that mean the player is on injured reserve.
+NFL_IR_STATUSES = {"Injured Reserve", "Injured Reserve - Designated to Return"}
+
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
@@ -498,9 +524,11 @@ def build_rosters(
     members_by_id: dict[str, dict],
     lineup_slot_counts: dict[str, int],
     acquisition_settings: dict | None = None,
+    injury_report: dict[str, dict] | None = None,
 ) -> list[dict]:
     """Normalize every team's roster into starters / bench / IR buckets."""
     budget = faab_budget(acquisition_settings)
+    injury_report = injury_report or {}
     starting_slot_counts = {
         int(slot): count
         for slot, count in (lineup_slot_counts or {}).items()
@@ -535,6 +563,14 @@ def build_rosters(
                     "pending_transaction_ids": entry.get("pendingTransactionIds"),
                 }
             )
+            badge = injury_badge(record["player_id"], injury_report)
+            if badge:
+                record["injury"] = badge
+            # Two different things, and they disagree in both directions: a
+            # manager can park a healthy player in the fantasy IR slot, and a
+            # player on NFL injured reserve can sit on an active bench spot.
+            record["in_fantasy_ir_slot"] = slot_id == IR_SLOT
+            record["on_nfl_ir"] = bool(badge and badge.get("on_nfl_ir"))
             if slot_id == BENCH_SLOT:
                 bench.append(record)
             elif slot_id == IR_SLOT:
@@ -802,7 +838,11 @@ def build_ownership(
     }
 
 
-def build_player_index(rosters: list[dict], available_players: list[dict]) -> dict:
+def build_player_index(
+    rosters: list[dict],
+    available_players: list[dict],
+    injury_report: dict[str, dict] | None = None,
+) -> dict:
     """Build one flat, name-addressable table covering every classified player.
 
     This exists so a consumer can answer "who owns X?" with a single exact
@@ -816,11 +856,13 @@ def build_player_index(rosters: list[dict], available_players: list[dict]) -> di
     both resolve. Names that map to more than one player are listed in
     ``collisions``; resolve those by position and pro_team.
     """
+    injury_report = injury_report or {}
     players: list[dict] = []
 
     for team in rosters:
         for bucket in ("starters", "bench", "injured_reserve"):
             for player in team[bucket]:
+                badge = injury_badge(player["player_id"], injury_report)
                 players.append(
                     {
                         "player_id": player["player_id"],
@@ -834,11 +876,15 @@ def build_player_index(rosters: list[dict], available_players: list[dict]) -> di
                         "availability_status": None,
                         "lineup_slot": player["lineup_slot"],
                         "injury_status": player.get("injury_status"),
+                        "in_fantasy_ir_slot": player["lineup_slot"] == "IR" or None,
+                        "on_nfl_ir": (badge or {}).get("on_nfl_ir") or None,
+                        "injury": badge,
                         "percent_owned": player.get("percent_owned"),
                     }
                 )
 
     for player in available_players:
+        badge = injury_badge(player["player_id"], injury_report)
         players.append(
             {
                 "player_id": player["player_id"],
@@ -852,6 +898,9 @@ def build_player_index(rosters: list[dict], available_players: list[dict]) -> di
                 "availability_status": player.get("availability_status"),
                 "lineup_slot": None,
                 "injury_status": player.get("injury_status"),
+                "in_fantasy_ir_slot": None,
+                "on_nfl_ir": (badge or {}).get("on_nfl_ir") or None,
+                "injury": badge,
                 "percent_owned": player.get("percent_owned"),
             }
         )
@@ -901,6 +950,133 @@ def build_player_index(rosters: list[dict], available_players: list[dict]) -> di
         "by_normalized_name": by_name,
         "players_by_id": {str(p["player_id"]): p for p in players},
     }
+
+
+# --------------------------------------------------------------------------
+# Injury report
+# --------------------------------------------------------------------------
+
+
+def _athlete_id_from_links(athlete: dict) -> str | None:
+    """Recover the ESPN athlete id from a record's link URLs.
+
+    The league-wide injury feed omits ``athlete.id`` but every link href looks
+    like ``.../nfl/player/_/id/4360761/michael-wilson``. Pulling the id out of
+    there keeps the join on an id instead of on a name.
+    """
+    for link in (athlete or {}).get("links") or []:
+        match = ATHLETE_ID_IN_LINK.search(link.get("href") or "")
+        if match:
+            return match.group(1)
+    return None
+
+
+def _return_date_label(return_date: str | None) -> str | None:
+    """Human label for a return date, collapsing the season-ending sentinel."""
+    if not return_date:
+        return None
+    try:
+        parsed = datetime.strptime(return_date, "%Y-%m-%d")
+    except (TypeError, ValueError):
+        return return_date
+    if (parsed.month, parsed.day) >= SEASON_ENDING_RETURN_MONTH and parsed.month <= 7:
+        return "out for the season"
+    # "%-d" is not portable to Windows, so strip the leading zero by hand.
+    return f"{parsed.strftime('%b')} {parsed.day}"
+
+
+def fetch_injury_report(timeout: int = 45) -> tuple[dict[str, dict], dict[str, Any]]:
+    """ESPN's public NFL injury feed, keyed by ESPN player id as a string.
+
+    Returns (report, diag). Never raises: this is a supplementary source on a
+    second host, and the snapshot must survive it being unavailable.
+    """
+    diag: dict[str, Any] = {
+        "source": INJURY_FEED_URL,
+        "ok": False,
+        "records": 0,
+        "with_player_id": 0,
+        "designated": 0,
+        "error": None,
+    }
+    report: dict[str, dict] = {}
+
+    request = urllib.request.Request(INJURY_FEED_URL)
+    request.add_header("User-Agent", USER_AGENT)
+    request.add_header("Accept", "application/json")
+    request.add_header("Accept-Encoding", "gzip")
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            body = response.read()
+            if response.headers.get("Content-Encoding") == "gzip":
+                body = gzip.GzipFile(fileobj=io.BytesIO(body)).read()
+            payload = json.loads(body.decode("utf-8"))
+    except Exception as exc:                      # noqa: BLE001 - supplementary
+        diag["error"] = f"{type(exc).__name__}: {exc}"
+        return report, diag
+
+    for group in payload.get("injuries") or []:
+        for item in group.get("injuries") or []:
+            if not isinstance(item, dict):
+                continue
+            diag["records"] += 1
+            athlete = item.get("athlete") or {}
+            player_id = _athlete_id_from_links(athlete)
+            if not player_id:
+                continue
+            diag["with_player_id"] += 1
+            details = item.get("details") or {}
+            fantasy = details.get("fantasyStatus") or {}
+            status = item.get("status")
+            designation = fantasy.get("abbreviation") or status
+            if status in ("Active", None) and not details.get("returnDate"):
+                # Healthy and nothing scheduled: nothing worth carrying.
+                continue
+            return_date = details.get("returnDate")
+            record = {
+                "player_id": int(player_id) if player_id.lstrip("-").isdigit() else player_id,
+                "name": athlete.get("displayName"),
+                "nfl_status": status,
+                "designation": designation,
+                "on_nfl_ir": status in NFL_IR_STATUSES
+                or (isinstance(designation, str) and designation.startswith("IR")),
+                "expected_return": return_date,
+                "expected_return_label": _return_date_label(return_date),
+                "injury_type": details.get("type"),
+                "injury_detail": details.get("detail"),
+                "body_location": details.get("location"),
+                "side": details.get("side"),
+                "note": item.get("shortComment"),
+                "reported_at": item.get("date"),
+            }
+            if record["on_nfl_ir"]:
+                diag["designated"] += 1
+            report[player_id] = {k: v for k, v in record.items() if v is not None}
+
+    diag["ok"] = True
+    diag["on_nfl_ir"] = diag.pop("designated")
+    return report, diag
+
+
+def injury_badge(player_id: Any, injury_report: dict[str, dict]) -> dict | None:
+    """The compact block attached to a player wherever that player appears.
+
+    Deliberately small: a designation, the IR flag and the expected return.
+    The full record, including the beat note and injury type, lives once in
+    data/injuries.json keyed by the same id.
+    """
+    record = (injury_report or {}).get(str(player_id))
+    if not record:
+        return None
+    badge = {
+        "designation": record.get("designation"),
+        "nfl_status": record.get("nfl_status"),
+        "on_nfl_ir": record.get("on_nfl_ir", False),
+        "expected_return": record.get("expected_return"),
+        "expected_return_label": record.get("expected_return_label"),
+        "injury_type": record.get("injury_type"),
+    }
+    return {k: v for k, v in badge.items() if v is not None}
 
 
 # --------------------------------------------------------------------------
@@ -1183,9 +1359,11 @@ def build_recent_form(
     games_required: int = RECENT_FORM_GAMES,
     jason_x_team_id: Any = JASON_X_TEAM_ID,
     jason_x_team_name: str = JASON_X_TEAM_NAME,
+    injury_report: dict[str, dict] | None = None,
 ) -> dict:
     """Assemble the ranked payload. Pure: no I/O, no network, no clock."""
     limits = RECENT_FORM_LIMITS if limits is None else limits
+    injury_report = injury_report or {}
 
     rankings: dict[str, list[dict]] = {}
     counts: dict[str, dict] = {}
@@ -1239,6 +1417,13 @@ def build_recent_form(
             entry["owner_team_id"] = own["owner_team_id"]
             entry["fantasy_status"] = own["fantasy_status"]
             entry["is_jason_x"] = own["is_jason_x"]
+            badge = injury_badge(entry["player_id"], injury_report)
+            if badge:
+                entry["injury"] = badge
+                entry["on_nfl_ir"] = badge.get("on_nfl_ir", False)
+            index_record = (players_by_id or {}).get(str(entry["player_id"])) or {}
+            if index_record.get("in_fantasy_ir_slot"):
+                entry["in_fantasy_ir_slot"] = True
             for game in entry["games"]:
                 row = (weekly.get(entry["player_id"]) or {})[game["scoring_period_id"]]
                 if row.get("recomputed") is not None:
@@ -1574,7 +1759,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Started {started_at.isoformat()}")
 
     # ---- 1. League core (settings, teams, members, status) ----------------
-    print("\n[1/8] league settings, teams, status")
+    print("\n[1/9] league settings, teams, status")
     try:
         league_raw = client.get(
             views=["mSettings", "mTeam", "mRoster", "mStandings"], label="league_core"
@@ -1688,10 +1873,32 @@ def main(argv: list[str] | None = None) -> int:
         },
     )
 
+    # ---- 1b. NFL injury report (second host, supplementary) --------------
+    # Fetched before the rosters so every downstream structure can carry the
+    # badge. Never fatal: the fantasy API already gives us injuryStatus, and
+    # this only adds the expected return date and the beat note.
+    print("\n[2/9] NFL injury report (expected return dates)")
+    injury_report, injury_diag = fetch_injury_report()
+    steps["injury_report_success"] = bool(injury_diag.get("ok") and injury_report)
+    if injury_diag.get("ok"):
+        print(
+            f"  {len(injury_report)} players with a designation"
+            f" | {injury_diag.get('on_nfl_ir', 0)} on NFL injured reserve"
+            f" | {injury_diag['with_player_id']}/{injury_diag['records']} ids recovered"
+        )
+    else:
+        message = f"NFL injury feed unavailable: {injury_diag.get('error')}"
+        print(f"  WARNING: {message}", file=sys.stderr)
+        errors.append(message)
+
     # ---- 2. Rosters -------------------------------------------------------
-    print("\n[2/8] rosters for every team")
+    print("\n[3/9] rosters for every team")
     rosters = build_rosters(
-        teams, members_by_id, lineup_slot_counts, settings.get("acquisitionSettings")
+        teams,
+        members_by_id,
+        lineup_slot_counts,
+        settings.get("acquisitionSettings"),
+        injury_report=injury_report,
     )
     teams_with_players = sum(1 for r in rosters if r["counts"]["total"] > 0)
     rosters_complete = (
@@ -1724,7 +1931,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     # ---- 3. Transactions --------------------------------------------------
-    print("\n[3/8] transactions")
+    print("\n[4/9] transactions")
     teams_by_id = {r["team_id"]: r["team_name"] for r in rosters}
     transactions_payload: dict[str, Any]
     try:
@@ -1761,7 +1968,7 @@ def main(argv: list[str] | None = None) -> int:
     write("transactions.json", transactions_payload)
 
     # ---- 4. Free agent / waiver pool -------------------------------------
-    print("\n[4/8] free agent + waiver pool (X-Fantasy-Filter)")
+    print("\n[5/9] free agent + waiver pool (X-Fantasy-Filter)")
     available: list[dict] = []
     try:
         available = fetch_player_pool(client, scoring_period_id, ["FREEAGENT", "WAIVERS"])
@@ -1794,7 +2001,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     # ---- 5. Matchups for the current period ------------------------------
-    print("\n[5/8] matchups / boxscore for current period")
+    print("\n[6/9] matchups / boxscore for current period")
     try:
         matchup_raw = client.get(
             views=["mMatchupScore", "mBoxscore"],
@@ -1838,7 +2045,7 @@ def main(argv: list[str] | None = None) -> int:
         steps["matchup_fetch_success"] = False
 
     # ---- 6. Ownership reconciliation -------------------------------------
-    print("\n[6/8] ownership reconciliation")
+    print("\n[7/9] ownership reconciliation")
     ownership = build_ownership(rosters, available)
     ownership.update(
         {
@@ -1865,8 +2072,8 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     # ---- 7. Flat player index -------------------------------------------
-    print("\n[7/8] player lookup index")
-    player_index = build_player_index(rosters, available)
+    print("\n[8/9] player lookup index")
+    player_index = build_player_index(rosters, available, injury_report=injury_report)
     player_index.update(
         {
             "league_id": args.league_id,
@@ -1898,7 +2105,7 @@ def main(argv: list[str] | None = None) -> int:
     # ---- 8. Recent form rankings (last 3 completed games) ----------------
     # No write_raw() here on purpose: 9-17 payloads at ~9 MB each would add
     # 80-160 MB to the workflow artifact for data this artifact already captures.
-    print("\n[8/8] recent form rankings (last 3 completed games)")
+    print("\n[9/9] recent form rankings (last 3 completed games)")
     recent_form_ranked_total = 0
     try:
         weeks_considered = recent_form_weeks(status, scoring_period_id)
@@ -1946,7 +2153,8 @@ def main(argv: list[str] | None = None) -> int:
                 weeks_with_data.append(week)
 
         payload = build_recent_form(
-            weekly, meta, player_index["players_by_id"], weeks_considered
+            weekly, meta, player_index["players_by_id"], weeks_considered,
+            injury_report=injury_report,
         )
         payload["weeks"]["with_data"] = weeks_with_data
         payload["weeks"]["failed"] = weeks_failed
@@ -2032,6 +2240,91 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  WARNING: recent form rankings failed: {exc!r}", file=sys.stderr)
         errors.append(f"recent form rankings failed: {exc}")
         steps["recent_form_success"] = False
+
+    # ---- injury report file ----------------------------------------------
+    # Written after the rosters so ownership can be attached. The badge is
+    # already inline on every player everywhere; this file is the one place the
+    # full detail lives, plus the two IR cross-checks worth acting on.
+    index_by_id = player_index["players_by_id"]
+    league_injuries = {}
+    for pid, record in injury_report.items():
+        owner = index_by_id.get(pid)
+        if not owner:
+            continue            # not in this league's player pool
+        enriched = dict(record)
+        enriched["fantasy_status"] = owner.get("fantasy_status")
+        enriched["fantasy_team"] = owner.get("fantasy_team")
+        enriched["fantasy_team_id"] = owner.get("fantasy_team_id")
+        enriched["lineup_slot"] = owner.get("lineup_slot")
+        enriched["in_fantasy_ir_slot"] = bool(owner.get("in_fantasy_ir_slot"))
+        enriched["is_jason_x"] = owner.get("fantasy_team_id") == JASON_X_TEAM_ID
+        league_injuries[pid] = enriched
+
+    on_ir = {k: v for k, v in league_injuries.items() if v.get("on_nfl_ir")}
+    ir_not_in_slot = sorted(
+        (v["name"], v.get("fantasy_team"), v.get("expected_return"))
+        for v in on_ir.values()
+        if v.get("fantasy_status") == "ROSTERED" and not v["in_fantasy_ir_slot"]
+    )
+    slot_not_on_ir = sorted(
+        (p["name"], team["team_name"])
+        for team in rosters for p in team["injured_reserve"]
+        if not p.get("on_nfl_ir")
+    )
+
+    write(
+        "injuries.json",
+        {
+            "usage": (
+                "NFL injury designations and expected return dates for every "
+                "player in this league's pool, keyed by ESPN player id. Joined "
+                "by player id, never by name. A compact subset of each record "
+                "is already attached inline as the player's `injury` block in "
+                "rosters.json, player_index.json and recent_form_rankings.json, "
+                "so a player's injury travels with them everywhere they appear; "
+                "this file carries the full detail including the beat note. "
+                "on_nfl_ir means the NFL team placed the player on injured "
+                "reserve. in_fantasy_ir_slot means this league's manager parked "
+                "them in the fantasy IR slot. The two are different and "
+                "routinely disagree: ir_on_nfl_but_active_slot lists players "
+                "burning an active roster spot while on NFL IR, and "
+                "ir_slot_but_not_on_nfl_ir lists fantasy IR slots holding "
+                "someone the NFL has not designated. expected_return is ESPN's "
+                "estimate; a date in February means out for the season, and "
+                "expected_return_label says so in words. A designation of IR-R "
+                "means designated to return."
+            ),
+            "league_id": args.league_id,
+            "season": season,
+            "scoring_period_id": scoring_period_id,
+            "fetched_at": started_at.isoformat(),
+            "source": injury_diag,
+            "counts": {
+                "in_league_pool": len(league_injuries),
+                "on_nfl_ir": len(on_ir),
+                "rostered_on_nfl_ir": sum(
+                    1 for v in on_ir.values() if v.get("fantasy_status") == "ROSTERED"
+                ),
+                "jason_x_affected": sum(
+                    1 for v in league_injuries.values() if v.get("is_jason_x")
+                ),
+            },
+            "ir_on_nfl_but_active_slot": [
+                {"name": n, "fantasy_team": t, "expected_return": r}
+                for n, t, r in ir_not_in_slot
+            ],
+            "ir_slot_but_not_on_nfl_ir": [
+                {"name": n, "fantasy_team": t} for n, t in slot_not_on_ir
+            ],
+            "players": league_injuries,
+        },
+    )
+    print("\n[injuries] league-pool injury detail")
+    print(
+        f"  {len(league_injuries)} designated | {len(on_ir)} on NFL IR | "
+        f"{len(ir_not_in_slot)} on NFL IR holding an active slot | "
+        f"{len(slot_not_on_ir)} IR slot(s) without an NFL IR designation"
+    )
 
     # ---- metadata --------------------------------------------------------
     metadata = build_metadata(
@@ -2136,6 +2429,7 @@ def build_metadata(
         "player_index_built": steps.get("player_index_built", False),
         "recent_form_success": steps.get("recent_form_success", False),
         "recent_form_ranked_total": recent_form_ranked_total,
+        "injury_report_success": steps.get("injury_report_success", False),
         "roster_fetch_success": steps.get("roster_fetch_success", False),
         "transactions_fetch_success": steps.get("transactions_fetch_success", False),
         "player_pool_fetch_success": steps.get("player_pool_fetch_success", False),

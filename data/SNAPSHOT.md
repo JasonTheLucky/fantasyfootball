@@ -4,16 +4,15 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-05T23:30:19.097711+00:00` |
+| Fetched at (UTC) | `2026-11-05T23:58:35.937446+00:00` |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 7.67s |
+| Fetch duration | 15.11s |
 | ESPN calls | 31 |
-| Workflow run | `42129809596` |
 
 ## Freshness and completeness gates
 
@@ -27,6 +26,7 @@
 | Ownership reconciled, no conflicts | yes |
 | Player lookup index complete | yes |
 | Recent form rankings built | yes |
+| NFL injury report retrieved | yes |
 
 ## Week 9 matchups
 
@@ -75,11 +75,10 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (43)
+## Injury designations (42)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Bhayshul Tuten | RB | QUESTIONABLE | RB | yes |
 | Jason X | Christian Watson | WR | QUESTIONABLE | WR | yes |
 | Jason X | Amon-Ra St. Brown | WR | QUESTIONABLE | FLEX | yes |
 | Jason X | Cam Skattebo | RB | QUESTIONABLE | BENCH | NO |
@@ -131,6 +130,33 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
+## Injuries and IR
+
+100 players in this league's pool carry an NFL designation; 33 are on injured reserve (10 of them rostered). 7 affect Jason X.
+
+**On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
+
+| Player | Fantasy team | Expected return |
+| --- | --- | --- |
+| Alec Pierce | Connor’s Team | 2026-11-29 |
+| Jeremiyah Love | The Bye Week Boys | 2026-12-06 |
+| RJ Harvey | Nicole's Gnarly Team | 2026-12-06 |
+| Terrance Ferguson | The Bye Week Boys | 2026-11-08 |
+
+**In a fantasy IR slot without an NFL IR designation:** Jadarian Price (Commanders of Chaos), Romeo Doubs (From Puka with Love).
+
+Jason X players with a designation:
+
+| Player | Slot | Designation | Expected return | Injury |
+| --- | --- | --- | --- | --- |
+| Cam Skattebo | BENCH | QUESTIONABLE | Nov 8 | Hamstring |
+| Tyjae Spears | BENCH | QUESTIONABLE | Nov 15 | Knee |
+| Treylon Burks | BENCH | QUESTIONABLE | Nov 8 | Foot |
+| Amon-Ra St. Brown | FLEX | QUESTIONABLE | Nov 8 | Ribs |
+| Jonathon Brooks **(NFL IR)** | IR | IR | Nov 8 | Abdomen |
+| Bhayshul Tuten | RB | QUESTIONABLE | Nov 5 | Ankle |
+| Christian Watson | WR | QUESTIONABLE | Nov 8 | Ribs |
+
 ## Recent form (last 3 completed games)
 
 Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9]. Ranked 212 of 212 expected.
@@ -162,7 +188,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-946 total | 237 executed ownership changes | 460 lineup-only moves | 192 draft picks | 0 pending
+948 total | 237 executed ownership changes | 462 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
@@ -191,6 +217,7 @@ Scoring: `H2H_POINTS`. Starting lineup and bench: QB x1, RB x2, WR x2, TE x1, D/
 | --- | --- |
 | `metadata.json` | Fetch timestamps, week, per-step success flags. Read first. |
 | `recent_form_rankings.json` | Top 24 QB / 60 RB / 60 WR / 24 TE / 24 K / 20 D/ST by average points over each player's last three completed games, with owner and Jason X flag. |
+| `injuries.json` | NFL designations and expected return dates, by player id, plus the two IR cross-checks. A compact `injury` block is also inline on every player elsewhere. |
 | `player_index.json` | **Name to owner lookup for every classified player. Use this to answer "who owns X?".** |
 | `ownership.json` | Positive ownership: player id to owner, plus availability. |
 | `rosters.json` | Every team's starters, bench, and IR. |

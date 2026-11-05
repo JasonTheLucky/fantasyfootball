@@ -50,6 +50,7 @@ def build() -> str:
     matchups = load("matchups.json") or {}
     league = load("league.json") or {}
     recent_form = load("recent_form_rankings.json") or {}
+    injuries = load("injuries.json") or {}
 
     critical = metadata.get("critical_success")
     lines: list[str] = []
@@ -91,6 +92,7 @@ def build() -> str:
         f"{tick(metadata.get('ownership_reconciled'))} |")
     add(f"| Player lookup index complete | {tick(metadata.get('player_index_built'))} |")
     add(f"| Recent form rankings built | {tick(metadata.get('recent_form_success'))} |")
+    add(f"| NFL injury report retrieved | {tick(metadata.get('injury_report_success'))} |")
     add("")
 
     errors = metadata.get("errors") or []
@@ -200,6 +202,53 @@ def build() -> str:
             "from the rosters above."
         )
         add("")
+
+    # ---- injuries -------------------------------------------------------
+    inj_counts = injuries.get("counts") or {}
+    if inj_counts:
+        add("## Injuries and IR")
+        add("")
+        add(f"{inj_counts.get('in_league_pool')} players in this league's pool carry "
+            f"an NFL designation; {inj_counts.get('on_nfl_ir')} are on injured "
+            f"reserve ({inj_counts.get('rostered_on_nfl_ir')} of them rostered). "
+            f"{inj_counts.get('jason_x_affected')} affect Jason X.")
+        add("")
+
+        active_slot = injuries.get("ir_on_nfl_but_active_slot") or []
+        if active_slot:
+            add("**On NFL injured reserve while holding an active roster spot** "
+                "- these could be moved to the fantasy IR slot:")
+            add("")
+            add("| Player | Fantasy team | Expected return |")
+            add("| --- | --- | --- |")
+            for row in active_slot:
+                add(f"| {row.get('name')} | {row.get('fantasy_team')} "
+                    f"| {row.get('expected_return')} |")
+            add("")
+
+        empty_slot = injuries.get("ir_slot_but_not_on_nfl_ir") or []
+        if empty_slot:
+            names = ", ".join(
+                f"{r.get('name')} ({r.get('fantasy_team')})" for r in empty_slot
+            )
+            add(f"**In a fantasy IR slot without an NFL IR designation:** {names}.")
+            add("")
+
+        jason_hits = [
+            v for v in (injuries.get("players") or {}).values() if v.get("is_jason_x")
+        ]
+        if jason_hits:
+            add("Jason X players with a designation:")
+            add("")
+            add("| Player | Slot | Designation | Expected return | Injury |")
+            add("| --- | --- | --- | --- | --- |")
+            for v in sorted(jason_hits, key=lambda x: str(x.get("lineup_slot"))):
+                mark = " **(NFL IR)**" if v.get("on_nfl_ir") else ""
+                add(f"| {v.get('name')}{mark} | {v.get('lineup_slot')} "
+                    f"| {v.get('designation')} "
+                    f"| {v.get('expected_return_label') or '-'} "
+                    f"| {v.get('injury_type') or '-'} |")
+            add("")
 
     # ---- recent form ----------------------------------------------------
     # Locals are rf_counts / rf_block: build() already binds `counts` above for
@@ -326,6 +375,9 @@ def build() -> str:
     add("| `recent_form_rankings.json` | Top 24 QB / 60 RB / 60 WR / 24 TE / 24 K / "
         "20 D/ST by average points over each player's last three completed games, "
         "with owner and Jason X flag. |")
+    add("| `injuries.json` | NFL designations and expected return dates, by player "
+        "id, plus the two IR cross-checks. A compact `injury` block is also inline "
+        "on every player elsewhere. |")
     add("| `player_index.json` | **Name to owner lookup for every classified player. "
         "Use this to answer \"who owns X?\".** |")
     add("| `ownership.json` | Positive ownership: player id to owner, plus availability. |")

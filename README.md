@@ -54,6 +54,7 @@ confirm the snapshot is usable, then go to the detail files.
 | `metadata.json` | Fetch timestamp, `scoringPeriodId`, per-step success flags, every ESPN call made. |
 | `player_index.json` | Flat name-to-owner lookup for all classified players. Use this to answer "who owns X?". |
 | `recent_form_rankings.json` | Recent form: top 24 QB, 60 RB, 60 WR, 24 TE, 24 K, 20 D/ST by average points over each player's own last three completed games, with the owning fantasy team and a Jason X flag. |
+| `injuries.json` | NFL designations and expected return dates for every player in the league pool, by ESPN player id, plus the two IR cross-checks. A compact `injury` block is also inline on every player in the files above. |
 | `ownership.json` | The ownership gate. Player id to owning team, plus ESPN's availability list. |
 | `rosters.json` | All 12 teams: starters, bench, IR, open slots, records, FAAB remaining. |
 | `available_players.json` | ESPN `FREEAGENT` + `WAIVERS` pool with ownership percentages. |
@@ -235,6 +236,55 @@ confirm the yellow highlighting survived rendering. What the repository does
 verify is the data behind it, in both directions: every flagged player is
 Jason X's in the index, and every Jason X player in the tables is flagged. The
 rendering itself is enforced by prompt gates `T` and `U`.
+
+### Injuries, IR and expected return dates
+
+A compact `injury` block is attached **inline to every player** in
+`rosters.json`, `player_index.json` and `recent_form_rankings.json`, so a
+player's injury travels with them wherever they appear:
+
+```json
+"injury": {
+  "designation": "IR",
+  "nfl_status": "Injured Reserve",
+  "on_nfl_ir": true,
+  "expected_return": "2026-12-28",
+  "expected_return_label": "Dec 28",
+  "injury_type": "Knee"
+}
+```
+
+`injuries.json` holds the full record once per player, adding the injury
+location, the side, and a one-line beat note.
+
+**Why a second host.** The fantasy API only exposes `injuryStatus` and an
+`injured` boolean — no return date. ESPN's public NFL injury feed at
+`site.api.espn.com/apis/site/v2/sports/football/nfl/injuries` carries
+`returnDate`, the injury type, an `IR` versus `IR-R` designation, and a beat
+note. It needs no authentication. The step is non-critical: if that host is
+unavailable the snapshot still succeeds and `injury_report_success` goes false.
+
+**The join stays on player id.** That feed omits `athlete.id`, but every record's
+links embed it as `/id/<digits>/`, so the id is recovered by regex rather than
+falling back to name matching. Verified against this league: ids recovered from
+**800 of 800** records, 419 present in `player_index.json`, and the id join
+agreed with a name join on all 419 with **zero** disagreements.
+
+**`on_nfl_ir` and `in_fantasy_ir_slot` are different things and disagree both
+ways.** The first means the NFL team placed the player on injured reserve; the
+second means a manager parked them in this league's fantasy IR slot. Measured in
+one snapshot: 4 players were on NFL IR while occupying an **active** roster spot,
+and 2 fantasy IR slots held players the NFL had not designated. Both are
+actionable, so `injuries.json` publishes them as `ir_on_nfl_but_active_slot` and
+`ir_slot_but_not_on_nfl_ir`.
+
+**Season-ending injuries.** ESPN encodes them by setting `returnDate` to the
+Super Bowl date, so `expected_return_label` renders those as
+`out for the season` rather than a date that reads like a real return. This
+matters: in one snapshot Terry McLaurin ranked WR #36 and Jaylin Noel WR #24 on
+recent form while both were free agents **out for the season**. Recent form and
+current availability are independent facts, and the injury flag is what stops a
+strong three-game average turning into a bad recommendation.
 
 ### FAAB budgets
 
