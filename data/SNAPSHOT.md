@@ -4,7 +4,7 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-05T06:20:32.568780+00:00` |
+| Fetched at (UTC) | `2026-11-05T12:17:40.332621+00:00` |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
@@ -13,7 +13,7 @@
 | Players in lookup index | 1055 |
 | Fetch duration | 2.85s |
 | ESPN calls | 13 |
-| Workflow run | `41979738997` |
+| Workflow run | `42025889392` |
 
 ## Freshness and completeness gates
 
@@ -42,10 +42,10 @@
 
 | # | Team | Owner | Roster | Start | Bench | IR | Bench open |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
+| 1 | Jason X | Jason Prinsen | 15 | 9 | 5 | 1 | 2 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
-| 4 | Cole-Train | Jeffrey Clark | 15 | 9 | 5 | 1 | 2 |
+| 4 | Cole-Train | Jeffrey Clark | 17 | 9 | 7 | 1 | 0 |
 | 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
@@ -64,13 +64,13 @@
 | Auto Draft Champion | **$198** | $2 | 99.0% | 5 |
 | Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 2 |
 | Giant Packer Fan | **$195** | $5 | 97.5% | 6 |
-| Connor’s Team | **$180** | $20 | 90.0% | 10 |
+| Connor’s Team | **$179** | $21 | 89.5% | 12 |
 | 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 4 |
 | Burrow's Bunch | **$144** | $56 | 72.0% | 9 |
 | From Puka with Love | **$125** | $75 | 62.5% | 7 |
-| Cole-Train | **$115** | $85 | 57.5% | 8 |
-| The Bye Week Boys | **$100** | $100 | 50.0% | 12 |
-| Jason X | **$1** | $199 | 0.5% | 11 |
+| The Bye Week Boys | **$100** | $100 | 50.0% | 11 |
+| Cole-Train | **$65** | $135 | 32.5% | 8 |
+| Jason X | **$51** | $149 | 25.5% | 10 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
@@ -78,9 +78,10 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
+| Jason X | Bhayshul Tuten | RB | QUESTIONABLE | RB | yes |
 | Jason X | Christian Watson | WR | QUESTIONABLE | WR | yes |
+| Jason X | Amon-Ra St. Brown | WR | QUESTIONABLE | FLEX | yes |
 | Jason X | Cam Skattebo | RB | QUESTIONABLE | BENCH | NO |
-| Jason X | Bhayshul Tuten | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Treylon Burks | WR | QUESTIONABLE | BENCH | NO |
 | Jason X | Tyjae Spears | RB | OUT | BENCH | NO |
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
@@ -94,7 +95,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | QB | yes |
 | Auto Draft Champion | Christian McCaffrey | RB | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Cole-Train | Amon-Ra St. Brown | WR | QUESTIONABLE | FLEX | yes |
 | Cole-Train | Lamar Jackson | QB | OUT | IR | NO |
 | Burrow's Bunch | George Pickens | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Deebo Samuel Sr. | WR | QUESTIONABLE | BENCH | NO |
@@ -133,12 +133,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-934 total | 234 executed ownership changes | 451 lineup-only moves | 192 draft picks | 0 pending
+936 total | 235 executed ownership changes | 452 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-05T09:01 | Connor’s Team | WAIVER | ADD Josh Downs, DROP Tez Johnson |
 | 2026-11-05T05:20 | Jason X | FREEAGENT | ADD Lions D/ST, DROP Bengals D/ST |
 | 2026-11-04T09:20 | The Bye Week Boys | FREEAGENT | ADD Cairo Santos, DROP Tyler Loop |
 | 2026-11-04T09:08 | The Bye Week Boys | WAIVER | ADD Chris Rodriguez Jr., DROP Caleb Douglas |
@@ -150,7 +151,6 @@ Most recent ownership changes:
 | 2026-11-04T09:08 | From Puka with Love | WAIVER | ADD Deebo Samuel Sr. |
 | 2026-11-04T03:52 | Jason X | TRADE_DECLINE | - |
 | 2026-11-03T18:21 | From Puka with Love | ROSTER | DROP Josh Downs |
-| 2026-11-03T18:18 | From Puka with Love | ROSTER | DROP Emanuel Wilson |
 
 ## League format
 
