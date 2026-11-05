@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-05T12:17:40.332621+00:00` |
+| Fetched at (UTC) | `2026-11-05T18:14:52.502539+00:00` |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 196 |
-| Available players (FA + waivers) | 859 |
+| Rostered players | 198 |
+| Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.85s |
+| Fetch duration | 2.09s |
 | ESPN calls | 13 |
-| Workflow run | `42025889392` |
+| Workflow run | `42082353535` |
 
 ## Freshness and completeness gates
 
@@ -42,7 +42,7 @@
 
 | # | Team | Owner | Roster | Start | Bench | IR | Bench open |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Jason X | Jason Prinsen | 15 | 9 | 5 | 1 | 2 |
+| 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
 | 4 | Cole-Train | Jeffrey Clark | 17 | 9 | 7 | 1 | 0 |
@@ -86,8 +86,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Tyjae Spears | RB | OUT | BENCH | NO |
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | FLEX | yes |
+| The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | RB | yes |
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
@@ -127,18 +127,20 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 17 | 43 | 110 | 186 | 186 | 317 | 859 |
+| 17 | 43 | 110 | 184 | 186 | 317 | 857 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## Transactions
 
-936 total | 235 executed ownership changes | 452 lineup-only moves | 192 draft picks | 0 pending
+942 total | 237 executed ownership changes | 456 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-05T13:09 | Jason X | FREEAGENT | ADD Elijah Mitchell |
+| 2026-11-05T13:08 | Jason X | FREEAGENT | ADD Kimani Vidal |
 | 2026-11-05T09:01 | Connor’s Team | WAIVER | ADD Josh Downs, DROP Tez Johnson |
 | 2026-11-05T05:20 | Jason X | FREEAGENT | ADD Lions D/ST, DROP Bengals D/ST |
 | 2026-11-04T09:20 | The Bye Week Boys | FREEAGENT | ADD Cairo Santos, DROP Tyler Loop |
@@ -149,8 +151,6 @@ Most recent ownership changes:
 | 2026-11-04T09:08 | Cole-Train | WAIVER | ADD Devin Singletary, DROP Kimani Vidal |
 | 2026-11-04T09:08 | Burrow's Bunch | WAIVER | ADD Bills D/ST, DROP Mike Washington Jr. |
 | 2026-11-04T09:08 | From Puka with Love | WAIVER | ADD Deebo Samuel Sr. |
-| 2026-11-04T03:52 | Jason X | TRADE_DECLINE | - |
-| 2026-11-03T18:21 | From Puka with Love | ROSTER | DROP Josh Downs |
 
 ## League format
 
