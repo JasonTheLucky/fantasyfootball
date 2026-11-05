@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 924,
-    "ownership_changes": 289,
-    "executed_ownership_changes": 233,
-    "lineup_only_moves": 443,
+    "total": 934,
+    "ownership_changes": 291,
+    "executed_ownership_changes": 234,
+    "lineup_only_moves": 451,
     "draft_picks": 192,
     "pending": 0,
     "failed": 30,
@@ -72,18 +72,6 @@
       ]
     },
     {
-      "team_id": 7,
-      "team": "Connor\u2019s Team",
-      "bid_amount": 19,
-      "status": "FAILED_INVALIDPLAYERSOURCE",
-      "succeeded": false,
-      "scoring_period_id": 9,
-      "date": "2026-11-04T09:08:30.504000+00:00",
-      "players_added": [
-        3126486
-      ]
-    },
-    {
       "team_id": 2,
       "team": "The Bye Week Boys",
       "bid_amount": 11,
@@ -105,6 +93,18 @@
       "date": "2026-11-04T09:08:30.504000+00:00",
       "players_added": [
         -16002
+      ]
+    },
+    {
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 19,
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "succeeded": false,
+      "scoring_period_id": 9,
+      "date": "2026-11-04T09:08:30.504000+00:00",
+      "players_added": [
+        3126486
       ]
     },
     {
@@ -914,6 +914,46 @@
   ],
   "executed_ownership_changes": [
     {
+      "id": "7998e391-d5f4-4ac9-adc5-34d281c77515",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-05T05:20:09.736000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16008,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16004,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "c56590dd-e9ac-4fe5-8bd2-f4580c084b63",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -1034,46 +1074,6 @@
       ]
     },
     {
-      "id": "d4c6ef04-bcf9-49e9-a78b-1153ba42f633",
-      "type": "WAIVER",
-      "status": "EXECUTED",
-      "execution_type": "PROCESS",
-      "is_pending": false,
-      "scoring_period_id": 9,
-      "team_id": 2,
-      "team": "The Bye Week Boys",
-      "bid_amount": 0,
-      "proposed_date": "2026-11-04T09:08:30.352000+00:00",
-      "processed_date": "2026-11-04T09:08:30.505000+00:00",
-      "is_league_manager": false,
-      "items": [
-        {
-          "item_type": "ADD",
-          "player_id": 4570037,
-          "from_team_id": 0,
-          "from_team": null,
-          "to_team_id": 2,
-          "to_team": "The Bye Week Boys",
-          "from_slot": null,
-          "to_slot": "BENCH",
-          "overall_pick_number": 0,
-          "is_keeper": false
-        },
-        {
-          "item_type": "DROP",
-          "player_id": 3116389,
-          "from_team_id": 2,
-          "from_team": "The Bye Week Boys",
-          "to_team_id": 0,
-          "to_team": null,
-          "from_slot": "BENCH",
-          "to_slot": null,
-          "overall_pick_number": 0,
-          "is_keeper": false
-        }
-      ]
-    },
-    {
       "id": "c537c90b-bfe0-410d-ba2d-50e4c63ffc9c",
       "type": "WAIVER",
       "status": "EXECUTED",
@@ -1107,6 +1107,46 @@
           "to_team_id": 0,
           "to_team": null,
           "from_slot": "K",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "d4c6ef04-bcf9-49e9-a78b-1153ba42f633",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-04T09:08:30.352000+00:00",
+      "processed_date": "2026-11-04T09:08:30.505000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4570037,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 3116389,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
           "to_slot": null,
           "overall_pick_number": 0,
           "is_keeper": false
@@ -9063,46 +9103,6 @@
       ]
     },
     {
-      "id": "13d6dfd5-ce8c-4c70-bd44-16abaf6e1044",
-      "type": "WAIVER",
-      "status": "FAILED_INVALIDPLAYERSOURCE",
-      "execution_type": "PROCESS",
-      "is_pending": false,
-      "scoring_period_id": 9,
-      "team_id": 7,
-      "team": "Connor\u2019s Team",
-      "bid_amount": 19,
-      "proposed_date": "2026-11-04T09:08:30.352000+00:00",
-      "processed_date": "2026-11-04T09:08:30.504000+00:00",
-      "is_league_manager": false,
-      "items": [
-        {
-          "item_type": "ADD",
-          "player_id": 3126486,
-          "from_team_id": 0,
-          "from_team": null,
-          "to_team_id": 7,
-          "to_team": "Connor\u2019s Team",
-          "from_slot": "BENCH",
-          "to_slot": null,
-          "overall_pick_number": 0,
-          "is_keeper": false
-        },
-        {
-          "item_type": "DROP",
-          "player_id": 4608810,
-          "from_team_id": 7,
-          "from_team": "Connor\u2019s Team",
-          "to_team_id": 0,
-          "to_team": null,
-          "from_slot": "FLEX",
-          "to_slot": null,
-          "overall_pick_number": 0,
-          "is_keeper": false
-        }
-      ]
-    },
-    {
       "id": "cd505244-62a3-4166-ac94-ddb52a5f8b20",
       "type": "WAIVER",
       "status": "FAILED_INVALIDPLAYERSOURCE",
@@ -9136,6 +9136,46 @@
           "to_team_id": 0,
           "to_team": null,
           "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "13d6dfd5-ce8c-4c70-bd44-16abaf6e1044",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 19,
+      "proposed_date": "2026-11-04T09:08:30.352000+00:00",
+      "processed_date": "2026-11-04T09:08:30.504000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 3126486,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 7,
+          "to_team": "Connor\u2019s Team",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4608810,
+          "from_team_id": 7,
+          "from_team": "Connor\u2019s Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
           "to_slot": null,
           "overall_pick_number": 0,
           "is_keeper": false
@@ -10176,6 +10216,326 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "4ffea643-9daf-4a94-8acb-7b5824e7b6af",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 8,
+      "team": "Giant Packer Fan",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-05T05:24:56.773000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 15847,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4597500,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "e538b589-a09e-4dca-9f08-f9cc86806ffb",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 8,
+      "team": "Giant Packer Fan",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-05T05:24:22.263000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4597500,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4569987,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "af615ea3-661d-48b1-b574-2ffc562f4042",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 8,
+      "team": "Giant Packer Fan",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-05T05:24:10.224000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4596448,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "RB",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4569987,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "RB",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "c1f28fde-bc44-444b-9a60-4e21d3aad097",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-05T05:20:36.160000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4258173,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4882093,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "900bbe14-2e3b-4fd6-b312-6dacacc41ecb",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-05T05:20:32.627000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4702555,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
+          "to_slot": "RB",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4882093,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "RB",
+          "to_slot": "FLEX",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "fdec86cd-a44b-439a-9cc4-d03f243ce0c3",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-05T05:20:15.625000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": -16027,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": -16008,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "D/ST",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "df07cb12-00d9-4696-90dc-344de0e802e6",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-05T03:18:59.252000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": -16027,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "D/ST",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": -16004,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "19fff867-f62f-4668-accf-56c1e8a9c2fa",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-05T00:49:28.632000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4363538,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 17372,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "ed3305aa-f3a9-402e-874e-806ff147df99",
       "type": "ROSTER",
@@ -28115,6 +28475,86 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "99466592-f8b8-45b9-9470-1c553a92f98d",
+      "type": "WAIVER",
+      "status": "CANCELED",
+      "execution_type": "CANCEL",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-05T05:50:11.479000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4430968,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4428557,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "7998e391-d5f4-4ac9-adc5-34d281c77515",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-05T05:20:09.736000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16008,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16004,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "c56590dd-e9ac-4fe5-8bd2-f4580c084b63",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -28235,46 +28675,6 @@
       ]
     },
     {
-      "id": "d4c6ef04-bcf9-49e9-a78b-1153ba42f633",
-      "type": "WAIVER",
-      "status": "EXECUTED",
-      "execution_type": "PROCESS",
-      "is_pending": false,
-      "scoring_period_id": 9,
-      "team_id": 2,
-      "team": "The Bye Week Boys",
-      "bid_amount": 0,
-      "proposed_date": "2026-11-04T09:08:30.352000+00:00",
-      "processed_date": "2026-11-04T09:08:30.505000+00:00",
-      "is_league_manager": false,
-      "items": [
-        {
-          "item_type": "ADD",
-          "player_id": 4570037,
-          "from_team_id": 0,
-          "from_team": null,
-          "to_team_id": 2,
-          "to_team": "The Bye Week Boys",
-          "from_slot": null,
-          "to_slot": "BENCH",
-          "overall_pick_number": 0,
-          "is_keeper": false
-        },
-        {
-          "item_type": "DROP",
-          "player_id": 3116389,
-          "from_team_id": 2,
-          "from_team": "The Bye Week Boys",
-          "to_team_id": 0,
-          "to_team": null,
-          "from_slot": "BENCH",
-          "to_slot": null,
-          "overall_pick_number": 0,
-          "is_keeper": false
-        }
-      ]
-    },
-    {
       "id": "c537c90b-bfe0-410d-ba2d-50e4c63ffc9c",
       "type": "WAIVER",
       "status": "EXECUTED",
@@ -28308,6 +28708,46 @@
           "to_team_id": 0,
           "to_team": null,
           "from_slot": "K",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "d4c6ef04-bcf9-49e9-a78b-1153ba42f633",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-04T09:08:30.352000+00:00",
+      "processed_date": "2026-11-04T09:08:30.505000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4570037,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 3116389,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
           "to_slot": null,
           "overall_pick_number": 0,
           "is_keeper": false
@@ -28395,46 +28835,6 @@
       ]
     },
     {
-      "id": "13d6dfd5-ce8c-4c70-bd44-16abaf6e1044",
-      "type": "WAIVER",
-      "status": "FAILED_INVALIDPLAYERSOURCE",
-      "execution_type": "PROCESS",
-      "is_pending": false,
-      "scoring_period_id": 9,
-      "team_id": 7,
-      "team": "Connor\u2019s Team",
-      "bid_amount": 19,
-      "proposed_date": "2026-11-04T09:08:30.352000+00:00",
-      "processed_date": "2026-11-04T09:08:30.504000+00:00",
-      "is_league_manager": false,
-      "items": [
-        {
-          "item_type": "ADD",
-          "player_id": 3126486,
-          "from_team_id": 0,
-          "from_team": null,
-          "to_team_id": 7,
-          "to_team": "Connor\u2019s Team",
-          "from_slot": "BENCH",
-          "to_slot": null,
-          "overall_pick_number": 0,
-          "is_keeper": false
-        },
-        {
-          "item_type": "DROP",
-          "player_id": 4608810,
-          "from_team_id": 7,
-          "from_team": "Connor\u2019s Team",
-          "to_team_id": 0,
-          "to_team": null,
-          "from_slot": "FLEX",
-          "to_slot": null,
-          "overall_pick_number": 0,
-          "is_keeper": false
-        }
-      ]
-    },
-    {
       "id": "cd505244-62a3-4166-ac94-ddb52a5f8b20",
       "type": "WAIVER",
       "status": "FAILED_INVALIDPLAYERSOURCE",
@@ -28508,6 +28908,46 @@
           "to_team_id": 0,
           "to_team": null,
           "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "13d6dfd5-ce8c-4c70-bd44-16abaf6e1044",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 7,
+      "team": "Connor\u2019s Team",
+      "bid_amount": 19,
+      "proposed_date": "2026-11-04T09:08:30.352000+00:00",
+      "processed_date": "2026-11-04T09:08:30.504000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 3126486,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 7,
+          "to_team": "Connor\u2019s Team",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4608810,
+          "from_team_id": 7,
+          "from_team": "Connor\u2019s Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "FLEX",
           "to_slot": null,
           "overall_pick_number": 0,
           "is_keeper": false
@@ -43788,7 +44228,7 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 44,
+    "0": 54,
     "1": 238,
     "2": 56,
     "3": 68,
@@ -43797,10 +44237,10 @@
     "6": 111,
     "7": 119,
     "8": 123,
-    "9": 44
+    "9": 54
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 9,
-  "fetched_at": "2026-11-05T00:31:16.733492+00:00"
+  "fetched_at": "2026-11-05T06:20:29.719072+00:00"
 }

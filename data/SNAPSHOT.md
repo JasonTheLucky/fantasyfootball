@@ -4,16 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-05T00:31:19.382236+00:00` |
+| Fetched at (UTC) | `2026-11-05T06:20:32.568780+00:00` |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
 | Available players (FA + waivers) | 859 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.65s |
+| Fetch duration | 2.85s |
 | ESPN calls | 13 |
-| Workflow run | `41941914115` |
+| Workflow run | `41979738997` |
 
 ## Freshness and completeness gates
 
@@ -74,13 +74,14 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (42)
+## Injury designations (44)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Bhayshul Tuten | RB | QUESTIONABLE | RB | yes |
 | Jason X | Christian Watson | WR | QUESTIONABLE | WR | yes |
 | Jason X | Cam Skattebo | RB | QUESTIONABLE | BENCH | NO |
+| Jason X | Bhayshul Tuten | RB | QUESTIONABLE | BENCH | NO |
+| Jason X | Treylon Burks | WR | QUESTIONABLE | BENCH | NO |
 | Jason X | Tyjae Spears | RB | OUT | BENCH | NO |
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | FLEX | yes |
@@ -98,14 +99,15 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Burrow's Bunch | George Pickens | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Deebo Samuel Sr. | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
+| Connor’s Team | Kenny Gainwell | RB | QUESTIONABLE | RB | yes |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Carnell Tate | WR | OUT | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
+| Giant Packer Fan | Travis Kelce | TE | QUESTIONABLE | FLEX | yes |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | WR | yes |
-| Giant Packer Fan | Travis Kelce | TE | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Emeka Egbuka | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
@@ -131,24 +133,24 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Transactions
 
-924 total | 233 executed ownership changes | 443 lineup-only moves | 192 draft picks | 0 pending
+934 total | 234 executed ownership changes | 451 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-05T05:20 | Jason X | FREEAGENT | ADD Lions D/ST, DROP Bengals D/ST |
 | 2026-11-04T09:20 | The Bye Week Boys | FREEAGENT | ADD Cairo Santos, DROP Tyler Loop |
 | 2026-11-04T09:08 | The Bye Week Boys | WAIVER | ADD Chris Rodriguez Jr., DROP Caleb Douglas |
 | 2026-11-04T09:08 | Jason X | WAIVER | ADD Buccaneers D/ST, DROP Spencer Shrader |
-| 2026-11-04T09:08 | The Bye Week Boys | WAIVER | ADD Terrance Ferguson, DROP Samaje Perine |
 | 2026-11-04T09:08 | Connor’s Team | WAIVER | ADD Cam Little, DROP Jason Myers |
+| 2026-11-04T09:08 | The Bye Week Boys | WAIVER | ADD Terrance Ferguson, DROP Samaje Perine |
 | 2026-11-04T09:08 | Cole-Train | WAIVER | ADD Devin Singletary, DROP Kimani Vidal |
 | 2026-11-04T09:08 | Burrow's Bunch | WAIVER | ADD Bills D/ST, DROP Mike Washington Jr. |
 | 2026-11-04T09:08 | From Puka with Love | WAIVER | ADD Deebo Samuel Sr. |
 | 2026-11-04T03:52 | Jason X | TRADE_DECLINE | - |
 | 2026-11-03T18:21 | From Puka with Love | ROSTER | DROP Josh Downs |
 | 2026-11-03T18:18 | From Puka with Love | ROSTER | DROP Emanuel Wilson |
-| 2026-11-03T13:55 | Cole-Train | ROSTER | DROP Konata Mumpfield |
 
 ## League format
 
