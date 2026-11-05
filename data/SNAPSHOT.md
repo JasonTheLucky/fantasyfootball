@@ -4,16 +4,15 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-05T18:14:52.502539+00:00` |
+| Fetched at (UTC) | `2026-11-05T22:34:07.874194+00:00` |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 2.09s |
-| ESPN calls | 13 |
-| Workflow run | `42082353535` |
+| Fetch duration | 11.19s |
+| ESPN calls | 31 |
 
 ## Freshness and completeness gates
 
@@ -26,6 +25,7 @@
 | Matchups retrieved | yes |
 | Ownership reconciled, no conflicts | yes |
 | Player lookup index complete | yes |
+| Recent form rankings built | yes |
 
 ## Week 9 matchups
 
@@ -74,7 +74,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (44)
+## Injury designations (43)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -95,21 +95,20 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | QB | yes |
 | Auto Draft Champion | Christian McCaffrey | RB | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Cole-Train | Lamar Jackson | QB | OUT | IR | NO |
+| Cole-Train | Malik Nabers | WR | QUESTIONABLE | WR | yes |
+| Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | George Pickens | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Deebo Samuel Sr. | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | Kenny Gainwell | RB | QUESTIONABLE | RB | yes |
+| Connor’s Team | Dalton Kincaid | TE | QUESTIONABLE | TE | yes |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Carnell Tate | WR | OUT | BENCH | NO |
+| Connor’s Team | MarShawn Lloyd | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
-| Giant Packer Fan | Travis Kelce | TE | QUESTIONABLE | FLEX | yes |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | WR | yes |
-| Nicole's Gnarly Team | Breece Hall | RB | QUESTIONABLE | BENCH | NO |
-| Nicole's Gnarly Team | Emeka Egbuka | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Nicole's Gnarly Team | Deshaun Watson | QB | QUESTIONABLE | BENCH | NO |
@@ -120,8 +119,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
+| Commanders of Chaos | Harold Fannin Jr. | TE | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
-| Commanders of Chaos | Rashee Rice | WR | QUESTIONABLE | BENCH | NO |
 
 ## Available player pool by position
 
@@ -130,6 +129,35 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | 17 | 43 | 110 | 184 | 186 | 317 | 857 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
+
+## Recent form (last 3 completed games)
+
+Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9]. Ranked 212 of 212 expected.
+
+| Pos | Limit | Qualifying | Ranked | At limit |
+| --- | --- | --- | --- | --- |
+| QB | 24 | 100 | 24 | yes |
+| RB | 60 | 155 | 60 | yes |
+| WR | 60 | 252 | 60 | yes |
+| TE | 24 | 148 | 24 | yes |
+| K | 24 | 35 | 24 | yes |
+| D/ST | 20 | 32 | 20 | yes |
+
+ESPN `appliedTotal` vs recomputed league scoring: max absolute delta **0.0** across 636 values (tolerance 0.01). `appliedTotal` is the authoritative value; this is drift detection only.
+
+14 ranked player(s) are on `Jason X` (team id 1) and carry `is_jason_x`, which drives the pale-yellow row highlight in the daily PDF. 0 owner(s) unresolved.
+
+Top 5 overall by three-game average:
+
+| # | Player | Pos | Team | Weeks | Avg | Owner |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Joe Burrow | QB | CIN | 5, 7, 8 | 32.32 | Burrow's Bunch |
+| 2 | Jaxon Smith-Njigba | WR | SEA | 6, 7, 8 | 28.83 | **Jason X** |
+| 3 | Jahmyr Gibbs | RB | DET | 5, 7, 8 | 28.60 | Giant Packer Fan |
+| 4 | Malik Nabers | WR | NYG | 5, 6, 7 | 27.23 | Cole-Train |
+| 5 | Josh Allen | QB | BUF | 5, 6, 8 | 25.79 | Giant Packer Fan |
+
+Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
@@ -161,6 +189,7 @@ Scoring: `H2H_POINTS`. Starting lineup and bench: QB x1, RB x2, WR x2, TE x1, D/
 | File | Contents |
 | --- | --- |
 | `metadata.json` | Fetch timestamps, week, per-step success flags. Read first. |
+| `recent_form_rankings.json` | Top 24 QB / 60 RB / 60 WR / 24 TE / 24 K / 20 D/ST by average points over each player's last three completed games, with owner and Jason X flag. |
 | `player_index.json` | **Name to owner lookup for every classified player. Use this to answer "who owns X?".** |
 | `ownership.json` | Positive ownership: player id to owner, plus availability. |
 | `rosters.json` | Every team's starters, bench, and IR. |

@@ -49,6 +49,7 @@ def build() -> str:
     transactions = load("transactions.json") or {}
     matchups = load("matchups.json") or {}
     league = load("league.json") or {}
+    recent_form = load("recent_form_rankings.json") or {}
 
     critical = metadata.get("critical_success")
     lines: list[str] = []
@@ -89,6 +90,7 @@ def build() -> str:
     add(f"| Ownership reconciled, no conflicts | "
         f"{tick(metadata.get('ownership_reconciled'))} |")
     add(f"| Player lookup index complete | {tick(metadata.get('player_index_built'))} |")
+    add(f"| Recent form rankings built | {tick(metadata.get('recent_form_success'))} |")
     add("")
 
     errors = metadata.get("errors") or []
@@ -199,6 +201,76 @@ def build() -> str:
         )
         add("")
 
+    # ---- recent form ----------------------------------------------------
+    # Locals are rf_counts / rf_block: build() already binds `counts` above for
+    # the availability block, and reusing the name would shadow a live variable.
+    rf_counts = recent_form.get("counts") or {}
+    if rf_counts:
+        add("## Recent form (last 3 completed games)")
+        add("")
+        rf_fetched = recent_form.get("fetched_at")
+        if rf_fetched and rf_fetched != metadata.get("started_at"):
+            add(f"**From an earlier run:** this section comes from a snapshot started "
+                f"`{rf_fetched}`, while the rest of this digest is from "
+                f"`{metadata.get('started_at')}`.")
+            add("")
+        add(f"Weeks considered: {(recent_form.get('weeks') or {}).get('considered')}. "
+            f"Ranked {recent_form.get('ranked_total')} of "
+            f"{recent_form.get('expected_total')} expected.")
+        add("")
+        add("| Pos | Limit | Qualifying | Ranked | At limit |")
+        add("| --- | --- | --- | --- | --- |")
+        for pos, rf_block in rf_counts.items():
+            add(f"| {pos} | {rf_block.get('limit')} | {rf_block.get('qualifying')} "
+                f"| {rf_block.get('ranked')} | {tick(rf_block.get('sufficient'))} |")
+        add("")
+        check = recent_form.get("scoring_crosscheck") or {}
+        add(f"ESPN `appliedTotal` vs recomputed league scoring: max absolute delta "
+            f"**{check.get('max_abs_delta')}** across {check.get('values_checked')} "
+            f"values (tolerance {check.get('tolerance')}). `appliedTotal` is the "
+            f"authoritative value; this is drift detection only.")
+        add("")
+        rf_own = recent_form.get("ownership") or {}
+        add(f"{rf_own.get('is_jason_x_count')} ranked player(s) are on "
+            f"`{rf_own.get('jason_x_team_name_observed')}` (team id "
+            f"{rf_own.get('jason_x_team_id')}) and carry `is_jason_x`, which drives "
+            f"the pale-yellow row highlight in the daily PDF. "
+            f"{rf_own.get('unknown')} owner(s) unresolved.")
+        add("")
+        if rf_own.get("jason_x_name_id_agree") is False:
+            add(f"**Team renamed:** team id {rf_own.get('jason_x_team_id')} selects "
+                f"{rf_own.get('jason_x_by_id_count')} player(s) while the name "
+                f"`{rf_own.get('jason_x_team_name')}` selects "
+                f"{rf_own.get('jason_x_by_name_count')}. Highlighting follows the id.")
+            add("")
+        failed = (recent_form.get("weeks") or {}).get("failed") or []
+        if failed:
+            add(f"**Incomplete:** scoring periods {failed} could not be fetched, so "
+                f"these rankings are built from the remaining weeks.")
+            add("")
+        top = sorted(
+            (e for rows in (recent_form.get("rankings") or {}).values() for e in rows),
+            key=lambda e: (-(e.get("avg_3_game_exact") or 0), e.get("player_id") or 0),
+        )[:5]
+        if top:
+            add("Top 5 overall by three-game average:")
+            add("")
+            add("| # | Player | Pos | Team | Weeks | Avg | Owner |")
+            add("| --- | --- | --- | --- | --- | --- | --- |")
+            for i, entry in enumerate(top, 1):
+                weeks = ", ".join(
+                    str(g.get("scoring_period_id")) for g in entry.get("games") or []
+                )
+                owner = entry.get("owner_label") or "UNKNOWN"
+                if entry.get("is_jason_x"):
+                    owner = f"**{owner}**"
+                add(f"| {i} | {entry.get('name')} | {entry.get('position')} "
+                    f"| {entry.get('pro_team')} | {weeks} "
+                    f"| {entry.get('avg_3_game_display')} | {owner} |")
+            add("")
+            add("Owner in **bold** means `is_jason_x` is true.")
+            add("")
+
     # ---- transactions ---------------------------------------------------
     tx_counts = transactions.get("counts") or {}
     recent = transactions.get("executed_ownership_changes") or []
@@ -251,6 +323,9 @@ def build() -> str:
     add("| File | Contents |")
     add("| --- | --- |")
     add("| `metadata.json` | Fetch timestamps, week, per-step success flags. Read first. |")
+    add("| `recent_form_rankings.json` | Top 24 QB / 60 RB / 60 WR / 24 TE / 24 K / "
+        "20 D/ST by average points over each player's last three completed games, "
+        "with owner and Jason X flag. |")
     add("| `player_index.json` | **Name to owner lookup for every classified player. "
         "Use this to answer \"who owns X?\".** |")
     add("| `ownership.json` | Positive ownership: player id to owner, plus availability. |")

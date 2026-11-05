@@ -42,6 +42,7 @@ import argparse
 import gzip
 import io
 import json
+import math
 import os
 import random
 import re
@@ -96,6 +97,79 @@ PRO_TEAMS: dict[int, str] = {
 }
 
 # Transaction item types that actually move a player between owners.
+# Per-position ranking limits for the recent-form rankings. This is the single
+# source of truth for those numbers: the JSON artifact, SNAPSHOT.md, the daily
+# report prompt, the README and the test suite all trace back here. Total 212.
+RECENT_FORM_LIMITS: dict[str, int] = {
+    "QB": 24, "RB": 60, "WR": 60, "TE": 24, "K": 24, "D/ST": 20,
+}
+
+# Number of completed games a player must have to be ranked. Exactly this many,
+# never fewer, never padded.
+RECENT_FORM_GAMES = 3
+
+# The fantasy team whose players drive the PDF's pale-yellow row highlight. The
+# id is the authority: two teams in this league have already been renamed
+# mid-season, and a rename must not silently switch the highlighting off. The
+# name is kept for display and as a cross-check that the id still points at the
+# team we think it does.
+JASON_X_TEAM_ID = 1
+JASON_X_TEAM_NAME = "Jason X"
+
+# availability_status in player_index.json -> the label shown in the report.
+AVAILABILITY_LABELS: dict[str, str] = {
+    "FREEAGENT": "FREE AGENT",
+    "WAIVERS": "WAIVERS",
+}
+
+OWNER_UNKNOWN = "UNKNOWN"
+
+# ESPN rejects a players filter with limit > 1500 (HTTP 400) and returns only 50
+# players when no X-Fantasy-Filter is sent at all. 1000 is the page size the
+# existing player-pool fetch already proves, and this league's pool is ~1,055,
+# so every week takes two requests.
+RECENT_FORM_PAGE_SIZE = 1000
+RECENT_FORM_MAX_PAGES = 6
+
+# Diagnostic tolerance for the appliedTotal cross-check. Exceeding it records a
+# warning; it never changes a ranking.
+SCORING_CROSSCHECK_TOLERANCE = 0.01
+
+# Written into the artifact so a reader of the JSON alone understands the rules.
+RECENT_FORM_USAGE = (
+    "Recent form rankings. Each player is ranked on the average actual fantasy "
+    "points of that player's own last three completed games, under this league's "
+    "exact scoring. The three games are the three highest scoring periods for "
+    "which ESPN reported an actual score for that player, so two players in the "
+    "same table can be using different weeks after a bye. A game qualifies if and "
+    "only if ESPN reported an actual entry (statSourceId 0) for that scoring "
+    "period for that player: a recorded 0.0 counts as a completed game, and "
+    "absence means a bye or did-not-play and does not count. ESPN sometimes "
+    "records 0.0 with no underlying stats for a player who was active but did not "
+    "play; those rows count too, and diagnostics.zero_stat_games reports how many "
+    "of the collected weekly values had that shape. A player with fewer than three "
+    "qualifying games is excluded entirely; nothing is padded and no placeholder "
+    "row exists. Weekly points come from ESPN's appliedTotal on a league-scoped "
+    "request, which already applies this league's scoring settings; "
+    "scoring_crosscheck independently recomputes them from league.json "
+    "scoring_settings and reports the largest disagreement. Lists are sorted by "
+    "avg_3_game_exact descending with ties broken by ascending ESPN player id; "
+    "avg_3_game_display carries the two decimals to show. owner_label is the "
+    "owning fantasy team's current name, or FREE AGENT, or WAIVERS, or UNKNOWN "
+    "when the id is absent from player_index.json, resolved by ESPN player id "
+    "only. is_jason_x is true only when that index reports fantasy_status ROSTERED "
+    "and fantasy_team_id equal to ownership.jason_x_team_id, regardless of "
+    "starter, bench or IR slot, and it is what drives the pale-yellow row "
+    "highlight in the daily PDF: highlight every row where it is true and no other "
+    "row. The team id is the authority rather than the team name because teams in "
+    "this league get renamed mid-season; ownership.jason_x_team_name_observed is "
+    "the name that id currently carries, and ownership.jason_x_name_id_agree is "
+    "false when the name no longer selects the same players as the id. Because "
+    "qualification is defined on entry presence, a snapshot taken while games are "
+    "in progress can count a partially played week for players whose game has "
+    "already kicked off; weeks.with_data shows which periods contributed."
+)
+
 OWNERSHIP_ITEM_TYPES = {"ADD", "DROP", "TRADE"}
 # Transaction types that are lineup-only shuffles, not ownership changes.
 LINEUP_ONLY_TYPES = {"ROSTER", "FUTURE_ROSTER"}
@@ -810,6 +884,431 @@ def build_player_index(rosters: list[dict], available_players: list[dict]) -> di
 
 
 # --------------------------------------------------------------------------
+# Recent form rankings
+# --------------------------------------------------------------------------
+
+
+def scoring_items_by_stat_id(scoring_settings: dict | None) -> dict[int, dict]:
+    """Index league scoringItems by statId for the appliedTotal cross-check.
+
+    Returns {} when the settings are missing, which disables the cross-check
+    rather than failing the step.
+    """
+    items: dict[int, dict] = {}
+    for item in (scoring_settings or {}).get("scoringItems") or []:
+        if not isinstance(item, dict):
+            continue
+        try:
+            items[int(item["statId"])] = item
+        except (KeyError, TypeError, ValueError):
+            continue
+    return items
+
+
+def recompute_applied_total(
+    raw_stats: dict | None,
+    scoring_items: dict[int, dict],
+    position_id: Any,
+) -> float:
+    """Recompute a weekly score from league scoringItems. Diagnostic only.
+
+    ESPN's inner per-week ``stats`` dict comes straight from JSON, so its keys
+    are strings while ``scoring_items`` is keyed by int. Without the int()
+    coercion every lookup misses and the cross-check reports a false delta the
+    size of the largest weekly score. ``pointsOverrides`` is equally
+    load-bearing: this league keys overrides by defaultPositionId as a string,
+    so ignoring them reports a large false delta on every D/ST.
+    """
+    total = 0.0
+    for raw_key, raw_value in (raw_stats or {}).items():
+        try:
+            stat_id = int(raw_key)      # ESPN ships these as JSON string keys
+            value = float(raw_value)
+        except (TypeError, ValueError):
+            continue
+        item = scoring_items.get(stat_id)
+        if item is None:
+            continue
+        points = (item.get("pointsOverrides") or {}).get(
+            str(position_id), item.get("points")
+        )
+        try:
+            total += value * float(points)
+        except (TypeError, ValueError):
+            continue
+    return total
+
+
+def extract_weekly_entry(
+    player_obj: dict, season: int, week: int
+) -> tuple[float, dict] | None:
+    """(appliedTotal, raw stats dict) for the week's actual, or None.
+
+    Selects on statSourceId == 0 (actual, not projection), scoringPeriodId ==
+    week (not the season aggregate, which uses 0) and seasonId == season (prior
+    seasons share the same array). All three are required to identify the row.
+    """
+    for entry in (player_obj or {}).get("stats") or []:
+        if not isinstance(entry, dict):
+            continue
+        if entry.get("statSourceId") != 0:
+            continue
+        if entry.get("scoringPeriodId") != week:
+            continue
+        if entry.get("seasonId") != season:
+            continue
+        applied = entry.get("appliedTotal")
+        if not isinstance(applied, (int, float)) or isinstance(applied, bool):
+            return None
+        if not math.isfinite(applied):
+            return None
+        return float(applied), (entry.get("stats") or {})
+    return None
+
+
+def fetch_weekly_actuals(
+    client: EspnClient,
+    season: int,
+    week: int,
+    scoring_items: dict[int, dict],
+    page_size: int = RECENT_FORM_PAGE_SIZE,
+    max_pages: int = RECENT_FORM_MAX_PAGES,
+) -> tuple[dict[int, dict], dict[int, dict], dict[str, int]]:
+    """One scoring period's actual points for the whole league-scoped pool.
+
+    No ``filterStatus``: omitting it returns ONTEAM + WAIVERS + FREEAGENT in one
+    response, including D/ST units with negative ids. An ``X-Fantasy-Filter`` is
+    still required for paging, because with no filter header at all the endpoint
+    returns only 50 players and no D/ST. ``filterStatsForTopScoringPeriodIds``
+    must never be sent: it is an immediate HTTP 400 on this endpoint.
+
+    Returns (actuals, meta, diag) where
+      actuals = {player_id: {"points", "applied_raw", "recomputed"}}
+      meta    = {player_id: {"name", "position", "pro_team", "position_id"}}
+      diag    = {"requests", "invalid_values", "zero_stat_games"}
+    """
+    actuals: dict[int, dict] = {}
+    meta: dict[int, dict] = {}
+    diag = {"requests": 0, "invalid_values": 0, "zero_stat_games": 0}
+    offset = 0
+
+    for _ in range(max_pages):
+        fantasy_filter = {
+            "players": {
+                "limit": page_size,
+                "offset": offset,
+                "sortPercOwned": {"sortAsc": False, "sortPriority": 1},
+            }
+        }
+        payload = client.get(
+            views="kona_player_info",
+            params={"scoringPeriodId": week},
+            fantasy_filter=fantasy_filter,
+            label=f"recent_form@w{week}+{offset}",
+        )
+        diag["requests"] += 1
+        page = payload.get("players") or []
+
+        for wrapper in page:
+            if not isinstance(wrapper, dict):
+                continue
+            player_obj = wrapper.get("player") or {}
+            pid = wrapper.get("id")
+            if not isinstance(pid, int):
+                continue
+            position_id = player_obj.get("defaultPositionId")
+            meta[pid] = {
+                "name": player_obj.get("fullName"),
+                "position": POSITIONS.get(position_id, "UNKNOWN"),
+                "pro_team": PRO_TEAMS.get(player_obj.get("proTeamId"), "UNKNOWN"),
+                "position_id": position_id,
+            }
+            found = extract_weekly_entry(player_obj, season, week)
+            if found is None:
+                # Either no row for this week (bye / did not play) or a row whose
+                # appliedTotal was unusable. Only the latter is a data problem.
+                if any(
+                    isinstance(e, dict)
+                    and e.get("statSourceId") == 0
+                    and e.get("scoringPeriodId") == week
+                    and e.get("seasonId") == season
+                    for e in player_obj.get("stats") or []
+                ):
+                    diag["invalid_values"] += 1
+                continue
+            applied_total, raw_stats = found
+            if applied_total == 0.0 and not raw_stats:
+                # ESPN emits these for players who were active but did not play.
+                # They qualify as completed games under the presence rule; the
+                # count is published so the magnitude stays visible.
+                diag["zero_stat_games"] += 1
+            actuals[pid] = {
+                "points": _round(applied_total),
+                "applied_raw": applied_total,
+                "recomputed": (
+                    recompute_applied_total(raw_stats, scoring_items, position_id)
+                    if scoring_items
+                    else None
+                ),
+            }
+
+        if len(page) < page_size:
+            break
+        offset += page_size
+
+    return actuals, meta, diag
+
+
+def resolve_ownership(
+    player_id: Any,
+    players_by_id: dict[str, dict],
+    jason_x_team_id: Any = JASON_X_TEAM_ID,
+    jason_x_team_name: str = JASON_X_TEAM_NAME,
+) -> dict:
+    """Owner label and Jason X flag for one ESPN player id.
+
+    Pure: the only inputs are the id and the index mapping, so a synthetic index
+    produces synthetic ownership with no code change. This is the single place
+    that decides ``is_jason_x``, and it decides it on the fantasy team **id**,
+    never on the team name, because teams here get renamed mid-season.
+    """
+    unknown = {
+        "owner_label": OWNER_UNKNOWN,
+        "is_jason_x": False,
+        "fantasy_status": None,
+        "owner_team_id": None,
+        "owner_name_is_jason_x": False,
+    }
+
+    record = (players_by_id or {}).get(str(player_id))
+    if not isinstance(record, dict):
+        return dict(unknown)
+
+    status = record.get("fantasy_status")
+    if status == "ROSTERED":
+        team_name = record.get("fantasy_team")
+        team_id = record.get("fantasy_team_id")
+        has_name = isinstance(team_name, str) and team_name.strip() != ""
+        return {
+            # The team's *current* name, so a rename surfaces in the OWNER column.
+            "owner_label": team_name if has_name else OWNER_UNKNOWN,
+            # The id is the authority: a missing display name must not switch
+            # highlighting off.
+            "is_jason_x": team_id == jason_x_team_id,
+            "fantasy_status": status,
+            "owner_team_id": team_id,
+            "owner_name_is_jason_x": has_name and team_name == jason_x_team_name,
+        }
+
+    label = AVAILABILITY_LABELS.get(record.get("availability_status"), OWNER_UNKNOWN)
+    return {
+        "owner_label": label,
+        "is_jason_x": False,
+        "fantasy_status": status,
+        "owner_team_id": None,
+        "owner_name_is_jason_x": False,
+    }
+
+
+def recent_form_weeks(status: dict, scoring_period_id: int | None) -> list[int]:
+    """Candidate scoring periods: 1..latest, capped at the season's final week."""
+    last = None
+    for candidate in ((status or {}).get("latestScoringPeriod"), scoring_period_id):
+        if isinstance(candidate, int) and not isinstance(candidate, bool) and candidate > 0:
+            last = candidate
+            break
+    if last is None:
+        return []
+
+    final = (status or {}).get("finalScoringPeriod")
+    if not (isinstance(final, int) and not isinstance(final, bool) and 1 <= final <= 30):
+        final = 18
+    return list(range(1, min(last, final) + 1))
+
+
+def build_recent_form(
+    weekly: dict[int, dict[int, dict]],
+    meta: dict[int, dict],
+    players_by_id: dict[str, dict],
+    weeks_considered: list[int],
+    limits: dict[str, int] | None = None,
+    games_required: int = RECENT_FORM_GAMES,
+    jason_x_team_id: Any = JASON_X_TEAM_ID,
+    jason_x_team_name: str = JASON_X_TEAM_NAME,
+) -> dict:
+    """Assemble the ranked payload. Pure: no I/O, no network, no clock."""
+    limits = RECENT_FORM_LIMITS if limits is None else limits
+
+    rankings: dict[str, list[dict]] = {}
+    counts: dict[str, dict] = {}
+    crosscheck_rows: list[tuple[int, dict, int, dict]] = []
+
+    for position, limit in limits.items():
+        candidates: list[dict] = []
+        for pid, info in meta.items():
+            if info.get("position") != position:
+                continue
+            weeks_for_player = weekly.get(pid) or {}
+            # The three highest week numbers, not the three best scores.
+            chosen = sorted(weeks_for_player, reverse=True)[:games_required]
+            if len(chosen) < games_required:
+                continue
+            chosen.sort()                       # ascending: oldest game first
+            games = [
+                {"scoring_period_id": wk, "points": weeks_for_player[wk]["points"]}
+                for wk in chosen
+            ]
+            avg_exact = sum(g["points"] for g in games) / games_required
+            name = info.get("name")
+            if not name:
+                record = (players_by_id or {}).get(str(pid))
+                name = (record or {}).get("name") if isinstance(record, dict) else None
+            candidates.append(
+                {
+                    "player_id": pid,
+                    "name": name or f"Player {pid}",
+                    "position": position,
+                    "pro_team": info.get("pro_team", "UNKNOWN"),
+                    "games": games,
+                    "avg_3_game_exact": avg_exact,
+                    "avg_3_game": round(avg_exact, 6),
+                    "avg_3_game_display": f"{avg_exact:.2f}",
+                }
+            )
+
+        # Descending unrounded average, ties broken by ascending player id so the
+        # ordering is total and byte-stable between runs.
+        candidates.sort(key=lambda e: (-e["avg_3_game_exact"], e["player_id"]))
+        qualifying = len(candidates)
+        ranked = candidates[:limit]
+
+        for index, entry in enumerate(ranked, 1):
+            entry["rank"] = index
+            own = resolve_ownership(
+                entry["player_id"], players_by_id, jason_x_team_id, jason_x_team_name
+            )
+            entry["owner_label"] = own["owner_label"]
+            entry["owner_team_id"] = own["owner_team_id"]
+            entry["fantasy_status"] = own["fantasy_status"]
+            entry["is_jason_x"] = own["is_jason_x"]
+            for game in entry["games"]:
+                row = (weekly.get(entry["player_id"]) or {})[game["scoring_period_id"]]
+                if row.get("recomputed") is not None:
+                    crosscheck_rows.append(
+                        (entry["player_id"], entry, game["scoring_period_id"], row)
+                    )
+
+        rankings[position] = ranked
+        counts[position] = {
+            "limit": limit,
+            "qualifying": qualifying,
+            "ranked": len(ranked),
+            "sufficient": len(ranked) == limit,
+            "weeks_used": sorted(
+                {g["scoring_period_id"] for e in ranked for g in e["games"]}
+            ),
+        }
+
+    ranked_total = sum(len(rows) for rows in rankings.values())
+
+    # Cross-check over exactly the weekly values that landed in a ranked entry.
+    worst: dict | None = None
+    max_abs_delta: float | None = None
+    for pid, entry, week, row in crosscheck_rows:
+        delta = abs(row["applied_raw"] - row["recomputed"])
+        if max_abs_delta is None or delta > max_abs_delta:
+            max_abs_delta = delta
+            worst = {
+                "player_id": pid,
+                "name": entry["name"],
+                "position": entry["position"],
+                "scoring_period_id": week,
+                "applied_total": row["applied_raw"],
+                "points_stored": row["points"],
+                "recomputed": row["recomputed"],
+                "abs_delta": delta,
+            }
+    if crosscheck_rows:
+        crosscheck = {
+            "values_checked": len(crosscheck_rows),
+            "tolerance": SCORING_CROSSCHECK_TOLERANCE,
+            "max_abs_delta": _round(max_abs_delta, 6),
+            "ok": max_abs_delta <= SCORING_CROSSCHECK_TOLERANCE,
+            "worst": worst,
+        }
+    else:
+        crosscheck = {
+            "values_checked": 0,
+            "tolerance": SCORING_CROSSCHECK_TOLERANCE,
+            "max_abs_delta": None,
+            "ok": None,
+            "worst": None,
+            "note": "no league scoring table was available, so the cross-check was skipped",
+        }
+    crosscheck["note"] = crosscheck.get("note") or (
+        "ESPN appliedTotal is authoritative and is the value ranked. This block "
+        "recomputes sum(stats[statId] * scoringItems[statId].points), honouring "
+        "pointsOverrides by defaultPositionId, purely so silent scoring drift is "
+        "detectable. It never changes a ranking."
+    )
+
+    # Ownership block, including the id-versus-name cross-check. Index-wide, so a
+    # rename is detected even in a week when no Jason X player is inside a limit.
+    ids_by_id = {
+        pid for pid, rec in (players_by_id or {}).items()
+        if isinstance(rec, dict) and rec.get("fantasy_status") == "ROSTERED"
+        and rec.get("fantasy_team_id") == jason_x_team_id
+    }
+    ids_by_name = {
+        pid for pid, rec in (players_by_id or {}).items()
+        if isinstance(rec, dict) and rec.get("fantasy_status") == "ROSTERED"
+        and rec.get("fantasy_team") == jason_x_team_name
+    }
+    observed = sorted({
+        rec.get("fantasy_team") for rec in (players_by_id or {}).values()
+        if isinstance(rec, dict) and rec.get("fantasy_team_id") == jason_x_team_id
+        and rec.get("fantasy_team")
+    })
+    all_entries = [e for rows in rankings.values() for e in rows]
+    unknown_count = sum(1 for e in all_entries if e["owner_label"] == OWNER_UNKNOWN)
+
+    return {
+        "usage": RECENT_FORM_USAGE,
+        "weeks": {
+            "considered": list(weeks_considered),
+            "games_required": games_required,
+        },
+        "limits": dict(limits),
+        "expected_total": sum(limits.values()),
+        "ranked_total": ranked_total,
+        "all_positions_sufficient": all(b["sufficient"] for b in counts.values()),
+        "counts": counts,
+        "scoring_crosscheck": crosscheck,
+        "ownership": {
+            "source": "player_index.json players_by_id from this same snapshot run",
+            "match": "ESPN player id only; no name matching",
+            "jason_x_team_id": jason_x_team_id,
+            "jason_x_team_name": jason_x_team_name,
+            "jason_x_team_name_observed": (
+                observed[0] if len(observed) == 1 else (" | ".join(observed) or None)
+            ),
+            "jason_x_name_id_agree": ids_by_id == ids_by_name,
+            "jason_x_by_id_count": len(ids_by_id),
+            "jason_x_by_name_count": len(ids_by_name),
+            "entries": ranked_total,
+            "resolved": ranked_total - unknown_count,
+            "unknown": unknown_count,
+            "is_jason_x_count": sum(1 for e in all_entries if e["is_jason_x"]),
+        },
+        "diagnostics": {
+            "players_seen": len(meta),
+            "weekly_values_collected": sum(len(w) for w in weekly.values()),
+        },
+        "rankings": rankings,
+    }
+
+
+# --------------------------------------------------------------------------
 # Fetch steps
 # --------------------------------------------------------------------------
 
@@ -1027,7 +1526,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Started {started_at.isoformat()}")
 
     # ---- 1. League core (settings, teams, members, status) ----------------
-    print("\n[1/7] league settings, teams, status")
+    print("\n[1/8] league settings, teams, status")
     try:
         league_raw = client.get(
             views=["mSettings", "mTeam", "mRoster", "mStandings"], label="league_core"
@@ -1142,7 +1641,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     # ---- 2. Rosters -------------------------------------------------------
-    print("\n[2/7] rosters for every team")
+    print("\n[2/8] rosters for every team")
     rosters = build_rosters(
         teams, members_by_id, lineup_slot_counts, settings.get("acquisitionSettings")
     )
@@ -1177,7 +1676,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     # ---- 3. Transactions --------------------------------------------------
-    print("\n[3/7] transactions")
+    print("\n[3/8] transactions")
     teams_by_id = {r["team_id"]: r["team_name"] for r in rosters}
     transactions_payload: dict[str, Any]
     try:
@@ -1214,7 +1713,7 @@ def main(argv: list[str] | None = None) -> int:
     write("transactions.json", transactions_payload)
 
     # ---- 4. Free agent / waiver pool -------------------------------------
-    print("\n[4/7] free agent + waiver pool (X-Fantasy-Filter)")
+    print("\n[4/8] free agent + waiver pool (X-Fantasy-Filter)")
     available: list[dict] = []
     try:
         available = fetch_player_pool(client, scoring_period_id, ["FREEAGENT", "WAIVERS"])
@@ -1247,7 +1746,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     # ---- 5. Matchups for the current period ------------------------------
-    print("\n[5/7] matchups / boxscore for current period")
+    print("\n[5/8] matchups / boxscore for current period")
     try:
         matchup_raw = client.get(
             views=["mMatchupScore", "mBoxscore"],
@@ -1291,7 +1790,7 @@ def main(argv: list[str] | None = None) -> int:
         steps["matchup_fetch_success"] = False
 
     # ---- 6. Ownership reconciliation -------------------------------------
-    print("\n[6/7] ownership reconciliation")
+    print("\n[6/8] ownership reconciliation")
     ownership = build_ownership(rosters, available)
     ownership.update(
         {
@@ -1318,7 +1817,7 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     # ---- 7. Flat player index -------------------------------------------
-    print("\n[7/7] player lookup index")
+    print("\n[7/8] player lookup index")
     player_index = build_player_index(rosters, available)
     player_index.update(
         {
@@ -1348,6 +1847,138 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  WARNING: {message}", file=sys.stderr)
         errors.append(message)
 
+    # ---- 8. Recent form rankings (last 3 completed games) ----------------
+    # No write_raw() here on purpose: 9-17 payloads at ~9 MB each would add
+    # 80-160 MB to the workflow artifact for data this artifact already captures.
+    print("\n[8/8] recent form rankings (last 3 completed games)")
+    recent_form_ranked_total = 0
+    try:
+        weeks_considered = recent_form_weeks(status, scoring_period_id)
+        if not weeks_considered:
+            raise ValueError(
+                "cannot determine the week range: latestScoringPeriod="
+                f"{status.get('latestScoringPeriod')!r}, scoring_period_id="
+                f"{scoring_period_id!r}"
+            )
+        scoring_items = scoring_items_by_stat_id(settings.get("scoringSettings"))
+        if not scoring_items:
+            message = "league scoringItems unavailable; appliedTotal cross-check skipped"
+            print(f"  WARNING: {message}", file=sys.stderr)
+            errors.append(message)
+
+        weekly: dict[int, dict[int, dict]] = {}
+        meta: dict[int, dict] = {}
+        weeks_with_data: list[int] = []
+        weeks_failed: list[int] = []
+        totals = {"requests": 0, "invalid_values": 0, "zero_stat_games": 0}
+
+        for week in weeks_considered:
+            try:
+                actuals, week_meta, diag = fetch_weekly_actuals(
+                    client, season, week, scoring_items
+                )
+            except FetchError as exc:
+                # A week that fails mid-pagination is discarded whole: ranking a
+                # week on half a pool would silently bias every average using it.
+                print(f"  WARNING: recent form week {week}: {exc}", file=sys.stderr)
+                errors.append(f"recent form week {week}: {exc}")
+                weeks_failed.append(week)
+                continue
+            for key in totals:
+                totals[key] += diag.get(key, 0)
+            meta.update(week_meta)           # ascending weeks: latest wins
+            for pid, row in actuals.items():
+                weekly.setdefault(pid, {})[week] = row
+            if actuals:
+                weeks_with_data.append(week)
+
+        payload = build_recent_form(
+            weekly, meta, player_index["players_by_id"], weeks_considered
+        )
+        payload["weeks"]["with_data"] = weeks_with_data
+        payload["weeks"]["failed"] = weeks_failed
+        payload["weeks"]["latest_scoring_period"] = status.get("latestScoringPeriod")
+        payload["weeks"]["final_scoring_period"] = status.get("finalScoringPeriod")
+        payload["diagnostics"]["espn_requests"] = totals["requests"]
+        payload["diagnostics"]["page_size"] = RECENT_FORM_PAGE_SIZE
+        payload["diagnostics"]["invalid_values"] = totals["invalid_values"]
+        payload["diagnostics"]["zero_stat_games"] = totals["zero_stat_games"]
+        payload.update(
+            {
+                "league_id": args.league_id,
+                "season": season,
+                "scoring_period_id": scoring_period_id,
+                # started_at, not now(): every other artifact in this run stamps
+                # the run's start, and the tests use it to tell whether
+                # metadata.json and this file came from the same run.
+                "fetched_at": started_at.isoformat(),
+            }
+        )
+
+        compact = len(json.dumps(payload, separators=(",", ":"))) > 300_000
+        write("recent_form_rankings.json", payload, compact=compact)
+
+        recent_form_ranked_total = payload["ranked_total"]
+        rf_counts = payload["counts"]
+        print("  " + " | ".join(
+            f"{pos} {rf_counts[pos]['ranked']}/{rf_counts[pos]['limit']}"
+            for pos in RECENT_FORM_LIMITS
+        ))
+        check = payload["scoring_crosscheck"]
+        print(
+            f"  {recent_form_ranked_total} ranked of {payload['expected_total']} expected"
+            f" | weeks {weeks_considered[0]}-{weeks_considered[-1]}"
+            f" | cross-check max delta {check['max_abs_delta']}"
+            f" over {check['values_checked']} values"
+        )
+        own = payload["ownership"]
+        print(
+            f"  {own['is_jason_x_count']} Jason X player(s) flagged for highlighting"
+            f" | {own['unknown']} owner(s) unresolved"
+        )
+        for pos, block in rf_counts.items():
+            if not block["sufficient"]:
+                message = (
+                    f"recent form {pos}: only {block['ranked']} of {block['limit']} "
+                    f"ranked; {block['qualifying']} player(s) have "
+                    f"{RECENT_FORM_GAMES} completed games"
+                )
+                print(f"  NOTE: {message}")
+                errors.append(message)
+        if check["ok"] is False:
+            message = (
+                "appliedTotal cross-check exceeded tolerance: max delta "
+                f"{check['max_abs_delta']} > {SCORING_CROSSCHECK_TOLERANCE} "
+                f"({check['worst']})"
+            )
+            print(f"  WARNING: {message}", file=sys.stderr)
+            errors.append(message)
+        if not own["jason_x_name_id_agree"]:
+            message = (
+                f"Jason X roster by team id {JASON_X_TEAM_ID} has "
+                f"{own['jason_x_by_id_count']} player(s) but by team name "
+                f"{JASON_X_TEAM_NAME!r} has {own['jason_x_by_name_count']}; "
+                f"team id {JASON_X_TEAM_ID} is now named "
+                f"{own['jason_x_team_name_observed']!r}. Highlighting follows the id."
+            )
+            print(f"  WARNING: {message}", file=sys.stderr)
+            errors.append(message)
+        if recent_form_ranked_total > 0 and own["unknown"] == recent_form_ranked_total:
+            message = (
+                f"recent form ownership unresolved for all {recent_form_ranked_total} "
+                "ranked players; no Jason X highlights will render"
+            )
+            print(f"  WARNING: {message}", file=sys.stderr)
+            errors.append(message)
+
+        steps["recent_form_success"] = bool(
+            recent_form_ranked_total > 0 and not weeks_failed
+        )
+    except Exception as exc:  # non-critical step: never take the pipeline down
+        print(f"  WARNING: recent form rankings failed: {exc!r}", file=sys.stderr)
+        errors.append(f"recent form rankings failed: {exc}")
+        steps["recent_form_success"] = False
+
     # ---- metadata --------------------------------------------------------
     metadata = build_metadata(
         started_at,
@@ -1364,6 +1995,7 @@ def main(argv: list[str] | None = None) -> int:
         ownership["counts"]["available"],
         league_name=settings.get("name"),
         player_index_count=index_counts["total"],
+        recent_form_ranked_total=recent_form_ranked_total,
     )
     write("metadata.json", metadata)
 
@@ -1427,6 +2059,7 @@ def build_metadata(
     available_count: int = 0,
     league_name: str | None = None,
     player_index_count: int = 0,
+    recent_form_ranked_total: int = 0,
 ) -> dict:
     finished_at = datetime.now(timezone.utc)
     all_ok = all(steps.get(k, False) for k in ("league_fetch_success", "roster_fetch_success"))
@@ -1447,6 +2080,8 @@ def build_metadata(
         "available_player_count": available_count,
         "player_index_count": player_index_count,
         "player_index_built": steps.get("player_index_built", False),
+        "recent_form_success": steps.get("recent_form_success", False),
+        "recent_form_ranked_total": recent_form_ranked_total,
         "roster_fetch_success": steps.get("roster_fetch_success", False),
         "transactions_fetch_success": steps.get("transactions_fetch_success", False),
         "player_pool_fetch_success": steps.get("player_pool_fetch_success", False),

@@ -52,7 +52,8 @@ confirm the snapshot is usable, then go to the detail files.
 | --- | --- |
 | `SNAPSHOT.md` | One-page digest: freshness, gates, matchups, rosters, injuries. Start here. |
 | `metadata.json` | Fetch timestamp, `scoringPeriodId`, per-step success flags, every ESPN call made. |
-| `player_index.json` | Flat name-to-owner lookup for all 1,041 classified players. Use this to answer "who owns X?". |
+| `player_index.json` | Flat name-to-owner lookup for all classified players. Use this to answer "who owns X?". |
+| `recent_form_rankings.json` | Recent form: top 24 QB, 60 RB, 60 WR, 24 TE, 24 K, 20 D/ST by average points over each player's own last three completed games, with the owning fantasy team and a Jason X flag. |
 | `ownership.json` | The ownership gate. Player id to owning team, plus ESPN's availability list. |
 | `rosters.json` | All 12 teams: starters, bench, IR, open slots, records, FAAB remaining. |
 | `available_players.json` | ESPN `FREEAGENT` + `WAIVERS` pool with ownership percentages. |
@@ -134,6 +135,92 @@ Names mapping to more than one player are listed in `collisions`. In this
 snapshot there is exactly one: two free agents named Josh Johnson, a QB and an
 RB, separated by `position`.
 
+### Recent form rankings (last 3 completed games)
+
+`data/recent_form_rankings.json` ranks players by the average actual fantasy
+points of their last three completed games. The limits are **24 QB**, **60 RB**,
+**60 WR**, **24 TE**, **24 K** and **20 D/ST** — total **212**. Those numbers
+have one source, `RECENT_FORM_LIMITS` in `scripts/fetch_espn.py`; the artifact,
+the digest, the daily-report prompt, this README and the tests all trace back to
+it.
+
+**The window is per player, not a fixed week range.** Each player's three most
+recent completed games are used, so two players in the same table can be on
+different weeks after a bye. This is not a stylistic choice: a fixed weeks 6–8
+window yields only 21 kickers against a limit of 24, while the per-player window
+yields 35. It is also why the PDF heads the game columns `GAME 1 (OLDEST) /
+GAME 2 / GAME 3 (LATEST)` with the week inside each cell (`W8 · 24.60`) rather
+than with week numbers.
+
+**What counts as a completed game.** A game qualifies if and only if ESPN
+reported an actual entry for that scoring period for that player. A recorded
+`0.0` counts. Absence means a bye or did-not-play and does not count. A player
+with fewer than three qualifying games is excluded entirely — nothing is padded
+and no placeholder row exists. ESPN sometimes records `0.0` with an empty stats
+dict for a player who was active but did not play; those rows count under this
+rule, and `diagnostics.zero_stat_games` reports how many there were.
+
+Lists are sorted by `avg_3_game_exact` descending, ties broken by ascending ESPN
+player id so the order is total and stable between runs. `avg_3_game_display` is
+the two-decimal string to show.
+
+```json
+{
+  "rank": 2,
+  "player_id": 4430878,
+  "name": "Jaxon Smith-Njigba",
+  "position": "WR",
+  "pro_team": "SEA",
+  "games": [
+    { "scoring_period_id": 6, "points": 25.3 },
+    { "scoring_period_id": 7, "points": 35.4 },
+    { "scoring_period_id": 8, "points": 25.8 }
+  ],
+  "avg_3_game_display": "28.83",
+  "owner_label": "Jason X",
+  "owner_team_id": 1,
+  "fantasy_status": "ROSTERED",
+  "is_jason_x": true
+}
+```
+
+**`is_jason_x` drives the pale-yellow row highlight in the daily PDF.** It is
+resolved by ESPN player id against the same snapshot's `player_index.json`, and
+is true only when `fantasy_status == "ROSTERED"` and `fantasy_team_id == 1`
+(`JASON_X_TEAM_ID`). It is true for bench and IR players and for Jason X's D/ST
+unit, because it never looks at a lineup slot.
+
+The **team id is the authority, not the team name**. Two teams in this league
+were renamed mid-season (`Super Lamario Brothers` → `Cole-Train`,
+`Norberto's Gnarly Team` → `Burrow's Bunch`), and a rename of Jason X under a
+name rule would have switched every highlight off silently while the tests still
+passed. The name is kept as a cross-check: `ownership.jason_x_name_id_agree`
+goes false and the run records a warning when the name and the id stop selecting
+the same players, and `ownership.jason_x_team_name_observed` reports the name the
+id currently carries.
+
+`owner_label` is the owning team's **current** name, or `FREE AGENT`, `WAIVERS`,
+or `UNKNOWN` when the id is absent from the index — never a generic `Owned`, so
+an unusually strong three-game average immediately reads as yours, a waiver
+target, or a trade target.
+
+Weekly points come from ESPN's `appliedTotal` on a league-scoped request, which
+already applies this league's scoring. `scoring_crosscheck` independently
+recomputes every ranked value from `league.json` → `scoring_settings` and reports
+the largest disagreement; it is drift detection only and never changes a ranking.
+
+One consequence worth knowing: because qualification is defined on entry
+presence, a snapshot taken while games are in progress can count a partially
+played week for players whose game has already kicked off. `weeks.with_data`
+shows which periods contributed, and the snapshot refreshes every six hours.
+
+**The rendered PDF cannot be verified here.** The PDF is produced externally by
+ChatGPT from `docs/daily-report-prompt.md`, so no test in this repository can
+confirm the yellow highlighting survived rendering. What the repository does
+verify is the data behind it, in both directions: every flagged player is
+Jason X's in the index, and every Jason X player in the tables is flagged. The
+rendering itself is enforced by prompt gates `T` and `U`.
+
 ### FAAB budgets
 
 This league uses FAAB with a **$200** per-team budget and a $0 minimum bid
@@ -175,6 +262,20 @@ python scripts/fetch_espn.py --help   # league/season/week/output overrides
 ```
 
 No dependencies. Standard library only, Python 3.9+.
+
+### Running the tests
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Standard-library `unittest`, no pytest and no dependencies. The suite runs fully
+offline against the committed `data/*.json`, so it depends on
+`data/recent_form_rankings.json` being committed. A few cases skip rather than
+fail when the committed snapshot is degraded (a scoring period failed to fetch)
+or when `metadata.json` came from a different run than the rankings artifact —
+the scheduled Action commits whatever it produced, so "nothing went wrong this
+time" is not treated as an invariant.
 
 ## How an assistant consumes this
 
@@ -222,6 +323,28 @@ Findings from building this, since they are easy to get wrong:
 - Public leagues need no authentication. If the league is ever made private, add
   `ESPN_SWID` and `ESPN_S2` repository secrets; the script picks them up
   automatically.
+- **Per-week actual scores** come from `view=kona_player_info` with
+  `scoringPeriodId=N`. The weekly actual is the `player.stats` entry with
+  `statSourceId == 0`, `scoringPeriodId == N` **and** `seasonId` equal to the
+  season. All three conditions are required: season aggregates are
+  `statSourceId 0` with `scoringPeriodId 0`, projections are `statSourceId 1`,
+  and prior-season rows share the same array. The inner per-week `stats` dict is
+  keyed by stat id **as a string**, so any recompute must coerce the key.
+- **`appliedTotal` on a league-scoped request already applies this league's
+  scoring.** Verified by recomputing
+  `sum(stats[statId] * scoringItems[statId].points)` from `league.json` for every
+  value used in the rankings: max absolute delta **0.0** across 636 values. The
+  recompute must honour `pointsOverrides`, which this league keys by
+  `defaultPositionId` as a string (statId 123 scores `-1.0` for position 16 and
+  `0.0` otherwise), or it reports a large false delta on every D/ST.
+- `filterStatsForTopScoringPeriodIds` returns **HTTP 400** on this endpoint.
+  Never send it.
+- Omitting `filterStatus` returns ONTEAM + WAIVERS + FREEAGENT together,
+  including D/ST units (`defaultPositionId 16`, negative ids such as `-16026`).
+  An `X-Fantasy-Filter` is still required for paging: with no filter header at
+  all the endpoint returns only 50 players and no D/ST, `limit: 1500` returns the
+  whole pool in one request, and `limit: 2000` is an HTTP 400. The code pages at
+  1000, which is what the free-agent pool fetch already relies on.
 
 ## Maintenance
 

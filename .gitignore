@@ -2,11 +2,15 @@
 # ship in the workflow artifact rather than in git history.
 data/raw/
 
+# Agent pipeline scratch: design docs and reviews, not part of the project.
+.agents/
+
 # Local scratch space
 _testdata/
 _artifact/
 _probe*.py
 _inspect.py
+_t.txt
 
 # Python
 __pycache__/
