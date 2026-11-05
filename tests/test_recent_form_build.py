@@ -238,6 +238,85 @@ class BuildRecentFormTest(unittest.TestCase):
         self.assertAlmostEqual(check["worst"]["abs_delta"], 7.0)
 
 
+class ParticipationTest(unittest.TestCase):
+    """The did-not-play bug: a 0.0 row is only a game if the player appeared.
+
+    Shapes below are the ones ESPN actually emits, taken from live week 6-8
+    responses for this league.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.fe = import_fetch_espn()
+
+    def played(self, raw):
+        return self.fe.played_in_game(raw)
+
+    def test_empty_stats_is_not_a_game(self):
+        # Josh Jacobs week 6 and Mike Evans week 7 both looked exactly like this.
+        self.assertFalse(self.played({}))
+        self.assertFalse(self.played(None))
+
+    def test_games_played_marker_means_played(self):
+        # Tre Tucker week 8: appeared, scored 0.00.
+        self.assertTrue(self.played({"58": 1.0, "155": 1.0, "210": 1.0}))
+        # Zay Flowers week 8: five targets, no catch.
+        self.assertTrue(self.played({"58": 5.0, "156": 1.0, "210": 1.0}))
+        # Omar Cooper Jr. week 8: the minimum real appearance.
+        self.assertTrue(self.played({"156": 1.0, "210": 1.0}))
+
+    def test_stats_without_the_marker_is_not_a_game(self):
+        # Defensive: other stats present but no games-played marker.
+        self.assertFalse(self.played({"58": 1.0, "155": 1.0}))
+
+    def test_marker_must_be_at_least_one(self):
+        self.assertFalse(self.played({"210": 0}))
+        self.assertFalse(self.played({"210": 0.0}))
+        self.assertTrue(self.played({"210": 1}))
+        self.assertTrue(self.played({"210": 2.0}))
+
+    def test_marker_must_be_numeric(self):
+        for junk in (None, "1", True, [], {}):
+            self.assertFalse(self.played({"210": junk}), repr(junk))
+
+    def test_a_scoring_game_is_always_a_game(self):
+        self.assertTrue(
+            self.played({"42": 118.0, "43": 1.0, "53": 6.0, "210": 1.0})
+        )
+
+    def test_the_users_scenario_end_to_end(self):
+        """18.4 / did-not-play / 16.5 must not average in the zero."""
+        weekly = {
+            1: {
+                5: row(18.4),
+                6: row(22.1),
+                7: row(0.0),      # did not play; excluded upstream by the fetch
+                8: row(16.5),
+            }
+        }
+        # Simulate the fetch having dropped week 7, which is what the corrected
+        # played_in_game filter does before the builder ever sees it.
+        del weekly[1][7]
+        out = self.fe.build_recent_form(
+            weekly, {1: meta_entry("RB")}, {}, [5, 6, 7, 8],
+        )
+        entry = out["rankings"]["RB"][0]
+        periods = [g["scoring_period_id"] for g in entry["games"]]
+        self.assertEqual(periods, [5, 6, 8])
+        self.assertAlmostEqual(entry["avg_3_game_exact"], (18.4 + 22.1 + 16.5) / 3)
+        self.assertEqual(entry["avg_3_game_display"], "19.00")
+
+    def test_a_real_zero_still_counts(self):
+        """A played-but-scoreless game belongs in the average."""
+        weekly = {1: {6: row(18.0), 7: row(0.0), 8: row(12.0)}}
+        out = self.fe.build_recent_form(
+            weekly, {1: meta_entry("WR")}, {}, [6, 7, 8],
+        )
+        entry = out["rankings"]["WR"][0]
+        self.assertEqual([g["points"] for g in entry["games"]], [18.0, 0.0, 12.0])
+        self.assertAlmostEqual(entry["avg_3_game_exact"], 10.0)
+
+
 class HelperTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

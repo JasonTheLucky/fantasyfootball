@@ -108,6 +108,21 @@ RECENT_FORM_LIMITS: dict[str, int] = {
 # never fewer, never padded.
 RECENT_FORM_GAMES = 3
 
+# ESPN's games-played marker inside a weekly actual's inner stats dict. Keys in
+# that dict are JSON strings, hence the str.
+#
+# This is the participation test, and it is load-bearing. ESPN emits a weekly
+# actual row with appliedTotal 0.0 for players who did NOT play, which would
+# otherwise be counted as a completed game and drag the average down: a player
+# who went 18.4 / did-not-play / 16.5 would average 11.63 instead of 17.45.
+# Measured across weeks 1-9 of this league, the marker is strictly binary -
+# present as 1.0 on 3,721 rows and absent on 1,541 - and the 1,541 absences are
+# exactly the rows carrying an empty stats dict. Rows that DO carry the marker
+# but still score 0.0 are real appearances (1,073 of them: a receiver targeted
+# five times with no catch, a quarterback with one incomplete pass) and must be
+# kept.
+GAMES_PLAYED_STAT_ID = "210"
+
 # The fantasy team whose players drive the PDF's pale-yellow row highlight. The
 # id is the authority: two teams in this league have already been renamed
 # mid-season, and a rename must not silently switch the highlighting off. The
@@ -141,15 +156,20 @@ RECENT_FORM_USAGE = (
     "points of that player's own last three completed games, under this league's "
     "exact scoring. The three games are the three highest scoring periods for "
     "which ESPN reported an actual score for that player, so two players in the "
-    "same table can be using different weeks after a bye. A game qualifies if and "
-    "only if ESPN reported an actual entry (statSourceId 0) for that scoring "
-    "period for that player: a recorded 0.0 counts as a completed game, and "
-    "absence means a bye or did-not-play and does not count. ESPN sometimes "
-    "records 0.0 with no underlying stats for a player who was active but did not "
-    "play; those rows count too, and diagnostics.zero_stat_games reports how many "
-    "of the collected weekly values had that shape. A player with fewer than three "
-    "qualifying games is excluded entirely; nothing is padded and no placeholder "
-    "row exists. Weekly points come from ESPN's appliedTotal on a league-scoped "
+    "same table can be using different weeks after a bye. A game qualifies "
+    "only when the player actually appeared in it: ESPN must have reported an "
+    "actual entry (statSourceId 0) for that scoring period AND that entry must "
+    "carry the games-played marker (stat 210). The presence of a scoring row "
+    "alone is not enough, because ESPN also emits 0.0 rows for players who did "
+    "not play, and counting those would understate recent form. A game the "
+    "player did appear in counts even when it scored 0.00 - a receiver targeted "
+    "with no catch, a quarterback with one incomplete pass - and "
+    "diagnostics.zero_point_games_kept reports how many such real appearances "
+    "were kept, while diagnostics.not_played_excluded reports how many "
+    "did-not-play rows were discarded. A bye or a missed game simply does not "
+    "count. A player with fewer than three qualifying games is excluded "
+    "entirely; nothing is padded and no placeholder row exists. "
+    "Weekly points come from ESPN's appliedTotal on a league-scoped "
     "request, which already applies this league's scoring settings; "
     "scoring_crosscheck independently recomputes them from league.json "
     "scoring_settings and reports the largest disagreement. Lists are sorted by "
@@ -165,9 +185,9 @@ RECENT_FORM_USAGE = (
     "this league get renamed mid-season; ownership.jason_x_team_name_observed is "
     "the name that id currently carries, and ownership.jason_x_name_id_agree is "
     "false when the name no longer selects the same players as the id. Because "
-    "qualification is defined on entry presence, a snapshot taken while games are "
-    "in progress can count a partially played week for players whose game has "
-    "already kicked off; weeks.with_data shows which periods contributed."
+    "a game counts once the player has appeared in it, a snapshot taken while "
+    "games are in progress can count a partially played week for players whose "
+    "game has already kicked off; weeks.with_data shows which periods contributed."
 )
 
 OWNERSHIP_ITEM_TYPES = {"ADD", "DROP", "TRADE"}
@@ -939,6 +959,20 @@ def recompute_applied_total(
     return total
 
 
+def played_in_game(raw_stats: dict | None) -> bool:
+    """Did the player actually appear in this game?
+
+    True only when ESPN's games-played marker is present with a value of at
+    least 1. The presence of a weekly scoring row is NOT sufficient: ESPN emits
+    0.0 rows for players who were on a roster but did not play, and counting
+    those as completed games materially misstates recent form.
+    """
+    value = (raw_stats or {}).get(GAMES_PLAYED_STAT_ID)
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return False
+    return value >= 1
+
+
 def extract_weekly_entry(
     player_obj: dict, season: int, week: int
 ) -> tuple[float, dict] | None:
@@ -985,11 +1019,21 @@ def fetch_weekly_actuals(
     Returns (actuals, meta, diag) where
       actuals = {player_id: {"points", "applied_raw", "recomputed"}}
       meta    = {player_id: {"name", "position", "pro_team", "position_id"}}
-      diag    = {"requests", "invalid_values", "zero_stat_games"}
+      diag    = {"requests", "invalid_values", "not_played_excluded",
+                 "zero_point_games_kept"}
+
+    Only games the player actually appeared in are recorded; see
+    ``played_in_game``. A weekly row for a player who did not play is counted in
+    ``diag["not_played_excluded"]`` and otherwise discarded.
     """
     actuals: dict[int, dict] = {}
     meta: dict[int, dict] = {}
-    diag = {"requests": 0, "invalid_values": 0, "zero_stat_games": 0}
+    diag = {
+        "requests": 0,
+        "invalid_values": 0,
+        "not_played_excluded": 0,
+        "zero_point_games_kept": 0,
+    }
     offset = 0
 
     for _ in range(max_pages):
@@ -1037,11 +1081,15 @@ def fetch_weekly_actuals(
                     diag["invalid_values"] += 1
                 continue
             applied_total, raw_stats = found
-            if applied_total == 0.0 and not raw_stats:
-                # ESPN emits these for players who were active but did not play.
-                # They qualify as completed games under the presence rule; the
-                # count is published so the magnitude stays visible.
-                diag["zero_stat_games"] += 1
+            if not played_in_game(raw_stats):
+                # ESPN reported a 0.0 row for a player who did not appear. This
+                # is NOT a completed game; counting it would understate form.
+                diag["not_played_excluded"] += 1
+                continue
+            if applied_total == 0.0:
+                # A real appearance that produced nothing. Kept, and counted so
+                # the magnitude stays visible.
+                diag["zero_point_games_kept"] += 1
             actuals[pid] = {
                 "points": _round(applied_total),
                 "applied_raw": applied_total,
@@ -1870,7 +1918,12 @@ def main(argv: list[str] | None = None) -> int:
         meta: dict[int, dict] = {}
         weeks_with_data: list[int] = []
         weeks_failed: list[int] = []
-        totals = {"requests": 0, "invalid_values": 0, "zero_stat_games": 0}
+        totals = {
+            "requests": 0,
+            "invalid_values": 0,
+            "not_played_excluded": 0,
+            "zero_point_games_kept": 0,
+        }
 
         for week in weeks_considered:
             try:
@@ -1902,7 +1955,8 @@ def main(argv: list[str] | None = None) -> int:
         payload["diagnostics"]["espn_requests"] = totals["requests"]
         payload["diagnostics"]["page_size"] = RECENT_FORM_PAGE_SIZE
         payload["diagnostics"]["invalid_values"] = totals["invalid_values"]
-        payload["diagnostics"]["zero_stat_games"] = totals["zero_stat_games"]
+        payload["diagnostics"]["not_played_excluded"] = totals["not_played_excluded"]
+        payload["diagnostics"]["zero_point_games_kept"] = totals["zero_point_games_kept"]
         payload.update(
             {
                 "league_id": args.league_id,

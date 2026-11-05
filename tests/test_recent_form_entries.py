@@ -151,11 +151,47 @@ class RecentFormEntriesTest(unittest.TestCase):
         self.assertTrue(failed <= set(considered))
         self.assertEqual(with_data & failed, set())
 
+    def test_zero_point_games_are_real_appearances(self):
+        # A 0.00 game is only legitimate when the player actually played. The
+        # fetch drops did-not-play rows, so any 0.00 that survives into a ranked
+        # entry must be an appearance -- and the count of kept zero-point games
+        # must be able to account for every 0.00 in the tables.
+        zeros = sum(
+            1 for _pos, entry in self.each_entry()
+            for game in entry["games"] if game["points"] == 0.0
+        )
+        kept = self.artifact["diagnostics"]["zero_point_games_kept"]
+        self.assertLessEqual(
+            zeros, kept,
+            f"{zeros} zero-point games are ranked but only {kept} were kept as "
+            "real appearances",
+        )
+
+    def test_not_played_rows_were_excluded(self):
+        # The corrected rule must actually be doing work. ESPN emits a 0.0 row
+        # for every rostered player who did not play, so on a healthy multi-week
+        # snapshot this count is necessarily large; if it were 0 the filter
+        # would have silently stopped running.
+        diag = self.artifact["diagnostics"]
+        if is_degraded(self.artifact) or len(self.weeks["with_data"]) < 2:
+            self.skipTest("too few weeks fetched to expect did-not-play rows")
+        self.assertGreater(
+            diag["not_played_excluded"], 0,
+            "no did-not-play rows were excluded; the participation filter looks "
+            "inert",
+        )
+        # Every collected value is a real appearance, so the collected total and
+        # the kept-zero count cannot exceed each other's bounds.
+        self.assertLessEqual(
+            diag["zero_point_games_kept"], diag["weekly_values_collected"]
+        )
+
     def test_diagnostics_are_present_and_plausible(self):
         diag = self.artifact["diagnostics"]
         for key in (
             "players_seen", "weekly_values_collected", "invalid_values",
-            "zero_stat_games", "espn_requests", "page_size",
+            "not_played_excluded", "zero_point_games_kept", "espn_requests",
+            "page_size",
         ):
             self.assertIn(key, diag)
             self.assertIsInstance(diag[key], int, key)

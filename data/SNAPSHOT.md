@@ -4,16 +4,15 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-05T22:36:21.017089+00:00` |
+| Fetched at (UTC) | `2026-11-05T23:25:10.950253+00:00` |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 7.05s |
+| Fetch duration | 10.43s |
 | ESPN calls | 31 |
-| Workflow run | `42122868762` |
 
 ## Freshness and completeness gates
 
@@ -93,8 +92,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | The Bye Week Boys | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | QUESTIONABLE | WR | yes |
-| Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | QB | yes |
 | Auto Draft Champion | Christian McCaffrey | RB | QUESTIONABLE | BENCH | NO |
+| Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Cole-Train | Malik Nabers | WR | QUESTIONABLE | WR | yes |
 | Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
@@ -137,11 +136,11 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9]. Ranked 212 of 212 expected.
 
 | Pos | Limit | Qualifying | Ranked | At limit |
 | --- | --- | --- | --- | --- |
-| QB | 24 | 100 | 24 | yes |
-| RB | 60 | 155 | 60 | yes |
-| WR | 60 | 252 | 60 | yes |
-| TE | 24 | 148 | 24 | yes |
-| K | 24 | 35 | 24 | yes |
+| QB | 24 | 50 | 24 | yes |
+| RB | 60 | 127 | 60 | yes |
+| WR | 60 | 191 | 60 | yes |
+| TE | 24 | 122 | 24 | yes |
+| K | 24 | 32 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
 
 ESPN `appliedTotal` vs recomputed league scoring: max absolute delta **0.0** across 636 values (tolerance 0.01). `appliedTotal` is the authoritative value; this is drift detection only.
@@ -162,7 +161,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-942 total | 237 executed ownership changes | 456 lineup-only moves | 192 draft picks | 0 pending
+946 total | 237 executed ownership changes | 460 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 

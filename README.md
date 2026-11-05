@@ -152,13 +152,28 @@ yields 35. It is also why the PDF heads the game columns `GAME 1 (OLDEST) /
 GAME 2 / GAME 3 (LATEST)` with the week inside each cell (`W8 · 24.60`) rather
 than with week numbers.
 
-**What counts as a completed game.** A game qualifies if and only if ESPN
-reported an actual entry for that scoring period for that player. A recorded
-`0.0` counts. Absence means a bye or did-not-play and does not count. A player
-with fewer than three qualifying games is excluded entirely — nothing is padded
-and no placeholder row exists. ESPN sometimes records `0.0` with an empty stats
-dict for a player who was active but did not play; those rows count under this
-rule, and `diagnostics.zero_stat_games` reports how many there were.
+**What counts as a completed game — participation is verified, not assumed.**
+A game qualifies only when the player actually appeared in it. ESPN must have
+reported an actual entry for that scoring period **and** that entry must carry
+the games-played marker, stat id `210`.
+
+The presence of a scoring row is **not** sufficient, and relying on it was a real
+bug. ESPN emits a weekly actual with `appliedTotal 0.0` for every rostered player
+who did not play, so a player who went 18.4 / did-not-play / 16.5 averaged 11.63
+instead of 17.45. Measured across weeks 1–9 of this league the marker is strictly
+binary — present as `1.0` on 3,721 rows, absent on 1,541 — and the 1,541
+absences are exactly the rows carrying an empty stats dict.
+
+A game the player *did* appear in counts **even when it scored 0.00**: a receiver
+targeted five times with no catch, a quarterback with one incomplete pass. There
+were 1,073 such real appearances, and discarding them would be just as wrong as
+counting the missed games. `diagnostics.zero_point_games_kept` reports how many
+were kept; `diagnostics.not_played_excluded` reports how many did-not-play rows
+were discarded.
+
+A bye or a missed game simply does not count. A player with fewer than three
+qualifying games is excluded entirely — nothing is padded and no placeholder row
+exists.
 
 Lists are sorted by `avg_3_game_exact` descending, ties broken by ascending ESPN
 player id so the order is total and stable between runs. `avg_3_game_display` is
@@ -209,10 +224,10 @@ already applies this league's scoring. `scoring_crosscheck` independently
 recomputes every ranked value from `league.json` → `scoring_settings` and reports
 the largest disagreement; it is drift detection only and never changes a ranking.
 
-One consequence worth knowing: because qualification is defined on entry
-presence, a snapshot taken while games are in progress can count a partially
-played week for players whose game has already kicked off. `weeks.with_data`
-shows which periods contributed, and the snapshot refreshes every six hours.
+One consequence worth knowing: because a game counts once the player has appeared
+in it, a snapshot taken while games are in progress can count a partially played
+week for players whose game has already kicked off. `weeks.with_data` shows
+which periods contributed, and the snapshot refreshes every six hours.
 
 **The rendered PDF cannot be verified here.** The PDF is produced externally by
 ChatGPT from `docs/daily-report-prompt.md`, so no test in this repository can
