@@ -7,8 +7,10 @@ import unittest
 from tests._support import import_fetch_espn, read_text
 
 PROMPT = "docs/daily-report-prompt.md"
-LEGEND = "Yellow highlighted rows = Players currently on Jason X"
+LEGEND = "Yellow = Jason X roster"
 CELL_FORM = "W8 \u00b7 24.60"      # W8 <middle dot> 24.60
+SECTION_4A = "4A. RECENT FORM RANKINGS"
+GATE_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVW"
 
 
 class PromptIntegrityTest(unittest.TestCase):
@@ -22,10 +24,10 @@ class PromptIntegrityTest(unittest.TestCase):
         ]
         start, end = cls.fences[0], cls.fences[-1]
         cls.block = "\n".join(cls.lines[start + 1:end])
-        # Section 10 text: from its heading to the SOURCES heading.
-        head = cls.block.find("10. RECENT FORM RANKINGS")
-        tail = cls.block.find("11. SOURCES")
-        cls.section_ten = cls.block[head:tail] if head != -1 and tail != -1 else ""
+        # Section 4A text: its heading through the start of Section 5.
+        head = cls.block.find(SECTION_4A)
+        tail = cls.block.find("5. TWO-WEEK")
+        cls.section_4a = cls.block[head:tail] if head != -1 and tail != -1 else ""
 
     def test_exactly_two_four_backtick_fences(self):
         self.assertEqual(len(self.fences), 2, f"fences at {self.fences}")
@@ -41,37 +43,57 @@ class PromptIntegrityTest(unittest.TestCase):
         self.assertLess(self.fences[0], self.fences[1])
         self.assertGreater(len(self.block.split("\n")), 100)
 
-    def test_section_ten_and_eleven_headings_present(self):
-        self.assertIn("10. RECENT FORM RANKINGS \u2014 LAST 3 GAMES", self.block)
-        self.assertIn("11. SOURCES", self.block)
-        self.assertNotIn("\n10. SOURCES", self.block)
-        self.assertNotEqual(self.section_ten, "", "Section 10 slice came back empty")
+    def test_section_headings_present(self):
+        self.assertNotEqual(self.section_4a, "", "Section 4A slice came back empty")
+        for heading in (
+            "1. EXECUTIVE SUMMARY", "2. MY PLAYERS", "3. FRESH FREE-AGENT ACTIVITY",
+            "4. POSITION WATCHLIST", SECTION_4A, "5. TWO-WEEK",
+            "6. TOP 5 FREE-AGENT ROSTER VALUE UPGRADES", "7. BETTOR IN GREEN",
+            "8. LEAGUE POSITION STRENGTH", "9. WHAT I WOULD DO TODAY",
+            "10. SOURCES",
+        ):
+            self.assertIn(heading, self.block, heading)
 
-    def test_six_limits_present(self):
+    def test_six_limits_present_in_section_4a(self):
         for pos, limit in self.fetch_espn.RECENT_FORM_LIMITS.items():
-            self.assertIn(f"{limit} {pos}", self.section_ten, f"{limit} {pos}")
+            self.assertIn(f"{limit} {pos}", self.section_4a, f"{limit} {pos}")
         total = sum(self.fetch_espn.RECENT_FORM_LIMITS.values())
-        self.assertIn(str(total), self.section_ten)
+        self.assertIn(str(total), self.section_4a)
 
     def test_legend_line_present(self):
-        self.assertIn(LEGEND, self.section_ten)
+        self.assertIn(LEGEND, self.section_4a)
 
-    def test_game_cell_format_is_specified(self):
-        self.assertIn(CELL_FORM, self.section_ten)
-        gate_t = self.block[self.block.find("\nT Section 10"):]
+    def test_game_cell_format_is_specified_in_both_places(self):
+        self.assertIn(CELL_FORM, self.section_4a)
+        gate_t = self.block[self.block.find("\nT Section 4A"):]
         self.assertIn(CELL_FORM, gate_t, "gate T must pin the cell form too")
 
-    def test_new_gates_present(self):
-        for letter in "ABCDEFGHIJKLMNOPQRSTU":
+    def test_participation_rule_is_stated(self):
+        # The did-not-play bug must stay fixed in the prompt's own wording.
+        for phrase in ("ACTUALLY PLAYED", "did not play", "excluded entirely"):
+            self.assertIn(phrase, self.section_4a, phrase)
+
+    def test_all_gates_present(self):
+        for letter in GATE_LETTERS:
             self.assertRegex(
                 self.block, rf"(?m)^{letter} ", f"gate {letter} missing"
             )
 
-    def test_cross_references_updated(self):
-        self.assertIn("Sections 1-11", self.block)
-        self.assertNotIn("Sections 1-10", self.block)
-        self.assertIn("4/5/full7/8/10/Sources = deep read", self.block)
-        self.assertIn("recent_form_rankings.json", self.block)
+    def test_new_data_files_are_referenced(self):
+        for name in (
+            "gates.json", "jason_x.json", "nfl_schedule.json",
+            "top_available.json", "injuries.json", "recent_form_rankings.json",
+            "player_index.json",
+        ):
+            self.assertIn(name, self.block, name)
+
+    def test_derivations_are_replaced_by_lookups(self):
+        # These are the instructions the pipeline now satisfies directly.
+        self.assertIn("fetched_at_ct_label", self.block)
+        self.assertIn("has_open_bench_spot", self.block)
+        self.assertIn("data_status", self.block)
+        self.assertIn("bye_pressure", self.block)
+        self.assertNotIn("convert snapshot time to CT", self.block)
 
     def test_superseded_limits_absent(self):
         for stale in ("12 QB", "36 RB", "36 WR", "12 TE", "12 K", "12 D/ST",
@@ -80,8 +102,13 @@ class PromptIntegrityTest(unittest.TestCase):
 
     def test_column_order_is_specified(self):
         for column in ("GAME 1 (OLDEST)", "GAME 2", "GAME 3 (LATEST)",
-                       "3-GAME AVG", "OWNER"):
-            self.assertIn(column, self.section_ten, column)
+                       "3-GAME AVG", "STATUS", "OWNER"):
+            self.assertIn(column, self.section_4a, column)
+
+    def test_ir_rules_are_present(self):
+        for phrase in ("on_nfl_ir", "in_fantasy_ir_slot", "out for the season",
+                       "IR-R"):
+            self.assertIn(phrase, self.block, phrase)
 
 
 if __name__ == "__main__":
