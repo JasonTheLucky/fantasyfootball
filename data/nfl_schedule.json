@@ -1,0 +1,4719 @@
+{
+  "usage": "Every NFL team's bye week and per-scoring-period opponent, keyed by ESPN pro team id. Use this instead of web research for byes and opponents; it is the same snapshot as the rosters. A scoring period absent from a team's games_by_scoring_period is that team's bye, which is why bye_week and the gap always agree. Every player record in rosters.json, player_index.json and recent_form_rankings.json already carries bye_week inline, so only the opponent lookup needs this file. kickoff_ct is the kickoff in US Central.",
+  "league_id": "1787259003",
+  "season": 2026,
+  "scoring_period_id": 9,
+  "fetched_at": "2026-11-06T00:22:15.794872+00:00",
+  "source": {
+    "ok": true,
+    "teams": 33,
+    "error": null
+  },
+  "weeks_ahead": [
+    9,
+    10
+  ],
+  "bye_weeks_by_abbrev": {
+    "IND": 13,
+    "KC": 5,
+    "LV": 13,
+    "LAR": 11,
+    "MIA": 6,
+    "MIN": 6,
+    "NE": 11,
+    "NO": 8,
+    "NYG": 8,
+    "NYJ": 13,
+    "PHI": 10,
+    "ARI": 14,
+    "PIT": 9,
+    "LAC": 7,
+    "SF": 8,
+    "SEA": 11,
+    "TB": 10,
+    "WSH": 7,
+    "CAR": 5,
+    "JAX": 7,
+    "BAL": 13,
+    "HOU": 8,
+    "ATL": 11,
+    "BUF": 7,
+    "CHI": 10,
+    "CIN": 6,
+    "CLE": 11,
+    "DAL": 14,
+    "DEN": 10,
+    "DET": 6,
+    "GB": 11,
+    "TEN": 9
+  },
+  "byes_by_scoring_period": {
+    "5": [
+      "CAR",
+      "KC"
+    ],
+    "6": [
+      "CIN",
+      "DET",
+      "MIA",
+      "MIN"
+    ],
+    "7": [
+      "BUF",
+      "JAX",
+      "LAC",
+      "WSH"
+    ],
+    "8": [
+      "HOU",
+      "NO",
+      "NYG",
+      "SF"
+    ],
+    "9": [
+      "PIT",
+      "TEN"
+    ],
+    "10": [
+      "CHI",
+      "DEN",
+      "PHI",
+      "TB"
+    ],
+    "11": [
+      "ATL",
+      "CLE",
+      "GB",
+      "LAR",
+      "NE",
+      "SEA"
+    ],
+    "13": [
+      "BAL",
+      "IND",
+      "LV",
+      "NYJ"
+    ],
+    "14": [
+      "ARI",
+      "DAL"
+    ]
+  },
+  "teams": {
+    "0": {
+      "pro_team_id": 0,
+      "abbrev": "FA",
+      "name": "FA",
+      "bye_week": 0,
+      "games_by_scoring_period": {}
+    },
+    "1": {
+      "pro_team_id": 1,
+      "abbrev": "ATL",
+      "name": "Atlanta Falcons",
+      "bye_week": 11,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": false,
+          "kickoff_utc": "2026-09-25T00:15:00+00:00",
+          "kickoff_ct": "Thu Sep 24, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": false,
+          "kickoff_utc": "2026-10-06T00:15:00+00:00",
+          "kickoff_ct": "Mon Oct 5, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": true,
+          "kickoff_utc": "2026-10-12T00:20:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": true,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": true,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": false,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T14:30:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 8:30 AM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": false,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": true,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": true,
+          "kickoff_utc": "2026-12-27T08:01:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "17": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "2": {
+      "pro_team_id": 2,
+      "abbrev": "BUF",
+      "name": "Buffalo Bills",
+      "bye_week": 7,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": true,
+          "kickoff_utc": "2026-09-18T00:15:00+00:00",
+          "kickoff_ct": "Thu Sep 17, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": false,
+          "kickoff_utc": "2026-10-13T00:15:00+00:00",
+          "kickoff_ct": "Mon Oct 12, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": false,
+          "kickoff_utc": "2026-10-18T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": true,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": false,
+          "kickoff_utc": "2026-11-10T01:15:00+00:00",
+          "kickoff_ct": "Mon Nov 9, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": false,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": true,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": true,
+          "kickoff_utc": "2026-11-27T01:20:00+00:00",
+          "kickoff_ct": "Thu Nov 26, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": false,
+          "kickoff_utc": "2026-12-06T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": false,
+          "kickoff_utc": "2026-12-14T01:20:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T01:20:00+00:00",
+          "kickoff_ct": "Sat Dec 19, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": false,
+          "kickoff_utc": "2026-12-25T21:30:00+00:00",
+          "kickoff_ct": "Fri Dec 25, 3:30 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "3": {
+      "pro_team_id": 3,
+      "abbrev": "CHI",
+      "name": "Chicago Bears",
+      "bye_week": 10,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": true,
+          "kickoff_utc": "2026-09-29T00:15:00+00:00",
+          "kickoff_ct": "Mon Sep 28, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": false,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": true,
+          "kickoff_utc": "2026-10-23T00:15:00+00:00",
+          "kickoff_ct": "Thu Oct 22, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": false,
+          "kickoff_utc": "2026-11-03T01:15:00+00:00",
+          "kickoff_ct": "Mon Nov 2, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": true,
+          "kickoff_utc": "2026-11-09T01:20:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": true,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": false,
+          "kickoff_utc": "2026-11-26T18:00:00+00:00",
+          "kickoff_ct": "Thu Nov 26, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": true,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T01:20:00+00:00",
+          "kickoff_ct": "Sat Dec 19, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": true,
+          "kickoff_utc": "2026-12-25T18:00:00+00:00",
+          "kickoff_ct": "Fri Dec 25, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T21:25:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "4": {
+      "pro_team_id": 4,
+      "abbrev": "CIN",
+      "name": "Cincinnati Bengals",
+      "bye_week": 6,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": false,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": true,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T14:30:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 8:30 AM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": true,
+          "kickoff_utc": "2026-11-16T01:20:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": false,
+          "kickoff_utc": "2026-11-24T01:15:00+00:00",
+          "kickoff_ct": "Mon Nov 23, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": true,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": false,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": false,
+          "kickoff_utc": "2026-12-27T08:01:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "17": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": true,
+          "kickoff_utc": "2027-01-01T01:15:00+00:00",
+          "kickoff_ct": "Thu Dec 31, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "5": {
+      "pro_team_id": 5,
+      "abbrev": "CLE",
+      "name": "Cleveland Browns",
+      "bye_week": 11,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": true,
+          "kickoff_utc": "2026-10-02T00:15:00+00:00",
+          "kickoff_ct": "Thu Oct 1, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": true,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": false,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": false,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": true,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": true,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": false,
+          "kickoff_utc": "2026-12-27T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "6": {
+      "pro_team_id": 6,
+      "abbrev": "DAL",
+      "name": "Dallas Cowboys",
+      "bye_week": 14,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": false,
+          "kickoff_utc": "2026-09-14T00:20:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": true,
+          "kickoff_utc": "2026-10-09T00:15:00+00:00",
+          "kickoff_ct": "Thu Oct 8, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": false,
+          "kickoff_utc": "2026-10-19T00:20:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": false,
+          "kickoff_utc": "2026-10-27T00:15:00+00:00",
+          "kickoff_ct": "Mon Oct 26, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": true,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": true,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": true,
+          "kickoff_utc": "2026-11-26T21:30:00+00:00",
+          "kickoff_ct": "Thu Nov 26, 3:30 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": false,
+          "kickoff_utc": "2026-12-08T01:15:00+00:00",
+          "kickoff_ct": "Mon Dec 7, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": true,
+          "kickoff_utc": "2026-12-28T01:20:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "7": {
+      "pro_team_id": 7,
+      "abbrev": "DEN",
+      "name": "Denver Broncos",
+      "bye_week": 10,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": false,
+          "kickoff_utc": "2026-09-15T00:15:00+00:00",
+          "kickoff_ct": "Mon Sep 14, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T20:05:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": true,
+          "kickoff_utc": "2026-09-28T00:20:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T20:05:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": true,
+          "kickoff_utc": "2026-10-16T00:15:00+00:00",
+          "kickoff_ct": "Thu Oct 15, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": false,
+          "kickoff_utc": "2026-10-25T20:05:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": true,
+          "kickoff_utc": "2026-11-01T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": true,
+          "kickoff_utc": "2026-11-22T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": false,
+          "kickoff_utc": "2026-11-27T20:00:00+00:00",
+          "kickoff_ct": "Fri Nov 27, 2:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": true,
+          "kickoff_utc": "2026-12-06T21:05:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": true,
+          "kickoff_utc": "2026-12-25T21:30:00+00:00",
+          "kickoff_ct": "Fri Dec 25, 3:30 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "18": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "8": {
+      "pro_team_id": 8,
+      "abbrev": "DET",
+      "name": "Detroit Lions",
+      "bye_week": 6,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": false,
+          "kickoff_utc": "2026-09-18T00:15:00+00:00",
+          "kickoff_ct": "Thu Sep 17, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": false,
+          "kickoff_utc": "2026-10-05T00:20:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": true,
+          "kickoff_utc": "2026-10-25T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": true,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T14:30:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 8:30 AM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": true,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": true,
+          "kickoff_utc": "2026-11-26T18:00:00+00:00",
+          "kickoff_ct": "Thu Nov 26, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": false,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": false,
+          "kickoff_utc": "2026-12-21T01:20:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": true,
+          "kickoff_utc": "2026-12-29T01:15:00+00:00",
+          "kickoff_ct": "Mon Dec 28, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T21:25:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "9": {
+      "pro_team_id": 9,
+      "abbrev": "GB",
+      "name": "Green Bay Packers",
+      "bye_week": 11,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": true,
+          "kickoff_utc": "2026-09-25T00:15:00+00:00",
+          "kickoff_ct": "Thu Sep 24, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": true,
+          "kickoff_utc": "2026-10-19T00:20:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": false,
+          "kickoff_utc": "2026-10-25T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": true,
+          "kickoff_utc": "2026-10-30T00:15:00+00:00",
+          "kickoff_ct": "Thu Oct 29, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": false,
+          "kickoff_utc": "2026-11-26T01:00:00+00:00",
+          "kickoff_ct": "Wed Nov 25, 7:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": false,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": true,
+          "kickoff_utc": "2026-12-14T01:20:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": false,
+          "kickoff_utc": "2026-12-25T18:00:00+00:00",
+          "kickoff_ct": "Fri Dec 25, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": true,
+          "kickoff_utc": "2027-01-05T01:15:00+00:00",
+          "kickoff_ct": "Mon Jan 4, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "10": {
+      "pro_team_id": 10,
+      "abbrev": "TEN",
+      "name": "Tennessee Titans",
+      "bye_week": 9,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": false,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": true,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": false,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": false,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": false,
+          "kickoff_utc": "2026-11-29T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": true,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": false,
+          "kickoff_utc": "2026-12-27T21:05:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "11": {
+      "pro_team_id": 11,
+      "abbrev": "IND",
+      "name": "Indianapolis Colts",
+      "bye_week": 13,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": false,
+          "kickoff_utc": "2026-09-21T00:20:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T13:30:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 8:30 AM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": true,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": false,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": false,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": false,
+          "kickoff_utc": "2026-11-20T01:15:00+00:00",
+          "kickoff_ct": "Thu Nov 19, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": true,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": true,
+          "kickoff_utc": "2026-12-27T08:01:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "17": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "12": {
+      "pro_team_id": 12,
+      "abbrev": "KC",
+      "name": "Kansas City Chiefs",
+      "bye_week": 5,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": true,
+          "kickoff_utc": "2026-09-15T00:15:00+00:00",
+          "kickoff_ct": "Mon Sep 14, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": true,
+          "kickoff_utc": "2026-09-21T00:20:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": true,
+          "kickoff_utc": "2026-10-18T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": false,
+          "kickoff_utc": "2026-10-26T00:20:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": false,
+          "kickoff_utc": "2026-11-01T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": false,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": true,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": false,
+          "kickoff_utc": "2026-11-27T01:20:00+00:00",
+          "kickoff_ct": "Thu Nov 26, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": false,
+          "kickoff_utc": "2026-12-04T01:15:00+00:00",
+          "kickoff_ct": "Thu Dec 3, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": true,
+          "kickoff_utc": "2026-12-22T01:15:00+00:00",
+          "kickoff_ct": "Mon Dec 21, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": true,
+          "kickoff_utc": "2026-12-27T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "18": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "13": {
+      "pro_team_id": 13,
+      "abbrev": "LV",
+      "name": "Las Vegas Raiders",
+      "bye_week": 13,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T20:05:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": true,
+          "kickoff_utc": "2026-10-18T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": true,
+          "kickoff_utc": "2026-10-25T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": false,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": false,
+          "kickoff_utc": "2026-11-22T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": false,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T21:05:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": true,
+          "kickoff_utc": "2026-12-27T21:05:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T21:05:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "14": {
+      "pro_team_id": 14,
+      "abbrev": "LAR",
+      "name": "Los Angeles Rams",
+      "bye_week": 11,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": true,
+          "kickoff_utc": "2026-09-11T00:35:00+00:00",
+          "kickoff_ct": "Thu Sep 10, 7:35 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": true,
+          "kickoff_utc": "2026-09-22T00:15:00+00:00",
+          "kickoff_ct": "Mon Sep 21, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": false,
+          "kickoff_utc": "2026-09-28T00:20:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": true,
+          "kickoff_utc": "2026-10-13T00:15:00+00:00",
+          "kickoff_ct": "Mon Oct 12, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": true,
+          "kickoff_utc": "2026-10-18T20:05:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": false,
+          "kickoff_utc": "2026-10-25T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": true,
+          "kickoff_utc": "2026-11-01T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": false,
+          "kickoff_utc": "2026-11-15T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": true,
+          "kickoff_utc": "2026-11-26T01:00:00+00:00",
+          "kickoff_ct": "Wed Nov 25, 7:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": true,
+          "kickoff_utc": "2026-12-04T01:15:00+00:00",
+          "kickoff_ct": "Thu Dec 3, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": false,
+          "kickoff_utc": "2026-12-26T01:15:00+00:00",
+          "kickoff_ct": "Fri Dec 25, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "18": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "15": {
+      "pro_team_id": 15,
+      "abbrev": "MIA",
+      "name": "Miami Dolphins",
+      "bye_week": 6,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T20:05:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": false,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": true,
+          "kickoff_utc": "2026-11-01T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": false,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": false,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": true,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": false,
+          "kickoff_utc": "2026-12-06T21:05:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": true,
+          "kickoff_utc": "2026-12-27T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "16": {
+      "pro_team_id": 16,
+      "abbrev": "MIN",
+      "name": "Minnesota Vikings",
+      "bye_week": 6,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T20:05:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T20:05:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": true,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": false,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": true,
+          "kickoff_utc": "2026-11-10T01:15:00+00:00",
+          "kickoff_ct": "Mon Nov 9, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": false,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": false,
+          "kickoff_utc": "2026-11-23T01:20:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": true,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": true,
+          "kickoff_utc": "2026-12-06T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": false,
+          "kickoff_utc": "2026-12-11T01:15:00+00:00",
+          "kickoff_ct": "Thu Dec 10, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": true,
+          "kickoff_utc": "2026-12-21T01:20:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": true,
+          "kickoff_utc": "2026-12-27T08:01:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "17": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "17": {
+      "pro_team_id": 17,
+      "abbrev": "NE",
+      "name": "New England Patriots",
+      "bye_week": 11,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": false,
+          "kickoff_utc": "2026-09-10T00:20:00+00:00",
+          "kickoff_ct": "Wed Sep 9, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": true,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": false,
+          "kickoff_utc": "2026-10-23T00:15:00+00:00",
+          "kickoff_ct": "Thu Oct 22, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": false,
+          "kickoff_utc": "2026-11-01T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": false,
+          "kickoff_utc": "2026-11-15T14:30:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 8:30 AM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": false,
+          "kickoff_utc": "2026-11-30T01:20:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": true,
+          "kickoff_utc": "2026-12-06T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": true,
+          "kickoff_utc": "2026-12-11T01:15:00+00:00",
+          "kickoff_ct": "Thu Dec 10, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": false,
+          "kickoff_utc": "2026-12-22T01:15:00+00:00",
+          "kickoff_ct": "Mon Dec 21, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": false,
+          "kickoff_utc": "2026-12-27T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "18": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "18": {
+      "pro_team_id": 18,
+      "abbrev": "NO",
+      "name": "New Orleans Saints",
+      "bye_week": 8,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": true,
+          "kickoff_utc": "2026-10-06T00:15:00+00:00",
+          "kickoff_ct": "Mon Oct 5, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": false,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": true,
+          "kickoff_utc": "2026-10-25T13:30:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 8:30 AM CDT",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": false,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": false,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": true,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": true,
+          "kickoff_utc": "2026-12-27T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "19": {
+      "pro_team_id": 19,
+      "abbrev": "NYG",
+      "name": "New York Giants",
+      "bye_week": 8,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": true,
+          "kickoff_utc": "2026-09-14T00:20:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": false,
+          "kickoff_utc": "2026-09-22T00:15:00+00:00",
+          "kickoff_ct": "Mon Sep 21, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": true,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": false,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": true,
+          "kickoff_utc": "2026-11-13T01:15:00+00:00",
+          "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": true,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": false,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": true,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": false,
+          "kickoff_utc": "2026-12-29T01:15:00+00:00",
+          "kickoff_ct": "Mon Dec 28, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "20": {
+      "pro_team_id": 20,
+      "abbrev": "NYJ",
+      "name": "New York Jets",
+      "bye_week": 13,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": false,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": true,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": true,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": false,
+          "kickoff_utc": "2026-11-22T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": false,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T21:05:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": true,
+          "kickoff_utc": "2026-12-27T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "21": {
+      "pro_team_id": 21,
+      "abbrev": "PHI",
+      "name": "Philadelphia Eagles",
+      "bye_week": 10,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": false,
+          "kickoff_utc": "2026-09-29T00:15:00+00:00",
+          "kickoff_ct": "Mon Sep 28, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T13:30:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 8:30 AM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": true,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": true,
+          "kickoff_utc": "2026-10-27T00:15:00+00:00",
+          "kickoff_ct": "Mon Oct 26, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": false,
+          "kickoff_utc": "2026-11-02T01:20:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": true,
+          "kickoff_utc": "2026-11-22T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": false,
+          "kickoff_utc": "2026-11-26T21:30:00+00:00",
+          "kickoff_ct": "Thu Nov 26, 3:30 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": false,
+          "kickoff_utc": "2026-12-06T21:05:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": true,
+          "kickoff_utc": "2026-12-19T22:00:00+00:00",
+          "kickoff_ct": "Sat Dec 19, 4:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": true,
+          "kickoff_utc": "2026-12-25T01:15:00+00:00",
+          "kickoff_ct": "Thu Dec 24, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": false,
+          "kickoff_utc": "2027-01-04T01:20:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "22": {
+      "pro_team_id": 22,
+      "abbrev": "ARI",
+      "name": "Arizona Cardinals",
+      "bye_week": 14,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T20:05:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": false,
+          "kickoff_utc": "2026-10-18T20:05:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": true,
+          "kickoff_utc": "2026-10-25T20:05:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": false,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": false,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": true,
+          "kickoff_utc": "2026-11-29T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": true,
+          "kickoff_utc": "2026-12-06T21:05:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T21:05:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": false,
+          "kickoff_utc": "2026-12-27T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T21:05:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "23": {
+      "pro_team_id": 23,
+      "abbrev": "PIT",
+      "name": "Pittsburgh Steelers",
+      "bye_week": 9,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": false,
+          "kickoff_utc": "2026-10-02T00:15:00+00:00",
+          "kickoff_ct": "Thu Oct 1, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": false,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": false,
+          "kickoff_utc": "2026-10-25T13:30:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 8:30 AM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": true,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": false,
+          "kickoff_utc": "2026-11-16T01:20:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": false,
+          "kickoff_utc": "2026-11-22T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": true,
+          "kickoff_utc": "2026-11-27T20:00:00+00:00",
+          "kickoff_ct": "Fri Nov 27, 2:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": true,
+          "kickoff_utc": "2026-12-07T01:20:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": false,
+          "kickoff_utc": "2026-12-15T01:15:00+00:00",
+          "kickoff_ct": "Mon Dec 14, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": true,
+          "kickoff_utc": "2026-12-27T08:01:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "17": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "24": {
+      "pro_team_id": 24,
+      "abbrev": "LAC",
+      "name": "Los Angeles Chargers",
+      "bye_week": 7,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T20:05:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T20:05:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": false,
+          "kickoff_utc": "2026-10-18T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": false,
+          "kickoff_utc": "2026-11-01T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": false,
+          "kickoff_utc": "2026-11-17T01:15:00+00:00",
+          "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 20,
+          "opponent": "NYJ",
+          "at_home": true,
+          "kickoff_utc": "2026-11-22T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": true,
+          "kickoff_utc": "2026-11-30T01:20:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": false,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T21:05:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": true,
+          "kickoff_utc": "2026-12-18T01:15:00+00:00",
+          "kickoff_ct": "Thu Dec 17, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": false,
+          "kickoff_utc": "2026-12-27T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "18": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "25": {
+      "pro_team_id": 25,
+      "abbrev": "SF",
+      "name": "San Francisco 49ers",
+      "bye_week": 8,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": false,
+          "kickoff_utc": "2026-09-11T00:35:00+00:00",
+          "kickoff_ct": "Thu Sep 10, 7:35 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T20:05:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": true,
+          "kickoff_utc": "2026-10-20T00:15:00+00:00",
+          "kickoff_ct": "Mon Oct 19, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": false,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": false,
+          "kickoff_utc": "2026-11-15T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": true,
+          "kickoff_utc": "2026-11-23T01:20:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": true,
+          "kickoff_utc": "2026-11-29T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": false,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": false,
+          "kickoff_utc": "2026-12-18T01:15:00+00:00",
+          "kickoff_ct": "Thu Dec 17, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": false,
+          "kickoff_utc": "2026-12-27T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": true,
+          "kickoff_utc": "2027-01-04T01:20:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "26": {
+      "pro_team_id": 26,
+      "abbrev": "SEA",
+      "name": "Seattle Seahawks",
+      "bye_week": 11,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": true,
+          "kickoff_utc": "2026-09-10T00:20:00+00:00",
+          "kickoff_ct": "Wed Sep 9, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T20:25:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": false,
+          "kickoff_utc": "2026-10-16T00:15:00+00:00",
+          "kickoff_ct": "Thu Oct 15, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 12,
+          "opponent": "KC",
+          "at_home": true,
+          "kickoff_utc": "2026-10-26T00:20:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": true,
+          "kickoff_utc": "2026-11-03T01:15:00+00:00",
+          "kickoff_ct": "Mon Nov 2, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 13,
+          "opponent": "LV",
+          "at_home": false,
+          "kickoff_utc": "2026-11-15T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": false,
+          "kickoff_utc": "2026-11-29T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": true,
+          "kickoff_utc": "2026-12-08T01:15:00+00:00",
+          "kickoff_ct": "Mon Dec 7, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": false,
+          "kickoff_utc": "2026-12-19T22:00:00+00:00",
+          "kickoff_ct": "Sat Dec 19, 4:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": true,
+          "kickoff_utc": "2026-12-26T01:15:00+00:00",
+          "kickoff_ct": "Fri Dec 25, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "27": {
+      "pro_team_id": 27,
+      "abbrev": "TB",
+      "name": "Tampa Bay Buccaneers",
+      "bye_week": 10,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T20:05:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": false,
+          "kickoff_utc": "2026-10-09T00:15:00+00:00",
+          "kickoff_ct": "Thu Oct 8, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": true,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": false,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": true,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": false,
+          "kickoff_utc": "2026-11-09T01:20:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": false,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": true,
+          "kickoff_utc": "2026-12-01T01:15:00+00:00",
+          "kickoff_ct": "Mon Nov 30, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": true,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": false,
+          "kickoff_utc": "2026-12-27T08:01:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "17": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "18": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "28": {
+      "pro_team_id": 28,
+      "abbrev": "WSH",
+      "name": "Washington Commanders",
+      "bye_week": 7,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T13:30:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 8:30 AM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 25,
+          "opponent": "SF",
+          "at_home": false,
+          "kickoff_utc": "2026-10-20T00:15:00+00:00",
+          "kickoff_ct": "Mon Oct 19, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": true,
+          "kickoff_utc": "2026-11-02T01:20:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 14,
+          "opponent": "LAR",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": false,
+          "kickoff_utc": "2026-11-13T01:15:00+00:00",
+          "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": true,
+          "kickoff_utc": "2026-11-24T01:15:00+00:00",
+          "kickoff_ct": "Mon Nov 23, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 22,
+          "opponent": "ARI",
+          "at_home": false,
+          "kickoff_utc": "2026-11-29T21:25:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": false,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": false,
+          "kickoff_utc": "2026-12-27T08:01:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "17": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": false,
+          "kickoff_utc": "2027-01-03T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "18": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "29": {
+      "pro_team_id": 29,
+      "abbrev": "CAR",
+      "name": "Carolina Panthers",
+      "bye_week": 5,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": true,
+          "kickoff_utc": "2026-10-05T00:20:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": false,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": true,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": false,
+          "kickoff_utc": "2026-10-30T00:15:00+00:00",
+          "kickoff_ct": "Thu Oct 29, 7:15 PM CDT",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": true,
+          "kickoff_utc": "2026-11-08T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": false,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": true,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": false,
+          "kickoff_utc": "2026-12-01T01:15:00+00:00",
+          "kickoff_ct": "Mon Nov 30, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
+          "at_home": false,
+          "kickoff_utc": "2026-12-06T21:25:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 3:25 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": false,
+          "kickoff_utc": "2026-12-27T08:01:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "17": {
+          "opponent_pro_team_id": 26,
+          "opponent": "SEA",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T18:00:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "30": {
+      "pro_team_id": 30,
+      "abbrev": "JAX",
+      "name": "Jacksonville Jaguars",
+      "bye_week": 7,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 7,
+          "opponent": "DEN",
+          "at_home": false,
+          "kickoff_utc": "2026-09-20T20:05:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 3:05 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
+          "at_home": true,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": false,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": true,
+          "kickoff_utc": "2026-10-11T13:30:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 8:30 AM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": true,
+          "kickoff_utc": "2026-10-18T13:30:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 8:30 AM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": true,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": false,
+          "kickoff_utc": "2026-11-06T01:15:00+00:00",
+          "kickoff_ct": "Thu Nov 5, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": false,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": false,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": true,
+          "kickoff_utc": "2026-11-29T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 3,
+          "opponent": "CHI",
+          "at_home": false,
+          "kickoff_utc": "2026-12-06T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": true,
+          "kickoff_utc": "2026-12-15T01:15:00+00:00",
+          "kickoff_ct": "Mon Dec 14, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": false,
+          "kickoff_utc": "2026-12-28T01:20:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": true,
+          "kickoff_utc": "2027-01-03T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 3, 2:01 AM CST",
+          "start_time_tbd": true
+        },
+        "18": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": false,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "33": {
+      "pro_team_id": 33,
+      "abbrev": "BAL",
+      "name": "Baltimore Ravens",
+      "bye_week": 13,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": false,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 18,
+          "opponent": "NO",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T20:25:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 3:25 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 1,
+          "opponent": "ATL",
+          "at_home": false,
+          "kickoff_utc": "2026-10-12T00:20:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 7:20 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": false,
+          "kickoff_utc": "2026-10-18T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": true,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "8": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": false,
+          "kickoff_utc": "2026-11-01T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 1, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": true,
+          "kickoff_utc": "2026-11-06T01:15:00+00:00",
+          "kickoff_ct": "Thu Nov 5, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": true,
+          "kickoff_utc": "2026-11-17T01:15:00+00:00",
+          "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 29,
+          "opponent": "CAR",
+          "at_home": false,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
+          "at_home": false,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": true,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": false,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": true,
+          "kickoff_utc": "2026-12-27T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 27, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": false,
+          "kickoff_utc": "2027-01-01T01:15:00+00:00",
+          "kickoff_ct": "Thu Dec 31, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    },
+    "34": {
+      "pro_team_id": 34,
+      "abbrev": "HOU",
+      "name": "Houston Texans",
+      "bye_week": 8,
+      "games_by_scoring_period": {
+        "1": {
+          "opponent_pro_team_id": 2,
+          "opponent": "BUF",
+          "at_home": true,
+          "kickoff_utc": "2026-09-13T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 13, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "2": {
+          "opponent_pro_team_id": 4,
+          "opponent": "CIN",
+          "at_home": true,
+          "kickoff_utc": "2026-09-20T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 20, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "3": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": false,
+          "kickoff_utc": "2026-09-27T17:00:00+00:00",
+          "kickoff_ct": "Sun Sep 27, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "4": {
+          "opponent_pro_team_id": 6,
+          "opponent": "DAL",
+          "at_home": true,
+          "kickoff_utc": "2026-10-04T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 4, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "5": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": false,
+          "kickoff_utc": "2026-10-11T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 11, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "6": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": false,
+          "kickoff_utc": "2026-10-18T13:30:00+00:00",
+          "kickoff_ct": "Sun Oct 18, 8:30 AM CDT",
+          "start_time_tbd": false
+        },
+        "7": {
+          "opponent_pro_team_id": 19,
+          "opponent": "NYG",
+          "at_home": true,
+          "kickoff_utc": "2026-10-25T17:00:00+00:00",
+          "kickoff_ct": "Sun Oct 25, 12:00 PM CDT",
+          "start_time_tbd": false
+        },
+        "9": {
+          "opponent_pro_team_id": 24,
+          "opponent": "LAC",
+          "at_home": false,
+          "kickoff_utc": "2026-11-08T21:05:00+00:00",
+          "kickoff_ct": "Sun Nov 8, 3:05 PM CST",
+          "start_time_tbd": false
+        },
+        "10": {
+          "opponent_pro_team_id": 5,
+          "opponent": "CLE",
+          "at_home": false,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "11": {
+          "opponent_pro_team_id": 11,
+          "opponent": "IND",
+          "at_home": true,
+          "kickoff_utc": "2026-11-20T01:15:00+00:00",
+          "kickoff_ct": "Thu Nov 19, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "12": {
+          "opponent_pro_team_id": 33,
+          "opponent": "BAL",
+          "at_home": true,
+          "kickoff_utc": "2026-11-29T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "13": {
+          "opponent_pro_team_id": 23,
+          "opponent": "PIT",
+          "at_home": false,
+          "kickoff_utc": "2026-12-07T01:20:00+00:00",
+          "kickoff_ct": "Sun Dec 6, 7:20 PM CST",
+          "start_time_tbd": false
+        },
+        "14": {
+          "opponent_pro_team_id": 28,
+          "opponent": "WSH",
+          "at_home": false,
+          "kickoff_utc": "2026-12-13T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 13, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "15": {
+          "opponent_pro_team_id": 30,
+          "opponent": "JAX",
+          "at_home": true,
+          "kickoff_utc": "2026-12-20T18:00:00+00:00",
+          "kickoff_ct": "Sun Dec 20, 12:00 PM CST",
+          "start_time_tbd": false
+        },
+        "16": {
+          "opponent_pro_team_id": 21,
+          "opponent": "PHI",
+          "at_home": false,
+          "kickoff_utc": "2026-12-25T01:15:00+00:00",
+          "kickoff_ct": "Thu Dec 24, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "17": {
+          "opponent_pro_team_id": 9,
+          "opponent": "GB",
+          "at_home": false,
+          "kickoff_utc": "2027-01-05T01:15:00+00:00",
+          "kickoff_ct": "Mon Jan 4, 7:15 PM CST",
+          "start_time_tbd": false
+        },
+        "18": {
+          "opponent_pro_team_id": 10,
+          "opponent": "TEN",
+          "at_home": true,
+          "kickoff_utc": "2027-01-10T08:01:00+00:00",
+          "kickoff_ct": "Sun Jan 10, 2:01 AM CST",
+          "start_time_tbd": true
+        }
+      }
+    }
+  }
+}

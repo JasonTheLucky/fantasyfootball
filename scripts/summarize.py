@@ -45,6 +45,9 @@ def build() -> str:
         )
 
     rosters = load("rosters.json") or {}
+    jason_x = load("jason_x.json") or {}
+    schedule = load("nfl_schedule.json") or {}
+    gates_file = load("gates.json") or {}
     ownership = load("ownership.json") or {}
     transactions = load("transactions.json") or {}
     matchups = load("matchups.json") or {}
@@ -64,6 +67,10 @@ def build() -> str:
     add("| Field | Value |")
     add("| --- | --- |")
     add(f"| Fetched at (UTC) | `{metadata.get('fetched_at')}` |")
+    if metadata.get("fetched_at_ct_label"):
+        add(f"| Fetched at (CT) | **{metadata.get('fetched_at_ct_label')}** |")
+    if gates_file.get("data_status"):
+        add(f"| DATA STATUS | **{gates_file.get('data_status')}** |")
     add(f"| Scoring period (week) | **{metadata.get('scoringPeriodId')}** |")
     add(f"| League id | `{metadata.get('league_id')}` |")
     add(f"| Teams retrieved | {metadata.get('team_count')} / "
@@ -93,6 +100,8 @@ def build() -> str:
     add(f"| Player lookup index complete | {tick(metadata.get('player_index_built'))} |")
     add(f"| Recent form rankings built | {tick(metadata.get('recent_form_success'))} |")
     add(f"| NFL injury report retrieved | {tick(metadata.get('injury_report_success'))} |")
+    add(f"| NFL schedule and byes retrieved | "
+        f"{tick(metadata.get('nfl_schedule_success'))} |")
     add("")
 
     errors = metadata.get("errors") or []
@@ -202,6 +211,63 @@ def build() -> str:
             "from the rosters above."
         )
         add("")
+
+    # ---- Jason X ---------------------------------------------------------
+    if jason_x.get("team_name"):
+        cap = jason_x.get("capacity") or {}
+        faab = jason_x.get("faab") or {}
+        rec = jason_x.get("record") or {}
+        add(f"## {jason_x['team_name']}")
+        add("")
+        add(f"Record {rec.get('wins')}-{rec.get('losses')} · FAAB "
+            f"**${faab.get('remaining')}** of ${faab.get('budget')} · waiver rank "
+            f"{jason_x.get('waiver_rank')} · bench open **{cap.get('bench_open')}** · "
+            f"IR open {cap.get('ir_open')}")
+        add("")
+        if not jason_x.get("has_open_bench_spot"):
+            add("No open bench spot: any add needs a drop.")
+            add("")
+        add("| Slot | Player | Pos | Bye | Next | Status |")
+        add("| --- | --- | --- | --- | --- | --- |")
+        for player in jason_x.get("starters") or []:
+            upcoming = (player.get("upcoming") or [{}])[0]
+            if upcoming.get("bye"):
+                nxt = "BYE"
+            elif upcoming.get("opponent"):
+                nxt = ("vs " if upcoming.get("at_home") else "@ ") + upcoming["opponent"]
+            else:
+                nxt = "-"
+            badge = player.get("injury") or {}
+            status = badge.get("designation") or "-"
+            if badge.get("expected_return_label"):
+                status = f"{status} (back {badge['expected_return_label']})"
+            add(f"| {player.get('lineup_slot')} | {player.get('name')} "
+                f"| {player.get('position')} | W{player.get('bye_week')} | {nxt} "
+                f"| {status} |")
+        add("")
+        for block in jason_x.get("bye_pressure") or []:
+            names = ", ".join(
+                f"{p['name']} ({p['lineup_slot']})" for p in block["starters_on_bye"]
+            )
+            add(f"**Week {block['scoring_period_id']} bye pressure:** {names}.")
+            add("")
+
+    # ---- upcoming byes ---------------------------------------------------
+    byes_by_period = schedule.get("byes_by_scoring_period") or {}
+    if byes_by_period:
+        current = metadata.get("scoringPeriodId") or 0
+        upcoming_byes = {
+            week: teams for week, teams in byes_by_period.items()
+            if int(week) >= current
+        }
+        if upcoming_byes:
+            add("## Upcoming NFL byes")
+            add("")
+            add("| Week | Teams on bye |")
+            add("| --- | --- |")
+            for week in sorted(upcoming_byes, key=int):
+                add(f"| {week} | {', '.join(upcoming_byes[week])} |")
+            add("")
 
     # ---- injuries -------------------------------------------------------
     inj_counts = injuries.get("counts") or {}
@@ -378,6 +444,14 @@ def build() -> str:
     add("| `injuries.json` | NFL designations and expected return dates, by player "
         "id, plus the two IR cross-checks. A compact `injury` block is also inline "
         "on every player elsewhere. |")
+    add("| `gates.json` | Machine-readable pass/fail per snapshot check, and the "
+        "DATA STATUS verdict. Read this instead of deriving it. |")
+    add("| `jason_x.json` | Jason X precomputed: starters, bench, IR, open spots, "
+        "FAAB, bye pressure, injuries, upcoming opponents. |")
+    add("| `nfl_schedule.json` | Every NFL team's bye week and per-week opponent. "
+        "Use instead of web research for byes and matchups. |")
+    add("| `top_available.json` | Top 25 available per position with acquisition "
+        "cost, bye, injury and opponents. A trimmed available_players.json. |")
     add("| `player_index.json` | **Name to owner lookup for every classified player. "
         "Use this to answer \"who owns X?\".** |")
     add("| `ownership.json` | Positive ownership: player id to owner, plus availability. |")

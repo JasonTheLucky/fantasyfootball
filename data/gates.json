@@ -1,0 +1,85 @@
+{
+  "usage": "Pass/fail for every snapshot-level check, so DATA STATUS is a lookup rather than a derivation. data_status is PASS only when every critical gate passed. Non-critical gates failing degrade the report but do not fail it: say what is missing instead of omitting it silently. This covers snapshot integrity only; the report still owns its own ownership, acquisition-cost and PDF gates.",
+  "data_status": "PASS",
+  "failed_critical": [],
+  "failed_non_critical": [],
+  "snapshot_fetched_at_utc": "2026-11-06T00:22:53.030160+00:00",
+  "snapshot_fetched_at_ct": "2026-11-05T18:22:53.030160-06:00",
+  "snapshot_fetched_at_ct_label": "Thu Nov 5, 6:22 PM CST",
+  "scoring_period_id": 9,
+  "errors": [],
+  "gates": [
+    {
+      "gate": "league_settings_retrieved",
+      "passed": true,
+      "detail": "league settings, teams and status",
+      "critical": true
+    },
+    {
+      "gate": "all_rosters_retrieved",
+      "passed": true,
+      "detail": "12 of 12 teams",
+      "critical": true
+    },
+    {
+      "gate": "team_count_complete",
+      "passed": true,
+      "detail": null,
+      "critical": true
+    },
+    {
+      "gate": "transactions_retrieved",
+      "passed": true,
+      "detail": null,
+      "critical": false
+    },
+    {
+      "gate": "player_pool_retrieved",
+      "passed": true,
+      "detail": null,
+      "critical": true
+    },
+    {
+      "gate": "matchups_retrieved",
+      "passed": true,
+      "detail": null,
+      "critical": false
+    },
+    {
+      "gate": "ownership_reconciled",
+      "passed": true,
+      "detail": null,
+      "critical": true
+    },
+    {
+      "gate": "player_index_complete",
+      "passed": true,
+      "detail": null,
+      "critical": true
+    },
+    {
+      "gate": "recent_form_built",
+      "passed": true,
+      "detail": "212 ranked",
+      "critical": false
+    },
+    {
+      "gate": "injury_report_retrieved",
+      "passed": true,
+      "detail": "supplementary; non-fatal",
+      "critical": false
+    },
+    {
+      "gate": "nfl_schedule_retrieved",
+      "passed": true,
+      "detail": "33 NFL teams",
+      "critical": false
+    },
+    {
+      "gate": "faab_arithmetic",
+      "passed": true,
+      "detail": "all 12 teams reconcile against a $200 budget",
+      "critical": true
+    }
+  ]
+}

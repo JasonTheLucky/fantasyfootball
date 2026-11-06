@@ -55,6 +55,10 @@ confirm the snapshot is usable, then go to the detail files.
 | `player_index.json` | Flat name-to-owner lookup for all classified players. Use this to answer "who owns X?". |
 | `recent_form_rankings.json` | Recent form: top 24 QB, 60 RB, 60 WR, 24 TE, 24 K, 20 D/ST by average points over each player's own last three completed games, with the owning fantasy team and a Jason X flag. |
 | `injuries.json` | NFL designations and expected return dates for every player in the league pool, by ESPN player id, plus the two IR cross-checks. A compact `injury` block is also inline on every player in the files above. |
+| `gates.json` | Pass/fail per snapshot check and the `data_status` verdict. Read this instead of deriving it. |
+| `jason_x.json` | Jason X precomputed: starters, bench, IR, open spots, FAAB, bye pressure, injuries, upcoming opponents. |
+| `nfl_schedule.json` | Every NFL team's bye week and per-scoring-period opponent, with kickoffs in CT. |
+| `top_available.json` | Top 25 available per position with acquisition cost, bye week, injury and opponents. |
 | `ownership.json` | The ownership gate. Player id to owning team, plus ESPN's availability list. |
 | `rosters.json` | All 12 teams: starters, bench, IR, open slots, records, FAAB remaining. |
 | `available_players.json` | ESPN `FREEAGENT` + `WAIVERS` pool with ownership percentages. |
@@ -236,6 +240,53 @@ confirm the yellow highlighting survived rendering. What the repository does
 verify is the data behind it, in both directions: every flagged player is
 Jason X's in the index, and every Jason X player in the tables is flagged. The
 rendering itself is enforced by prompt gates `T` and `U`.
+
+### Derived report inputs
+
+Four files exist purely to remove work the consuming report would otherwise have
+to do itself. Each replaces a derivation that has a wrong answer available.
+
+| File | Replaces |
+| --- | --- |
+| `gates.json` | Deriving a DATA STATUS verdict from several files. Read `data_status`. |
+| `jason_x.json` | Rebuilding Jason X's starters, bench, IR and open spots every run. |
+| `nfl_schedule.json` | Web research for bye weeks and opponents. |
+| `top_available.json` | Reading and sorting the ~880 KB free-agent pool to find candidates. |
+
+`gates.json` marks each check `critical` or not, and `data_status` is `PASS`
+only when every critical gate passed. The injury feed, the NFL schedule and the
+recent-form step are deliberately **non-critical**: they degrade the report
+rather than failing it.
+
+`jason_x.json` answers the question that drives most recommendations —
+`has_open_bench_spot` — directly, along with FAAB remaining, every starter's bye
+week and next opponent, `bye_pressure` naming which starters are on bye in the
+next two weeks, and every injury designation with its expected return.
+
+`nfl_schedule.json` comes from the season endpoint's `proTeamSchedules_wl` view,
+which carries `byeWeek` and `proGamesByScoringPeriod` for all 33 pro teams. A
+team's bye period is simply **absent** from its game map, which is how
+`upcoming_games()` marks byes without guessing. `bye_week` is also attached
+inline to every player in `rosters.json`, `player_index.json` and
+`recent_form_rankings.json`, so only opponent lookups need this file.
+
+`top_available.json` is the top 25 per position by rostered percentage —
+about 145 KB against 880 KB for the full pool — with acquisition cost, bye week,
+injury badge and upcoming opponents already attached.
+
+### Timestamps are published in both UTC and Central
+
+Every artifact carries UTC, and `metadata.json` adds `fetched_at_ct` plus a
+`fetched_at_ct_label` like `Thu Nov 5, 6:19 PM CST`. Waiver processing times
+carry `waiver_process_ct` alongside the UTC value.
+
+`zoneinfo` is preferred, but it raises `ZoneInfoNotFoundError` on a stock Windows
+install — no system tzdata, and this project takes no third-party packages — so a
+deterministic US Central rule is implemented as a fallback (DST from the second
+Sunday in March to the first Sunday in November). Without it a local run and the
+Linux runner would print different times for the same snapshot.
+`metadata.timezone_source` records which path produced the values, and the DST
+boundaries are pinned by tests so both paths agree.
 
 ### Injuries, IR and expected return dates
 

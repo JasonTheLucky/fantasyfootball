@@ -4,16 +4,17 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-06T00:04:19.411054+00:00` |
+| Fetched at (UTC) | `2026-11-06T00:22:53.030160+00:00` |
+| Fetched at (CT) | **Thu Nov 5, 6:22 PM CST** |
+| DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 7.3s |
-| ESPN calls | 31 |
-| Workflow run | `42134077684` |
+| Fetch duration | 37.24s |
+| ESPN calls | 32 |
 
 ## Freshness and completeness gates
 
@@ -28,6 +29,7 @@
 | Player lookup index complete | yes |
 | Recent form rankings built | yes |
 | NFL injury report retrieved | yes |
+| NFL schedule and byes retrieved | yes |
 
 ## Week 9 matchups
 
@@ -131,6 +133,36 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
+## Jason X
+
+Record 5-3 · FAAB **$51** of $200 · waiver rank 10 · bench open **0** · IR open 0
+
+No open bench spot: any add needs a drop.
+
+| Slot | Player | Pos | Bye | Next | Status |
+| --- | --- | --- | --- | --- | --- |
+| WR | Jaxon Smith-Njigba | WR | W11 | vs ARI | - |
+| TE | Brock Bowers | TE | W13 | @ SF | - |
+| RB | Bhayshul Tuten | RB | W7 | @ BAL | - |
+| WR | Christian Watson | WR | W11 | @ NE | QUESTIONABLE (back Nov 8) |
+| RB | Ollie Gordon II | RB | W6 | vs DET | - |
+| QB | Jayden Daniels | QB | W7 | vs LAR | - |
+| K | Chase McLaughlin | K | W10 | @ CHI | - |
+| D/ST | Lions D/ST | D/ST | W6 | @ MIA | - |
+| FLEX | Amon-Ra St. Brown | WR | W6 | @ MIA | QUESTIONABLE (back Nov 8) |
+
+**Week 10 bye pressure:** Chase McLaughlin (K).
+
+## Upcoming NFL byes
+
+| Week | Teams on bye |
+| --- | --- |
+| 9 | PIT, TEN |
+| 10 | CHI, DEN, PHI, TB |
+| 11 | ATL, CLE, GB, LAR, NE, SEA |
+| 13 | BAL, IND, LV, NYJ |
+| 14 | ARI, DAL |
+
 ## Injuries and IR
 
 102 players in this league's pool carry an NFL designation; 33 are on injured reserve (10 of them rostered). 6 affect Jason X.
@@ -218,6 +250,10 @@ Scoring: `H2H_POINTS`. Starting lineup and bench: QB x1, RB x2, WR x2, TE x1, D/
 | `metadata.json` | Fetch timestamps, week, per-step success flags. Read first. |
 | `recent_form_rankings.json` | Top 24 QB / 60 RB / 60 WR / 24 TE / 24 K / 20 D/ST by average points over each player's last three completed games, with owner and Jason X flag. |
 | `injuries.json` | NFL designations and expected return dates, by player id, plus the two IR cross-checks. A compact `injury` block is also inline on every player elsewhere. |
+| `gates.json` | Machine-readable pass/fail per snapshot check, and the DATA STATUS verdict. Read this instead of deriving it. |
+| `jason_x.json` | Jason X precomputed: starters, bench, IR, open spots, FAAB, bye pressure, injuries, upcoming opponents. |
+| `nfl_schedule.json` | Every NFL team's bye week and per-week opponent. Use instead of web research for byes and matchups. |
+| `top_available.json` | Top 25 available per position with acquisition cost, bye, injury and opponents. A trimmed available_players.json. |
 | `player_index.json` | **Name to owner lookup for every classified player. Use this to answer "who owns X?".** |
 | `ownership.json` | Positive ownership: player id to owner, plus availability. |
 | `rosters.json` | Every team's starters, bench, and IR. |

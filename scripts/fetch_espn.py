@@ -53,7 +53,7 @@ import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import Any, Iterable
 
 # --------------------------------------------------------------------------
@@ -87,6 +87,23 @@ SEASON_ENDING_RETURN_MONTH = (2, 1)   # (month, day) from which a date is "seaso
 
 # NFL statuses that mean the player is on injured reserve.
 NFL_IR_STATUSES = {"Injured Reserve", "Injured Reserve - Designated to Return"}
+
+# The report is written for US Central time, so every timestamp is published in
+# both UTC and CT rather than asking the consumer to convert.
+#
+# zoneinfo is preferred, but it raises ZoneInfoNotFoundError on a stock Windows
+# install (no system tzdata, and this project takes no third-party packages), so
+# a deterministic US Central rule is implemented as a fallback. Without it the
+# GitHub runner and a local run would print different times for the same
+# snapshot. metadata.timezone_source records which path produced the values.
+CENTRAL_TZ_NAME = "America/Chicago"
+CT_STANDARD_OFFSET = -6        # CST
+CT_DAYLIGHT_OFFSET = -5        # CDT
+
+# How many available players per position to publish in the trimmed pool. The
+# full pool is ~850 players and ~800 KB; this is the slice a report can actually
+# use, sorted by rostered percentage.
+TOP_AVAILABLE_PER_POSITION = 25
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -302,15 +319,22 @@ class EspnClient:
         params: dict[str, Any] | None = None,
         fantasy_filter: dict | None = None,
         label: str | None = None,
+        absolute: bool = False,
     ) -> Any:
-        """GET the league endpoint (optionally a sub-path) and return parsed JSON."""
+        """GET the league endpoint and return parsed JSON.
+
+        ``path`` is appended to the league base URL. Set ``absolute`` when
+        ``path`` is a complete URL instead, which the season-scoped schedule
+        endpoint needs since it sits outside the league path.
+        """
         query: dict[str, Any] = dict(params or {})
         if views:
             query["view"] = [views] if isinstance(views, str) else list(views)
         # Unique cache-buster per call so nothing can serve us a stale body.
         query["cb"] = f"{int(time.time() * 1000)}{random.randint(1000, 9999)}"
 
-        url = self.base + path + "?" + urllib.parse.urlencode(query, doseq=True)
+        base = path if absolute else self.base + path
+        url = base + "?" + urllib.parse.urlencode(query, doseq=True)
         headers = self._headers(fantasy_filter)
         started = time.time()
         last_error: Exception | None = None
@@ -472,6 +496,90 @@ def name_keys(name: str) -> list[str]:
     return keys
 
 
+def _nth_weekday(year: int, month: int, weekday: int, n: int) -> datetime:
+    """The nth occurrence of a weekday in a month, e.g. 2nd Sunday of March."""
+    first = datetime(year, month, 1)
+    offset = (weekday - first.weekday()) % 7
+    return first + timedelta(days=offset + 7 * (n - 1))
+
+
+def _central_offset_hours(moment: datetime) -> int:
+    """US Central UTC offset for a moment, by the post-2007 DST rule.
+
+    DST runs from the second Sunday in March to the first Sunday in November,
+    switching at 02:00 local time. Implemented explicitly because zoneinfo is
+    unavailable on a stock Windows install and this project ships no
+    dependencies; ``to_central`` prefers zoneinfo when it is importable.
+    """
+    naive = moment.replace(tzinfo=None) + timedelta(hours=CT_STANDARD_OFFSET)
+    year = naive.year
+    start = _nth_weekday(year, 3, 6, 2) + timedelta(hours=2)    # 2nd Sunday Mar
+    end = _nth_weekday(year, 11, 6, 1) + timedelta(hours=2)     # 1st Sunday Nov
+    return CT_DAYLIGHT_OFFSET if start <= naive < end else CT_STANDARD_OFFSET
+
+
+_CENTRAL_TZ = None
+_CENTRAL_TZ_SOURCE = "manual-us-central-rule"
+try:                                              # pragma: no cover - env dependent
+    from zoneinfo import ZoneInfo
+
+    _CENTRAL_TZ = ZoneInfo(CENTRAL_TZ_NAME)
+    _CENTRAL_TZ_SOURCE = f"zoneinfo:{CENTRAL_TZ_NAME}"
+except Exception:                                 # pragma: no cover - env dependent
+    _CENTRAL_TZ = None
+
+
+def central_timezone_source() -> str:
+    """Which conversion path is active, so divergence is visible in metadata."""
+    return _CENTRAL_TZ_SOURCE
+
+
+def to_central(moment: datetime | None) -> datetime | None:
+    """Convert an aware UTC datetime to US Central."""
+    if moment is None:
+        return None
+    if moment.tzinfo is None:
+        moment = moment.replace(tzinfo=timezone.utc)
+    if _CENTRAL_TZ is not None:
+        return moment.astimezone(_CENTRAL_TZ)
+    hours = _central_offset_hours(moment.astimezone(timezone.utc))
+    # Name the offset so tzname() yields CST/CDT rather than "UTC-06:00".
+    label = "CDT" if hours == CT_DAYLIGHT_OFFSET else "CST"
+    return moment.astimezone(timezone(timedelta(hours=hours), label))
+
+
+def to_central_iso(moment: datetime | None) -> str | None:
+    central = to_central(moment)
+    return central.isoformat() if central else None
+
+
+def to_central_label(moment: datetime | None) -> str | None:
+    """Short human label, e.g. 'Thu Nov 6, 6:04 PM CST'."""
+    central = to_central(moment)
+    if central is None:
+        return None
+    offset = central.utcoffset() or timedelta(0)
+    name = central.tzname() or (
+        "CDT" if offset == timedelta(hours=CT_DAYLIGHT_OFFSET) else "CST"
+    )
+    hour = central.strftime("%I").lstrip("0") or "12"
+    return (
+        f"{central.strftime('%a %b')} {central.day}, "
+        f"{hour}:{central.strftime('%M %p')} {name}"
+    )
+
+
+def iso_to_central_label(value: str | None) -> str | None:
+    """CT label for an ISO-8601 string, used for ESPN timestamps we pass along."""
+    if not value or not isinstance(value, str):
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return to_central_label(parsed)
+
+
 def _round(value: Any, digits: int = 2) -> Any:
     if isinstance(value, (int, float)):
         return round(float(value), digits)
@@ -525,10 +633,12 @@ def build_rosters(
     lineup_slot_counts: dict[str, int],
     acquisition_settings: dict | None = None,
     injury_report: dict[str, dict] | None = None,
+    bye_weeks: dict[int, int] | None = None,
 ) -> list[dict]:
     """Normalize every team's roster into starters / bench / IR buckets."""
     budget = faab_budget(acquisition_settings)
     injury_report = injury_report or {}
+    bye_weeks = bye_weeks or {}
     starting_slot_counts = {
         int(slot): count
         for slot, count in (lineup_slot_counts or {}).items()
@@ -571,6 +681,7 @@ def build_rosters(
             # player on NFL injured reserve can sit on an active bench spot.
             record["in_fantasy_ir_slot"] = slot_id == IR_SLOT
             record["on_nfl_ir"] = bool(badge and badge.get("on_nfl_ir"))
+            record["bye_week"] = bye_weeks.get(record.get("pro_team_id"))
             if slot_id == BENCH_SLOT:
                 bench.append(record)
             elif slot_id == IR_SLOT:
@@ -842,6 +953,7 @@ def build_player_index(
     rosters: list[dict],
     available_players: list[dict],
     injury_report: dict[str, dict] | None = None,
+    bye_weeks: dict[int, int] | None = None,
 ) -> dict:
     """Build one flat, name-addressable table covering every classified player.
 
@@ -857,6 +969,7 @@ def build_player_index(
     ``collisions``; resolve those by position and pro_team.
     """
     injury_report = injury_report or {}
+    bye_weeks = bye_weeks or {}
     players: list[dict] = []
 
     for team in rosters:
@@ -879,6 +992,7 @@ def build_player_index(
                         "in_fantasy_ir_slot": player["lineup_slot"] == "IR" or None,
                         "on_nfl_ir": (badge or {}).get("on_nfl_ir") or None,
                         "injury": badge,
+                        "bye_week": bye_weeks.get(player.get("pro_team_id")),
                         "percent_owned": player.get("percent_owned"),
                     }
                 )
@@ -901,6 +1015,7 @@ def build_player_index(
                 "in_fantasy_ir_slot": None,
                 "on_nfl_ir": (badge or {}).get("on_nfl_ir") or None,
                 "injury": badge,
+                "bye_week": bye_weeks.get(player.get("pro_team_id")),
                 "percent_owned": player.get("percent_owned"),
             }
         )
@@ -950,6 +1065,105 @@ def build_player_index(
         "by_normalized_name": by_name,
         "players_by_id": {str(p["player_id"]): p for p in players},
     }
+
+
+# --------------------------------------------------------------------------
+# NFL schedule and bye weeks
+# --------------------------------------------------------------------------
+
+
+def fetch_pro_schedule(
+    client: EspnClient, season: int
+) -> tuple[dict[int, dict], dict[str, Any]]:
+    """Every NFL team's bye week and per-scoring-period opponent.
+
+    Source is the season endpoint's ``proTeamSchedules_wl`` view, which returns
+    ``settings.proTeams`` with ``byeWeek`` and ``proGamesByScoringPeriod``. This
+    removes the one genuinely factual thing the report previously had to get
+    from web research, and it is also the only way to know a bye without
+    guessing: a team's bye period is simply absent from its game map.
+
+    Returns ({pro_team_id: record}, diag).
+    """
+    diag: dict[str, Any] = {"ok": False, "teams": 0, "error": None}
+    try:
+        payload = client.get(
+            path=f"{READ_HOST}/apis/v3/games/ffl/seasons/{season}",
+            views="proTeamSchedules_wl",
+            label="pro_schedule",
+            absolute=True,
+        )
+    except FetchError as exc:
+        diag["error"] = str(exc)
+        return {}, diag
+
+    teams: dict[int, dict] = {}
+    for team in (payload.get("settings") or {}).get("proTeams") or []:
+        if not isinstance(team, dict):
+            continue
+        team_id = team.get("id")
+        if not isinstance(team_id, int):
+            continue
+        games: dict[str, dict] = {}
+        for period, period_games in (team.get("proGamesByScoringPeriod") or {}).items():
+            for game in period_games or []:
+                home = game.get("homeProTeamId")
+                away = game.get("awayProTeamId")
+                if team_id not in (home, away):
+                    continue
+                at_home = home == team_id
+                kickoff = _ms_to_iso(game.get("date"))
+                games[str(period)] = {
+                    "opponent_pro_team_id": away if at_home else home,
+                    "opponent": PRO_TEAMS.get(
+                        away if at_home else home, "UNKNOWN"
+                    ),
+                    "at_home": at_home,
+                    "kickoff_utc": kickoff,
+                    "kickoff_ct": iso_to_central_label(kickoff),
+                    "start_time_tbd": game.get("startTimeTBD"),
+                }
+                break
+        teams[team_id] = {
+            "pro_team_id": team_id,
+            "abbrev": team.get("abbrev"),
+            "name": " ".join(
+                p for p in (team.get("location"), team.get("name")) if p
+            ).strip()
+            or team.get("abbrev"),
+            "bye_week": team.get("byeWeek"),
+            "games_by_scoring_period": games,
+        }
+
+    diag["ok"] = len(teams) > 0
+    diag["teams"] = len(teams)
+    return teams, diag
+
+
+def bye_week_map(pro_schedule: dict[int, dict]) -> dict[int, int]:
+    """{pro_team_id: bye_week}, excluding the free-agent pseudo-team."""
+    return {
+        tid: rec["bye_week"]
+        for tid, rec in (pro_schedule or {}).items()
+        if isinstance(rec.get("bye_week"), int) and rec["bye_week"] > 0
+    }
+
+
+def upcoming_games(
+    pro_schedule: dict[int, dict], pro_team_id: Any, weeks: list[int]
+) -> list[dict]:
+    """The team's games for the given scoring periods, byes marked explicitly."""
+    record = (pro_schedule or {}).get(pro_team_id)
+    if not record:
+        return []
+    out = []
+    for week in weeks:
+        game = (record.get("games_by_scoring_period") or {}).get(str(week))
+        if game is None:
+            out.append({"scoring_period_id": week, "bye": True})
+        else:
+            out.append({"scoring_period_id": week, "bye": False, **game})
+    return out
 
 
 # --------------------------------------------------------------------------
@@ -1542,6 +1756,238 @@ def build_recent_form(
 
 
 # --------------------------------------------------------------------------
+# Derived report inputs
+# --------------------------------------------------------------------------
+
+
+def build_jason_x_block(
+    rosters: list[dict],
+    lineup_slot_counts: dict[str, int],
+    pro_schedule: dict[int, dict],
+    weeks_ahead: list[int],
+    jason_x_team_id: Any = JASON_X_TEAM_ID,
+) -> dict | None:
+    """Everything about Jason X's own team, precomputed.
+
+    The report prompt previously had to rebuild starters, bench, IR and open
+    spots on every run. That is a derivation with a wrong answer available, so
+    the pipeline publishes it instead.
+    """
+    team = next(
+        (t for t in rosters if t.get("team_id") == jason_x_team_id), None
+    )
+    if team is None:
+        return None
+
+    byes = bye_week_map(pro_schedule)
+
+    def decorate(player: dict) -> dict:
+        out = {
+            "player_id": player["player_id"],
+            "name": player["name"],
+            "position": player["position"],
+            "pro_team": player["pro_team"],
+            "lineup_slot": player["lineup_slot"],
+            "bye_week": byes.get(player.get("pro_team_id")),
+            "percent_owned": player.get("percent_owned"),
+            "injury": player.get("injury"),
+            "on_nfl_ir": player.get("on_nfl_ir"),
+            "in_fantasy_ir_slot": player.get("in_fantasy_ir_slot"),
+            "upcoming": upcoming_games(
+                pro_schedule, player.get("pro_team_id"), weeks_ahead
+            ),
+        }
+        return {k: v for k, v in out.items() if v not in (None, [], {})}
+
+    starters = [decorate(p) for p in team["starters"]]
+    bench = [decorate(p) for p in team["bench"]]
+    ir = [decorate(p) for p in team["injured_reserve"]]
+
+    # Which starting slots are on bye in each upcoming week.
+    bye_pressure = []
+    for week in weeks_ahead:
+        affected = [
+            {"name": p["name"], "position": p["position"],
+             "lineup_slot": p["lineup_slot"]}
+            for p in starters
+            if p.get("bye_week") == week
+        ]
+        if affected:
+            bye_pressure.append({"scoring_period_id": week, "starters_on_bye": affected})
+
+    designated = [
+        {
+            "name": p["name"],
+            "lineup_slot": p["lineup_slot"],
+            "designation": (p.get("injury") or {}).get("designation"),
+            "expected_return": (p.get("injury") or {}).get("expected_return_label"),
+            "on_nfl_ir": p.get("on_nfl_ir", False),
+        }
+        for p in starters + bench + ir
+        if p.get("injury")
+    ]
+
+    return {
+        "team_id": team["team_id"],
+        "team_name": team["team_name"],
+        "owners": team["owners"],
+        "record": team["record"],
+        "faab": team.get("faab"),
+        "waiver_rank": team.get("waiver_rank"),
+        "counts": team["counts"],
+        "capacity": team["capacity"],
+        "open_starting_slots": team["open_starting_slots"],
+        "roster_slot_counts": {
+            LINEUP_SLOTS.get(int(slot), slot): count
+            for slot, count in (lineup_slot_counts or {}).items()
+            if count
+        },
+        "weeks_ahead": weeks_ahead,
+        "starters": starters,
+        "bench": bench,
+        "injured_reserve": ir,
+        "injury_designations": designated,
+        "bye_pressure": bye_pressure,
+        "has_open_bench_spot": team["capacity"]["bench_open"] > 0,
+        "has_open_ir_spot": team["capacity"]["ir_open"] > 0,
+    }
+
+
+def build_top_available(
+    available_players: list[dict],
+    pro_schedule: dict[int, dict],
+    injury_report: dict[str, dict],
+    weeks_ahead: list[int],
+    per_position: int = TOP_AVAILABLE_PER_POSITION,
+) -> dict:
+    """The slice of the free-agent pool a report can actually use.
+
+    available_players.json is ~850 players and ~800 KB, of which only the top of
+    each position is ever a candidate. This is the same data, ranked by rostered
+    percentage and trimmed, so a consumer does not have to read and sort the
+    whole pool to answer "who is worth adding at RB".
+    """
+    byes = bye_week_map(pro_schedule)
+    by_position: dict[str, list[dict]] = {}
+
+    for player in available_players:
+        position = player.get("position")
+        if position not in RECENT_FORM_LIMITS:
+            continue
+        by_position.setdefault(position, []).append(player)
+
+    out: dict[str, list[dict]] = {}
+    for position in RECENT_FORM_LIMITS:
+        ranked = sorted(
+            by_position.get(position, []),
+            key=lambda p: (-(p.get("percent_owned") or 0), p.get("name") or ""),
+        )[:per_position]
+        rows = []
+        for index, player in enumerate(ranked, 1):
+            badge = injury_badge(player["player_id"], injury_report)
+            row = {
+                "rank": index,
+                "player_id": player["player_id"],
+                "name": player["name"],
+                "position": position,
+                "pro_team": player["pro_team"],
+                "availability_status": player.get("availability_status"),
+                "acquisition": (
+                    "FREE AGENT"
+                    if player.get("availability_status") == "FREEAGENT"
+                    else "WAIVERS"
+                ),
+                "waiver_process_date": player.get("waiver_process_date"),
+                "waiver_process_ct": iso_to_central_label(
+                    player.get("waiver_process_date")
+                ),
+                "percent_owned": player.get("percent_owned"),
+                "percent_change": player.get("percent_change"),
+                "bye_week": byes.get(player.get("pro_team_id")),
+                "injury": badge,
+                "upcoming": upcoming_games(
+                    pro_schedule, player.get("pro_team_id"), weeks_ahead
+                ),
+            }
+            rows.append({k: v for k, v in row.items() if v not in (None, [], {})})
+        out[position] = rows
+    return out
+
+
+def build_gates(metadata: dict, extra: dict[str, Any]) -> dict:
+    """Machine-readable pass/fail for every snapshot-level check.
+
+    The report prompt asks for a DATA STATUS line, which previously meant
+    re-deriving the verdict from several files. This makes it a lookup.
+    """
+    gates = [
+        ("league_settings_retrieved", metadata.get("league_fetch_success"),
+         "league settings, teams and status"),
+        ("all_rosters_retrieved", metadata.get("roster_fetch_success"),
+         f"{metadata.get('team_count')} of {metadata.get('expected_team_count')} teams"),
+        ("team_count_complete", metadata.get("team_count_complete"), None),
+        ("transactions_retrieved", metadata.get("transactions_fetch_success"), None),
+        ("player_pool_retrieved", metadata.get("player_pool_fetch_success"), None),
+        ("matchups_retrieved", metadata.get("matchup_fetch_success"), None),
+        ("ownership_reconciled", metadata.get("ownership_reconciled"), None),
+        ("player_index_complete", metadata.get("player_index_built"), None),
+        ("recent_form_built", metadata.get("recent_form_success"),
+         f"{metadata.get('recent_form_ranked_total')} ranked"),
+        ("injury_report_retrieved", metadata.get("injury_report_success"),
+         "supplementary; non-fatal"),
+        ("nfl_schedule_retrieved", extra.get("schedule_ok"),
+         f"{extra.get('schedule_teams')} NFL teams"),
+        ("faab_arithmetic", extra.get("faab_ok"), extra.get("faab_detail")),
+    ]
+    blocks = [
+        {
+            "gate": name,
+            "passed": bool(value),
+            "detail": detail,
+            "critical": name in CRITICAL_GATES,
+        }
+        for name, value, detail in gates
+    ]
+    failed_critical = [b["gate"] for b in blocks if b["critical"] and not b["passed"]]
+    failed_other = [
+        b["gate"] for b in blocks if not b["critical"] and not b["passed"]
+    ]
+    return {
+        "usage": (
+            "Pass/fail for every snapshot-level check, so DATA STATUS is a lookup "
+            "rather than a derivation. data_status is PASS only when every "
+            "critical gate passed. Non-critical gates failing degrade the report "
+            "but do not fail it: say what is missing instead of omitting it "
+            "silently. This covers snapshot integrity only; the report still owns "
+            "its own ownership, acquisition-cost and PDF gates."
+        ),
+        "data_status": "PASS" if not failed_critical else "FAIL",
+        "failed_critical": failed_critical,
+        "failed_non_critical": failed_other,
+        "snapshot_fetched_at_utc": metadata.get("fetched_at"),
+        "snapshot_fetched_at_ct": metadata.get("fetched_at_ct"),
+        "snapshot_fetched_at_ct_label": metadata.get("fetched_at_ct_label"),
+        "scoring_period_id": metadata.get("scoringPeriodId"),
+        "errors": metadata.get("errors") or [],
+        "gates": blocks,
+    }
+
+
+# Gates that must pass for the snapshot to be usable at all. The injury feed and
+# the NFL schedule are supplementary, and the recent-form step is explicitly
+# non-critical, so none of them can fail the snapshot.
+CRITICAL_GATES = {
+    "league_settings_retrieved",
+    "all_rosters_retrieved",
+    "team_count_complete",
+    "player_pool_retrieved",
+    "ownership_reconciled",
+    "player_index_complete",
+    "faab_arithmetic",
+}
+
+
+# --------------------------------------------------------------------------
 # Fetch steps
 # --------------------------------------------------------------------------
 
@@ -1622,6 +2068,9 @@ def fetch_player_pool(
                     "availability_status": wrapper.get("status"),
                     "on_team_id": wrapper.get("onTeamId"),
                     "waiver_process_date": _ms_to_iso(wrapper.get("waiverProcessDate")),
+                    "waiver_process_ct": iso_to_central_label(
+                        _ms_to_iso(wrapper.get("waiverProcessDate"))
+                    ),
                     "roster_locked": wrapper.get("rosterLocked"),
                     "trade_locked": wrapper.get("tradeLocked"),
                     "draft_auction_value": wrapper.get("draftAuctionValue"),
@@ -1759,7 +2208,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Started {started_at.isoformat()}")
 
     # ---- 1. League core (settings, teams, members, status) ----------------
-    print("\n[1/9] league settings, teams, status")
+    print("\n[1/10] league settings, teams, status")
     try:
         league_raw = client.get(
             views=["mSettings", "mTeam", "mRoster", "mStandings"], label="league_core"
@@ -1873,11 +2322,35 @@ def main(argv: list[str] | None = None) -> int:
         },
     )
 
-    # ---- 1b. NFL injury report (second host, supplementary) --------------
+    # ---- 2. NFL schedule and bye weeks ----------------------------------
+    print("\n[2/10] NFL schedule and bye weeks")
+    pro_schedule, schedule_diag = fetch_pro_schedule(client, season)
+    byes = bye_week_map(pro_schedule)
+    steps["nfl_schedule_success"] = bool(schedule_diag.get("ok"))
+    if schedule_diag.get("ok"):
+        remaining = sorted(
+            {w for w in byes.values() if isinstance(w, int) and w >= (scoring_period_id or 1)}
+        )
+        print(
+            f"  {schedule_diag['teams']} NFL teams | {len(byes)} bye weeks mapped"
+            f" | byes still to come: {remaining}"
+        )
+    else:
+        message = f"NFL schedule unavailable: {schedule_diag.get('error')}"
+        print(f"  WARNING: {message}", file=sys.stderr)
+        errors.append(message)
+
+    # The two scoring periods the report's lineup pressure test covers.
+    weeks_ahead = [
+        w for w in ((scoring_period_id or 1), (scoring_period_id or 1) + 1)
+        if w <= (status.get("finalScoringPeriod") or 18)
+    ]
+
+    # ---- 3. NFL injury report (second host, supplementary) ---------------
     # Fetched before the rosters so every downstream structure can carry the
     # badge. Never fatal: the fantasy API already gives us injuryStatus, and
     # this only adds the expected return date and the beat note.
-    print("\n[2/9] NFL injury report (expected return dates)")
+    print("\n[3/10] NFL injury report (expected return dates)")
     injury_report, injury_diag = fetch_injury_report()
     steps["injury_report_success"] = bool(injury_diag.get("ok") and injury_report)
     if injury_diag.get("ok"):
@@ -1892,13 +2365,14 @@ def main(argv: list[str] | None = None) -> int:
         errors.append(message)
 
     # ---- 2. Rosters -------------------------------------------------------
-    print("\n[3/9] rosters for every team")
+    print("\n[4/10] rosters for every team")
     rosters = build_rosters(
         teams,
         members_by_id,
         lineup_slot_counts,
         settings.get("acquisitionSettings"),
         injury_report=injury_report,
+        bye_weeks=byes,
     )
     teams_with_players = sum(1 for r in rosters if r["counts"]["total"] > 0)
     rosters_complete = (
@@ -1931,7 +2405,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     # ---- 3. Transactions --------------------------------------------------
-    print("\n[4/9] transactions")
+    print("\n[5/10] transactions")
     teams_by_id = {r["team_id"]: r["team_name"] for r in rosters}
     transactions_payload: dict[str, Any]
     try:
@@ -1968,7 +2442,7 @@ def main(argv: list[str] | None = None) -> int:
     write("transactions.json", transactions_payload)
 
     # ---- 4. Free agent / waiver pool -------------------------------------
-    print("\n[5/9] free agent + waiver pool (X-Fantasy-Filter)")
+    print("\n[6/10] free agent + waiver pool (X-Fantasy-Filter)")
     available: list[dict] = []
     try:
         available = fetch_player_pool(client, scoring_period_id, ["FREEAGENT", "WAIVERS"])
@@ -2001,7 +2475,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     # ---- 5. Matchups for the current period ------------------------------
-    print("\n[6/9] matchups / boxscore for current period")
+    print("\n[7/10] matchups / boxscore for current period")
     try:
         matchup_raw = client.get(
             views=["mMatchupScore", "mBoxscore"],
@@ -2045,7 +2519,7 @@ def main(argv: list[str] | None = None) -> int:
         steps["matchup_fetch_success"] = False
 
     # ---- 6. Ownership reconciliation -------------------------------------
-    print("\n[7/9] ownership reconciliation")
+    print("\n[8/10] ownership reconciliation")
     ownership = build_ownership(rosters, available)
     ownership.update(
         {
@@ -2072,8 +2546,10 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     # ---- 7. Flat player index -------------------------------------------
-    print("\n[8/9] player lookup index")
-    player_index = build_player_index(rosters, available, injury_report=injury_report)
+    print("\n[9/10] player lookup index")
+    player_index = build_player_index(
+        rosters, available, injury_report=injury_report, bye_weeks=byes
+    )
     player_index.update(
         {
             "league_id": args.league_id,
@@ -2105,7 +2581,7 @@ def main(argv: list[str] | None = None) -> int:
     # ---- 8. Recent form rankings (last 3 completed games) ----------------
     # No write_raw() here on purpose: 9-17 payloads at ~9 MB each would add
     # 80-160 MB to the workflow artifact for data this artifact already captures.
-    print("\n[9/9] recent form rankings (last 3 completed games)")
+    print("\n[10/10] recent form rankings (last 3 completed games)")
     recent_form_ranked_total = 0
     try:
         weeks_considered = recent_form_weeks(status, scoring_period_id)
@@ -2241,6 +2717,51 @@ def main(argv: list[str] | None = None) -> int:
         errors.append(f"recent form rankings failed: {exc}")
         steps["recent_form_success"] = False
 
+    # ---- NFL schedule file -----------------------------------------------
+    if pro_schedule:
+        write(
+            "nfl_schedule.json",
+            {
+                "usage": (
+                    "Every NFL team's bye week and per-scoring-period opponent, "
+                    "keyed by ESPN pro team id. Use this instead of web research "
+                    "for byes and opponents; it is the same snapshot as the "
+                    "rosters. A scoring period absent from a team's "
+                    "games_by_scoring_period is that team's bye, which is why "
+                    "bye_week and the gap always agree. Every player record in "
+                    "rosters.json, player_index.json and recent_form_rankings.json "
+                    "already carries bye_week inline, so only the opponent lookup "
+                    "needs this file. kickoff_ct is the kickoff in US Central."
+                ),
+                "league_id": args.league_id,
+                "season": season,
+                "scoring_period_id": scoring_period_id,
+                "fetched_at": started_at.isoformat(),
+                "source": schedule_diag,
+                "weeks_ahead": weeks_ahead,
+                "bye_weeks_by_abbrev": {
+                    rec["abbrev"]: rec["bye_week"]
+                    for rec in pro_schedule.values()
+                    if rec.get("abbrev") and isinstance(rec.get("bye_week"), int)
+                    and rec["bye_week"] > 0
+                },
+                "byes_by_scoring_period": {
+                    str(week): sorted(
+                        rec["abbrev"] for rec in pro_schedule.values()
+                        if rec.get("bye_week") == week and rec.get("abbrev")
+                    )
+                    for week in sorted(
+                        {
+                            rec["bye_week"] for rec in pro_schedule.values()
+                            if isinstance(rec.get("bye_week"), int)
+                            and rec["bye_week"] > 0
+                        }
+                    )
+                },
+                "teams": {str(k): v for k, v in sorted(pro_schedule.items())},
+            },
+        )
+
     # ---- injury report file ----------------------------------------------
     # Written after the rosters so ownership can be attached. The badge is
     # already inline on every player everywhere; this file is the one place the
@@ -2346,6 +2867,115 @@ def main(argv: list[str] | None = None) -> int:
     )
     write("metadata.json", metadata)
 
+    # ---- derived report inputs -------------------------------------------
+    # Written last because they consolidate everything above. Each one removes a
+    # derivation the report prompt previously had to perform itself.
+    print("\n[derived] report inputs")
+
+    jason_block = build_jason_x_block(
+        rosters, lineup_slot_counts, pro_schedule, weeks_ahead
+    )
+    if jason_block:
+        jason_block.update(
+            {
+                "usage": (
+                    "Jason X's team, precomputed from this snapshot so the report "
+                    "does not have to rebuild it. starters, bench and "
+                    "injured_reserve are the current lineup; open_starting_slots "
+                    "and capacity give the roster-spot answer directly, and "
+                    "has_open_bench_spot is the flag that decides whether an add "
+                    "needs a drop. bye_pressure lists which starters are on bye "
+                    "in each of weeks_ahead. injury_designations is every "
+                    "designated player on the roster with the expected return. "
+                    "Every player carries bye_week and their upcoming opponents."
+                ),
+                "league_id": args.league_id,
+                "season": season,
+                "scoring_period_id": scoring_period_id,
+                "fetched_at": started_at.isoformat(),
+                "fetched_at_ct_label": to_central_label(started_at),
+            }
+        )
+        write("jason_x.json", jason_block)
+        print(
+            f"  jason_x.json: {jason_block['counts']['total']} players | "
+            f"bench open {jason_block['capacity']['bench_open']} | "
+            f"IR open {jason_block['capacity']['ir_open']} | "
+            f"FAAB ${(jason_block.get('faab') or {}).get('remaining')} | "
+            f"{len(jason_block['injury_designations'])} designated"
+        )
+
+    top_available = build_top_available(
+        available, pro_schedule, injury_report, weeks_ahead
+    )
+    write(
+        "top_available.json",
+        {
+            "usage": (
+                f"The top {TOP_AVAILABLE_PER_POSITION} available players per "
+                "position by rostered percentage, with acquisition cost, bye "
+                "week, injury badge and upcoming opponents already attached. "
+                "This is a trimmed view of available_players.json for when a "
+                "report needs candidates rather than the whole ~850-player pool. "
+                "Availability still comes from the same snapshot, and "
+                "player_index.json remains the authority on ownership. acquisition "
+                "is FREE AGENT ($0, instant) or WAIVERS (needs a FAAB bid, "
+                "processing at waiver_process_ct)."
+            ),
+            "league_id": args.league_id,
+            "season": season,
+            "scoring_period_id": scoring_period_id,
+            "fetched_at": started_at.isoformat(),
+            "per_position": TOP_AVAILABLE_PER_POSITION,
+            "counts": {pos: len(rows) for pos, rows in top_available.items()},
+            "free_agents_in_pool": sum(
+                1 for p in available if p.get("availability_status") == "FREEAGENT"
+            ),
+            "waivers_in_pool": sum(
+                1 for p in available if p.get("availability_status") == "WAIVERS"
+            ),
+            "players_by_position": top_available,
+        },
+    )
+    print(
+        "  top_available.json: "
+        + " ".join(f"{pos} {len(rows)}" for pos, rows in top_available.items())
+    )
+
+    faab_ok = True
+    faab_detail = "faab disabled"
+    league_budget = faab_budget(settings.get("acquisitionSettings"))
+    if league_budget is not None:
+        mismatched = [
+            t["team_name"] for t in rosters
+            if (t.get("faab") or {}).get("remaining")
+            != league_budget - ((t.get("faab") or {}).get("spent") or 0)
+        ]
+        faab_ok = not mismatched
+        faab_detail = (
+            f"all {len(rosters)} teams reconcile against a ${league_budget} budget"
+            if faab_ok else f"mismatched: {mismatched}"
+        )
+
+    gates = build_gates(
+        metadata,
+        {
+            "schedule_ok": schedule_diag.get("ok"),
+            "schedule_teams": schedule_diag.get("teams"),
+            "faab_ok": faab_ok,
+            "faab_detail": faab_detail,
+        },
+    )
+    write("gates.json", gates)
+    print(
+        f"  gates.json: DATA STATUS {gates['data_status']}"
+        + (f" | failed: {gates['failed_critical']}" if gates["failed_critical"] else "")
+        + (
+            f" | degraded: {gates['failed_non_critical']}"
+            if gates["failed_non_critical"] else ""
+        )
+    )
+
     critical_ok = steps.get("league_fetch_success") and steps.get("roster_fetch_success")
     print(
         f"\n{'OK' if critical_ok else 'FAILED'}: "
@@ -2412,6 +3042,9 @@ def build_metadata(
     all_ok = all(steps.get(k, False) for k in ("league_fetch_success", "roster_fetch_success"))
     return {
         "fetched_at": finished_at.isoformat(),
+        "fetched_at_ct": to_central_iso(finished_at),
+        "fetched_at_ct_label": to_central_label(finished_at),
+        "timezone_source": central_timezone_source(),
         "fetched_at_epoch": int(finished_at.timestamp()),
         "started_at": started_at.isoformat(),
         "duration_seconds": round((finished_at - started_at).total_seconds(), 2),
@@ -2430,6 +3063,7 @@ def build_metadata(
         "recent_form_success": steps.get("recent_form_success", False),
         "recent_form_ranked_total": recent_form_ranked_total,
         "injury_report_success": steps.get("injury_report_success", False),
+        "nfl_schedule_success": steps.get("nfl_schedule_success", False),
         "roster_fetch_success": steps.get("roster_fetch_success", False),
         "transactions_fetch_success": steps.get("transactions_fetch_success", False),
         "player_pool_fetch_success": steps.get("player_pool_fetch_success", False),
