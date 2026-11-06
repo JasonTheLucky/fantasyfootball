@@ -4,18 +4,18 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-06T12:17:20.786658+00:00` |
-| Fetched at (CT) | **Fri Nov 6, 6:17 AM CST** |
+| Fetched at (UTC) | `2026-11-06T18:15:32.004578+00:00` |
+| Fetched at (CT) | **Fri Nov 6, 12:15 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
-| Available players (FA + waivers) | 857 |
-| Players in lookup index | 1055 |
-| Fetch duration | 6.74s |
+| Available players (FA + waivers) | 858 |
+| Players in lookup index | 1056 |
+| Fetch duration | 8.55s |
 | ESPN calls | 32 |
-| Workflow run | `42216490889` |
+| Workflow run | `42269008563` |
 
 ## Freshness and completeness gates
 
@@ -79,7 +79,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (41)
+## Injury designations (42)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -113,11 +113,12 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | MarShawn Lloyd | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | WR | yes |
+| Nicole's Gnarly Team | Emeka Egbuka | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Nicole's Gnarly Team | Deshaun Watson | QB | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | FLEX | yes |
-| Kelli's Top-Notch Team | Garrett Wilson | WR | QUESTIONABLE | WR | yes |
+| Kelli's Top-Notch Team | Garrett Wilson | WR | OUT | WR | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | QUESTIONABLE | BENCH | NO |
@@ -129,19 +130,28 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 17 | 43 | 110 | 187 | 185 | 315 | 857 |
+| 17 | 43 | 110 | 188 | 185 | 315 | 858 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 6, 12:21 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Fri Nov 6, 6:17 AM CST`: 4 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| Bam Knight | QUESTIONABLE | OUT | Nov 15 | - |
+| Brian Robinson Jr. | QUESTIONABLE | OUT | Nov 15 | - |
+| Emeka Egbuka | - | QUESTIONABLE | Nov 8 | Nicole's Gnarly Team |
+| Garrett Wilson | QUESTIONABLE | OUT | Nov 15 | Kelli's Top-Notch Team |
 
 ## Jason X
 
 Record 5-3 · FAAB **$51** of $200 · waiver rank 10 · bench open **0** · IR open 0
 
-**This week:** vs Cole-Train — projected 140.88 to 132.81 (margin 8.07), win probability 0.54. Posture: **favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Cole-Train — projected 140.81 to 132.81 (margin 8.0), win probability 0.54. Posture: **favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $51 remaining, $10 reserve, **$41 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -158,13 +168,13 @@ No open bench spot: any add needs a drop.
 | --- | --- | --- | --- | --- | --- | --- |
 | QB | Jayden Daniels | QB | W7 | vs LAR | 20.67 | - |
 | RB | Bhayshul Tuten | RB | W7 | @ BAL | 15.91 | - |
-| RB | Ollie Gordon II | RB | W6 | vs DET | 17.02 | - |
+| RB | Ollie Gordon II | RB | W6 | vs DET | 17.03 | - |
 | WR | Jaxon Smith-Njigba | WR | W11 | vs ARI | 23.02 | - |
 | WR | Christian Watson | WR | W11 | @ NE | 16.33 | QUESTIONABLE (back Nov 8) |
 | TE | Brock Bowers | TE | W13 | @ SF | 18.83 | - |
 | FLEX | Amon-Ra St. Brown | WR | W6 | @ MIA | 21.38 | QUESTIONABLE (back Nov 8) |
 | K | Chase McLaughlin | K | W10 | @ CHI | 8.78 | - |
-| D/ST | Lions D/ST | D/ST | W6 | @ MIA | 5.95 | - |
+| D/ST | Lions D/ST | D/ST | W6 | @ MIA | 5.87 | - |
 
 **Week 10 bye pressure:** Chase McLaughlin (K).
 
@@ -180,7 +190,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-100 players in this league's pool carry an NFL designation; 32 are on injured reserve (11 of them rostered). 6 affect Jason X.
+101 players in this league's pool carry an NFL designation; 32 are on injured reserve (11 of them rostered). 6 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -236,7 +246,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-954 total | 242 executed ownership changes | 463 lineup-only moves | 192 draft picks | 0 pending
+955 total | 242 executed ownership changes | 464 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
