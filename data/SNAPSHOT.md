@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-06T02:07:23.407450+00:00` |
-| Fetched at (CT) | **Thu Nov 5, 8:07 PM CST** |
+| Fetched at (UTC) | `2026-11-06T02:08:05.826192+00:00` |
+| Fetched at (CT) | **Thu Nov 5, 8:08 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,8 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 17.32s |
+| Fetch duration | 8.85s |
 | ESPN calls | 32 |
+| Workflow run | `42148325140` |
 
 ## Freshness and completeness gates
 
@@ -133,13 +134,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Thu Nov 5, 8:03 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Thu Nov 5, 8:07 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
 Record 5-3 · FAAB **$51** of $200 · waiver rank 10 · bench open **0** · IR open 0
 
-**This week:** vs Cole-Train — projected 149.94 to 129.95 (margin 19.99), win probability 0.59. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Cole-Train — projected 149.92 to 129.95 (margin 19.97), win probability 0.59. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $51 remaining, $10 reserve, **$41 discretionary**. Tiers are shares of remaining, already costed:
 
