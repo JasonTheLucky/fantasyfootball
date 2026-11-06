@@ -1,26 +1,59 @@
 {
   "usage": "What changed since the previous snapshot, which is the delta the daily report's 'last ~24 hours' framing needs. Compared against the player_index.json present when this run started, so the window is one snapshot interval (roughly six hours), not exactly 24 hours: previous_snapshot_at says when. injury_changes is the highest-value list and is sorted with Jason X players first; direction is new, changed or cleared. became_available are players dropped by a rival and now addable. became_rostered are players claimed, which is how a target you were considering disappears. changed_team is a trade or a waiver move between teams. comparable is false on a first run or when no previous snapshot was present, in which case every list is empty and absence of change must not be reported as stability.",
   "comparable": true,
-  "previous_snapshot_at": "2026-11-06T02:07:23.407450+00:00",
-  "previous_snapshot_at_ct": "Thu Nov 5, 8:07 PM CST",
+  "previous_snapshot_at": "2026-11-06T02:08:05.826192+00:00",
+  "previous_snapshot_at_ct": "Thu Nov 5, 8:08 PM CST",
   "previous_scoring_period_id": 9,
   "counts": {
-    "injury_changes": 0,
+    "injury_changes": 1,
     "jason_x_injury_changes": 0,
-    "became_available": 0,
-    "became_rostered": 0,
+    "became_available": 1,
+    "became_rostered": 1,
     "changed_team": 0,
     "new_to_pool": 0
   },
-  "injury_changes": [],
+  "injury_changes": [
+    {
+      "player_id": 4697745,
+      "name": "Tyler Loop",
+      "position": "K",
+      "pro_team": "BAL",
+      "from": "IR",
+      "to": null,
+      "expected_return": null,
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "cleared"
+    }
+  ],
   "jason_x_injury_changes": [],
-  "became_available": [],
-  "became_rostered": [],
+  "became_available": [
+    {
+      "player_id": 2473037,
+      "name": "Jason Myers",
+      "position": "K",
+      "pro_team": "SEA",
+      "dropped_by": "Jason X",
+      "now": "FREEAGENT"
+    }
+  ],
+  "became_rostered": [
+    {
+      "player_id": 3043116,
+      "name": "Demarcus Robinson",
+      "position": "WR",
+      "pro_team": "SF",
+      "added_by": "Jason X",
+      "is_jason_x": true
+    }
+  ],
   "changed_team": [],
   "new_to_pool": [],
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 9,
-  "fetched_at": "2026-11-06T02:07:56.974216+00:00",
-  "fetched_at_ct_label": "Thu Nov 5, 8:07 PM CST"
+  "fetched_at": "2026-11-06T06:20:58.409578+00:00",
+  "fetched_at_ct_label": "Fri Nov 6, 12:20 AM CST"
 }
