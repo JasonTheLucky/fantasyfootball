@@ -10,7 +10,7 @@ PROMPT = "docs/daily-report-prompt.md"
 LEGEND = "Yellow = Jason X roster"
 CELL_FORM = "W8 \u00b7 24.60"      # W8 <middle dot> 24.60
 SECTION_4A = "4A. RECENT FORM RANKINGS"
-GATE_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVW"
+GATE_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWX"
 
 
 class PromptIntegrityTest(unittest.TestCase):
@@ -109,6 +109,51 @@ class PromptIntegrityTest(unittest.TestCase):
         for phrase in ("on_nfl_ir", "in_fantasy_ir_slot", "out for the season",
                        "IR-R"):
             self.assertIn(phrase, self.block, phrase)
+
+    def test_section_4a_states_the_season_ending_exclusion(self):
+        self.assertIn("excluded_out_for_season", self.section_4a)
+        self.assertIn("backfill", self.section_4a)
+
+    def test_l3_rank_replaces_the_cost_columns(self):
+        section_4 = self.block[
+            self.block.find("4. POSITION WATCHLIST"):self.block.find(SECTION_4A)
+        ]
+        section_6 = self.block[
+            self.block.find("6. TOP 5 FREE-AGENT"):self.block.find("7. BETTOR IN GREEN")
+        ]
+        for name, text in (("Section 4", section_4), ("Section 6", section_6)):
+            self.assertIn("L3 RANK", text, name)
+            self.assertIn("recent_form_rank", text, name)
+            self.assertIn("recent_form_note", text, name)
+        # The old columns must be gone from the row/field specs.
+        self.assertNotIn("| Bid |", section_4)
+        self.assertNotIn("ACQUISITION COST", section_6)
+        # But cost must still be stated somewhere in each, for gates P and Q.
+        self.assertIn("FREE AGENT $0", section_4)
+        self.assertIn("FREE AGENT $0", section_6)
+
+    def test_section_5_slot_order_is_fixed(self):
+        section_5 = self.block[
+            self.block.find("5. TWO-WEEK"):self.block.find("6. TOP 5 FREE-AGENT")
+        ]
+        self.assertIn("QB, RB, RB, WR, WR, TE, FLEX, K, D/ST", section_5)
+        self.assertIn("starting_slot_order", section_5)
+
+    def test_section_8_uses_the_ten_point_scale(self):
+        section_8 = self.block[
+            self.block.find("8. LEAGUE POSITION STRENGTH"):
+            self.block.find("9. WHAT I WOULD DO TODAY")
+        ]
+        self.assertIn("1-10 scale", section_8)
+        self.assertIn("exactly one team scores 10", section_8)
+        self.assertIn("exactly one team scores 1", section_8)
+        # The superseded four-point vocabulary must be gone.
+        for stale in ("1-Great", "2-Strong", "3-Average", "4-Weak"):
+            self.assertNotIn(stale, self.block, f"superseded rating {stale!r}")
+
+    def test_slot_order_matches_the_code_constant(self):
+        expected = ", ".join(self.fetch_espn.STARTING_SLOT_ORDER)
+        self.assertIn(expected, self.block)
 
 
 if __name__ == "__main__":

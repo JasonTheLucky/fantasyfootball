@@ -317,6 +317,122 @@ class ParticipationTest(unittest.TestCase):
         self.assertAlmostEqual(entry["avg_3_game_exact"], 10.0)
 
 
+class SeasonEndingExclusionTest(unittest.TestCase):
+    """Out-for-season players are dropped before the slice, so limits backfill."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.fe = import_fetch_espn()
+
+    def build(self, weekly, meta, injury_report, limits=None):
+        return self.fe.build_recent_form(
+            weekly, meta, {}, [6, 7, 8],
+            limits=limits or {"QB": 2, "RB": 60, "WR": 60, "TE": 24,
+                              "K": 24, "D/ST": 20},
+            injury_report=injury_report,
+        )
+
+    def test_out_for_season_is_excluded_and_the_limit_backfills(self):
+        # Three QBs, the best of whom is out for the season, limit 2.
+        weekly = {
+            1: {6: row(40.0), 7: row(40.0), 8: row(40.0)},     # out for season
+            2: {6: row(20.0), 7: row(20.0), 8: row(20.0)},
+            3: {6: row(10.0), 7: row(10.0), 8: row(10.0)},
+        }
+        meta = {i: meta_entry("QB", name=f"QB{i}") for i in (1, 2, 3)}
+        injuries = {
+            "1": {"designation": "IR", "on_nfl_ir": True,
+                  "expected_return": "2027-02-15",
+                  "expected_return_label": "out for the season"}
+        }
+        out = self.build(weekly, meta, injuries)
+        names = [e["name"] for e in out["rankings"]["QB"]]
+        self.assertEqual(names, ["QB2", "QB3"])     # backfilled to the limit
+        self.assertEqual(out["counts"]["QB"]["ranked"], 2)
+        self.assertIs(out["counts"]["QB"]["sufficient"], True)
+        self.assertEqual(out["diagnostics"]["excluded_out_for_season"], 1)
+        self.assertEqual(
+            [e["name"] for e in out["excluded_out_for_season"]], ["QB1"]
+        )
+
+    def test_in_season_return_is_still_ranked(self):
+        weekly = {1: {6: row(40.0), 7: row(40.0), 8: row(40.0)}}
+        injuries = {
+            "1": {"designation": "IR", "on_nfl_ir": True,
+                  "expected_return": "2026-12-06", "expected_return_label": "Dec 6"}
+        }
+        out = self.build(weekly, {1: meta_entry("QB", name="Back Soon")}, injuries)
+        self.assertEqual([e["name"] for e in out["rankings"]["QB"]], ["Back Soon"])
+        self.assertEqual(out["diagnostics"]["excluded_out_for_season"], 0)
+
+    def test_excluded_player_is_not_in_qualifying_ids(self):
+        weekly = {
+            1: {6: row(40.0), 7: row(40.0), 8: row(40.0)},
+            2: {6: row(20.0), 7: row(20.0), 8: row(20.0)},
+        }
+        meta = {1: meta_entry("QB", name="Gone"), 2: meta_entry("QB", name="Here")}
+        injuries = {"1": {"expected_return_label": "out for the season"}}
+        out = self.build(weekly, meta, injuries)
+        self.assertEqual(out["qualifying_player_ids"]["QB"], [2])
+
+    def test_is_out_for_season_helper(self):
+        self.assertTrue(
+            self.fe.is_out_for_season({"expected_return_label": "out for the season"})
+        )
+        self.assertFalse(self.fe.is_out_for_season({"expected_return_label": "Dec 6"}))
+        self.assertFalse(self.fe.is_out_for_season({}))
+        self.assertFalse(self.fe.is_out_for_season(None))
+
+
+class FormLookupTest(unittest.TestCase):
+    """The L3 RANK shown in Sections 4 and 6 comes from here."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.fe = import_fetch_espn()
+
+    def payload(self):
+        return {
+            "limits": {"WR": 60},
+            "rankings": {"WR": [
+                {"player_id": 1, "rank": 1, "avg_3_game_display": "25.00"},
+            ]},
+            "qualifying_player_ids": {"WR": [1, 2]},
+            "excluded_out_for_season": [
+                {"player_id": 3, "name": "Done", "position": "WR"}
+            ],
+        }
+
+    def test_ranked_player_gets_rank_and_average(self):
+        out = self.fe.recent_form_lookup(self.payload())
+        self.assertEqual(out[1]["recent_form_rank"], 1)
+        self.assertEqual(out[1]["recent_form_avg"], "25.00")
+        self.assertEqual(out[1]["recent_form_position"], "WR")
+        self.assertNotIn("recent_form_note", out[1])
+
+    def test_qualifying_but_unranked_says_outside_the_limit(self):
+        out = self.fe.recent_form_lookup(self.payload())
+        self.assertEqual(out[2]["recent_form_note"], "outside the ranked top 60")
+        self.assertNotIn("recent_form_rank", out[2])
+
+    def test_season_ending_exclusion_has_its_own_reason(self):
+        # Must not be reported as "fewer than three games": they may well have
+        # three, and the real reason is the season-ending injury.
+        out = self.fe.recent_form_lookup(self.payload())
+        self.assertEqual(
+            out[3]["recent_form_note"],
+            "excluded from the rankings: out for the season",
+        )
+
+    def test_unknown_player_is_absent_so_callers_can_say_fewer_than_three(self):
+        out = self.fe.recent_form_lookup(self.payload())
+        self.assertNotIn(99, out)
+
+    def test_empty_payload(self):
+        self.assertEqual(self.fe.recent_form_lookup(None), {})
+        self.assertEqual(self.fe.recent_form_lookup({}), {})
+
+
 class HelperTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

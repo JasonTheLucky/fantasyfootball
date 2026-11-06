@@ -151,6 +151,16 @@ RECENT_FORM_LIMITS: dict[str, int] = {
 # never fewer, never padded.
 RECENT_FORM_GAMES = 3
 
+# Players ESPN expects back only next season are excluded from the recent-form
+# rankings entirely. Their three-game average is real but useless: a strong
+# number next to a player who cannot play again this year is a trap, and two
+# such players were sitting in the WR table as free agents. Excluding them
+# before the slice means the limits backfill, so the total stays 212.
+OUT_FOR_SEASON_LABEL = "out for the season"
+
+# The order Jason X's starting slots are presented in, everywhere.
+STARTING_SLOT_ORDER = ["QB", "RB", "RB", "WR", "WR", "TE", "FLEX", "K", "D/ST"]
+
 # ESPN's games-played marker inside a weekly actual's inner stats dict. Keys in
 # that dict are JSON strings, hence the str.
 #
@@ -1272,6 +1282,11 @@ def fetch_injury_report(timeout: int = 45) -> tuple[dict[str, dict], dict[str, A
     return report, diag
 
 
+def is_out_for_season(badge: dict | None) -> bool:
+    """True when ESPN expects the player back only next season."""
+    return bool(badge) and badge.get("expected_return_label") == OUT_FOR_SEASON_LABEL
+
+
 def injury_badge(player_id: Any, injury_report: dict[str, dict]) -> dict | None:
     """The compact block attached to a player wherever that player appears.
 
@@ -1582,11 +1597,27 @@ def build_recent_form(
     rankings: dict[str, list[dict]] = {}
     counts: dict[str, dict] = {}
     crosscheck_rows: list[tuple[int, dict, int, dict]] = []
+    excluded_out_for_season: list[dict] = []
+    qualifying_ids: dict[str, list[int]] = {}
 
     for position, limit in limits.items():
         candidates: list[dict] = []
         for pid, info in meta.items():
             if info.get("position") != position:
+                continue
+            badge = injury_badge(pid, injury_report)
+            if is_out_for_season(badge):
+                # Excluded before sorting so the limit backfills with someone
+                # who can actually play. Recorded so the omission is auditable.
+                excluded_out_for_season.append(
+                    {
+                        "player_id": pid,
+                        "name": info.get("name"),
+                        "position": position,
+                        "designation": badge.get("designation"),
+                        "expected_return": badge.get("expected_return"),
+                    }
+                )
                 continue
             weeks_for_player = weekly.get(pid) or {}
             # The three highest week numbers, not the three best scores.
@@ -1620,6 +1651,9 @@ def build_recent_form(
         # ordering is total and byte-stable between runs.
         candidates.sort(key=lambda e: (-e["avg_3_game_exact"], e["player_id"]))
         qualifying = len(candidates)
+        # Every player with three confirmed appearances, ranked or not. Lets a
+        # consumer tell "outside the top N" from "fewer than three games".
+        qualifying_ids[position] = [e["player_id"] for e in candidates]
         ranked = candidates[:limit]
 
         for index, entry in enumerate(ranked, 1):
@@ -1750,7 +1784,12 @@ def build_recent_form(
         "diagnostics": {
             "players_seen": len(meta),
             "weekly_values_collected": sum(len(w) for w in weekly.values()),
+            "excluded_out_for_season": len(excluded_out_for_season),
         },
+        "excluded_out_for_season": sorted(
+            excluded_out_for_season, key=lambda e: (e["position"], e["name"] or "")
+        ),
+        "qualifying_player_ids": qualifying_ids,
         "rankings": rankings,
     }
 
@@ -1799,7 +1838,17 @@ def build_jason_x_block(
         }
         return {k: v for k, v in out.items() if v not in (None, [], {})}
 
-    starters = [decorate(p) for p in team["starters"]]
+    # ESPN returns starters in its own order; the report presents them in a
+    # fixed slot order, so sort here rather than asking the consumer to.
+    remaining = [decorate(p) for p in team["starters"]]
+    starters: list[dict] = []
+    for slot in STARTING_SLOT_ORDER:
+        match = next((p for p in remaining if p.get("lineup_slot") == slot), None)
+        if match is not None:
+            starters.append(match)
+            remaining.remove(match)
+    starters.extend(remaining)      # any slot not in the canonical order
+
     bench = [decorate(p) for p in team["bench"]]
     ir = [decorate(p) for p in team["injured_reserve"]]
 
@@ -1843,6 +1892,7 @@ def build_jason_x_block(
             if count
         },
         "weeks_ahead": weeks_ahead,
+        "starting_slot_order": list(STARTING_SLOT_ORDER),
         "starters": starters,
         "bench": bench,
         "injured_reserve": ir,
@@ -1853,12 +1903,58 @@ def build_jason_x_block(
     }
 
 
+def recent_form_lookup(recent_form: dict | None) -> dict[int, dict]:
+    """{player_id: {rank, avg, position}} plus a note for the merely qualifying.
+
+    Section 4 and Section 6 of the report show a player's last-three-game rank,
+    so it is attached inline rather than left as a cross-reference the consumer
+    has to perform. "Not ranked" is ambiguous on its own, so the two reasons are
+    distinguished: outside the position's limit, or fewer than three
+    appearances.
+    """
+    out: dict[int, dict] = {}
+    if not recent_form:
+        return out
+
+    limits = recent_form.get("limits") or {}
+
+    # Season-ending exclusions come first: they may well have three appearances,
+    # so reporting them as "fewer than three games" would be wrong.
+    for entry in recent_form.get("excluded_out_for_season") or []:
+        out[entry["player_id"]] = {
+            "recent_form_position": entry.get("position"),
+            "recent_form_note": f"excluded from the rankings: {OUT_FOR_SEASON_LABEL}",
+        }
+
+    for position, rows in (recent_form.get("rankings") or {}).items():
+        for entry in rows:
+            out[entry["player_id"]] = {
+                "recent_form_rank": entry["rank"],
+                "recent_form_position": position,
+                "recent_form_avg": entry.get("avg_3_game_display"),
+            }
+    for position, ids in (recent_form.get("qualifying_player_ids") or {}).items():
+        limit = limits.get(position)
+        for pid in ids:
+            if pid in out:
+                continue        # already ranked, or excluded above
+            out[pid] = {
+                "recent_form_position": position,
+                "recent_form_note": (
+                    f"outside the ranked top {limit}" if limit
+                    else "outside the ranked list"
+                ),
+            }
+    return out
+
+
 def build_top_available(
     available_players: list[dict],
     pro_schedule: dict[int, dict],
     injury_report: dict[str, dict],
     weeks_ahead: list[int],
     per_position: int = TOP_AVAILABLE_PER_POSITION,
+    form_lookup: dict[int, dict] | None = None,
 ) -> dict:
     """The slice of the free-agent pool a report can actually use.
 
@@ -1868,6 +1964,7 @@ def build_top_available(
     whole pool to answer "who is worth adding at RB".
     """
     byes = bye_week_map(pro_schedule)
+    form_lookup = form_lookup or {}
     by_position: dict[str, list[dict]] = {}
 
     for player in available_players:
@@ -1909,6 +2006,13 @@ def build_top_available(
                     pro_schedule, player.get("pro_team_id"), weeks_ahead
                 ),
             }
+            form = form_lookup.get(player["player_id"])
+            if form:
+                row.update(form)
+            else:
+                row["recent_form_note"] = (
+                    f"fewer than {RECENT_FORM_GAMES} games played"
+                )
             rows.append({k: v for k, v in row.items() if v not in (None, [], {})})
         out[position] = rows
     return out
@@ -2583,6 +2687,7 @@ def main(argv: list[str] | None = None) -> int:
     # 80-160 MB to the workflow artifact for data this artifact already captures.
     print("\n[10/10] recent form rankings (last 3 completed games)")
     recent_form_ranked_total = 0
+    recent_form_payload: dict | None = None
     try:
         weeks_considered = recent_form_weeks(status, scoring_period_id)
         if not weeks_considered:
@@ -2656,6 +2761,7 @@ def main(argv: list[str] | None = None) -> int:
         compact = len(json.dumps(payload, separators=(",", ":"))) > 300_000
         write("recent_form_rankings.json", payload, compact=compact)
 
+        recent_form_payload = payload
         recent_form_ranked_total = payload["ranked_total"]
         rf_counts = payload["counts"]
         print("  " + " | ".join(
@@ -2905,8 +3011,10 @@ def main(argv: list[str] | None = None) -> int:
             f"{len(jason_block['injury_designations'])} designated"
         )
 
+    form_lookup = recent_form_lookup(recent_form_payload)
     top_available = build_top_available(
-        available, pro_schedule, injury_report, weeks_ahead
+        available, pro_schedule, injury_report, weeks_ahead,
+        form_lookup=form_lookup,
     )
     write(
         "top_available.json",
@@ -2920,7 +3028,14 @@ def main(argv: list[str] | None = None) -> int:
                 "Availability still comes from the same snapshot, and "
                 "player_index.json remains the authority on ownership. acquisition "
                 "is FREE AGENT ($0, instant) or WAIVERS (needs a FAAB bid, "
-                "processing at waiver_process_ct)."
+                "processing at waiver_process_ct). recent_form_rank and "
+                "recent_form_avg are this player's standing in "
+                "recent_form_rankings.json, attached here so a report does not "
+                "have to cross-reference. When those are absent, "
+                "recent_form_note says why: either outside the ranked top N for "
+                "the position, or fewer than three confirmed appearances. "
+                "Players ESPN expects back only next season are excluded from "
+                "the rankings entirely, so they carry the fewer-than-three note."
             ),
             "league_id": args.league_id,
             "season": season,

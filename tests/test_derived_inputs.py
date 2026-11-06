@@ -284,6 +284,62 @@ class DerivedArtifactTest(unittest.TestCase):
                 checked += 1
         self.assertGreater(checked, 0)
 
+    def test_jason_x_starters_follow_the_fixed_slot_order(self):
+        # Section 5 presents the lineup in a fixed order every day.
+        self.assertEqual(
+            self.jason["starting_slot_order"], self.fe.STARTING_SLOT_ORDER
+        )
+        self.assertEqual(
+            [p["lineup_slot"] for p in self.jason["starters"]],
+            self.fe.STARTING_SLOT_ORDER,
+        )
+
+    def test_top_available_carries_a_recent_form_rank_or_a_reason(self):
+        rankings = load_json("recent_form_rankings.json")
+        ranked = {
+            e["player_id"]: (pos, e["rank"])
+            for pos, rows in rankings["rankings"].items() for e in rows
+        }
+        for rows in self.top["players_by_position"].values():
+            for row in rows:
+                if "recent_form_rank" in row:
+                    # Must agree with the Section 4A table exactly.
+                    self.assertIn(row["player_id"], ranked, row["name"])
+                    position, rank = ranked[row["player_id"]]
+                    self.assertEqual(row["recent_form_rank"], rank, row["name"])
+                    self.assertEqual(row["recent_form_position"], position)
+                    self.assertIn("recent_form_avg", row)
+                else:
+                    self.assertIn("recent_form_note", row, row["name"])
+                    self.assertNotIn(row["player_id"], ranked, row["name"])
+
+    def test_the_three_unranked_reasons_are_distinguishable(self):
+        notes = {
+            row.get("recent_form_note")
+            for rows in self.top["players_by_position"].values()
+            for row in rows
+            if "recent_form_note" in row
+        }
+        # Each note must name its own cause rather than a generic "unranked".
+        for note in notes:
+            self.assertTrue(
+                note.startswith("outside the ranked top")
+                or note == f"fewer than {self.fe.RECENT_FORM_GAMES} games played"
+                or note == "excluded from the rankings: out for the season",
+                f"ambiguous note: {note!r}",
+            )
+
+    def test_no_out_for_season_player_is_ranked(self):
+        rankings = load_json("recent_form_rankings.json")
+        excluded = {e["player_id"] for e in rankings["excluded_out_for_season"]}
+        ranked = {
+            e["player_id"] for rows in rankings["rankings"].values() for e in rows
+        }
+        self.assertEqual(excluded & ranked, set())
+        self.assertEqual(
+            rankings["diagnostics"]["excluded_out_for_season"], len(excluded)
+        )
+
     def test_artifacts_round_trip(self):
         for artifact in (self.gates, self.jason, self.schedule, self.top):
             json.dumps(artifact)

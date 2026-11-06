@@ -121,7 +121,13 @@ What changed since yesterday that could create an opportunity? Start from the li
 
 4. POSITION WATCHLIST
 
-Use top_available.json as the candidate pool; fall back to available_players.json only if it is missing. Rank the top 3 trustworthy QB/RB/WR/TE/DST/K by role, usage, volume, security, competition, environment, floor/ceiling, schedule, ROS, contingency and Jason fit. D/ST over the next 2-4 weeks under this scoring; don't overstate K. Rows: `1 | Player · Team | Grade | Availability | Bid | Bye | Status | Decision` + WHY. Bid is `$0 FA` or a suggested whole-dollar waiver bid. If fewer than 3 are trustworthy, say so.
+Use top_available.json as the candidate pool; fall back to available_players.json only if it is missing. Rank the top 3 trustworthy QB/RB/WR/TE/DST/K by role, usage, volume, security, competition, environment, floor/ceiling, schedule, ROS, contingency and Jason fit. D/ST over the next 2-4 weeks under this scoring; don't overstate K. Rows: `1 | Player · Team | Grade | Availability | L3 RANK | Bye | Status | Decision` + WHY.
+
+L3 RANK is the player's standing in Section 4A. Take it from top_available.json: when recent_form_rank is present render it as `[POS] #[rank] ([avg])`, for example `RB #36 (10.00)`. When it is absent use recent_form_note verbatim, which distinguishes three different situations and must not be flattened to "unranked": `outside the ranked top [N]`, `fewer than 3 games played`, and `excluded from the rankings: out for the season`. Never compute, infer or estimate a rank, and never renumber: the rank is the player's position in the Section 4A table and the two must agree exactly.
+
+Acquisition cost moves out of the row and into WHY: state FREE AGENT $0 or the suggested whole-dollar bid plus waiver_process_ct there. Sections 1, 5 and 9 still carry the exact bid, so the FAAB gates remain satisfiable.
+
+If fewer than 3 are trustworthy, say so.
 
 4A. RECENT FORM RANKINGS — LAST 3 GAMES PLAYED
 
@@ -130,6 +136,8 @@ Read recent_form_rankings.json from the same snapshot. Every name, week, point v
 Verify league_id, season, scoring_period_id and fetched_at coherence, and check counts, diagnostics, scoring_crosscheck and ownership before using it.
 
 Each player is ranked on the average actual fantasy points of their own last three games ACTUALLY PLAYED under this league's exact scoring, not three calendar weeks. State that above the tables, along with: a game counts only when the snapshot confirmed the player appeared in it; a genuine 0.00 from a game he did play still counts; a bye or a game he did not play is excluded entirely rather than counted as zero; and a player with fewer than three confirmed appearances is not ranked. State the weeks covered from weeks.considered, and if weeks.failed is non-empty say which periods are missing.
+
+Players ESPN expects back only next season are already excluded from these rankings by the snapshot, and the limits backfill so the total still reaches 212. Do not add them back, do not treat their absence as missing data, and do not pad a table to compensate. excluded_out_for_season lists who was removed and diagnostics.excluded_out_for_season counts them; state that count in one line beneath the method lines so the omission is visible. Players whose expected return is a date inside this season are still ranked, carrying their designation in the STATUS column.
 
 Immediately above the first table, on its own line:
 
@@ -161,6 +169,12 @@ Analyze NEXT FANTASY WEEK and the FOLLOWING FANTASY WEEK separately. Build the l
 
 Each week's table: `SLOT | JASON X STARTER / REPLACEMENT | STATUS | MATCHUP | BEST VERIFIED AVAILABLE CHALLENGER | CHALLENGER MATCHUP | BID | EDGE | ACTION`. STATUS carries the designation and expected return where present.
 
+List the slots in exactly this fixed order, one row each, in both weekly tables:
+
+QB, RB, RB, WR, WR, TE, FLEX, K, D/ST
+
+This is jason_x.json→starting_slot_order and jason_x.json→starters is already sorted into it, so follow that order rather than ESPN's. Always show all nine rows even when a slot needs no action, so the lineup reads the same way every day. Never reorder by position strength, by challenger quality or by whether a move is recommended.
+
 EDGE exactly one of: `JASON X ROSTER`, `CHALLENGER`, `CHALLENGER IF [CONDITION]`, `CLOSE`, `MATCHUP DEPENDENT`, `BYE-WEEK NEED`. Player names never belong in EDGE. If Jason is clearly better: challenger and BID `—`, EDGE JASON X ROSTER, action START/HOLD/NO MOVE.
 
 Stashes require credible workload increase, teammate injury, starter promotion, schedule, an upcoming Jason bye, injury insurance, improving usage or contingency value; must be verified FREE AGENT or WAIVERS; and must show cost.
@@ -187,7 +201,13 @@ Recheck every Section 5 available player immediately before rendering. Quality c
 
 6. TOP 5 FREE-AGENT ROSTER VALUE UPGRADES
 
-Rank the top 5 VERIFIED AVAILABLE by incremental value. Fields: Rank; FA/Pos/Team; status; Grade; Comparison Player; CLEAR/MODERATE/SLIGHT UPGRADE / ROUGHLY EQUAL / DOWNGRADE; Incremental VERY HIGH/HIGH/MODERATE/LOW; ACQUISITION COST (FA $0 or WAIVERS suggested + max bid); CONTESTED RISK LOW/MEDIUM/HIGH + why; injury designation and expected return where present; bye week; rationale; short-term; ROS; bye/injury value; drop or open spot; ADD NOW/CONSIDER/WATCH/PASS; confidence. Do not force five positive adds. End with BEST OVERALL VALUE, BEST REALISTIC ADD/DROP, VALUE GAIN, WHY, TOTAL FAAB COMMITTED, FAAB REMAINING AFTER.
+Rank the top 5 VERIFIED AVAILABLE by incremental value. Fields: Rank; FA/Pos/Team; status; Grade; Comparison Player; CLEAR/MODERATE/SLIGHT UPGRADE / ROUGHLY EQUAL / DOWNGRADE; Incremental VERY HIGH/HIGH/MODERATE/LOW; L3 RANK; CONTESTED RISK LOW/MEDIUM/HIGH + why; injury designation and expected return where present; bye week; rationale; short-term; ROS; bye/injury value; drop or open spot; ADD NOW/CONSIDER/WATCH/PASS; confidence. Do not force five positive adds.
+
+L3 RANK replaces the former acquisition-cost column and follows the same rule as Section 4: `[POS] #[rank] ([avg])` from top_available.json's recent_form_rank, or recent_form_note verbatim when absent. It must match that player's rank in the Section 4A table exactly.
+
+Cost still has to appear, because a reader of this section is deciding whether to spend. Put FREE AGENT $0 or the suggested and max whole-dollar bid in the rationale text rather than its own column, and keep the closing totals.
+
+End with BEST OVERALL VALUE, BEST REALISTIC ADD/DROP, VALUE GAIN, WHY, TOTAL FAAB COMMITTED, FAAB REMAINING AFTER.
 
 7. BETTOR IN GREEN — OUTLOOK THREAD GOSSIP
 
@@ -201,7 +221,11 @@ PDF: plain white panels. Strong player line + ownership; scan line `Forum: ... �
 
 Evaluate all 12 teams from reconciled rosters plus current ROS. Grade complete QB/RB/WR/TE/K/DST rooms plus BIGGEST NEED and SURPLUS. Use starter quality, depth, volume, role security, injuries and expected returns, depth chart, usage, red-zone, environment, schedule, byes, floor/ceiling and replacement quality; don't overweight one game.
 
-Ratings exactly `1-Great`, `2-Strong`, `3-Average`, `4-Weak`. For EACH position exactly one 1-Great and exactly one 4-Weak; all others Strong or Average. RB/WR evaluate full rooms. D/ST especially sacks, takeaways, TD potential, points and yards allowed, ROS opponents and streaming alternatives under this scoring.
+Rate every position on a 1-10 scale where 10 is the best in the league and 1 is the worst. Use whole numbers only.
+
+For EACH position independently: exactly one team scores 10 and exactly one team scores 1. The remaining ten teams score 2 through 9, and duplicates are allowed there, so two teams can both be 7. Spread the middle genuinely rather than clustering everything on 5 or 6 — if two rooms are clearly different, their numbers should differ. Rate each position across the league, not against the team's own other positions, so a team can hold the 10 at one position and the 1 at another.
+
+RB/WR evaluate full rooms. D/ST especially sacks, takeaways, TD potential, points and yards allowed, ROS opponents and streaming alternatives under this scoring.
 
 Matrix: `TEAM | QB | RB | WR | TE | K | D/ST | FAAB | WAIVER RANK | BIGGEST NEED | SURPLUS`, all 12, emphasizing Jason. If too wide, FAAB and WAIVER RANK may move to an adjacent compact table, never dropped. Treat spending power as part of the outlook: a weak room with a full budget can fix itself, a strong room that has spent down cannot. Leaders and laggards must match the matrix.
 
@@ -229,7 +253,7 @@ E rendered ownership compared to players_by_id; require `OWNERSHIP MISMATCHES = 
 
 F every acquisition in Sections 1, 3-6 and 9 has positive current availability.
 
-G Section 8 all 12 teams exactly once; each position exactly one Great and one Weak; the rest Strong/Average; needs and surpluses supported; leaders match the matrix.
+G Section 8 all 12 teams exactly once; every rating a whole number 1-10; for each of QB, RB, WR, TE, K and D/ST exactly one team scores 10 and exactly one scores 1, with the other ten between 2 and 9 and duplicates allowed there; needs and surpluses supported; leaders and laggards match the matrix, with the leader being the 10 and the laggard the 1. Require `SECTION 8 SCALE ERRORS = 0`.
 
 H Jason's Section 8 entry consistent with his current roster.
 
@@ -255,7 +279,9 @@ R `DROP NONE — OPEN ROSTER SPOT` only when has_open_bench_spot is true; otherw
 
 S FAAB figures, waiver ranks and processing times identical everywhere.
 
-T Section 4A matches recent_form_rankings.json exactly: six tables in order QB, RB, WR, TE, K, D/ST; each row count equals counts.ranked; rank, name, pos, team, weeks, points, average and owner verbatim; owner_label not rewritten; every game cell in the exact form `W8 · 24.60`; no padded, invented or dropped rows; order unchanged; a yellow row for every is_jason_x true entry and no other, including none for FREE AGENT, WAIVERS or UNKNOWN. Require `RECENT FORM HIGHLIGHT ERRORS = 0`, `RECENT FORM COUNT ERRORS = 0` and `RECENT FORM FORMAT ERRORS = 0`, and confirm the legend `Yellow = Jason X roster` sits immediately above the first table.
+T Section 4A matches recent_form_rankings.json exactly: six tables in order QB, RB, WR, TE, K, D/ST; each row count equals counts.ranked; rank, name, pos, team, weeks, points, average and owner verbatim; owner_label not rewritten; every game cell in the exact form `W8 · 24.60`; no padded, invented or dropped rows; order unchanged; a yellow row for every is_jason_x true entry and no other, including none for FREE AGENT, WAIVERS or UNKNOWN. No player in excluded_out_for_season appears in any table, and the excluded count is stated. Require `RECENT FORM HIGHLIGHT ERRORS = 0`, `RECENT FORM COUNT ERRORS = 0` and `RECENT FORM FORMAT ERRORS = 0`, and confirm the legend `Yellow = Jason X roster` sits immediately above the first table.
+
+X Every L3 RANK shown in Sections 4 and 6 matches that player's rank in the Section 4A table for the same position, or is the file's recent_form_note verbatim when unranked; no rank is computed, estimated or renumbered; the three unranked reasons are never flattened into one. Section 5 lists its nine slots in the order QB, RB, RB, WR, WR, TE, FLEX, K, D/ST in both weekly tables. Require `RANK CROSS-REFERENCE ERRORS = 0`.
 
 U Section 4A PDF visual inspection, which is where highlighting is actually verified: yellow pale and unsaturated, text dark and legible, visible in colour print, identical in all six tables; headers repeat on continuation pages; no player row split across a page break; numeric columns right-aligned with two decimals; no blank pages, clipping, tiny text or orphan headings; table order intact after pagination.
 

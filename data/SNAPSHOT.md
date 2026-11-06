@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-06T00:31:27.133813+00:00` |
-| Fetched at (CT) | **Thu Nov 5, 6:31 PM CST** |
+| Fetched at (UTC) | `2026-11-06T01:51:08.422455+00:00` |
+| Fetched at (CT) | **Thu Nov 5, 7:51 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,8 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 9.49s |
+| Fetch duration | 12.19s |
 | ESPN calls | 32 |
-| Workflow run | `42137411034` |
 
 ## Freshness and completeness gates
 
@@ -36,11 +35,11 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 0.0 | Commanders of Chaos | 0.0 | NO |
-| Connor’s Team | 0.0 | From Puka with Love | 0.0 | NO |
+| Kelli's Top-Notch Team | 0.0 | Commanders of Chaos | 1.6 | NO |
+| Connor’s Team | 6.98 | From Puka with Love | 0.0 | NO |
 | 🔥Certified Dumpster Fire 🔥 | 0.0 | Auto Draft Champion | 0.0 | NO |
-| The Bye Week Boys | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
-| Jason X | 0.0 | Cole-Train | 0.0 | NO |
+| The Bye Week Boys | 4.0 | Nicole's Gnarly Team | 6.0 | NO |
+| Jason X | 7.6 | Cole-Train | 9.0 | NO |
 | Burrow's Bunch | 0.0 | Giant Packer Fan | 0.0 | NO |
 
 ## Rosters
@@ -79,7 +78,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (42)
+## Injury designations (41)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -87,7 +86,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Amon-Ra St. Brown | WR | QUESTIONABLE | FLEX | yes |
 | Jason X | Cam Skattebo | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Treylon Burks | WR | QUESTIONABLE | BENCH | NO |
-| Jason X | Tyjae Spears | RB | OUT | BENCH | NO |
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | RB | yes |
@@ -130,7 +128,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 17 | 43 | 110 | 184 | 186 | 317 | 857 |
+| 17 | 42 | 110 | 186 | 186 | 316 | 857 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
@@ -142,15 +140,15 @@ No open bench spot: any add needs a drop.
 
 | Slot | Player | Pos | Bye | Next | Status |
 | --- | --- | --- | --- | --- | --- |
-| WR | Jaxon Smith-Njigba | WR | W11 | vs ARI | - |
-| TE | Brock Bowers | TE | W13 | @ SF | - |
-| RB | Bhayshul Tuten | RB | W7 | @ BAL | - |
-| WR | Christian Watson | WR | W11 | @ NE | QUESTIONABLE (back Nov 8) |
-| RB | Ollie Gordon II | RB | W6 | vs DET | - |
 | QB | Jayden Daniels | QB | W7 | vs LAR | - |
+| RB | Bhayshul Tuten | RB | W7 | @ BAL | - |
+| RB | Ollie Gordon II | RB | W6 | vs DET | - |
+| WR | Jaxon Smith-Njigba | WR | W11 | vs ARI | - |
+| WR | Christian Watson | WR | W11 | @ NE | QUESTIONABLE (back Nov 8) |
+| TE | Brock Bowers | TE | W13 | @ SF | - |
+| FLEX | Amon-Ra St. Brown | WR | W6 | @ MIA | QUESTIONABLE (back Nov 8) |
 | K | Chase McLaughlin | K | W10 | @ CHI | - |
 | D/ST | Lions D/ST | D/ST | W6 | @ MIA | - |
-| FLEX | Amon-Ra St. Brown | WR | W6 | @ MIA | QUESTIONABLE (back Nov 8) |
 
 **Week 10 bye pressure:** Chase McLaughlin (K).
 
@@ -166,7 +164,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-102 players in this league's pool carry an NFL designation; 33 are on injured reserve (10 of them rostered). 6 affect Jason X.
+101 players in this league's pool carry an NFL designation; 33 are on injured reserve (10 of them rostered). 5 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -184,7 +182,6 @@ Jason X players with a designation:
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
 | Cam Skattebo | BENCH | QUESTIONABLE | Nov 8 | Hamstring |
-| Tyjae Spears | BENCH | QUESTIONABLE | Nov 15 | Knee |
 | Treylon Burks | BENCH | QUESTIONABLE | Nov 8 | Foot |
 | Amon-Ra St. Brown | FLEX | QUESTIONABLE | Nov 8 | Ribs |
 | Jonathon Brooks **(NFL IR)** | IR | IR | Nov 8 | Abdomen |
@@ -196,16 +193,16 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9]. Ranked 212 of 212 expected.
 
 | Pos | Limit | Qualifying | Ranked | At limit |
 | --- | --- | --- | --- | --- |
-| QB | 24 | 50 | 24 | yes |
+| QB | 24 | 49 | 24 | yes |
 | RB | 60 | 127 | 60 | yes |
-| WR | 60 | 191 | 60 | yes |
-| TE | 24 | 122 | 24 | yes |
+| WR | 60 | 188 | 60 | yes |
+| TE | 24 | 121 | 24 | yes |
 | K | 24 | 32 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
 
 ESPN `appliedTotal` vs recomputed league scoring: max absolute delta **0.0** across 636 values (tolerance 0.01). `appliedTotal` is the authoritative value; this is drift detection only.
 
-14 ranked player(s) are on `Jason X` (team id 1) and carry `is_jason_x`, which drives the pale-yellow row highlight in the daily PDF. 0 owner(s) unresolved.
+16 ranked player(s) are on `Jason X` (team id 1) and carry `is_jason_x`, which drives the pale-yellow row highlight in the daily PDF. 0 owner(s) unresolved.
 
 Top 5 overall by three-game average:
 
@@ -221,12 +218,15 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-948 total | 237 executed ownership changes | 462 lineup-only moves | 192 draft picks | 0 pending
+951 total | 240 executed ownership changes | 462 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-06T01:15 | Jason X | FREEAGENT | ADD Jason Myers, DROP Kimani Vidal |
+| 2026-11-06T01:07 | Jason X | FREEAGENT | ADD Caleb Douglas, DROP Tyjae Spears |
+| 2026-11-06T01:05 | Jason X | FREEAGENT | ADD Mike Washington Jr., DROP Elijah Mitchell |
 | 2026-11-05T13:09 | Jason X | FREEAGENT | ADD Elijah Mitchell |
 | 2026-11-05T13:08 | Jason X | FREEAGENT | ADD Kimani Vidal |
 | 2026-11-05T09:01 | Connor’s Team | WAIVER | ADD Josh Downs, DROP Tez Johnson |
@@ -236,9 +236,6 @@ Most recent ownership changes:
 | 2026-11-04T09:08 | Jason X | WAIVER | ADD Buccaneers D/ST, DROP Spencer Shrader |
 | 2026-11-04T09:08 | Connor’s Team | WAIVER | ADD Cam Little, DROP Jason Myers |
 | 2026-11-04T09:08 | The Bye Week Boys | WAIVER | ADD Terrance Ferguson, DROP Samaje Perine |
-| 2026-11-04T09:08 | Cole-Train | WAIVER | ADD Devin Singletary, DROP Kimani Vidal |
-| 2026-11-04T09:08 | Burrow's Bunch | WAIVER | ADD Bills D/ST, DROP Mike Washington Jr. |
-| 2026-11-04T09:08 | From Puka with Love | WAIVER | ADD Deebo Samuel Sr. |
 
 ## League format
 
