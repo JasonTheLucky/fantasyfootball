@@ -1,10 +1,11 @@
 {
-  "usage": "The top 25 available players per position by rostered percentage, with acquisition cost, bye week, injury badge and upcoming opponents already attached. This is a trimmed view of available_players.json for when a report needs candidates rather than the whole ~850-player pool. Availability still comes from the same snapshot, and player_index.json remains the authority on ownership. acquisition is FREE AGENT ($0, instant) or WAIVERS (needs a FAAB bid, processing at waiver_process_ct). recent_form_rank and recent_form_avg are this player's standing in recent_form_rankings.json, attached here so a report does not have to cross-reference. When those are absent, recent_form_note says why: either outside the ranked top N for the position, or fewer than three confirmed appearances. Players ESPN expects back only next season are excluded from the rankings entirely, so they carry the fewer-than-three note.",
+  "usage": "The top 25 available players per position by rostered percentage, with acquisition cost, bye week, injury badge and upcoming opponents already attached. This is a trimmed view of available_players.json for when a report needs candidates rather than the whole ~850-player pool. Availability still comes from the same snapshot, and player_index.json remains the authority on ownership. acquisition is FREE AGENT ($0, instant) or WAIVERS (needs a FAAB bid, processing at waiver_process_ct). recent_form_rank and recent_form_avg are this player's standing in recent_form_rankings.json, attached here so a report does not have to cross-reference. When those are absent, recent_form_note says why: either outside the ranked top N for the position, or fewer than three confirmed appearances. Players ESPN expects back only next season are excluded from the rankings entirely, so they carry the fewer-than-three note. projected_points is ESPN's projection for projection_scoring_period_id, which is the current week, and is the only forward-looking number here: recent_form_rank looks backwards at three completed games. A projection of 0.0 is usually real rather than missing - the player's NFL team is on bye that week, or he has no NFL team, or ESPN does not expect him to play - so check the upcoming block for a bye before reading 0.0 as poor form. An absent projected_points means ESPN published no projection for him at all, which is common deep in the pool; treat that as unknown, not as zero.",
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 9,
-  "fetched_at": "2026-11-06T01:52:33.443127+00:00",
+  "fetched_at": "2026-11-06T02:07:06.088045+00:00",
   "per_position": 25,
+  "projection_scoring_period_id": 9,
   "counts": {
     "QB": 25,
     "RB": 25,
@@ -13,8 +14,8 @@
     "K": 25,
     "D/ST": 17
   },
-  "free_agents_in_pool": 826,
-  "waivers_in_pool": 31,
+  "free_agents_in_pool": 825,
+  "waivers_in_pool": 32,
   "players_by_position": {
     "QB": [
       {
@@ -28,6 +29,7 @@
         "percent_owned": 59.25,
         "percent_change": 1.03,
         "bye_week": 10,
+        "projected_points": 16.25,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -59,6 +61,7 @@
         "percent_owned": 34.83,
         "percent_change": -2.14,
         "bye_week": 9,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -89,6 +92,7 @@
         "percent_owned": 32.71,
         "percent_change": -0.59,
         "bye_week": 7,
+        "projected_points": 13.09,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -125,6 +129,7 @@
         "percent_owned": 31.74,
         "percent_change": -0.97,
         "bye_week": 10,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -156,6 +161,7 @@
         "percent_owned": 30.46,
         "percent_change": 5.76,
         "bye_week": 8,
+        "projected_points": 18.17,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -192,6 +198,7 @@
         "percent_owned": 28.9,
         "percent_change": -2.17,
         "bye_week": 11,
+        "projected_points": 0.0,
         "injury": {
           "designation": "OUT",
           "nfl_status": "Out",
@@ -237,6 +244,7 @@
         "percent_owned": 23.43,
         "percent_change": -0.75,
         "bye_week": 10,
+        "projected_points": 13.26,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -267,6 +275,7 @@
         "percent_owned": 21.39,
         "percent_change": -0.26,
         "bye_week": 8,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -302,6 +311,7 @@
         "percent_owned": 15.81,
         "percent_change": -0.3,
         "bye_week": 11,
+        "projected_points": 16.67,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -339,6 +349,7 @@
         "percent_owned": 13.73,
         "percent_change": -1.29,
         "bye_week": 14,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -375,6 +386,7 @@
         "percent_owned": 11.43,
         "percent_change": -0.22,
         "bye_week": 13,
+        "projected_points": 13.99,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -411,6 +423,7 @@
         "percent_owned": 5.0,
         "percent_change": 2.39,
         "bye_week": 11,
+        "projected_points": 17.58,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -455,6 +468,7 @@
         "percent_owned": 4.28,
         "percent_change": -0.52,
         "bye_week": 8,
+        "projected_points": 0.81,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -491,6 +505,7 @@
         "percent_owned": 4.0,
         "percent_change": -0.06,
         "bye_week": 9,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -522,6 +537,7 @@
         "percent_owned": 3.64,
         "percent_change": 1.28,
         "bye_week": 10,
+        "projected_points": 14.28,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -551,6 +567,7 @@
         "percent_owned": 3.11,
         "percent_change": 0.32,
         "bye_week": 14,
+        "projected_points": 12.29,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -586,6 +603,7 @@
         "percent_owned": 2.92,
         "percent_change": -0.08,
         "bye_week": 13,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -622,6 +640,7 @@
         "percent_owned": 2.59,
         "percent_change": -0.71,
         "bye_week": 10,
+        "projected_points": 0.0,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -660,6 +679,7 @@
         "percent_owned": 2.57,
         "percent_change": 2.04,
         "bye_week": 6,
+        "projected_points": 16.38,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -696,6 +716,7 @@
         "percent_owned": 2.19,
         "percent_change": 0.67,
         "bye_week": 11,
+        "projected_points": 15.8,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -734,6 +755,7 @@
         "percent_owned": 1.32,
         "percent_change": -0.47,
         "bye_week": 13,
+        "projected_points": 0.0,
         "injury": {
           "designation": "IR",
           "nfl_status": "Injured Reserve",
@@ -778,6 +800,7 @@
         "percent_owned": 1.13,
         "percent_change": -0.07,
         "bye_week": 7,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -814,6 +837,7 @@
         "percent_owned": 0.54,
         "percent_change": -0.06,
         "bye_week": 10,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -846,6 +870,7 @@
         "percent_owned": 0.44,
         "percent_change": 0.12,
         "bye_week": 13,
+        "projected_points": 9.28,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -881,6 +906,7 @@
         "percent_owned": 0.44,
         "percent_change": -0.03,
         "bye_week": 10,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -913,6 +939,7 @@
         "percent_owned": 40.0,
         "percent_change": -6.21,
         "bye_week": 11,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -950,6 +977,7 @@
         "percent_owned": 29.08,
         "percent_change": -0.44,
         "bye_week": 6,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -978,6 +1006,54 @@
       },
       {
         "rank": 3,
+        "player_id": 4241474,
+        "name": "Brian Robinson Jr.",
+        "position": "RB",
+        "pro_team": "ATL",
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-07T08:00:00+00:00",
+        "waiver_process_ct": "Sat Nov 7, 2:00 AM CST",
+        "percent_owned": 26.2,
+        "percent_change": -0.63,
+        "bye_week": 11,
+        "projected_points": 6.18,
+        "injury": {
+          "designation": "QUESTIONABLE",
+          "nfl_status": "Questionable",
+          "on_nfl_ir": false,
+          "expected_return": "2026-11-08",
+          "expected_return_label": "Nov 8",
+          "injury_type": "Hamstring"
+        },
+        "upcoming": [
+          {
+            "scoring_period_id": 9,
+            "bye": false,
+            "opponent_pro_team_id": 4,
+            "opponent": "CIN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-08T14:30:00+00:00",
+            "kickoff_ct": "Sun Nov 8, 8:30 AM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 10,
+            "bye": false,
+            "opponent_pro_team_id": 12,
+            "opponent": "KC",
+            "at_home": true,
+            "kickoff_utc": "2026-11-15T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          }
+        ],
+        "recent_form_rank": 35,
+        "recent_form_position": "RB",
+        "recent_form_avg": "10.10"
+      },
+      {
+        "rank": 4,
         "player_id": 4428557,
         "name": "Tyjae Spears",
         "position": "RB",
@@ -989,6 +1065,7 @@
         "percent_owned": 22.21,
         "percent_change": -0.71,
         "bye_week": 9,
+        "projected_points": 0.0,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Out",
@@ -1017,7 +1094,7 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 4,
+        "rank": 5,
         "player_id": 4360238,
         "name": "Dameon Pierce",
         "position": "RB",
@@ -1027,6 +1104,7 @@
         "percent_owned": 15.83,
         "percent_change": -1.62,
         "bye_week": 10,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1048,7 +1126,7 @@
         "recent_form_avg": "10.00"
       },
       {
-        "rank": 5,
+        "rank": 6,
         "player_id": 4241555,
         "name": "Elijah Mitchell",
         "position": "RB",
@@ -1058,6 +1136,7 @@
         "percent_owned": 13.82,
         "percent_change": 1.06,
         "bye_week": 10,
+        "projected_points": 8.86,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1077,7 +1156,7 @@
         "recent_form_note": "fewer than 3 games played"
       },
       {
-        "rank": 6,
+        "rank": 7,
         "player_id": 4430968,
         "name": "Kimani Vidal",
         "position": "RB",
@@ -1087,6 +1166,7 @@
         "percent_owned": 13.49,
         "percent_change": -0.28,
         "bye_week": 7,
+        "projected_points": 9.01,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1114,7 +1194,7 @@
         "recent_form_avg": "8.20"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "player_id": 3116389,
         "name": "Samaje Perine",
         "position": "RB",
@@ -1124,6 +1204,7 @@
         "percent_owned": 11.36,
         "percent_change": -0.82,
         "bye_week": 6,
+        "projected_points": 6.14,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1151,7 +1232,7 @@
         "recent_form_avg": "8.77"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "player_id": 4596334,
         "name": "Keaton Mitchell",
         "position": "RB",
@@ -1161,6 +1242,7 @@
         "percent_owned": 10.48,
         "percent_change": -0.31,
         "bye_week": 7,
+        "projected_points": 6.54,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1187,7 +1269,7 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "player_id": 4427728,
         "name": "Bam Knight",
         "position": "RB",
@@ -1197,6 +1279,7 @@
         "percent_owned": 8.36,
         "percent_change": -0.2,
         "bye_week": 14,
+        "projected_points": 8.12,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -1232,7 +1315,7 @@
         "recent_form_avg": "7.30"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "player_id": 4426386,
         "name": "Roschon Johnson",
         "position": "RB",
@@ -1242,6 +1325,7 @@
         "percent_owned": 7.86,
         "percent_change": -0.78,
         "bye_week": 10,
+        "projected_points": 5.51,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1263,7 +1347,7 @@
         "recent_form_avg": "6.53"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "player_id": 4431431,
         "name": "Corey Kiner",
         "position": "RB",
@@ -1273,6 +1357,7 @@
         "percent_owned": 5.84,
         "percent_change": -0.98,
         "bye_week": 11,
+        "projected_points": 5.67,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1299,7 +1384,7 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "player_id": 4429013,
         "name": "Tank Bigsby",
         "position": "RB",
@@ -1309,6 +1394,7 @@
         "percent_owned": 5.59,
         "percent_change": -0.09,
         "bye_week": 10,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1330,7 +1416,7 @@
         "recent_form_avg": "5.60"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "player_id": 4360516,
         "name": "Tyrone Tracy Jr.",
         "position": "RB",
@@ -1340,6 +1426,7 @@
         "percent_owned": 4.5,
         "percent_change": -0.32,
         "bye_week": 8,
+        "projected_points": 0.0,
         "injury": {
           "designation": "IR",
           "nfl_status": "Injured Reserve",
@@ -1375,7 +1462,7 @@
         "recent_form_avg": "10.77"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "player_id": 4429835,
         "name": "George Holani",
         "position": "RB",
@@ -1385,6 +1472,7 @@
         "percent_owned": 3.89,
         "percent_change": -0.29,
         "bye_week": 11,
+        "projected_points": 2.89,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1411,7 +1499,7 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "player_id": 4431545,
         "name": "Will Shipley",
         "position": "RB",
@@ -1421,6 +1509,7 @@
         "percent_owned": 3.36,
         "percent_change": -0.17,
         "bye_week": 10,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1441,7 +1530,7 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "player_id": 3045147,
         "name": "James Conner",
         "position": "RB",
@@ -1451,6 +1540,7 @@
         "percent_owned": 3.26,
         "percent_change": 0.06,
         "bye_week": 14,
+        "projected_points": 0.0,
         "injury": {
           "designation": "IR-R",
           "nfl_status": "Injured Reserve",
@@ -1484,7 +1574,7 @@
         "recent_form_note": "fewer than 3 games played"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "player_id": 4249836,
         "name": "Pierre Strong Jr.",
         "position": "RB",
@@ -1494,6 +1584,7 @@
         "percent_owned": 3.07,
         "percent_change": -0.4,
         "bye_week": 11,
+        "projected_points": 0.34,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1520,7 +1611,7 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "player_id": 4682745,
         "name": "Jaylen Wright",
         "position": "RB",
@@ -1530,6 +1621,7 @@
         "percent_owned": 2.89,
         "percent_change": -0.07,
         "bye_week": 6,
+        "projected_points": 5.18,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -1564,7 +1656,7 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "player_id": 4429501,
         "name": "Ray Davis",
         "position": "RB",
@@ -1574,6 +1666,7 @@
         "percent_owned": 2.72,
         "percent_change": -0.04,
         "bye_week": 7,
+        "projected_points": 1.78,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1600,7 +1693,7 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 20,
+        "rank": 21,
         "player_id": 3149687,
         "name": "Chris Brooks",
         "position": "RB",
@@ -1610,6 +1703,7 @@
         "percent_owned": 2.25,
         "percent_change": -0.07,
         "bye_week": 11,
+        "projected_points": 0.0,
         "injury": {
           "designation": "IR-R",
           "nfl_status": "Injured Reserve",
@@ -1644,7 +1738,7 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 21,
+        "rank": 22,
         "player_id": 3915411,
         "name": "Ty Johnson",
         "position": "RB",
@@ -1654,6 +1748,7 @@
         "percent_owned": 2.11,
         "percent_change": -0.07,
         "bye_week": 7,
+        "projected_points": 5.56,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -1689,7 +1784,7 @@
         "recent_form_avg": "7.07"
       },
       {
-        "rank": 22,
+        "rank": 23,
         "player_id": 3068267,
         "name": "Austin Ekeler",
         "position": "RB",
@@ -1699,6 +1794,7 @@
         "percent_owned": 2.09,
         "percent_change": 0.21,
         "bye_week": 7,
+        "projected_points": 6.9,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1725,7 +1821,7 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 23,
+        "rank": 24,
         "player_id": 4241457,
         "name": "Najee Harris",
         "position": "RB",
@@ -1734,6 +1830,7 @@
         "acquisition": "FREE AGENT",
         "percent_owned": 2.0,
         "percent_change": -0.11,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1748,7 +1845,7 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 24,
+        "rank": 25,
         "player_id": 4695404,
         "name": "Isaiah Davis",
         "position": "RB",
@@ -1758,6 +1855,7 @@
         "percent_owned": 1.67,
         "percent_change": -0.16,
         "bye_week": 13,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1782,35 +1880,6 @@
         ],
         "recent_form_position": "RB",
         "recent_form_note": "outside the ranked top 60"
-      },
-      {
-        "rank": 25,
-        "player_id": 4685279,
-        "name": "Jaydon Blue",
-        "position": "RB",
-        "pro_team": "PHI",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 1.38,
-        "percent_change": -0.41,
-        "bye_week": 10,
-        "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
-            "scoring_period_id": 10,
-            "bye": true
-          }
-        ],
-        "recent_form_note": "fewer than 3 games played"
       }
     ],
     "WR": [
@@ -1825,6 +1894,7 @@
         "percent_owned": 59.97,
         "percent_change": -0.48,
         "bye_week": 10,
+        "projected_points": 9.16,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1855,6 +1925,7 @@
         "percent_owned": 41.29,
         "percent_change": -0.48,
         "bye_week": 9,
+        "projected_points": 0.0,
         "injury": {
           "designation": "IR",
           "nfl_status": "Injured Reserve",
@@ -1895,6 +1966,7 @@
         "percent_owned": 40.09,
         "percent_change": -0.03,
         "bye_week": 7,
+        "projected_points": 6.73,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -1931,6 +2003,7 @@
         "percent_owned": 37.08,
         "percent_change": -1.26,
         "bye_week": 7,
+        "projected_points": 0.0,
         "injury": {
           "designation": "IR",
           "nfl_status": "Injured Reserve",
@@ -1975,6 +2048,7 @@
         "percent_owned": 24.24,
         "percent_change": -0.36,
         "bye_week": 7,
+        "projected_points": 6.61,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2011,6 +2085,7 @@
         "percent_owned": 23.39,
         "percent_change": -0.45,
         "bye_week": 11,
+        "projected_points": 7.56,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -2055,6 +2130,7 @@
         "percent_owned": 22.88,
         "percent_change": -1.34,
         "bye_week": 7,
+        "projected_points": 4.78,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -2085,7 +2161,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 56,
+        "recent_form_rank": 57,
         "recent_form_position": "WR",
         "recent_form_avg": "8.33"
       },
@@ -2122,6 +2198,7 @@
         "percent_owned": 19.53,
         "percent_change": -0.36,
         "bye_week": 11,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2157,6 +2234,7 @@
         "percent_owned": 19.49,
         "percent_change": -0.14,
         "bye_week": 8,
+        "projected_points": 0.0,
         "injury": {
           "designation": "IR",
           "nfl_status": "Injured Reserve",
@@ -2200,6 +2278,7 @@
         "percent_owned": 18.09,
         "percent_change": -0.92,
         "bye_week": 10,
+        "projected_points": 0.0,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -2281,6 +2360,7 @@
         "percent_owned": 9.67,
         "percent_change": -0.32,
         "bye_week": 10,
+        "projected_points": 8.65,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2313,6 +2393,7 @@
         "percent_owned": 9.31,
         "percent_change": -0.38,
         "bye_week": 13,
+        "projected_points": 4.35,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2349,6 +2430,7 @@
         "percent_owned": 9.09,
         "percent_change": -0.19,
         "bye_week": 11,
+        "projected_points": 5.39,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2387,6 +2469,7 @@
         "percent_owned": 8.6,
         "percent_change": -0.75,
         "bye_week": 13,
+        "projected_points": 5.14,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2423,6 +2506,7 @@
         "percent_owned": 8.46,
         "percent_change": -0.47,
         "bye_week": 10,
+        "projected_points": 4.75,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2453,6 +2537,7 @@
         "percent_owned": 6.66,
         "percent_change": -0.2,
         "bye_week": 9,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2484,6 +2569,7 @@
         "percent_owned": 6.47,
         "percent_change": 1.93,
         "bye_week": 11,
+        "projected_points": 10.03,
         "injury": {
           "designation": "IR-R",
           "nfl_status": "Injured Reserve",
@@ -2529,6 +2615,7 @@
         "percent_owned": 6.38,
         "percent_change": -0.76,
         "bye_week": 8,
+        "projected_points": 0.0,
         "injury": {
           "designation": "IR",
           "nfl_status": "Injured Reserve",
@@ -2573,6 +2660,7 @@
         "percent_owned": 5.84,
         "percent_change": 0.41,
         "bye_week": 8,
+        "projected_points": 8.6,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2609,6 +2697,7 @@
         "percent_owned": 5.37,
         "percent_change": -0.11,
         "bye_week": 9,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2641,6 +2730,7 @@
         "percent_owned": 4.98,
         "percent_change": -0.79,
         "bye_week": 10,
+        "projected_points": 5.7,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2671,6 +2761,7 @@
         "percent_owned": 4.74,
         "percent_change": -0.58,
         "bye_week": 8,
+        "projected_points": 5.01,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -2714,6 +2805,7 @@
         "percent_owned": 4.27,
         "percent_change": 0.62,
         "bye_week": 11,
+        "projected_points": 9.26,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2753,6 +2845,7 @@
         "percent_owned": 45.66,
         "percent_change": -1.22,
         "bye_week": 8,
+        "projected_points": 7.32,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2789,6 +2882,7 @@
         "percent_owned": 43.17,
         "percent_change": -1.5,
         "bye_week": 9,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2819,6 +2913,7 @@
         "percent_owned": 42.72,
         "percent_change": -1.42,
         "bye_week": 14,
+        "projected_points": 0.0,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -2854,43 +2949,6 @@
       },
       {
         "rank": 4,
-        "player_id": 3116164,
-        "name": "Mike Gesicki",
-        "position": "TE",
-        "pro_team": "CIN",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 24.57,
-        "percent_change": 2.79,
-        "bye_week": 6,
-        "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 1,
-            "opponent": "ATL",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T14:30:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 8:30 AM CST",
-            "start_time_tbd": false
-          },
-          {
-            "scoring_period_id": 10,
-            "bye": false,
-            "opponent_pro_team_id": 23,
-            "opponent": "PIT",
-            "at_home": true,
-            "kickoff_utc": "2026-11-16T01:20:00+00:00",
-            "kickoff_ct": "Sun Nov 15, 7:20 PM CST",
-            "start_time_tbd": false
-          }
-        ],
-        "recent_form_rank": 14,
-        "recent_form_position": "TE",
-        "recent_form_avg": "10.87"
-      },
-      {
-        "rank": 5,
         "player_id": 3117256,
         "name": "Dalton Schultz",
         "position": "TE",
@@ -2900,6 +2958,7 @@
         "percent_owned": 24.28,
         "percent_change": -0.07,
         "bye_week": 8,
+        "projected_points": 8.54,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2926,7 +2985,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 6,
+        "rank": 5,
         "player_id": 4429086,
         "name": "Michael Mayer",
         "position": "TE",
@@ -2936,6 +2995,7 @@
         "percent_owned": 22.44,
         "percent_change": -0.13,
         "bye_week": 13,
+        "projected_points": 8.48,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2963,7 +3023,7 @@
         "recent_form_avg": "11.00"
       },
       {
-        "rank": 7,
+        "rank": 6,
         "player_id": 5083315,
         "name": "Kenyon Sadiq",
         "position": "TE",
@@ -2973,6 +3033,7 @@
         "percent_owned": 20.17,
         "percent_change": -0.66,
         "bye_week": 13,
+        "projected_points": 3.53,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -2999,7 +3060,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 8,
+        "rank": 7,
         "player_id": 2573401,
         "name": "Tyler Higbee",
         "position": "TE",
@@ -3009,6 +3070,7 @@
         "percent_owned": 10.94,
         "percent_change": -0.8,
         "bye_week": 11,
+        "projected_points": 6.1,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3035,7 +3097,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 9,
+        "rank": 8,
         "player_id": 4808766,
         "name": "Mason Taylor",
         "position": "TE",
@@ -3045,6 +3107,7 @@
         "percent_owned": 8.5,
         "percent_change": -0.94,
         "bye_week": 13,
+        "projected_points": 8.47,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3072,7 +3135,7 @@
         "recent_form_avg": "12.47"
       },
       {
-        "rank": 10,
+        "rank": 9,
         "player_id": 2576925,
         "name": "Darren Waller",
         "position": "TE",
@@ -3082,6 +3145,7 @@
         "percent_owned": 8.14,
         "percent_change": -0.43,
         "bye_week": 5,
+        "projected_points": 5.88,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3108,7 +3172,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 11,
+        "rank": 10,
         "player_id": 4367209,
         "name": "Greg Dulcich",
         "position": "TE",
@@ -3118,6 +3182,7 @@
         "percent_owned": 4.49,
         "percent_change": 1.25,
         "bye_week": 6,
+        "projected_points": 8.89,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3145,7 +3210,7 @@
         "recent_form_avg": "10.53"
       },
       {
-        "rank": 12,
+        "rank": 11,
         "player_id": 4430802,
         "name": "Darnell Washington",
         "position": "TE",
@@ -3155,6 +3220,7 @@
         "percent_owned": 4.45,
         "percent_change": -0.13,
         "bye_week": 9,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3176,7 +3242,7 @@
         "recent_form_avg": "10.77"
       },
       {
-        "rank": 13,
+        "rank": 12,
         "player_id": 4242557,
         "name": "Colby Parkinson",
         "position": "TE",
@@ -3186,6 +3252,7 @@
         "percent_owned": 3.75,
         "percent_change": -0.27,
         "bye_week": 11,
+        "projected_points": 7.41,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -3220,7 +3287,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 14,
+        "rank": 13,
         "player_id": 4831959,
         "name": "Eli Raridon",
         "position": "TE",
@@ -3230,6 +3297,7 @@
         "percent_owned": 3.42,
         "percent_change": 1.46,
         "bye_week": 11,
+        "projected_points": 10.07,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3256,7 +3324,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 15,
+        "rank": 14,
         "player_id": 4243331,
         "name": "Cade Otton",
         "position": "TE",
@@ -3266,6 +3334,7 @@
         "percent_owned": 2.46,
         "percent_change": -0.11,
         "bye_week": 10,
+        "projected_points": 6.12,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3286,7 +3355,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 16,
+        "rank": 15,
         "player_id": 3051876,
         "name": "Evan Engram",
         "position": "TE",
@@ -3296,6 +3365,7 @@
         "percent_owned": 1.86,
         "percent_change": -0.05,
         "bye_week": 10,
+        "projected_points": 4.69,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3316,7 +3386,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 17,
+        "rank": 16,
         "player_id": 4686728,
         "name": "Gunnar Helm",
         "position": "TE",
@@ -3326,6 +3396,7 @@
         "percent_owned": 1.67,
         "percent_change": -0.02,
         "bye_week": 9,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3346,7 +3417,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 18,
+        "rank": 17,
         "player_id": 4595342,
         "name": "Oronde Gadsden",
         "position": "TE",
@@ -3356,6 +3427,7 @@
         "percent_owned": 1.6,
         "percent_change": -0.02,
         "bye_week": 7,
+        "projected_points": 5.74,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3382,7 +3454,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 19,
+        "rank": 18,
         "player_id": 3123076,
         "name": "David Njoku",
         "position": "TE",
@@ -3392,6 +3464,7 @@
         "percent_owned": 1.29,
         "percent_change": -0.02,
         "bye_week": 7,
+        "projected_points": 0.0,
         "injury": {
           "designation": "IR-R",
           "nfl_status": "Injured Reserve",
@@ -3425,7 +3498,7 @@
         "recent_form_note": "fewer than 3 games played"
       },
       {
-        "rank": 20,
+        "rank": 19,
         "player_id": 3930086,
         "name": "Dawson Knox",
         "position": "TE",
@@ -3435,6 +3508,7 @@
         "percent_owned": 0.57,
         "percent_change": 0.0,
         "bye_week": 7,
+        "projected_points": 3.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3461,7 +3535,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 21,
+        "rank": 20,
         "player_id": 4258595,
         "name": "Cole Kmet",
         "position": "TE",
@@ -3471,6 +3545,7 @@
         "percent_owned": 0.44,
         "percent_change": -0.01,
         "bye_week": 10,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3491,7 +3566,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 22,
+        "rank": 21,
         "player_id": 4372780,
         "name": "Tommy Tremble",
         "position": "TE",
@@ -3501,6 +3576,7 @@
         "percent_owned": 0.43,
         "percent_change": -0.03,
         "bye_week": 5,
+        "projected_points": 5.13,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3528,7 +3604,7 @@
         "recent_form_avg": "8.43"
       },
       {
-        "rank": 23,
+        "rank": 22,
         "player_id": 15835,
         "name": "Zach Ertz",
         "position": "TE",
@@ -3538,6 +3614,7 @@
         "percent_owned": 0.35,
         "percent_change": -0.02,
         "bye_week": 10,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3558,7 +3635,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 24,
+        "rank": 23,
         "player_id": 4431574,
         "name": "Eli Stowers",
         "position": "TE",
@@ -3568,6 +3645,7 @@
         "percent_owned": 0.26,
         "percent_change": 0.01,
         "bye_week": 10,
+        "projected_points": 2.99,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3587,7 +3665,7 @@
         "recent_form_note": "fewer than 3 games played"
       },
       {
-        "rank": 25,
+        "rank": 24,
         "player_id": 4240472,
         "name": "Noah Gray",
         "position": "TE",
@@ -3597,6 +3675,7 @@
         "percent_owned": 0.26,
         "percent_change": 0.01,
         "bye_week": 5,
+        "projected_points": 3.92,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3622,6 +3701,43 @@
         "recent_form_rank": 24,
         "recent_form_position": "TE",
         "recent_form_avg": "8.40"
+      },
+      {
+        "rank": 25,
+        "player_id": 4036131,
+        "name": "Noah Fant",
+        "position": "TE",
+        "pro_team": "NO",
+        "availability_status": "FREEAGENT",
+        "acquisition": "FREE AGENT",
+        "percent_owned": 0.25,
+        "percent_change": -0.01,
+        "bye_week": 8,
+        "projected_points": 2.65,
+        "upcoming": [
+          {
+            "scoring_period_id": 9,
+            "bye": false,
+            "opponent_pro_team_id": 5,
+            "opponent": "CLE",
+            "at_home": true,
+            "kickoff_utc": "2026-11-08T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 10,
+            "bye": false,
+            "opponent_pro_team_id": 29,
+            "opponent": "CAR",
+            "at_home": true,
+            "kickoff_utc": "2026-11-15T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          }
+        ],
+        "recent_form_position": "TE",
+        "recent_form_note": "outside the ranked top 24"
       }
     ],
     "K": [
@@ -3636,6 +3752,7 @@
         "percent_owned": 82.64,
         "percent_change": 0.46,
         "bye_week": 13,
+        "projected_points": 10.9,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3672,6 +3789,7 @@
         "percent_owned": 35.76,
         "percent_change": -0.33,
         "bye_week": 8,
+        "projected_points": 8.42,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3708,6 +3826,7 @@
         "percent_owned": 34.01,
         "percent_change": 7.26,
         "bye_week": 8,
+        "projected_points": 10.51,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3747,6 +3866,7 @@
         "percent_owned": 30.69,
         "percent_change": -9.81,
         "bye_week": 13,
+        "projected_points": 0.0,
         "injury": {
           "designation": "IR",
           "nfl_status": "Injured Reserve",
@@ -3790,6 +3910,7 @@
         "acquisition": "FREE AGENT",
         "percent_owned": 17.86,
         "percent_change": -0.36,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3815,6 +3936,7 @@
         "percent_owned": 10.74,
         "percent_change": -0.73,
         "bye_week": 11,
+        "projected_points": 7.57,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3852,6 +3974,7 @@
         "percent_owned": 8.65,
         "percent_change": -0.56,
         "bye_week": 5,
+        "projected_points": 7.29,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3889,6 +4012,7 @@
         "percent_owned": 6.86,
         "percent_change": 0.56,
         "bye_week": 10,
+        "projected_points": 8.94,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3920,6 +4044,7 @@
         "percent_owned": 5.38,
         "percent_change": -0.28,
         "bye_week": 10,
+        "projected_points": 6.1,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -3958,6 +4083,7 @@
         "percent_owned": 3.64,
         "percent_change": 0.66,
         "bye_week": 11,
+        "projected_points": 9.06,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -3995,6 +4121,7 @@
         "percent_owned": 3.44,
         "percent_change": -0.05,
         "bye_week": 13,
+        "projected_points": 8.68,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4032,6 +4159,7 @@
         "percent_owned": 2.4,
         "percent_change": 0.06,
         "bye_week": 7,
+        "projected_points": 8.84,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4069,6 +4197,7 @@
         "percent_owned": 1.56,
         "percent_change": -0.03,
         "bye_week": 11,
+        "projected_points": 7.23,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4106,6 +4235,7 @@
         "percent_owned": 0.95,
         "percent_change": -0.07,
         "bye_week": 11,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4140,6 +4270,7 @@
         "acquisition": "FREE AGENT",
         "percent_owned": 0.79,
         "percent_change": -0.08,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4201,6 +4332,7 @@
         "percent_owned": 0.5,
         "percent_change": -0.01,
         "bye_week": 11,
+        "projected_points": 6.97,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4236,6 +4368,7 @@
         "percent_owned": 0.34,
         "percent_change": -0.02,
         "bye_week": 9,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4269,6 +4402,7 @@
         "percent_owned": 0.15,
         "percent_change": 0.05,
         "bye_week": 13,
+        "projected_points": 7.31,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4304,6 +4438,7 @@
         "percent_owned": 0.13,
         "percent_change": 0.0,
         "bye_week": 8,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4338,6 +4473,7 @@
         "acquisition": "FREE AGENT",
         "percent_owned": 0.13,
         "percent_change": 0.01,
+        "projected_points": 7.49,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4360,6 +4496,7 @@
         "acquisition": "FREE AGENT",
         "percent_owned": 0.13,
         "percent_change": 0.0,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4383,6 +4520,7 @@
         "acquisition": "FREE AGENT",
         "percent_owned": 0.13,
         "percent_change": 0.0,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4406,6 +4544,7 @@
         "percent_owned": 0.09,
         "percent_change": 0.0,
         "bye_week": 6,
+        "projected_points": 7.1,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4465,6 +4604,7 @@
         "percent_owned": 61.91,
         "percent_change": -3.0,
         "bye_week": 11,
+        "projected_points": 5.17,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4502,6 +4642,7 @@
         "percent_owned": 41.71,
         "percent_change": 14.17,
         "bye_week": 8,
+        "projected_points": 7.5,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4540,6 +4681,7 @@
         "percent_owned": 39.3,
         "percent_change": -5.37,
         "bye_week": 6,
+        "projected_points": 4.29,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4577,6 +4719,7 @@
         "percent_owned": 37.31,
         "percent_change": 0.65,
         "bye_week": 8,
+        "projected_points": 5.59,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4614,6 +4757,7 @@
         "percent_owned": 34.11,
         "percent_change": -0.51,
         "bye_week": 10,
+        "projected_points": 5.03,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4644,6 +4788,7 @@
         "percent_owned": 18.8,
         "percent_change": 0.21,
         "bye_week": 11,
+        "projected_points": 4.69,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4681,6 +4826,7 @@
         "percent_owned": 16.71,
         "percent_change": -3.43,
         "bye_week": 13,
+        "projected_points": 3.89,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4717,6 +4863,7 @@
         "percent_owned": 15.64,
         "percent_change": 0.0,
         "bye_week": 14,
+        "projected_points": 5.92,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4753,6 +4900,7 @@
         "percent_owned": 11.42,
         "percent_change": 1.7,
         "bye_week": 8,
+        "projected_points": 5.82,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4790,6 +4938,7 @@
         "percent_owned": 9.98,
         "percent_change": -1.44,
         "bye_week": 5,
+        "projected_points": 4.79,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4826,6 +4975,7 @@
         "percent_owned": 9.26,
         "percent_change": -0.13,
         "bye_week": 7,
+        "projected_points": 4.21,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4862,6 +5012,7 @@
         "percent_owned": 4.73,
         "percent_change": -1.01,
         "bye_week": 11,
+        "projected_points": 4.35,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4898,6 +5049,7 @@
         "percent_owned": 4.64,
         "percent_change": -1.2,
         "bye_week": 9,
+        "projected_points": 0.0,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4929,6 +5081,7 @@
         "percent_owned": 4.44,
         "percent_change": -0.53,
         "bye_week": 13,
+        "projected_points": 2.75,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -4965,6 +5118,7 @@
         "percent_owned": 2.54,
         "percent_change": -0.24,
         "bye_week": 13,
+        "projected_points": 2.29,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -5002,6 +5156,7 @@
         "percent_owned": 0.66,
         "percent_change": -0.01,
         "bye_week": 6,
+        "projected_points": 2.21,
         "upcoming": [
           {
             "scoring_period_id": 9,
@@ -5038,6 +5193,7 @@
         "percent_owned": 0.59,
         "percent_change": -0.01,
         "bye_week": 14,
+        "projected_points": 3.84,
         "upcoming": [
           {
             "scoring_period_id": 9,

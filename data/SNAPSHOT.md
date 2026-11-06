@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-06T01:52:41.212556+00:00` |
-| Fetched at (CT) | **Thu Nov 5, 7:52 PM CST** |
+| Fetched at (UTC) | `2026-11-06T02:07:23.407450+00:00` |
+| Fetched at (CT) | **Thu Nov 5, 8:07 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,8 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 7.77s |
+| Fetch duration | 17.32s |
 | ESPN calls | 32 |
-| Workflow run | `42146676918` |
 
 ## Freshness and completeness gates
 
@@ -37,10 +36,10 @@
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
 | Kelli's Top-Notch Team | 0.0 | Commanders of Chaos | 1.6 | NO |
-| Connor’s Team | 6.98 | From Puka with Love | 0.0 | NO |
+| Connor’s Team | 8.28 | From Puka with Love | 0.0 | NO |
 | 🔥Certified Dumpster Fire 🔥 | 0.0 | Auto Draft Champion | 0.0 | NO |
-| The Bye Week Boys | 4.0 | Nicole's Gnarly Team | 6.0 | NO |
-| Jason X | 7.6 | Cole-Train | 9.0 | NO |
+| The Bye Week Boys | 4.56 | Nicole's Gnarly Team | 6.0 | NO |
+| Jason X | 8.2 | Cole-Train | 10.0 | NO |
 | Burrow's Bunch | 0.0 | Giant Packer Fan | 0.0 | NO |
 
 ## Rosters
@@ -79,7 +78,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (41)
+## Injury designations (40)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -117,10 +116,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Deshaun Watson | QB | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | FLEX | yes |
 | Kelli's Top-Notch Team | Garrett Wilson | WR | QUESTIONABLE | WR | yes |
-| 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | QUESTIONABLE | TE | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Brian Robinson Jr. | RB | QUESTIONABLE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Harold Fannin Jr. | TE | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
@@ -129,27 +127,42 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 17 | 42 | 110 | 186 | 186 | 316 | 857 |
+| 17 | 42 | 110 | 187 | 185 | 316 | 857 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
+
+## What changed since the last snapshot
+
+Compared with the snapshot taken `Thu Nov 5, 8:03 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
 Record 5-3 · FAAB **$51** of $200 · waiver rank 10 · bench open **0** · IR open 0
 
+**This week:** vs Cole-Train — projected 149.94 to 129.95 (margin 19.99), win probability 0.59. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+
+**FAAB plan** — $51 remaining, $10 reserve, **$41 discretionary**. Tiers are shares of remaining, already costed:
+
+| Tier | Bid | Affordable | Within reserve |
+| --- | --- | --- | --- |
+| league winner | $13-20 | yes | yes |
+| starter at need | $6-11 | yes | yes |
+| flex upside | $3-5 | yes | yes |
+| stash | $1-3 | yes | yes |
+
 No open bench spot: any add needs a drop.
 
-| Slot | Player | Pos | Bye | Next | Status |
-| --- | --- | --- | --- | --- | --- |
-| QB | Jayden Daniels | QB | W7 | vs LAR | - |
-| RB | Bhayshul Tuten | RB | W7 | @ BAL | - |
-| RB | Ollie Gordon II | RB | W6 | vs DET | - |
-| WR | Jaxon Smith-Njigba | WR | W11 | vs ARI | - |
-| WR | Christian Watson | WR | W11 | @ NE | QUESTIONABLE (back Nov 8) |
-| TE | Brock Bowers | TE | W13 | @ SF | - |
-| FLEX | Amon-Ra St. Brown | WR | W6 | @ MIA | QUESTIONABLE (back Nov 8) |
-| K | Chase McLaughlin | K | W10 | @ CHI | - |
-| D/ST | Lions D/ST | D/ST | W6 | @ MIA | - |
+| Slot | Player | Pos | Bye | Next | Proj | Status |
+| --- | --- | --- | --- | --- | --- | --- |
+| QB | Jayden Daniels | QB | W7 | vs LAR | 20.67 | - |
+| RB | Bhayshul Tuten | RB | W7 | @ BAL | 15.91 | - |
+| RB | Ollie Gordon II | RB | W6 | vs DET | 17.02 | - |
+| WR | Jaxon Smith-Njigba | WR | W11 | vs ARI | 23.02 | - |
+| WR | Christian Watson | WR | W11 | @ NE | 16.33 | QUESTIONABLE (back Nov 8) |
+| TE | Brock Bowers | TE | W13 | @ SF | 18.83 | - |
+| FLEX | Amon-Ra St. Brown | WR | W6 | @ MIA | 21.38 | QUESTIONABLE (back Nov 8) |
+| K | Chase McLaughlin | K | W10 | @ CHI | 8.78 | - |
+| D/ST | Lions D/ST | D/ST | W6 | @ MIA | 5.95 | - |
 
 **Week 10 bye pressure:** Chase McLaughlin (K).
 
@@ -219,12 +232,13 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-951 total | 240 executed ownership changes | 462 lineup-only moves | 192 draft picks | 0 pending
+953 total | 241 executed ownership changes | 463 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-06T02:02 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Mike Gesicki, DROP Brian Robinson Jr. |
 | 2026-11-06T01:15 | Jason X | FREEAGENT | ADD Jason Myers, DROP Kimani Vidal |
 | 2026-11-06T01:07 | Jason X | FREEAGENT | ADD Caleb Douglas, DROP Tyjae Spears |
 | 2026-11-06T01:05 | Jason X | FREEAGENT | ADD Mike Washington Jr., DROP Elijah Mitchell |
@@ -236,7 +250,6 @@ Most recent ownership changes:
 | 2026-11-04T09:08 | The Bye Week Boys | WAIVER | ADD Chris Rodriguez Jr., DROP Caleb Douglas |
 | 2026-11-04T09:08 | Jason X | WAIVER | ADD Buccaneers D/ST, DROP Spencer Shrader |
 | 2026-11-04T09:08 | Connor’s Team | WAIVER | ADD Cam Little, DROP Jason Myers |
-| 2026-11-04T09:08 | The Bye Week Boys | WAIVER | ADD Terrance Ferguson, DROP Samaje Perine |
 
 ## League format
 
@@ -250,6 +263,7 @@ Scoring: `H2H_POINTS`. Starting lineup and bench: QB x1, RB x2, WR x2, TE x1, D/
 | `recent_form_rankings.json` | Top 24 QB / 60 RB / 60 WR / 24 TE / 24 K / 20 D/ST by average points over each player's last three completed games, with owner and Jason X flag. |
 | `injuries.json` | NFL designations and expected return dates, by player id, plus the two IR cross-checks. A compact `injury` block is also inline on every player elsewhere. |
 | `gates.json` | Machine-readable pass/fail per snapshot check, and the DATA STATUS verdict. Read this instead of deriving it. |
+| `changes_since_last.json` | What changed versus the previous snapshot: injury designations, newly available, claimed, moved team. |
 | `jason_x.json` | Jason X precomputed: starters, bench, IR, open spots, FAAB, bye pressure, injuries, upcoming opponents. |
 | `nfl_schedule.json` | Every NFL team's bye week and per-week opponent. Use instead of web research for byes and matchups. |
 | `top_available.json` | Top 25 available per position with acquisition cost, bye, injury and opponents. A trimmed available_players.json. |

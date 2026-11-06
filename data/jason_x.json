@@ -18,6 +18,59 @@
     "remaining": 51,
     "percent_remaining": 25.5
   },
+  "faab_plan": {
+    "remaining": 51,
+    "reserve_floor": 10,
+    "reserve_share_of_remaining": 0.2,
+    "discretionary": 41,
+    "tiers": [
+      {
+        "tier": "league_winner",
+        "describes": "clear every-week starter or league-altering role",
+        "suggested_bid": 13,
+        "max_bid": 20,
+        "affordable": true,
+        "within_reserve": true
+      },
+      {
+        "tier": "starter_at_need",
+        "describes": "reliable weekly starter at a position of need",
+        "suggested_bid": 6,
+        "max_bid": 11,
+        "affordable": true,
+        "within_reserve": true
+      },
+      {
+        "tier": "flex_upside",
+        "describes": "flex or high-upside speculative with a real path",
+        "suggested_bid": 3,
+        "max_bid": 5,
+        "affordable": true,
+        "within_reserve": true
+      },
+      {
+        "tier": "stash",
+        "describes": "stash, injury insurance or bye cover",
+        "suggested_bid": 1,
+        "max_bid": 3,
+        "affordable": true,
+        "within_reserve": true
+      }
+    ],
+    "note": "Tiers are shares of REMAINING budget, not the original, and are already costed in dollars. discretionary is remaining minus the reserve held back for injury replacement; a bid above it is allowed but must be flagged as breaching the reserve. A tier with affordable false must never be recommended."
+  },
+  "current_matchup": {
+    "opponent_team_id": 4,
+    "opponent": "Cole-Train",
+    "my_points": 8.2,
+    "opponent_points": 10.0,
+    "my_projected": 149.94,
+    "opponent_projected": 129.95,
+    "projected_margin": 19.99,
+    "win_probability": 0.59,
+    "posture": "heavy favourite",
+    "guidance": "Protect the floor: prefer the safer projection and avoid volatile swings."
+  },
   "waiver_rank": 10,
   "counts": {
     "total": 17,
@@ -66,6 +119,7 @@
       "pro_team": "WSH",
       "lineup_slot": "QB",
       "bye_week": 7,
+      "projected_points": 20.67,
       "percent_owned": 95.19,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -99,6 +153,7 @@
       "pro_team": "JAX",
       "lineup_slot": "RB",
       "bye_week": 7,
+      "projected_points": 15.91,
       "percent_owned": 94.08,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -132,6 +187,7 @@
       "pro_team": "MIA",
       "lineup_slot": "RB",
       "bye_week": 6,
+      "projected_points": 17.02,
       "percent_owned": 87.72,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -165,6 +221,7 @@
       "pro_team": "SEA",
       "lineup_slot": "WR",
       "bye_week": 11,
+      "projected_points": 23.02,
       "percent_owned": 99.93,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -198,6 +255,7 @@
       "pro_team": "GB",
       "lineup_slot": "WR",
       "bye_week": 11,
+      "projected_points": 16.33,
       "percent_owned": 97.03,
       "injury": {
         "designation": "QUESTIONABLE",
@@ -239,6 +297,7 @@
       "pro_team": "LV",
       "lineup_slot": "TE",
       "bye_week": 13,
+      "projected_points": 18.83,
       "percent_owned": 99.88,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -272,6 +331,7 @@
       "pro_team": "DET",
       "lineup_slot": "FLEX",
       "bye_week": 6,
+      "projected_points": 21.38,
       "percent_owned": 99.92,
       "injury": {
         "designation": "QUESTIONABLE",
@@ -313,6 +373,7 @@
       "pro_team": "TB",
       "lineup_slot": "K",
       "bye_week": 10,
+      "projected_points": 8.78,
       "percent_owned": 45.2,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -340,6 +401,7 @@
       "pro_team": "DET",
       "lineup_slot": "D/ST",
       "bye_week": 6,
+      "projected_points": 5.95,
       "percent_owned": 35.57,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -375,6 +437,7 @@
       "pro_team": "NYG",
       "lineup_slot": "BENCH",
       "bye_week": 8,
+      "projected_points": 14.19,
       "percent_owned": 93.04,
       "injury": {
         "designation": "QUESTIONABLE",
@@ -416,6 +479,7 @@
       "pro_team": "PIT",
       "lineup_slot": "BENCH",
       "bye_week": 9,
+      "projected_points": 0.0,
       "percent_owned": 64.05,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -443,6 +507,7 @@
       "pro_team": "WSH",
       "lineup_slot": "BENCH",
       "bye_week": 7,
+      "projected_points": 10.26,
       "percent_owned": 11.52,
       "injury": {
         "designation": "QUESTIONABLE",
@@ -484,6 +549,7 @@
       "pro_team": "TB",
       "lineup_slot": "BENCH",
       "bye_week": 10,
+      "projected_points": 4.39,
       "percent_owned": 31.6,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -511,6 +577,7 @@
       "pro_team": "LV",
       "lineup_slot": "BENCH",
       "bye_week": 13,
+      "projected_points": 7.09,
       "percent_owned": 30.4,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -544,6 +611,7 @@
       "pro_team": "MIA",
       "lineup_slot": "BENCH",
       "bye_week": 6,
+      "projected_points": 9.65,
       "percent_owned": 27.52,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -577,6 +645,7 @@
       "pro_team": "SEA",
       "lineup_slot": "BENCH",
       "bye_week": 11,
+      "projected_points": 10.15,
       "percent_owned": 89.36,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
@@ -612,6 +681,7 @@
       "pro_team": "CAR",
       "lineup_slot": "IR",
       "bye_week": 5,
+      "projected_points": 0.0,
       "percent_owned": 34.1,
       "injury": {
         "designation": "IR",
@@ -698,10 +768,11 @@
   ],
   "has_open_bench_spot": false,
   "has_open_ir_spot": false,
-  "usage": "Jason X's team, precomputed from this snapshot so the report does not have to rebuild it. starters, bench and injured_reserve are the current lineup; open_starting_slots and capacity give the roster-spot answer directly, and has_open_bench_spot is the flag that decides whether an add needs a drop. bye_pressure lists which starters are on bye in each of weeks_ahead. injury_designations is every designated player on the roster with the expected return. Every player carries bye_week and their upcoming opponents.",
+  "usage": "Jason X's team, precomputed from this snapshot so the report does not have to rebuild it. starters, bench and injured_reserve are the current lineup; open_starting_slots and capacity give the roster-spot answer directly, and has_open_bench_spot is the flag that decides whether an add needs a drop. bye_pressure lists which starters are on bye in each of weeks_ahead. injury_designations is every designated player on the roster with the expected return. Every player carries bye_week, their upcoming opponents and projected_points, which is ESPN's projection for the current week and the only forward-looking number on the roster; a 0.0 is usually a bye or a player not expected to play rather than a missing value. faab_plan costs the bid tiers against the remaining balance so an unaffordable bid cannot be recommended, and current_matchup gives this week's opponent with the risk posture it implies.",
+  "projection_scoring_period_id": 9,
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 9,
-  "fetched_at": "2026-11-06T01:52:33.443127+00:00",
-  "fetched_at_ct_label": "Thu Nov 5, 7:52 PM CST"
+  "fetched_at": "2026-11-06T02:07:06.088045+00:00",
+  "fetched_at_ct_label": "Thu Nov 5, 8:07 PM CST"
 }

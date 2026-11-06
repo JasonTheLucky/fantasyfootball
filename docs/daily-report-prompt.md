@@ -73,9 +73,11 @@ Resolve availability and cost separately for every acquisition. `FREE AGENT = $0
 
 For each WAIVERS recommendation state SUGGESTED BID, MAX BID and the player's waiver_process_ct. Whole-dollar bids, at least minimum_bid, never above Jason's remaining.
 
-Bid ladder as share of original budget: every-week starter or league-altering 25-40%; reliable starter at a position of need 10-20%; flex or high-upside path 3-8%; stash/injury/bye 1-3%; lottery ticket minimum viable. minimum_bid can be $0, but if Jason's waiver_rank is weak bid at least $1 on anything genuinely wanted.
+Bid ladder: read jason_x.json→faab_plan. Its tiers are shares of REMAINING budget and are already costed in dollars, so quote those figures and never recompute a share of the original. A ladder against the original breaks once a manager has spent down: with $51 of $200 left, "25-40% of original" is $50-80 and cannot be bid at all.
 
-Budget discipline: before mid-season preserve roughly 20% of the original budget for injury replacement, and explicitly flag any recommendation that breaches it.
+Never recommend a tier whose affordable is false. faab_plan.discretionary is remaining minus the reserve held back for injury replacement; a bid above it is permitted but must be explicitly flagged as breaching the reserve, with the dollar figure named. minimum_bid can be $0, but if Jason's waiver_rank is weak bid at least $1 on anything genuinely wanted.
+
+Budget discipline: state remaining, rank among the 12, and the balance left after the recommendation. When Jason is near the bottom of the league in remaining budget, say so and prefer one above-market bid on the best target over several mid-sized bids he cannot all afford.
 
 Contested-bid check: compare Jason's remaining and waiver_rank against all 11 other teams. State how many can outbid him and name plausible competitors for that player given their needs. If a market-value bid is likely to lose, recommend an above-market bid or a cheaper alternative, and say which.
 
@@ -93,6 +95,24 @@ Never recommend adding, starting or stashing a player labelled `out for the seas
 
 In the PDF carry the designation in the player's line or a STATUS column in every table where they appear, pale red for OUT/IR/season-ending and pale gold for QUESTIONABLE/DAY_TO_DAY.
 
+WHAT CHANGED SINCE THE LAST SNAPSHOT
+
+Read changes_since_last.json first among the analytical files. This is the delta the report's "last ~24 hours" framing needs: every other file is point-in-time state, and an injury designation changing is the highest-value daily signal there is.
+
+The window is one snapshot interval, roughly six hours, not exactly 24 hours. previous_snapshot_at_ct says when the comparison baseline was taken; state that window rather than implying a clean 24-hour sweep. If comparable is false there was no previous snapshot, so say the delta is unavailable and never present empty lists as "nothing changed".
+
+injury_changes is sorted with Jason X players first and carries direction: new, changed or cleared. jason_x_injury_changes is the subset affecting Jason. became_available are players a rival dropped who are now addable. became_rostered are players claimed, which is how a target you were weighing yesterday disappears; when a player you would otherwise recommend appears there, say so explicitly rather than recommending someone already gone. changed_team is a trade or a move between teams.
+
+Lead Section 1 with the most consequential change, and build Section 3 from these lists rather than inferring recency from transactions.json. A Jason X starter whose designation worsened outranks any waiver opportunity.
+
+FORWARD-LOOKING PROJECTIONS
+
+Section 4A ranks the last three games PLAYED, which is backward-looking. Every decision it feeds is about the next game, so weigh it against projected_points, which is ESPN's projection for projection_scoring_period_id, the current week. It appears inline on jason_x.json players and on top_available.json entries.
+
+Use both and say when they disagree: strong recent form with a weak projection usually means a bye, an injury or a hard matchup, and a weak average with a strong projection usually means a role that has just changed. Neither number alone is a recommendation.
+
+A projection of 0.0 is usually real, not missing: the player's NFL team is on bye that week, he has no NFL team, or he is not expected to play. Check the player's bye_week and upcoming block before reading 0.0 as poor form, and never describe a bye-week zero as a bad projection. An absent projected_points means ESPN published no projection at all; treat it as unknown, never as zero.
+
 BYES AND SCHEDULE
 
 Read nfl_schedule.json for bye weeks and opponents. Never use web research for a bye or an opponent. bye_weeks_by_abbrev and byes_by_scoring_period give the league-wide picture; every player record already carries bye_week inline; teams[pro_team_id].games_by_scoring_period gives opponents with kickoff_ct. A scoring period absent from a team's game map is that team's bye.
@@ -109,7 +129,11 @@ White analyst dashboard, dark text, strong headings, neutral separators. Green=A
 
 1. EXECUTIVE SUMMARY — AT A GLANCE
 
-Dashboard: OVERALL, TOP WAIVER, BEST MOVE, BEST STASH, BIGGEST ISSUE, LINEUP CHANGE, BEST TRADE, FAAB POSITION, INJURY WATCH. FAAB POSITION shows Jason's remaining, his rank among the 12, and total dollars committed by today's recommendations. INJURY WATCH names any Jason X starter with a designation, plus any Jason X player on NFL IR holding an active roster spot. Every acquisition shows FREE AGENT $0 or WAIVERS suggested bid, and the drop when has_open_bench_spot is false.
+Open with WHAT CHANGED: the single most consequential item from changes_since_last.json, or `NO MATERIAL CHANGE SINCE [previous_snapshot_at_ct]` when there is none. A Jason X designation worsening leads over anything else.
+
+Dashboard: OVERALL, WHAT CHANGED, MATCHUP, TOP WAIVER, BEST MOVE, BEST STASH, BIGGEST ISSUE, LINEUP CHANGE, BEST TRADE, FAAB POSITION, INJURY WATCH.
+
+MATCHUP comes from jason_x.json→current_matchup: the opponent, the projected margin, the win probability and the posture. State the posture's consequence in the same breath, because it changes what a good lineup looks like: a favourite protects the floor and an underdog chases ceiling, from the same roster. FAAB POSITION shows Jason's remaining, his rank among the 12, and total dollars committed by today's recommendations. INJURY WATCH names any Jason X starter with a designation, plus any Jason X player on NFL IR holding an active roster spot. Every acquisition shows FREE AGENT $0 or WAIVERS suggested bid, and the drop when has_open_bench_spot is false.
 
 2. MY PLAYERS
 
@@ -165,7 +189,9 @@ A Jason X lineup pressure test, NOT an NFL schedule summary. Ask whether anyone 
 
 DO NOT LIST IRRELEVANT NFL MATCHUPS. Every matchup shown must attach directly to a Jason X player or replacement, or to a verified challenger or stash, and must help a start/bench/add/hold/stash decision.
 
-Analyze NEXT FANTASY WEEK and the FOLLOWING FANTASY WEEK separately. Build the likely lineup from jason_x.json; opponents and byes come from the inline bye_week and upcoming fields plus nfl_schedule.json. Account for injuries, returns and byes using the snapshot's designations and expected returns. Identify the best rostered replacement first, then compare the best verified available challenger. Matchup is one factor, not the sole driver. For byes use bye_pressure and prefer a rostered replacement; use BYE-WEEK NEED only when the roster is inadequate. For injuries show the designation, expected return, best rostered replacement, best verified challenger and the exact move trigger. A challenger must have a realistic chance to start for Jason within two weeks. Weigh acquisition cost.
+Let the matchup set the risk posture. jason_x.json→current_matchup gives the projected margin, the win probability and a posture; follow its guidance. As a heavy favourite prefer the safer projection and avoid volatile swings, because variance is the only way to lose. As an underdog prefer upside, because a safe lineup still loses. In a coin flip small edges decide it. Say which posture you are reasoning under rather than leaving it implicit.
+
+Analyze NEXT FANTASY WEEK and the FOLLOWING FANTASY WEEK separately. Build the likely lineup from jason_x.json; opponents and byes come from the inline bye_week and upcoming fields plus nfl_schedule.json. Weigh projected_points alongside recent form for every start/sit call. Account for injuries, returns and byes using the snapshot's designations and expected returns. Identify the best rostered replacement first, then compare the best verified available challenger. Matchup is one factor, not the sole driver. For byes use bye_pressure and prefer a rostered replacement; use BYE-WEEK NEED only when the roster is inadequate. For injuries show the designation, expected return, best rostered replacement, best verified challenger and the exact move trigger. A challenger must have a realistic chance to start for Jason within two weeks. Weigh acquisition cost.
 
 Each week's table: `SLOT | JASON X STARTER / REPLACEMENT | STATUS | MATCHUP | BEST VERIFIED AVAILABLE CHALLENGER | CHALLENGER MATCHUP | BID | EDGE | ACTION`. STATUS carries the designation and expected return where present.
 
@@ -221,6 +247,10 @@ PDF: plain white panels. Strong player line + ownership; scan line `Forum: ... �
 
 Evaluate all 12 teams from reconciled rosters plus current ROS. Grade complete QB/RB/WR/TE/K/DST rooms plus BIGGEST NEED and SURPLUS. Use starter quality, depth, volume, role security, injuries and expected returns, depth chart, usage, red-zone, environment, schedule, byes, floor/ceiling and replacement quality; don't overweight one game.
 
+Scope depends on the day. metadata.json→full_league_review_day is true on Tuesdays in CT, once waivers have processed and the previous week is final.
+
+When full_league_review_day is true, do the full review: all 12 teams, all six positions, the complete matrix below. When it is false, do the short version instead: rate only Jason X and the three teams identified as his most natural trade partners, keep the Jason summary and FAAB leverage in full, and state in one line that the full 12-team matrix runs on the weekly review day. Re-grading 72 subjective cells every day produces day-to-day movement that is noise rather than signal, and the effort is better spent on the sections that drive action.
+
 Rate every position on a 1-10 scale where 10 is the best in the league and 1 is the worst. Use whole numbers only.
 
 For EACH position independently: exactly one team scores 10 and exactly one team scores 1. The remaining ten teams score 2 through 9, and duplicates are allowed there, so two teams can both be 7. Spread the middle genuinely rather than clustering everything on 5 or 6 — if two rooms are clearly different, their numbers should differ. Rate each position across the league, not against the team's own other positions, so a team can hold the 10 at one position and the 1 at another.
@@ -253,7 +283,7 @@ E rendered ownership compared to players_by_id; require `OWNERSHIP MISMATCHES = 
 
 F every acquisition in Sections 1, 3-6 and 9 has positive current availability.
 
-G Section 8 all 12 teams exactly once; every rating a whole number 1-10; for each of QB, RB, WR, TE, K and D/ST exactly one team scores 10 and exactly one scores 1, with the other ten between 2 and 9 and duplicates allowed there; needs and surpluses supported; leaders and laggards match the matrix, with the leader being the 10 and the laggard the 1. Require `SECTION 8 SCALE ERRORS = 0`.
+G Section 8 scope matches metadata.full_league_review_day. On a full review day: all 12 teams exactly once; every rating a whole number 1-10; for each of QB, RB, WR, TE, K and D/ST exactly one team scores 10 and exactly one scores 1, with the other ten between 2 and 9 and duplicates allowed there; leaders and laggards match the matrix, the leader being the 10 and the laggard the 1. On other days: Jason X plus three trade partners only, the same scale rules applied within that subset is NOT required, and the line stating when the full matrix runs is present. Needs and surpluses supported either way. Require `SECTION 8 SCALE ERRORS = 0`.
 
 H Jason's Section 8 entry consistent with his current roster.
 
@@ -280,6 +310,8 @@ R `DROP NONE — OPEN ROSTER SPOT` only when has_open_bench_spot is true; otherw
 S FAAB figures, waiver ranks and processing times identical everywhere.
 
 T Section 4A matches recent_form_rankings.json exactly: six tables in order QB, RB, WR, TE, K, D/ST; each row count equals counts.ranked; rank, name, pos, team, weeks, points, average and owner verbatim; owner_label not rewritten; every game cell in the exact form `W8 · 24.60`; no padded, invented or dropped rows; order unchanged; a yellow row for every is_jason_x true entry and no other, including none for FREE AGENT, WAIVERS or UNKNOWN. No player in excluded_out_for_season appears in any table, and the excluded count is stated. Require `RECENT FORM HIGHLIGHT ERRORS = 0`, `RECENT FORM COUNT ERRORS = 0` and `RECENT FORM FORMAT ERRORS = 0`, and confirm the legend `Yellow = Jason X roster` sits immediately above the first table.
+
+Y Delta, projections, FAAB and matchup used as published: Section 1 opens with the leading change from changes_since_last.json or states no material change with the baseline time; comparable false is reported as unavailable rather than as stability; no player listed in became_rostered is recommended as an add; every recommended bid comes from faab_plan with affordable true and any reserve breach flagged in dollars; no projection of 0.0 is described as poor form without first checking for a bye; absent projections are called unknown rather than zero; and the matchup posture from current_matchup is stated and consistent with the start/sit advice. Require `STALE RECOMMENDATION ERRORS = 0`.
 
 X Every L3 RANK shown in Sections 4 and 6 matches that player's rank in the Section 4A table for the same position, or is the file's recent_form_note verbatim when unranked; no rank is computed, estimated or renumbered; the three unranked reasons are never flattened into one. Section 5 lists its nine slots in the order QB, RB, RB, WR, WR, TE, FLEX, K, D/ST in both weekly tables. Require `RANK CROSS-REFERENCE ERRORS = 0`.
 

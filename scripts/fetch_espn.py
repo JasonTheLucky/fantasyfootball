@@ -161,6 +161,30 @@ OUT_FOR_SEASON_LABEL = "out for the season"
 # The order Jason X's starting slots are presented in, everywhere.
 STARTING_SLOT_ORDER = ["QB", "RB", "RB", "WR", "WR", "TE", "FLEX", "K", "D/ST"]
 
+# FAAB bid tiers, as a share of REMAINING budget rather than the original.
+#
+# Expressing them against the original budget breaks as soon as a manager has
+# spent down: with $51 of $200 left, a "25-40% of original" top-tier bid is
+# $50-80, which is unaffordable, while the same share of remaining is $13-20 and
+# is a real recommendation. Tiers are published already costed so the report
+# cannot suggest a bid that cannot be made.
+FAAB_BID_TIERS = [
+    ("league_winner", 0.25, 0.40, "clear every-week starter or league-altering role"),
+    ("starter_at_need", 0.12, 0.22, "reliable weekly starter at a position of need"),
+    ("flex_upside", 0.05, 0.10, "flex or high-upside speculative with a real path"),
+    ("stash", 0.02, 0.05, "stash, injury insurance or bye cover"),
+]
+
+# Reserve held back for in-season injury replacement, as a share of REMAINING.
+# A floor pinned to the original budget becomes absurd late in a season: 20% of
+# $200 is $40, which against a $51 balance leaves $11 of usable money.
+FAAB_RESERVE_SHARE = 0.20
+
+# Day of the week (CT) on which the report does the full 12-team league review.
+# Tuesday: waivers have processed and the previous week is final, so the ratings
+# are based on settled information rather than mid-week noise.
+FULL_LEAGUE_REVIEW_WEEKDAY = 1      # Monday=0
+
 # ESPN's games-played marker inside a weekly actual's inner stats dict. Keys in
 # that dict are JSON strings, hence the str.
 #
@@ -1378,6 +1402,33 @@ def played_in_game(raw_stats: dict | None) -> bool:
     return value >= 1
 
 
+def extract_weekly_projection(
+    player_obj: dict, season: int, week: int
+) -> float | None:
+    """ESPN's projection for a week, from the same payload as the actuals.
+
+    The rankings look backwards at three completed games, but every decision
+    they feed -- start, sit, add, stash -- is about the next game. The
+    projection rides along in the response we already fetch (statSourceId 1
+    rather than 0), so carrying it costs nothing and gives the report a
+    forward-looking number to weigh against recent form.
+    """
+    for entry in (player_obj or {}).get("stats") or []:
+        if not isinstance(entry, dict):
+            continue
+        if entry.get("statSourceId") != 1:
+            continue
+        if entry.get("scoringPeriodId") != week:
+            continue
+        if entry.get("seasonId") != season:
+            continue
+        value = entry.get("appliedTotal")
+        if isinstance(value, (int, float)) and not isinstance(value, bool):
+            if math.isfinite(value):
+                return float(value)
+    return None
+
+
 def extract_weekly_entry(
     player_obj: dict, season: int, week: int
 ) -> tuple[float, dict] | None:
@@ -1433,6 +1484,7 @@ def fetch_weekly_actuals(
     """
     actuals: dict[int, dict] = {}
     meta: dict[int, dict] = {}
+    projections: dict[int, float] = {}
     diag = {
         "requests": 0,
         "invalid_values": 0,
@@ -1472,6 +1524,9 @@ def fetch_weekly_actuals(
                 "pro_team": PRO_TEAMS.get(player_obj.get("proTeamId"), "UNKNOWN"),
                 "position_id": position_id,
             }
+            projection = extract_weekly_projection(player_obj, season, week)
+            if projection is not None:
+                projections[pid] = _round(projection)
             found = extract_weekly_entry(player_obj, season, week)
             if found is None:
                 # Either no row for this week (bye / did not play) or a row whose
@@ -1509,7 +1564,8 @@ def fetch_weekly_actuals(
             break
         offset += page_size
 
-    return actuals, meta, diag
+    diag["projections"] = len(projections)
+    return actuals, meta, diag, projections
 
 
 def resolve_ownership(
@@ -1799,12 +1855,115 @@ def build_recent_form(
 # --------------------------------------------------------------------------
 
 
+def faab_plan(faab: dict | None) -> dict | None:
+    """Bid tiers already costed against the remaining balance, plus headroom.
+
+    The report must not be able to recommend a bid that cannot be made, which is
+    exactly what a ladder expressed against the original budget allows once a
+    manager has spent down.
+    """
+    if not faab:
+        return None
+    remaining = faab.get("remaining")
+    if not isinstance(remaining, (int, float)):
+        return None
+
+    reserve = int(round(remaining * FAAB_RESERVE_SHARE))
+    tiers = []
+    for name, low, high, description in FAAB_BID_TIERS:
+        low_bid = max(1, int(round(remaining * low)))
+        high_bid = max(low_bid, int(round(remaining * high)))
+        tiers.append(
+            {
+                "tier": name,
+                "describes": description,
+                "suggested_bid": low_bid,
+                "max_bid": high_bid,
+                "affordable": high_bid <= remaining,
+                "within_reserve": high_bid <= max(remaining - reserve, 0),
+            }
+        )
+    return {
+        "remaining": remaining,
+        "reserve_floor": reserve,
+        "reserve_share_of_remaining": FAAB_RESERVE_SHARE,
+        "discretionary": max(remaining - reserve, 0),
+        "tiers": tiers,
+        "note": (
+            "Tiers are shares of REMAINING budget, not the original, and are "
+            "already costed in dollars. discretionary is remaining minus the "
+            "reserve held back for injury replacement; a bid above it is "
+            "allowed but must be flagged as breaching the reserve. A tier with "
+            "affordable false must never be recommended."
+        ),
+    }
+
+
+def build_current_matchup(
+    matchups: list[dict], team_id: Any = JASON_X_TEAM_ID
+) -> dict | None:
+    """This week's head-to-head, with the risk posture it implies.
+
+    A heavy favourite should protect a floor and an underdog should chase a
+    ceiling. Same roster, opposite decisions, and the report had no way to tell
+    which situation it was in.
+    """
+    for game in matchups or []:
+        for side, other in (("home", "away"), ("away", "home")):
+            mine, theirs = game.get(side) or {}, game.get(other) or {}
+            if mine.get("team_id") != team_id:
+                continue
+            my_proj = mine.get("projected_points_live") or mine.get("projected_points")
+            their_proj = (
+                theirs.get("projected_points_live") or theirs.get("projected_points")
+            )
+            margin = None
+            if isinstance(my_proj, (int, float)) and isinstance(their_proj, (int, float)):
+                margin = _round(my_proj - their_proj)
+            if margin is None:
+                posture = "unknown"
+            elif margin >= 15:
+                posture = "heavy favourite"
+            elif margin >= 5:
+                posture = "favourite"
+            elif margin > -5:
+                posture = "coin flip"
+            elif margin > -15:
+                posture = "underdog"
+            else:
+                posture = "heavy underdog"
+            return {
+                "opponent_team_id": theirs.get("team_id"),
+                "opponent": theirs.get("team_name"),
+                "my_points": mine.get("points"),
+                "opponent_points": theirs.get("points"),
+                "my_projected": my_proj,
+                "opponent_projected": their_proj,
+                "projected_margin": margin,
+                "win_probability": mine.get("win_probability"),
+                "posture": posture,
+                "guidance": (
+                    "Protect the floor: prefer the safer projection and avoid "
+                    "volatile swings."
+                    if posture in ("heavy favourite", "favourite")
+                    else "Chase ceiling: prefer upside over floor, since a safe "
+                    "lineup still loses."
+                    if posture in ("underdog", "heavy underdog")
+                    else "Close matchup: small edges decide it, so weigh "
+                    "projection and matchup carefully."
+                ),
+            }
+    return None
+
+
 def build_jason_x_block(
     rosters: list[dict],
     lineup_slot_counts: dict[str, int],
     pro_schedule: dict[int, dict],
     weeks_ahead: list[int],
     jason_x_team_id: Any = JASON_X_TEAM_ID,
+    matchups: list[dict] | None = None,
+    projections: dict[int, float] | None = None,
 ) -> dict | None:
     """Everything about Jason X's own team, precomputed.
 
@@ -1828,6 +1987,7 @@ def build_jason_x_block(
             "pro_team": player["pro_team"],
             "lineup_slot": player["lineup_slot"],
             "bye_week": byes.get(player.get("pro_team_id")),
+            "projected_points": (projections or {}).get(player["player_id"]),
             "percent_owned": player.get("percent_owned"),
             "injury": player.get("injury"),
             "on_nfl_ir": player.get("on_nfl_ir"),
@@ -1882,6 +2042,8 @@ def build_jason_x_block(
         "owners": team["owners"],
         "record": team["record"],
         "faab": team.get("faab"),
+        "faab_plan": faab_plan(team.get("faab")),
+        "current_matchup": build_current_matchup(matchups, jason_x_team_id),
         "waiver_rank": team.get("waiver_rank"),
         "counts": team["counts"],
         "capacity": team["capacity"],
@@ -1955,6 +2117,7 @@ def build_top_available(
     weeks_ahead: list[int],
     per_position: int = TOP_AVAILABLE_PER_POSITION,
     form_lookup: dict[int, dict] | None = None,
+    projections: dict[int, float] | None = None,
 ) -> dict:
     """The slice of the free-agent pool a report can actually use.
 
@@ -2001,6 +2164,7 @@ def build_top_available(
                 "percent_owned": player.get("percent_owned"),
                 "percent_change": player.get("percent_change"),
                 "bye_week": byes.get(player.get("pro_team_id")),
+                "projected_points": (projections or {}).get(player["player_id"]),
                 "injury": badge,
                 "upcoming": upcoming_games(
                     pro_schedule, player.get("pro_team_id"), weeks_ahead
@@ -2016,6 +2180,151 @@ def build_top_available(
             rows.append({k: v for k, v in row.items() if v not in (None, [], {})})
         out[position] = rows
     return out
+
+
+def build_changes_since_last(
+    previous_index: dict | None,
+    current_index: dict,
+    previous_meta: dict | None,
+    jason_x_team_id: Any = JASON_X_TEAM_ID,
+) -> dict:
+    """What actually changed since the previous snapshot.
+
+    The report's premise is "the last ~24 hours", but every other file is
+    point-in-time state. transactions.json covers ownership moves and nothing
+    covered an injury designation changing, which is the single highest-value
+    daily signal: a starter going QUESTIONABLE to OUT overnight should lead the
+    report, and previously it was invisible.
+
+    The comparison is against the player_index.json that was on disk when the
+    run started, which is the previous committed snapshot in both CI and a local
+    checkout.
+    """
+    previous = (previous_index or {}).get("players_by_id") or {}
+    current = current_index.get("players_by_id") or {}
+
+    def describe(record: dict) -> dict:
+        return {
+            "player_id": record.get("player_id"),
+            "name": record.get("name"),
+            "position": record.get("position"),
+            "pro_team": record.get("pro_team"),
+        }
+
+    injury_changes: list[dict] = []
+    became_available: list[dict] = []
+    became_rostered: list[dict] = []
+    changed_team: list[dict] = []
+    new_to_pool: list[dict] = []
+
+    for pid, now in current.items():
+        before = previous.get(pid)
+        if before is None:
+            if previous:
+                new_to_pool.append(describe(now))
+            continue
+
+        old_badge = (before.get("injury") or {}).get("designation")
+        new_badge = (now.get("injury") or {}).get("designation")
+        if old_badge != new_badge:
+            entry = describe(now)
+            entry.update(
+                {
+                    "from": old_badge,
+                    "to": new_badge,
+                    "expected_return": (now.get("injury") or {}).get(
+                        "expected_return_label"
+                    ),
+                    "on_nfl_ir": bool((now.get("injury") or {}).get("on_nfl_ir")),
+                    "fantasy_status": now.get("fantasy_status"),
+                    "fantasy_team": now.get("fantasy_team"),
+                    "is_jason_x": now.get("fantasy_team_id") == jason_x_team_id,
+                    "direction": (
+                        "cleared" if new_badge is None
+                        else "new" if old_badge is None
+                        else "changed"
+                    ),
+                }
+            )
+            injury_changes.append(entry)
+
+        was_rostered = before.get("fantasy_status") == "ROSTERED"
+        is_rostered = now.get("fantasy_status") == "ROSTERED"
+        if was_rostered and not is_rostered:
+            entry = describe(now)
+            entry.update(
+                {
+                    "dropped_by": before.get("fantasy_team"),
+                    "now": now.get("availability_status") or "AVAILABLE",
+                }
+            )
+            became_available.append(entry)
+        elif is_rostered and not was_rostered:
+            entry = describe(now)
+            entry.update(
+                {
+                    "added_by": now.get("fantasy_team"),
+                    "is_jason_x": now.get("fantasy_team_id") == jason_x_team_id,
+                }
+            )
+            became_rostered.append(entry)
+        elif (
+            is_rostered
+            and before.get("fantasy_team_id") != now.get("fantasy_team_id")
+        ):
+            entry = describe(now)
+            entry.update(
+                {
+                    "from_team": before.get("fantasy_team"),
+                    "to_team": now.get("fantasy_team"),
+                }
+            )
+            changed_team.append(entry)
+
+    def sort_key(row: dict) -> tuple:
+        return (not row.get("is_jason_x", False), row.get("name") or "")
+
+    injury_changes.sort(key=sort_key)
+    became_available.sort(key=lambda r: r.get("name") or "")
+    became_rostered.sort(key=sort_key)
+
+    jason_injury = [c for c in injury_changes if c.get("is_jason_x")]
+    comparable = bool(previous)
+
+    return {
+        "usage": (
+            "What changed since the previous snapshot, which is the delta the "
+            "daily report's 'last ~24 hours' framing needs. Compared against the "
+            "player_index.json present when this run started, so the window is "
+            "one snapshot interval (roughly six hours), not exactly 24 hours: "
+            "previous_snapshot_at says when. injury_changes is the highest-value "
+            "list and is sorted with Jason X players first; direction is new, "
+            "changed or cleared. became_available are players dropped by a rival "
+            "and now addable. became_rostered are players claimed, which is how "
+            "a target you were considering disappears. changed_team is a trade "
+            "or a waiver move between teams. comparable is false on a first run "
+            "or when no previous snapshot was present, in which case every list "
+            "is empty and absence of change must not be reported as stability."
+        ),
+        "comparable": comparable,
+        "previous_snapshot_at": (previous_meta or {}).get("fetched_at"),
+        "previous_snapshot_at_ct": (previous_meta or {}).get("fetched_at_ct_label"),
+        "previous_scoring_period_id": (previous_meta or {}).get("scoringPeriodId"),
+        "counts": {
+            "injury_changes": len(injury_changes),
+            "jason_x_injury_changes": len(jason_injury),
+            "became_available": len(became_available),
+            "became_rostered": len(became_rostered),
+            "changed_team": len(changed_team),
+            "new_to_pool": len(new_to_pool),
+        },
+        "injury_changes": injury_changes,
+        "jason_x_injury_changes": jason_injury,
+        "became_available": became_available,
+        "became_rostered": became_rostered,
+        "changed_team": changed_team,
+        "new_to_pool": new_to_pool[:50],
+    }
 
 
 def build_gates(metadata: dict, extra: dict[str, Any]) -> dict:
@@ -2280,6 +2589,20 @@ def main(argv: list[str] | None = None) -> int:
         os.makedirs(raw_dir, exist_ok=True)
 
     started_at = datetime.now(timezone.utc)
+
+    # Read the previous snapshot before anything in this run overwrites it. In
+    # CI the checkout holds the last committed snapshot, so this is the delta
+    # baseline; on a first run the files are absent and the diff is marked
+    # not comparable rather than reported as "nothing changed".
+    def _read_previous(name: str) -> dict | None:
+        try:
+            with open(os.path.join(out_dir, name), encoding="utf-8") as handle:
+                return json.load(handle)
+        except (OSError, json.JSONDecodeError):
+            return None
+
+    previous_index = _read_previous("player_index.json")
+    previous_metadata = _read_previous("metadata.json")
     client = EspnClient(
         season=season,
         league_id=args.league_id,
@@ -2580,6 +2903,7 @@ def main(argv: list[str] | None = None) -> int:
 
     # ---- 5. Matchups for the current period ------------------------------
     print("\n[7/10] matchups / boxscore for current period")
+    current: list[dict] = []
     try:
         matchup_raw = client.get(
             views=["mMatchupScore", "mBoxscore"],
@@ -2688,6 +3012,8 @@ def main(argv: list[str] | None = None) -> int:
     print("\n[10/10] recent form rankings (last 3 completed games)")
     recent_form_ranked_total = 0
     recent_form_payload: dict | None = None
+    # Bound outside the try so the derived step can still use them if it fails.
+    projections: dict[int, float] = {}
     try:
         weeks_considered = recent_form_weeks(status, scoring_period_id)
         if not weeks_considered:
@@ -2715,7 +3041,7 @@ def main(argv: list[str] | None = None) -> int:
 
         for week in weeks_considered:
             try:
-                actuals, week_meta, diag = fetch_weekly_actuals(
+                actuals, week_meta, diag, week_projections = fetch_weekly_actuals(
                     client, season, week, scoring_items
                 )
             except FetchError as exc:
@@ -2728,6 +3054,11 @@ def main(argv: list[str] | None = None) -> int:
             for key in totals:
                 totals[key] += diag.get(key, 0)
             meta.update(week_meta)           # ascending weeks: latest wins
+            # Only the current period's projection is wanted. Relying on
+            # last-week-wins would leave the projection's week implicit, and a
+            # reader could not tell what it referred to.
+            if week == scoring_period_id:
+                projections.update(week_projections)
             for pid, row in actuals.items():
                 weekly.setdefault(pid, {})[week] = row
             if actuals:
@@ -2979,7 +3310,9 @@ def main(argv: list[str] | None = None) -> int:
     print("\n[derived] report inputs")
 
     jason_block = build_jason_x_block(
-        rosters, lineup_slot_counts, pro_schedule, weeks_ahead
+        rosters, lineup_slot_counts, pro_schedule, weeks_ahead,
+        matchups=current if steps.get("matchup_fetch_success") else None,
+        projections=projections,
     )
     if jason_block:
         jason_block.update(
@@ -2993,8 +3326,16 @@ def main(argv: list[str] | None = None) -> int:
                     "needs a drop. bye_pressure lists which starters are on bye "
                     "in each of weeks_ahead. injury_designations is every "
                     "designated player on the roster with the expected return. "
-                    "Every player carries bye_week and their upcoming opponents."
+                    "Every player carries bye_week, their upcoming opponents and "
+                    "projected_points, which is ESPN's projection for the "
+                    "current week and the only forward-looking number on the "
+                    "roster; a 0.0 is usually a bye or a player not expected to "
+                    "play rather than a missing value. faab_plan costs the bid "
+                    "tiers against the remaining balance so an unaffordable bid "
+                    "cannot be recommended, and current_matchup gives this "
+                    "week's opponent with the risk posture it implies."
                 ),
+                "projection_scoring_period_id": scoring_period_id,
                 "league_id": args.league_id,
                 "season": season,
                 "scoring_period_id": scoring_period_id,
@@ -3014,7 +3355,7 @@ def main(argv: list[str] | None = None) -> int:
     form_lookup = recent_form_lookup(recent_form_payload)
     top_available = build_top_available(
         available, pro_schedule, injury_report, weeks_ahead,
-        form_lookup=form_lookup,
+        form_lookup=form_lookup, projections=projections,
     )
     write(
         "top_available.json",
@@ -3035,13 +3376,24 @@ def main(argv: list[str] | None = None) -> int:
                 "recent_form_note says why: either outside the ranked top N for "
                 "the position, or fewer than three confirmed appearances. "
                 "Players ESPN expects back only next season are excluded from "
-                "the rankings entirely, so they carry the fewer-than-three note."
+                "the rankings entirely, so they carry the fewer-than-three note. "
+                "projected_points is ESPN's projection for "
+                "projection_scoring_period_id, which is the current week, and is "
+                "the only forward-looking number here: recent_form_rank looks "
+                "backwards at three completed games. A projection of 0.0 is "
+                "usually real rather than missing - the player's NFL team is on "
+                "bye that week, or he has no NFL team, or ESPN does not expect "
+                "him to play - so check the upcoming block for a bye before "
+                "reading 0.0 as poor form. An absent projected_points means ESPN "
+                "published no projection for him at all, which is common deep in "
+                "the pool; treat that as unknown, not as zero."
             ),
             "league_id": args.league_id,
             "season": season,
             "scoring_period_id": scoring_period_id,
             "fetched_at": started_at.isoformat(),
             "per_position": TOP_AVAILABLE_PER_POSITION,
+            "projection_scoring_period_id": scoring_period_id,
             "counts": {pos: len(rows) for pos, rows in top_available.items()},
             "free_agents_in_pool": sum(
                 1 for p in available if p.get("availability_status") == "FREEAGENT"
@@ -3071,6 +3423,35 @@ def main(argv: list[str] | None = None) -> int:
             f"all {len(rosters)} teams reconcile against a ${league_budget} budget"
             if faab_ok else f"mismatched: {mismatched}"
         )
+
+    changes = build_changes_since_last(
+        previous_index, player_index, previous_metadata
+    )
+    changes.update(
+        {
+            "league_id": args.league_id,
+            "season": season,
+            "scoring_period_id": scoring_period_id,
+            "fetched_at": started_at.isoformat(),
+            "fetched_at_ct_label": to_central_label(started_at),
+        }
+    )
+    write("changes_since_last.json", changes)
+    if changes["comparable"]:
+        counts = changes["counts"]
+        print(
+            f"  changes_since_last.json: {counts['injury_changes']} injury change(s)"
+            f" ({counts['jason_x_injury_changes']} Jason X) | "
+            f"{counts['became_available']} newly available | "
+            f"{counts['became_rostered']} claimed | "
+            f"{counts['changed_team']} moved team"
+        )
+        for change in changes["jason_x_injury_changes"]:
+            print(
+                f"    JASON X: {change['name']} {change['from']} -> {change['to']}"
+            )
+    else:
+        print("  changes_since_last.json: no previous snapshot, delta not comparable")
 
     gates = build_gates(
         metadata,
@@ -3160,6 +3541,11 @@ def build_metadata(
         "fetched_at_ct": to_central_iso(finished_at),
         "fetched_at_ct_label": to_central_label(finished_at),
         "timezone_source": central_timezone_source(),
+        "weekday_ct": (to_central(finished_at) or finished_at).strftime("%A"),
+        "full_league_review_day": (
+            (to_central(finished_at) or finished_at).weekday()
+            == FULL_LEAGUE_REVIEW_WEEKDAY
+        ),
         "fetched_at_epoch": int(finished_at.timestamp()),
         "started_at": started_at.isoformat(),
         "duration_seconds": round((finished_at - started_at).total_seconds(), 2),

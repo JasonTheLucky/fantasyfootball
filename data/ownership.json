@@ -7,8 +7,8 @@
       "D/ST": 17,
       "K": 42,
       "QB": 110,
-      "RB": 186,
-      "TE": 186,
+      "RB": 187,
+      "TE": 185,
       "WR": 316
     },
     "conflicts": 0
@@ -51,6 +51,7 @@
     3046779,
     3054850,
     3055899,
+    3116164,
     3116165,
     3116365,
     3117251,
@@ -83,7 +84,6 @@
     4241389,
     4241416,
     4241463,
-    4241474,
     4241478,
     4241985,
     4242335,
@@ -348,7 +348,6 @@
     3115378,
     3115394,
     3115928,
-    3116164,
     3116385,
     3116389,
     3116406,
@@ -546,6 +545,7 @@
     4241424,
     4241457,
     4241464,
+    4241474,
     4241476,
     4241479,
     4241555,
@@ -2966,16 +2966,16 @@
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
     },
-    "3046439": {
-      "player_id": 3046439,
-      "name": "Hunter Henry",
+    "3116164": {
+      "player_id": 3116164,
+      "name": "Mike Gesicki",
       "position": "TE",
-      "pro_team": "NE",
+      "pro_team": "CIN",
       "owner_team_id": 11,
       "owner_team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
       "lineup_slot": "TE",
       "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
+      "injury_status": "ACTIVE"
     },
     "4035538": {
       "player_id": 4035538,
@@ -3021,17 +3021,6 @@
       "status": "ROSTERED",
       "injury_status": "INJURY_RESERVE"
     },
-    "4241474": {
-      "player_id": 4241474,
-      "name": "Brian Robinson Jr.",
-      "position": "RB",
-      "pro_team": "ATL",
-      "owner_team_id": 11,
-      "owner_team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
-      "lineup_slot": "BENCH",
-      "status": "ROSTERED",
-      "injury_status": "QUESTIONABLE"
-    },
     "15818": {
       "player_id": 15818,
       "name": "Keenan Allen",
@@ -3042,6 +3031,17 @@
       "lineup_slot": "BENCH",
       "status": "ROSTERED",
       "injury_status": "ACTIVE"
+    },
+    "3046439": {
+      "player_id": 3046439,
+      "name": "Hunter Henry",
+      "position": "TE",
+      "pro_team": "NE",
+      "owner_team_id": 11,
+      "owner_team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+      "lineup_slot": "BENCH",
+      "status": "ROSTERED",
+      "injury_status": "QUESTIONABLE"
     },
     "14880": {
       "player_id": 14880,
@@ -3494,15 +3494,15 @@
       "percent_owned": 28.9,
       "injury_status": "OUT"
     },
-    "3116164": {
-      "player_id": 3116164,
-      "name": "Mike Gesicki",
-      "position": "TE",
-      "pro_team": "CIN",
-      "status": "FREEAGENT",
-      "waiver_process_date": null,
-      "percent_owned": 24.57,
-      "injury_status": "ACTIVE"
+    "4241474": {
+      "player_id": 4241474,
+      "name": "Brian Robinson Jr.",
+      "position": "RB",
+      "pro_team": "ATL",
+      "status": "WAIVERS",
+      "waiver_process_date": "2026-11-07T08:00:00+00:00",
+      "percent_owned": 26.2,
+      "injury_status": "QUESTIONABLE"
     },
     "3117256": {
       "player_id": 3117256,
@@ -12318,15 +12318,6 @@
       "waiver_rank": 4,
       "injury_designations": [
         {
-          "player_id": 3046439,
-          "name": "Hunter Henry",
-          "position": "TE",
-          "pro_team": "NE",
-          "injury_status": "QUESTIONABLE",
-          "lineup_slot": "TE",
-          "is_starting": true
-        },
-        {
           "player_id": 4035538,
           "name": "David Montgomery",
           "position": "RB",
@@ -12345,10 +12336,10 @@
           "is_starting": false
         },
         {
-          "player_id": 4241474,
-          "name": "Brian Robinson Jr.",
-          "position": "RB",
-          "pro_team": "ATL",
+          "player_id": 3046439,
+          "name": "Hunter Henry",
+          "position": "TE",
+          "pro_team": "NE",
           "injury_status": "QUESTIONABLE",
           "lineup_slot": "BENCH",
           "is_starting": false
@@ -12403,5 +12394,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 9,
-  "fetched_at": "2026-11-06T01:52:33.443127+00:00"
+  "fetched_at": "2026-11-06T02:07:06.088045+00:00"
 }

@@ -48,6 +48,7 @@ def build() -> str:
     jason_x = load("jason_x.json") or {}
     schedule = load("nfl_schedule.json") or {}
     gates_file = load("gates.json") or {}
+    changes = load("changes_since_last.json") or {}
     ownership = load("ownership.json") or {}
     transactions = load("transactions.json") or {}
     matchups = load("matchups.json") or {}
@@ -212,6 +213,49 @@ def build() -> str:
         )
         add("")
 
+    # ---- what changed ----------------------------------------------------
+    if changes:
+        add("## What changed since the last snapshot")
+        add("")
+        if not changes.get("comparable"):
+            add("No previous snapshot was available, so the delta could not be "
+                "computed. This is not the same as nothing having changed.")
+            add("")
+        else:
+            counts = changes.get("counts") or {}
+            add(f"Compared with the snapshot taken "
+                f"`{changes.get('previous_snapshot_at_ct')}`: "
+                f"{counts.get('injury_changes')} injury change(s) "
+                f"({counts.get('jason_x_injury_changes')} affecting Jason X), "
+                f"{counts.get('became_available')} newly available, "
+                f"{counts.get('became_rostered')} claimed, "
+                f"{counts.get('changed_team')} moved between teams.")
+            add("")
+            for label, key, cols in (
+                ("Injury changes", "injury_changes",
+                 ("name", "from", "to", "expected_return", "fantasy_team")),
+                ("Newly available", "became_available",
+                 ("name", "position", "pro_team", "dropped_by")),
+                ("Claimed", "became_rostered",
+                 ("name", "position", "pro_team", "added_by")),
+            ):
+                rows = changes.get(key) or []
+                if not rows:
+                    continue
+                add(f"**{label}**")
+                add("")
+                add("| " + " | ".join(c.replace("_", " ").title() for c in cols) + " |")
+                add("| " + " | ".join("---" for _ in cols) + " |")
+                for row in rows[:12]:
+                    cells = []
+                    for col in cols:
+                        value = row.get(col)
+                        if col == "name" and row.get("is_jason_x"):
+                            value = f"**{value}**"
+                        cells.append(str(value if value is not None else "-"))
+                    add("| " + " | ".join(cells) + " |")
+                add("")
+
     # ---- Jason X ---------------------------------------------------------
     if jason_x.get("team_name"):
         cap = jason_x.get("capacity") or {}
@@ -224,11 +268,33 @@ def build() -> str:
             f"{jason_x.get('waiver_rank')} · bench open **{cap.get('bench_open')}** · "
             f"IR open {cap.get('ir_open')}")
         add("")
+        matchup = jason_x.get("current_matchup") or {}
+        if matchup.get("opponent"):
+            add(f"**This week:** vs {matchup.get('opponent')} — projected "
+                f"{matchup.get('my_projected')} to {matchup.get('opponent_projected')} "
+                f"(margin {matchup.get('projected_margin')}), win probability "
+                f"{matchup.get('win_probability')}. Posture: "
+                f"**{matchup.get('posture')}**. {matchup.get('guidance')}")
+            add("")
+        plan = jason_x.get("faab_plan") or {}
+        if plan.get("tiers"):
+            add(f"**FAAB plan** — ${plan.get('remaining')} remaining, "
+                f"${plan.get('reserve_floor')} reserve, "
+                f"**${plan.get('discretionary')} discretionary**. Tiers are shares "
+                f"of remaining, already costed:")
+            add("")
+            add("| Tier | Bid | Affordable | Within reserve |")
+            add("| --- | --- | --- | --- |")
+            for tier in plan["tiers"]:
+                add(f"| {tier['tier'].replace('_', ' ')} "
+                    f"| ${tier['suggested_bid']}-{tier['max_bid']} "
+                    f"| {tick(tier['affordable'])} | {tick(tier['within_reserve'])} |")
+            add("")
         if not jason_x.get("has_open_bench_spot"):
             add("No open bench spot: any add needs a drop.")
             add("")
-        add("| Slot | Player | Pos | Bye | Next | Status |")
-        add("| --- | --- | --- | --- | --- | --- |")
+        add("| Slot | Player | Pos | Bye | Next | Proj | Status |")
+        add("| --- | --- | --- | --- | --- | --- | --- |")
         for player in jason_x.get("starters") or []:
             upcoming = (player.get("upcoming") or [{}])[0]
             if upcoming.get("bye"):
@@ -241,9 +307,10 @@ def build() -> str:
             status = badge.get("designation") or "-"
             if badge.get("expected_return_label"):
                 status = f"{status} (back {badge['expected_return_label']})"
+            projected = player.get("projected_points")
             add(f"| {player.get('lineup_slot')} | {player.get('name')} "
                 f"| {player.get('position')} | W{player.get('bye_week')} | {nxt} "
-                f"| {status} |")
+                f"| {projected if projected is not None else '-'} | {status} |")
         add("")
         for block in jason_x.get("bye_pressure") or []:
             names = ", ".join(
@@ -446,6 +513,8 @@ def build() -> str:
         "on every player elsewhere. |")
     add("| `gates.json` | Machine-readable pass/fail per snapshot check, and the "
         "DATA STATUS verdict. Read this instead of deriving it. |")
+    add("| `changes_since_last.json` | What changed versus the previous snapshot: "
+        "injury designations, newly available, claimed, moved team. |")
     add("| `jason_x.json` | Jason X precomputed: starters, bench, IR, open spots, "
         "FAAB, bye pressure, injuries, upcoming opponents. |")
     add("| `nfl_schedule.json` | Every NFL team's bye week and per-week opponent. "
