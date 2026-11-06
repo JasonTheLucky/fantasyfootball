@@ -4,15 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-05T23:58:35.937446+00:00` |
+| Fetched at (UTC) | `2026-11-06T00:04:19.411054+00:00` |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 15.11s |
+| Fetch duration | 7.3s |
 | ESPN calls | 31 |
+| Workflow run | `42134077684` |
 
 ## Freshness and completeness gates
 
@@ -132,7 +133,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## Injuries and IR
 
-100 players in this league's pool carry an NFL designation; 33 are on injured reserve (10 of them rostered). 7 affect Jason X.
+102 players in this league's pool carry an NFL designation; 33 are on injured reserve (10 of them rostered). 6 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -154,7 +155,6 @@ Jason X players with a designation:
 | Treylon Burks | BENCH | QUESTIONABLE | Nov 8 | Foot |
 | Amon-Ra St. Brown | FLEX | QUESTIONABLE | Nov 8 | Ribs |
 | Jonathon Brooks **(NFL IR)** | IR | IR | Nov 8 | Abdomen |
-| Bhayshul Tuten | RB | QUESTIONABLE | Nov 5 | Ankle |
 | Christian Watson | WR | QUESTIONABLE | Nov 8 | Ribs |
 
 ## Recent form (last 3 completed games)
