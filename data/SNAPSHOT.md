@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-06T06:21:05.738863+00:00` |
-| Fetched at (CT) | **Fri Nov 6, 12:21 AM CST** |
+| Fetched at (UTC) | `2026-11-06T12:17:20.786658+00:00` |
+| Fetched at (CT) | **Fri Nov 6, 6:17 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 857 |
 | Players in lookup index | 1055 |
-| Fetch duration | 7.33s |
+| Fetch duration | 6.74s |
 | ESPN calls | 32 |
-| Workflow run | `42173844809` |
+| Workflow run | `42216490889` |
 
 ## Freshness and completeness gates
 
@@ -135,25 +135,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Thu Nov 5, 8:08 PM CST`: 1 injury change(s) (0 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Tyler Loop | IR | - | - | - |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Jason Myers | K | SEA | Jason X |
-
-**Claimed**
-
-| Name | Position | Pro Team | Added By |
-| --- | --- | --- | --- |
-| **Demarcus Robinson** | WR | SF | Jason X |
+Compared with the snapshot taken `Fri Nov 6, 12:21 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
