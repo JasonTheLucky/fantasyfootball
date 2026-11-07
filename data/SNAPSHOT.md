@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-07T06:18:01.706674+00:00` |
-| Fetched at (CT) | **Sat Nov 7, 12:18 AM CST** |
+| Fetched at (UTC) | `2026-11-07T12:15:11.906272+00:00` |
+| Fetched at (CT) | **Sat Nov 7, 6:15 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 858 |
 | Players in lookup index | 1056 |
-| Fetch duration | 7.08s |
+| Fetch duration | 7.62s |
 | ESPN calls | 32 |
-| Workflow run | `42346363677` |
+| Workflow run | `42371627023` |
 
 ## Freshness and completeness gates
 
@@ -127,7 +127,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 6, 7:33 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sat Nov 7, 12:18 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 

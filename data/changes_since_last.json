@@ -1,8 +1,8 @@
 {
   "usage": "What changed since the previous snapshot, which is the delta the daily report's 'last ~24 hours' framing needs. Compared against the player_index.json present when this run started, so the window is one snapshot interval (roughly six hours), not exactly 24 hours: previous_snapshot_at says when. injury_changes is the highest-value list and is sorted with Jason X players first; direction is new, changed or cleared. became_available are players dropped by a rival and now addable. became_rostered are players claimed, which is how a target you were considering disappears. changed_team is a trade or a waiver move between teams. comparable is false on a first run or when no previous snapshot was present, in which case every list is empty and absence of change must not be reported as stability.",
   "comparable": true,
-  "previous_snapshot_at": "2026-11-07T01:33:54.578582+00:00",
-  "previous_snapshot_at_ct": "Fri Nov 6, 7:33 PM CST",
+  "previous_snapshot_at": "2026-11-07T06:18:01.706674+00:00",
+  "previous_snapshot_at_ct": "Sat Nov 7, 12:18 AM CST",
   "previous_scoring_period_id": 9,
   "counts": {
     "injury_changes": 0,
@@ -21,6 +21,6 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 9,
-  "fetched_at": "2026-11-07T06:17:54.627953+00:00",
-  "fetched_at_ct_label": "Sat Nov 7, 12:17 AM CST"
+  "fetched_at": "2026-11-07T12:15:04.281599+00:00",
+  "fetched_at_ct_label": "Sat Nov 7, 6:15 AM CST"
 }
