@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-07T01:33:54.578582+00:00` |
-| Fetched at (CT) | **Fri Nov 6, 7:33 PM CST** |
+| Fetched at (UTC) | `2026-11-07T06:18:01.706674+00:00` |
+| Fetched at (CT) | **Sat Nov 7, 12:18 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 858 |
 | Players in lookup index | 1056 |
-| Fetch duration | 7.58s |
+| Fetch duration | 7.08s |
 | ESPN calls | 32 |
-| Workflow run | `42324721635` |
+| Workflow run | `42346363677` |
 
 ## Freshness and completeness gates
 
@@ -110,7 +110,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Mike Evans | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Nicole's Gnarly Team | Deshaun Watson | QB | QUESTIONABLE | BENCH | NO |
-| Kelli's Top-Notch Team | Garrett Wilson | WR | OUT | WR | yes |
+| Kelli's Top-Notch Team | Garrett Wilson | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | QUESTIONABLE | BENCH | NO |
@@ -127,13 +127,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 6, 6:29 PM CST`: 1 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Velus Jones Jr. | QUESTIONABLE | - | - | - |
+Compared with the snapshot taken `Fri Nov 6, 7:33 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
@@ -231,7 +225,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-957 total | 243 executed ownership changes | 465 lineup-only moves | 192 draft picks | 0 pending
+958 total | 243 executed ownership changes | 466 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
