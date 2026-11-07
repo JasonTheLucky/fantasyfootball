@@ -180,10 +180,56 @@ FAAB_BID_TIERS = [
 # $200 is $40, which against a $51 balance leaves $11 of usable money.
 FAAB_RESERVE_SHARE = 0.20
 
-# Day of the week (CT) on which the report does the full 12-team league review.
-# Tuesday: waivers have processed and the previous week is final, so the ratings
-# are based on settled information rather than mid-week noise.
-FULL_LEAGUE_REVIEW_WEEKDAY = 1      # Monday=0
+# Section 8 position strength. Each team's room at a position is scored on ESPN's
+# rest-of-season projection for its players, weighted by how much each player
+# matters to a weekly lineup: 1.0 for every starting slot, 0.5 for the third RB
+# or WR (FLEX plus bye and injury cover), 0.25 for the fourth, and 0.2 for a
+# backup QB, TE or D/ST, who only matters in a bye week. A kicker has no depth
+# value. Teams are then ranked 1..N per position with no ties, so the report
+# renders the ranks instead of re-judging 72 cells by hand every day, which made
+# them move on noise.
+POSITION_RANK_WEIGHTS: dict[str, tuple[float, ...]] = {
+    "QB": (1.0, 0.2),
+    "RB": (1.0, 1.0, 0.5, 0.25),
+    "WR": (1.0, 1.0, 0.5, 0.25),
+    "TE": (1.0, 0.2),
+    "K": (1.0,),
+    "D/ST": (1.0, 0.2),
+}
+
+# The lineup trade fits are judged against: positional slots first, then FLEX
+# from whoever is left, all chosen on rest-of-season projection. Anyone outside
+# it is spare, which is what a trade can actually draw on. K and D/ST are left
+# out because both are streamed rather than traded for.
+FLEX_POSITIONS = ("RB", "WR", "TE")
+TRADE_LINEUP: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ("QB", ("QB",)), ("RB", ("RB",)), ("RB", ("RB",)),
+    ("WR", ("WR",)), ("WR", ("WR",)), ("TE", ("TE",)),
+    ("FLEX", FLEX_POSITIONS),
+)
+
+TRADE_POSITIONS = ("QB",) + FLEX_POSITIONS
+
+# A swap is a fit only when each side's best rest-of-season lineup improves by
+# at least this many points. Smaller gains are inside the projection noise.
+TRADE_MIN_GAIN = 5.0
+
+# Within this many games either side of the playoff cut line is a bubble.
+PLAYOFF_BUBBLE_GAMES = 1.0
+
+# Designations that put a starter's points in doubt for the current week, and
+# the ones that mean he will not play at all.
+DOUBTFUL_DESIGNATIONS = {"QUESTIONABLE", "DOUBTFUL", "DAY_TO_DAY"}
+UNAVAILABLE_DESIGNATIONS = {"OUT", "IR", "IR-R", "SUSPENSION", "INACTIVE", "RESERVE-DNR"}
+
+# Which positions can cover a starting slot when its starter is on bye.
+COVER_POSITIONS: dict[str, tuple[str, ...]] = {
+    "QB": ("QB",), "RB": ("RB",), "WR": ("WR",), "TE": ("TE",),
+    "FLEX": FLEX_POSITIONS, "K": ("K",), "D/ST": ("D/ST",),
+}
+# Slots with the fewest eligible covers are filled first, so FLEX cannot take
+# the only bench receiver a WR slot needed.
+COVER_ORDER = ("QB", "TE", "K", "D/ST", "RB", "WR", "FLEX")
 
 # ESPN's games-played marker inside a weekly actual's inner stats dict. Keys in
 # that dict are JSON strings, hence the str.
@@ -668,8 +714,14 @@ def build_rosters(
     acquisition_settings: dict | None = None,
     injury_report: dict[str, dict] | None = None,
     bye_weeks: dict[int, int] | None = None,
+    season: int | None = None,
 ) -> list[dict]:
-    """Normalize every team's roster into starters / bench / IR buckets."""
+    """Normalize every team's roster into starters / bench / IR buckets.
+
+    With ``season`` set, each player also carries ``ros_projected_points``,
+    ESPN's rest-of-season projection, which the position ranks and trade fits
+    are built on.
+    """
     budget = faab_budget(acquisition_settings)
     injury_report = injury_report or {}
     bye_weeks = bye_weeks or {}
@@ -716,6 +768,10 @@ def build_rosters(
             record["in_fantasy_ir_slot"] = slot_id == IR_SLOT
             record["on_nfl_ir"] = bool(badge and badge.get("on_nfl_ir"))
             record["bye_week"] = bye_weeks.get(record.get("pro_team_id"))
+            if season is not None:
+                record["ros_projected_points"] = _round(
+                    extract_ros_projection(player_obj, season)
+                )
             if slot_id == BENCH_SLOT:
                 bench.append(record)
             elif slot_id == IR_SLOT:
@@ -1429,6 +1485,32 @@ def extract_weekly_projection(
     return None
 
 
+def extract_ros_projection(player_obj: dict, season: int) -> float | None:
+    """ESPN's rest-of-season projection: statSourceId 1, statSplitTypeId 0,
+    scoringPeriodId 0, for this season.
+
+    Mid-season this is a remaining-games projection, not a full-season total.
+    Measured in week 9 across 158 rostered players with a weekly projection of
+    at least 5 points, it divided by the weekly projection to within about one
+    game of the NFL games left, and for top players it sat below what they had
+    already scored (Smith-Njigba 203.9 projected against 236.0 to date). It
+    prices in byes and expected missed time, which makes it the right basis
+    for ranking a room's rest of season.
+    """
+    for entry in (player_obj or {}).get("stats") or []:
+        if not isinstance(entry, dict):
+            continue
+        if entry.get("statSourceId") != 1 or entry.get("statSplitTypeId") != 0:
+            continue
+        if entry.get("scoringPeriodId") != 0 or entry.get("seasonId") != season:
+            continue
+        value = entry.get("appliedTotal")
+        if isinstance(value, (int, float)) and not isinstance(value, bool):
+            if math.isfinite(value):
+                return float(value)
+    return None
+
+
 def extract_weekly_entry(
     player_obj: dict, season: int, week: int
 ) -> tuple[float, dict] | None:
@@ -1964,12 +2046,17 @@ def build_jason_x_block(
     jason_x_team_id: Any = JASON_X_TEAM_ID,
     matchups: list[dict] | None = None,
     projections: dict[int, float] | None = None,
+    season_outlook: dict | None = None,
+    calendar_weeks: list[int] | None = None,
+    snapshot_date: Any = None,
 ) -> dict | None:
     """Everything about Jason X's own team, precomputed.
 
     The report prompt previously had to rebuild starters, bench, IR and open
     spots on every run. That is a derivation with a wrong answer available, so
-    the pipeline publishes it instead.
+    the pipeline publishes it instead. ``season_outlook`` (from
+    build_season_outlook) is attached as given; ``calendar_weeks`` drives the
+    bye calendar; ``snapshot_date`` dates the IR return countdown.
     """
     team = next(
         (t for t in rosters if t.get("team_id") == jason_x_team_id), None
@@ -1988,6 +2075,7 @@ def build_jason_x_block(
             "lineup_slot": player["lineup_slot"],
             "bye_week": byes.get(player.get("pro_team_id")),
             "projected_points": (projections or {}).get(player["player_id"]),
+            "ros_projected_points": player.get("ros_projected_points"),
             "percent_owned": player.get("percent_owned"),
             "injury": player.get("injury"),
             "on_nfl_ir": player.get("on_nfl_ir"),
@@ -2036,14 +2124,40 @@ def build_jason_x_block(
         if p.get("injury")
     ]
 
+    current_matchup = build_current_matchup(matchups, jason_x_team_id)
+    if current_matchup and weeks_ahead:
+        # Who on each side is unlikely to play, and how many projected points
+        # are hanging on a game-time decision. The margin alone hides this.
+        opponent = next(
+            (t for t in rosters
+             if t.get("team_id") == current_matchup.get("opponent_team_id")),
+            None,
+        )
+        current_matchup["my_lineup_risk"] = lineup_risk(
+            team, projections or {}, byes, weeks_ahead[0]
+        )
+        if opponent is not None:
+            current_matchup["opponent_lineup_risk"] = lineup_risk(
+                opponent, projections or {}, byes, weeks_ahead[0]
+            )
+
+    playoff_weeks = (season_outlook or {}).get("playoff_weeks") or []
+
     return {
         "team_id": team["team_id"],
         "team_name": team["team_name"],
         "owners": team["owners"],
         "record": team["record"],
+        "season_outlook": season_outlook,
         "faab": team.get("faab"),
         "faab_plan": faab_plan(team.get("faab")),
-        "current_matchup": build_current_matchup(matchups, jason_x_team_id),
+        "current_matchup": current_matchup,
+        "bye_calendar": build_bye_calendar(
+            starters, bench, calendar_weeks or [], playoff_weeks
+        ),
+        "ir_outlook": build_ir_outlook(
+            starters, bench, ir, team["capacity"], snapshot_date
+        ),
         "waiver_rank": team.get("waiver_rank"),
         "counts": team["counts"],
         "capacity": team["capacity"],
@@ -2063,6 +2177,624 @@ def build_jason_x_block(
         "has_open_bench_spot": team["capacity"]["bench_open"] > 0,
         "has_open_ir_spot": team["capacity"]["ir_open"] > 0,
     }
+
+
+# --------------------------------------------------------------------------
+# Strategy inputs: position ranks, trade fits, standings, byes, IR, matchup
+# --------------------------------------------------------------------------
+
+
+def _ros(player: dict) -> float:
+    """Rest-of-season projection as a number; missing counts as zero."""
+    value = (player or {}).get("ros_projected_points")
+    if isinstance(value, (int, float)) and not isinstance(value, bool):
+        return float(value)
+    return 0.0
+
+
+def _team_players(team: dict) -> list[dict]:
+    return (
+        list(team.get("starters") or [])
+        + list(team.get("bench") or [])
+        + list(team.get("injured_reserve") or [])
+    )
+
+
+def _brief(player: dict) -> dict:
+    """The few fields a report needs to name a player in a rank or a trade."""
+    out = {
+        "player_id": player.get("player_id"),
+        "name": player.get("name"),
+        "position": player.get("position"),
+        "pro_team": player.get("pro_team"),
+        "ros_projected_points": _round(_ros(player), 1),
+        "designation": (player.get("injury") or {}).get("designation"),
+    }
+    return {k: v for k, v in out.items() if v is not None}
+
+
+def room_score(players: list[dict], position: str) -> tuple[float, float, list[dict]]:
+    """(score, depth, counted) for one team's room at one position.
+
+    score is the weighted sum of the room's best rest-of-season projections;
+    depth is the part of it contributed by players beyond the starting slots,
+    used only to break a tie.
+    """
+    weights = POSITION_RANK_WEIGHTS[position]
+    starting = sum(1 for w in weights if w >= 1.0)
+    room = sorted(
+        (p for p in players if p.get("position") == position),
+        key=lambda p: (-_ros(p), p.get("player_id") or 0),
+    )
+    score = depth = 0.0
+    counted: list[dict] = []
+    for index, (weight, player) in enumerate(zip(weights, room)):
+        value = weight * _ros(player)
+        score += value
+        if index >= starting:
+            depth += value
+        entry = _brief(player)
+        entry["weight"] = weight
+        counted.append(entry)
+    return score, depth, counted
+
+
+def build_position_ranks(
+    rosters: list[dict], jason_x_team_id: Any = JASON_X_TEAM_ID
+) -> dict:
+    """Every team ranked 1..N at every position, no ties.
+
+    Pure. Ties on score are broken by depth, then by team id, so the order is
+    total and the same inputs always give the same ranks.
+    """
+    teams = [t for t in rosters if t.get("team_id") is not None]
+    count = len(teams)
+    ranks_by_team: dict[Any, dict[str, int]] = {t["team_id"]: {} for t in teams}
+    by_position: dict[str, list[dict]] = {}
+
+    for position in POSITION_RANK_WEIGHTS:
+        scored = []
+        for team in teams:
+            score, depth, counted = room_score(_team_players(team), position)
+            scored.append((score, depth, team, counted))
+        scored.sort(key=lambda s: (-s[0], -s[1], s[2]["team_id"]))
+        rows = []
+        for rank, (score, depth, team, counted) in enumerate(scored, 1):
+            ranks_by_team[team["team_id"]][position] = rank
+            rows.append(
+                {
+                    "rank": rank,
+                    "team_id": team["team_id"],
+                    "team_name": team.get("team_name"),
+                    "is_jason_x": team["team_id"] == jason_x_team_id,
+                    "score": _round(score, 1),
+                    "depth_score": _round(depth, 1),
+                    "players": counted,
+                }
+            )
+        by_position[position] = rows
+
+    quarter = max(1, count // 4)
+    ordered = sorted(
+        teams,
+        key=lambda t: (
+            t.get("playoff_seed") if isinstance(t.get("playoff_seed"), int) else 99,
+            t["team_id"],
+        ),
+    )
+    matrix = []
+    for team in ordered:
+        ranks = ranks_by_team[team["team_id"]]
+        record = team.get("record") or {}
+        matrix.append(
+            {
+                "team_id": team["team_id"],
+                "team_name": team.get("team_name"),
+                "is_jason_x": team["team_id"] == jason_x_team_id,
+                "playoff_seed": team.get("playoff_seed"),
+                "record": f"{record.get('wins') or 0}-{record.get('losses') or 0}",
+                "faab_remaining": (team.get("faab") or {}).get("remaining"),
+                "waiver_rank": team.get("waiver_rank"),
+                "ranks": {pos: ranks[pos] for pos in POSITION_RANK_WEIGHTS},
+                "strongest": [p for p in POSITION_RANK_WEIGHTS if ranks[p] <= quarter],
+                "weakest": [
+                    p for p in POSITION_RANK_WEIGHTS if ranks[p] > count - quarter
+                ],
+            }
+        )
+
+    return {
+        "team_count": count,
+        "positions": list(POSITION_RANK_WEIGHTS),
+        "weights": {pos: list(w) for pos, w in POSITION_RANK_WEIGHTS.items()},
+        "matrix": matrix,
+        "leaders": {pos: rows[0]["team_name"] for pos, rows in by_position.items() if rows},
+        "laggards": {pos: rows[-1]["team_name"] for pos, rows in by_position.items() if rows},
+        "by_position": by_position,
+    }
+
+
+def ros_lineup(players: list[dict]) -> tuple[list[tuple[str, tuple, dict | None]], list[dict]]:
+    """Best QB/RB/RB/WR/WR/TE/FLEX by rest-of-season projection, plus the spares.
+
+    Greedy in slot order, which is optimal here: the positional slots take the
+    best at each position and FLEX takes the best of whoever is left.
+    """
+    pool = sorted(
+        (
+            p for p in players
+            if p.get("position") in TRADE_POSITIONS
+            and not is_out_for_season(p.get("injury"))
+        ),
+        key=lambda p: (-_ros(p), p.get("player_id") or 0),
+    )
+    used: set = set()
+    lineup: list[tuple[str, tuple, dict | None]] = []
+    for slot, eligible in TRADE_LINEUP:
+        pick = next(
+            (p for p in pool
+             if p.get("player_id") not in used and p.get("position") in eligible),
+            None,
+        )
+        if pick is not None:
+            used.add(pick.get("player_id"))
+        lineup.append((slot, eligible, pick))
+    spare = [p for p in pool if p.get("player_id") not in used]
+    return lineup, spare
+
+
+def lineup_value(players: list[dict]) -> float:
+    """Rest-of-season points of the best QB/RB/RB/WR/WR/TE/FLEX from ``players``."""
+    lineup, _ = ros_lineup(players)
+    return sum(_ros(p) for _, _, p in lineup if p is not None)
+
+
+def _lineup_ids(players: list[dict]) -> set:
+    lineup, _ = ros_lineup(players)
+    return {p.get("player_id") for _, _, p in lineup if p is not None}
+
+
+def _tradeable(team: dict) -> list[dict]:
+    return [
+        p for p in _team_players(team)
+        if p.get("position") in TRADE_POSITIONS
+        and not is_out_for_season(p.get("injury"))
+    ]
+
+
+def build_trade_fits(
+    rosters: list[dict], jason_x_team_id: Any = JASON_X_TEAM_ID, limit: int = 3
+) -> dict | None:
+    """Trades that improve both Jason X and the other team.
+
+    Two shapes are tested against every other team: one Jason X player for
+    one of theirs, and two Jason X players for one of theirs. The second is
+    how a deep bench is consolidated into a better starter, and it also frees
+    a Jason X roster spot; both players sent must start for the other team, so
+    neither is a throw-in. Each trade is scored by how much it changes each
+    side's best rest-of-season lineup, and is a fit only when both sides gain
+    at least TRADE_MIN_GAIN. Trades are ranked by the smaller of the two
+    gains, so the best fit is the one most clearly good for both. Pure.
+    """
+    jason = next((t for t in rosters if t.get("team_id") == jason_x_team_id), None)
+    if jason is None:
+        return None
+    mine = _tradeable(jason)
+    my_base = lineup_value(mine)
+    packages = [(p,) for p in mine] + [
+        (a, b) for i, a in enumerate(mine) for b in mine[i + 1:]
+    ]
+
+    partners = []
+    for team in rosters:
+        if team.get("team_id") == jason_x_team_id:
+            continue
+        theirs = _tradeable(team)
+        their_base = lineup_value(theirs)
+        bench_open = (team.get("capacity") or {}).get("bench_open") or 0
+        trades = []
+        for gives in packages:
+            given = {id(p) for p in gives}
+            my_after = [p for p in mine if id(p) not in given]
+            for get in theirs:
+                jason_gain = lineup_value(my_after + [get]) - my_base
+                if jason_gain < TRADE_MIN_GAIN:
+                    continue
+                their_after = [p for p in theirs if p is not get] + list(gives)
+                their_gain = lineup_value(their_after) - their_base
+                if their_gain < TRADE_MIN_GAIN:
+                    continue
+                if len(gives) > 1:
+                    starting = _lineup_ids(their_after)
+                    if not all(p.get("player_id") in starting for p in gives):
+                        continue
+                trades.append(
+                    {
+                        "shape": f"{len(gives)}-for-1",
+                        "jason_gives": [_brief(p) for p in gives],
+                        "jason_gets": _brief(get),
+                        "jason_gain": _round(jason_gain, 1),
+                        "their_gain": _round(their_gain, 1),
+                        "frees_jason_roster_spots": len(gives) - 1,
+                        "their_roster_spots_needed": len(gives) - 1,
+                        "their_bench_open": bench_open,
+                    }
+                )
+        trades.sort(
+            key=lambda s: (
+                -min(s["jason_gain"], s["their_gain"]),
+                -(s["jason_gain"] + s["their_gain"]),
+                len(s["jason_gives"]),
+                [p.get("player_id") or 0 for p in s["jason_gives"]],
+                s["jason_gets"].get("player_id") or 0,
+            )
+        )
+        partners.append(
+            {
+                "team_id": team.get("team_id"),
+                "team_name": team.get("team_name"),
+                "mutual": bool(trades),
+                "mutual_trades_found": len(trades),
+                "best_trade": trades[0] if trades else None,
+                "other_trades": trades[1:limit],
+            }
+        )
+
+    partners.sort(
+        key=lambda f: (
+            -min(f["best_trade"]["jason_gain"], f["best_trade"]["their_gain"])
+            if f["best_trade"] else float("inf"),
+            f["team_id"],
+        )
+    )
+    lineup, spare = ros_lineup(mine)
+    return {
+        "min_gain_points": TRADE_MIN_GAIN,
+        "jason_lineup_value": _round(my_base, 1),
+        "jason_lineup_by_ros": [
+            {"slot": slot, **(_brief(p) if p is not None else {"name": None})}
+            for slot, _, p in lineup
+        ],
+        "jason_spare": [_brief(p) for p in spare],
+        "partners": partners,
+    }
+
+
+def build_season_outlook(
+    rosters: list[dict],
+    schedule_settings: dict | None,
+    current_matchup_period: Any,
+    jason_x_team_id: Any = JASON_X_TEAM_ID,
+) -> dict | None:
+    """Jason X's standing against the playoff cut line, and what it implies.
+
+    cushion_games is positive when Jason X is in playoff position (games ahead
+    of the first team out) and negative when outside (games behind the last
+    team in). Pure.
+    """
+    settings = schedule_settings or {}
+    playoff_teams = settings.get("playoffTeamCount")
+    regular = settings.get("matchupPeriodCount")
+    if not isinstance(playoff_teams, int) or not isinstance(regular, int):
+        return None
+    periods = settings.get("matchupPeriods") or {}
+
+    def weeks_of(period: int) -> list[int]:
+        raw = periods.get(str(period)) or [period]
+        return [int(w) for w in raw if isinstance(w, int) or str(w).isdigit()]
+
+    regular_final_week = max(weeks_of(regular))
+    playoff_weeks = sorted(
+        {
+            w for key in periods if str(key).isdigit() and int(key) > regular
+            for w in weeks_of(int(key))
+        }
+    )
+    current = current_matchup_period if isinstance(current_matchup_period, int) else None
+    phase = "playoffs" if current is not None and current > regular else "regular season"
+    games_left = max(regular - current + 1, 0) if current is not None else None
+
+    def wins(t: dict) -> float:
+        rec = t.get("record") or {}
+        return float(rec.get("wins") or 0) + 0.5 * float(rec.get("ties") or 0)
+
+    def losses(t: dict) -> float:
+        rec = t.get("record") or {}
+        return float(rec.get("losses") or 0) + 0.5 * float(rec.get("ties") or 0)
+
+    ordered = sorted(
+        rosters,
+        key=lambda t: (
+            t.get("playoff_seed") if isinstance(t.get("playoff_seed"), int) else 99,
+            -wins(t),
+            t.get("team_id") or 0,
+        ),
+    )
+    me = next((t for t in ordered if t.get("team_id") == jason_x_team_id), None)
+    if me is None:
+        return None
+
+    def ahead(a: dict, b: dict) -> float:
+        """Games team a is ahead of team b."""
+        return ((wins(a) - wins(b)) + (losses(b) - losses(a))) / 2
+
+    seed = ordered.index(me) + 1
+    cut_team = None
+    cushion = None
+    if seed <= playoff_teams and len(ordered) > playoff_teams:
+        cut_team = ordered[playoff_teams]
+        cushion = ahead(me, cut_team)
+    elif seed > playoff_teams:
+        cut_team = ordered[playoff_teams - 1]
+        cushion = -ahead(cut_team, me)
+
+    if phase == "playoffs":
+        status = "playoffs"
+        guidance = "The regular season is over; every decision is about the next playoff game."
+    elif cushion is None:
+        status = "unknown"
+        guidance = "The cut line could not be computed."
+    elif games_left is not None and cushion > games_left:
+        status = "secure"
+        guidance = (
+            "A playoff spot is secure on record. Weigh moves toward the playoff "
+            f"weeks ({', '.join(f'W{w}' for w in playoff_weeks)}): health and "
+            "matchups then matter more than this week's margin."
+        )
+    elif games_left is not None and -cushion > games_left:
+        status = "out of reach"
+        guidance = "The playoff line can no longer be reached on record."
+    elif cushion > PLAYOFF_BUBBLE_GAMES:
+        status = "in position"
+        guidance = (
+            "In playoff position with some cushion: balance this week's win "
+            "against value in the playoff weeks."
+        )
+    elif cushion >= -PLAYOFF_BUBBLE_GAMES:
+        status = "bubble"
+        guidance = (
+            "On the bubble: every regular-season win counts, so favour this "
+            "week's points over long-term stashes."
+        )
+    else:
+        status = "chasing"
+        guidance = (
+            "Behind the cut line: favour upside, because a safe lineup will not "
+            "make up the games."
+        )
+
+    by_points = sorted(
+        rosters, key=lambda t: -((t.get("record") or {}).get("points_for") or 0)
+    )
+    standings = []
+    for index, team in enumerate(ordered, 1):
+        rec = team.get("record") or {}
+        standings.append(
+            {
+                "seed": index,
+                "team_id": team.get("team_id"),
+                "team_name": team.get("team_name"),
+                "wins": rec.get("wins"),
+                "losses": rec.get("losses"),
+                "ties": rec.get("ties"),
+                "points_for": rec.get("points_for"),
+                "is_jason_x": team.get("team_id") == jason_x_team_id,
+                "in_playoff_position": index <= playoff_teams,
+            }
+        )
+
+    return {
+        "phase": phase,
+        "playoff_team_count": playoff_teams,
+        "regular_season_final_week": regular_final_week,
+        "playoff_weeks": playoff_weeks,
+        "regular_season_games_left": games_left,
+        "seeding_tiebreaker": settings.get("playoffSeedingRule"),
+        "seed": seed,
+        "record": f"{(me.get('record') or {}).get('wins') or 0}-"
+                  f"{(me.get('record') or {}).get('losses') or 0}",
+        "points_for": (me.get("record") or {}).get("points_for"),
+        "points_for_rank": by_points.index(me) + 1,
+        "games_back_of_first": ahead(ordered[0], me),
+        "cushion_games": cushion,
+        "cut_line_team": (cut_team or {}).get("team_name"),
+        "status": status,
+        "guidance": guidance,
+        "standings": standings,
+    }
+
+
+def build_bye_calendar(
+    starters: list[dict],
+    bench: list[dict],
+    weeks: list[int],
+    playoff_weeks: Iterable[int] = (),
+) -> list[dict]:
+    """For every remaining week, which starters are on bye and who covers them.
+
+    A cover is a bench player eligible for the slot, not on bye that week, not
+    on NFL IR and not out for the season, chosen on rest-of-season projection.
+    Scarce slots are filled first so FLEX cannot take the only receiver a WR
+    slot needed. uncovered_slots is where the roster has no answer. Pure.
+    """
+    playoff = set(playoff_weeks or ())
+    out = []
+    for week in weeks:
+        on_bye = [p for p in starters if p.get("bye_week") == week]
+        candidates = [
+            p for p in bench
+            if p.get("bye_week") != week
+            and not p.get("on_nfl_ir")
+            and not is_out_for_season(p.get("injury"))
+        ]
+        used: set = set()
+        covers: dict[int, str | None] = {}
+
+        def priority(item: tuple[int, dict]) -> int:
+            slot = item[1].get("lineup_slot")
+            return COVER_ORDER.index(slot) if slot in COVER_ORDER else len(COVER_ORDER)
+
+        for index, player in sorted(enumerate(on_bye), key=priority):
+            slot = player.get("lineup_slot")
+            eligible = COVER_POSITIONS.get(slot, (player.get("position"),))
+            cover = max(
+                (c for c in candidates
+                 if c.get("player_id") not in used and c.get("position") in eligible),
+                key=_ros,
+                default=None,
+            )
+            if cover is not None:
+                used.add(cover.get("player_id"))
+            covers[index] = cover.get("name") if cover is not None else None
+
+        rows = [
+            {"name": p.get("name"), "lineup_slot": p.get("lineup_slot"),
+             "cover": covers[i]}
+            for i, p in enumerate(on_bye)
+        ]
+        out.append(
+            {
+                "scoring_period_id": week,
+                "phase": "playoffs" if week in playoff else "regular season",
+                "starters_on_bye": rows,
+                "bench_on_bye": [p.get("name") for p in bench if p.get("bye_week") == week],
+                "uncovered_slots": [r["lineup_slot"] for r in rows if r["cover"] is None],
+            }
+        )
+    return out
+
+
+def _days_until(iso_date: Any, today: Any) -> int | None:
+    if not iso_date or today is None:
+        return None
+    try:
+        return (datetime.strptime(str(iso_date), "%Y-%m-%d").date() - today).days
+    except (TypeError, ValueError):
+        return None
+
+
+def build_ir_outlook(
+    starters: list[dict],
+    bench: list[dict],
+    ir: list[dict],
+    capacity: dict,
+    today: Any = None,
+) -> dict:
+    """What happens to the roster when each fantasy-IR player comes back.
+
+    An activated player needs an active spot. The clean answer is moving a
+    player who is on NFL IR into the IR slot he vacates; failing that, an open
+    bench spot; failing that, a drop. swap_at_risk flags a swap partner
+    expected back no later than the returning player, because once he is
+    activated the swap disappears. Pure.
+    """
+    nfl_ir_active = [p for p in starters + bench if p.get("on_nfl_ir")]
+    swaps = list(nfl_ir_active)
+    bench_open = int((capacity or {}).get("bench_open") or 0)
+    ir_open = int((capacity or {}).get("ir_open") or 0)
+
+    def describe(player: dict) -> dict:
+        badge = player.get("injury") or {}
+        out = {
+            "name": player.get("name"),
+            "position": player.get("position"),
+            "designation": badge.get("designation"),
+            "on_nfl_ir": bool(player.get("on_nfl_ir")),
+            "expected_return": badge.get("expected_return"),
+            "expected_return_label": badge.get("expected_return_label"),
+            "days_until_expected_return": _days_until(badge.get("expected_return"), today),
+        }
+        return {k: v for k, v in out.items() if v is not None}
+
+    plans = []
+    for player in ir:
+        badge = player.get("injury") or {}
+        plan = {"player": describe(player)}
+        if is_out_for_season(badge):
+            plan["roster_effect"] = "out for the season: stays in the IR slot"
+        elif swaps:
+            partner = swaps.pop(0)
+            partner_badge = partner.get("injury") or {}
+            plan["roster_effect"] = (
+                f"swap: move {partner.get('name')} into the IR slot; no drop needed"
+            )
+            plan["swap_in"] = describe(partner)
+            mine, theirs = badge.get("expected_return"), partner_badge.get("expected_return")
+            plan["swap_at_risk"] = bool(theirs and (not mine or theirs <= mine))
+        elif bench_open > 0:
+            bench_open -= 1
+            plan["roster_effect"] = "bench spot open: no drop needed"
+        else:
+            plan["roster_effect"] = "forces a drop: bench is full and no NFL IR player to swap in"
+        plans.append(plan)
+
+    return {
+        "ir_capacity": (capacity or {}).get("ir_capacity"),
+        "ir_open": ir_open,
+        "ir_slot": [describe(p) for p in ir],
+        "nfl_ir_on_active_roster": [describe(p) for p in nfl_ir_active],
+        "move_to_ir_now": [p.get("name") for p in nfl_ir_active[:ir_open]],
+        "activation_plans": plans,
+    }
+
+
+def lineup_risk(
+    team: dict, projections: dict[int, float], byes: dict[int, int], week: int
+) -> dict:
+    """Starters on one side of a matchup who may not play this week.
+
+    Players whose game has already started (lineup_locked) are skipped: their
+    points are already on the board. projected_points_in_doubt sums the
+    projections of QUESTIONABLE, DOUBTFUL and DAY_TO_DAY starters. Pure.
+    """
+    flagged = []
+    in_doubt = 0.0
+    unavailable = 0
+    for player in team.get("starters") or []:
+        if player.get("lineup_locked"):
+            continue
+        badge = player.get("injury") or {}
+        designation = badge.get("designation")
+        on_bye = byes.get(player.get("pro_team_id")) == week
+        if not designation and not on_bye:
+            continue
+        projected = projections.get(player.get("player_id"))
+        if on_bye or designation in UNAVAILABLE_DESIGNATIONS:
+            unavailable += 1
+        elif designation in DOUBTFUL_DESIGNATIONS and isinstance(projected, (int, float)):
+            in_doubt += projected
+        row = {
+            "name": player.get("name"),
+            "position": player.get("position"),
+            "lineup_slot": player.get("lineup_slot"),
+            "designation": designation,
+            "expected_return_label": badge.get("expected_return_label"),
+            "on_bye": on_bye,
+            "projected_points": projected,
+        }
+        flagged.append({k: v for k, v in row.items() if v is not None})
+    return {
+        "flagged_starters": flagged,
+        "projected_points_in_doubt": _round(in_doubt, 1),
+        "starters_unavailable": unavailable,
+    }
+
+
+def position_ranks_complete(ranks: dict | None, expected_teams: int) -> tuple[bool, str]:
+    """(ok, detail): every position ranks exactly 1..N over N == expected teams."""
+    if not ranks:
+        return False, "not built"
+    if ranks.get("team_count") != expected_teams:
+        return False, f"{ranks.get('team_count')} of {expected_teams} teams"
+    for position, rows in (ranks.get("by_position") or {}).items():
+        if sorted(r["rank"] for r in rows) != list(range(1, expected_teams + 1)):
+            return False, f"{position} ranks are not 1..{expected_teams}"
+    scored = sum(
+        1 for rows in ranks["by_position"].values() for r in rows if r["score"]
+    )
+    if scored == 0:
+        return False, "no rest-of-season projections: every room scored 0"
+    return True, f"{expected_teams} teams x {len(ranks['by_position'])} positions"
 
 
 def recent_form_lookup(recent_form: dict | None) -> dict[int, dict]:
@@ -2351,6 +3083,8 @@ def build_gates(metadata: dict, extra: dict[str, Any]) -> dict:
         ("nfl_schedule_retrieved", extra.get("schedule_ok"),
          f"{extra.get('schedule_teams')} NFL teams"),
         ("faab_arithmetic", extra.get("faab_ok"), extra.get("faab_detail")),
+        ("position_ranks_built", extra.get("position_ranks_ok"),
+         extra.get("position_ranks_detail")),
     ]
     blocks = [
         {
@@ -2800,6 +3534,7 @@ def main(argv: list[str] | None = None) -> int:
         settings.get("acquisitionSettings"),
         injury_report=injury_report,
         bye_weeks=byes,
+        season=season,
     )
     teams_with_players = sum(1 for r in rosters if r["counts"]["total"] > 0)
     rosters_complete = (
@@ -3309,10 +4044,24 @@ def main(argv: list[str] | None = None) -> int:
     # derivation the report prompt previously had to perform itself.
     print("\n[derived] report inputs")
 
+    season_outlook = build_season_outlook(
+        rosters,
+        settings.get("scheduleSettings"),
+        period_detail.get("current_matchup_period"),
+    )
+    final_period = status.get("finalScoringPeriod")
+    if not isinstance(final_period, int) or final_period < 1:
+        final_period = 18
+    calendar_weeks = list(range(scoring_period_id or 1, final_period + 1))
+    snapshot_day = (to_central(started_at) or started_at).date()
+
     jason_block = build_jason_x_block(
         rosters, lineup_slot_counts, pro_schedule, weeks_ahead,
         matchups=current if steps.get("matchup_fetch_success") else None,
         projections=projections,
+        season_outlook=season_outlook,
+        calendar_weeks=calendar_weeks,
+        snapshot_date=snapshot_day,
     )
     if jason_block:
         jason_block.update(
@@ -3333,7 +4082,24 @@ def main(argv: list[str] | None = None) -> int:
                     "play rather than a missing value. faab_plan costs the bid "
                     "tiers against the remaining balance so an unaffordable bid "
                     "cannot be recommended, and current_matchup gives this "
-                    "week's opponent with the risk posture it implies."
+                    "week's opponent with the risk posture it implies, plus "
+                    "my_lineup_risk and opponent_lineup_risk: each side's "
+                    "starters who are designated or on bye, and the projected "
+                    "points hanging on game-time decisions. Players whose game "
+                    "has started are left out of those. season_outlook is the "
+                    "standings against the playoff cut line: cushion_games is "
+                    "games ahead of the first team out (negative when behind "
+                    "the last team in), status and guidance say what that "
+                    "implies, and standings lists all teams. bye_calendar runs "
+                    "from this week to the end of the season, naming each "
+                    "starter on bye, the best bench cover chosen on "
+                    "rest-of-season projection, and uncovered_slots where the "
+                    "roster has no answer. ir_outlook says what happens to the "
+                    "roster when each fantasy-IR player is activated: a swap "
+                    "with a player on NFL IR, an open bench spot, or a forced "
+                    "drop; swap_at_risk means the swap partner is due back no "
+                    "later. ros_projected_points is ESPN's rest-of-season "
+                    "projection."
                 ),
                 "projection_scoring_period_id": scoring_period_id,
                 "league_id": args.league_id,
@@ -3351,6 +4117,63 @@ def main(argv: list[str] | None = None) -> int:
             f"FAAB ${(jason_block.get('faab') or {}).get('remaining')} | "
             f"{len(jason_block['injury_designations'])} designated"
         )
+
+    position_ranks = build_position_ranks(rosters)
+    trade_fits = build_trade_fits(rosters)
+    ranks_ok, ranks_detail = position_ranks_complete(position_ranks, expected_team_count)
+    if not ranks_ok:
+        message = f"position ranks incomplete: {ranks_detail}"
+        print(f"  WARNING: {message}", file=sys.stderr)
+        errors.append(message)
+    write(
+        "position_ranks.json",
+        {
+            "usage": (
+                "Section 8 of the daily report, precomputed. Every team is ranked "
+                "1 to team_count at QB, RB, WR, TE, K and D/ST, where 1 is the "
+                "strongest room; each rank is used exactly once per position. A "
+                "room's score is the weighted sum of its players' ESPN "
+                "rest-of-season projections: weight 1.0 for each starting slot, "
+                "0.5 and 0.25 for the third and fourth RB or WR (FLEX plus bye "
+                "and injury cover), 0.2 for a backup QB, TE or D/ST, and nothing "
+                "for a second kicker. Ties break on depth_score, then team id. "
+                "The projection already prices in byes and expected missed "
+                "time, so an injured star counts for what ESPN expects him to "
+                "add from here. matrix is one row per team in seed order with "
+                "the ranks, FAAB remaining, waiver rank and the strongest and "
+                "weakest positions (top and bottom quarter of the league). "
+                "by_position shows the scores and which players counted. "
+                "trade_fits tests every 1-for-1 trade and every 2-for-1 trade "
+                "(two Jason X players for one of theirs) against each other "
+                "team, scoring each by how much it changes both sides' best "
+                "QB/RB/RB/WR/WR/TE/FLEX lineup on rest-of-season projection. "
+                "A trade is listed only when both sides gain at least "
+                "min_gain_points, and in a 2-for-1 both players sent must "
+                "start for the other team. A 2-for-1 frees a Jason X roster "
+                "spot and costs the other team one: their_bench_open says "
+                "whether they have it or must drop someone. best_trade is the "
+                "one whose smaller gain is largest, so it is the most clearly "
+                "good for both teams; partners are sorted by that, and a "
+                "partner with mutual false has no trade that helps both. K and "
+                "D/ST are streamed rather than traded, so they are left out."
+            ),
+            "league_id": args.league_id,
+            "season": season,
+            "scoring_period_id": scoring_period_id,
+            "fetched_at": started_at.isoformat(),
+            "complete": ranks_ok,
+            **position_ranks,
+            "trade_fits": trade_fits,
+        },
+    )
+    print(
+        f"  position_ranks.json: {ranks_detail} | "
+        + " ".join(
+            f"{pos} #{row['ranks'][pos]}"
+            for row in position_ranks["matrix"] if row["is_jason_x"]
+            for pos in position_ranks["positions"]
+        )
+    )
 
     form_lookup = recent_form_lookup(recent_form_payload)
     top_available = build_top_available(
@@ -3460,6 +4283,8 @@ def main(argv: list[str] | None = None) -> int:
             "schedule_teams": schedule_diag.get("teams"),
             "faab_ok": faab_ok,
             "faab_detail": faab_detail,
+            "position_ranks_ok": ranks_ok,
+            "position_ranks_detail": ranks_detail,
         },
     )
     write("gates.json", gates)
@@ -3542,10 +4367,6 @@ def build_metadata(
         "fetched_at_ct_label": to_central_label(finished_at),
         "timezone_source": central_timezone_source(),
         "weekday_ct": (to_central(finished_at) or finished_at).strftime("%A"),
-        "full_league_review_day": (
-            (to_central(finished_at) or finished_at).weekday()
-            == FULL_LEAGUE_REVIEW_WEEKDAY
-        ),
         "fetched_at_epoch": int(finished_at.timestamp()),
         "started_at": started_at.isoformat(),
         "duration_seconds": round((finished_at - started_at).total_seconds(), 2),

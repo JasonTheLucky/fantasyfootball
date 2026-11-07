@@ -521,6 +521,9 @@ def build() -> str:
         "Use instead of web research for byes and matchups. |")
     add("| `top_available.json` | Top 25 available per position with acquisition "
         "cost, bye, injury and opponents. A trimmed available_players.json. |")
+    add("| `position_ranks.json` | Every team ranked 1-12 at each position on "
+        "rest-of-season projections, plus trades that help both Jason X and "
+        "the other team. |")
     add("| `player_index.json` | **Name to owner lookup for every classified player. "
         "Use this to answer \"who owns X?\".** |")
     add("| `ownership.json` | Positive ownership: player id to owner, plus availability. |")

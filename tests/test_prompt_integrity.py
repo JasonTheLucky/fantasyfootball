@@ -139,15 +139,25 @@ class PromptIntegrityTest(unittest.TestCase):
         self.assertIn("QB, RB, RB, WR, WR, TE, FLEX, K, D/ST", section_5)
         self.assertIn("starting_slot_order", section_5)
 
-    def test_section_8_uses_the_ten_point_scale(self):
+    def test_section_8_ranks_all_12_teams_1_to_12(self):
         section_8 = self.block[
             self.block.find("8. LEAGUE POSITION STRENGTH"):
             self.block.find("9. WHAT I WOULD DO TODAY")
         ]
-        self.assertIn("1-10 scale", section_8)
-        self.assertIn("exactly one team scores 10", section_8)
-        self.assertIn("exactly one team scores 1", section_8)
-        # The superseded four-point vocabulary must be gone.
+        self.assertIn("Show all 12 teams in every report", section_8)
+        self.assertIn("Rank each position from 1 to 12", section_8)
+        self.assertIn("every rank from 1 to 12 is used exactly once", section_8)
+        self.assertIn("1 = strongest room in the league, 12 = weakest", section_8)
+        # Gate G must enforce the same rule.
+        gate_g = self.block[self.block.find("\nG Section 8"):]
+        gate_g = gate_g[:gate_g.find("\nH ")]
+        self.assertIn("all 12 teams exactly once, every day", gate_g)
+        self.assertIn("SECTION 8 RANK ERRORS = 0", gate_g)
+        # The superseded scales and the weekday short review must be gone.
+        for stale in ("1-10 scale", "exactly one team scores 10",
+                      "full_league_review_day", "three teams identified as his",
+                      "SECTION 8 SCALE ERRORS"):
+            self.assertNotIn(stale, self.block, f"superseded rule {stale!r}")
         for stale in ("1-Great", "2-Strong", "3-Average", "4-Weak"):
             self.assertNotIn(stale, self.block, f"superseded rating {stale!r}")
 

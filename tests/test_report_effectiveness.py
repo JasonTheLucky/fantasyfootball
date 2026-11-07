@@ -1,4 +1,4 @@
-"""FAAB plan, projections, matchup posture, snapshot delta and review day."""
+"""FAAB plan, projections, matchup posture and snapshot delta."""
 
 from __future__ import annotations
 
@@ -290,13 +290,6 @@ class EffectivenessArtifactTest(unittest.TestCase):
             p for p in self.jason["starters"] if "projected_points" in p
         ]
         self.assertGreater(len(with_projection), 0)
-
-    def test_review_day_flag_matches_the_weekday(self):
-        expected = self.meta["weekday_ct"] == "Tuesday"
-        self.assertIs(self.meta["full_league_review_day"], expected)
-        self.assertEqual(
-            self.fe.FULL_LEAGUE_REVIEW_WEEKDAY, 1, "Tuesday is weekday 1"
-        )
 
     def test_changes_counts_match_their_lists(self):
         counts = self.changes["counts"]

@@ -56,7 +56,8 @@ confirm the snapshot is usable, then go to the detail files.
 | `recent_form_rankings.json` | Recent form: top 24 QB, 60 RB, 60 WR, 24 TE, 24 K, 20 D/ST by average points over each player's own last three completed games, with the owning fantasy team and a Jason X flag. |
 | `injuries.json` | NFL designations and expected return dates for every player in the league pool, by ESPN player id, plus the two IR cross-checks. A compact `injury` block is also inline on every player in the files above. |
 | `gates.json` | Pass/fail per snapshot check and the `data_status` verdict. Read this instead of deriving it. |
-| `jason_x.json` | Jason X precomputed: starters, bench, IR, open spots, FAAB, bye pressure, injuries, upcoming opponents. |
+| `jason_x.json` | Jason X precomputed: starters, bench, IR, open spots, FAAB, bye pressure, injuries, upcoming opponents, standings outlook, bye calendar, IR activation plan, both sides' lineup risk. |
+| `position_ranks.json` | Every team ranked 1–12 at each position on rest-of-season projections, plus trades that improve both Jason X and the other team. |
 | `nfl_schedule.json` | Every NFL team's bye week and per-scoring-period opponent, with kickoffs in CT. |
 | `top_available.json` | Top 25 available per position with acquisition cost, bye week, injury and opponents. |
 | `ownership.json` | The ownership gate. Player id to owning team, plus ESPN's availability list. |
@@ -243,7 +244,7 @@ rendering itself is enforced by prompt gates `T` and `U`.
 
 ### Derived report inputs
 
-Four files exist purely to remove work the consuming report would otherwise have
+Five files exist purely to remove work the consuming report would otherwise have
 to do itself. Each replaces a derivation that has a wrong answer available.
 
 | File | Replaces |
@@ -252,6 +253,7 @@ to do itself. Each replaces a derivation that has a wrong answer available.
 | `jason_x.json` | Rebuilding Jason X's starters, bench, IR and open spots every run. |
 | `nfl_schedule.json` | Web research for bye weeks and opponents. |
 | `top_available.json` | Reading and sorting the ~880 KB free-agent pool to find candidates. |
+| `position_ranks.json` | Hand-grading 72 position cells every day, and guessing at trade partners. |
 
 `gates.json` marks each check `critical` or not, and `data_status` is `PASS`
 only when every critical gate passed. The injury feed, the NFL schedule and the
@@ -261,7 +263,54 @@ rather than failing it.
 `jason_x.json` answers the question that drives most recommendations —
 `has_open_bench_spot` — directly, along with FAAB remaining, every starter's bye
 week and next opponent, `bye_pressure` naming which starters are on bye in the
-next two weeks, and every injury designation with its expected return.
+next two weeks, and every injury designation with its expected return. It also
+carries four strategy blocks:
+
+- `season_outlook`: seed, record and `cushion_games` against the playoff cut
+  line (positive means games ahead of the first team out, negative means games
+  behind the last team in), regular-season games left, the playoff weeks, and a
+  `status` of `secure`, `in position`, `bubble`, `chasing` or `out of reach`
+  with guidance. A cushion within one game either way is a bubble.
+- `bye_calendar`: every week from now to the end of the season, naming each
+  starter on bye, the best eligible bench cover by rest-of-season projection,
+  and `uncovered_slots` where the roster has no answer. Slots with the fewest
+  eligible covers are filled first, so FLEX cannot take the only receiver a WR
+  slot needed.
+- `ir_outlook`: for each fantasy-IR player, what activation does to the
+  roster. Moving a player who is on NFL IR into the vacated slot needs no drop;
+  failing that an open bench spot; failing that a forced drop. `swap_at_risk`
+  means the swap partner is due back no later, so the clean swap can vanish.
+- `current_matchup.my_lineup_risk` and `opponent_lineup_risk`: each side's
+  starters who are designated or on bye, and `projected_points_in_doubt` for
+  QUESTIONABLE, DOUBTFUL and DAY_TO_DAY starters. Starters whose game has begun
+  are left out.
+
+Every rostered player in `rosters.json` and `jason_x.json` carries
+`ros_projected_points`, ESPN's rest-of-season projection (stat source 1, split
+0, scoring period 0). Mid-season this is a remaining-games figure, not a
+full-season total: in week 9 it divided by the weekly projection to within
+about one game of the games left, and for top players it sat below what they
+had already scored. It prices in byes and expected missed time.
+
+`position_ranks.json` ranks all 12 teams 1–12 at QB, RB, WR, TE, K and D/ST,
+each rank used once per position. A room's score is the weighted sum of its
+players' rest-of-season projections: 1.0 per starting slot, 0.5 and 0.25 for
+the third and fourth RB or WR, 0.2 for a backup QB, TE or D/ST, and nothing for
+a second kicker (`POSITION_RANK_WEIGHTS`). Ties break on the depth part of the
+score, then team id. Computing the ranks keeps them stable from day to day,
+where hand grades moved on noise. The `position_ranks_built` gate is
+non-critical.
+
+Its `trade_fits` block tests every 1-for-1 and 2-for-1 trade between Jason X
+and each other team. Each trade is scored by how much it changes both sides'
+best QB/RB/RB/WR/WR/TE/FLEX lineup on rest-of-season projection, and is kept
+only when both sides gain at least `TRADE_MIN_GAIN` (5 points). In a 2-for-1
+both players sent must start for the other team, so neither is a throw-in.
+1-for-1 trades rarely help both sides on projections alone, because the
+receiving team has to start the player it gets while losing nothing it
+starts; consolidating two Jason X players into one better starter is where the
+two-way fits appear. K and D/ST are streamed rather than traded and are left
+out.
 
 `nfl_schedule.json` comes from the season endpoint's `proTeamSchedules_wl` view,
 which carries `byeWeek` and `proGamesByScoringPeriod` for all 33 pro teams. A
