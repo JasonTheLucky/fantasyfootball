@@ -1,0 +1,2743 @@
+{
+  "usage": "Section 8 of the daily report, precomputed. Every team is ranked 1 to team_count at QB, RB, WR, TE, K and D/ST, where 1 is the strongest room; each rank is used exactly once per position. A room's score is the weighted sum of its players' ESPN rest-of-season projections: weight 1.0 for each starting slot, 0.5 and 0.25 for the third and fourth RB or WR (FLEX plus bye and injury cover), 0.2 for a backup QB, TE or D/ST, and nothing for a second kicker. Ties break on depth_score, then team id. The projection already prices in byes and expected missed time, so an injured star counts for what ESPN expects him to add from here. matrix is one row per team in seed order with the ranks, FAAB remaining, waiver rank and the strongest and weakest positions (top and bottom quarter of the league). by_position shows the scores and which players counted. trade_fits tests every 1-for-1 trade and every 2-for-1 trade (two Jason X players for one of theirs) against each other team, scoring each by how much it changes both sides' best QB/RB/RB/WR/WR/TE/FLEX lineup on rest-of-season projection. A trade is listed only when both sides gain at least min_gain_points, and in a 2-for-1 both players sent must start for the other team. A 2-for-1 frees a Jason X roster spot and costs the other team one: their_bench_open says whether they have it or must drop someone. best_trade is the one whose smaller gain is largest, so it is the most clearly good for both teams; partners are sorted by that, and a partner with mutual false has no trade that helps both. K and D/ST are streamed rather than traded, so they are left out.",
+  "league_id": "1787259003",
+  "season": 2026,
+  "scoring_period_id": 9,
+  "fetched_at": "2026-11-07T01:33:46.995391+00:00",
+  "complete": true,
+  "team_count": 12,
+  "positions": [
+    "QB",
+    "RB",
+    "WR",
+    "TE",
+    "K",
+    "D/ST"
+  ],
+  "weights": {
+    "QB": [
+      1.0,
+      0.2
+    ],
+    "RB": [
+      1.0,
+      1.0,
+      0.5,
+      0.25
+    ],
+    "WR": [
+      1.0,
+      1.0,
+      0.5,
+      0.25
+    ],
+    "TE": [
+      1.0,
+      0.2
+    ],
+    "K": [
+      1.0
+    ],
+    "D/ST": [
+      1.0,
+      0.2
+    ]
+  },
+  "matrix": [
+    {
+      "team_id": 5,
+      "team_name": "Burrow's Bunch",
+      "is_jason_x": false,
+      "playoff_seed": 1,
+      "record": "6-2",
+      "faab_remaining": 144,
+      "waiver_rank": 9,
+      "ranks": {
+        "QB": 3,
+        "RB": 3,
+        "WR": 2,
+        "TE": 3,
+        "K": 12,
+        "D/ST": 1
+      },
+      "strongest": [
+        "QB",
+        "RB",
+        "WR",
+        "TE",
+        "D/ST"
+      ],
+      "weakest": [
+        "K"
+      ]
+    },
+    {
+      "team_id": 8,
+      "team_name": "Giant Packer Fan",
+      "is_jason_x": false,
+      "playoff_seed": 2,
+      "record": "6-2",
+      "faab_remaining": 195,
+      "waiver_rank": 6,
+      "ranks": {
+        "QB": 1,
+        "RB": 1,
+        "WR": 8,
+        "TE": 7,
+        "K": 1,
+        "D/ST": 6
+      },
+      "strongest": [
+        "QB",
+        "RB",
+        "K"
+      ],
+      "weakest": []
+    },
+    {
+      "team_id": 1,
+      "team_name": "Jason X",
+      "is_jason_x": true,
+      "playoff_seed": 3,
+      "record": "5-3",
+      "faab_remaining": 51,
+      "waiver_rank": 10,
+      "ranks": {
+        "QB": 5,
+        "RB": 5,
+        "WR": 1,
+        "TE": 2,
+        "K": 8,
+        "D/ST": 2
+      },
+      "strongest": [
+        "WR",
+        "TE",
+        "D/ST"
+      ],
+      "weakest": []
+    },
+    {
+      "team_id": 3,
+      "team_name": "Auto Draft Champion",
+      "is_jason_x": false,
+      "playoff_seed": 4,
+      "record": "5-3",
+      "faab_remaining": 198,
+      "waiver_rank": 5,
+      "ranks": {
+        "QB": 10,
+        "RB": 4,
+        "WR": 10,
+        "TE": 6,
+        "K": 10,
+        "D/ST": 3
+      },
+      "strongest": [
+        "D/ST"
+      ],
+      "weakest": [
+        "QB",
+        "WR",
+        "K"
+      ]
+    },
+    {
+      "team_id": 11,
+      "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+      "is_jason_x": false,
+      "playoff_seed": 5,
+      "record": "4-4",
+      "faab_remaining": 171,
+      "waiver_rank": 4,
+      "ranks": {
+        "QB": 11,
+        "RB": 8,
+        "WR": 4,
+        "TE": 9,
+        "K": 7,
+        "D/ST": 7
+      },
+      "strongest": [],
+      "weakest": [
+        "QB"
+      ]
+    },
+    {
+      "team_id": 6,
+      "team_name": "From Puka with Love",
+      "is_jason_x": false,
+      "playoff_seed": 6,
+      "record": "4-4",
+      "faab_remaining": 125,
+      "waiver_rank": 7,
+      "ranks": {
+        "QB": 12,
+        "RB": 6,
+        "WR": 12,
+        "TE": 4,
+        "K": 11,
+        "D/ST": 10
+      },
+      "strongest": [],
+      "weakest": [
+        "QB",
+        "WR",
+        "K",
+        "D/ST"
+      ]
+    },
+    {
+      "team_id": 9,
+      "team_name": "Nicole's Gnarly Team",
+      "is_jason_x": false,
+      "playoff_seed": 7,
+      "record": "4-4",
+      "faab_remaining": 200,
+      "waiver_rank": 3,
+      "ranks": {
+        "QB": 6,
+        "RB": 9,
+        "WR": 6,
+        "TE": 10,
+        "K": 5,
+        "D/ST": 11
+      },
+      "strongest": [],
+      "weakest": [
+        "TE",
+        "D/ST"
+      ]
+    },
+    {
+      "team_id": 2,
+      "team_name": "The Bye Week Boys",
+      "is_jason_x": false,
+      "playoff_seed": 8,
+      "record": "3-5",
+      "faab_remaining": 100,
+      "waiver_rank": 11,
+      "ranks": {
+        "QB": 4,
+        "RB": 12,
+        "WR": 3,
+        "TE": 11,
+        "K": 6,
+        "D/ST": 4
+      },
+      "strongest": [
+        "WR"
+      ],
+      "weakest": [
+        "RB",
+        "TE"
+      ]
+    },
+    {
+      "team_id": 10,
+      "team_name": "Kelli's Top-Notch Team",
+      "is_jason_x": false,
+      "playoff_seed": 9,
+      "record": "3-5",
+      "faab_remaining": 198,
+      "waiver_rank": 2,
+      "ranks": {
+        "QB": 2,
+        "RB": 2,
+        "WR": 11,
+        "TE": 5,
+        "K": 3,
+        "D/ST": 8
+      },
+      "strongest": [
+        "QB",
+        "RB",
+        "K"
+      ],
+      "weakest": [
+        "WR"
+      ]
+    },
+    {
+      "team_id": 7,
+      "team_name": "Connor\u2019s Team",
+      "is_jason_x": false,
+      "playoff_seed": 10,
+      "record": "3-5",
+      "faab_remaining": 179,
+      "waiver_rank": 12,
+      "ranks": {
+        "QB": 8,
+        "RB": 11,
+        "WR": 9,
+        "TE": 12,
+        "K": 9,
+        "D/ST": 9
+      },
+      "strongest": [],
+      "weakest": [
+        "RB",
+        "TE"
+      ]
+    },
+    {
+      "team_id": 12,
+      "team_name": "Commanders of Chaos",
+      "is_jason_x": false,
+      "playoff_seed": 11,
+      "record": "3-5",
+      "faab_remaining": 200,
+      "waiver_rank": 1,
+      "ranks": {
+        "QB": 9,
+        "RB": 10,
+        "WR": 7,
+        "TE": 8,
+        "K": 4,
+        "D/ST": 12
+      },
+      "strongest": [],
+      "weakest": [
+        "RB",
+        "D/ST"
+      ]
+    },
+    {
+      "team_id": 4,
+      "team_name": "Cole-Train",
+      "is_jason_x": false,
+      "playoff_seed": 12,
+      "record": "2-6",
+      "faab_remaining": 65,
+      "waiver_rank": 8,
+      "ranks": {
+        "QB": 7,
+        "RB": 7,
+        "WR": 5,
+        "TE": 1,
+        "K": 2,
+        "D/ST": 5
+      },
+      "strongest": [
+        "TE",
+        "K"
+      ],
+      "weakest": []
+    }
+  ],
+  "leaders": {
+    "QB": "Giant Packer Fan",
+    "RB": "Giant Packer Fan",
+    "WR": "Jason X",
+    "TE": "Cole-Train",
+    "K": "Giant Packer Fan",
+    "D/ST": "Burrow's Bunch"
+  },
+  "laggards": {
+    "QB": "From Puka with Love",
+    "RB": "The Bye Week Boys",
+    "WR": "From Puka with Love",
+    "TE": "Connor\u2019s Team",
+    "K": "Burrow's Bunch",
+    "D/ST": "Commanders of Chaos"
+  },
+  "by_position": {
+    "QB": [
+      {
+        "rank": 1,
+        "team_id": 8,
+        "team_name": "Giant Packer Fan",
+        "is_jason_x": false,
+        "score": 278.3,
+        "depth_score": 34.1,
+        "players": [
+          {
+            "player_id": 3918298,
+            "name": "Josh Allen",
+            "position": "QB",
+            "pro_team": "BUF",
+            "ros_projected_points": 244.2,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4036378,
+            "name": "Jordan Love",
+            "position": "QB",
+            "pro_team": "GB",
+            "ros_projected_points": 170.6,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "team_id": 10,
+        "team_name": "Kelli's Top-Notch Team",
+        "is_jason_x": false,
+        "score": 230.5,
+        "depth_score": 30.3,
+        "players": [
+          {
+            "player_id": 4361741,
+            "name": "Brock Purdy",
+            "position": "QB",
+            "pro_team": "SF",
+            "ros_projected_points": 200.2,
+            "weight": 1.0
+          },
+          {
+            "player_id": 15864,
+            "name": "Geno Smith",
+            "position": "QB",
+            "pro_team": "NYJ",
+            "ros_projected_points": 151.3,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "team_id": 5,
+        "team_name": "Burrow's Bunch",
+        "is_jason_x": false,
+        "score": 227.5,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 3915511,
+            "name": "Joe Burrow",
+            "position": "QB",
+            "pro_team": "CIN",
+            "ros_projected_points": 227.5,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "team_id": 2,
+        "team_name": "The Bye Week Boys",
+        "is_jason_x": false,
+        "score": 224.0,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4360310,
+            "name": "Trevor Lawrence",
+            "position": "QB",
+            "pro_team": "JAX",
+            "ros_projected_points": 224.0,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "team_id": 1,
+        "team_name": "Jason X",
+        "is_jason_x": true,
+        "score": 223.4,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4426348,
+            "name": "Jayden Daniels",
+            "position": "QB",
+            "pro_team": "WSH",
+            "ros_projected_points": 223.4,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "team_id": 9,
+        "team_name": "Nicole's Gnarly Team",
+        "is_jason_x": false,
+        "score": 219.7,
+        "depth_score": 35.6,
+        "players": [
+          {
+            "player_id": 3139477,
+            "name": "Patrick Mahomes",
+            "position": "QB",
+            "pro_team": "KC",
+            "ros_projected_points": 184.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4431611,
+            "name": "Caleb Williams",
+            "position": "QB",
+            "pro_team": "CHI",
+            "ros_projected_points": 177.8,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "team_id": 4,
+        "team_name": "Cole-Train",
+        "is_jason_x": false,
+        "score": 216.7,
+        "depth_score": 32.9,
+        "players": [
+          {
+            "player_id": 3046779,
+            "name": "Jared Goff",
+            "position": "QB",
+            "pro_team": "DET",
+            "ros_projected_points": 183.8,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4242512,
+            "name": "Malik Willis",
+            "position": "QB",
+            "pro_team": "MIA",
+            "ros_projected_points": 164.5,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "team_id": 7,
+        "team_name": "Connor\u2019s Team",
+        "is_jason_x": false,
+        "score": 203.8,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4431452,
+            "name": "Drake Maye",
+            "position": "QB",
+            "pro_team": "NE",
+            "ros_projected_points": 203.8,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "team_id": 12,
+        "team_name": "Commanders of Chaos",
+        "is_jason_x": false,
+        "score": 201.8,
+        "depth_score": 29.8,
+        "players": [
+          {
+            "player_id": 4685720,
+            "name": "Bryce Young",
+            "position": "QB",
+            "pro_team": "CAR",
+            "ros_projected_points": 172.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 12483,
+            "name": "Matthew Stafford",
+            "position": "QB",
+            "pro_team": "LAR",
+            "ros_projected_points": 148.8,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "team_id": 3,
+        "team_name": "Auto Draft Champion",
+        "is_jason_x": false,
+        "score": 193.0,
+        "depth_score": 29.3,
+        "players": [
+          {
+            "player_id": 4360689,
+            "name": "Tyler Shough",
+            "position": "QB",
+            "pro_team": "NO",
+            "ros_projected_points": 163.7,
+            "weight": 1.0
+          },
+          {
+            "player_id": 3917315,
+            "name": "Kyler Murray",
+            "position": "QB",
+            "pro_team": "MIN",
+            "ros_projected_points": 146.4,
+            "designation": "QUESTIONABLE",
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "team_id": 11,
+        "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+        "is_jason_x": false,
+        "score": 186.8,
+        "depth_score": 6.4,
+        "players": [
+          {
+            "player_id": 4432577,
+            "name": "C.J. Stroud",
+            "position": "QB",
+            "pro_team": "HOU",
+            "ros_projected_points": 180.4,
+            "weight": 1.0
+          },
+          {
+            "player_id": 14880,
+            "name": "Kirk Cousins",
+            "position": "QB",
+            "pro_team": "LV",
+            "ros_projected_points": 32.1,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "team_id": 6,
+        "team_name": "From Puka with Love",
+        "is_jason_x": false,
+        "score": 166.6,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 2577417,
+            "name": "Dak Prescott",
+            "position": "QB",
+            "pro_team": "DAL",
+            "ros_projected_points": 166.6,
+            "weight": 1.0
+          }
+        ]
+      }
+    ],
+    "RB": [
+      {
+        "rank": 1,
+        "team_id": 8,
+        "team_name": "Giant Packer Fan",
+        "is_jason_x": false,
+        "score": 517.8,
+        "depth_score": 95.0,
+        "players": [
+          {
+            "player_id": 4429795,
+            "name": "Jahmyr Gibbs",
+            "position": "RB",
+            "pro_team": "DET",
+            "ros_projected_points": 258.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4596448,
+            "name": "Bucky Irving",
+            "position": "RB",
+            "pro_team": "TB",
+            "ros_projected_points": 164.8,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4569987,
+            "name": "Jaylen Warren",
+            "position": "RB",
+            "pro_team": "PIT",
+            "ros_projected_points": 143.6,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4373626,
+            "name": "Tyler Allgeier",
+            "position": "RB",
+            "pro_team": "ARI",
+            "ros_projected_points": 92.7,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "team_id": 10,
+        "team_name": "Kelli's Top-Notch Team",
+        "is_jason_x": false,
+        "score": 480.2,
+        "depth_score": 83.2,
+        "players": [
+          {
+            "player_id": 4379399,
+            "name": "James Cook III",
+            "position": "RB",
+            "pro_team": "BUF",
+            "ros_projected_points": 205.5,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4241416,
+            "name": "Chuba Hubbard",
+            "position": "RB",
+            "pro_team": "CAR",
+            "ros_projected_points": 191.6,
+            "weight": 1.0
+          },
+          {
+            "player_id": 3929630,
+            "name": "Saquon Barkley",
+            "position": "RB",
+            "pro_team": "PHI",
+            "ros_projected_points": 138.8,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4038441,
+            "name": "Justice Hill",
+            "position": "RB",
+            "pro_team": "BAL",
+            "ros_projected_points": 55.0,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "team_id": 5,
+        "team_name": "Burrow's Bunch",
+        "is_jason_x": false,
+        "score": 445.6,
+        "depth_score": 60.7,
+        "players": [
+          {
+            "player_id": 4567048,
+            "name": "Kenneth Walker III",
+            "position": "RB",
+            "pro_team": "KC",
+            "ros_projected_points": 233.0,
+            "weight": 1.0
+          },
+          {
+            "player_id": 3916148,
+            "name": "Tony Pollard",
+            "position": "RB",
+            "pro_team": "TEN",
+            "ros_projected_points": 151.9,
+            "weight": 1.0
+          },
+          {
+            "player_id": 3042519,
+            "name": "Aaron Jones Sr.",
+            "position": "RB",
+            "pro_team": "MIN",
+            "ros_projected_points": 82.5,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4360569,
+            "name": "Jordan Mason",
+            "position": "RB",
+            "pro_team": "MIN",
+            "ros_projected_points": 77.8,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "team_id": 3,
+        "team_name": "Auto Draft Champion",
+        "is_jason_x": false,
+        "score": 420.3,
+        "depth_score": 79.4,
+        "players": [
+          {
+            "player_id": 3117251,
+            "name": "Christian McCaffrey",
+            "position": "RB",
+            "pro_team": "SF",
+            "ros_projected_points": 203.2,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4890973,
+            "name": "Ashton Jeanty",
+            "position": "RB",
+            "pro_team": "LV",
+            "ros_projected_points": 137.7,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4685702,
+            "name": "Quinshon Judkins",
+            "position": "RB",
+            "pro_team": "CLE",
+            "ros_projected_points": 122.4,
+            "weight": 0.5
+          },
+          {
+            "player_id": 5081397,
+            "name": "Dylan Sampson",
+            "position": "RB",
+            "pro_team": "CLE",
+            "ros_projected_points": 72.8,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "team_id": 1,
+        "team_name": "Jason X",
+        "is_jason_x": true,
+        "score": 407.1,
+        "depth_score": 82.1,
+        "players": [
+          {
+            "player_id": 4882093,
+            "name": "Bhayshul Tuten",
+            "position": "RB",
+            "pro_team": "JAX",
+            "ros_projected_points": 168.8,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4711533,
+            "name": "Ollie Gordon II",
+            "position": "RB",
+            "pro_team": "MIA",
+            "ros_projected_points": 156.2,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4696981,
+            "name": "Cam Skattebo",
+            "position": "RB",
+            "pro_team": "NYG",
+            "ros_projected_points": 120.2,
+            "designation": "DOUBTFUL",
+            "weight": 0.5
+          },
+          {
+            "player_id": 4038815,
+            "name": "Rico Dowdle",
+            "position": "RB",
+            "pro_team": "PIT",
+            "ros_projected_points": 88.1,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "team_id": 6,
+        "team_name": "From Puka with Love",
+        "is_jason_x": false,
+        "score": 386.1,
+        "depth_score": 47.2,
+        "players": [
+          {
+            "player_id": 4430807,
+            "name": "Bijan Robinson",
+            "position": "RB",
+            "pro_team": "ATL",
+            "ros_projected_points": 175.0,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4259545,
+            "name": "D'Andre Swift",
+            "position": "RB",
+            "pro_team": "CHI",
+            "ros_projected_points": 163.9,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4429059,
+            "name": "Woody Marks",
+            "position": "RB",
+            "pro_team": "HOU",
+            "ros_projected_points": 94.4,
+            "weight": 0.5
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "team_id": 4,
+        "team_name": "Cole-Train",
+        "is_jason_x": false,
+        "score": 367.5,
+        "depth_score": 69.4,
+        "players": [
+          {
+            "player_id": 4047365,
+            "name": "Josh Jacobs",
+            "position": "RB",
+            "pro_team": "GB",
+            "ros_projected_points": 162.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4702555,
+            "name": "Jonah Coleman",
+            "position": "RB",
+            "pro_team": "DEN",
+            "ros_projected_points": 136.0,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4685247,
+            "name": "Braelon Allen",
+            "position": "RB",
+            "pro_team": "NYJ",
+            "ros_projected_points": 94.4,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4040761,
+            "name": "Devin Singletary",
+            "position": "RB",
+            "pro_team": "NYG",
+            "ros_projected_points": 88.8,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "team_id": 11,
+        "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+        "is_jason_x": false,
+        "score": 359.1,
+        "depth_score": 49.1,
+        "players": [
+          {
+            "player_id": 4242335,
+            "name": "Jonathan Taylor",
+            "position": "RB",
+            "pro_team": "IND",
+            "ros_projected_points": 160.6,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4430737,
+            "name": "Kyren Williams",
+            "position": "RB",
+            "pro_team": "LAR",
+            "ros_projected_points": 149.4,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4035538,
+            "name": "David Montgomery",
+            "position": "RB",
+            "pro_team": "HOU",
+            "ros_projected_points": 98.2,
+            "designation": "OUT",
+            "weight": 0.5
+          },
+          {
+            "player_id": 4575131,
+            "name": "Jacory Croskey-Merritt",
+            "position": "RB",
+            "pro_team": "WSH",
+            "ros_projected_points": 0.0,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "team_id": 9,
+        "team_name": "Nicole's Gnarly Team",
+        "is_jason_x": false,
+        "score": 321.7,
+        "depth_score": 43.5,
+        "players": [
+          {
+            "player_id": 4362238,
+            "name": "Chase Brown",
+            "position": "RB",
+            "pro_team": "CIN",
+            "ros_projected_points": 166.3,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4427366,
+            "name": "Breece Hall",
+            "position": "RB",
+            "pro_team": "NYJ",
+            "ros_projected_points": 111.9,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4429096,
+            "name": "Blake Corum",
+            "position": "RB",
+            "pro_team": "LAR",
+            "ros_projected_points": 87.1,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4568490,
+            "name": "RJ Harvey",
+            "position": "RB",
+            "pro_team": "DEN",
+            "ros_projected_points": 0.0,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "team_id": 12,
+        "team_name": "Commanders of Chaos",
+        "is_jason_x": false,
+        "score": 319.9,
+        "depth_score": 69.6,
+        "players": [
+          {
+            "player_id": 4697815,
+            "name": "Rachaad White",
+            "position": "RB",
+            "pro_team": "WSH",
+            "ros_projected_points": 131.7,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4569173,
+            "name": "Rhamondre Stevenson",
+            "position": "RB",
+            "pro_team": "NE",
+            "ros_projected_points": 118.6,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4685512,
+            "name": "Jadarian Price",
+            "position": "RB",
+            "pro_team": "SEA",
+            "ros_projected_points": 93.3,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4426385,
+            "name": "Zach Charbonnet",
+            "position": "RB",
+            "pro_team": "SEA",
+            "ros_projected_points": 91.8,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "team_id": 7,
+        "team_name": "Connor\u2019s Team",
+        "is_jason_x": false,
+        "score": 293.9,
+        "depth_score": 52.3,
+        "players": [
+          {
+            "player_id": 3043078,
+            "name": "Derrick Henry",
+            "position": "RB",
+            "pro_team": "BAL",
+            "ros_projected_points": 139.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4239996,
+            "name": "Travis Etienne Jr.",
+            "position": "RB",
+            "pro_team": "NO",
+            "ros_projected_points": 102.4,
+            "designation": "IR",
+            "weight": 1.0
+          },
+          {
+            "player_id": 4371733,
+            "name": "Kenny Gainwell",
+            "position": "RB",
+            "pro_team": "TB",
+            "ros_projected_points": 82.4,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4432710,
+            "name": "TreVeyon Henderson",
+            "position": "RB",
+            "pro_team": "NE",
+            "ros_projected_points": 44.6,
+            "designation": "OUT",
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "team_id": 2,
+        "team_name": "The Bye Week Boys",
+        "is_jason_x": false,
+        "score": 290.9,
+        "depth_score": 52.9,
+        "players": [
+          {
+            "player_id": 4361579,
+            "name": "Javonte Williams",
+            "position": "RB",
+            "pro_team": "DAL",
+            "ros_projected_points": 143.9,
+            "weight": 1.0
+          },
+          {
+            "player_id": 3054850,
+            "name": "Alvin Kamara",
+            "position": "RB",
+            "pro_team": "NO",
+            "ros_projected_points": 94.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4832955,
+            "name": "Emmett Johnson",
+            "position": "RB",
+            "pro_team": "KC",
+            "ros_projected_points": 75.4,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4362619,
+            "name": "Chris Rodriguez Jr.",
+            "position": "RB",
+            "pro_team": "JAX",
+            "ros_projected_points": 60.8,
+            "weight": 0.25
+          }
+        ]
+      }
+    ],
+    "WR": [
+      {
+        "rank": 1,
+        "team_id": 1,
+        "team_name": "Jason X",
+        "is_jason_x": true,
+        "score": 500.8,
+        "depth_score": 97.7,
+        "players": [
+          {
+            "player_id": 4430878,
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "pro_team": "SEA",
+            "ros_projected_points": 203.9,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4374302,
+            "name": "Amon-Ra St. Brown",
+            "position": "WR",
+            "pro_team": "DET",
+            "ros_projected_points": 199.2,
+            "designation": "QUESTIONABLE",
+            "weight": 1.0
+          },
+          {
+            "player_id": 4248528,
+            "name": "Christian Watson",
+            "position": "WR",
+            "pro_team": "GB",
+            "ros_projected_points": 147.3,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4567156,
+            "name": "Treylon Burks",
+            "position": "WR",
+            "pro_team": "WSH",
+            "ros_projected_points": 95.9,
+            "designation": "OUT",
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "team_id": 5,
+        "team_name": "Burrow's Bunch",
+        "is_jason_x": false,
+        "score": 473.0,
+        "depth_score": 97.9,
+        "players": [
+          {
+            "player_id": 4362628,
+            "name": "Ja'Marr Chase",
+            "position": "WR",
+            "pro_team": "CIN",
+            "ros_projected_points": 235.8,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4685278,
+            "name": "Luther Burden III",
+            "position": "WR",
+            "pro_team": "CHI",
+            "ros_projected_points": 139.4,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4432620,
+            "name": "Parker Washington",
+            "position": "WR",
+            "pro_team": "JAX",
+            "ros_projected_points": 135.7,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4426354,
+            "name": "George Pickens",
+            "position": "WR",
+            "pro_team": "DAL",
+            "ros_projected_points": 120.0,
+            "designation": "QUESTIONABLE",
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "team_id": 2,
+        "team_name": "The Bye Week Boys",
+        "is_jason_x": false,
+        "score": 451.8,
+        "depth_score": 90.2,
+        "players": [
+          {
+            "player_id": 4426515,
+            "name": "Puka Nacua",
+            "position": "WR",
+            "pro_team": "LAR",
+            "ros_projected_points": 217.7,
+            "weight": 1.0
+          },
+          {
+            "player_id": 3915416,
+            "name": "DJ Moore",
+            "position": "WR",
+            "pro_team": "BUF",
+            "ros_projected_points": 143.9,
+            "designation": "QUESTIONABLE",
+            "weight": 1.0
+          },
+          {
+            "player_id": 4695883,
+            "name": "Jalen Coker",
+            "position": "WR",
+            "pro_team": "CAR",
+            "ros_projected_points": 125.8,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4241478,
+            "name": "DeVonta Smith",
+            "position": "WR",
+            "pro_team": "PHI",
+            "ros_projected_points": 109.3,
+            "designation": "OUT",
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "team_id": 11,
+        "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+        "is_jason_x": false,
+        "score": 424.3,
+        "depth_score": 94.8,
+        "players": [
+          {
+            "player_id": 4239993,
+            "name": "Tee Higgins",
+            "position": "WR",
+            "pro_team": "CIN",
+            "ros_projected_points": 173.4,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4426502,
+            "name": "Drake London",
+            "position": "WR",
+            "pro_team": "ATL",
+            "ros_projected_points": 156.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 2976212,
+            "name": "Stefon Diggs",
+            "position": "WR",
+            "pro_team": "WSH",
+            "ros_projected_points": 129.6,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4047650,
+            "name": "DK Metcalf",
+            "position": "WR",
+            "pro_team": "PIT",
+            "ros_projected_points": 120.2,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "team_id": 4,
+        "team_name": "Cole-Train",
+        "is_jason_x": false,
+        "score": 404.8,
+        "depth_score": 79.2,
+        "players": [
+          {
+            "player_id": 4595348,
+            "name": "Malik Nabers",
+            "position": "WR",
+            "pro_team": "NYG",
+            "ros_projected_points": 181.2,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4258173,
+            "name": "Nico Collins",
+            "position": "WR",
+            "pro_team": "HOU",
+            "ros_projected_points": 144.4,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4429205,
+            "name": "Jordan Addison",
+            "position": "WR",
+            "pro_team": "MIN",
+            "ros_projected_points": 105.8,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4685261,
+            "name": "Germie Bernard",
+            "position": "WR",
+            "pro_team": "PIT",
+            "ros_projected_points": 105.2,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "team_id": 9,
+        "team_name": "Nicole's Gnarly Team",
+        "is_jason_x": false,
+        "score": 401.0,
+        "depth_score": 78.8,
+        "players": [
+          {
+            "player_id": 4241389,
+            "name": "CeeDee Lamb",
+            "position": "WR",
+            "pro_team": "DAL",
+            "ros_projected_points": 188.2,
+            "weight": 1.0
+          },
+          {
+            "player_id": 16737,
+            "name": "Mike Evans",
+            "position": "WR",
+            "pro_team": "SF",
+            "ros_projected_points": 134.1,
+            "designation": "OUT",
+            "weight": 1.0
+          },
+          {
+            "player_id": 4567750,
+            "name": "Emeka Egbuka",
+            "position": "WR",
+            "pro_team": "TB",
+            "ros_projected_points": 107.3,
+            "designation": "QUESTIONABLE",
+            "weight": 0.5
+          },
+          {
+            "player_id": 4431299,
+            "name": "Rome Odunze",
+            "position": "WR",
+            "pro_team": "CHI",
+            "ros_projected_points": 100.4,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "team_id": 12,
+        "team_name": "Commanders of Chaos",
+        "is_jason_x": false,
+        "score": 386.4,
+        "depth_score": 89.2,
+        "players": [
+          {
+            "player_id": 4685472,
+            "name": "Tetairoa McMillan",
+            "position": "WR",
+            "pro_team": "CAR",
+            "ros_projected_points": 154.6,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4428331,
+            "name": "Rashee Rice",
+            "position": "WR",
+            "pro_team": "KC",
+            "ros_projected_points": 142.6,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4429615,
+            "name": "Zay Flowers",
+            "position": "WR",
+            "pro_team": "BAL",
+            "ros_projected_points": 121.8,
+            "weight": 0.5
+          },
+          {
+            "player_id": 3916433,
+            "name": "Jakobi Meyers",
+            "position": "WR",
+            "pro_team": "JAX",
+            "ros_projected_points": 113.3,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "team_id": 8,
+        "team_name": "Giant Packer Fan",
+        "is_jason_x": false,
+        "score": 360.4,
+        "depth_score": 71.5,
+        "players": [
+          {
+            "player_id": 4262921,
+            "name": "Justin Jefferson",
+            "position": "WR",
+            "pro_team": "MIN",
+            "ros_projected_points": 178.3,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4832800,
+            "name": "Denzel Boston",
+            "position": "WR",
+            "pro_team": "CLE",
+            "ros_projected_points": 110.7,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4597500,
+            "name": "Adonai Mitchell",
+            "position": "WR",
+            "pro_team": "NYJ",
+            "ros_projected_points": 96.3,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4683062,
+            "name": "Xavier Worthy",
+            "position": "WR",
+            "pro_team": "KC",
+            "ros_projected_points": 93.3,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "team_id": 7,
+        "team_name": "Connor\u2019s Team",
+        "is_jason_x": false,
+        "score": 359.1,
+        "depth_score": 77.7,
+        "players": [
+          {
+            "player_id": 4701936,
+            "name": "Matthew Golden",
+            "position": "WR",
+            "pro_team": "GB",
+            "ros_projected_points": 162.0,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4871023,
+            "name": "Carnell Tate",
+            "position": "WR",
+            "pro_team": "TEN",
+            "ros_projected_points": 119.4,
+            "designation": "QUESTIONABLE",
+            "weight": 1.0
+          },
+          {
+            "player_id": 4047646,
+            "name": "A.J. Brown",
+            "position": "WR",
+            "pro_team": "NE",
+            "ros_projected_points": 111.1,
+            "designation": "OUT",
+            "weight": 0.5
+          },
+          {
+            "player_id": 4569559,
+            "name": "Devaughn Vele",
+            "position": "WR",
+            "pro_team": "NO",
+            "ros_projected_points": 88.4,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "team_id": 3,
+        "team_name": "Auto Draft Champion",
+        "is_jason_x": false,
+        "score": 353.2,
+        "depth_score": 63.4,
+        "players": [
+          {
+            "player_id": 4361370,
+            "name": "Chris Olave",
+            "position": "WR",
+            "pro_team": "NO",
+            "ros_projected_points": 152.8,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4360761,
+            "name": "Michael Wilson",
+            "position": "WR",
+            "pro_team": "ARI",
+            "ros_projected_points": 137.0,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4373678,
+            "name": "Khalil Shakir",
+            "position": "WR",
+            "pro_team": "BUF",
+            "ros_projected_points": 104.3,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4685415,
+            "name": "Travis Hunter",
+            "position": "WR",
+            "pro_team": "JAX",
+            "ros_projected_points": 45.2,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "team_id": 10,
+        "team_name": "Kelli's Top-Notch Team",
+        "is_jason_x": false,
+        "score": 305.4,
+        "depth_score": 60.8,
+        "players": [
+          {
+            "player_id": 4426388,
+            "name": "Jameson Williams",
+            "position": "WR",
+            "pro_team": "DET",
+            "ros_projected_points": 135.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4569618,
+            "name": "Garrett Wilson",
+            "position": "WR",
+            "pro_team": "NYJ",
+            "ros_projected_points": 109.6,
+            "designation": "OUT",
+            "weight": 1.0
+          },
+          {
+            "player_id": 4569587,
+            "name": "Wan'Dale Robinson",
+            "position": "WR",
+            "pro_team": "TEN",
+            "ros_projected_points": 85.6,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4432708,
+            "name": "Marvin Harrison Jr.",
+            "position": "WR",
+            "pro_team": "HOU",
+            "ros_projected_points": 72.0,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "team_id": 6,
+        "team_name": "From Puka with Love",
+        "is_jason_x": false,
+        "score": 289.9,
+        "depth_score": 74.5,
+        "players": [
+          {
+            "player_id": 4372016,
+            "name": "Jaylen Waddle",
+            "position": "WR",
+            "pro_team": "DEN",
+            "ros_projected_points": 108.8,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4612826,
+            "name": "Ladd McConkey",
+            "position": "WR",
+            "pro_team": "LAC",
+            "ros_projected_points": 106.6,
+            "weight": 1.0
+          },
+          {
+            "player_id": 3126486,
+            "name": "Deebo Samuel Sr.",
+            "position": "WR",
+            "pro_team": "SF",
+            "ros_projected_points": 99.6,
+            "designation": "OUT",
+            "weight": 0.5
+          },
+          {
+            "player_id": 5081432,
+            "name": "Antonio Williams",
+            "position": "WR",
+            "pro_team": "WSH",
+            "ros_projected_points": 99.0,
+            "weight": 0.25
+          }
+        ]
+      }
+    ],
+    "TE": [
+      {
+        "rank": 1,
+        "team_id": 4,
+        "team_name": "Cole-Train",
+        "is_jason_x": false,
+        "score": 169.8,
+        "depth_score": 17.9,
+        "players": [
+          {
+            "player_id": 3040151,
+            "name": "George Kittle",
+            "position": "TE",
+            "pro_team": "SF",
+            "ros_projected_points": 151.9,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4360248,
+            "name": "Kyle Pitts Sr.",
+            "position": "TE",
+            "pro_team": "ATL",
+            "ros_projected_points": 89.6,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "team_id": 1,
+        "team_name": "Jason X",
+        "is_jason_x": true,
+        "score": 161.9,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4432665,
+            "name": "Brock Bowers",
+            "position": "TE",
+            "pro_team": "LV",
+            "ros_projected_points": 161.9,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "team_id": 5,
+        "team_name": "Burrow's Bunch",
+        "is_jason_x": false,
+        "score": 152.5,
+        "depth_score": 19.8,
+        "players": [
+          {
+            "player_id": 4361050,
+            "name": "Isaiah Likely",
+            "position": "TE",
+            "pro_team": "NYG",
+            "ros_projected_points": 132.8,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4430539,
+            "name": "Brenton Strange",
+            "position": "TE",
+            "pro_team": "JAX",
+            "ros_projected_points": 98.8,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "team_id": 6,
+        "team_name": "From Puka with Love",
+        "is_jason_x": false,
+        "score": 145.8,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4361307,
+            "name": "Trey McBride",
+            "position": "TE",
+            "pro_team": "ARI",
+            "ros_projected_points": 145.8,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "team_id": 10,
+        "team_name": "Kelli's Top-Notch Team",
+        "is_jason_x": false,
+        "score": 134.9,
+        "depth_score": 14.8,
+        "players": [
+          {
+            "player_id": 4723086,
+            "name": "Colston Loveland",
+            "position": "TE",
+            "pro_team": "CHI",
+            "ros_projected_points": 120.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4576297,
+            "name": "AJ Barner",
+            "position": "TE",
+            "pro_team": "SEA",
+            "ros_projected_points": 73.8,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "team_id": 3,
+        "team_name": "Auto Draft Champion",
+        "is_jason_x": false,
+        "score": 134.8,
+        "depth_score": 20.4,
+        "players": [
+          {
+            "player_id": 4430027,
+            "name": "Sam LaPorta",
+            "position": "TE",
+            "pro_team": "DET",
+            "ros_projected_points": 114.5,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4431459,
+            "name": "Tyler Warren",
+            "position": "TE",
+            "pro_team": "IND",
+            "ros_projected_points": 101.8,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "team_id": 8,
+        "team_name": "Giant Packer Fan",
+        "is_jason_x": false,
+        "score": 128.8,
+        "depth_score": 20.7,
+        "players": [
+          {
+            "player_id": 15847,
+            "name": "Travis Kelce",
+            "position": "TE",
+            "pro_team": "KC",
+            "ros_projected_points": 108.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4036133,
+            "name": "T.J. Hockenson",
+            "position": "TE",
+            "pro_team": "MIN",
+            "ros_projected_points": 103.5,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "team_id": 12,
+        "team_name": "Commanders of Chaos",
+        "is_jason_x": false,
+        "score": 116.8,
+        "depth_score": 15.5,
+        "players": [
+          {
+            "player_id": 5083076,
+            "name": "Harold Fannin Jr.",
+            "position": "TE",
+            "pro_team": "CLE",
+            "ros_projected_points": 101.2,
+            "weight": 1.0
+          },
+          {
+            "player_id": 3121023,
+            "name": "Dallas Goedert",
+            "position": "TE",
+            "pro_team": "PHI",
+            "ros_projected_points": 77.7,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "team_id": 11,
+        "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+        "is_jason_x": false,
+        "score": 99.8,
+        "depth_score": 16.2,
+        "players": [
+          {
+            "player_id": 3046439,
+            "name": "Hunter Henry",
+            "position": "TE",
+            "pro_team": "NE",
+            "ros_projected_points": 83.5,
+            "designation": "QUESTIONABLE",
+            "weight": 1.0
+          },
+          {
+            "player_id": 3116164,
+            "name": "Mike Gesicki",
+            "position": "TE",
+            "pro_team": "CIN",
+            "ros_projected_points": 81.2,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "team_id": 9,
+        "team_name": "Nicole's Gnarly Team",
+        "is_jason_x": false,
+        "score": 97.9,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4572680,
+            "name": "Tucker Kraft",
+            "position": "TE",
+            "pro_team": "GB",
+            "ros_projected_points": 97.9,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "team_id": 2,
+        "team_name": "The Bye Week Boys",
+        "is_jason_x": false,
+        "score": 97.3,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4360635,
+            "name": "Chig Okonkwo",
+            "position": "TE",
+            "pro_team": "WSH",
+            "ros_projected_points": 97.3,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "team_id": 7,
+        "team_name": "Connor\u2019s Team",
+        "is_jason_x": false,
+        "score": 97.2,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4385690,
+            "name": "Dalton Kincaid",
+            "position": "TE",
+            "pro_team": "BUF",
+            "ros_projected_points": 97.2,
+            "weight": 1.0
+          }
+        ]
+      }
+    ],
+    "K": [
+      {
+        "rank": 1,
+        "team_id": 8,
+        "team_name": "Giant Packer Fan",
+        "is_jason_x": false,
+        "score": 114.0,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 3917232,
+            "name": "Tyler Bass",
+            "position": "K",
+            "pro_team": "BUF",
+            "ros_projected_points": 114.0,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "team_id": 4,
+        "team_name": "Cole-Train",
+        "is_jason_x": false,
+        "score": 102.3,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4567104,
+            "name": "Will Reichard",
+            "position": "K",
+            "pro_team": "MIN",
+            "ros_projected_points": 102.3,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "team_id": 10,
+        "team_name": "Kelli's Top-Notch Team",
+        "is_jason_x": false,
+        "score": 97.8,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 17372,
+            "name": "Chris Boswell",
+            "position": "K",
+            "pro_team": "PIT",
+            "ros_projected_points": 97.8,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "team_id": 12,
+        "team_name": "Commanders of Chaos",
+        "is_jason_x": false,
+        "score": 93.4,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 3953687,
+            "name": "Brandon Aubrey",
+            "position": "K",
+            "pro_team": "DAL",
+            "ros_projected_points": 93.4,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "team_id": 9,
+        "team_name": "Nicole's Gnarly Team",
+        "is_jason_x": false,
+        "score": 92.7,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4689936,
+            "name": "Jake Bates",
+            "position": "K",
+            "pro_team": "DET",
+            "ros_projected_points": 92.7,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "team_id": 2,
+        "team_name": "The Bye Week Boys",
+        "is_jason_x": false,
+        "score": 88.3,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 17427,
+            "name": "Cairo Santos",
+            "position": "K",
+            "pro_team": "CHI",
+            "ros_projected_points": 88.3,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "team_id": 11,
+        "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+        "is_jason_x": false,
+        "score": 88.0,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4249087,
+            "name": "Matt Gay",
+            "position": "K",
+            "pro_team": "LV",
+            "ros_projected_points": 88.0,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "team_id": 1,
+        "team_name": "Jason X",
+        "is_jason_x": true,
+        "score": 85.2,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 3150744,
+            "name": "Chase McLaughlin",
+            "position": "K",
+            "pro_team": "TB",
+            "ros_projected_points": 85.2,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "team_id": 7,
+        "team_name": "Connor\u2019s Team",
+        "is_jason_x": false,
+        "score": 85.0,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4686361,
+            "name": "Cam Little",
+            "position": "K",
+            "pro_team": "JAX",
+            "ros_projected_points": 85.0,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "team_id": 3,
+        "team_name": "Auto Draft Champion",
+        "is_jason_x": false,
+        "score": 83.8,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4362081,
+            "name": "Cameron Dicker",
+            "position": "K",
+            "pro_team": "LAC",
+            "ros_projected_points": 83.8,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "team_id": 6,
+        "team_name": "From Puka with Love",
+        "is_jason_x": false,
+        "score": 77.5,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 4360234,
+            "name": "Evan McPherson",
+            "position": "K",
+            "pro_team": "CIN",
+            "ros_projected_points": 77.5,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "team_id": 5,
+        "team_name": "Burrow's Bunch",
+        "is_jason_x": false,
+        "score": 68.5,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 10621,
+            "name": "Nick Folk",
+            "position": "K",
+            "pro_team": "ATL",
+            "ros_projected_points": 68.5,
+            "weight": 1.0
+          }
+        ]
+      }
+    ],
+    "D/ST": [
+      {
+        "rank": 1,
+        "team_id": 5,
+        "team_name": "Burrow's Bunch",
+        "is_jason_x": false,
+        "score": 80.4,
+        "depth_score": 9.5,
+        "players": [
+          {
+            "player_id": -16023,
+            "name": "Steelers D/ST",
+            "position": "D/ST",
+            "pro_team": "PIT",
+            "ros_projected_points": 71.0,
+            "weight": 1.0
+          },
+          {
+            "player_id": -16002,
+            "name": "Bills D/ST",
+            "position": "D/ST",
+            "pro_team": "BUF",
+            "ros_projected_points": 47.3,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "team_id": 1,
+        "team_name": "Jason X",
+        "is_jason_x": true,
+        "score": 71.4,
+        "depth_score": 8.0,
+        "players": [
+          {
+            "player_id": -16027,
+            "name": "Buccaneers D/ST",
+            "position": "D/ST",
+            "pro_team": "TB",
+            "ros_projected_points": 63.5,
+            "weight": 1.0
+          },
+          {
+            "player_id": -16008,
+            "name": "Lions D/ST",
+            "position": "D/ST",
+            "pro_team": "DET",
+            "ros_projected_points": 39.8,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "team_id": 3,
+        "team_name": "Auto Draft Champion",
+        "is_jason_x": false,
+        "score": 65.7,
+        "depth_score": 9.0,
+        "players": [
+          {
+            "player_id": -16034,
+            "name": "Texans D/ST",
+            "position": "D/ST",
+            "pro_team": "HOU",
+            "ros_projected_points": 56.8,
+            "weight": 1.0
+          },
+          {
+            "player_id": -16028,
+            "name": "Commanders D/ST",
+            "position": "D/ST",
+            "pro_team": "WSH",
+            "ros_projected_points": 44.8,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "team_id": 2,
+        "team_name": "The Bye Week Boys",
+        "is_jason_x": false,
+        "score": 64.8,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16026,
+            "name": "Seahawks D/ST",
+            "position": "D/ST",
+            "pro_team": "SEA",
+            "ros_projected_points": 64.8,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "team_id": 4,
+        "team_name": "Cole-Train",
+        "is_jason_x": false,
+        "score": 64.4,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16030,
+            "name": "Jaguars D/ST",
+            "position": "D/ST",
+            "pro_team": "JAX",
+            "ros_projected_points": 64.4,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "team_id": 8,
+        "team_name": "Giant Packer Fan",
+        "is_jason_x": false,
+        "score": 63.4,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16007,
+            "name": "Broncos D/ST",
+            "position": "D/ST",
+            "pro_team": "DEN",
+            "ros_projected_points": 63.4,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "team_id": 11,
+        "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+        "is_jason_x": false,
+        "score": 63.0,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16014,
+            "name": "Rams D/ST",
+            "position": "D/ST",
+            "pro_team": "LAR",
+            "ros_projected_points": 63.0,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "team_id": 10,
+        "team_name": "Kelli's Top-Notch Team",
+        "is_jason_x": false,
+        "score": 61.1,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16005,
+            "name": "Browns D/ST",
+            "position": "D/ST",
+            "pro_team": "CLE",
+            "ros_projected_points": 61.1,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "team_id": 7,
+        "team_name": "Connor\u2019s Team",
+        "is_jason_x": false,
+        "score": 54.2,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16016,
+            "name": "Vikings D/ST",
+            "position": "D/ST",
+            "pro_team": "MIN",
+            "ros_projected_points": 54.2,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "team_id": 6,
+        "team_name": "From Puka with Love",
+        "is_jason_x": false,
+        "score": 53.7,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16003,
+            "name": "Bears D/ST",
+            "position": "D/ST",
+            "pro_team": "CHI",
+            "ros_projected_points": 53.7,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "team_id": 9,
+        "team_name": "Nicole's Gnarly Team",
+        "is_jason_x": false,
+        "score": 52.0,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16033,
+            "name": "Ravens D/ST",
+            "position": "D/ST",
+            "pro_team": "BAL",
+            "ros_projected_points": 52.0,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "team_id": 12,
+        "team_name": "Commanders of Chaos",
+        "is_jason_x": false,
+        "score": 50.5,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16012,
+            "name": "Chiefs D/ST",
+            "position": "D/ST",
+            "pro_team": "KC",
+            "ros_projected_points": 50.5,
+            "weight": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  "trade_fits": {
+    "min_gain_points": 5.0,
+    "jason_lineup_value": 1260.7,
+    "jason_lineup_by_ros": [
+      {
+        "slot": "QB",
+        "player_id": 4426348,
+        "name": "Jayden Daniels",
+        "position": "QB",
+        "pro_team": "WSH",
+        "ros_projected_points": 223.4
+      },
+      {
+        "slot": "RB",
+        "player_id": 4882093,
+        "name": "Bhayshul Tuten",
+        "position": "RB",
+        "pro_team": "JAX",
+        "ros_projected_points": 168.8
+      },
+      {
+        "slot": "RB",
+        "player_id": 4711533,
+        "name": "Ollie Gordon II",
+        "position": "RB",
+        "pro_team": "MIA",
+        "ros_projected_points": 156.2
+      },
+      {
+        "slot": "WR",
+        "player_id": 4430878,
+        "name": "Jaxon Smith-Njigba",
+        "position": "WR",
+        "pro_team": "SEA",
+        "ros_projected_points": 203.9
+      },
+      {
+        "slot": "WR",
+        "player_id": 4374302,
+        "name": "Amon-Ra St. Brown",
+        "position": "WR",
+        "pro_team": "DET",
+        "ros_projected_points": 199.2,
+        "designation": "QUESTIONABLE"
+      },
+      {
+        "slot": "TE",
+        "player_id": 4432665,
+        "name": "Brock Bowers",
+        "position": "TE",
+        "pro_team": "LV",
+        "ros_projected_points": 161.9
+      },
+      {
+        "slot": "FLEX",
+        "player_id": 4248528,
+        "name": "Christian Watson",
+        "position": "WR",
+        "pro_team": "GB",
+        "ros_projected_points": 147.3
+      }
+    ],
+    "jason_spare": [
+      {
+        "player_id": 4696981,
+        "name": "Cam Skattebo",
+        "position": "RB",
+        "pro_team": "NYG",
+        "ros_projected_points": 120.2,
+        "designation": "DOUBTFUL"
+      },
+      {
+        "player_id": 4567156,
+        "name": "Treylon Burks",
+        "position": "WR",
+        "pro_team": "WSH",
+        "ros_projected_points": 95.9,
+        "designation": "OUT"
+      },
+      {
+        "player_id": 4869645,
+        "name": "Caleb Douglas",
+        "position": "WR",
+        "pro_team": "MIA",
+        "ros_projected_points": 92.0
+      },
+      {
+        "player_id": 4038815,
+        "name": "Rico Dowdle",
+        "position": "RB",
+        "pro_team": "PIT",
+        "ros_projected_points": 88.1
+      },
+      {
+        "player_id": 4686658,
+        "name": "Mike Washington Jr.",
+        "position": "RB",
+        "pro_team": "LV",
+        "ros_projected_points": 77.0
+      },
+      {
+        "player_id": 3043116,
+        "name": "Demarcus Robinson",
+        "position": "WR",
+        "pro_team": "SF",
+        "ros_projected_points": 26.4,
+        "designation": "IR-R"
+      },
+      {
+        "player_id": 4678008,
+        "name": "Jonathon Brooks",
+        "position": "RB",
+        "pro_team": "CAR",
+        "ros_projected_points": 0.0,
+        "designation": "IR"
+      }
+    ],
+    "partners": [
+      {
+        "team_id": 2,
+        "team_name": "The Bye Week Boys",
+        "mutual": true,
+        "mutual_trades_found": 2,
+        "best_trade": {
+          "shape": "2-for-1",
+          "jason_gives": [
+            {
+              "player_id": 4430878,
+              "name": "Jaxon Smith-Njigba",
+              "position": "WR",
+              "pro_team": "SEA",
+              "ros_projected_points": 203.9
+            },
+            {
+              "player_id": 4696981,
+              "name": "Cam Skattebo",
+              "position": "RB",
+              "pro_team": "NYG",
+              "ros_projected_points": 120.2,
+              "designation": "DOUBTFUL"
+            }
+          ],
+          "jason_gets": {
+            "player_id": 4426515,
+            "name": "Puka Nacua",
+            "position": "WR",
+            "pro_team": "LAR",
+            "ros_projected_points": 217.7
+          },
+          "jason_gain": 13.8,
+          "their_gain": 12.3,
+          "frees_jason_roster_spots": 1,
+          "their_roster_spots_needed": 1,
+          "their_bench_open": 0
+        },
+        "other_trades": [
+          {
+            "shape": "2-for-1",
+            "jason_gives": [
+              {
+                "player_id": 4374302,
+                "name": "Amon-Ra St. Brown",
+                "position": "WR",
+                "pro_team": "DET",
+                "ros_projected_points": 199.2,
+                "designation": "QUESTIONABLE"
+              },
+              {
+                "player_id": 4696981,
+                "name": "Cam Skattebo",
+                "position": "RB",
+                "pro_team": "NYG",
+                "ros_projected_points": 120.2,
+                "designation": "DOUBTFUL"
+              }
+            ],
+            "jason_gets": {
+              "player_id": 4426515,
+              "name": "Puka Nacua",
+              "position": "WR",
+              "pro_team": "LAR",
+              "ros_projected_points": 217.7
+            },
+            "jason_gain": 18.5,
+            "their_gain": 7.6,
+            "frees_jason_roster_spots": 1,
+            "their_roster_spots_needed": 1,
+            "their_bench_open": 0
+          }
+        ]
+      },
+      {
+        "team_id": 6,
+        "team_name": "From Puka with Love",
+        "mutual": true,
+        "mutual_trades_found": 2,
+        "best_trade": {
+          "shape": "2-for-1",
+          "jason_gives": [
+            {
+              "player_id": 4711533,
+              "name": "Ollie Gordon II",
+              "position": "RB",
+              "pro_team": "MIA",
+              "ros_projected_points": 156.2
+            },
+            {
+              "player_id": 4696981,
+              "name": "Cam Skattebo",
+              "position": "RB",
+              "pro_team": "NYG",
+              "ros_projected_points": 120.2,
+              "designation": "DOUBTFUL"
+            }
+          ],
+          "jason_gets": {
+            "player_id": 4259545,
+            "name": "D'Andre Swift",
+            "position": "RB",
+            "pro_team": "CHI",
+            "ros_projected_points": 163.9
+          },
+          "jason_gain": 7.7,
+          "their_gain": 13.0,
+          "frees_jason_roster_spots": 1,
+          "their_roster_spots_needed": 1,
+          "their_bench_open": 1
+        },
+        "other_trades": [
+          {
+            "shape": "2-for-1",
+            "jason_gives": [
+              {
+                "player_id": 4882093,
+                "name": "Bhayshul Tuten",
+                "position": "RB",
+                "pro_team": "JAX",
+                "ros_projected_points": 168.8
+              },
+              {
+                "player_id": 4696981,
+                "name": "Cam Skattebo",
+                "position": "RB",
+                "pro_team": "NYG",
+                "ros_projected_points": 120.2,
+                "designation": "DOUBTFUL"
+              }
+            ],
+            "jason_gets": {
+              "player_id": 4430807,
+              "name": "Bijan Robinson",
+              "position": "RB",
+              "pro_team": "ATL",
+              "ros_projected_points": 175.0
+            },
+            "jason_gain": 6.2,
+            "their_gain": 14.4,
+            "frees_jason_roster_spots": 1,
+            "their_roster_spots_needed": 1,
+            "their_bench_open": 1
+          }
+        ]
+      },
+      {
+        "team_id": 4,
+        "team_name": "Cole-Train",
+        "mutual": true,
+        "mutual_trades_found": 1,
+        "best_trade": {
+          "shape": "2-for-1",
+          "jason_gives": [
+            {
+              "player_id": 4711533,
+              "name": "Ollie Gordon II",
+              "position": "RB",
+              "pro_team": "MIA",
+              "ros_projected_points": 156.2
+            },
+            {
+              "player_id": 4696981,
+              "name": "Cam Skattebo",
+              "position": "RB",
+              "pro_team": "NYG",
+              "ros_projected_points": 120.2,
+              "designation": "DOUBTFUL"
+            }
+          ],
+          "jason_gets": {
+            "player_id": 4047365,
+            "name": "Josh Jacobs",
+            "position": "RB",
+            "pro_team": "GB",
+            "ros_projected_points": 162.1
+          },
+          "jason_gain": 6.0,
+          "their_gain": 8.5,
+          "frees_jason_roster_spots": 1,
+          "their_roster_spots_needed": 1,
+          "their_bench_open": 0
+        },
+        "other_trades": []
+      },
+      {
+        "team_id": 3,
+        "team_name": "Auto Draft Champion",
+        "mutual": false,
+        "mutual_trades_found": 0,
+        "best_trade": null,
+        "other_trades": []
+      },
+      {
+        "team_id": 5,
+        "team_name": "Burrow's Bunch",
+        "mutual": false,
+        "mutual_trades_found": 0,
+        "best_trade": null,
+        "other_trades": []
+      },
+      {
+        "team_id": 7,
+        "team_name": "Connor\u2019s Team",
+        "mutual": false,
+        "mutual_trades_found": 0,
+        "best_trade": null,
+        "other_trades": []
+      },
+      {
+        "team_id": 8,
+        "team_name": "Giant Packer Fan",
+        "mutual": false,
+        "mutual_trades_found": 0,
+        "best_trade": null,
+        "other_trades": []
+      },
+      {
+        "team_id": 9,
+        "team_name": "Nicole's Gnarly Team",
+        "mutual": false,
+        "mutual_trades_found": 0,
+        "best_trade": null,
+        "other_trades": []
+      },
+      {
+        "team_id": 10,
+        "team_name": "Kelli's Top-Notch Team",
+        "mutual": false,
+        "mutual_trades_found": 0,
+        "best_trade": null,
+        "other_trades": []
+      },
+      {
+        "team_id": 11,
+        "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+        "mutual": false,
+        "mutual_trades_found": 0,
+        "best_trade": null,
+        "other_trades": []
+      },
+      {
+        "team_id": 12,
+        "team_name": "Commanders of Chaos",
+        "mutual": false,
+        "mutual_trades_found": 0,
+        "best_trade": null,
+        "other_trades": []
+      }
+    ]
+  }
+}

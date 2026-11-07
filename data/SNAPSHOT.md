@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-07T00:29:21.250078+00:00` |
-| Fetched at (CT) | **Fri Nov 6, 6:29 PM CST** |
+| Fetched at (UTC) | `2026-11-07T01:33:54.578582+00:00` |
+| Fetched at (CT) | **Fri Nov 6, 7:33 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 858 |
 | Players in lookup index | 1056 |
-| Fetch duration | 8.24s |
+| Fetch duration | 7.58s |
 | ESPN calls | 32 |
-| Workflow run | `42318490384` |
+| Workflow run | `42324721635` |
 
 ## Freshness and completeness gates
 
@@ -127,36 +127,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 6, 12:15 PM CST`: 35 injury change(s) (3 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
+Compared with the snapshot taken `Fri Nov 6, 6:29 PM CST`: 1 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| **Cam Skattebo** | QUESTIONABLE | DOUBTFUL | Nov 8 | Jason X |
-| **Christian Watson** | QUESTIONABLE | - | - | Jason X |
-| **Treylon Burks** | QUESTIONABLE | OUT | Nov 12 | Jason X |
-| A.J. Brown | QUESTIONABLE | OUT | Nov 15 | Connor’s Team |
-| Alvin Kamara | QUESTIONABLE | - | - | The Bye Week Boys |
-| Anthony Gould | QUESTIONABLE | - | - | - |
-| Britain Covey | QUESTIONABLE | OUT | Nov 22 | - |
-| CJ Donaldson | QUESTIONABLE | OUT | Nov 15 | - |
-| Christian Kirk | QUESTIONABLE | OUT | Nov 15 | - |
-| Christian McCaffrey | QUESTIONABLE | - | - | Auto Draft Champion |
-| Dalton Kincaid | QUESTIONABLE | - | - | Connor’s Team |
-| DeVonta Smith | QUESTIONABLE | OUT | Nov 22 | The Bye Week Boys |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Terrance Ferguson | TE | LAR | The Bye Week Boys |
-
-**Claimed**
-
-| Name | Position | Pro Team | Added By |
-| --- | --- | --- | --- |
-| Brandon Aiyuk | WR | SF | The Bye Week Boys |
+| Velus Jones Jr. | QUESTIONABLE | - | - | - |
 
 ## Jason X
 
@@ -201,7 +178,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-85 players in this league's pool carry an NFL designation; 31 are on injured reserve (9 of them rostered). 5 affect Jason X.
+84 players in this league's pool carry an NFL designation; 31 are on injured reserve (9 of them rostered). 5 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -289,6 +266,7 @@ Scoring: `H2H_POINTS`. Starting lineup and bench: QB x1, RB x2, WR x2, TE x1, D/
 | `jason_x.json` | Jason X precomputed: starters, bench, IR, open spots, FAAB, bye pressure, injuries, upcoming opponents. |
 | `nfl_schedule.json` | Every NFL team's bye week and per-week opponent. Use instead of web research for byes and matchups. |
 | `top_available.json` | Top 25 available per position with acquisition cost, bye, injury and opponents. A trimmed available_players.json. |
+| `position_ranks.json` | Every team ranked 1-12 at each position on rest-of-season projections, plus trades that help both Jason X and the other team. |
 | `player_index.json` | **Name to owner lookup for every classified player. Use this to answer "who owns X?".** |
 | `ownership.json` | Positive ownership: player id to owner, plus availability. |
 | `rosters.json` | Every team's starters, bench, and IR. |
