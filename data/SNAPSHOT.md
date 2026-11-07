@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-07T12:15:11.906272+00:00` |
-| Fetched at (CT) | **Sat Nov 7, 6:15 AM CST** |
+| Fetched at (UTC) | `2026-11-07T18:12:45.562991+00:00` |
+| Fetched at (CT) | **Sat Nov 7, 12:12 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 858 |
 | Players in lookup index | 1056 |
-| Fetch duration | 7.62s |
+| Fetch duration | 7.46s |
 | ESPN calls | 32 |
-| Workflow run | `42371627023` |
+| Workflow run | `42400115019` |
 
 ## Freshness and completeness gates
 
@@ -127,13 +127,19 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sat Nov 7, 12:18 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sat Nov 7, 6:15 AM CST`: 1 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| Ronnie Rivers | IR-R | - | - | - |
 
 ## Jason X
 
 Record 5-3 · FAAB **$51** of $200 · waiver rank 10 · bench open **0** · IR open 0
 
-**This week:** vs Cole-Train — projected 140.81 to 137.49 (margin 3.32), win probability 0.52. Posture: **coin flip**. Close matchup: small edges decide it, so weigh projection and matchup carefully.
+**This week:** vs Cole-Train — projected 141.2 to 137.28 (margin 3.92), win probability 0.52. Posture: **coin flip**. Close matchup: small edges decide it, so weigh projection and matchup carefully.
 
 **FAAB plan** — $51 remaining, $10 reserve, **$41 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -151,7 +157,7 @@ No open bench spot: any add needs a drop.
 | QB | Jayden Daniels | QB | W7 | vs LAR | 20.67 | - |
 | RB | Bhayshul Tuten | RB | W7 | @ BAL | 15.91 | - |
 | RB | Ollie Gordon II | RB | W6 | vs DET | 17.03 | - |
-| WR | Jaxon Smith-Njigba | WR | W11 | vs ARI | 23.02 | - |
+| WR | Jaxon Smith-Njigba | WR | W11 | vs ARI | 23.41 | - |
 | WR | Christian Watson | WR | W11 | @ NE | 16.33 | - |
 | TE | Brock Bowers | TE | W13 | @ SF | 18.83 | - |
 | FLEX | Amon-Ra St. Brown | WR | W6 | @ MIA | 21.38 | QUESTIONABLE (back Nov 8) |
@@ -172,7 +178,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-84 players in this league's pool carry an NFL designation; 31 are on injured reserve (9 of them rostered). 5 affect Jason X.
+83 players in this league's pool carry an NFL designation; 30 are on injured reserve (9 of them rostered). 5 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
