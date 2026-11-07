@@ -62,6 +62,8 @@ JASON X ROSTER
 
 Read jason_x.json. Do not rebuild the roster. It gives starters, bench, injured_reserve, open_starting_slots, capacity, faab, waiver_rank, each player's bye_week, upcoming opponents, projected_points and ros_projected_points (ESPN's rest-of-season projection), bye_pressure for the next two weeks, and injury_designations. It also gives season_outlook (standings against the playoff cut line), bye_calendar (every remaining week's starter byes with the best bench cover), ir_outlook (what happens to the roster when each fantasy-IR player is activated) and, inside current_matchup, my_lineup_risk and opponent_lineup_risk. Use these as published; never recompute them.
 
+These strategy blocks are supplementary, like position_ranks.json. If one is missing, for example because the snapshot predates them, the report still runs and DATA STATUS does not fail for that reason alone. Render the affected part as `[BLOCK] UNAVAILABLE — not in this snapshot` and carry on without it: no SEASON tile standings without season_outlook, no BYE CALENDAR without bye_calendar, no IR ACTIVATION plan without ir_outlook, and no flagged-starter line in MATCHUP without the lineup-risk blocks. Never rebuild a missing block yourself. List every unavailable block once in Section 10's QA line.
+
 has_open_bench_spot is the authority on whether an add needs a drop. Use `DROP NONE — OPEN ROSTER SPOT` only when it is true; otherwise every add names and justifies a specific drop.
 
 OWNERSHIP GATE
@@ -381,7 +383,7 @@ W byes and opponents taken from nfl_schedule.json and the inline bye_week, never
 
 FINAL PASS
 
-PASS only if gates.data_status is PASS and the index, roster, ownership, acquisition, FAAB, injury, cross-section, Section 4A, Section 8, duplication and PDF gates pass. Bettor In Green partial or unavailable alone is nonfatal; a missing injuries.json, nfl_schedule.json, recent_form_rankings.json or position_ranks.json is nonfatal but must be stated. Otherwise FAIL with a brief material reason.
+PASS only if gates.data_status is PASS and the index, roster, ownership, acquisition, FAAB, injury, cross-section, Section 4A, Section 8, duplication and PDF gates pass. Bettor In Green partial or unavailable alone is nonfatal; a missing injuries.json, nfl_schedule.json, recent_form_rankings.json or position_ranks.json, or a missing jason_x.json strategy block (season_outlook, bye_calendar, ir_outlook, my_lineup_risk, opponent_lineup_risk), is nonfatal but must be stated. Gates that check one of those inputs pass when the input is absent and the report says so. Otherwise FAIL with a brief material reason.
 
 PDF OUTPUT
 
