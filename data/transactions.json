@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 959,
+    "total": 960,
     "ownership_changes": 300,
     "executed_ownership_changes": 243,
-    "lineup_only_moves": 467,
+    "lineup_only_moves": 468,
     "draft_picks": 192,
     "pending": 0,
     "failed": 30,
@@ -10564,6 +10564,46 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "03f7d7b6-c5cf-4af2-bc01-f4aa773f5806",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 9,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-08T04:23:28.679000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4372016,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "WR",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4612826,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "WR",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "7a7f4a06-af6c-46b4-8bc8-2e745441dab7",
       "type": "ROSTER",
@@ -45588,7 +45628,7 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 79,
+    "0": 80,
     "1": 238,
     "2": 56,
     "3": 68,
@@ -45597,10 +45637,10 @@
     "6": 111,
     "7": 119,
     "8": 123,
-    "9": 79
+    "9": 80
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 9,
-  "fetched_at": "2026-11-08T00:34:04.303897+00:00"
+  "fetched_at": "2026-11-08T06:18:22.269816+00:00"
 }

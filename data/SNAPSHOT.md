@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-08T00:34:12.358295+00:00` |
-| Fetched at (CT) | **Sat Nov 7, 6:34 PM CST** |
+| Fetched at (UTC) | `2026-11-08T06:18:29.559797+00:00` |
+| Fetched at (CT) | **Sun Nov 8, 12:18 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 858 |
 | Players in lookup index | 1056 |
-| Fetch duration | 8.05s |
+| Fetch duration | 7.29s |
 | ESPN calls | 32 |
-| Workflow run | `42430322084` |
+| Workflow run | `42454183452` |
 
 ## Freshness and completeness gates
 
@@ -125,24 +125,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sat Nov 7, 12:12 PM CST`: 15 injury change(s) (1 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| **Demarcus Robinson** | IR-R | - | - | Jason X |
-| Beaux Collins | IR-R | QUESTIONABLE | Nov 8 | - |
-| Brian Robinson Jr. | OUT | IR | Dec 13 | - |
-| Christian Kirk | OUT | IR | Dec 6 | - |
-| DJ Moore | QUESTIONABLE | - | - | The Bye Week Boys |
-| Demond Claiborne | QUESTIONABLE | OUT | Nov 15 | - |
-| Dyami Brown | OUT | IR | Dec 6 | - |
-| Jauan Jennings | QUESTIONABLE | OUT | Nov 15 | - |
-| Jordyn Tyson | IR-R | QUESTIONABLE | Nov 8 | The Bye Week Boys |
-| Joshua Palmer | QUESTIONABLE | OUT | Nov 15 | - |
-| Keon Coleman | QUESTIONABLE | - | - | - |
-| Kyler Murray | QUESTIONABLE | OUT | Nov 15 | Auto Draft Champion |
+Compared with the snapshot taken `Sat Nov 7, 6:34 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
@@ -237,7 +220,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-959 total | 243 executed ownership changes | 467 lineup-only moves | 192 draft picks | 0 pending
+960 total | 243 executed ownership changes | 468 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
