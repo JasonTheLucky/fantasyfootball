@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-07T18:12:45.562991+00:00` |
-| Fetched at (CT) | **Sat Nov 7, 12:12 PM CST** |
+| Fetched at (UTC) | `2026-11-08T00:34:12.358295+00:00` |
+| Fetched at (CT) | **Sat Nov 7, 6:34 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 858 |
 | Players in lookup index | 1056 |
-| Fetch duration | 7.46s |
+| Fetch duration | 8.05s |
 | ESPN calls | 32 |
-| Workflow run | `42400115019` |
+| Workflow run | `42430322084` |
 
 ## Freshness and completeness gates
 
@@ -79,21 +79,19 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (33)
+## Injury designations (31)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Amon-Ra St. Brown | WR | QUESTIONABLE | FLEX | yes |
 | Jason X | Cam Skattebo | RB | DOUBTFUL | BENCH | NO |
 | Jason X | Treylon Burks | WR | OUT | BENCH | NO |
-| Jason X | Demarcus Robinson | WR | INJURY_RESERVE | BENCH | NO |
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
-| The Bye Week Boys | DJ Moore | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
-| The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | BENCH | NO |
+| The Bye Week Boys | Jordyn Tyson | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Brandon Aiyuk | WR | OUT | BENCH | NO |
-| The Bye Week Boys | Jordyn Tyson | WR | INJURY_RESERVE | IR | NO |
-| Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
+| Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | George Pickens | WR | QUESTIONABLE | WR | yes |
@@ -127,13 +125,24 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sat Nov 7, 6:15 AM CST`: 1 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sat Nov 7, 12:12 PM CST`: 15 injury change(s) (1 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Ronnie Rivers | IR-R | - | - | - |
+| **Demarcus Robinson** | IR-R | - | - | Jason X |
+| Beaux Collins | IR-R | QUESTIONABLE | Nov 8 | - |
+| Brian Robinson Jr. | OUT | IR | Dec 13 | - |
+| Christian Kirk | OUT | IR | Dec 6 | - |
+| DJ Moore | QUESTIONABLE | - | - | The Bye Week Boys |
+| Demond Claiborne | QUESTIONABLE | OUT | Nov 15 | - |
+| Dyami Brown | OUT | IR | Dec 6 | - |
+| Jauan Jennings | QUESTIONABLE | OUT | Nov 15 | - |
+| Jordyn Tyson | IR-R | QUESTIONABLE | Nov 8 | The Bye Week Boys |
+| Joshua Palmer | QUESTIONABLE | OUT | Nov 15 | - |
+| Keon Coleman | QUESTIONABLE | - | - | - |
+| Kyler Murray | QUESTIONABLE | OUT | Nov 15 | Auto Draft Champion |
 
 ## Jason X
 
@@ -178,15 +187,13 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-83 players in this league's pool carry an NFL designation; 30 are on injured reserve (9 of them rostered). 5 affect Jason X.
+81 players in this league's pool carry an NFL designation; 28 are on injured reserve (7 of them rostered). 4 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
 | Player | Fantasy team | Expected return |
 | --- | --- | --- |
 | Alec Pierce | Connor’s Team | 2026-11-29 |
-| Demarcus Robinson | Jason X | 2026-11-08 |
-| Jeremiyah Love | The Bye Week Boys | 2026-12-06 |
 
 **In a fantasy IR slot without an NFL IR designation:** Jadarian Price (Commanders of Chaos), Romeo Doubs (From Puka with Love).
 
@@ -195,7 +202,6 @@ Jason X players with a designation:
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
 | Cam Skattebo | BENCH | DOUBTFUL | Nov 8 | Hamstring |
-| Demarcus Robinson **(NFL IR)** | BENCH | IR-R | Nov 8 | Ankle |
 | Treylon Burks | BENCH | OUT | Nov 12 | Foot |
 | Amon-Ra St. Brown | FLEX | QUESTIONABLE | Nov 8 | Ribs |
 | Jonathon Brooks **(NFL IR)** | IR | IR | Nov 8 | Abdomen |
@@ -231,7 +237,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-958 total | 243 executed ownership changes | 466 lineup-only moves | 192 draft picks | 0 pending
+959 total | 243 executed ownership changes | 467 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
