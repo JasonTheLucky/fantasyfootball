@@ -1,138 +1,26 @@
 {
   "usage": "What changed since the previous snapshot, which is the delta the daily report's 'last ~24 hours' framing needs. Compared against the player_index.json present when this run started, so the window is one snapshot interval (roughly six hours), not exactly 24 hours: previous_snapshot_at says when. injury_changes is the highest-value list and is sorted with Jason X players first; direction is new, changed or cleared. became_available are players dropped by a rival and now addable. became_rostered are players claimed, which is how a target you were considering disappears. changed_team is a trade or a waiver move between teams. comparable is false on a first run or when no previous snapshot was present, in which case every list is empty and absence of change must not be reported as stability.",
   "comparable": true,
-  "previous_snapshot_at": "2026-11-09T00:34:06.892600+00:00",
-  "previous_snapshot_at_ct": "Sun Nov 8, 6:34 PM CST",
+  "previous_snapshot_at": "2026-11-09T06:27:44.732880+00:00",
+  "previous_snapshot_at_ct": "Mon Nov 9, 12:27 AM CST",
   "previous_scoring_period_id": 9,
   "counts": {
-    "injury_changes": 7,
+    "injury_changes": 0,
     "jason_x_injury_changes": 0,
     "became_available": 0,
     "became_rostered": 0,
     "changed_team": 0,
-    "new_to_pool": 2
+    "new_to_pool": 0
   },
-  "injury_changes": [
-    {
-      "player_id": 4259305,
-      "name": "Bo Melton",
-      "position": "WR",
-      "pro_team": "GB",
-      "from": null,
-      "to": "QUESTIONABLE",
-      "expected_return": "Nov 15",
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "new"
-    },
-    {
-      "player_id": 4710714,
-      "name": "De'Zhaun Stribling",
-      "position": "WR",
-      "pro_team": "SF",
-      "from": "IR",
-      "to": null,
-      "expected_return": null,
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "cleared"
-    },
-    {
-      "player_id": 3924327,
-      "name": "Drew Lock",
-      "position": "QB",
-      "pro_team": "SEA",
-      "from": null,
-      "to": "QUESTIONABLE",
-      "expected_return": "Nov 15",
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "new"
-    },
-    {
-      "player_id": 4038941,
-      "name": "Justin Herbert",
-      "position": "QB",
-      "pro_team": "LAC",
-      "from": null,
-      "to": "QUESTIONABLE",
-      "expected_return": "Nov 16",
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "new"
-    },
-    {
-      "player_id": 4685278,
-      "name": "Luther Burden III",
-      "position": "WR",
-      "pro_team": "CHI",
-      "from": null,
-      "to": "QUESTIONABLE",
-      "expected_return": "Nov 22",
-      "on_nfl_ir": false,
-      "fantasy_status": "ROSTERED",
-      "fantasy_team": "Burrow's Bunch",
-      "is_jason_x": false,
-      "direction": "new"
-    },
-    {
-      "player_id": 4569173,
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "pro_team": "NE",
-      "from": "OUT",
-      "to": "QUESTIONABLE",
-      "expected_return": "Nov 15",
-      "on_nfl_ir": false,
-      "fantasy_status": "ROSTERED",
-      "fantasy_team": "Commanders of Chaos",
-      "is_jason_x": false,
-      "direction": "changed"
-    },
-    {
-      "player_id": 4360516,
-      "name": "Tyrone Tracy Jr.",
-      "position": "RB",
-      "pro_team": "NYG",
-      "from": "IR",
-      "to": null,
-      "expected_return": null,
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "cleared"
-    }
-  ],
+  "injury_changes": [],
   "jason_x_injury_changes": [],
   "became_available": [],
   "became_rostered": [],
   "changed_team": [],
-  "new_to_pool": [
-    {
-      "player_id": 4429020,
-      "name": "DJ Uiagalelei",
-      "position": "QB",
-      "pro_team": "LAC"
-    },
-    {
-      "player_id": 4699354,
-      "name": "Harrison Wallace III",
-      "position": "WR",
-      "pro_team": "ARI"
-    }
-  ],
+  "new_to_pool": [],
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 9,
-  "fetched_at": "2026-11-09T06:27:37.134825+00:00",
-  "fetched_at_ct_label": "Mon Nov 9, 12:27 AM CST"
+  "fetched_at": "2026-11-09T12:18:34.381144+00:00",
+  "fetched_at_ct_label": "Mon Nov 9, 6:18 AM CST"
 }

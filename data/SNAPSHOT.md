@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-09T06:27:44.732880+00:00` |
-| Fetched at (CT) | **Mon Nov 9, 12:27 AM CST** |
+| Fetched at (UTC) | `2026-11-09T12:18:44.025715+00:00` |
+| Fetched at (CT) | **Mon Nov 9, 6:18 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 863 |
 | Players in lookup index | 1061 |
-| Fetch duration | 7.6s |
+| Fetch duration | 9.64s |
 | ESPN calls | 32 |
-| Workflow run | `42573140966` |
+| Workflow run | `42615909325` |
 
 ## Freshness and completeness gates
 
@@ -129,19 +129,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sun Nov 8, 6:34 PM CST`: 7 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Bo Melton | - | QUESTIONABLE | Nov 15 | - |
-| De'Zhaun Stribling | IR | - | - | - |
-| Drew Lock | - | QUESTIONABLE | Nov 15 | - |
-| Justin Herbert | - | QUESTIONABLE | Nov 16 | - |
-| Luther Burden III | - | QUESTIONABLE | Nov 22 | Burrow's Bunch |
-| Rhamondre Stevenson | OUT | QUESTIONABLE | Nov 15 | Commanders of Chaos |
-| Tyrone Tracy Jr. | IR | - | - | - |
+Compared with the snapshot taken `Mon Nov 9, 12:27 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
