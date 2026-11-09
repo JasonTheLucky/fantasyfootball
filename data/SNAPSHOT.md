@@ -4,18 +4,18 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-09T00:34:06.892600+00:00` |
-| Fetched at (CT) | **Sun Nov 8, 6:34 PM CST** |
+| Fetched at (UTC) | `2026-11-09T06:27:44.732880+00:00` |
+| Fetched at (CT) | **Mon Nov 9, 12:27 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
-| Available players (FA + waivers) | 861 |
-| Players in lookup index | 1059 |
-| Fetch duration | 8.63s |
+| Available players (FA + waivers) | 863 |
+| Players in lookup index | 1061 |
+| Fetch duration | 7.6s |
 | ESPN calls | 32 |
-| Workflow run | `42540862620` |
+| Workflow run | `42573140966` |
 
 ## Freshness and completeness gates
 
@@ -36,12 +36,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 67.08 | Commanders of Chaos | 94.72 | NO |
-| Connor’s Team | 84.34 | From Puka with Love | 104.4 | NO |
+| Kelli's Top-Notch Team | 76.48 | Commanders of Chaos | 94.72 | NO |
+| Connor’s Team | 94.94 | From Puka with Love | 120.5 | NO |
 | 🔥Certified Dumpster Fire 🔥 | 121.06 | Auto Draft Champion | 118.8 | NO |
-| The Bye Week Boys | 113.18 | Nicole's Gnarly Team | 64.6 | NO |
-| Jason X | 125.96 | Cole-Train | 77.1 | NO |
-| Burrow's Bunch | 137.34 | Giant Packer Fan | 52.5 | NO |
+| The Bye Week Boys | 122.18 | Nicole's Gnarly Team | 102.26 | NO |
+| Jason X | 135.96 | Cole-Train | 77.1 | NO |
+| Burrow's Bunch | 160.04 | Giant Packer Fan | 81.0 | NO |
 
 ## Rosters
 
@@ -79,7 +79,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (34)
+## Injury designations (35)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -94,6 +94,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Cole-Train | Josh Jacobs | RB | QUESTIONABLE | RB | yes |
 | Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
+| Burrow's Bunch | Luther Burden III | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | George Pickens | WR | OUT | BENCH | NO |
 | From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
@@ -115,43 +116,38 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Rhamondre Stevenson | RB | OUT | RB | yes |
+| Commanders of Chaos | Rhamondre Stevenson | RB | QUESTIONABLE | RB | yes |
 | Commanders of Chaos | Kyle Monangai | RB | OUT | BENCH | NO |
 
 ## Available player pool by position
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 17 | 43 | 110 | 188 | 186 | 317 | 861 |
+| 17 | 43 | 111 | 188 | 186 | 318 | 863 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sun Nov 8, 12:12 PM CST`: 35 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sun Nov 8, 6:34 PM CST`: 7 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| A.J. Brown | OUT | INACTIVE | Nov 15 | Connor’s Team |
-| Aidan O'Connell | - | INACTIVE | Nov 15 | - |
-| Bam Knight | OUT | INACTIVE | Nov 15 | - |
-| Behren Morton | - | INACTIVE | Nov 15 | - |
-| Brenen Thompson | DOUBTFUL | INACTIVE | Nov 16 | - |
-| Cade Stover | - | INACTIVE | Nov 15 | - |
-| Case Keenum | - | INACTIVE | Nov 22 | - |
-| David Montgomery | OUT | INACTIVE | Nov 15 | 🔥Certified Dumpster Fire 🔥 |
-| Deebo Samuel Sr. | OUT | INACTIVE | Nov 15 | From Puka with Love |
-| Dont'e Thornton Jr. | - | INACTIVE | Nov 15 | - |
-| Emeka Egbuka | QUESTIONABLE | - | - | Nicole's Gnarly Team |
-| Hunter Henry | QUESTIONABLE | - | - | 🔥Certified Dumpster Fire 🔥 |
+| Bo Melton | - | QUESTIONABLE | Nov 15 | - |
+| De'Zhaun Stribling | IR | - | - | - |
+| Drew Lock | - | QUESTIONABLE | Nov 15 | - |
+| Justin Herbert | - | QUESTIONABLE | Nov 16 | - |
+| Luther Burden III | - | QUESTIONABLE | Nov 22 | Burrow's Bunch |
+| Rhamondre Stevenson | OUT | QUESTIONABLE | Nov 15 | Commanders of Chaos |
+| Tyrone Tracy Jr. | IR | - | - | - |
 
 ## Jason X
 
 Record 5-3 · FAAB **$51** of $200 · waiver rank 10 · bench open **0** · IR open 0
 
-**This week:** vs Cole-Train — projected 135.81 to 88.94 (margin 46.87), win probability 0.99. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Cole-Train — projected 135.96 to 87.84 (margin 48.12), win probability 0.99. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $51 remaining, $10 reserve, **$41 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -190,7 +186,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-105 players in this league's pool carry an NFL designation; 27 are on injured reserve (7 of them rostered). 3 affect Jason X.
+107 players in this league's pool carry an NFL designation; 25 are on injured reserve (7 of them rostered). 3 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -216,7 +212,7 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9]. Ranked 212 of 212 expected.
 | --- | --- | --- | --- | --- |
 | QB | 24 | 51 | 24 | yes |
 | RB | 60 | 134 | 60 | yes |
-| WR | 60 | 195 | 60 | yes |
+| WR | 60 | 196 | 60 | yes |
 | TE | 24 | 124 | 24 | yes |
 | K | 24 | 34 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
@@ -239,7 +235,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-964 total | 244 executed ownership changes | 471 lineup-only moves | 192 draft picks | 0 pending
+966 total | 244 executed ownership changes | 473 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
