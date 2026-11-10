@@ -1,18 +1,89 @@
 {
   "usage": "What changed since the previous snapshot, which is the delta the daily report's 'last ~24 hours' framing needs. Compared against the player_index.json present when this run started, so the window is one snapshot interval (roughly six hours), not exactly 24 hours: previous_snapshot_at says when. injury_changes is the highest-value list and is sorted with Jason X players first; direction is new, changed or cleared. became_available are players dropped by a rival and now addable. became_rostered are players claimed, which is how a target you were considering disappears. changed_team is a trade or a waiver move between teams. comparable is false on a first run or when no previous snapshot was present, in which case every list is empty and absence of change must not be reported as stability.",
   "comparable": true,
-  "previous_snapshot_at": "2026-11-10T06:20:02.106880+00:00",
-  "previous_snapshot_at_ct": "Tue Nov 10, 12:20 AM CST",
-  "previous_scoring_period_id": 9,
+  "previous_snapshot_at": "2026-11-10T12:16:56.366705+00:00",
+  "previous_snapshot_at_ct": "Tue Nov 10, 6:16 AM CST",
+  "previous_scoring_period_id": 10,
   "counts": {
-    "injury_changes": 0,
+    "injury_changes": 5,
     "jason_x_injury_changes": 0,
     "became_available": 0,
     "became_rostered": 0,
     "changed_team": 0,
     "new_to_pool": 0
   },
-  "injury_changes": [],
+  "injury_changes": [
+    {
+      "player_id": 3886598,
+      "name": "Jauan Jennings",
+      "position": "WR",
+      "pro_team": "MIN",
+      "from": "INACTIVE",
+      "to": "QUESTIONABLE",
+      "expected_return": "Nov 15",
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "changed"
+    },
+    {
+      "player_id": 4569382,
+      "name": "Jordan Whittington",
+      "position": "WR",
+      "pro_team": "LAR",
+      "from": null,
+      "to": "QUESTIONABLE",
+      "expected_return": "Nov 15",
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "new"
+    },
+    {
+      "player_id": 3917315,
+      "name": "Kyler Murray",
+      "position": "QB",
+      "pro_team": "MIN",
+      "from": "INACTIVE",
+      "to": "QUESTIONABLE",
+      "expected_return": "Nov 15",
+      "on_nfl_ir": false,
+      "fantasy_status": "ROSTERED",
+      "fantasy_team": "Auto Draft Champion",
+      "is_jason_x": false,
+      "direction": "changed"
+    },
+    {
+      "player_id": 4569173,
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "pro_team": "NE",
+      "from": "QUESTIONABLE",
+      "to": "DOUBTFUL",
+      "expected_return": "Nov 15",
+      "on_nfl_ir": false,
+      "fantasy_status": "ROSTERED",
+      "fantasy_team": "Commanders of Chaos",
+      "is_jason_x": false,
+      "direction": "changed"
+    },
+    {
+      "player_id": 4683153,
+      "name": "Skyler Bell",
+      "position": "WR",
+      "pro_team": "BUF",
+      "from": "INACTIVE",
+      "to": null,
+      "expected_return": null,
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "cleared"
+    }
+  ],
   "jason_x_injury_changes": [],
   "became_available": [],
   "became_rostered": [],
@@ -21,6 +92,6 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 10,
-  "fetched_at": "2026-11-10T12:16:47.353976+00:00",
-  "fetched_at_ct_label": "Tue Nov 10, 6:16 AM CST"
+  "fetched_at": "2026-11-10T18:12:39.640838+00:00",
+  "fetched_at_ct_label": "Tue Nov 10, 12:12 PM CST"
 }
