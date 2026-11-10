@@ -2,8 +2,8 @@
   "usage": "Section 8 of the daily report, precomputed. Every team is ranked 1 to team_count at QB, RB, WR, TE, K and D/ST, where 1 is the strongest room; each rank is used exactly once per position. A room's score is the weighted sum of its players' ESPN rest-of-season projections: weight 1.0 for each starting slot, 0.5 and 0.25 for the third and fourth RB or WR (FLEX plus bye and injury cover), 0.2 for a backup QB, TE or D/ST, and nothing for a second kicker. Ties break on depth_score, then team id. The projection already prices in byes and expected missed time, so an injured star counts for what ESPN expects him to add from here. matrix is one row per team in seed order with the ranks, FAAB remaining, waiver rank and the strongest and weakest positions (top and bottom quarter of the league). by_position shows the scores and which players counted. trade_fits tests every 1-for-1 trade and every 2-for-1 trade (two Jason X players for one of theirs) against each other team, scoring each by how much it changes both sides' best QB/RB/RB/WR/WR/TE/FLEX lineup on rest-of-season projection. A trade is listed only when both sides gain at least min_gain_points, and in a 2-for-1 both players sent must start for the other team. A 2-for-1 frees a Jason X roster spot and costs the other team one: their_bench_open says whether they have it or must drop someone. best_trade is the one whose smaller gain is largest, so it is the most clearly good for both teams; partners are sorted by that, and a partner with mutual false has no trade that helps both. K and D/ST are streamed rather than traded, so they are left out.",
   "league_id": "1787259003",
   "season": 2026,
-  "scoring_period_id": 9,
-  "fetched_at": "2026-11-10T06:19:54.785446+00:00",
+  "scoring_period_id": 10,
+  "fetched_at": "2026-11-10T12:16:47.353976+00:00",
   "complete": true,
   "team_count": 12,
   "positions": [
@@ -49,9 +49,9 @@
       "team_name": "Burrow's Bunch",
       "is_jason_x": false,
       "playoff_seed": 1,
-      "record": "6-2",
+      "record": "7-2",
       "faab_remaining": 144,
-      "waiver_rank": 9,
+      "waiver_rank": 12,
       "ranks": {
         "QB": 2,
         "RB": 2,
@@ -72,36 +72,13 @@
       ]
     },
     {
-      "team_id": 8,
-      "team_name": "Giant Packer Fan",
-      "is_jason_x": false,
-      "playoff_seed": 2,
-      "record": "6-2",
-      "faab_remaining": 195,
-      "waiver_rank": 6,
-      "ranks": {
-        "QB": 1,
-        "RB": 1,
-        "WR": 8,
-        "TE": 4,
-        "K": 2,
-        "D/ST": 7
-      },
-      "strongest": [
-        "QB",
-        "RB",
-        "K"
-      ],
-      "weakest": []
-    },
-    {
       "team_id": 1,
       "team_name": "Jason X",
       "is_jason_x": true,
-      "playoff_seed": 3,
-      "record": "5-3",
+      "playoff_seed": 2,
+      "record": "6-3",
       "faab_remaining": 51,
-      "waiver_rank": 10,
+      "waiver_rank": 11,
       "ranks": {
         "QB": 7,
         "RB": 5,
@@ -118,35 +95,36 @@
       "weakest": []
     },
     {
-      "team_id": 3,
-      "team_name": "Auto Draft Champion",
+      "team_id": 8,
+      "team_name": "Giant Packer Fan",
       "is_jason_x": false,
-      "playoff_seed": 4,
-      "record": "5-3",
-      "faab_remaining": 198,
-      "waiver_rank": 5,
+      "playoff_seed": 3,
+      "record": "6-3",
+      "faab_remaining": 195,
+      "waiver_rank": 10,
       "ranks": {
-        "QB": 11,
-        "RB": 4,
-        "WR": 12,
-        "TE": 7,
-        "K": 9,
-        "D/ST": 4
+        "QB": 1,
+        "RB": 1,
+        "WR": 8,
+        "TE": 4,
+        "K": 2,
+        "D/ST": 7
       },
-      "strongest": [],
-      "weakest": [
+      "strongest": [
         "QB",
-        "WR"
-      ]
+        "RB",
+        "K"
+      ],
+      "weakest": []
     },
     {
       "team_id": 11,
       "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
       "is_jason_x": false,
-      "playoff_seed": 5,
-      "record": "4-4",
+      "playoff_seed": 4,
+      "record": "5-4",
       "faab_remaining": 171,
-      "waiver_rank": 4,
+      "waiver_rank": 9,
       "ranks": {
         "QB": 5,
         "RB": 7,
@@ -165,11 +143,33 @@
       ]
     },
     {
+      "team_id": 3,
+      "team_name": "Auto Draft Champion",
+      "is_jason_x": false,
+      "playoff_seed": 5,
+      "record": "5-4",
+      "faab_remaining": 198,
+      "waiver_rank": 8,
+      "ranks": {
+        "QB": 11,
+        "RB": 4,
+        "WR": 12,
+        "TE": 7,
+        "K": 9,
+        "D/ST": 4
+      },
+      "strongest": [],
+      "weakest": [
+        "QB",
+        "WR"
+      ]
+    },
+    {
       "team_id": 6,
       "team_name": "From Puka with Love",
       "is_jason_x": false,
       "playoff_seed": 6,
-      "record": "4-4",
+      "record": "5-4",
       "faab_remaining": 125,
       "waiver_rank": 7,
       "ranks": {
@@ -188,35 +188,13 @@
       ]
     },
     {
-      "team_id": 9,
-      "team_name": "Nicole's Gnarly Team",
-      "is_jason_x": false,
-      "playoff_seed": 7,
-      "record": "4-4",
-      "faab_remaining": 200,
-      "waiver_rank": 3,
-      "ranks": {
-        "QB": 4,
-        "RB": 8,
-        "WR": 5,
-        "TE": 12,
-        "K": 5,
-        "D/ST": 12
-      },
-      "strongest": [],
-      "weakest": [
-        "TE",
-        "D/ST"
-      ]
-    },
-    {
       "team_id": 2,
       "team_name": "The Bye Week Boys",
       "is_jason_x": false,
-      "playoff_seed": 8,
-      "record": "3-5",
+      "playoff_seed": 7,
+      "record": "4-5",
       "faab_remaining": 100,
-      "waiver_rank": 11,
+      "waiver_rank": 6,
       "ranks": {
         "QB": 6,
         "RB": 12,
@@ -233,13 +211,35 @@
       ]
     },
     {
+      "team_id": 9,
+      "team_name": "Nicole's Gnarly Team",
+      "is_jason_x": false,
+      "playoff_seed": 8,
+      "record": "4-5",
+      "faab_remaining": 200,
+      "waiver_rank": 5,
+      "ranks": {
+        "QB": 4,
+        "RB": 8,
+        "WR": 5,
+        "TE": 12,
+        "K": 5,
+        "D/ST": 12
+      },
+      "strongest": [],
+      "weakest": [
+        "TE",
+        "D/ST"
+      ]
+    },
+    {
       "team_id": 10,
       "team_name": "Kelli's Top-Notch Team",
       "is_jason_x": false,
       "playoff_seed": 9,
-      "record": "3-5",
+      "record": "4-5",
       "faab_remaining": 198,
-      "waiver_rank": 2,
+      "waiver_rank": 4,
       "ranks": {
         "QB": 3,
         "RB": 3,
@@ -263,9 +263,9 @@
       "team_name": "Connor\u2019s Team",
       "is_jason_x": false,
       "playoff_seed": 10,
-      "record": "3-5",
+      "record": "3-6",
       "faab_remaining": 179,
-      "waiver_rank": 12,
+      "waiver_rank": 3,
       "ranks": {
         "QB": 8,
         "RB": 10,
@@ -284,9 +284,9 @@
       "team_name": "Commanders of Chaos",
       "is_jason_x": false,
       "playoff_seed": 11,
-      "record": "3-5",
+      "record": "3-6",
       "faab_remaining": 200,
-      "waiver_rank": 1,
+      "waiver_rank": 2,
       "ranks": {
         "QB": 9,
         "RB": 11,
@@ -305,9 +305,9 @@
       "team_name": "Cole-Train",
       "is_jason_x": false,
       "playoff_seed": 12,
-      "record": "2-6",
+      "record": "2-7",
       "faab_remaining": 65,
-      "waiver_rank": 8,
+      "waiver_rank": 1,
       "ranks": {
         "QB": 10,
         "RB": 9,

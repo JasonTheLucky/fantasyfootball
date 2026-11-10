@@ -4,18 +4,18 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-10T06:20:02.106880+00:00` |
-| Fetched at (CT) | **Tue Nov 10, 12:20 AM CST** |
+| Fetched at (UTC) | `2026-11-10T12:16:56.366705+00:00` |
+| Fetched at (CT) | **Tue Nov 10, 6:16 AM CST** |
 | DATA STATUS | **PASS** |
-| Scoring period (week) | **9** |
+| Scoring period (week) | **10** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 198 |
 | Available players (FA + waivers) | 863 |
 | Players in lookup index | 1061 |
-| Fetch duration | 7.32s |
-| ESPN calls | 32 |
-| Workflow run | `42767771375` |
+| Fetch duration | 9.01s |
+| ESPN calls | 35 |
+| Workflow run | `42814375898` |
 
 ## Freshness and completeness gates
 
@@ -32,16 +32,16 @@
 | NFL injury report retrieved | yes |
 | NFL schedule and byes retrieved | yes |
 
-## Week 9 matchups
+## Week 10 matchups
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 95.18 | Commanders of Chaos | 94.72 | NO |
-| Connor’s Team | 106.74 | From Puka with Love | 120.5 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 121.06 | Auto Draft Champion | 118.8 | NO |
-| The Bye Week Boys | 128.78 | Nicole's Gnarly Team | 102.26 | NO |
-| Jason X | 135.96 | Cole-Train | 86.1 | NO |
-| Burrow's Bunch | 175.04 | Giant Packer Fan | 122.96 | NO |
+| Connor’s Team | 0.0 | Kelli's Top-Notch Team | 0.0 | NO |
+| Commanders of Chaos | 0.0 | 🔥Certified Dumpster Fire 🔥 | 0.0 | NO |
+| From Puka with Love | 0.0 | The Bye Week Boys | 0.0 | NO |
+| Auto Draft Champion | 0.0 | Jason X | 0.0 | NO |
+| Nicole's Gnarly Team | 0.0 | Burrow's Bunch | 0.0 | NO |
+| Cole-Train | 0.0 | Giant Packer Fan | 0.0 | NO |
 
 ## Rosters
 
@@ -64,18 +64,18 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 3 |
-| Commanders of Chaos | **$200** | $0 | 100.0% | 1 |
-| Auto Draft Champion | **$198** | $2 | 99.0% | 5 |
-| Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 2 |
-| Giant Packer Fan | **$195** | $5 | 97.5% | 6 |
-| Connor’s Team | **$179** | $21 | 89.5% | 12 |
-| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 4 |
-| Burrow's Bunch | **$144** | $56 | 72.0% | 9 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 5 |
+| Commanders of Chaos | **$200** | $0 | 100.0% | 2 |
+| Auto Draft Champion | **$198** | $2 | 99.0% | 8 |
+| Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 4 |
+| Giant Packer Fan | **$195** | $5 | 97.5% | 10 |
+| Connor’s Team | **$179** | $21 | 89.5% | 3 |
+| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 9 |
+| Burrow's Bunch | **$144** | $56 | 72.0% | 12 |
 | From Puka with Love | **$125** | $75 | 62.5% | 7 |
-| The Bye Week Boys | **$100** | $100 | 50.0% | 11 |
-| Cole-Train | **$65** | $135 | 32.5% | 8 |
-| Jason X | **$51** | $149 | 25.5% | 10 |
+| The Bye Week Boys | **$100** | $100 | 50.0% | 6 |
+| Cole-Train | **$65** | $135 | 32.5% | 1 |
+| Jason X | **$51** | $149 | 25.5% | 11 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
@@ -87,21 +87,21 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Treylon Burks | WR | OUT | BENCH | NO |
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | Chig Okonkwo | TE | QUESTIONABLE | TE | yes |
-| The Bye Week Boys | Puka Nacua | WR | DOUBTFUL | WR | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
+| The Bye Week Boys | Puka Nacua | WR | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Brandon Aiyuk | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | OUT | WR | yes |
 | Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Cole-Train | Josh Jacobs | RB | OUT | RB | yes |
+| Cole-Train | Josh Jacobs | RB | OUT | BENCH | NO |
 | Cole-Train | Malik Willis | QB | QUESTIONABLE | BENCH | NO |
 | Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | Luther Burden III | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | George Pickens | WR | OUT | BENCH | NO |
-| From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | WR | yes |
+| From Puka with Love | Deebo Samuel Sr. | WR | OUT | FLEX | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Deebo Samuel Sr. | WR | OUT | BENCH | NO |
+| From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | OUT | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
@@ -132,13 +132,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Mon Nov 9, 6:29 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Tue Nov 10, 12:20 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
-Record 5-3 · FAAB **$51** of $200 · waiver rank 10 · bench open **0** · IR open 0
+Record 6-3 · FAAB **$51** of $200 · waiver rank 11 · bench open **0** · IR open 0
 
-**This week:** vs Cole-Train — projected 135.96 to 86.1 (margin 49.86), win probability 1.0. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Auto Draft Champion — projected 136.97 to 109.72 (margin 27.25), win probability 0.63. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $51 remaining, $10 reserve, **$41 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -153,23 +153,24 @@ No open bench spot: any add needs a drop.
 
 | Slot | Player | Pos | Bye | Next | Proj | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| QB | Jayden Daniels | QB | W7 | vs LAR | 20.69 | - |
-| RB | Bhayshul Tuten | RB | W7 | @ BAL | 16.06 | - |
-| RB | Ollie Gordon II | RB | W6 | vs DET | 17.09 | - |
-| WR | Jaxon Smith-Njigba | WR | W11 | vs ARI | 23.41 | - |
-| WR | Christian Watson | WR | W11 | @ NE | 16.36 | - |
-| TE | Brock Bowers | TE | W13 | @ SF | 18.82 | - |
-| FLEX | Amon-Ra St. Brown | WR | W6 | @ MIA | 21.38 | - |
-| K | Chase McLaughlin | K | W10 | @ CHI | 8.78 | - |
-| D/ST | Lions D/ST | D/ST | W6 | @ MIA | 5.89 | - |
+| QB | Jayden Daniels | QB | W7 | @ NYG | 19.39 | - |
+| RB | Bhayshul Tuten | RB | W7 | @ TEN | 18.05 | - |
+| RB | Ollie Gordon II | RB | W6 | @ IND | 16.87 | - |
+| WR | Jaxon Smith-Njigba | WR | W11 | @ LV | 23.39 | - |
+| WR | Christian Watson | WR | W11 | vs MIN | 15.69 | - |
+| TE | Brock Bowers | TE | W13 | vs SEA | 17.26 | - |
+| FLEX | Amon-Ra St. Brown | WR | W6 | vs NE | 21.17 | - |
+| K | Chase McLaughlin | K | W10 | BYE | 0.0 | - |
+| D/ST | Lions D/ST | D/ST | W6 | vs NE | 5.16 | - |
 
 **Week 10 bye pressure:** Chase McLaughlin (K).
+
+**Week 11 bye pressure:** Jaxon Smith-Njigba (WR), Christian Watson (WR).
 
 ## Upcoming NFL byes
 
 | Week | Teams on bye |
 | --- | --- |
-| 9 | PIT, TEN |
 | 10 | CHI, DEN, PHI, TB |
 | 11 | ATL, CLE, GB, LAR, NE, SEA |
 | 13 | BAL, IND, LV, NYJ |
@@ -197,7 +198,7 @@ Jason X players with a designation:
 
 ## Recent form (last 3 completed games)
 
-Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9]. Ranked 212 of 212 expected.
+Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. Ranked 212 of 212 expected.
 
 | Pos | Limit | Qualifying | Ranked | At limit |
 | --- | --- | --- | --- | --- |
@@ -226,7 +227,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-969 total | 244 executed ownership changes | 476 lineup-only moves | 192 draft picks | 0 pending
+974 total | 244 executed ownership changes | 481 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 

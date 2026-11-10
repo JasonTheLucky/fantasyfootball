@@ -2,8 +2,8 @@
   "usage": "NFL injury designations and expected return dates for every player in this league's pool, keyed by ESPN player id. Joined by player id, never by name. A compact subset of each record is already attached inline as the player's `injury` block in rosters.json, player_index.json and recent_form_rankings.json, so a player's injury travels with them everywhere they appear; this file carries the full detail including the beat note. on_nfl_ir means the NFL team placed the player on injured reserve. in_fantasy_ir_slot means this league's manager parked them in the fantasy IR slot. The two are different and routinely disagree: ir_on_nfl_but_active_slot lists players burning an active roster spot while on NFL IR, and ir_slot_but_not_on_nfl_ir lists fantasy IR slots holding someone the NFL has not designated. expected_return is ESPN's estimate; a date in February means out for the season, and expected_return_label says so in words. A designation of IR-R means designated to return.",
   "league_id": "1787259003",
   "season": 2026,
-  "scoring_period_id": 9,
-  "fetched_at": "2026-11-10T06:19:54.785446+00:00",
+  "scoring_period_id": 10,
+  "fetched_at": "2026-11-10T12:16:47.353976+00:00",
   "source": {
     "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
     "ok": true,
@@ -656,7 +656,7 @@
       "fantasy_status": "ROSTERED",
       "fantasy_team": "From Puka with Love",
       "fantasy_team_id": 6,
-      "lineup_slot": "WR",
+      "lineup_slot": "BENCH",
       "in_fantasy_ir_slot": false,
       "is_jason_x": false
     },
@@ -719,7 +719,7 @@
       "fantasy_status": "ROSTERED",
       "fantasy_team": "Cole-Train",
       "fantasy_team_id": 4,
-      "lineup_slot": "RB",
+      "lineup_slot": "BENCH",
       "in_fantasy_ir_slot": false,
       "is_jason_x": false
     },
@@ -1034,7 +1034,7 @@
       "fantasy_status": "ROSTERED",
       "fantasy_team": "The Bye Week Boys",
       "fantasy_team_id": 2,
-      "lineup_slot": "WR",
+      "lineup_slot": "BENCH",
       "in_fantasy_ir_slot": false,
       "is_jason_x": false
     },
@@ -1218,7 +1218,7 @@
       "injury_detail": "Not Specified",
       "body_location": "Leg",
       "side": "Not Specified",
-      "note": "Stevenson (knee) is dealing with a knee tendon issue that isn't slated to require surgery but may require him to miss \"a short period of time,\" Adam Schefter of ESPN reports.",
+      "note": "Stevenson is dealing with a knee tendon issue that isn't slated to require surgery but may require him to miss \"a short period of time,\" Adam Schefter of ESPN reports.",
       "reported_at": "2026-11-10T02:32Z",
       "fantasy_status": "ROSTERED",
       "fantasy_team": "Commanders of Chaos",
@@ -1534,7 +1534,7 @@
       "fantasy_status": "ROSTERED",
       "fantasy_team": "From Puka with Love",
       "fantasy_team_id": 6,
-      "lineup_slot": "BENCH",
+      "lineup_slot": "FLEX",
       "in_fantasy_ir_slot": false,
       "is_jason_x": false
     },

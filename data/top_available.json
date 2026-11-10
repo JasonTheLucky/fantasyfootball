@@ -2,10 +2,10 @@
   "usage": "The top 25 available players per position by rostered percentage, with acquisition cost, bye week, injury badge and upcoming opponents already attached. This is a trimmed view of available_players.json for when a report needs candidates rather than the whole ~850-player pool. Availability still comes from the same snapshot, and player_index.json remains the authority on ownership. acquisition is FREE AGENT ($0, instant) or WAIVERS (needs a FAAB bid, processing at waiver_process_ct). recent_form_rank and recent_form_avg are this player's standing in recent_form_rankings.json, attached here so a report does not have to cross-reference. When those are absent, recent_form_note says why: either outside the ranked top N for the position, or fewer than three confirmed appearances. Players ESPN expects back only next season are excluded from the rankings entirely, so they carry the fewer-than-three note. projected_points is ESPN's projection for projection_scoring_period_id, which is the current week, and is the only forward-looking number here: recent_form_rank looks backwards at three completed games. A projection of 0.0 is usually real rather than missing - the player's NFL team is on bye that week, or he has no NFL team, or ESPN does not expect him to play - so check the upcoming block for a bye before reading 0.0 as poor form. An absent projected_points means ESPN published no projection for him at all, which is common deep in the pool; treat that as unknown, not as zero.",
   "league_id": "1787259003",
   "season": 2026,
-  "scoring_period_id": 9,
-  "fetched_at": "2026-11-10T06:19:54.785446+00:00",
+  "scoring_period_id": 10,
+  "fetched_at": "2026-11-10T12:16:47.353976+00:00",
   "per_position": 25,
-  "projection_scoring_period_id": 9,
+  "projection_scoring_period_id": 10,
   "counts": {
     "QB": 25,
     "RB": 25,
@@ -14,8 +14,8 @@
     "K": 25,
     "D/ST": 17
   },
-  "free_agents_in_pool": 362,
-  "waivers_in_pool": 501,
+  "free_agents_in_pool": 0,
+  "waivers_in_pool": 863,
   "players_by_position": {
     "QB": [
       {
@@ -28,24 +28,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 59.77,
-        "percent_change": 0.01,
+        "percent_owned": 59.69,
+        "percent_change": -0.07,
         "bye_week": 10,
-        "projected_points": 16.31,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 29,
-            "opponent": "CAR",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 13,
+            "opponent": "LV",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_rank": 5,
@@ -62,10 +62,10 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 33.95,
-        "percent_change": 0.01,
+        "percent_owned": 33.83,
+        "percent_change": -0.1,
         "bye_week": 8,
-        "projected_points": 18.17,
+        "projected_points": 16.26,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -76,16 +76,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 21,
-            "opponent": "PHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 28,
@@ -93,6 +83,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 30,
+            "opponent": "JAX",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -105,17 +105,15 @@
         "name": "Aaron Rodgers",
         "position": "QB",
         "pro_team": "PIT",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 32.96,
-        "percent_change": 0.07,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 32.9,
+        "percent_change": 0.01,
         "bye_week": 9,
-        "projected_points": 0.0,
+        "projected_points": 15.49,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": true
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -124,6 +122,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-16T01:20:00+00:00",
             "kickoff_ct": "Sun Nov 15, 7:20 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 21,
+            "opponent": "PHI",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -140,10 +148,10 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 32.16,
-        "percent_change": 0.01,
+        "percent_owned": 32.12,
+        "percent_change": -0.02,
         "bye_week": 7,
-        "projected_points": 13.1,
+        "projected_points": 12.63,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -154,16 +162,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 34,
-            "opponent": "HOU",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:05:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:05 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 33,
@@ -171,6 +169,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 20,
+            "opponent": "NYJ",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -187,24 +195,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 30.69,
-        "percent_change": 0.02,
+        "percent_owned": 30.65,
+        "percent_change": -0.03,
         "bye_week": 10,
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_rank": 20,
@@ -221,8 +229,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 26.84,
-        "percent_change": -0.04,
+        "percent_owned": 26.77,
+        "percent_change": -0.11,
         "bye_week": 11,
         "projected_points": 0.0,
         "injury": {
@@ -235,16 +243,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 22,
-            "opponent": "ARI",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 13,
@@ -253,6 +251,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_rank": 19,
@@ -269,24 +271,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 22.73,
-        "percent_change": -0.02,
+        "percent_owned": 22.69,
+        "percent_change": -0.06,
         "bye_week": 10,
-        "projected_points": 13.26,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 3,
-            "opponent": "CHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-09T01:20:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 7:20 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 8,
+            "opponent": "DET",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "QB",
@@ -302,21 +304,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 21.14,
-        "percent_change": 0.03,
+        "percent_owned": 21.12,
+        "percent_change": 0.01,
         "bye_week": 8,
         "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 21,
-            "opponent": "PHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -325,6 +317,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 30,
+            "opponent": "JAX",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -340,21 +342,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 15.52,
-        "percent_change": -0.02,
+        "percent_owned": 15.49,
+        "percent_change": -0.04,
         "bye_week": 11,
-        "projected_points": 16.7,
+        "projected_points": 13.54,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 4,
-            "opponent": "CIN",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T14:30:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 8:30 AM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -364,6 +356,10 @@
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "QB",
@@ -379,21 +375,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 13.5,
-        "percent_change": -0.01,
+        "percent_owned": 13.47,
+        "percent_change": -0.04,
         "bye_week": 13,
-        "projected_points": 0.0,
+        "projected_points": 14.35,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 30,
-            "opponent": "JAX",
-            "at_home": true,
-            "kickoff_utc": "2026-11-06T01:15:00+00:00",
-            "kickoff_ct": "Thu Nov 5, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -402,6 +388,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 29,
+            "opponent": "CAR",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -418,21 +414,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 11.2,
-        "percent_change": -0.01,
+        "percent_owned": 11.18,
+        "percent_change": -0.03,
         "bye_week": 13,
-        "projected_points": 14.02,
+        "projected_points": 12.67,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 6,
-            "opponent": "DAL",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -441,6 +427,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 34,
+            "opponent": "HOU",
+            "at_home": false,
+            "kickoff_utc": "2026-11-20T01:15:00+00:00",
+            "kickoff_ct": "Thu Nov 19, 7:15 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -457,10 +453,10 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 7.96,
-        "percent_change": 0.03,
+        "percent_owned": 7.93,
+        "percent_change": 0.01,
         "bye_week": 11,
-        "projected_points": 17.59,
+        "projected_points": 18.37,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Questionable",
@@ -471,16 +467,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 22,
-            "opponent": "ARI",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 13,
@@ -489,6 +475,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "QB",
@@ -504,21 +494,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 4.47,
-        "percent_change": 0.2,
+        "percent_owned": 4.41,
+        "percent_change": 0.1,
         "bye_week": 6,
-        "projected_points": 16.38,
+        "projected_points": 12.15,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 2,
-            "opponent": "BUF",
-            "at_home": true,
-            "kickoff_utc": "2026-11-10T01:15:00+00:00",
-            "kickoff_ct": "Mon Nov 9, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -527,6 +507,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 25,
+            "opponent": "SF",
+            "at_home": false,
+            "kickoff_utc": "2026-11-23T01:20:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 7:20 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -543,24 +533,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 4.22,
-        "percent_change": 0.0,
+        "percent_owned": 4.18,
+        "percent_change": -0.03,
         "bye_week": 10,
-        "projected_points": 14.28,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_note": "fewer than 3 games played"
@@ -571,17 +561,15 @@
         "name": "Cam Ward",
         "position": "QB",
         "pro_team": "TEN",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 3.99,
-        "percent_change": 0.06,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 3.97,
+        "percent_change": 0.03,
         "bye_week": 9,
-        "projected_points": 0.0,
+        "projected_points": 12.21,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": true
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -590,6 +578,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 6,
+            "opponent": "DAL",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -610,18 +608,8 @@
         "percent_owned": 3.79,
         "percent_change": -0.01,
         "bye_week": 8,
-        "projected_points": 0.81,
+        "projected_points": 0.66,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 21,
-            "opponent": "PHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -630,6 +618,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 30,
+            "opponent": "JAX",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -646,10 +644,10 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 3.07,
-        "percent_change": 0.0,
+        "percent_owned": 3.02,
+        "percent_change": -0.05,
         "bye_week": 14,
-        "projected_points": 12.3,
+        "projected_points": 0.0,
         "injury": {
           "designation": "DOUBTFUL",
           "nfl_status": "Doubtful",
@@ -660,16 +658,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 26,
-            "opponent": "SEA",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 14,
@@ -677,6 +665,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 12,
+            "opponent": "KC",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -693,21 +691,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 2.95,
-        "percent_change": 0.01,
+        "percent_owned": 2.94,
+        "percent_change": 0.0,
         "bye_week": 11,
-        "projected_points": 15.8,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 18,
-            "opponent": "NO",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -717,6 +705,10 @@
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "QB",
@@ -732,21 +724,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 2.86,
+        "percent_owned": 2.85,
         "percent_change": 0.0,
         "bye_week": 13,
         "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 25,
-            "opponent": "SF",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -755,6 +737,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 7,
+            "opponent": "DEN",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -771,24 +763,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 2.1,
+        "percent_owned": 2.09,
         "percent_change": -0.01,
         "bye_week": 10,
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "QB",
@@ -804,8 +796,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 1.32,
-        "percent_change": 0.0,
+        "percent_owned": 1.31,
+        "percent_change": -0.01,
         "bye_week": 13,
         "projected_points": 0.0,
         "injury": {
@@ -818,16 +810,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 30,
-            "opponent": "JAX",
-            "at_home": true,
-            "kickoff_utc": "2026-11-06T01:15:00+00:00",
-            "kickoff_ct": "Thu Nov 5, 7:15 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 24,
@@ -835,6 +817,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 29,
+            "opponent": "CAR",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -857,16 +849,6 @@
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 14,
-            "opponent": "LAR",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 19,
@@ -874,6 +856,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 4,
+            "opponent": "CIN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-24T01:15:00+00:00",
+            "kickoff_ct": "Mon Nov 23, 7:15 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -896,18 +888,18 @@
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 3,
-            "opponent": "CHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-09T01:20:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 7:20 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 8,
+            "opponent": "DET",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "QB",
@@ -923,21 +915,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 0.44,
-        "percent_change": 0.0,
+        "percent_owned": 0.43,
+        "percent_change": -0.01,
         "bye_week": 13,
-        "projected_points": 9.3,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 30,
-            "opponent": "JAX",
-            "at_home": true,
-            "kickoff_utc": "2026-11-06T01:15:00+00:00",
-            "kickoff_ct": "Thu Nov 5, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -946,6 +928,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 29,
+            "opponent": "CAR",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -967,18 +959,18 @@
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 27,
-            "opponent": "TB",
-            "at_home": true,
-            "kickoff_utc": "2026-11-09T01:20:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 7:20 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 18,
+            "opponent": "NO",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "QB",
@@ -996,21 +988,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 34.1,
-        "percent_change": -0.1,
+        "percent_owned": 34.01,
+        "percent_change": -0.19,
         "bye_week": 11,
         "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 22,
-            "opponent": "ARI",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1020,6 +1002,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_rank": 44,
@@ -1036,21 +1022,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 28.65,
-        "percent_change": 0.04,
+        "percent_owned": 28.62,
+        "percent_change": 0.01,
         "bye_week": 6,
         "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 8,
-            "opponent": "DET",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1059,6 +1035,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 2,
+            "opponent": "BUF",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1076,8 +1062,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 24.44,
-        "percent_change": -0.07,
+        "percent_owned": 24.37,
+        "percent_change": -0.14,
         "bye_week": 11,
         "projected_points": 0.0,
         "injury": {
@@ -1090,16 +1076,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 4,
-            "opponent": "CIN",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T14:30:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 8:30 AM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 12,
@@ -1108,6 +1084,10 @@
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_rank": 38,
@@ -1120,12 +1100,14 @@
         "name": "Tyjae Spears",
         "position": "RB",
         "pro_team": "TEN",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 21.26,
-        "percent_change": -0.04,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 21.24,
+        "percent_change": -0.06,
         "bye_week": 9,
-        "projected_points": 0.0,
+        "projected_points": 6.12,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Out",
@@ -1136,10 +1118,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": true
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 30,
@@ -1147,6 +1125,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 6,
+            "opponent": "DAL",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1163,24 +1151,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 14.22,
-        "percent_change": -0.03,
+        "percent_owned": 14.18,
+        "percent_change": -0.07,
         "bye_week": 10,
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_rank": 39,
@@ -1197,21 +1185,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 13.38,
-        "percent_change": -0.02,
+        "percent_owned": 13.36,
+        "percent_change": -0.04,
         "bye_week": 7,
-        "projected_points": 9.01,
+        "projected_points": 7.74,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 34,
-            "opponent": "HOU",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:05:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:05 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1220,6 +1198,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 20,
+            "opponent": "NYJ",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1237,24 +1225,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 12.97,
-        "percent_change": -0.03,
+        "percent_owned": 12.89,
+        "percent_change": -0.11,
         "bye_week": 10,
-        "projected_points": 8.89,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_rank": 52,
@@ -1271,21 +1259,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 10.73,
-        "percent_change": -0.02,
+        "percent_owned": 10.71,
+        "percent_change": -0.03,
         "bye_week": 6,
-        "projected_points": 6.23,
+        "projected_points": 5.88,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 1,
-            "opponent": "ATL",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T14:30:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 8:30 AM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1294,6 +1272,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-16T01:20:00+00:00",
             "kickoff_ct": "Sun Nov 15, 7:20 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 28,
+            "opponent": "WSH",
+            "at_home": false,
+            "kickoff_utc": "2026-11-24T01:15:00+00:00",
+            "kickoff_ct": "Mon Nov 23, 7:15 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1310,21 +1298,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 10.19,
-        "percent_change": -0.01,
+        "percent_owned": 10.17,
+        "percent_change": -0.03,
         "bye_week": 7,
-        "projected_points": 6.54,
+        "projected_points": 6.62,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 34,
-            "opponent": "HOU",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:05:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:05 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1333,6 +1311,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 20,
+            "opponent": "NYJ",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1349,24 +1337,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 7.2,
-        "percent_change": -0.02,
+        "percent_owned": 7.18,
+        "percent_change": -0.03,
         "bye_week": 10,
-        "projected_points": 5.51,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 27,
-            "opponent": "TB",
-            "at_home": true,
-            "kickoff_utc": "2026-11-09T01:20:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 7:20 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 18,
+            "opponent": "NO",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "RB",
@@ -1382,10 +1370,10 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 7.04,
-        "percent_change": -0.03,
+        "percent_owned": 7.03,
+        "percent_change": -0.04,
         "bye_week": 14,
-        "projected_points": 0.0,
+        "projected_points": 7.1,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Out",
@@ -1396,16 +1384,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 26,
-            "opponent": "SEA",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 14,
@@ -1413,6 +1391,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 12,
+            "opponent": "KC",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1430,24 +1418,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 5.43,
-        "percent_change": -0.01,
+        "percent_owned": 5.41,
+        "percent_change": -0.02,
         "bye_week": 10,
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_rank": 55,
@@ -1464,21 +1452,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 5.3,
-        "percent_change": -0.02,
+        "percent_owned": 5.35,
+        "percent_change": 0.03,
         "bye_week": 11,
-        "projected_points": 5.67,
+        "projected_points": 10.63,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 9,
-            "opponent": "GB",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1488,6 +1466,10 @@
             "kickoff_utc": "2026-11-15T14:30:00+00:00",
             "kickoff_ct": "Sun Nov 15, 8:30 AM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_rank": 58,
@@ -1504,21 +1486,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 4.14,
-        "percent_change": -0.01,
+        "percent_owned": 4.13,
+        "percent_change": -0.02,
         "bye_week": 8,
         "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 21,
-            "opponent": "PHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1527,6 +1499,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 30,
+            "opponent": "JAX",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1544,21 +1526,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 3.58,
-        "percent_change": -0.01,
+        "percent_owned": 3.57,
+        "percent_change": -0.02,
         "bye_week": 11,
-        "projected_points": 3.73,
+        "projected_points": 0.01,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 22,
-            "opponent": "ARI",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1568,6 +1540,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "RB",
@@ -1583,8 +1559,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 3.22,
-        "percent_change": 0.0,
+        "percent_owned": 3.21,
+        "percent_change": -0.01,
         "bye_week": 14,
         "projected_points": 0.0,
         "injury": {
@@ -1597,16 +1573,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 26,
-            "opponent": "SEA",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 14,
@@ -1614,6 +1580,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 12,
+            "opponent": "KC",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1630,23 +1606,23 @@
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 3.17,
-        "percent_change": 0.0,
+        "percent_change": -0.01,
         "bye_week": 10,
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "RB",
@@ -1662,21 +1638,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 2.7,
-        "percent_change": 0.01,
+        "percent_owned": 2.69,
+        "percent_change": 0.0,
         "bye_week": 7,
-        "projected_points": 1.78,
+        "projected_points": 2.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 16,
-            "opponent": "MIN",
-            "at_home": false,
-            "kickoff_utc": "2026-11-10T01:15:00+00:00",
-            "kickoff_ct": "Mon Nov 9, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1685,6 +1651,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 15,
+            "opponent": "MIA",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1701,10 +1677,10 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 2.69,
+        "percent_owned": 2.68,
         "percent_change": -0.01,
         "bye_week": 6,
-        "projected_points": 0.0,
+        "projected_points": 3.91,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Out",
@@ -1715,16 +1691,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 8,
-            "opponent": "DET",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 11,
@@ -1732,6 +1698,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 2,
+            "opponent": "BUF",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1751,18 +1727,8 @@
         "percent_owned": 2.66,
         "percent_change": -0.01,
         "bye_week": 11,
-        "projected_points": 2.74,
+        "projected_points": 5.75,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 17,
-            "opponent": "NE",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1772,6 +1738,10 @@
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "RB",
@@ -1790,18 +1760,8 @@
         "percent_owned": 2.54,
         "percent_change": 0.0,
         "bye_week": 7,
-        "projected_points": 6.96,
+        "projected_points": 8.42,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 14,
-            "opponent": "LAR",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1810,6 +1770,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 4,
+            "opponent": "CIN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-24T01:15:00+00:00",
+            "kickoff_ct": "Mon Nov 23, 7:15 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1827,20 +1797,10 @@
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 2.34,
-        "percent_change": 0.11,
+        "percent_change": 0.09,
         "bye_week": 7,
-        "projected_points": 5.55,
+        "projected_points": 6.18,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 16,
-            "opponent": "MIN",
-            "at_home": false,
-            "kickoff_utc": "2026-11-10T01:15:00+00:00",
-            "kickoff_ct": "Mon Nov 9, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1849,6 +1809,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 15,
+            "opponent": "MIA",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1866,8 +1836,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 2.16,
-        "percent_change": 0.0,
+        "percent_owned": 2.15,
+        "percent_change": -0.01,
         "bye_week": 11,
         "projected_points": 0.0,
         "injury": {
@@ -1880,16 +1850,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 17,
-            "opponent": "NE",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 16,
@@ -1898,6 +1858,10 @@
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "RB",
@@ -1909,18 +1873,20 @@
         "name": "Najee Harris",
         "position": "RB",
         "pro_team": "FA",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 1.85,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 1.84,
         "percent_change": -0.01,
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
+            "scoring_period_id": 10,
             "bye": true
           },
           {
-            "scoring_period_id": 10,
+            "scoring_period_id": 11,
             "bye": true
           }
         ],
@@ -1937,21 +1903,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 1.5,
-        "percent_change": 0.0,
+        "percent_owned": 1.49,
+        "percent_change": -0.01,
         "bye_week": 13,
         "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 12,
-            "opponent": "KC",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -1960,6 +1916,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 24,
+            "opponent": "LAC",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -1978,24 +1944,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 59.45,
-        "percent_change": 0.0,
+        "percent_owned": 59.41,
+        "percent_change": -0.05,
         "bye_week": 10,
-        "projected_points": 9.17,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 29,
-            "opponent": "CAR",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 13,
+            "opponent": "LV",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_rank": 38,
@@ -2008,10 +1974,12 @@
         "name": "Michael Pittman Jr.",
         "position": "WR",
         "pro_team": "PIT",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 40.56,
-        "percent_change": -0.03,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 40.52,
+        "percent_change": -0.07,
         "bye_week": 9,
         "projected_points": 0.0,
         "injury": {
@@ -2024,10 +1992,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": true
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 4,
@@ -2035,6 +1999,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-16T01:20:00+00:00",
             "kickoff_ct": "Sun Nov 15, 7:20 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 21,
+            "opponent": "PHI",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2051,21 +2025,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 40.16,
-        "percent_change": 0.02,
+        "percent_owned": 40.12,
+        "percent_change": -0.02,
         "bye_week": 7,
-        "projected_points": 6.67,
+        "projected_points": 6.33,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 33,
-            "opponent": "BAL",
-            "at_home": false,
-            "kickoff_utc": "2026-11-06T01:15:00+00:00",
-            "kickoff_ct": "Thu Nov 5, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2074,6 +2038,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 19,
+            "opponent": "NYG",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2090,21 +2064,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 35.72,
-        "percent_change": 0.01,
+        "percent_owned": 35.66,
+        "percent_change": -0.05,
         "bye_week": 7,
         "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 14,
-            "opponent": "LAR",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2113,6 +2077,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 4,
+            "opponent": "CIN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-24T01:15:00+00:00",
+            "kickoff_ct": "Mon Nov 23, 7:15 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2130,21 +2104,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 23.78,
-        "percent_change": 0.01,
+        "percent_owned": 23.76,
+        "percent_change": -0.01,
         "bye_week": 7,
-        "projected_points": 6.6,
+        "projected_points": 6.52,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 34,
-            "opponent": "HOU",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:05:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:05 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2153,6 +2117,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 20,
+            "opponent": "NYJ",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2170,10 +2144,10 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 22.36,
-        "percent_change": -0.03,
+        "percent_owned": 22.32,
+        "percent_change": -0.07,
         "bye_week": 11,
-        "projected_points": 0.0,
+        "projected_points": 7.01,
         "injury": {
           "designation": "QUESTIONABLE",
           "nfl_status": "Out",
@@ -2184,16 +2158,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 22,
-            "opponent": "ARI",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 13,
@@ -2202,6 +2166,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "WR",
@@ -2217,21 +2185,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 21.47,
-        "percent_change": 0.03,
+        "percent_owned": 21.42,
+        "percent_change": -0.02,
         "bye_week": 7,
-        "projected_points": 5.88,
+        "projected_points": 6.77,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 16,
-            "opponent": "MIN",
-            "at_home": false,
-            "kickoff_utc": "2026-11-10T01:15:00+00:00",
-            "kickoff_ct": "Mon Nov 9, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2240,6 +2198,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 15,
+            "opponent": "MIA",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2252,17 +2220,19 @@
         "name": "Tyreek Hill",
         "position": "WR",
         "pro_team": "FA",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 19.73,
-        "percent_change": -0.12,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 19.68,
+        "percent_change": -0.17,
         "upcoming": [
           {
-            "scoring_period_id": 9,
+            "scoring_period_id": 10,
             "bye": true
           },
           {
-            "scoring_period_id": 10,
+            "scoring_period_id": 11,
             "bye": true
           }
         ],
@@ -2278,21 +2248,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 19.29,
-        "percent_change": 0.01,
+        "percent_owned": 19.26,
+        "percent_change": -0.03,
         "bye_week": 8,
         "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 13,
-            "opponent": "LV",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2301,6 +2261,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T21:25:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:25 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 16,
+            "opponent": "MIN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-23T01:20:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 7:20 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2316,21 +2286,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 19.09,
-        "percent_change": 0.01,
+        "percent_owned": 19.07,
+        "percent_change": -0.02,
         "bye_week": 11,
         "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 17,
-            "opponent": "NE",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2340,6 +2300,10 @@
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_note": "fewer than 3 games played"
@@ -2354,8 +2318,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 16.82,
-        "percent_change": -0.03,
+        "percent_owned": 16.78,
+        "percent_change": -0.07,
         "bye_week": 10,
         "projected_points": 0.0,
         "injury": {
@@ -2368,18 +2332,18 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "WR",
@@ -2395,21 +2359,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 10.17,
-        "percent_change": 0.12,
+        "percent_owned": 10.11,
+        "percent_change": 0.06,
         "bye_week": 8,
-        "projected_points": 9.89,
+        "projected_points": 7.78,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 13,
-            "opponent": "LV",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2418,6 +2372,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T21:25:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:25 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 16,
+            "opponent": "MIN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-23T01:20:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 7:20 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2434,24 +2398,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 9.54,
-        "percent_change": -0.01,
+        "percent_owned": 9.52,
+        "percent_change": -0.03,
         "bye_week": 10,
-        "projected_points": 8.65,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "WR",
@@ -2467,21 +2431,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 9.29,
-        "percent_change": -0.01,
+        "percent_owned": 9.27,
+        "percent_change": -0.03,
         "bye_week": 13,
-        "projected_points": 4.36,
+        "projected_points": 5.55,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 30,
-            "opponent": "JAX",
-            "at_home": true,
-            "kickoff_utc": "2026-11-06T01:15:00+00:00",
-            "kickoff_ct": "Thu Nov 5, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2490,6 +2444,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 29,
+            "opponent": "CAR",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2506,21 +2470,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 9.16,
-        "percent_change": 0.0,
+        "percent_owned": 9.14,
+        "percent_change": -0.03,
         "bye_week": 11,
-        "projected_points": 8.07,
+        "projected_points": 5.53,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 22,
-            "opponent": "ARI",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2530,6 +2484,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "WR",
@@ -2545,21 +2503,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 8.57,
-        "percent_change": -0.01,
+        "percent_owned": 8.53,
+        "percent_change": -0.04,
         "bye_week": 13,
-        "projected_points": 5.15,
+        "projected_points": 5.61,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 30,
-            "opponent": "JAX",
-            "at_home": true,
-            "kickoff_utc": "2026-11-06T01:15:00+00:00",
-            "kickoff_ct": "Thu Nov 5, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2568,6 +2516,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 29,
+            "opponent": "CAR",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2584,24 +2542,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 7.9,
-        "percent_change": -0.01,
+        "percent_owned": 7.89,
+        "percent_change": -0.02,
         "bye_week": 10,
-        "projected_points": 4.75,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 27,
-            "opponent": "TB",
-            "at_home": true,
-            "kickoff_utc": "2026-11-09T01:20:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 7:20 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 18,
+            "opponent": "NO",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "WR",
@@ -2618,20 +2576,10 @@
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 7.3,
-        "percent_change": 0.0,
+        "percent_change": 0.01,
         "bye_week": 11,
-        "projected_points": 9.39,
+        "projected_points": 10.76,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 9,
-            "opponent": "GB",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2641,6 +2589,10 @@
             "kickoff_utc": "2026-11-15T14:30:00+00:00",
             "kickoff_ct": "Sun Nov 15, 8:30 AM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_rank": 31,
@@ -2657,21 +2609,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 6.43,
-        "percent_change": 0.0,
+        "percent_owned": 6.41,
+        "percent_change": -0.01,
         "bye_week": 8,
-        "projected_points": 8.57,
+        "projected_points": 9.56,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 21,
-            "opponent": "PHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2680,6 +2622,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 30,
+            "opponent": "JAX",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2692,17 +2644,15 @@
         "name": "Roman Wilson",
         "position": "WR",
         "pro_team": "PIT",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 6.35,
-        "percent_change": -0.02,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 6.33,
+        "percent_change": -0.04,
         "bye_week": 9,
         "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": true
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2711,6 +2661,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-16T01:20:00+00:00",
             "kickoff_ct": "Sun Nov 15, 7:20 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 21,
+            "opponent": "PHI",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2728,8 +2688,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 5.64,
-        "percent_change": -0.01,
+        "percent_owned": 5.62,
+        "percent_change": -0.04,
         "bye_week": 8,
         "projected_points": 0.0,
         "injury": {
@@ -2742,16 +2702,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 24,
-            "opponent": "LAC",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:05:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:05 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 5,
@@ -2759,6 +2709,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 11,
+            "opponent": "IND",
+            "at_home": true,
+            "kickoff_utc": "2026-11-20T01:15:00+00:00",
+            "kickoff_ct": "Thu Nov 19, 7:15 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2771,17 +2731,15 @@
         "name": "Calvin Ridley",
         "position": "WR",
         "pro_team": "TEN",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 5.21,
-        "percent_change": 0.0,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 5.2,
+        "percent_change": -0.02,
         "bye_week": 9,
-        "projected_points": 0.0,
+        "projected_points": 2.87,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": true
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2790,6 +2748,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 6,
+            "opponent": "DAL",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2806,21 +2774,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 5.02,
-        "percent_change": 0.01,
+        "percent_owned": 5.01,
+        "percent_change": -0.01,
         "bye_week": 11,
-        "projected_points": 9.3,
+        "projected_points": 7.71,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 4,
-            "opponent": "CIN",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T14:30:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 8:30 AM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2830,6 +2788,10 @@
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "WR",
@@ -2846,23 +2808,23 @@
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 4.19,
-        "percent_change": -0.01,
+        "percent_change": -0.02,
         "bye_week": 10,
-        "projected_points": 5.7,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 3,
-            "opponent": "CHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-09T01:20:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 7:20 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 8,
+            "opponent": "DET",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "WR",
@@ -2878,21 +2840,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 3.42,
-        "percent_change": 0.0,
+        "percent_owned": 3.41,
+        "percent_change": -0.02,
         "bye_week": 13,
-        "projected_points": 7.57,
+        "projected_points": 6.96,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 25,
-            "opponent": "SF",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2901,6 +2853,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 7,
+            "opponent": "DEN",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2919,21 +2881,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 44.19,
-        "percent_change": -0.04,
+        "percent_owned": 44.14,
+        "percent_change": -0.09,
         "bye_week": 8,
-        "projected_points": 7.22,
+        "projected_points": 7.34,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 5,
-            "opponent": "CLE",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2942,6 +2894,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 3,
+            "opponent": "CHI",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2954,17 +2916,15 @@
         "name": "Pat Freiermuth",
         "position": "TE",
         "pro_team": "PIT",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 41.29,
-        "percent_change": -0.09,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 41.22,
+        "percent_change": -0.16,
         "bye_week": 9,
-        "projected_points": 0.0,
+        "projected_points": 8.27,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": true
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -2973,6 +2933,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-16T01:20:00+00:00",
             "kickoff_ct": "Sun Nov 15, 7:20 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 21,
+            "opponent": "PHI",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -2989,10 +2959,10 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 41.26,
-        "percent_change": -0.01,
+        "percent_owned": 41.21,
+        "percent_change": -0.06,
         "bye_week": 14,
-        "projected_points": 8.43,
+        "projected_points": 0.0,
         "injury": {
           "designation": "OUT",
           "nfl_status": "Out",
@@ -3003,16 +2973,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 11,
-            "opponent": "IND",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 25,
@@ -3020,6 +2980,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T21:25:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:25 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 10,
+            "opponent": "TEN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3036,21 +3006,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 24.11,
-        "percent_change": -0.02,
+        "percent_owned": 24.06,
+        "percent_change": -0.06,
         "bye_week": 8,
-        "projected_points": 8.54,
+        "projected_points": 7.68,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 24,
-            "opponent": "LAC",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:05:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:05 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3059,6 +3019,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 11,
+            "opponent": "IND",
+            "at_home": true,
+            "kickoff_utc": "2026-11-20T01:15:00+00:00",
+            "kickoff_ct": "Thu Nov 19, 7:15 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3076,21 +3046,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 22.17,
-        "percent_change": -0.02,
+        "percent_owned": 22.13,
+        "percent_change": -0.06,
         "bye_week": 13,
-        "projected_points": 8.47,
+        "projected_points": 7.99,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 25,
-            "opponent": "SF",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3099,6 +3059,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 7,
+            "opponent": "DEN",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3115,21 +3085,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 19.44,
-        "percent_change": -0.02,
+        "percent_owned": 19.41,
+        "percent_change": -0.05,
         "bye_week": 13,
-        "projected_points": 4.54,
+        "projected_points": 4.25,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 12,
-            "opponent": "KC",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3138,6 +3098,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 24,
+            "opponent": "LAC",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3154,8 +3124,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 13.03,
-        "percent_change": -0.01,
+        "percent_owned": 13.0,
+        "percent_change": -0.05,
         "bye_week": 11,
         "projected_points": 0.0,
         "injury": {
@@ -3168,16 +3138,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 28,
-            "opponent": "WSH",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 22,
@@ -3186,6 +3146,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "TE",
@@ -3201,21 +3165,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 10.09,
-        "percent_change": -0.02,
+        "percent_owned": 10.08,
+        "percent_change": -0.03,
         "bye_week": 11,
-        "projected_points": 6.69,
+        "projected_points": 7.21,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 28,
-            "opponent": "WSH",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3225,6 +3179,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "TE",
@@ -3240,21 +3198,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 8.13,
-        "percent_change": -0.01,
+        "percent_owned": 8.1,
+        "percent_change": -0.03,
         "bye_week": 13,
-        "projected_points": 9.05,
+        "projected_points": 8.25,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 12,
-            "opponent": "KC",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3263,6 +3211,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 24,
+            "opponent": "LAC",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3281,20 +3239,10 @@
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 7.69,
-        "percent_change": -0.01,
+        "percent_change": 0.0,
         "bye_week": 5,
-        "projected_points": 5.88,
+        "projected_points": 8.59,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 7,
-            "opponent": "DEN",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3303,6 +3251,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 33,
+            "opponent": "BAL",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3320,21 +3278,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 5.77,
-        "percent_change": 0.01,
+        "percent_owned": 5.7,
+        "percent_change": -0.05,
         "bye_week": 6,
-        "projected_points": 8.86,
+        "projected_points": 7.91,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 8,
-            "opponent": "DET",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3343,6 +3291,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 2,
+            "opponent": "BUF",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3361,20 +3319,10 @@
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 4.35,
-        "percent_change": -0.01,
+        "percent_change": -0.02,
         "bye_week": 11,
-        "projected_points": 7.53,
+        "projected_points": 9.15,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 9,
-            "opponent": "GB",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3384,6 +3332,10 @@
             "kickoff_utc": "2026-11-15T14:30:00+00:00",
             "kickoff_ct": "Sun Nov 15, 8:30 AM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_rank": 23,
@@ -3396,17 +3348,15 @@
         "name": "Darnell Washington",
         "position": "TE",
         "pro_team": "PIT",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 4.27,
-        "percent_change": 0.0,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 4.26,
+        "percent_change": -0.02,
         "bye_week": 9,
-        "projected_points": 0.0,
+        "projected_points": 8.02,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": true
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3415,6 +3365,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-16T01:20:00+00:00",
             "kickoff_ct": "Sun Nov 15, 7:20 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 21,
+            "opponent": "PHI",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3432,21 +3392,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 3.45,
-        "percent_change": -0.01,
+        "percent_owned": 3.44,
+        "percent_change": -0.02,
         "bye_week": 11,
-        "projected_points": 6.77,
+        "projected_points": 7.5,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 28,
-            "opponent": "WSH",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3456,6 +3406,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_rank": 15,
@@ -3472,24 +3426,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 2.37,
-        "percent_change": 0.0,
+        "percent_owned": 2.35,
+        "percent_change": -0.02,
         "bye_week": 10,
-        "projected_points": 6.12,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 3,
-            "opponent": "CHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-09T01:20:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 7:20 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 8,
+            "opponent": "DET",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "TE",
@@ -3505,24 +3459,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 1.81,
-        "percent_change": 0.0,
+        "percent_owned": 1.8,
+        "percent_change": -0.02,
         "bye_week": 10,
-        "projected_points": 4.69,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 29,
-            "opponent": "CAR",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 13,
+            "opponent": "LV",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "TE",
@@ -3534,17 +3488,15 @@
         "name": "Gunnar Helm",
         "position": "TE",
         "pro_team": "TEN",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 1.63,
-        "percent_change": 0.0,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 1.61,
+        "percent_change": -0.02,
         "bye_week": 9,
-        "projected_points": 0.0,
+        "projected_points": 5.83,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": true
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3553,6 +3505,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 6,
+            "opponent": "DAL",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3569,21 +3531,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 1.57,
-        "percent_change": 0.0,
+        "percent_owned": 1.56,
+        "percent_change": -0.01,
         "bye_week": 7,
-        "projected_points": 5.73,
+        "projected_points": 6.4,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 34,
-            "opponent": "HOU",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:05:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:05 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3592,6 +3544,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 20,
+            "opponent": "NYJ",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3609,7 +3571,7 @@
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 1.26,
-        "percent_change": 0.0,
+        "percent_change": -0.01,
         "bye_week": 7,
         "projected_points": 0.0,
         "injury": {
@@ -3622,16 +3584,6 @@
         },
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 34,
-            "opponent": "HOU",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:05:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:05 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 33,
@@ -3639,6 +3591,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 20,
+            "opponent": "NYJ",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3654,21 +3616,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 0.6,
-        "percent_change": 0.02,
+        "percent_owned": 0.59,
+        "percent_change": 0.01,
         "bye_week": 7,
-        "projected_points": 2.99,
+        "projected_points": 3.46,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 16,
-            "opponent": "MIN",
-            "at_home": false,
-            "kickoff_utc": "2026-11-10T01:15:00+00:00",
-            "kickoff_ct": "Mon Nov 9, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3677,6 +3629,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 15,
+            "opponent": "MIA",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3699,18 +3661,18 @@
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 27,
-            "opponent": "TB",
-            "at_home": true,
-            "kickoff_utc": "2026-11-09T01:20:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 7:20 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 18,
+            "opponent": "NO",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "TE",
@@ -3729,18 +3691,8 @@
         "percent_owned": 0.41,
         "percent_change": 0.0,
         "bye_week": 5,
-        "projected_points": 5.13,
+        "projected_points": 6.63,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 7,
-            "opponent": "DEN",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3749,6 +3701,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 33,
+            "opponent": "BAL",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3771,18 +3733,18 @@
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "TE",
@@ -3801,18 +3763,8 @@
         "percent_owned": 0.28,
         "percent_change": 0.0,
         "bye_week": 14,
-        "projected_points": 4.15,
+        "projected_points": 5.49,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 11,
-            "opponent": "IND",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3821,6 +3773,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T21:25:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:25 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 10,
+            "opponent": "TEN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3840,21 +3802,21 @@
         "percent_owned": 0.27,
         "percent_change": 0.0,
         "bye_week": 10,
-        "projected_points": 2.99,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "TE",
@@ -3872,21 +3834,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 89.56,
-        "percent_change": -0.01,
+        "percent_owned": 89.44,
+        "percent_change": -0.13,
         "bye_week": 11,
-        "projected_points": 10.14,
+        "projected_points": 9.03,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 22,
-            "opponent": "ARI",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3896,6 +3848,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "K",
@@ -3911,21 +3867,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 83.14,
-        "percent_change": -0.02,
+        "percent_owned": 83.1,
+        "percent_change": -0.06,
         "bye_week": 13,
-        "projected_points": 10.9,
+        "projected_points": 10.62,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 6,
-            "opponent": "DAL",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3934,6 +3880,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 34,
+            "opponent": "HOU",
+            "at_home": false,
+            "kickoff_utc": "2026-11-20T01:15:00+00:00",
+            "kickoff_ct": "Thu Nov 19, 7:15 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3951,21 +3907,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 37.24,
-        "percent_change": 0.01,
+        "percent_owned": 37.22,
+        "percent_change": 0.0,
         "bye_week": 8,
-        "projected_points": 10.51,
+        "projected_points": 10.82,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 21,
-            "opponent": "PHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -3974,6 +3920,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 30,
+            "opponent": "JAX",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -3991,21 +3947,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 35.39,
-        "percent_change": 0.01,
+        "percent_owned": 35.35,
+        "percent_change": -0.03,
         "bye_week": 8,
-        "projected_points": 8.42,
+        "projected_points": 7.17,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 13,
-            "opponent": "LV",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4014,6 +3960,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T21:25:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:25 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 16,
+            "opponent": "MIN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-23T01:20:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 7:20 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4030,21 +3986,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 30.54,
-        "percent_change": -0.01,
+        "percent_owned": 30.43,
+        "percent_change": -0.12,
         "bye_week": 13,
         "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 30,
-            "opponent": "JAX",
-            "at_home": true,
-            "kickoff_utc": "2026-11-06T01:15:00+00:00",
-            "kickoff_ct": "Thu Nov 5, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4053,6 +3999,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 29,
+            "opponent": "CAR",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4065,18 +4021,20 @@
         "name": "Harrison Mevis",
         "position": "K",
         "pro_team": "FA",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 17.37,
-        "percent_change": -0.01,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 17.34,
+        "percent_change": -0.03,
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
+            "scoring_period_id": 10,
             "bye": true
           },
           {
-            "scoring_period_id": 10,
+            "scoring_period_id": 11,
             "bye": true
           }
         ],
@@ -4094,21 +4052,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 10.11,
-        "percent_change": -0.01,
+        "percent_owned": 10.1,
+        "percent_change": -0.02,
         "bye_week": 11,
-        "projected_points": 7.57,
+        "projected_points": 8.37,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 17,
-            "opponent": "NE",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4118,6 +4066,10 @@
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_rank": 20,
@@ -4134,21 +4086,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 8.06,
-        "percent_change": -0.01,
+        "percent_owned": 8.05,
+        "percent_change": -0.03,
         "bye_week": 5,
-        "projected_points": 7.29,
+        "projected_points": 7.65,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 7,
-            "opponent": "DEN",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4157,6 +4099,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 33,
+            "opponent": "BAL",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4173,24 +4125,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 7.23,
-        "percent_change": 0.0,
+        "percent_owned": 7.19,
+        "percent_change": -0.04,
         "bye_week": 10,
-        "projected_points": 8.94,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 29,
-            "opponent": "CAR",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 13,
+            "opponent": "LV",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_rank": 10,
@@ -4207,24 +4159,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 5.17,
-        "percent_change": 0.0,
+        "percent_owned": 5.16,
+        "percent_change": -0.01,
         "bye_week": 10,
-        "projected_points": 6.1,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "K",
@@ -4243,18 +4195,8 @@
         "percent_owned": 3.97,
         "percent_change": 0.0,
         "bye_week": 11,
-        "projected_points": 9.06,
+        "projected_points": 9.53,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 18,
-            "opponent": "NO",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4264,6 +4206,10 @@
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_rank": 14,
@@ -4283,18 +4229,8 @@
         "percent_owned": 3.31,
         "percent_change": 0.0,
         "bye_week": 13,
-        "projected_points": 8.68,
+        "projected_points": 10.22,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 12,
-            "opponent": "KC",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4303,6 +4239,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 24,
+            "opponent": "LAC",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4320,21 +4266,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 2.38,
-        "percent_change": 0.0,
+        "percent_owned": 2.37,
+        "percent_change": -0.01,
         "bye_week": 7,
-        "projected_points": 8.84,
+        "projected_points": 8.8,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 14,
-            "opponent": "LAR",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4343,6 +4279,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 4,
+            "opponent": "CIN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-24T01:15:00+00:00",
+            "kickoff_ct": "Mon Nov 23, 7:15 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4360,21 +4306,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 1.53,
-        "percent_change": 0.0,
+        "percent_owned": 1.51,
+        "percent_change": -0.03,
         "bye_week": 11,
-        "projected_points": 7.23,
+        "projected_points": 7.41,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 9,
-            "opponent": "GB",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4384,6 +4320,10 @@
             "kickoff_utc": "2026-11-15T14:30:00+00:00",
             "kickoff_ct": "Sun Nov 15, 8:30 AM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "K",
@@ -4405,16 +4345,6 @@
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 28,
-            "opponent": "WSH",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 22,
@@ -4423,6 +4353,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_note": "fewer than 3 games played"
@@ -4433,18 +4367,20 @@
         "name": "Daniel Carlson",
         "position": "K",
         "pro_team": "FA",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 0.69,
         "percent_change": -0.01,
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
+            "scoring_period_id": 10,
             "bye": true
           },
           {
-            "scoring_period_id": 10,
+            "scoring_period_id": 11,
             "bye": true
           }
         ],
@@ -4466,16 +4402,6 @@
         "bye_week": 13,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 30,
-            "opponent": "JAX",
-            "at_home": true,
-            "kickoff_utc": "2026-11-06T01:15:00+00:00",
-            "kickoff_ct": "Thu Nov 5, 7:15 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 24,
@@ -4483,6 +4409,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 29,
+            "opponent": "CAR",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4501,18 +4437,8 @@
         "percent_owned": 0.49,
         "percent_change": 0.0,
         "bye_week": 11,
-        "projected_points": 6.97,
+        "projected_points": 7.68,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 28,
-            "opponent": "WSH",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4522,6 +4448,10 @@
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_rank": 24,
@@ -4534,17 +4464,15 @@
         "name": "Joey Slye",
         "position": "K",
         "pro_team": "TEN",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 0.31,
         "percent_change": 0.0,
         "bye_week": 9,
-        "projected_points": 0.0,
+        "projected_points": 6.7,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": true
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4553,6 +4481,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 6,
+            "opponent": "DAL",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4573,18 +4511,8 @@
         "percent_owned": 0.16,
         "percent_change": 0.0,
         "bye_week": 8,
-        "projected_points": 7.49,
+        "projected_points": 8.75,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 5,
-            "opponent": "CLE",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4593,6 +4521,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 3,
+            "opponent": "CHI",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4611,18 +4549,8 @@
         "percent_owned": 0.15,
         "percent_change": 0.0,
         "bye_week": 13,
-        "projected_points": 6.04,
+        "projected_points": 7.74,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 30,
-            "opponent": "JAX",
-            "at_home": true,
-            "kickoff_utc": "2026-11-06T01:15:00+00:00",
-            "kickoff_ct": "Thu Nov 5, 7:15 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4631,6 +4559,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 29,
+            "opponent": "CAR",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4642,18 +4580,20 @@
         "name": "Riley Patterson",
         "position": "K",
         "pro_team": "FA",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 0.13,
         "percent_change": 0.0,
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
+            "scoring_period_id": 10,
             "bye": true
           },
           {
-            "scoring_period_id": 10,
+            "scoring_period_id": 11,
             "bye": true
           }
         ],
@@ -4666,18 +4606,20 @@
         "name": "Younghoe Koo",
         "position": "K",
         "pro_team": "FA",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 0.13,
         "percent_change": 0.0,
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
+            "scoring_period_id": 10,
             "bye": true
           },
           {
-            "scoring_period_id": 10,
+            "scoring_period_id": 11,
             "bye": true
           }
         ],
@@ -4699,16 +4641,6 @@
         "projected_points": 0.0,
         "upcoming": [
           {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 21,
-            "opponent": "PHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
             "scoring_period_id": 10,
             "bye": false,
             "opponent_pro_team_id": 28,
@@ -4716,6 +4648,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 30,
+            "opponent": "JAX",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4734,18 +4676,8 @@
         "percent_owned": 0.1,
         "percent_change": 0.0,
         "bye_week": 6,
-        "projected_points": 7.1,
+        "projected_points": 7.27,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 8,
-            "opponent": "DET",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4754,6 +4686,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 2,
+            "opponent": "BUF",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4773,21 +4715,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 59.16,
-        "percent_change": -0.06,
+        "percent_owned": 58.98,
+        "percent_change": -0.24,
         "bye_week": 11,
-        "projected_points": 5.17,
+        "projected_points": 3.5,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 9,
-            "opponent": "GB",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4797,6 +4729,10 @@
             "kickoff_utc": "2026-11-15T14:30:00+00:00",
             "kickoff_ct": "Sun Nov 15, 8:30 AM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "D/ST",
@@ -4812,21 +4748,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 50.44,
-        "percent_change": 0.08,
+        "percent_owned": 50.31,
+        "percent_change": -0.05,
         "bye_week": 8,
-        "projected_points": 7.49,
+        "projected_points": 5.43,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 21,
-            "opponent": "PHI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4835,6 +4761,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-13T01:15:00+00:00",
             "kickoff_ct": "Thu Nov 12, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 30,
+            "opponent": "JAX",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4852,21 +4788,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 37.92,
-        "percent_change": 0.02,
+        "percent_owned": 37.89,
+        "percent_change": -0.02,
         "bye_week": 8,
-        "projected_points": 5.59,
+        "projected_points": 4.5,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 13,
-            "opponent": "LV",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4875,6 +4801,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T21:25:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:25 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 16,
+            "opponent": "MIN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-23T01:20:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 7:20 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4892,21 +4828,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 35.95,
-        "percent_change": -0.08,
+        "percent_owned": 35.88,
+        "percent_change": -0.15,
         "bye_week": 6,
-        "projected_points": 4.46,
+        "projected_points": 5.56,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 1,
-            "opponent": "ATL",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T14:30:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 8:30 AM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4915,6 +4841,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-16T01:20:00+00:00",
             "kickoff_ct": "Sun Nov 15, 7:20 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 28,
+            "opponent": "WSH",
+            "at_home": false,
+            "kickoff_utc": "2026-11-24T01:15:00+00:00",
+            "kickoff_ct": "Mon Nov 23, 7:15 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -4932,24 +4868,24 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 33.62,
-        "percent_change": 0.0,
+        "percent_owned": 33.58,
+        "percent_change": -0.03,
         "bye_week": 10,
-        "projected_points": 5.09,
+        "projected_points": 0.0,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 19,
-            "opponent": "NYG",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": true
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 23,
+            "opponent": "PIT",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+            "start_time_tbd": false
           }
         ],
         "recent_form_position": "D/ST",
@@ -4965,21 +4901,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 19.06,
-        "percent_change": 0.0,
+        "percent_owned": 19.07,
+        "percent_change": 0.02,
         "bye_week": 11,
-        "projected_points": 4.65,
+        "projected_points": 7.59,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 17,
-            "opponent": "NE",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -4989,6 +4915,10 @@
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_rank": 7,
@@ -5005,21 +4935,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 15.89,
-        "percent_change": 0.0,
+        "percent_owned": 15.84,
+        "percent_change": -0.05,
         "bye_week": 14,
-        "projected_points": 5.81,
+        "projected_points": 2.7,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 11,
-            "opponent": "IND",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -5028,6 +4948,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T21:25:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:25 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 10,
+            "opponent": "TEN",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -5045,21 +4975,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 13.75,
-        "percent_change": -0.05,
+        "percent_owned": 13.73,
+        "percent_change": -0.07,
         "bye_week": 13,
-        "projected_points": 3.82,
+        "projected_points": 3.37,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 12,
-            "opponent": "KC",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -5068,6 +4988,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 24,
+            "opponent": "LAC",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -5084,21 +5014,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 12.86,
-        "percent_change": 0.02,
+        "percent_owned": 12.78,
+        "percent_change": -0.06,
         "bye_week": 8,
-        "projected_points": 5.76,
+        "projected_points": 4.73,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 5,
-            "opponent": "CLE",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -5107,6 +5027,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 3,
+            "opponent": "CHI",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -5124,21 +5054,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 9.15,
-        "percent_change": 0.0,
+        "percent_owned": 9.12,
+        "percent_change": -0.03,
         "bye_week": 7,
-        "projected_points": 4.12,
+        "projected_points": 4.91,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 34,
-            "opponent": "HOU",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T21:05:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:05 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -5147,6 +5067,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-17T01:15:00+00:00",
             "kickoff_ct": "Mon Nov 16, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 20,
+            "opponent": "NYJ",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T21:05:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:05 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -5163,21 +5093,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 8.48,
-        "percent_change": -0.03,
+        "percent_owned": 8.47,
+        "percent_change": -0.04,
         "bye_week": 5,
-        "projected_points": 4.6,
+        "projected_points": 4.66,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 7,
-            "opponent": "DEN",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -5186,6 +5106,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 33,
+            "opponent": "BAL",
+            "at_home": true,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -5202,21 +5132,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 4.08,
-        "percent_change": -0.01,
+        "percent_owned": 4.05,
+        "percent_change": -0.04,
         "bye_week": 11,
-        "projected_points": 4.07,
+        "projected_points": 3.05,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 4,
-            "opponent": "CIN",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T14:30:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 8:30 AM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -5226,6 +5146,10 @@
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
             "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": true
           }
         ],
         "recent_form_position": "D/ST",
@@ -5241,21 +5165,11 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
-        "percent_owned": 3.95,
+        "percent_owned": 3.94,
         "percent_change": -0.01,
         "bye_week": 13,
-        "projected_points": 2.77,
+        "projected_points": 3.63,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 25,
-            "opponent": "SF",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -5264,6 +5178,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 7,
+            "opponent": "DEN",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 3:25 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -5276,17 +5200,15 @@
         "name": "Titans D/ST",
         "position": "D/ST",
         "pro_team": "TEN",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 3.51,
-        "percent_change": -0.03,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-11T08:00:00+00:00",
+        "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
+        "percent_owned": 3.5,
+        "percent_change": -0.04,
         "bye_week": 9,
-        "projected_points": 0.0,
+        "projected_points": 2.48,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": true
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -5295,6 +5217,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 6,
+            "opponent": "DAL",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -5313,20 +5245,10 @@
         "waiver_process_date": "2026-11-11T08:00:00+00:00",
         "waiver_process_ct": "Wed Nov 11, 2:00 AM CST",
         "percent_owned": 2.28,
-        "percent_change": 0.0,
+        "percent_change": -0.01,
         "bye_week": 13,
-        "projected_points": 2.3,
+        "projected_points": 5.29,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 6,
-            "opponent": "DAL",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -5335,6 +5257,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 34,
+            "opponent": "HOU",
+            "at_home": false,
+            "kickoff_utc": "2026-11-20T01:15:00+00:00",
+            "kickoff_ct": "Thu Nov 19, 7:15 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -5354,18 +5286,8 @@
         "percent_owned": 0.66,
         "percent_change": 0.0,
         "bye_week": 6,
-        "projected_points": 2.22,
+        "projected_points": 5.78,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 8,
-            "opponent": "DET",
-            "at_home": true,
-            "kickoff_utc": "2026-11-08T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 12:00 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -5374,6 +5296,16 @@
             "at_home": false,
             "kickoff_utc": "2026-11-15T18:00:00+00:00",
             "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 2,
+            "opponent": "BUF",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
@@ -5394,18 +5326,8 @@
         "percent_owned": 0.59,
         "percent_change": 0.0,
         "bye_week": 14,
-        "projected_points": 3.84,
+        "projected_points": 3.3,
         "upcoming": [
-          {
-            "scoring_period_id": 9,
-            "bye": false,
-            "opponent_pro_team_id": 26,
-            "opponent": "SEA",
-            "at_home": false,
-            "kickoff_utc": "2026-11-08T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 8, 3:25 PM CST",
-            "start_time_tbd": false
-          },
           {
             "scoring_period_id": 10,
             "bye": false,
@@ -5414,6 +5336,16 @@
             "at_home": true,
             "kickoff_utc": "2026-11-15T21:05:00+00:00",
             "kickoff_ct": "Sun Nov 15, 3:05 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 11,
+            "bye": false,
+            "opponent_pro_team_id": 12,
+            "opponent": "KC",
+            "at_home": false,
+            "kickoff_utc": "2026-11-22T18:00:00+00:00",
+            "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
             "start_time_tbd": false
           }
         ],
