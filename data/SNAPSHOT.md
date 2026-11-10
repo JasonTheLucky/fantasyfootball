@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-10T00:29:50.467876+00:00` |
-| Fetched at (CT) | **Mon Nov 9, 6:29 PM CST** |
+| Fetched at (UTC) | `2026-11-10T06:20:02.106880+00:00` |
+| Fetched at (CT) | **Tue Nov 10, 12:20 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 863 |
 | Players in lookup index | 1061 |
-| Fetch duration | 10.49s |
+| Fetch duration | 7.32s |
 | ESPN calls | 32 |
-| Workflow run | `42728700025` |
+| Workflow run | `42767771375` |
 
 ## Freshness and completeness gates
 
@@ -36,12 +36,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 76.48 | Commanders of Chaos | 94.72 | NO |
-| Connor’s Team | 94.94 | From Puka with Love | 120.5 | NO |
+| Kelli's Top-Notch Team | 95.18 | Commanders of Chaos | 94.72 | NO |
+| Connor’s Team | 106.74 | From Puka with Love | 120.5 | NO |
 | 🔥Certified Dumpster Fire 🔥 | 121.06 | Auto Draft Champion | 118.8 | NO |
-| The Bye Week Boys | 122.18 | Nicole's Gnarly Team | 102.26 | NO |
-| Jason X | 135.96 | Cole-Train | 77.1 | NO |
-| Burrow's Bunch | 160.04 | Giant Packer Fan | 81.0 | NO |
+| The Bye Week Boys | 128.78 | Nicole's Gnarly Team | 102.26 | NO |
+| Jason X | 135.96 | Cole-Train | 86.1 | NO |
+| Burrow's Bunch | 175.04 | Giant Packer Fan | 122.96 | NO |
 
 ## Rosters
 
@@ -132,30 +132,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Mon Nov 9, 6:18 AM CST`: 76 injury change(s) (2 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| **Cam Skattebo** | INACTIVE | QUESTIONABLE | Nov 12 | Jason X |
-| **Treylon Burks** | INACTIVE | QUESTIONABLE | Nov 12 | Jason X |
-| A.J. Brown | INACTIVE | QUESTIONABLE | Nov 15 | Connor’s Team |
-| AJ Dillon | INACTIVE | - | - | - |
-| Aidan O'Connell | INACTIVE | - | - | - |
-| Andy Dalton | INACTIVE | - | - | - |
-| Athan Kaliakmanis | INACTIVE | - | - | - |
-| Bam Knight | INACTIVE | QUESTIONABLE | Nov 15 | - |
-| Behren Morton | INACTIVE | - | - | - |
-| Ben VanSumeren | INACTIVE | - | - | - |
-| Brandon Aiyuk | RESERVE-DNR | RESERVE-EX | Nov 29 | The Bye Week Boys |
-| Brenen Thompson | INACTIVE | QUESTIONABLE | Nov 16 | - |
+Compared with the snapshot taken `Mon Nov 9, 6:29 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
 Record 5-3 · FAAB **$51** of $200 · waiver rank 10 · bench open **0** · IR open 0
 
-**This week:** vs Cole-Train — projected 135.96 to 87.84 (margin 48.12), win probability 0.99. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Cole-Train — projected 135.96 to 86.1 (margin 49.86), win probability 1.0. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $51 remaining, $10 reserve, **$41 discretionary**. Tiers are shares of remaining, already costed:
 
