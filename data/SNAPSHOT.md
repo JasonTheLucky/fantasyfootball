@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-09T12:18:44.025715+00:00` |
-| Fetched at (CT) | **Mon Nov 9, 6:18 AM CST** |
+| Fetched at (UTC) | `2026-11-10T00:29:50.467876+00:00` |
+| Fetched at (CT) | **Mon Nov 9, 6:29 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **9** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 863 |
 | Players in lookup index | 1061 |
-| Fetch duration | 9.64s |
+| Fetch duration | 10.49s |
 | ESPN calls | 32 |
-| Workflow run | `42615909325` |
+| Workflow run | `42728700025` |
 
 ## Freshness and completeness gates
 
@@ -79,20 +79,23 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (35)
+## Injury designations (38)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Cam Skattebo | RB | OUT | BENCH | NO |
 | Jason X | Treylon Burks | WR | OUT | BENCH | NO |
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
-| The Bye Week Boys | Puka Nacua | WR | QUESTIONABLE | WR | yes |
+| The Bye Week Boys | Chig Okonkwo | TE | QUESTIONABLE | TE | yes |
+| The Bye Week Boys | Puka Nacua | WR | DOUBTFUL | WR | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Brandon Aiyuk | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
+| Auto Draft Champion | Michael Wilson | WR | OUT | WR | yes |
 | Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Cole-Train | Josh Jacobs | RB | QUESTIONABLE | RB | yes |
+| Cole-Train | Josh Jacobs | RB | OUT | RB | yes |
+| Cole-Train | Malik Willis | QB | QUESTIONABLE | BENCH | NO |
 | Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | Luther Burden III | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | George Pickens | WR | OUT | BENCH | NO |
@@ -129,7 +132,24 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Mon Nov 9, 12:27 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Mon Nov 9, 6:18 AM CST`: 76 injury change(s) (2 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| **Cam Skattebo** | INACTIVE | QUESTIONABLE | Nov 12 | Jason X |
+| **Treylon Burks** | INACTIVE | QUESTIONABLE | Nov 12 | Jason X |
+| A.J. Brown | INACTIVE | QUESTIONABLE | Nov 15 | Connor’s Team |
+| AJ Dillon | INACTIVE | - | - | - |
+| Aidan O'Connell | INACTIVE | - | - | - |
+| Andy Dalton | INACTIVE | - | - | - |
+| Athan Kaliakmanis | INACTIVE | - | - | - |
+| Bam Knight | INACTIVE | QUESTIONABLE | Nov 15 | - |
+| Behren Morton | INACTIVE | - | - | - |
+| Ben VanSumeren | INACTIVE | - | - | - |
+| Brandon Aiyuk | RESERVE-DNR | RESERVE-EX | Nov 29 | The Bye Week Boys |
+| Brenen Thompson | INACTIVE | QUESTIONABLE | Nov 16 | - |
 
 ## Jason X
 
@@ -174,7 +194,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-107 players in this league's pool carry an NFL designation; 25 are on injured reserve (7 of them rostered). 3 affect Jason X.
+86 players in this league's pool carry an NFL designation; 27 are on injured reserve (7 of them rostered). 3 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -188,8 +208,8 @@ Jason X players with a designation:
 
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
-| Cam Skattebo | BENCH | INACTIVE | Nov 12 | Hamstring |
-| Treylon Burks | BENCH | INACTIVE | Nov 12 | Foot |
+| Cam Skattebo | BENCH | QUESTIONABLE | Nov 12 | Hamstring |
+| Treylon Burks | BENCH | QUESTIONABLE | Nov 12 | Foot |
 | Jonathon Brooks **(NFL IR)** | IR | IR | Nov 15 | Abdomen |
 
 ## Recent form (last 3 completed games)
@@ -200,7 +220,7 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9]. Ranked 212 of 212 expected.
 | --- | --- | --- | --- | --- |
 | QB | 24 | 51 | 24 | yes |
 | RB | 60 | 134 | 60 | yes |
-| WR | 60 | 196 | 60 | yes |
+| WR | 60 | 195 | 60 | yes |
 | TE | 24 | 124 | 24 | yes |
 | K | 24 | 34 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
@@ -223,7 +243,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-966 total | 244 executed ownership changes | 473 lineup-only moves | 192 draft picks | 0 pending
+969 total | 244 executed ownership changes | 476 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
