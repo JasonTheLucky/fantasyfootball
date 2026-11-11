@@ -75,7 +75,7 @@
     },
     "WR": {
       "limit": 60,
-      "qualifying": 195,
+      "qualifying": 196,
       "ranked": 60,
       "sufficient": true,
       "weeks_used": [
@@ -164,7 +164,7 @@
   "diagnostics": {
     "players_seen": 1061,
     "weekly_values_collected": 4176,
-    "excluded_out_for_season": 6,
+    "excluded_out_for_season": 5,
     "espn_requests": 20,
     "page_size": 1000,
     "invalid_values": 0,
@@ -201,17 +201,10 @@
       "expected_return": "2027-02-15"
     },
     {
-      "player_id": 3045523,
-      "name": "Kendrick Bourne",
-      "position": "WR",
-      "designation": "IR",
-      "expected_return": "2027-02-15"
-    },
-    {
       "player_id": 4360761,
       "name": "Michael Wilson",
       "position": "WR",
-      "designation": "OUT",
+      "designation": "IR",
       "expected_return": "2027-02-15"
     }
   ],
@@ -484,6 +477,7 @@
       4695883,
       4432708,
       2977187,
+      3045523,
       3930066,
       4361409,
       4035687,
@@ -1001,7 +995,7 @@
         "player_id": 14880,
         "name": "Kirk Cousins",
         "position": "QB",
-        "pro_team": "LV",
+        "pro_team": "MIN",
         "games": [
           {
             "scoring_period_id": 7,
@@ -1193,8 +1187,8 @@
         "fantasy_status": "ROSTERED",
         "is_jason_x": false,
         "injury": {
-          "designation": "QUESTIONABLE",
-          "nfl_status": "Questionable",
+          "designation": "DOUBTFUL",
+          "nfl_status": "Doubtful",
           "on_nfl_ir": false,
           "expected_return": "2026-11-15",
           "expected_return_label": "Nov 15",
@@ -1290,19 +1284,19 @@
         "avg_3_game": 15.493333,
         "avg_3_game_display": "15.49",
         "rank": 17,
-        "owner_label": "Cole-Train",
-        "owner_team_id": 4,
-        "fantasy_status": "ROSTERED",
+        "owner_label": "WAIVERS",
+        "owner_team_id": null,
+        "fantasy_status": "AVAILABLE",
         "is_jason_x": false,
         "injury": {
-          "designation": "QUESTIONABLE",
-          "nfl_status": "Questionable",
-          "on_nfl_ir": false,
-          "expected_return": "2026-11-15",
-          "expected_return_label": "Nov 15",
+          "designation": "IR",
+          "nfl_status": "Injured Reserve",
+          "on_nfl_ir": true,
+          "expected_return": "2026-12-13",
+          "expected_return_label": "Dec 13",
           "injury_type": "Groin"
         },
-        "on_nfl_ir": false
+        "on_nfl_ir": true
       },
       {
         "player_id": 3122840,
@@ -2724,12 +2718,9 @@
         "fantasy_status": "ROSTERED",
         "is_jason_x": true,
         "injury": {
-          "designation": "QUESTIONABLE",
-          "nfl_status": "Questionable",
-          "on_nfl_ir": false,
-          "expected_return": "2026-11-12",
-          "expected_return_label": "Nov 12",
-          "injury_type": "Hamstring"
+          "designation": "Out",
+          "nfl_status": "Out",
+          "on_nfl_ir": false
         },
         "on_nfl_ir": false
       },
@@ -4912,7 +4903,7 @@
         "player_id": 15818,
         "name": "Keenan Allen",
         "position": "WR",
-        "pro_team": "IND",
+        "pro_team": "SF",
         "games": [
           {
             "scoring_period_id": 7,
@@ -4965,7 +4956,7 @@
         "is_jason_x": true,
         "injury": {
           "designation": "QUESTIONABLE",
-          "nfl_status": "Questionable",
+          "nfl_status": "Out",
           "on_nfl_ir": false,
           "expected_return": "2026-11-12",
           "expected_return_label": "Nov 12",
@@ -5505,16 +5496,7 @@
         "owner_label": "The Bye Week Boys",
         "owner_team_id": 2,
         "fantasy_status": "ROSTERED",
-        "is_jason_x": false,
-        "injury": {
-          "designation": "QUESTIONABLE",
-          "nfl_status": "Questionable",
-          "on_nfl_ir": false,
-          "expected_return": "2026-11-12",
-          "expected_return_label": "Nov 12",
-          "injury_type": "Hip"
-        },
-        "on_nfl_ir": false
+        "is_jason_x": false
       },
       {
         "player_id": 3116164,
@@ -6981,5 +6963,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 10,
-  "fetched_at": "2026-11-10T18:12:39.640838+00:00"
+  "fetched_at": "2026-11-11T00:30:36.782021+00:00"
 }

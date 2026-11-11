@@ -4,18 +4,18 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-10T18:12:47.882101+00:00` |
-| Fetched at (CT) | **Tue Nov 10, 12:12 PM CST** |
+| Fetched at (UTC) | `2026-11-11T00:30:47.479785+00:00` |
+| Fetched at (CT) | **Tue Nov 10, 6:30 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 198 |
-| Available players (FA + waivers) | 863 |
+| Rostered players | 196 |
+| Available players (FA + waivers) | 865 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.24s |
+| Fetch duration | 10.7s |
 | ESPN calls | 35 |
-| Workflow run | `42872826007` |
+| Workflow run | `42931893599` |
 
 ## Freshness and completeness gates
 
@@ -48,13 +48,13 @@
 | # | Team | Owner | Roster | Start | Bench | IR | Bench open |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
-| 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
+| 2 | The Bye Week Boys | Ravinder Battu | 17 | 8 | 8 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
-| 4 | Cole-Train | Jeffrey Clark | 17 | 9 | 7 | 1 | 0 |
+| 4 | Cole-Train | Jeffrey Clark | 16 | 9 | 6 | 1 | 1 |
 | 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
-| 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
+| 8 | Giant Packer Fan | Brian Seehafer | 15 | 9 | 6 | 0 | 1 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
 | 11 | 🔥Certified Dumpster Fire 🔥 | Mike LeMay | 17 | 9 | 7 | 1 | 0 |
@@ -79,23 +79,21 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (38)
+## Injury designations (36)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Cam Skattebo | RB | QUESTIONABLE | BENCH | NO |
-| Jason X | Treylon Burks | WR | QUESTIONABLE | BENCH | NO |
+| Jason X | Cam Skattebo | RB | OUT | BENCH | NO |
+| Jason X | Treylon Burks | WR | OUT | BENCH | NO |
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
-| The Bye Week Boys | Chig Okonkwo | TE | QUESTIONABLE | TE | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Puka Nacua | WR | DOUBTFUL | BENCH | NO |
 | The Bye Week Boys | Brandon Aiyuk | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
-| Auto Draft Champion | Michael Wilson | WR | OUT | WR | yes |
-| Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
+| Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | WR | yes |
+| Auto Draft Champion | Kyler Murray | QB | DOUBTFUL | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Cole-Train | Josh Jacobs | RB | OUT | BENCH | NO |
-| Cole-Train | Malik Willis | QB | QUESTIONABLE | BENCH | NO |
 | Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | Luther Burden III | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | George Pickens | WR | QUESTIONABLE | BENCH | NO |
@@ -126,29 +124,43 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 17 | 43 | 111 | 188 | 186 | 318 | 863 |
+| 17 | 43 | 112 | 188 | 186 | 319 | 865 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Tue Nov 10, 6:16 AM CST`: 5 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Tue Nov 10, 12:12 PM CST`: 14 injury change(s) (1 affecting Jason X), 2 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Jauan Jennings | INACTIVE | QUESTIONABLE | Nov 15 | - |
-| Jordan Whittington | - | QUESTIONABLE | Nov 15 | - |
-| Kyler Murray | INACTIVE | QUESTIONABLE | Nov 15 | Auto Draft Champion |
-| Rhamondre Stevenson | QUESTIONABLE | DOUBTFUL | Nov 15 | Commanders of Chaos |
-| Skyler Bell | INACTIVE | - | - | - |
+| **Cam Skattebo** | QUESTIONABLE | Out | - | Jason X |
+| Charlie Jones | QUESTIONABLE | - | - | - |
+| Chig Okonkwo | QUESTIONABLE | - | - | The Bye Week Boys |
+| Darnell Mooney | QUESTIONABLE | - | - | - |
+| Gardner Minshew II | DOUBTFUL | IR | Dec 20 | - |
+| Ihmir Smith-Marsette | - | OUT | Dec 13 | - |
+| J.J. McCarthy | QUESTIONABLE | Questionable | - | - |
+| Jeremiyah Love | IR | - | - | The Bye Week Boys |
+| Jordan Whittington | QUESTIONABLE | IR | Dec 20 | - |
+| Kendrick Bourne | IR | - | - | - |
+| Kyler Murray | QUESTIONABLE | DOUBTFUL | Nov 15 | Auto Draft Champion |
+| Malik Willis | QUESTIONABLE | IR | Dec 13 | - |
+
+**Newly available**
+
+| Name | Position | Pro Team | Dropped By |
+| --- | --- | --- | --- |
+| Malik Willis | QB | MIA | Cole-Train |
+| Ted Hurst III | WR | TB | Giant Packer Fan |
 
 ## Jason X
 
 Record 6-3 · FAAB **$51** of $200 · waiver rank 11 · bench open **0** · IR open 0
 
-**This week:** vs Auto Draft Champion — projected 137.31 to 109.87 (margin 27.44), win probability 0.63. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Auto Draft Champion — projected 135.66 to 108.52 (margin 27.14), win probability 0.63. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $51 remaining, $10 reserve, **$41 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -165,10 +177,10 @@ No open bench spot: any add needs a drop.
 | --- | --- | --- | --- | --- | --- | --- |
 | QB | Jayden Daniels | QB | W7 | @ NYG | 19.44 | - |
 | RB | Bhayshul Tuten | RB | W7 | @ TEN | 18.07 | - |
-| RB | Ollie Gordon II | RB | W6 | @ IND | 16.9 | - |
-| WR | Jaxon Smith-Njigba | WR | W11 | @ LV | 23.42 | - |
-| WR | Christian Watson | WR | W11 | vs MIN | 15.99 | - |
-| TE | Brock Bowers | TE | W13 | vs SEA | 17.27 | - |
+| RB | Ollie Gordon II | RB | W6 | @ IND | 16.62 | - |
+| WR | Jaxon Smith-Njigba | WR | W11 | @ LV | 23.21 | - |
+| WR | Christian Watson | WR | W11 | vs MIN | 16.29 | - |
+| TE | Brock Bowers | TE | W13 | vs SEA | 15.83 | - |
 | FLEX | Amon-Ra St. Brown | WR | W6 | vs NE | 21.18 | - |
 | K | Chase McLaughlin | K | W10 | BYE | 0.0 | - |
 | D/ST | Lions D/ST | D/ST | W6 | vs NE | 5.03 | - |
@@ -188,21 +200,22 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-86 players in this league's pool carry an NFL designation; 27 are on injured reserve (7 of them rostered). 3 affect Jason X.
+83 players in this league's pool carry an NFL designation; 29 are on injured reserve (7 of them rostered). 3 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
 | Player | Fantasy team | Expected return |
 | --- | --- | --- |
 | Alec Pierce | Connor’s Team | 2026-11-29 |
+| Michael Wilson | Auto Draft Champion | 2027-02-15 |
 
-**In a fantasy IR slot without an NFL IR designation:** Jadarian Price (Commanders of Chaos), Romeo Doubs (From Puka with Love).
+**In a fantasy IR slot without an NFL IR designation:** Jadarian Price (Commanders of Chaos), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love).
 
 Jason X players with a designation:
 
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
-| Cam Skattebo | BENCH | QUESTIONABLE | Nov 12 | Hamstring |
+| Cam Skattebo | BENCH | Out | - | - |
 | Treylon Burks | BENCH | QUESTIONABLE | Nov 12 | Foot |
 | Jonathon Brooks **(NFL IR)** | IR | IR | Nov 15 | Abdomen |
 
@@ -214,7 +227,7 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. Ranked 212 of 212 expected.
 | --- | --- | --- | --- | --- |
 | QB | 24 | 51 | 24 | yes |
 | RB | 60 | 134 | 60 | yes |
-| WR | 60 | 195 | 60 | yes |
+| WR | 60 | 196 | 60 | yes |
 | TE | 24 | 124 | 24 | yes |
 | K | 24 | 34 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
@@ -237,12 +250,14 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-974 total | 244 executed ownership changes | 481 lineup-only moves | 192 draft picks | 0 pending
+981 total | 246 executed ownership changes | 485 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-10T21:18 | Cole-Train | ROSTER | DROP Malik Willis |
+| 2026-11-10T20:09 | Giant Packer Fan | ROSTER | DROP Ted Hurst III |
 | 2026-11-08T16:13 | Jason X | FREEAGENT | ADD Audric Estime, DROP Demarcus Robinson |
 | 2026-11-07T00:08 | The Bye Week Boys | FREEAGENT | ADD Brandon Aiyuk, DROP Terrance Ferguson |
 | 2026-11-06T06:07 | Jason X | FREEAGENT | ADD Demarcus Robinson, DROP Jason Myers |
@@ -253,8 +268,6 @@ Most recent ownership changes:
 | 2026-11-05T13:09 | Jason X | FREEAGENT | ADD Elijah Mitchell |
 | 2026-11-05T13:08 | Jason X | FREEAGENT | ADD Kimani Vidal |
 | 2026-11-05T09:01 | Connor’s Team | WAIVER | ADD Josh Downs, DROP Tez Johnson |
-| 2026-11-05T05:20 | Jason X | FREEAGENT | ADD Lions D/ST, DROP Bengals D/ST |
-| 2026-11-04T09:20 | The Bye Week Boys | FREEAGENT | ADD Cairo Santos, DROP Tyler Loop |
 
 ## League format
 
