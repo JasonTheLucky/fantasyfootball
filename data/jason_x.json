@@ -219,24 +219,16 @@
     "opponent": "Auto Draft Champion",
     "my_points": 0.0,
     "opponent_points": 0.0,
-    "my_projected": 135.66,
+    "my_projected": 146.29,
     "opponent_projected": 108.52,
-    "projected_margin": 27.14,
-    "win_probability": 0.63,
+    "projected_margin": 37.77,
+    "win_probability": 0.67,
     "posture": "heavy favourite",
     "guidance": "Protect the floor: prefer the safer projection and avoid volatile swings.",
     "my_lineup_risk": {
-      "flagged_starters": [
-        {
-          "name": "Chase McLaughlin",
-          "position": "K",
-          "lineup_slot": "K",
-          "on_bye": true,
-          "projected_points": 0.0
-        }
-      ],
+      "flagged_starters": [],
       "projected_points_in_doubt": 0.0,
-      "starters_unavailable": 1
+      "starters_unavailable": 0
     },
     "opponent_lineup_risk": {
       "flagged_starters": [
@@ -258,14 +250,9 @@
     {
       "scoring_period_id": 10,
       "phase": "regular season",
-      "starters_on_bye": [
-        {
-          "name": "Chase McLaughlin",
-          "lineup_slot": "K",
-          "cover": "Spencer Shrader"
-        }
-      ],
+      "starters_on_bye": [],
       "bench_on_bye": [
+        "Chase McLaughlin",
         "Buccaneers D/ST"
       ],
       "uncovered_slots": []
@@ -281,8 +268,8 @@
         },
         {
           "name": "Christian Watson",
-          "lineup_slot": "WR",
-          "cover": "Caleb Douglas"
+          "lineup_slot": "FLEX",
+          "cover": "Cam Skattebo"
         }
       ],
       "bench_on_bye": [],
@@ -303,11 +290,14 @@
           "name": "Brock Bowers",
           "lineup_slot": "TE",
           "cover": null
+        },
+        {
+          "name": "Spencer Shrader",
+          "lineup_slot": "K",
+          "cover": "Chase McLaughlin"
         }
       ],
-      "bench_on_bye": [
-        "Spencer Shrader"
-      ],
+      "bench_on_bye": [],
       "uncovered_slots": [
         "TE"
       ]
@@ -348,7 +338,7 @@
       {
         "name": "Jonathon Brooks",
         "position": "RB",
-        "designation": "IR",
+        "designation": "IR-R",
         "on_nfl_ir": true,
         "expected_return": "2026-11-15",
         "expected_return_label": "Nov 15",
@@ -362,7 +352,7 @@
         "player": {
           "name": "Jonathon Brooks",
           "position": "RB",
-          "designation": "IR",
+          "designation": "IR-R",
           "on_nfl_ir": true,
           "expected_return": "2026-11-15",
           "expected_return_label": "Nov 15",
@@ -422,7 +412,7 @@
       "bye_week": 7,
       "projected_points": 19.44,
       "ros_projected_points": 185.99,
-      "percent_owned": 94.94,
+      "percent_owned": 94.93,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
       "upcoming": [
@@ -457,7 +447,7 @@
       "bye_week": 7,
       "projected_points": 18.07,
       "ros_projected_points": 149.86,
-      "percent_owned": 94.69,
+      "percent_owned": 94.92,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
       "upcoming": [
@@ -492,7 +482,7 @@
       "bye_week": 6,
       "projected_points": 16.62,
       "ros_projected_points": 129.66,
-      "percent_owned": 88.76,
+      "percent_owned": 89.05,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
       "upcoming": [
@@ -548,31 +538,37 @@
       ]
     },
     {
-      "player_id": 4248528,
-      "name": "Christian Watson",
+      "player_id": 4374302,
+      "name": "Amon-Ra St. Brown",
       "position": "WR",
-      "pro_team": "GB",
+      "pro_team": "DET",
       "lineup_slot": "WR",
-      "bye_week": 11,
-      "projected_points": 16.29,
-      "ros_projected_points": 140.87,
-      "percent_owned": 97.32,
+      "bye_week": 6,
+      "projected_points": 21.18,
+      "ros_projected_points": 176.12,
+      "percent_owned": 99.91,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
       "upcoming": [
         {
           "scoring_period_id": 10,
           "bye": false,
-          "opponent_pro_team_id": 16,
-          "opponent": "MIN",
+          "opponent_pro_team_id": 17,
+          "opponent": "NE",
           "at_home": true,
-          "kickoff_utc": "2026-11-15T18:00:00+00:00",
-          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "kickoff_utc": "2026-11-15T14:30:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 8:30 AM CST",
           "start_time_tbd": false
         },
         {
           "scoring_period_id": 11,
-          "bye": true
+          "bye": false,
+          "opponent_pro_team_id": 27,
+          "opponent": "TB",
+          "at_home": true,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
         }
       ]
     },
@@ -612,65 +608,65 @@
       ]
     },
     {
-      "player_id": 4374302,
-      "name": "Amon-Ra St. Brown",
+      "player_id": 4248528,
+      "name": "Christian Watson",
       "position": "WR",
-      "pro_team": "DET",
+      "pro_team": "GB",
       "lineup_slot": "FLEX",
-      "bye_week": 6,
-      "projected_points": 21.18,
-      "ros_projected_points": 176.12,
-      "percent_owned": 99.9,
+      "bye_week": 11,
+      "projected_points": 16.29,
+      "ros_projected_points": 140.87,
+      "percent_owned": 97.41,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
       "upcoming": [
         {
           "scoring_period_id": 10,
           "bye": false,
-          "opponent_pro_team_id": 17,
-          "opponent": "NE",
+          "opponent_pro_team_id": 16,
+          "opponent": "MIN",
           "at_home": true,
-          "kickoff_utc": "2026-11-15T14:30:00+00:00",
-          "kickoff_ct": "Sun Nov 15, 8:30 AM CST",
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
           "start_time_tbd": false
         },
         {
           "scoring_period_id": 11,
-          "bye": false,
-          "opponent_pro_team_id": 27,
-          "opponent": "TB",
-          "at_home": true,
-          "kickoff_utc": "2026-11-22T18:00:00+00:00",
-          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
-          "start_time_tbd": false
+          "bye": true
         }
       ]
     },
     {
-      "player_id": 3150744,
-      "name": "Chase McLaughlin",
+      "player_id": 4571557,
+      "name": "Spencer Shrader",
       "position": "K",
-      "pro_team": "TB",
+      "pro_team": "IND",
       "lineup_slot": "K",
-      "bye_week": 10,
-      "projected_points": 0.0,
-      "ros_projected_points": 78.78,
-      "percent_owned": 39.39,
+      "bye_week": 13,
+      "projected_points": 10.63,
+      "ros_projected_points": 81.19,
+      "percent_owned": 85.62,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
       "upcoming": [
         {
           "scoring_period_id": 10,
-          "bye": true
+          "bye": false,
+          "opponent_pro_team_id": 15,
+          "opponent": "MIA",
+          "at_home": true,
+          "kickoff_utc": "2026-11-15T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
+          "start_time_tbd": false
         },
         {
           "scoring_period_id": 11,
           "bye": false,
-          "opponent_pro_team_id": 8,
-          "opponent": "DET",
+          "opponent_pro_team_id": 34,
+          "opponent": "HOU",
           "at_home": false,
-          "kickoff_utc": "2026-11-22T18:00:00+00:00",
-          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "kickoff_utc": "2026-11-20T01:15:00+00:00",
+          "kickoff_ct": "Thu Nov 19, 7:15 PM CST",
           "start_time_tbd": false
         }
       ]
@@ -684,7 +680,7 @@
       "bye_week": 6,
       "projected_points": 5.03,
       "ros_projected_points": 42.81,
-      "percent_owned": 35.03,
+      "percent_owned": 34.26,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
       "upcoming": [
@@ -721,7 +717,7 @@
       "bye_week": 8,
       "projected_points": 12.03,
       "ros_projected_points": 106.87,
-      "percent_owned": 92.21,
+      "percent_owned": 92.09,
       "injury": {
         "designation": "Out",
         "nfl_status": "Out",
@@ -761,7 +757,7 @@
       "bye_week": 9,
       "projected_points": 9.98,
       "ros_projected_points": 88.13,
-      "percent_owned": 63.69,
+      "percent_owned": 64.21,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
       "upcoming": [
@@ -796,7 +792,7 @@
       "bye_week": 7,
       "projected_points": 9.44,
       "ros_projected_points": 88.99,
-      "percent_owned": 8.72,
+      "percent_owned": 8.6,
       "injury": {
         "designation": "QUESTIONABLE",
         "nfl_status": "Questionable",
@@ -831,6 +827,35 @@
       ]
     },
     {
+      "player_id": 3150744,
+      "name": "Chase McLaughlin",
+      "position": "K",
+      "pro_team": "TB",
+      "lineup_slot": "BENCH",
+      "bye_week": 10,
+      "projected_points": 0.0,
+      "ros_projected_points": 78.78,
+      "percent_owned": 37.34,
+      "on_nfl_ir": false,
+      "in_fantasy_ir_slot": false,
+      "upcoming": [
+        {
+          "scoring_period_id": 10,
+          "bye": true
+        },
+        {
+          "scoring_period_id": 11,
+          "bye": false,
+          "opponent_pro_team_id": 8,
+          "opponent": "DET",
+          "at_home": false,
+          "kickoff_utc": "2026-11-22T18:00:00+00:00",
+          "kickoff_ct": "Sun Nov 22, 12:00 PM CST",
+          "start_time_tbd": false
+        }
+      ]
+    },
+    {
       "player_id": -16027,
       "name": "Buccaneers D/ST",
       "position": "D/ST",
@@ -839,7 +864,7 @@
       "bye_week": 10,
       "projected_points": 0.0,
       "ros_projected_points": 56.89,
-      "percent_owned": 31.11,
+      "percent_owned": 30.95,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
       "upcoming": [
@@ -868,7 +893,7 @@
       "bye_week": 6,
       "projected_points": 9.54,
       "ros_projected_points": 84.19,
-      "percent_owned": 29.48,
+      "percent_owned": 29.91,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
       "upcoming": [
@@ -903,7 +928,7 @@
       "bye_week": 8,
       "projected_points": 10.63,
       "ros_projected_points": 10.63,
-      "percent_owned": 33.57,
+      "percent_owned": 39.39,
       "on_nfl_ir": false,
       "in_fantasy_ir_slot": false,
       "upcoming": [
@@ -928,41 +953,6 @@
           "start_time_tbd": false
         }
       ]
-    },
-    {
-      "player_id": 4571557,
-      "name": "Spencer Shrader",
-      "position": "K",
-      "pro_team": "IND",
-      "lineup_slot": "BENCH",
-      "bye_week": 13,
-      "projected_points": 10.63,
-      "ros_projected_points": 81.19,
-      "percent_owned": 85.03,
-      "on_nfl_ir": false,
-      "in_fantasy_ir_slot": false,
-      "upcoming": [
-        {
-          "scoring_period_id": 10,
-          "bye": false,
-          "opponent_pro_team_id": 15,
-          "opponent": "MIA",
-          "at_home": true,
-          "kickoff_utc": "2026-11-15T18:00:00+00:00",
-          "kickoff_ct": "Sun Nov 15, 12:00 PM CST",
-          "start_time_tbd": false
-        },
-        {
-          "scoring_period_id": 11,
-          "bye": false,
-          "opponent_pro_team_id": 34,
-          "opponent": "HOU",
-          "at_home": false,
-          "kickoff_utc": "2026-11-20T01:15:00+00:00",
-          "kickoff_ct": "Thu Nov 19, 7:15 PM CST",
-          "start_time_tbd": false
-        }
-      ]
     }
   ],
   "injured_reserve": [
@@ -975,9 +965,9 @@
       "bye_week": 5,
       "projected_points": 0.0,
       "ros_projected_points": 0.0,
-      "percent_owned": 33.23,
+      "percent_owned": 33.13,
       "injury": {
-        "designation": "IR",
+        "designation": "IR-R",
         "nfl_status": "Injured Reserve",
         "on_nfl_ir": true,
         "expected_return": "2026-11-15",
@@ -1028,22 +1018,12 @@
     {
       "name": "Jonathon Brooks",
       "lineup_slot": "IR",
-      "designation": "IR",
+      "designation": "IR-R",
       "expected_return": "Nov 15",
       "on_nfl_ir": true
     }
   ],
   "bye_pressure": [
-    {
-      "scoring_period_id": 10,
-      "starters_on_bye": [
-        {
-          "name": "Chase McLaughlin",
-          "position": "K",
-          "lineup_slot": "K"
-        }
-      ]
-    },
     {
       "scoring_period_id": 11,
       "starters_on_bye": [
@@ -1055,7 +1035,7 @@
         {
           "name": "Christian Watson",
           "position": "WR",
-          "lineup_slot": "WR"
+          "lineup_slot": "FLEX"
         }
       ]
     }
@@ -1067,6 +1047,6 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 10,
-  "fetched_at": "2026-11-11T12:17:33.114371+00:00",
-  "fetched_at_ct_label": "Wed Nov 11, 6:17 AM CST"
+  "fetched_at": "2026-11-11T18:12:42.770501+00:00",
+  "fetched_at_ct_label": "Wed Nov 11, 12:12 PM CST"
 }
