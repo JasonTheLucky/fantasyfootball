@@ -4,18 +4,18 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-11T06:20:30.368373+00:00` |
-| Fetched at (CT) | **Wed Nov 11, 12:20 AM CST** |
+| Fetched at (UTC) | `2026-11-11T12:17:42.148398+00:00` |
+| Fetched at (CT) | **Wed Nov 11, 6:17 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 196 |
-| Available players (FA + waivers) | 865 |
+| Rostered players | 197 |
+| Available players (FA + waivers) | 864 |
 | Players in lookup index | 1061 |
-| Fetch duration | 10.0s |
+| Fetch duration | 9.03s |
 | ESPN calls | 35 |
-| Workflow run | `42971707110` |
+| Workflow run | `43019052325` |
 
 ## Freshness and completeness gates
 
@@ -48,9 +48,9 @@
 | # | Team | Owner | Roster | Start | Bench | IR | Bench open |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Jason X | Jason Prinsen | 17 | 9 | 7 | 1 | 0 |
-| 2 | The Bye Week Boys | Ravinder Battu | 17 | 8 | 8 | 1 | 0 |
+| 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
-| 4 | Cole-Train | Jeffrey Clark | 16 | 9 | 6 | 1 | 1 |
+| 4 | Cole-Train | Jeffrey Clark | 17 | 9 | 7 | 1 | 0 |
 | 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
@@ -64,18 +64,18 @@
 
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
-| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 5 |
-| Commanders of Chaos | **$200** | $0 | 100.0% | 2 |
-| Auto Draft Champion | **$198** | $2 | 99.0% | 8 |
-| Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 4 |
-| Giant Packer Fan | **$195** | $5 | 97.5% | 10 |
-| Connor’s Team | **$179** | $21 | 89.5% | 3 |
-| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 9 |
-| Burrow's Bunch | **$144** | $56 | 72.0% | 12 |
-| From Puka with Love | **$125** | $75 | 62.5% | 7 |
-| The Bye Week Boys | **$100** | $100 | 50.0% | 6 |
-| Cole-Train | **$65** | $135 | 32.5% | 1 |
-| Jason X | **$51** | $149 | 25.5% | 11 |
+| Nicole's Gnarly Team | **$200** | $0 | 100.0% | 3 |
+| Commanders of Chaos | **$200** | $0 | 100.0% | 1 |
+| Auto Draft Champion | **$198** | $2 | 99.0% | 4 |
+| Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 2 |
+| Giant Packer Fan | **$195** | $5 | 97.5% | 6 |
+| Connor’s Team | **$179** | $21 | 89.5% | 10 |
+| 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 5 |
+| Burrow's Bunch | **$144** | $56 | 72.0% | 11 |
+| From Puka with Love | **$120** | $80 | 60.0% | 7 |
+| The Bye Week Boys | **$95** | $105 | 47.5% | 9 |
+| Jason X | **$49** | $151 | 24.5% | 8 |
+| Cole-Train | **$25** | $175 | 12.5% | 12 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
@@ -88,7 +88,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Puka Nacua | WR | DOUBTFUL | BENCH | NO |
-| The Bye Week Boys | Brandon Aiyuk | WR | OUT | BENCH | NO |
+| The Bye Week Boys | De'Zhaun Stribling | WR | INJURY_RESERVE | BENCH | NO |
+| The Bye Week Boys | Bam Knight | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | WR | yes |
 | Auto Draft Champion | Kyler Murray | QB | DOUBTFUL | BENCH | NO |
@@ -106,7 +107,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | TreVeyon Henderson | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Carnell Tate | WR | QUESTIONABLE | BENCH | NO |
-| Connor’s Team | MarShawn Lloyd | RB | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
 | Giant Packer Fan | Xavier Worthy | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
@@ -124,36 +124,55 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 17 | 43 | 112 | 188 | 186 | 319 | 865 |
+| 16 | 42 | 112 | 187 | 186 | 321 | 864 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Tue Nov 10, 6:30 PM CST`: 3 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Wed Nov 11, 12:20 AM CST`: 0 injury change(s) (0 affecting Jason X), 8 newly available, 9 claimed, 0 moved between teams.
 
-**Injury changes**
+**Newly available**
 
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Dean Connors | IR | - | - | - |
-| Ihmir Smith-Marsette | OUT | - | - | - |
-| Stone Smartt | OUT | - | - | - |
+| Name | Position | Pro Team | Dropped By |
+| --- | --- | --- | --- |
+| Brandon Aiyuk | WR | SF | The Bye Week Boys |
+| Chris Rodriguez Jr. | RB | JAX | The Bye Week Boys |
+| Germie Bernard | WR | PIT | Cole-Train |
+| Kyle Pitts Sr. | TE | ATL | Cole-Train |
+| MarShawn Lloyd | RB | GB | Connor’s Team |
+| Mike Washington Jr. | RB | LV | Jason X |
+| Nick Folk | K | ATL | Burrow's Bunch |
+| Tre Tucker | WR | LV | From Puka with Love |
+
+**Claimed**
+
+| Name | Position | Pro Team | Added By |
+| --- | --- | --- | --- |
+| **Spencer Shrader** | K | IND | Jason X |
+| Andre Szmyt | K | CLE | Burrow's Bunch |
+| Bam Knight | RB | ARI | The Bye Week Boys |
+| Corey Kiner | RB | NE | Cole-Train |
+| Darren Waller | TE | CAR | Cole-Train |
+| De'Zhaun Stribling | WR | SF | The Bye Week Boys |
+| Kaleb Johnson | RB | GB | Cole-Train |
+| Packers D/ST | D/ST | GB | From Puka with Love |
+| Samaje Perine | RB | CIN | Connor’s Team |
 
 ## Jason X
 
-Record 6-3 · FAAB **$51** of $200 · waiver rank 11 · bench open **0** · IR open 0
+Record 6-3 · FAAB **$49** of $200 · waiver rank 8 · bench open **0** · IR open 0
 
 **This week:** vs Auto Draft Champion — projected 135.66 to 108.52 (margin 27.14), win probability 0.63. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
-**FAAB plan** — $51 remaining, $10 reserve, **$41 discretionary**. Tiers are shares of remaining, already costed:
+**FAAB plan** — $49 remaining, $10 reserve, **$39 discretionary**. Tiers are shares of remaining, already costed:
 
 | Tier | Bid | Affordable | Within reserve |
 | --- | --- | --- | --- |
-| league winner | $13-20 | yes | yes |
+| league winner | $12-20 | yes | yes |
 | starter at need | $6-11 | yes | yes |
-| flex upside | $3-5 | yes | yes |
-| stash | $1-3 | yes | yes |
+| flex upside | $2-5 | yes | yes |
+| stash | $1-2 | yes | yes |
 
 No open bench spot: any add needs a drop.
 
@@ -218,7 +237,7 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. Ranked 212 of 212 expected.
 
 ESPN `appliedTotal` vs recomputed league scoring: max absolute delta **0.0** across 636 values (tolerance 0.01). `appliedTotal` is the authoritative value; this is drift detection only.
 
-14 ranked player(s) are on `Jason X` (team id 1) and carry `is_jason_x`, which drives the pale-yellow row highlight in the daily PDF. 0 owner(s) unresolved.
+15 ranked player(s) are on `Jason X` (team id 1) and carry `is_jason_x`, which drives the pale-yellow row highlight in the daily PDF. 0 owner(s) unresolved.
 
 Top 5 overall by three-game average:
 
@@ -234,24 +253,24 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-984 total | 246 executed ownership changes | 485 lineup-only moves | 192 draft picks | 0 pending
+1003 total | 255 executed ownership changes | 487 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-11T08:46 | Cole-Train | WAIVER | ADD Darren Waller, DROP Kyle Pitts Sr. |
+| 2026-11-11T08:46 | Burrow's Bunch | WAIVER | ADD Andre Szmyt, DROP Nick Folk |
+| 2026-11-11T08:46 | Connor’s Team | WAIVER | ADD Samaje Perine, DROP MarShawn Lloyd |
+| 2026-11-11T08:46 | The Bye Week Boys | WAIVER | ADD De'Zhaun Stribling, DROP Brandon Aiyuk |
+| 2026-11-11T08:46 | Jason X | WAIVER | ADD Spencer Shrader, DROP Mike Washington Jr. |
+| 2026-11-11T08:46 | The Bye Week Boys | WAIVER | ADD Bam Knight, DROP Chris Rodriguez Jr. |
+| 2026-11-11T08:46 | From Puka with Love | WAIVER | ADD Packers D/ST, DROP Tre Tucker |
+| 2026-11-11T08:46 | Cole-Train | WAIVER | ADD Kaleb Johnson, DROP Germie Bernard |
+| 2026-11-11T08:46 | Cole-Train | WAIVER | ADD Corey Kiner |
 | 2026-11-10T21:18 | Cole-Train | ROSTER | DROP Malik Willis |
 | 2026-11-10T20:09 | Giant Packer Fan | ROSTER | DROP Ted Hurst III |
 | 2026-11-08T16:13 | Jason X | FREEAGENT | ADD Audric Estime, DROP Demarcus Robinson |
-| 2026-11-07T00:08 | The Bye Week Boys | FREEAGENT | ADD Brandon Aiyuk, DROP Terrance Ferguson |
-| 2026-11-06T06:07 | Jason X | FREEAGENT | ADD Demarcus Robinson, DROP Jason Myers |
-| 2026-11-06T02:02 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Mike Gesicki, DROP Brian Robinson Jr. |
-| 2026-11-06T01:15 | Jason X | FREEAGENT | ADD Jason Myers, DROP Kimani Vidal |
-| 2026-11-06T01:07 | Jason X | FREEAGENT | ADD Caleb Douglas, DROP Tyjae Spears |
-| 2026-11-06T01:05 | Jason X | FREEAGENT | ADD Mike Washington Jr., DROP Elijah Mitchell |
-| 2026-11-05T13:09 | Jason X | FREEAGENT | ADD Elijah Mitchell |
-| 2026-11-05T13:08 | Jason X | FREEAGENT | ADD Kimani Vidal |
-| 2026-11-05T09:01 | Connor’s Team | WAIVER | ADD Josh Downs, DROP Tez Johnson |
 
 ## League format
 
