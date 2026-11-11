@@ -43,7 +43,7 @@
   "counts": {
     "QB": {
       "limit": 24,
-      "qualifying": 51,
+      "qualifying": 50,
       "ranked": 24,
       "sufficient": true,
       "weeks_used": [
@@ -164,7 +164,7 @@
   "diagnostics": {
     "players_seen": 1061,
     "weekly_values_collected": 4176,
-    "excluded_out_for_season": 5,
+    "excluded_out_for_season": 6,
     "espn_requests": 20,
     "page_size": 1000,
     "invalid_values": 0,
@@ -172,6 +172,13 @@
     "zero_point_games_kept": 1196
   },
   "excluded_out_for_season": [
+    {
+      "player_id": 4038524,
+      "name": "Gardner Minshew II",
+      "position": "QB",
+      "designation": "IR",
+      "expected_return": "2027-02-15"
+    },
     {
       "player_id": 4035671,
       "name": "Tyler Huntley",
@@ -242,7 +249,6 @@
       4685201,
       4038941,
       2578570,
-      4038524,
       15168,
       4432762,
       4596472,
@@ -4956,7 +4962,7 @@
         "is_jason_x": true,
         "injury": {
           "designation": "QUESTIONABLE",
-          "nfl_status": "Out",
+          "nfl_status": "Questionable",
           "on_nfl_ir": false,
           "expected_return": "2026-11-12",
           "expected_return_label": "Nov 12",
@@ -6963,5 +6969,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 10,
-  "fetched_at": "2026-11-11T00:30:36.782021+00:00"
+  "fetched_at": "2026-11-11T06:20:20.371669+00:00"
 }
