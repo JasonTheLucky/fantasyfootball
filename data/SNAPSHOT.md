@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-12T00:31:41.692398+00:00` |
-| Fetched at (CT) | **Wed Nov 11, 6:31 PM CST** |
+| Fetched at (UTC) | `2026-11-12T06:21:04.953247+00:00` |
+| Fetched at (CT) | **Thu Nov 12, 12:21 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 864 |
 | Players in lookup index | 1061 |
-| Fetch duration | 7.42s |
+| Fetch duration | 8.57s |
 | ESPN calls | 35 |
-| Workflow run | `43127903580` |
+| Workflow run | `43167492546` |
 
 ## Freshness and completeness gates
 
@@ -144,24 +144,15 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Wed Nov 11, 12:12 PM CST`: 42 injury change(s) (3 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Wed Nov 11, 6:31 PM CST`: 3 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| **Amon-Ra St. Brown** | - | QUESTIONABLE | Nov 15 | Jason X |
-| **Bhayshul Tuten** | - | QUESTIONABLE | Nov 15 | Jason X |
-| **Treylon Burks** | QUESTIONABLE | Out | - | Jason X |
-| Aidan O'Connell | - | Out | - | - |
-| Alvin Kamara | - | QUESTIONABLE | Nov 15 | The Bye Week Boys |
-| Ben Skowronek | QUESTIONABLE | - | - | - |
-| Brevin Jordan | - | QUESTIONABLE | Nov 15 | - |
-| Cameron Latu | - | QUESTIONABLE | Nov 15 | - |
-| Carson Wentz | - | QUESTIONABLE | Nov 15 | - |
-| Chris Bell | - | QUESTIONABLE | Nov 15 | - |
-| Chris Rodriguez Jr. | - | QUESTIONABLE | Nov 15 | - |
-| Colby Parkinson | - | QUESTIONABLE | Nov 15 | - |
+| Ben Skowronek | - | Out | - | - |
+| Christian Kirk | IR | - | - | - |
+| Davis Allen | - | QUESTIONABLE | Nov 15 | - |
 
 ## Jason X
 
@@ -205,7 +196,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-108 players in this league's pool carry an NFL designation; 30 are on injured reserve (8 of them rostered). 5 affect Jason X.
+109 players in this league's pool carry an NFL designation; 29 are on injured reserve (8 of them rostered). 5 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
