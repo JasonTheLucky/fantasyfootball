@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-12T12:17:32.753358+00:00` |
-| Fetched at (CT) | **Thu Nov 12, 6:17 AM CST** |
+| Fetched at (UTC) | `2026-11-12T18:14:18.796931+00:00` |
+| Fetched at (CT) | **Thu Nov 12, 12:14 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 864 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.7s |
+| Fetch duration | 9.68s |
 | ESPN calls | 35 |
-| Workflow run | `43216525522` |
+| Workflow run | `43277678925` |
 
 ## Freshness and completeness gates
 
@@ -79,15 +79,13 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (50)
+## Injury designations (48)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Bhayshul Tuten | RB | QUESTIONABLE | RB | yes |
 | Jason X | Amon-Ra St. Brown | WR | QUESTIONABLE | WR | yes |
-| Jason X | Cam Skattebo | RB | OUT | BENCH | NO |
-| Jason X | Treylon Burks | WR | OUT | BENCH | NO |
-| Jason X | Jonathon Brooks | RB | INJURY_RESERVE | IR | NO |
+| Jason X | Treylon Burks | WR | OUT | IR | NO |
 | The Bye Week Boys | Alvin Kamara | RB | QUESTIONABLE | RB | yes |
 | The Bye Week Boys | Omar Cooper Jr. | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
@@ -129,34 +127,40 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Rhamondre Stevenson | RB | DOUBTFUL | RB | yes |
-| Commanders of Chaos | Harold Fannin Jr. | TE | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Harold Fannin Jr. | TE | QUESTIONABLE | TE | yes |
 | Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Kyle Monangai | RB | OUT | BENCH | NO |
+| Commanders of Chaos | Rhamondre Stevenson | RB | DOUBTFUL | BENCH | NO |
 
 ## Available player pool by position
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 16 | 42 | 112 | 187 | 186 | 321 | 864 |
+| 16 | 42 | 111 | 188 | 186 | 321 | 864 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Thu Nov 12, 12:21 AM CST`: 0 injury change(s) (0 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
+Compared with the snapshot taken `Thu Nov 12, 6:17 AM CST`: 1 injury change(s) (0 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| Andrei Iosivas | IR | IR-R | Nov 15 | - |
 
 **Newly available**
 
 | Name | Position | Pro Team | Dropped By |
 | --- | --- | --- | --- |
-| Browns D/ST | D/ST | CLE | Kelli's Top-Notch Team |
+| Jonathon Brooks | RB | CAR | Jason X |
 
 **Claimed**
 
 | Name | Position | Pro Team | Added By |
 | --- | --- | --- | --- |
-| Colts D/ST | D/ST | IND | Kelli's Top-Notch Team |
+| **Fernando Mendoza** | QB | LV | Jason X |
 
 ## Jason X
 
@@ -200,7 +204,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-109 players in this league's pool carry an NFL designation; 29 are on injured reserve (8 of them rostered). 5 affect Jason X.
+109 players in this league's pool carry an NFL designation; 29 are on injured reserve (7 of them rostered). 4 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -210,15 +214,14 @@ No open bench spot: any add needs a drop.
 | Davante Adams | Connor’s Team | 2026-11-25 |
 | Michael Wilson | Auto Draft Champion | 2027-02-15 |
 
-**In a fantasy IR slot without an NFL IR designation:** Jadarian Price (Commanders of Chaos), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love).
+**In a fantasy IR slot without an NFL IR designation:** Jadarian Price (Commanders of Chaos), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Treylon Burks (Jason X).
 
 Jason X players with a designation:
 
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
 | Cam Skattebo | BENCH | Out | - | - |
-| Treylon Burks | BENCH | Out | - | - |
-| Jonathon Brooks **(NFL IR)** | IR | IR-R | Nov 15 | Groin |
+| Treylon Burks | IR | Out | - | - |
 | Bhayshul Tuten | RB | QUESTIONABLE | Nov 15 | Ankle |
 | Amon-Ra St. Brown | WR | QUESTIONABLE | Nov 15 | Ribs |
 
@@ -253,12 +256,13 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1015 total | 256 executed ownership changes | 498 lineup-only moves | 192 draft picks | 0 pending
+1019 total | 257 executed ownership changes | 501 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-12T13:39 | Jason X | FREEAGENT | ADD Fernando Mendoza, DROP Jonathon Brooks |
 | 2026-11-12T09:41 | Kelli's Top-Notch Team | FREEAGENT | ADD Colts D/ST, DROP Browns D/ST |
 | 2026-11-11T08:46 | Cole-Train | WAIVER | ADD Darren Waller, DROP Kyle Pitts Sr. |
 | 2026-11-11T08:46 | Burrow's Bunch | WAIVER | ADD Andre Szmyt, DROP Nick Folk |
@@ -270,7 +274,6 @@ Most recent ownership changes:
 | 2026-11-11T08:46 | Cole-Train | WAIVER | ADD Kaleb Johnson, DROP Germie Bernard |
 | 2026-11-11T08:46 | Cole-Train | WAIVER | ADD Corey Kiner |
 | 2026-11-10T21:18 | Cole-Train | ROSTER | DROP Malik Willis |
-| 2026-11-10T20:09 | Giant Packer Fan | ROSTER | DROP Ted Hurst III |
 
 ## League format
 
