@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-12T06:21:04.953247+00:00` |
-| Fetched at (CT) | **Thu Nov 12, 12:21 AM CST** |
+| Fetched at (UTC) | `2026-11-12T12:17:32.753358+00:00` |
+| Fetched at (CT) | **Thu Nov 12, 6:17 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 864 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.57s |
+| Fetch duration | 8.7s |
 | ESPN calls | 35 |
-| Workflow run | `43167492546` |
+| Workflow run | `43216525522` |
 
 ## Freshness and completeness gates
 
@@ -123,8 +123,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Nicole's Gnarly Team | Patrick Mahomes | QB | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Deshaun Watson | QB | OUT | BENCH | NO |
-| Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | QUESTIONABLE | WR | yes |
 | Kelli's Top-Notch Team | Garrett Wilson | WR | QUESTIONABLE | BENCH | NO |
+| Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | QUESTIONABLE | TE | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
@@ -144,15 +144,19 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Wed Nov 11, 6:31 PM CST`: 3 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Thu Nov 12, 12:21 AM CST`: 0 injury change(s) (0 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
 
-**Injury changes**
+**Newly available**
 
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Ben Skowronek | - | Out | - | - |
-| Christian Kirk | IR | - | - | - |
-| Davis Allen | - | QUESTIONABLE | Nov 15 | - |
+| Name | Position | Pro Team | Dropped By |
+| --- | --- | --- | --- |
+| Browns D/ST | D/ST | CLE | Kelli's Top-Notch Team |
+
+**Claimed**
+
+| Name | Position | Pro Team | Added By |
+| --- | --- | --- | --- |
+| Colts D/ST | D/ST | IND | Kelli's Top-Notch Team |
 
 ## Jason X
 
@@ -249,12 +253,13 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1010 total | 255 executed ownership changes | 494 lineup-only moves | 192 draft picks | 0 pending
+1015 total | 256 executed ownership changes | 498 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-12T09:41 | Kelli's Top-Notch Team | FREEAGENT | ADD Colts D/ST, DROP Browns D/ST |
 | 2026-11-11T08:46 | Cole-Train | WAIVER | ADD Darren Waller, DROP Kyle Pitts Sr. |
 | 2026-11-11T08:46 | Burrow's Bunch | WAIVER | ADD Andre Szmyt, DROP Nick Folk |
 | 2026-11-11T08:46 | Connor’s Team | WAIVER | ADD Samaje Perine, DROP MarShawn Lloyd |
@@ -266,7 +271,6 @@ Most recent ownership changes:
 | 2026-11-11T08:46 | Cole-Train | WAIVER | ADD Corey Kiner |
 | 2026-11-10T21:18 | Cole-Train | ROSTER | DROP Malik Willis |
 | 2026-11-10T20:09 | Giant Packer Fan | ROSTER | DROP Ted Hurst III |
-| 2026-11-08T16:13 | Jason X | FREEAGENT | ADD Audric Estime, DROP Demarcus Robinson |
 
 ## League format
 
