@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 1029,
-    "ownership_changes": 328,
-    "executed_ownership_changes": 259,
-    "lineup_only_moves": 509,
+    "total": 1031,
+    "ownership_changes": 329,
+    "executed_ownership_changes": 260,
+    "lineup_only_moves": 510,
     "draft_picks": 192,
     "pending": 0,
     "failed": 38,
@@ -1069,6 +1069,34 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "3a510651-e962-4cd3-b39a-d67cc33ca0d2",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 10,
+      "team_id": 8,
+      "team": "Giant Packer Fan",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-13T04:15:37.288000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16025,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 8,
+          "to_team": "Giant Packer Fan",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "30e5efc2-d49c-4b34-8f31-29323addfde2",
       "type": "FREEAGENT",
@@ -11608,6 +11636,46 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "00dcac1c-b49b-48cf-8b79-990643f3f8b3",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 10,
+      "team_id": 8,
+      "team": "Giant Packer Fan",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-13T04:15:49.527000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": -16025,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "D/ST",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": -16007,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "90a4189d-01e6-4fa3-a478-763f6b6aa2eb",
       "type": "ROSTER",
@@ -32367,6 +32435,34 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "3a510651-e962-4cd3-b39a-d67cc33ca0d2",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 10,
+      "team_id": 8,
+      "team": "Giant Packer Fan",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-13T04:15:37.288000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16025,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 8,
+          "to_team": "Giant Packer Fan",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "30e5efc2-d49c-4b34-8f31-29323addfde2",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -49516,7 +49612,7 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 58,
+    "0": 60,
     "1": 238,
     "2": 56,
     "3": 68,
@@ -49526,10 +49622,10 @@
     "7": 119,
     "8": 123,
     "9": 91,
-    "10": 58
+    "10": 60
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 10,
-  "fetched_at": "2026-11-13T00:31:36.133488+00:00"
+  "fetched_at": "2026-11-13T06:20:19.568790+00:00"
 }

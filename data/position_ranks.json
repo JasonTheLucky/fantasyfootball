@@ -3,7 +3,7 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 10,
-  "fetched_at": "2026-11-13T00:31:36.133488+00:00",
+  "fetched_at": "2026-11-13T06:20:19.568790+00:00",
   "complete": true,
   "team_count": 12,
   "positions": [
@@ -81,7 +81,7 @@
         "WR": 1,
         "TE": 2,
         "K": 7,
-        "D/ST": 2
+        "D/ST": 3
       },
       "strongest": [
         "QB",
@@ -105,13 +105,14 @@
         "WR": 8,
         "TE": 3,
         "K": 2,
-        "D/ST": 8
+        "D/ST": 2
       },
       "strongest": [
         "QB",
         "RB",
         "TE",
-        "K"
+        "K",
+        "D/ST"
       ],
       "weakest": []
     },
@@ -129,12 +130,11 @@
         "WR": 3,
         "TE": 9,
         "K": 12,
-        "D/ST": 3
+        "D/ST": 4
       },
       "strongest": [
         "QB",
-        "WR",
-        "D/ST"
+        "WR"
       ],
       "weakest": [
         "K"
@@ -154,7 +154,7 @@
         "WR": 12,
         "TE": 6,
         "K": 11,
-        "D/ST": 5
+        "D/ST": 6
       },
       "strongest": [],
       "weakest": [
@@ -177,7 +177,7 @@
         "WR": 11,
         "TE": 5,
         "K": 10,
-        "D/ST": 6
+        "D/ST": 7
       },
       "strongest": [],
       "weakest": [
@@ -200,7 +200,7 @@
         "WR": 9,
         "TE": 12,
         "K": 8,
-        "D/ST": 4
+        "D/ST": 5
       },
       "strongest": [],
       "weakest": [
@@ -313,7 +313,7 @@
         "WR": 4,
         "TE": 1,
         "K": 3,
-        "D/ST": 7
+        "D/ST": 8
       },
       "strongest": [
         "TE",
@@ -2177,6 +2177,32 @@
       },
       {
         "rank": 2,
+        "team_id": 8,
+        "team_name": "Giant Packer Fan",
+        "is_jason_x": false,
+        "score": 74.8,
+        "depth_score": 11.2,
+        "players": [
+          {
+            "player_id": -16025,
+            "name": "49ers D/ST",
+            "position": "D/ST",
+            "pro_team": "SF",
+            "ros_projected_points": 63.6,
+            "weight": 1.0
+          },
+          {
+            "player_id": -16007,
+            "name": "Broncos D/ST",
+            "position": "D/ST",
+            "pro_team": "DEN",
+            "ros_projected_points": 55.9,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 3,
         "team_id": 1,
         "team_name": "Jason X",
         "is_jason_x": true,
@@ -2202,7 +2228,7 @@
         ]
       },
       {
-        "rank": 3,
+        "rank": 4,
         "team_id": 11,
         "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
         "is_jason_x": false,
@@ -2220,7 +2246,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 5,
         "team_id": 2,
         "team_name": "The Bye Week Boys",
         "is_jason_x": false,
@@ -2238,7 +2264,7 @@
         ]
       },
       {
-        "rank": 5,
+        "rank": 6,
         "team_id": 3,
         "team_name": "Auto Draft Champion",
         "is_jason_x": false,
@@ -2264,7 +2290,7 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 7,
         "team_id": 6,
         "team_name": "From Puka with Love",
         "is_jason_x": false,
@@ -2290,7 +2316,7 @@
         ]
       },
       {
-        "rank": 7,
+        "rank": 8,
         "team_id": 4,
         "team_name": "Cole-Train",
         "is_jason_x": false,
@@ -2303,24 +2329,6 @@
             "position": "D/ST",
             "pro_team": "JAX",
             "ros_projected_points": 57.2,
-            "weight": 1.0
-          }
-        ]
-      },
-      {
-        "rank": 8,
-        "team_id": 8,
-        "team_name": "Giant Packer Fan",
-        "is_jason_x": false,
-        "score": 55.9,
-        "depth_score": 0.0,
-        "players": [
-          {
-            "player_id": -16007,
-            "name": "Broncos D/ST",
-            "position": "D/ST",
-            "pro_team": "DEN",
-            "ros_projected_points": 55.9,
             "weight": 1.0
           }
         ]
