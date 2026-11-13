@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-13T06:20:28.154590+00:00` |
-| Fetched at (CT) | **Fri Nov 13, 12:20 AM CST** |
+| Fetched at (UTC) | `2026-11-13T12:16:39.343615+00:00` |
+| Fetched at (CT) | **Fri Nov 13, 6:16 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 863 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.59s |
+| Fetch duration | 9.25s |
 | ESPN calls | 35 |
-| Workflow run | `43377980925` |
+| Workflow run | `43423768408` |
 
 ## Freshness and completeness gates
 
@@ -136,20 +136,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Thu Nov 12, 6:31 PM CST`: 2 injury change(s) (0 affecting Jason X), 0 newly available, 1 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| David Njoku | - | IR-R | Nov 16 | - |
-| Puka Nacua | OUT | IR | Dec 20 | The Bye Week Boys |
-
-**Claimed**
-
-| Name | Position | Pro Team | Added By |
-| --- | --- | --- | --- |
-| 49ers D/ST | D/ST | SF | Giant Packer Fan |
+Compared with the snapshot taken `Fri Nov 13, 12:20 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
