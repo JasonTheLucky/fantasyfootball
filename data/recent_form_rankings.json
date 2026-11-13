@@ -43,7 +43,7 @@
   "counts": {
     "QB": {
       "limit": 24,
-      "qualifying": 50,
+      "qualifying": 51,
       "ranked": 24,
       "sufficient": true,
       "weeks_used": [
@@ -91,7 +91,7 @@
     },
     "TE": {
       "limit": 24,
-      "qualifying": 124,
+      "qualifying": 125,
       "ranked": 24,
       "sufficient": true,
       "weeks_used": [
@@ -164,7 +164,7 @@
   "diagnostics": {
     "players_seen": 1061,
     "weekly_values_collected": 4176,
-    "excluded_out_for_season": 5,
+    "excluded_out_for_season": 2,
     "espn_requests": 20,
     "page_size": 1000,
     "invalid_values": 0,
@@ -176,27 +176,6 @@
       "player_id": 4038524,
       "name": "Gardner Minshew II",
       "position": "QB",
-      "designation": "IR",
-      "expected_return": "2027-02-15"
-    },
-    {
-      "player_id": 4035671,
-      "name": "Tyler Huntley",
-      "position": "QB",
-      "designation": "IR",
-      "expected_return": "2027-02-15"
-    },
-    {
-      "player_id": 3127586,
-      "name": "Jeremy McNichols",
-      "position": "RB",
-      "designation": "IR",
-      "expected_return": "2027-02-15"
-    },
-    {
-      "player_id": 4427834,
-      "name": "Erick All Jr.",
-      "position": "TE",
       "designation": "IR",
       "expected_return": "2027-02-15"
     },
@@ -242,6 +221,7 @@
       4685201,
       4038941,
       2578570,
+      4035671,
       15168,
       4432762,
       4596472,
@@ -641,6 +621,7 @@
       3116365,
       4429148,
       3929645,
+      4427834,
       4426844,
       3127310,
       3930086,
@@ -1222,13 +1203,7 @@
         "owner_label": "Nicole's Gnarly Team",
         "owner_team_id": 9,
         "fantasy_status": "ROSTERED",
-        "is_jason_x": false,
-        "injury": {
-          "designation": "Questionable",
-          "nfl_status": "Questionable",
-          "on_nfl_ir": false
-        },
-        "on_nfl_ir": false
+        "is_jason_x": false
       },
       {
         "player_id": 15864,
@@ -1321,13 +1296,7 @@
         "owner_label": "Nicole's Gnarly Team",
         "owner_team_id": 9,
         "fantasy_status": "ROSTERED",
-        "is_jason_x": false,
-        "injury": {
-          "designation": "Out",
-          "nfl_status": "Out",
-          "on_nfl_ir": false
-        },
-        "on_nfl_ir": false
+        "is_jason_x": false
       },
       {
         "player_id": 3912547,
@@ -1572,7 +1541,16 @@
         "owner_label": "Burrow's Bunch",
         "owner_team_id": 5,
         "fantasy_status": "ROSTERED",
-        "is_jason_x": false
+        "is_jason_x": false,
+        "injury": {
+          "designation": "QUESTIONABLE",
+          "nfl_status": "Questionable",
+          "on_nfl_ir": false,
+          "expected_return": "2026-11-15",
+          "expected_return_label": "Nov 15",
+          "injury_type": "Finger"
+        },
+        "on_nfl_ir": false
       },
       {
         "player_id": 3117251,
@@ -1919,8 +1897,8 @@
         "fantasy_status": "ROSTERED",
         "is_jason_x": false,
         "injury": {
-          "designation": "DOUBTFUL",
-          "nfl_status": "Doubtful",
+          "designation": "QUESTIONABLE",
+          "nfl_status": "Questionable",
           "on_nfl_ir": false,
           "expected_return": "2026-11-15",
           "expected_return_label": "Nov 15",
@@ -2252,16 +2230,7 @@
         "owner_label": "The Bye Week Boys",
         "owner_team_id": 2,
         "fantasy_status": "ROSTERED",
-        "is_jason_x": false,
-        "injury": {
-          "designation": "QUESTIONABLE",
-          "nfl_status": "Questionable",
-          "on_nfl_ir": false,
-          "expected_return": "2026-11-15",
-          "expected_return_label": "Nov 15",
-          "injury_type": "Back"
-        },
-        "on_nfl_ir": false
+        "is_jason_x": false
       },
       {
         "player_id": 4685702,
@@ -2737,13 +2706,7 @@
         "owner_label": "Jason X",
         "owner_team_id": 1,
         "fantasy_status": "ROSTERED",
-        "is_jason_x": true,
-        "injury": {
-          "designation": "Out",
-          "nfl_status": "Out",
-          "on_nfl_ir": false
-        },
-        "on_nfl_ir": false
+        "is_jason_x": true
       },
       {
         "player_id": 4429059,
@@ -5057,12 +5020,6 @@
         "owner_team_id": 1,
         "fantasy_status": "ROSTERED",
         "is_jason_x": true,
-        "injury": {
-          "designation": "Out",
-          "nfl_status": "Out",
-          "on_nfl_ir": false
-        },
-        "on_nfl_ir": false,
         "in_fantasy_ir_slot": true
       },
       {
@@ -5602,9 +5559,9 @@
         "avg_3_game": 9.6,
         "avg_3_game_display": "9.60",
         "rank": 16,
-        "owner_label": "The Bye Week Boys",
-        "owner_team_id": 2,
-        "fantasy_status": "ROSTERED",
+        "owner_label": "WAIVERS",
+        "owner_team_id": null,
+        "fantasy_status": "AVAILABLE",
         "is_jason_x": false
       },
       {
@@ -5977,9 +5934,9 @@
         "avg_3_game": 11.333333,
         "avg_3_game_display": "11.33",
         "rank": 5,
-        "owner_label": "The Bye Week Boys",
-        "owner_team_id": 2,
-        "fantasy_status": "ROSTERED",
+        "owner_label": "WAIVERS",
+        "owner_team_id": null,
+        "fantasy_status": "AVAILABLE",
         "is_jason_x": false
       },
       {
@@ -6005,9 +5962,9 @@
         "avg_3_game": 11.333333,
         "avg_3_game_display": "11.33",
         "rank": 6,
-        "owner_label": "FREE AGENT",
-        "owner_team_id": null,
-        "fantasy_status": "AVAILABLE",
+        "owner_label": "The Bye Week Boys",
+        "owner_team_id": 2,
+        "fantasy_status": "ROSTERED",
         "is_jason_x": false
       },
       {
@@ -6400,16 +6357,7 @@
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
-        "is_jason_x": false,
-        "injury": {
-          "designation": "QUESTIONABLE",
-          "nfl_status": "Questionable",
-          "on_nfl_ir": false,
-          "expected_return": "2026-11-15",
-          "expected_return_label": "Nov 15",
-          "injury_type": "Calf"
-        },
-        "on_nfl_ir": false
+        "is_jason_x": false
       },
       {
         "player_id": 3043234,
@@ -7090,5 +7038,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 10,
-  "fetched_at": "2026-11-12T18:14:09.120830+00:00"
+  "fetched_at": "2026-11-13T00:31:36.133488+00:00"
 }
