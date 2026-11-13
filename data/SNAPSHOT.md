@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-13T12:16:39.343615+00:00` |
-| Fetched at (CT) | **Fri Nov 13, 6:16 AM CST** |
+| Fetched at (UTC) | `2026-11-13T18:13:10.012313+00:00` |
+| Fetched at (CT) | **Fri Nov 13, 12:13 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 863 |
 | Players in lookup index | 1061 |
-| Fetch duration | 9.25s |
+| Fetch duration | 10.38s |
 | ESPN calls | 35 |
-| Workflow run | `43423768408` |
+| Workflow run | `43480417876` |
 
 ## Freshness and completeness gates
 
@@ -79,17 +79,15 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (42)
+## Injury designations (39)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Bhayshul Tuten | RB | QUESTIONABLE | RB | yes |
 | Jason X | Amon-Ra St. Brown | WR | QUESTIONABLE | WR | yes |
-| The Bye Week Boys | Omar Cooper Jr. | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
 | The Bye Week Boys | Puka Nacua | WR | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | De'Zhaun Stribling | WR | INJURY_RESERVE | BENCH | NO |
-| The Bye Week Boys | Bam Knight | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Kyler Murray | QB | DOUBTFUL | BENCH | NO |
@@ -105,7 +103,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Dalton Kincaid | TE | QUESTIONABLE | TE | yes |
-| Connor’s Team | Carnell Tate | WR | QUESTIONABLE | WR | yes |
+| Connor’s Team | Carnell Tate | WR | OUT | WR | yes |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | OUT | BENCH | NO |
@@ -117,7 +115,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Garrett Wilson | WR | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Hunter Henry | TE | QUESTIONABLE | TE | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
@@ -136,13 +133,24 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 13, 12:20 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Fri Nov 13, 6:16 AM CST`: 6 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| Bam Knight | QUESTIONABLE | - | - | The Bye Week Boys |
+| Carnell Tate | QUESTIONABLE | OUT | Nov 22 | Connor’s Team |
+| Chris Bell | QUESTIONABLE | DOUBTFUL | Nov 15 | - |
+| Chris Collier | - | QUESTIONABLE | Nov 15 | - |
+| Hunter Henry | QUESTIONABLE | - | - | 🔥Certified Dumpster Fire 🔥 |
+| Omar Cooper Jr. | QUESTIONABLE | - | - | The Bye Week Boys |
 
 ## Jason X
 
 Record 6-3 · FAAB **$49** of $200 · waiver rank 8 · bench open **0** · IR open 0
 
-**This week:** vs Auto Draft Champion — projected 147.7 to 118.94 (margin 28.76), win probability 0.64. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Auto Draft Champion — projected 147.63 to 118.94 (margin 28.69), win probability 0.64. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $49 remaining, $10 reserve, **$39 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -159,13 +167,13 @@ No open bench spot: any add needs a drop.
 | --- | --- | --- | --- | --- | --- | --- |
 | QB | Jayden Daniels | QB | W7 | @ NYG | 18.4 | - |
 | RB | Bhayshul Tuten | RB | W7 | @ TEN | 18.07 | QUESTIONABLE (back Nov 15) |
-| RB | Ollie Gordon II | RB | W6 | @ IND | 16.62 | - |
+| RB | Ollie Gordon II | RB | W6 | @ IND | 16.6 | - |
 | WR | Jaxon Smith-Njigba | WR | W11 | @ LV | 23.21 | - |
 | WR | Amon-Ra St. Brown | WR | W6 | vs NE | 21.18 | QUESTIONABLE (back Nov 15) |
 | TE | Brock Bowers | TE | W13 | vs SEA | 15.83 | - |
 | FLEX | Christian Watson | WR | W11 | vs MIN | 16.29 | - |
 | K | Spencer Shrader | K | W13 | vs MIA | 10.63 | - |
-| D/ST | Lions D/ST | D/ST | W6 | vs NE | 5.12 | - |
+| D/ST | Lions D/ST | D/ST | W6 | vs NE | 5.06 | - |
 
 **Week 11 bye pressure:** Jaxon Smith-Njigba (WR), Christian Watson (FLEX).
 
@@ -180,7 +188,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-91 players in this league's pool carry an NFL designation; 25 are on injured reserve (8 of them rostered). 2 affect Jason X.
+89 players in this league's pool carry an NFL designation; 25 are on injured reserve (8 of them rostered). 2 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
