@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-14T00:30:15.031395+00:00` |
-| Fetched at (CT) | **Fri Nov 13, 6:30 PM CST** |
+| Fetched at (UTC) | `2026-11-14T06:18:04.548643+00:00` |
+| Fetched at (CT) | **Sat Nov 14, 12:18 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 198 |
 | Available players (FA + waivers) | 863 |
 | Players in lookup index | 1061 |
-| Fetch duration | 7.93s |
+| Fetch duration | 8.2s |
 | ESPN calls | 35 |
-| Workflow run | `43534587992` |
+| Workflow run | `43565639131` |
 
 ## Freshness and completeness gates
 
@@ -129,24 +129,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 13, 12:13 PM CST`: 39 injury change(s) (1 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Fri Nov 13, 6:30 PM CST`: 1 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| **Bhayshul Tuten** | QUESTIONABLE | - | - | Jason X |
-| Adonai Mitchell | - | QUESTIONABLE | Nov 15 | Giant Packer Fan |
-| Brevin Jordan | QUESTIONABLE | OUT | Nov 19 | - |
-| CJ Donaldson | QUESTIONABLE | OUT | Nov 22 | - |
-| Carson Wentz | QUESTIONABLE | - | - | - |
-| Chris Collier | QUESTIONABLE | - | - | - |
-| Chris Rodriguez Jr. | QUESTIONABLE | - | - | - |
-| Colby Parkinson | QUESTIONABLE | - | - | - |
-| Dalton Kincaid | QUESTIONABLE | - | - | Connor’s Team |
-| Deebo Samuel Sr. | QUESTIONABLE | - | - | From Puka with Love |
-| Dont'e Thornton Jr. | - | QUESTIONABLE | Nov 15 | - |
-| Drew Lock | QUESTIONABLE | - | - | - |
+| Tyrell Shavers | - | PUP-R | Nov 15 | - |
 
 ## Jason X
 
@@ -190,7 +179,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-75 players in this league's pool carry an NFL designation; 25 are on injured reserve (8 of them rostered). 1 affect Jason X.
+76 players in this league's pool carry an NFL designation; 25 are on injured reserve (8 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
