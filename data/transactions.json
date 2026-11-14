@@ -1,16 +1,28 @@
 {
   "counts": {
-    "total": 1031,
-    "ownership_changes": 329,
-    "executed_ownership_changes": 260,
+    "total": 1032,
+    "ownership_changes": 330,
+    "executed_ownership_changes": 261,
     "lineup_only_moves": 510,
     "draft_picks": 192,
     "pending": 0,
     "failed": 38,
-    "waiver_bids": 88,
-    "waiver_bids_won": 58
+    "waiver_bids": 89,
+    "waiver_bids_won": 59
   },
   "waiver_bids": [
+    {
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 5,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 10,
+      "date": "2026-11-14T08:44:33.754000+00:00",
+      "players_added": [
+        4678008
+      ]
+    },
     {
       "team_id": 2,
       "team": "The Bye Week Boys",
@@ -1069,6 +1081,34 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "a584ac18-ea82-453d-bf97-316934875a44",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 10,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 5,
+      "proposed_date": "2026-11-14T08:44:33.614000+00:00",
+      "processed_date": "2026-11-14T08:44:33.754000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4678008,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "3a510651-e962-4cd3-b39a-d67cc33ca0d2",
       "type": "FREEAGENT",
@@ -32435,6 +32475,34 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "a584ac18-ea82-453d-bf97-316934875a44",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 10,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 5,
+      "proposed_date": "2026-11-14T08:44:33.614000+00:00",
+      "processed_date": "2026-11-14T08:44:33.754000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4678008,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "3a510651-e962-4cd3-b39a-d67cc33ca0d2",
       "type": "FREEAGENT",
       "status": "EXECUTED",
@@ -49612,7 +49680,7 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 60,
+    "0": 61,
     "1": 238,
     "2": 56,
     "3": 68,
@@ -49622,10 +49690,10 @@
     "7": 119,
     "8": 123,
     "9": 91,
-    "10": 60
+    "10": 61
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 10,
-  "fetched_at": "2026-11-14T06:17:56.346824+00:00"
+  "fetched_at": "2026-11-14T12:15:09.330565+00:00"
 }
