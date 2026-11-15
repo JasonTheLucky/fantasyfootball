@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-14T18:12:15.290398+00:00` |
-| Fetched at (CT) | **Sat Nov 14, 12:12 PM CST** |
+| Fetched at (UTC) | `2026-11-15T00:34:07.559790+00:00` |
+| Fetched at (CT) | **Sat Nov 14, 6:34 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 864 |
 | Players in lookup index | 1061 |
-| Fetch duration | 7.81s |
+| Fetch duration | 8.66s |
 | ESPN calls | 35 |
-| Workflow run | `43625246327` |
+| Workflow run | `43658786314` |
 
 ## Freshness and completeness gates
 
@@ -104,9 +104,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | Carnell Tate | WR | OUT | WR | yes |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | TreVeyon Henderson | RB | OUT | BENCH | NO |
+| Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | Travis Etienne Jr. | RB | INJURY_RESERVE | IR | NO |
+| Connor’s Team | Travis Etienne Jr. | RB | QUESTIONABLE | IR | NO |
 | Giant Packer Fan | T.J. Hockenson | TE | OUT | TE | yes |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | WR | yes |
 | Giant Packer Fan | Adonai Mitchell | WR | QUESTIONABLE | BENCH | NO |
@@ -114,7 +114,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Garrett Wilson | WR | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | QUESTIONABLE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Kyle Monangai | RB | OUT | BENCH | NO |
@@ -130,30 +130,30 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sat Nov 14, 6:15 AM CST`: 5 injury change(s) (0 affecting Jason X), 2 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sat Nov 14, 12:12 PM CST`: 14 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Kenneth Walker III | QUESTIONABLE | OUT | Nov 22 | Burrow's Bunch |
-| Michael Burton | OUT | IR | Dec 20 | - |
-| Mo Alie-Cox | OUT | IR | Dec 20 | - |
-| Pat Freiermuth | - | QUESTIONABLE | Nov 15 | - |
-| Will Mallory | QUESTIONABLE | OUT | Nov 19 | - |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Audric Estime | RB | NO | Jason X |
-| Fernando Mendoza | QB | LV | Jason X |
+| Adam Randall | - | IR-R | Nov 16 | - |
+| Brenen Thompson | QUESTIONABLE | DOUBTFUL | Nov 16 | - |
+| Chris Brooks | IR-R | QUESTIONABLE | Nov 15 | - |
+| David Montgomery | QUESTIONABLE | OUT | Nov 19 | 🔥Certified Dumpster Fire 🔥 |
+| Demond Claiborne | IR | - | - | - |
+| Hunter Long | IR-R | QUESTIONABLE | Nov 15 | - |
+| Josh Whyle | OUT | IR | Dec 20 | - |
+| Keaton Mitchell | QUESTIONABLE | - | - | - |
+| Reggie Gilliam | IR-R | QUESTIONABLE | Nov 15 | - |
+| Skyy Moore | IR-R | QUESTIONABLE | Nov 15 | - |
+| Travis Etienne Jr. | IR-R | QUESTIONABLE | Nov 15 | Connor’s Team |
+| TreVeyon Henderson | OUT | IR | Dec 21 | Connor’s Team |
 
 ## Jason X
 
 Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR open 0
 
-**This week:** vs Auto Draft Champion — projected 147.55 to 118.9 (margin 28.65), win probability 0.64. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Auto Draft Champion — projected 147.63 to 118.88 (margin 28.75), win probability 0.64. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $49 remaining, $10 reserve, **$39 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -174,7 +174,7 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 | TE | Brock Bowers | TE | W13 | vs SEA | 15.85 | - |
 | FLEX | Christian Watson | WR | W11 | vs MIN | 16.28 | - |
 | K | Spencer Shrader | K | W13 | vs MIA | 10.63 | - |
-| D/ST | Lions D/ST | D/ST | W6 | vs NE | 4.98 | - |
+| D/ST | Lions D/ST | D/ST | W6 | vs NE | 5.06 | - |
 
 **Week 11 bye pressure:** Jaxon Smith-Njigba (WR), Christian Watson (FLEX).
 
@@ -189,7 +189,7 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 
 ## Injuries and IR
 
-77 players in this league's pool carry an NFL designation; 27 are on injured reserve (9 of them rostered). 1 affect Jason X.
+76 players in this league's pool carry an NFL designation; 24 are on injured reserve (9 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -197,11 +197,12 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 | --- | --- | --- |
 | Alec Pierce | Connor’s Team | 2026-11-29 |
 | Davante Adams | Connor’s Team | 2026-11-25 |
-| Jonathon Brooks | From Puka with Love | 2026-11-15 |
+| Jonathon Brooks | From Puka with Love | 2026-11-22 |
 | Michael Wilson | Auto Draft Champion | 2027-02-15 |
 | Puka Nacua | The Bye Week Boys | 2026-12-20 |
+| TreVeyon Henderson | Connor’s Team | 2026-12-21 |
 
-**In a fantasy IR slot without an NFL IR designation:** Jadarian Price (Commanders of Chaos), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Treylon Burks (Jason X).
+**In a fantasy IR slot without an NFL IR designation:** Jadarian Price (Commanders of Chaos), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team), Treylon Burks (Jason X).
 
 Jason X players with a designation:
 
