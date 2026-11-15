@@ -3,7 +3,7 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 10,
-  "fetched_at": "2026-11-15T12:15:36.987358+00:00",
+  "fetched_at": "2026-11-15T18:13:16.488649+00:00",
   "complete": true,
   "team_count": 12,
   "positions": [
@@ -219,10 +219,10 @@
       "ranks": {
         "QB": 5,
         "RB": 11,
-        "WR": 5,
+        "WR": 4,
         "TE": 10,
         "K": 6,
-        "D/ST": 11
+        "D/ST": 10
       },
       "strongest": [],
       "weakest": [
@@ -245,7 +245,7 @@
         "WR": 11,
         "TE": 7,
         "K": 1,
-        "D/ST": 12
+        "D/ST": 11
       },
       "strongest": [
         "RB",
@@ -270,13 +270,12 @@
         "WR": 8,
         "TE": 11,
         "K": 4,
-        "D/ST": 10
+        "D/ST": 9
       },
       "strongest": [],
       "weakest": [
         "RB",
-        "TE",
-        "D/ST"
+        "TE"
       ]
     },
     {
@@ -289,14 +288,16 @@
       "waiver_rank": 1,
       "ranks": {
         "QB": 8,
-        "RB": 9,
+        "RB": 8,
         "WR": 6,
         "TE": 8,
         "K": 5,
-        "D/ST": 9
+        "D/ST": 12
       },
       "strongest": [],
-      "weakest": []
+      "weakest": [
+        "D/ST"
+      ]
     },
     {
       "team_id": 4,
@@ -308,8 +309,8 @@
       "waiver_rank": 11,
       "ranks": {
         "QB": 10,
-        "RB": 8,
-        "WR": 4,
+        "RB": 9,
+        "WR": 5,
         "TE": 1,
         "K": 3,
         "D/ST": 8
@@ -337,7 +338,7 @@
     "WR": "Auto Draft Champion",
     "TE": "The Bye Week Boys",
     "K": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
-    "D/ST": "Kelli's Top-Notch Team"
+    "D/ST": "Commanders of Chaos"
   },
   "by_position": {
     "QB": [
@@ -539,6 +540,7 @@
             "position": "QB",
             "pro_team": "NE",
             "ros_projected_points": 182.2,
+            "designation": "QUESTIONABLE",
             "weight": 1.0
           }
         ]
@@ -592,7 +594,7 @@
             "position": "QB",
             "pro_team": "MIN",
             "ros_projected_points": 0.0,
-            "designation": "OUT",
+            "designation": "INACTIVE",
             "weight": 0.2
           }
         ]
@@ -715,7 +717,7 @@
             "position": "RB",
             "pro_team": "KC",
             "ros_projected_points": 198.7,
-            "designation": "OUT",
+            "designation": "INACTIVE",
             "weight": 1.0
           },
           {
@@ -901,7 +903,7 @@
             "position": "RB",
             "pro_team": "HOU",
             "ros_projected_points": 92.0,
-            "designation": "OUT",
+            "designation": "INACTIVE",
             "weight": 0.5
           },
           {
@@ -916,53 +918,10 @@
       },
       {
         "rank": 8,
-        "team_id": 4,
-        "team_name": "Cole-Train",
-        "is_jason_x": false,
-        "score": 297.8,
-        "depth_score": 50.4,
-        "players": [
-          {
-            "player_id": 4702555,
-            "name": "Jonah Coleman",
-            "position": "RB",
-            "pro_team": "DEN",
-            "ros_projected_points": 138.7,
-            "weight": 1.0
-          },
-          {
-            "player_id": 4047365,
-            "name": "Josh Jacobs",
-            "position": "RB",
-            "pro_team": "GB",
-            "ros_projected_points": 108.6,
-            "designation": "OUT",
-            "weight": 1.0
-          },
-          {
-            "player_id": 4040761,
-            "name": "Devin Singletary",
-            "position": "RB",
-            "pro_team": "NYG",
-            "ros_projected_points": 67.5,
-            "weight": 0.5
-          },
-          {
-            "player_id": 4685247,
-            "name": "Braelon Allen",
-            "position": "RB",
-            "pro_team": "NYJ",
-            "ros_projected_points": 66.6,
-            "weight": 0.25
-          }
-        ]
-      },
-      {
-        "rank": 9,
         "team_id": 12,
         "team_name": "Commanders of Chaos",
         "is_jason_x": false,
-        "score": 287.9,
+        "score": 301.6,
         "depth_score": 70.7,
         "players": [
           {
@@ -970,8 +929,7 @@
             "name": "Rhamondre Stevenson",
             "position": "RB",
             "pro_team": "NE",
-            "ros_projected_points": 113.1,
-            "designation": "QUESTIONABLE",
+            "ros_projected_points": 126.8,
             "weight": 1.0
           },
           {
@@ -1001,6 +959,49 @@
         ]
       },
       {
+        "rank": 9,
+        "team_id": 4,
+        "team_name": "Cole-Train",
+        "is_jason_x": false,
+        "score": 297.8,
+        "depth_score": 50.4,
+        "players": [
+          {
+            "player_id": 4702555,
+            "name": "Jonah Coleman",
+            "position": "RB",
+            "pro_team": "DEN",
+            "ros_projected_points": 138.7,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4047365,
+            "name": "Josh Jacobs",
+            "position": "RB",
+            "pro_team": "GB",
+            "ros_projected_points": 108.6,
+            "designation": "INACTIVE",
+            "weight": 1.0
+          },
+          {
+            "player_id": 4040761,
+            "name": "Devin Singletary",
+            "position": "RB",
+            "pro_team": "NYG",
+            "ros_projected_points": 67.5,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4685247,
+            "name": "Braelon Allen",
+            "position": "RB",
+            "pro_team": "NYJ",
+            "ros_projected_points": 66.6,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
         "rank": 10,
         "team_id": 7,
         "team_name": "Connor\u2019s Team",
@@ -1022,7 +1023,6 @@
             "position": "RB",
             "pro_team": "NO",
             "ros_projected_points": 108.3,
-            "designation": "QUESTIONABLE",
             "weight": 1.0
           },
           {
@@ -1090,8 +1090,8 @@
         "team_id": 2,
         "team_name": "The Bye Week Boys",
         "is_jason_x": false,
-        "score": 257.5,
-        "depth_score": 45.5,
+        "score": 258.5,
+        "depth_score": 46.5,
         "players": [
           {
             "player_id": 4361579,
@@ -1114,7 +1114,7 @@
             "name": "Emmett Johnson",
             "position": "RB",
             "pro_team": "KC",
-            "ros_projected_points": 66.3,
+            "ros_projected_points": 68.3,
             "weight": 0.5
           },
           {
@@ -1143,7 +1143,6 @@
             "position": "WR",
             "pro_team": "DET",
             "ros_projected_points": 176.1,
-            "designation": "QUESTIONABLE",
             "weight": 1.0
           },
           {
@@ -1259,49 +1258,6 @@
       },
       {
         "rank": 4,
-        "team_id": 4,
-        "team_name": "Cole-Train",
-        "is_jason_x": false,
-        "score": 350.9,
-        "depth_score": 72.8,
-        "players": [
-          {
-            "player_id": 4595348,
-            "name": "Malik Nabers",
-            "position": "WR",
-            "pro_team": "NYG",
-            "ros_projected_points": 151.4,
-            "weight": 1.0
-          },
-          {
-            "player_id": 4258173,
-            "name": "Nico Collins",
-            "position": "WR",
-            "pro_team": "HOU",
-            "ros_projected_points": 126.8,
-            "weight": 1.0
-          },
-          {
-            "player_id": 4429205,
-            "name": "Jordan Addison",
-            "position": "WR",
-            "pro_team": "MIN",
-            "ros_projected_points": 105.6,
-            "designation": "QUESTIONABLE",
-            "weight": 0.5
-          },
-          {
-            "player_id": 4569603,
-            "name": "Malik Washington",
-            "position": "WR",
-            "pro_team": "MIA",
-            "ros_projected_points": 79.8,
-            "weight": 0.25
-          }
-        ]
-      },
-      {
-        "rank": 5,
         "team_id": 9,
         "team_name": "Nicole's Gnarly Team",
         "is_jason_x": false,
@@ -1344,11 +1300,54 @@
         ]
       },
       {
+        "rank": 5,
+        "team_id": 4,
+        "team_name": "Cole-Train",
+        "is_jason_x": false,
+        "score": 345.0,
+        "depth_score": 66.8,
+        "players": [
+          {
+            "player_id": 4595348,
+            "name": "Malik Nabers",
+            "position": "WR",
+            "pro_team": "NYG",
+            "ros_projected_points": 151.4,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4258173,
+            "name": "Nico Collins",
+            "position": "WR",
+            "pro_team": "HOU",
+            "ros_projected_points": 126.8,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4429205,
+            "name": "Jordan Addison",
+            "position": "WR",
+            "pro_team": "MIN",
+            "ros_projected_points": 93.8,
+            "designation": "INACTIVE",
+            "weight": 0.5
+          },
+          {
+            "player_id": 4569603,
+            "name": "Malik Washington",
+            "position": "WR",
+            "pro_team": "MIA",
+            "ros_projected_points": 79.8,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
         "rank": 6,
         "team_id": 12,
         "team_name": "Commanders of Chaos",
         "is_jason_x": false,
-        "score": 345.0,
+        "score": 344.9,
         "depth_score": 82.4,
         "players": [
           {
@@ -1364,7 +1363,7 @@
             "name": "Rashee Rice",
             "position": "WR",
             "pro_team": "KC",
-            "ros_projected_points": 122.1,
+            "ros_projected_points": 122.0,
             "weight": 1.0
           },
           {
@@ -1390,15 +1389,15 @@
         "team_id": 8,
         "team_name": "Giant Packer Fan",
         "is_jason_x": false,
-        "score": 339.6,
-        "depth_score": 62.1,
+        "score": 340.7,
+        "depth_score": 62.2,
         "players": [
           {
             "player_id": 4262921,
             "name": "Justin Jefferson",
             "position": "WR",
             "pro_team": "MIN",
-            "ros_projected_points": 173.2,
+            "ros_projected_points": 174.1,
             "weight": 1.0
           },
           {
@@ -1407,7 +1406,6 @@
             "position": "WR",
             "pro_team": "CLE",
             "ros_projected_points": 104.4,
-            "designation": "QUESTIONABLE",
             "weight": 1.0
           },
           {
@@ -1416,7 +1414,6 @@
             "position": "WR",
             "pro_team": "NYJ",
             "ros_projected_points": 84.9,
-            "designation": "QUESTIONABLE",
             "weight": 0.5
           },
           {
@@ -1424,7 +1421,7 @@
             "name": "Xavier Worthy",
             "position": "WR",
             "pro_team": "KC",
-            "ros_projected_points": 78.5,
+            "ros_projected_points": 78.9,
             "weight": 0.25
           }
         ]
@@ -1435,7 +1432,7 @@
         "team_name": "Connor\u2019s Team",
         "is_jason_x": false,
         "score": 338.4,
-        "depth_score": 73.7,
+        "depth_score": 73.8,
         "players": [
           {
             "player_id": 4701936,
@@ -1460,7 +1457,7 @@
             "position": "WR",
             "pro_team": "TEN",
             "ros_projected_points": 104.0,
-            "designation": "OUT",
+            "designation": "INACTIVE",
             "weight": 0.5
           },
           {
@@ -1468,7 +1465,7 @@
             "name": "Josh Downs",
             "position": "WR",
             "pro_team": "KC",
-            "ros_projected_points": 86.9,
+            "ros_projected_points": 87.1,
             "weight": 0.25
           }
         ]
@@ -1512,7 +1509,6 @@
             "position": "WR",
             "pro_team": "NYJ",
             "ros_projected_points": 77.0,
-            "designation": "QUESTIONABLE",
             "weight": 0.25
           }
         ]
@@ -1575,7 +1571,6 @@
             "position": "WR",
             "pro_team": "NYJ",
             "ros_projected_points": 104.6,
-            "designation": "QUESTIONABLE",
             "weight": 1.0
           },
           {
@@ -1600,7 +1595,7 @@
             "position": "WR",
             "pro_team": "HOU",
             "ros_projected_points": 51.0,
-            "designation": "OUT",
+            "designation": "INACTIVE",
             "weight": 0.25
           }
         ]
@@ -1742,7 +1737,7 @@
             "position": "TE",
             "pro_team": "MIN",
             "ros_projected_points": 98.9,
-            "designation": "OUT",
+            "designation": "INACTIVE",
             "weight": 0.2
           }
         ]
@@ -1864,7 +1859,7 @@
             "name": "Hunter Henry",
             "position": "TE",
             "pro_team": "NE",
-            "ros_projected_points": 69.6,
+            "ros_projected_points": 69.5,
             "weight": 0.2
           }
         ]
@@ -2329,24 +2324,6 @@
       },
       {
         "rank": 9,
-        "team_id": 12,
-        "team_name": "Commanders of Chaos",
-        "is_jason_x": false,
-        "score": 53.0,
-        "depth_score": 0.0,
-        "players": [
-          {
-            "player_id": -16012,
-            "name": "Chiefs D/ST",
-            "position": "D/ST",
-            "pro_team": "KC",
-            "ros_projected_points": 53.0,
-            "weight": 1.0
-          }
-        ]
-      },
-      {
-        "rank": 10,
         "team_id": 7,
         "team_name": "Connor\u2019s Team",
         "is_jason_x": false,
@@ -2364,7 +2341,7 @@
         ]
       },
       {
-        "rank": 11,
+        "rank": 10,
         "team_id": 9,
         "team_name": "Nicole's Gnarly Team",
         "is_jason_x": false,
@@ -2382,7 +2359,7 @@
         ]
       },
       {
-        "rank": 12,
+        "rank": 11,
         "team_id": 10,
         "team_name": "Kelli's Top-Notch Team",
         "is_jason_x": false,
@@ -2395,6 +2372,24 @@
             "position": "D/ST",
             "pro_team": "IND",
             "ros_projected_points": 35.9,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "team_id": 12,
+        "team_name": "Commanders of Chaos",
+        "is_jason_x": false,
+        "score": 31.6,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16015,
+            "name": "Dolphins D/ST",
+            "position": "D/ST",
+            "pro_team": "MIA",
+            "ros_projected_points": 31.6,
             "weight": 1.0
           }
         ]
@@ -2435,8 +2430,7 @@
         "name": "Amon-Ra St. Brown",
         "position": "WR",
         "pro_team": "DET",
-        "ros_projected_points": 176.1,
-        "designation": "QUESTIONABLE"
+        "ros_projected_points": 176.1
       },
       {
         "slot": "WR",
@@ -2507,8 +2501,7 @@
               "name": "Amon-Ra St. Brown",
               "position": "WR",
               "pro_team": "DET",
-              "ros_projected_points": 176.1,
-              "designation": "QUESTIONABLE"
+              "ros_projected_points": 176.1
             },
             {
               "player_id": 4696981,
