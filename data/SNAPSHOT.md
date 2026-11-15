@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-15T06:18:23.555321+00:00` |
-| Fetched at (CT) | **Sun Nov 15, 12:18 AM CST** |
+| Fetched at (UTC) | `2026-11-15T12:15:46.599364+00:00` |
+| Fetched at (CT) | **Sun Nov 15, 6:15 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 864 |
 | Players in lookup index | 1061 |
-| Fetch duration | 9.38s |
+| Fetch duration | 9.61s |
 | ESPN calls | 35 |
-| Workflow run | `43684809379` |
+| Workflow run | `43712912681` |
 
 ## Freshness and completeness gates
 
@@ -101,15 +101,15 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Jonathon Brooks | RB | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
-| Connor’s Team | Carnell Tate | WR | OUT | WR | yes |
-| Connor’s Team | A.J. Brown | WR | QUESTIONABLE | BENCH | NO |
+| Connor’s Team | A.J. Brown | WR | QUESTIONABLE | WR | yes |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
+| Connor’s Team | Carnell Tate | WR | OUT | BENCH | NO |
 | Connor’s Team | Travis Etienne Jr. | RB | QUESTIONABLE | IR | NO |
-| Giant Packer Fan | T.J. Hockenson | TE | OUT | TE | yes |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | WR | yes |
-| Giant Packer Fan | Adonai Mitchell | WR | QUESTIONABLE | BENCH | NO |
+| Giant Packer Fan | Adonai Mitchell | WR | QUESTIONABLE | FLEX | yes |
+| Giant Packer Fan | T.J. Hockenson | TE | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Garrett Wilson | WR | QUESTIONABLE | BENCH | NO |
@@ -130,7 +130,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sat Nov 14, 6:34 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sun Nov 15, 12:18 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
@@ -224,7 +224,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1039 total | 263 executed ownership changes | 515 lineup-only moves | 192 draft picks | 0 pending
+1041 total | 263 executed ownership changes | 517 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
