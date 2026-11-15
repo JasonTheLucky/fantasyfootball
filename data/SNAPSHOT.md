@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-15T00:34:07.559790+00:00` |
-| Fetched at (CT) | **Sat Nov 14, 6:34 PM CST** |
+| Fetched at (UTC) | `2026-11-15T06:18:23.555321+00:00` |
+| Fetched at (CT) | **Sun Nov 15, 12:18 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 864 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.66s |
+| Fetch duration | 9.38s |
 | ESPN calls | 35 |
-| Workflow run | `43658786314` |
+| Workflow run | `43684809379` |
 
 ## Freshness and completeness gates
 
@@ -130,30 +130,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sat Nov 14, 12:12 PM CST`: 14 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Adam Randall | - | IR-R | Nov 16 | - |
-| Brenen Thompson | QUESTIONABLE | DOUBTFUL | Nov 16 | - |
-| Chris Brooks | IR-R | QUESTIONABLE | Nov 15 | - |
-| David Montgomery | QUESTIONABLE | OUT | Nov 19 | 🔥Certified Dumpster Fire 🔥 |
-| Demond Claiborne | IR | - | - | - |
-| Hunter Long | IR-R | QUESTIONABLE | Nov 15 | - |
-| Josh Whyle | OUT | IR | Dec 20 | - |
-| Keaton Mitchell | QUESTIONABLE | - | - | - |
-| Reggie Gilliam | IR-R | QUESTIONABLE | Nov 15 | - |
-| Skyy Moore | IR-R | QUESTIONABLE | Nov 15 | - |
-| Travis Etienne Jr. | IR-R | QUESTIONABLE | Nov 15 | Connor’s Team |
-| TreVeyon Henderson | OUT | IR | Dec 21 | Connor’s Team |
+Compared with the snapshot taken `Sat Nov 14, 6:34 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
 Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR open 0
 
-**This week:** vs Auto Draft Champion — projected 147.63 to 118.88 (margin 28.75), win probability 0.64. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Auto Draft Champion — projected 147.62 to 118.89 (margin 28.73), win probability 0.64. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $49 remaining, $10 reserve, **$39 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -168,11 +151,11 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 | --- | --- | --- | --- | --- | --- | --- |
 | QB | Jayden Daniels | QB | W7 | @ NYG | 18.4 | - |
 | RB | Bhayshul Tuten | RB | W7 | @ TEN | 18.07 | - |
-| RB | Ollie Gordon II | RB | W6 | @ IND | 16.6 | - |
+| RB | Ollie Gordon II | RB | W6 | @ IND | 16.59 | - |
 | WR | Jaxon Smith-Njigba | WR | W11 | @ LV | 23.21 | - |
 | WR | Amon-Ra St. Brown | WR | W6 | vs NE | 21.18 | QUESTIONABLE (back Nov 15) |
 | TE | Brock Bowers | TE | W13 | vs SEA | 15.85 | - |
-| FLEX | Christian Watson | WR | W11 | vs MIN | 16.28 | - |
+| FLEX | Christian Watson | WR | W11 | vs MIN | 16.26 | - |
 | K | Spencer Shrader | K | W13 | vs MIA | 10.63 | - |
 | D/ST | Lions D/ST | D/ST | W6 | vs NE | 5.06 | - |
 

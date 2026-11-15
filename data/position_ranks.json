@@ -3,7 +3,7 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 10,
-  "fetched_at": "2026-11-15T00:33:58.901347+00:00",
+  "fetched_at": "2026-11-15T06:18:14.173121+00:00",
   "complete": true,
   "team_count": 12,
   "positions": [
@@ -174,7 +174,7 @@
       "ranks": {
         "QB": 12,
         "RB": 6,
-        "WR": 11,
+        "WR": 10,
         "TE": 5,
         "K": 10,
         "D/ST": 7
@@ -218,8 +218,8 @@
       "waiver_rank": 3,
       "ranks": {
         "QB": 5,
-        "RB": 10,
-        "WR": 6,
+        "RB": 11,
+        "WR": 5,
         "TE": 10,
         "K": 6,
         "D/ST": 11
@@ -242,7 +242,7 @@
       "ranks": {
         "QB": 4,
         "RB": 2,
-        "WR": 10,
+        "WR": 11,
         "TE": 7,
         "K": 1,
         "D/ST": 12
@@ -266,7 +266,7 @@
       "waiver_rank": 9,
       "ranks": {
         "QB": 9,
-        "RB": 9,
+        "RB": 10,
         "WR": 8,
         "TE": 11,
         "K": 4,
@@ -274,6 +274,7 @@
       },
       "strongest": [],
       "weakest": [
+        "RB",
         "TE",
         "D/ST"
       ]
@@ -288,16 +289,14 @@
       "waiver_rank": 1,
       "ranks": {
         "QB": 8,
-        "RB": 11,
-        "WR": 5,
+        "RB": 9,
+        "WR": 6,
         "TE": 8,
         "K": 5,
         "D/ST": 9
       },
       "strongest": [],
-      "weakest": [
-        "RB"
-      ]
+      "weakest": []
     },
     {
       "team_id": 4,
@@ -531,7 +530,7 @@
         "team_id": 7,
         "team_name": "Connor\u2019s Team",
         "is_jason_x": false,
-        "score": 182.5,
+        "score": 182.2,
         "depth_score": 0.0,
         "players": [
           {
@@ -539,7 +538,7 @@
             "name": "Drake Maye",
             "position": "QB",
             "pro_team": "NE",
-            "ros_projected_points": 182.5,
+            "ros_projected_points": 182.2,
             "weight": 1.0
           }
         ]
@@ -603,7 +602,7 @@
         "team_id": 6,
         "team_name": "From Puka with Love",
         "is_jason_x": false,
-        "score": 141.9,
+        "score": 141.7,
         "depth_score": 0.0,
         "players": [
           {
@@ -611,7 +610,7 @@
             "name": "Dak Prescott",
             "position": "QB",
             "pro_team": "DAL",
-            "ros_projected_points": 141.9,
+            "ros_projected_points": 141.7,
             "weight": 1.0
           }
         ]
@@ -665,7 +664,7 @@
         "team_id": 10,
         "team_name": "Kelli's Top-Notch Team",
         "is_jason_x": false,
-        "score": 423.5,
+        "score": 423.3,
         "depth_score": 69.4,
         "players": [
           {
@@ -681,7 +680,7 @@
             "name": "Chuba Hubbard",
             "position": "RB",
             "pro_team": "CAR",
-            "ros_projected_points": 174.2,
+            "ros_projected_points": 174.0,
             "weight": 1.0
           },
           {
@@ -901,7 +900,7 @@
             "name": "David Montgomery",
             "position": "RB",
             "pro_team": "HOU",
-            "ros_projected_points": 92.1,
+            "ros_projected_points": 92.0,
             "designation": "OUT",
             "weight": 0.5
           },
@@ -936,7 +935,7 @@
             "name": "Josh Jacobs",
             "position": "RB",
             "pro_team": "GB",
-            "ros_projected_points": 108.7,
+            "ros_projected_points": 108.6,
             "designation": "OUT",
             "weight": 1.0
           },
@@ -960,6 +959,49 @@
       },
       {
         "rank": 9,
+        "team_id": 12,
+        "team_name": "Commanders of Chaos",
+        "is_jason_x": false,
+        "score": 287.9,
+        "depth_score": 70.7,
+        "players": [
+          {
+            "player_id": 4569173,
+            "name": "Rhamondre Stevenson",
+            "position": "RB",
+            "pro_team": "NE",
+            "ros_projected_points": 113.1,
+            "designation": "QUESTIONABLE",
+            "weight": 1.0
+          },
+          {
+            "player_id": 4697815,
+            "name": "Rachaad White",
+            "position": "RB",
+            "pro_team": "WSH",
+            "ros_projected_points": 104.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4426385,
+            "name": "Zach Charbonnet",
+            "position": "RB",
+            "pro_team": "SEA",
+            "ros_projected_points": 100.0,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4685512,
+            "name": "Jadarian Price",
+            "position": "RB",
+            "pro_team": "SEA",
+            "ros_projected_points": 82.9,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 10,
         "team_id": 7,
         "team_name": "Connor\u2019s Team",
         "is_jason_x": false,
@@ -1002,7 +1044,7 @@
         ]
       },
       {
-        "rank": 10,
+        "rank": 11,
         "team_id": 9,
         "team_name": "Nicole's Gnarly Team",
         "is_jason_x": false,
@@ -1044,54 +1086,11 @@
         ]
       },
       {
-        "rank": 11,
-        "team_id": 12,
-        "team_name": "Commanders of Chaos",
-        "is_jason_x": false,
-        "score": 266.9,
-        "depth_score": 62.8,
-        "players": [
-          {
-            "player_id": 4697815,
-            "name": "Rachaad White",
-            "position": "RB",
-            "pro_team": "WSH",
-            "ros_projected_points": 104.1,
-            "weight": 1.0
-          },
-          {
-            "player_id": 4426385,
-            "name": "Zach Charbonnet",
-            "position": "RB",
-            "pro_team": "SEA",
-            "ros_projected_points": 100.0,
-            "weight": 1.0
-          },
-          {
-            "player_id": 4569173,
-            "name": "Rhamondre Stevenson",
-            "position": "RB",
-            "pro_team": "NE",
-            "ros_projected_points": 84.2,
-            "designation": "QUESTIONABLE",
-            "weight": 0.5
-          },
-          {
-            "player_id": 4685512,
-            "name": "Jadarian Price",
-            "position": "RB",
-            "pro_team": "SEA",
-            "ros_projected_points": 82.8,
-            "weight": 0.25
-          }
-        ]
-      },
-      {
         "rank": 12,
         "team_id": 2,
         "team_name": "The Bye Week Boys",
         "is_jason_x": false,
-        "score": 256.1,
+        "score": 257.5,
         "depth_score": 45.5,
         "players": [
           {
@@ -1099,7 +1098,7 @@
             "name": "Javonte Williams",
             "position": "RB",
             "pro_team": "DAL",
-            "ros_projected_points": 133.8,
+            "ros_projected_points": 135.2,
             "weight": 1.0
           },
           {
@@ -1135,8 +1134,8 @@
         "team_id": 1,
         "team_name": "Jason X",
         "is_jason_x": true,
-        "score": 441.1,
-        "depth_score": 92.5,
+        "score": 441.0,
+        "depth_score": 92.4,
         "players": [
           {
             "player_id": 4374302,
@@ -1160,7 +1159,7 @@
             "name": "Christian Watson",
             "position": "WR",
             "pro_team": "GB",
-            "ros_projected_points": 140.6,
+            "ros_projected_points": 140.5,
             "weight": 0.5
           },
           {
@@ -1178,7 +1177,7 @@
         "team_id": 5,
         "team_name": "Burrow's Bunch",
         "is_jason_x": false,
-        "score": 434.5,
+        "score": 434.4,
         "depth_score": 85.1,
         "players": [
           {
@@ -1211,7 +1210,7 @@
             "name": "George Pickens",
             "position": "WR",
             "pro_team": "DAL",
-            "ros_projected_points": 98.1,
+            "ros_projected_points": 98.0,
             "weight": 0.25
           }
         ]
@@ -1303,48 +1302,6 @@
       },
       {
         "rank": 5,
-        "team_id": 12,
-        "team_name": "Commanders of Chaos",
-        "is_jason_x": false,
-        "score": 345.6,
-        "depth_score": 82.4,
-        "players": [
-          {
-            "player_id": 4685472,
-            "name": "Tetairoa McMillan",
-            "position": "WR",
-            "pro_team": "CAR",
-            "ros_projected_points": 141.1,
-            "weight": 1.0
-          },
-          {
-            "player_id": 4428331,
-            "name": "Rashee Rice",
-            "position": "WR",
-            "pro_team": "KC",
-            "ros_projected_points": 122.1,
-            "weight": 1.0
-          },
-          {
-            "player_id": 4429615,
-            "name": "Zay Flowers",
-            "position": "WR",
-            "pro_team": "BAL",
-            "ros_projected_points": 114.3,
-            "weight": 0.5
-          },
-          {
-            "player_id": 3916433,
-            "name": "Jakobi Meyers",
-            "position": "WR",
-            "pro_team": "JAX",
-            "ros_projected_points": 101.2,
-            "weight": 0.25
-          }
-        ]
-      },
-      {
-        "rank": 6,
         "team_id": 9,
         "team_name": "Nicole's Gnarly Team",
         "is_jason_x": false,
@@ -1387,11 +1344,53 @@
         ]
       },
       {
+        "rank": 6,
+        "team_id": 12,
+        "team_name": "Commanders of Chaos",
+        "is_jason_x": false,
+        "score": 345.0,
+        "depth_score": 82.4,
+        "players": [
+          {
+            "player_id": 4685472,
+            "name": "Tetairoa McMillan",
+            "position": "WR",
+            "pro_team": "CAR",
+            "ros_projected_points": 140.5,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4428331,
+            "name": "Rashee Rice",
+            "position": "WR",
+            "pro_team": "KC",
+            "ros_projected_points": 122.1,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4429615,
+            "name": "Zay Flowers",
+            "position": "WR",
+            "pro_team": "BAL",
+            "ros_projected_points": 114.3,
+            "weight": 0.5
+          },
+          {
+            "player_id": 3916433,
+            "name": "Jakobi Meyers",
+            "position": "WR",
+            "pro_team": "JAX",
+            "ros_projected_points": 101.2,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
         "rank": 7,
         "team_id": 8,
         "team_name": "Giant Packer Fan",
         "is_jason_x": false,
-        "score": 339.7,
+        "score": 339.6,
         "depth_score": 62.1,
         "players": [
           {
@@ -1407,7 +1406,7 @@
             "name": "Denzel Boston",
             "position": "WR",
             "pro_team": "CLE",
-            "ros_projected_points": 104.5,
+            "ros_projected_points": 104.4,
             "designation": "QUESTIONABLE",
             "weight": 1.0
           },
@@ -1435,7 +1434,7 @@
         "team_id": 7,
         "team_name": "Connor\u2019s Team",
         "is_jason_x": false,
-        "score": 339.0,
+        "score": 338.4,
         "depth_score": 73.7,
         "players": [
           {
@@ -1443,7 +1442,7 @@
             "name": "Matthew Golden",
             "position": "WR",
             "pro_team": "GB",
-            "ros_projected_points": 154.1,
+            "ros_projected_points": 153.9,
             "weight": 1.0
           },
           {
@@ -1451,7 +1450,7 @@
             "name": "A.J. Brown",
             "position": "WR",
             "pro_team": "NE",
-            "ros_projected_points": 111.2,
+            "ros_projected_points": 110.8,
             "designation": "QUESTIONABLE",
             "weight": 1.0
           },
@@ -1479,8 +1478,8 @@
         "team_id": 2,
         "team_name": "The Bye Week Boys",
         "is_jason_x": false,
-        "score": 299.3,
-        "depth_score": 68.3,
+        "score": 299.1,
+        "depth_score": 68.1,
         "players": [
           {
             "player_id": 3915416,
@@ -1504,7 +1503,7 @@
             "name": "Jalen Coker",
             "position": "WR",
             "pro_team": "CAR",
-            "ros_projected_points": 98.1,
+            "ros_projected_points": 97.7,
             "weight": 0.5
           },
           {
@@ -1520,6 +1519,50 @@
       },
       {
         "rank": 10,
+        "team_id": 6,
+        "team_name": "From Puka with Love",
+        "is_jason_x": false,
+        "score": 263.8,
+        "depth_score": 64.7,
+        "players": [
+          {
+            "player_id": 4372016,
+            "name": "Jaylen Waddle",
+            "position": "WR",
+            "pro_team": "DEN",
+            "ros_projected_points": 103.2,
+            "designation": "QUESTIONABLE",
+            "weight": 1.0
+          },
+          {
+            "player_id": 4612826,
+            "name": "Ladd McConkey",
+            "position": "WR",
+            "pro_team": "LAC",
+            "ros_projected_points": 95.9,
+            "designation": "QUESTIONABLE",
+            "weight": 1.0
+          },
+          {
+            "player_id": 3126486,
+            "name": "Deebo Samuel Sr.",
+            "position": "WR",
+            "pro_team": "SF",
+            "ros_projected_points": 89.3,
+            "weight": 0.5
+          },
+          {
+            "player_id": 4366031,
+            "name": "Tank Dell",
+            "position": "WR",
+            "pro_team": "HOU",
+            "ros_projected_points": 80.3,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 11,
         "team_id": 10,
         "team_name": "Kelli's Top-Notch Team",
         "is_jason_x": false,
@@ -1548,7 +1591,7 @@
             "name": "Wan'Dale Robinson",
             "position": "WR",
             "pro_team": "TEN",
-            "ros_projected_points": 84.9,
+            "ros_projected_points": 84.8,
             "weight": 0.5
           },
           {
@@ -1556,52 +1599,8 @@
             "name": "Marvin Harrison Jr.",
             "position": "WR",
             "pro_team": "HOU",
-            "ros_projected_points": 51.1,
+            "ros_projected_points": 51.0,
             "designation": "OUT",
-            "weight": 0.25
-          }
-        ]
-      },
-      {
-        "rank": 11,
-        "team_id": 6,
-        "team_name": "From Puka with Love",
-        "is_jason_x": false,
-        "score": 263.4,
-        "depth_score": 64.7,
-        "players": [
-          {
-            "player_id": 4372016,
-            "name": "Jaylen Waddle",
-            "position": "WR",
-            "pro_team": "DEN",
-            "ros_projected_points": 103.2,
-            "designation": "QUESTIONABLE",
-            "weight": 1.0
-          },
-          {
-            "player_id": 4612826,
-            "name": "Ladd McConkey",
-            "position": "WR",
-            "pro_team": "LAC",
-            "ros_projected_points": 95.5,
-            "designation": "QUESTIONABLE",
-            "weight": 1.0
-          },
-          {
-            "player_id": 3126486,
-            "name": "Deebo Samuel Sr.",
-            "position": "WR",
-            "pro_team": "SF",
-            "ros_projected_points": 89.3,
-            "weight": 0.5
-          },
-          {
-            "player_id": 4366031,
-            "name": "Tank Dell",
-            "position": "WR",
-            "pro_team": "HOU",
-            "ros_projected_points": 80.3,
             "weight": 0.25
           }
         ]
@@ -1656,8 +1655,8 @@
         "team_id": 4,
         "team_name": "Cole-Train",
         "is_jason_x": false,
-        "score": 148.6,
-        "depth_score": 14.7,
+        "score": 148.5,
+        "depth_score": 14.6,
         "players": [
           {
             "player_id": 3040151,
@@ -1672,7 +1671,7 @@
             "name": "Darren Waller",
             "position": "TE",
             "pro_team": "CAR",
-            "ros_projected_points": 73.3,
+            "ros_projected_points": 73.0,
             "weight": 0.2
           }
         ]
@@ -1753,7 +1752,7 @@
         "team_id": 6,
         "team_name": "From Puka with Love",
         "is_jason_x": false,
-        "score": 124.8,
+        "score": 125.1,
         "depth_score": 0.0,
         "players": [
           {
@@ -1761,7 +1760,7 @@
             "name": "Trey McBride",
             "position": "TE",
             "pro_team": "ARI",
-            "ros_projected_points": 124.8,
+            "ros_projected_points": 125.1,
             "weight": 1.0
           }
         ]
@@ -1831,7 +1830,7 @@
             "name": "Harold Fannin Jr.",
             "position": "TE",
             "pro_team": "CLE",
-            "ros_projected_points": 82.1,
+            "ros_projected_points": 82.0,
             "weight": 1.0
           },
           {
@@ -1865,7 +1864,7 @@
             "name": "Hunter Henry",
             "position": "TE",
             "pro_team": "NE",
-            "ros_projected_points": 69.7,
+            "ros_projected_points": 69.6,
             "weight": 0.2
           }
         ]
@@ -1875,7 +1874,7 @@
         "team_id": 9,
         "team_name": "Nicole's Gnarly Team",
         "is_jason_x": false,
-        "score": 82.1,
+        "score": 82.0,
         "depth_score": 0.0,
         "players": [
           {
@@ -1883,7 +1882,7 @@
             "name": "Tucker Kraft",
             "position": "TE",
             "pro_team": "GB",
-            "ros_projected_points": 82.1,
+            "ros_projected_points": 82.0,
             "weight": 1.0
           }
         ]
@@ -2149,7 +2148,7 @@
         "team_id": 5,
         "team_name": "Burrow's Bunch",
         "is_jason_x": false,
-        "score": 77.5,
+        "score": 78.0,
         "depth_score": 10.3,
         "players": [
           {
@@ -2157,7 +2156,7 @@
             "name": "Steelers D/ST",
             "position": "D/ST",
             "pro_team": "PIT",
-            "ros_projected_points": 67.2,
+            "ros_projected_points": 67.7,
             "weight": 1.0
           },
           {
@@ -2217,7 +2216,7 @@
             "name": "Lions D/ST",
             "position": "D/ST",
             "pro_team": "DET",
-            "ros_projected_points": 42.8,
+            "ros_projected_points": 42.9,
             "weight": 0.2
           }
         ]
@@ -2289,7 +2288,7 @@
         "team_id": 6,
         "team_name": "From Puka with Love",
         "is_jason_x": false,
-        "score": 59.4,
+        "score": 59.2,
         "depth_score": 9.4,
         "players": [
           {
@@ -2297,7 +2296,7 @@
             "name": "Packers D/ST",
             "position": "D/ST",
             "pro_team": "GB",
-            "ros_projected_points": 50.0,
+            "ros_projected_points": 49.8,
             "weight": 1.0
           },
           {
@@ -2315,7 +2314,7 @@
         "team_id": 4,
         "team_name": "Cole-Train",
         "is_jason_x": false,
-        "score": 57.0,
+        "score": 57.1,
         "depth_score": 0.0,
         "players": [
           {
@@ -2323,7 +2322,7 @@
             "name": "Jaguars D/ST",
             "position": "D/ST",
             "pro_team": "JAX",
-            "ros_projected_points": 57.0,
+            "ros_projected_points": 57.1,
             "weight": 1.0
           }
         ]
@@ -2369,7 +2368,7 @@
         "team_id": 9,
         "team_name": "Nicole's Gnarly Team",
         "is_jason_x": false,
-        "score": 45.5,
+        "score": 45.6,
         "depth_score": 0.0,
         "players": [
           {
@@ -2377,7 +2376,7 @@
             "name": "Ravens D/ST",
             "position": "D/ST",
             "pro_team": "BAL",
-            "ros_projected_points": 45.5,
+            "ros_projected_points": 45.6,
             "weight": 1.0
           }
         ]
@@ -2387,7 +2386,7 @@
         "team_id": 10,
         "team_name": "Kelli's Top-Notch Team",
         "is_jason_x": false,
-        "score": 35.0,
+        "score": 35.9,
         "depth_score": 0.0,
         "players": [
           {
@@ -2395,7 +2394,7 @@
             "name": "Colts D/ST",
             "position": "D/ST",
             "pro_team": "IND",
-            "ros_projected_points": 35.0,
+            "ros_projected_points": 35.9,
             "weight": 1.0
           }
         ]
@@ -2404,7 +2403,7 @@
   },
   "trade_fits": {
     "min_gain_points": 5.0,
-    "jason_lineup_value": 1087.6,
+    "jason_lineup_value": 1087.5,
     "jason_lineup_by_ros": [
       {
         "slot": "QB",
@@ -2461,7 +2460,7 @@
         "name": "Christian Watson",
         "position": "WR",
         "pro_team": "GB",
-        "ros_projected_points": 140.6
+        "ros_projected_points": 140.5
       }
     ],
     "jason_spare": [
@@ -2527,7 +2526,7 @@
             "ros_projected_points": 183.8
           },
           "jason_gain": 7.7,
-          "their_gain": 7.5,
+          "their_gain": 7.4,
           "frees_jason_roster_spots": 1,
           "their_roster_spots_needed": 1,
           "their_bench_open": 1
@@ -2547,7 +2546,7 @@
               "name": "Christian Watson",
               "position": "WR",
               "pro_team": "GB",
-              "ros_projected_points": 140.6
+              "ros_projected_points": 140.5
             },
             {
               "player_id": 4711533,
@@ -2564,8 +2563,8 @@
             "pro_team": "ATL",
             "ros_projected_points": 170.4
           },
-          "jason_gain": 7.0,
-          "their_gain": 10.5,
+          "jason_gain": 7.1,
+          "their_gain": 10.4,
           "frees_jason_roster_spots": 1,
           "their_roster_spots_needed": 1,
           "their_bench_open": 0
@@ -2585,7 +2584,7 @@
               "name": "Christian Watson",
               "position": "WR",
               "pro_team": "GB",
-              "ros_projected_points": 140.6
+              "ros_projected_points": 140.5
             },
             {
               "player_id": 4711533,
@@ -2602,8 +2601,8 @@
             "pro_team": "DAL",
             "ros_projected_points": 169.4
           },
-          "jason_gain": 6.0,
-          "their_gain": 7.8,
+          "jason_gain": 6.1,
+          "their_gain": 7.6,
           "frees_jason_roster_spots": 1,
           "their_roster_spots_needed": 1,
           "their_bench_open": 0
@@ -2613,10 +2612,72 @@
       {
         "team_id": 2,
         "team_name": "The Bye Week Boys",
-        "mutual": false,
-        "mutual_trades_found": 0,
-        "best_trade": null,
-        "other_trades": []
+        "mutual": true,
+        "mutual_trades_found": 2,
+        "best_trade": {
+          "shape": "2-for-1",
+          "jason_gives": [
+            {
+              "player_id": 4711533,
+              "name": "Ollie Gordon II",
+              "position": "RB",
+              "pro_team": "MIA",
+              "ros_projected_points": 129.7
+            },
+            {
+              "player_id": 4696981,
+              "name": "Cam Skattebo",
+              "position": "RB",
+              "pro_team": "NYG",
+              "ros_projected_points": 106.8
+            }
+          ],
+          "jason_gets": {
+            "player_id": 4361579,
+            "name": "Javonte Williams",
+            "position": "RB",
+            "pro_team": "DAL",
+            "ros_projected_points": 135.2
+          },
+          "jason_gain": 5.6,
+          "their_gain": 24.5,
+          "frees_jason_roster_spots": 1,
+          "their_roster_spots_needed": 1,
+          "their_bench_open": 0
+        },
+        "other_trades": [
+          {
+            "shape": "2-for-1",
+            "jason_gives": [
+              {
+                "player_id": 4711533,
+                "name": "Ollie Gordon II",
+                "position": "RB",
+                "pro_team": "MIA",
+                "ros_projected_points": 129.7
+              },
+              {
+                "player_id": 4038815,
+                "name": "Rico Dowdle",
+                "position": "RB",
+                "pro_team": "PIT",
+                "ros_projected_points": 88.1
+              }
+            ],
+            "jason_gets": {
+              "player_id": 4361579,
+              "name": "Javonte Williams",
+              "position": "RB",
+              "pro_team": "DAL",
+              "ros_projected_points": 135.2
+            },
+            "jason_gain": 5.6,
+            "their_gain": 5.8,
+            "frees_jason_roster_spots": 1,
+            "their_roster_spots_needed": 1,
+            "their_bench_open": 0
+          }
+        ]
       },
       {
         "team_id": 4,
