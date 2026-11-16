@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-15T18:13:27.822588+00:00` |
-| Fetched at (CT) | **Sun Nov 15, 12:13 PM CST** |
+| Fetched at (UTC) | `2026-11-16T00:37:18.357042+00:00` |
+| Fetched at (CT) | **Sun Nov 15, 6:37 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 196 |
 | Available players (FA + waivers) | 865 |
 | Players in lookup index | 1061 |
-| Fetch duration | 11.33s |
+| Fetch duration | 8.5s |
 | ESPN calls | 35 |
-| Workflow run | `43745488785` |
+| Workflow run | `43781429251` |
 
 ## Freshness and completeness gates
 
@@ -36,12 +36,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Connor’s Team | 20.72 | Kelli's Top-Notch Team | 21.3 | NO |
-| Commanders of Chaos | 18.14 | 🔥Certified Dumpster Fire 🔥 | 10.66 | NO |
-| From Puka with Love | 12.6 | The Bye Week Boys | 20.08 | NO |
-| Auto Draft Champion | 13.54 | Jason X | 64.76 | NO |
-| Nicole's Gnarly Team | 11.3 | Burrow's Bunch | 48.9 | NO |
-| Cole-Train | 57.82 | Giant Packer Fan | 50.22 | NO |
+| Connor’s Team | 82.82 | Kelli's Top-Notch Team | 129.46 | NO |
+| Commanders of Chaos | 84.5 | 🔥Certified Dumpster Fire 🔥 | 85.04 | NO |
+| From Puka with Love | 106.44 | The Bye Week Boys | 145.28 | NO |
+| Auto Draft Champion | 95.98 | Jason X | 150.96 | NO |
+| Nicole's Gnarly Team | 112.62 | Burrow's Bunch | 164.7 | NO |
+| Cole-Train | 97.12 | Giant Packer Fan | 105.44 | NO |
 
 ## Rosters
 
@@ -79,11 +79,13 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (30)
+## Injury designations (36)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
+| Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
 | The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
+| The Bye Week Boys | Omar Cooper Jr. | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Puka Nacua | WR | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | De'Zhaun Stribling | WR | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
@@ -95,7 +97,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | Kenneth Walker III | RB | OUT | BENCH | NO |
 | Burrow's Bunch | Luther Burden III | WR | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Woody Marks | RB | DOUBTFUL | RB | yes |
+| From Puka with Love | Ladd McConkey | WR | OUT | BENCH | NO |
 | From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Jonathon Brooks | RB | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
@@ -108,7 +111,10 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Giant Packer Fan | T.J. Hockenson | TE | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | OUT | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
+| Kelli's Top-Notch Team | Wan'Dale Robinson | WR | QUESTIONABLE | WR | yes |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
+| Kelli's Top-Notch Team | Geno Smith | QB | QUESTIONABLE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Drake London | WR | QUESTIONABLE | WR | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
@@ -124,43 +130,30 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sun Nov 15, 6:15 AM CST`: 53 injury change(s) (1 affecting Jason X), 2 newly available, 1 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sun Nov 15, 12:13 PM CST`: 29 injury change(s) (1 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| **Amon-Ra St. Brown** | QUESTIONABLE | - | - | Jason X |
-| AJ Dillon | - | INACTIVE | Nov 22 | - |
-| Adonai Mitchell | QUESTIONABLE | - | - | Giant Packer Fan |
-| Andy Dalton | - | INACTIVE | Nov 29 | - |
-| Baker Mayfield | - | QUESTIONABLE | Nov 22 | - |
-| Behren Morton | - | INACTIVE | Nov 29 | - |
-| Ben VanSumeren | - | INACTIVE | Nov 22 | - |
-| Brevin Jordan | OUT | INACTIVE | Nov 19 | - |
-| CJ Donaldson | OUT | INACTIVE | Nov 22 | - |
-| CJ Williams | - | INACTIVE | Nov 22 | - |
-| Cameron Latu | QUESTIONABLE | - | - | - |
-| Carnell Tate | OUT | INACTIVE | Nov 22 | Connor’s Team |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Chiefs D/ST | D/ST | KC | Commanders of Chaos |
-| Ryan Flournoy | WR | DAL | Commanders of Chaos |
-
-**Claimed**
-
-| Name | Position | Pro Team | Added By |
-| --- | --- | --- | --- |
-| Dolphins D/ST | D/ST | MIA | Commanders of Chaos |
+| **Brock Bowers** | - | QUESTIONABLE | Nov 22 | Jason X |
+| Bo Melton | - | QUESTIONABLE | Nov 25 | - |
+| Brandin Cooks | - | INACTIVE | Nov 22 | - |
+| Davis Allen | QUESTIONABLE | - | - | - |
+| Dont'e Thornton Jr. | QUESTIONABLE | INACTIVE | Nov 22 | - |
+| Drake London | - | QUESTIONABLE | Nov 15 | 🔥Certified Dumpster Fire 🔥 |
+| Drew Allar | - | INACTIVE | Nov 22 | - |
+| Eli Heidenreich | - | INACTIVE | Nov 22 | - |
+| Emanuel Wilson | - | INACTIVE | Nov 29 | - |
+| Geno Smith | - | QUESTIONABLE | Nov 22 | Kelli's Top-Notch Team |
+| George Holani | - | QUESTIONABLE | Nov 29 | - |
+| Hunter Long | QUESTIONABLE | - | - | - |
 
 ## Jason X
 
 Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR open 0
 
-**This week:** vs Auto Draft Champion — projected 161.2 to 106.91 (margin 54.29), win probability 0.8. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Auto Draft Champion — projected 150.96 to 104.54 (margin 46.42), win probability 0.99. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $49 remaining, $10 reserve, **$39 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -178,10 +171,10 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 | RB | Ollie Gordon II | RB | W6 | @ IND | 16.59 | - |
 | WR | Jaxon Smith-Njigba | WR | W11 | @ LV | 23.21 | - |
 | WR | Amon-Ra St. Brown | WR | W6 | vs NE | 21.18 | - |
-| TE | Brock Bowers | TE | W13 | vs SEA | 15.85 | - |
+| TE | Brock Bowers | TE | W13 | vs SEA | 15.85 | QUESTIONABLE (back Nov 22) |
 | FLEX | Christian Watson | WR | W11 | vs MIN | 16.26 | - |
 | K | Spencer Shrader | K | W13 | vs MIA | 10.63 | - |
-| D/ST | Lions D/ST | D/ST | W6 | vs NE | 5.14 | - |
+| D/ST | Lions D/ST | D/ST | W6 | vs NE | 5.09 | - |
 
 **Week 11 bye pressure:** Jaxon Smith-Njigba (WR), Christian Watson (FLEX).
 
@@ -196,7 +189,7 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 
 ## Injuries and IR
 
-83 players in this league's pool carry an NFL designation; 23 are on injured reserve (8 of them rostered). 0 affect Jason X.
+98 players in this league's pool carry an NFL designation; 22 are on injured reserve (8 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -211,32 +204,38 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 
 **In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team), Treylon Burks (Jason X).
 
+Jason X players with a designation:
+
+| Player | Slot | Designation | Expected return | Injury |
+| --- | --- | --- | --- | --- |
+| Brock Bowers | TE | QUESTIONABLE | Nov 22 | Ankle |
+
 ## Recent form (last 3 completed games)
 
 Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. Ranked 212 of 212 expected.
 
 | Pos | Limit | Qualifying | Ranked | At limit |
 | --- | --- | --- | --- | --- |
-| QB | 24 | 53 | 24 | yes |
-| RB | 60 | 135 | 60 | yes |
-| WR | 60 | 198 | 60 | yes |
-| TE | 24 | 125 | 24 | yes |
-| K | 24 | 34 | 24 | yes |
+| QB | 24 | 55 | 24 | yes |
+| RB | 60 | 136 | 60 | yes |
+| WR | 60 | 202 | 60 | yes |
+| TE | 24 | 127 | 24 | yes |
+| K | 24 | 35 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
 
 ESPN `appliedTotal` vs recomputed league scoring: max absolute delta **0.0** across 636 values (tolerance 0.01). `appliedTotal` is the authoritative value; this is drift detection only.
 
-13 ranked player(s) are on `Jason X` (team id 1) and carry `is_jason_x`, which drives the pale-yellow row highlight in the daily PDF. 0 owner(s) unresolved.
+14 ranked player(s) are on `Jason X` (team id 1) and carry `is_jason_x`, which drives the pale-yellow row highlight in the daily PDF. 0 owner(s) unresolved.
 
 Top 5 overall by three-game average:
 
 | # | Player | Pos | Team | Weeks | Avg | Owner |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Joe Burrow | QB | CIN | 7, 8, 9 | 33.97 | Burrow's Bunch |
-| 2 | Tee Higgins | WR | CIN | 7, 8, 9 | 29.50 | 🔥Certified Dumpster Fire 🔥 |
-| 3 | Jahmyr Gibbs | RB | DET | 8, 9, 10 | 28.80 | Giant Packer Fan |
-| 4 | Ja'Marr Chase | WR | CIN | 7, 8, 9 | 27.93 | Burrow's Bunch |
-| 5 | Puka Nacua | WR | LAR | 7, 8, 9 | 27.93 | The Bye Week Boys |
+| 2 | Christian McCaffrey | RB | SF | 7, 9, 10 | 32.27 | Auto Draft Champion |
+| 3 | Tony Pollard | RB | TEN | 7, 8, 10 | 31.03 | Burrow's Bunch |
+| 4 | Tee Higgins | WR | CIN | 7, 8, 9 | 29.50 | 🔥Certified Dumpster Fire 🔥 |
+| 5 | Jahmyr Gibbs | RB | DET | 8, 9, 10 | 28.80 | Giant Packer Fan |
 
 Owner in **bold** means `is_jason_x` is true.
 
