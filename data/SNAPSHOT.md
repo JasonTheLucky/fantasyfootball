@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-16T06:31:21.836142+00:00` |
-| Fetched at (CT) | **Mon Nov 16, 12:31 AM CST** |
+| Fetched at (UTC) | `2026-11-16T12:23:11.965113+00:00` |
+| Fetched at (CT) | **Mon Nov 16, 6:23 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 196 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1062 |
-| Fetch duration | 9.02s |
+| Fetch duration | 8.95s |
 | ESPN calls | 35 |
-| Workflow run | `43817292868` |
+| Workflow run | `43866024316` |
 
 ## Freshness and completeness gates
 
@@ -130,15 +130,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sun Nov 15, 6:37 PM CST`: 3 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Brandon Aiyuk | RESERVE-EX | - | - | - |
-| Jordan Whittington | IR | - | - | - |
-| Michael Wilson | IR | - | - | Auto Draft Champion |
+Compared with the snapshot taken `Mon Nov 16, 12:31 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 

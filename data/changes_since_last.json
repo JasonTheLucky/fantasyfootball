@@ -1,76 +1,26 @@
 {
   "usage": "What changed since the previous snapshot, which is the delta the daily report's 'last ~24 hours' framing needs. Compared against the player_index.json present when this run started, so the window is one snapshot interval (roughly six hours), not exactly 24 hours: previous_snapshot_at says when. injury_changes is the highest-value list and is sorted with Jason X players first; direction is new, changed or cleared. became_available are players dropped by a rival and now addable. became_rostered are players claimed, which is how a target you were considering disappears. changed_team is a trade or a waiver move between teams. comparable is false on a first run or when no previous snapshot was present, in which case every list is empty and absence of change must not be reported as stability.",
   "comparable": true,
-  "previous_snapshot_at": "2026-11-16T00:37:18.357042+00:00",
-  "previous_snapshot_at_ct": "Sun Nov 15, 6:37 PM CST",
+  "previous_snapshot_at": "2026-11-16T06:31:21.836142+00:00",
+  "previous_snapshot_at_ct": "Mon Nov 16, 12:31 AM CST",
   "previous_scoring_period_id": 10,
   "counts": {
-    "injury_changes": 3,
+    "injury_changes": 0,
     "jason_x_injury_changes": 0,
     "became_available": 0,
     "became_rostered": 0,
     "changed_team": 0,
-    "new_to_pool": 1
+    "new_to_pool": 0
   },
-  "injury_changes": [
-    {
-      "player_id": 4360438,
-      "name": "Brandon Aiyuk",
-      "position": "WR",
-      "pro_team": "SF",
-      "from": "RESERVE-EX",
-      "to": null,
-      "expected_return": null,
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "cleared"
-    },
-    {
-      "player_id": 4569382,
-      "name": "Jordan Whittington",
-      "position": "WR",
-      "pro_team": "LAR",
-      "from": "IR",
-      "to": null,
-      "expected_return": null,
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "cleared"
-    },
-    {
-      "player_id": 4360761,
-      "name": "Michael Wilson",
-      "position": "WR",
-      "pro_team": "ARI",
-      "from": "IR",
-      "to": null,
-      "expected_return": null,
-      "on_nfl_ir": false,
-      "fantasy_status": "ROSTERED",
-      "fantasy_team": "Auto Draft Champion",
-      "is_jason_x": false,
-      "direction": "cleared"
-    }
-  ],
+  "injury_changes": [],
   "jason_x_injury_changes": [],
   "became_available": [],
   "became_rostered": [],
   "changed_team": [],
-  "new_to_pool": [
-    {
-      "player_id": 5155179,
-      "name": "Jacob De Jesus",
-      "position": "WR",
-      "pro_team": "KC"
-    }
-  ],
+  "new_to_pool": [],
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 10,
-  "fetched_at": "2026-11-16T06:31:12.811412+00:00",
-  "fetched_at_ct_label": "Mon Nov 16, 12:31 AM CST"
+  "fetched_at": "2026-11-16T12:23:03.012440+00:00",
+  "fetched_at_ct_label": "Mon Nov 16, 6:23 AM CST"
 }
