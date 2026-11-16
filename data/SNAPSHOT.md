@@ -4,18 +4,18 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-16T12:23:11.965113+00:00` |
-| Fetched at (CT) | **Mon Nov 16, 6:23 AM CST** |
+| Fetched at (UTC) | `2026-11-16T18:14:53.117341+00:00` |
+| Fetched at (CT) | **Mon Nov 16, 12:14 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
-| Available players (FA + waivers) | 866 |
-| Players in lookup index | 1062 |
-| Fetch duration | 8.95s |
+| Available players (FA + waivers) | 865 |
+| Players in lookup index | 1061 |
+| Fetch duration | 8.71s |
 | ESPN calls | 35 |
-| Workflow run | `43866024316` |
+| Workflow run | `43926732800` |
 
 ## Freshness and completeness gates
 
@@ -79,7 +79,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (36)
+## Injury designations (35)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -103,7 +103,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | From Puka with Love | Jonathon Brooks | RB | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | WR | yes |
-| Connor’s Team | Drake Maye | QB | QUESTIONABLE | QB | yes |
+| Connor’s Team | Drake Maye | QB | DOUBTFUL | QB | yes |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
@@ -114,7 +114,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Kelli's Top-Notch Team | Wan'Dale Robinson | WR | QUESTIONABLE | WR | yes |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
 | Kelli's Top-Notch Team | Geno Smith | QB | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Drake London | WR | QUESTIONABLE | WR | yes |
 | 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
@@ -124,13 +123,25 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 15 | 42 | 112 | 188 | 186 | 323 | 866 |
+| 15 | 42 | 111 | 188 | 186 | 323 | 865 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Mon Nov 16, 12:31 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Mon Nov 16, 6:23 AM CST`: 7 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| Andy Dalton | INACTIVE | - | - | - |
+| Carnell Tate | INACTIVE | QUESTIONABLE | Nov 22 | Connor’s Team |
+| Drake London | QUESTIONABLE | - | - | 🔥Certified Dumpster Fire 🔥 |
+| Drake Maye | QUESTIONABLE | DOUBTFUL | Nov 29 | Connor’s Team |
+| Jack Strand | INACTIVE | - | - | - |
+| Shane Buechele | INACTIVE | Out | - | - |
+| Zachariah Branch | INACTIVE | QUESTIONABLE | Nov 29 | - |
 
 ## Jason X
 
@@ -172,7 +183,7 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 
 ## Injuries and IR
 
-95 players in this league's pool carry an NFL designation; 20 are on injured reserve (7 of them rostered). 1 affect Jason X.
+92 players in this league's pool carry an NFL designation; 20 are on injured reserve (7 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
