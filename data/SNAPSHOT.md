@@ -4,18 +4,18 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-16T00:37:18.357042+00:00` |
-| Fetched at (CT) | **Sun Nov 15, 6:37 PM CST** |
+| Fetched at (UTC) | `2026-11-16T06:31:21.836142+00:00` |
+| Fetched at (CT) | **Mon Nov 16, 12:31 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 196 |
-| Available players (FA + waivers) | 865 |
-| Players in lookup index | 1061 |
-| Fetch duration | 8.5s |
+| Available players (FA + waivers) | 866 |
+| Players in lookup index | 1062 |
+| Fetch duration | 9.02s |
 | ESPN calls | 35 |
-| Workflow run | `43781429251` |
+| Workflow run | `43817292868` |
 
 ## Freshness and completeness gates
 
@@ -36,12 +36,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Connor’s Team | 82.82 | Kelli's Top-Notch Team | 129.46 | NO |
-| Commanders of Chaos | 84.5 | 🔥Certified Dumpster Fire 🔥 | 85.04 | NO |
-| From Puka with Love | 106.44 | The Bye Week Boys | 145.28 | NO |
-| Auto Draft Champion | 95.98 | Jason X | 150.96 | NO |
-| Nicole's Gnarly Team | 112.62 | Burrow's Bunch | 164.7 | NO |
-| Cole-Train | 97.12 | Giant Packer Fan | 105.44 | NO |
+| Connor’s Team | 96.72 | Kelli's Top-Notch Team | 134.46 | NO |
+| Commanders of Chaos | 84.5 | 🔥Certified Dumpster Fire 🔥 | 112.04 | NO |
+| From Puka with Love | 115.72 | The Bye Week Boys | 145.28 | NO |
+| Auto Draft Champion | 96.18 | Jason X | 150.96 | NO |
+| Nicole's Gnarly Team | 140.92 | Burrow's Bunch | 240.16 | NO |
+| Cole-Train | 97.12 | Giant Packer Fan | 116.54 | NO |
 
 ## Rosters
 
@@ -124,36 +124,27 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 15 | 42 | 112 | 188 | 186 | 322 | 865 |
+| 15 | 42 | 112 | 188 | 186 | 323 | 866 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sun Nov 15, 12:13 PM CST`: 29 injury change(s) (1 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sun Nov 15, 6:37 PM CST`: 3 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| **Brock Bowers** | - | QUESTIONABLE | Nov 22 | Jason X |
-| Bo Melton | - | QUESTIONABLE | Nov 25 | - |
-| Brandin Cooks | - | INACTIVE | Nov 22 | - |
-| Davis Allen | QUESTIONABLE | - | - | - |
-| Dont'e Thornton Jr. | QUESTIONABLE | INACTIVE | Nov 22 | - |
-| Drake London | - | QUESTIONABLE | Nov 15 | 🔥Certified Dumpster Fire 🔥 |
-| Drew Allar | - | INACTIVE | Nov 22 | - |
-| Eli Heidenreich | - | INACTIVE | Nov 22 | - |
-| Emanuel Wilson | - | INACTIVE | Nov 29 | - |
-| Geno Smith | - | QUESTIONABLE | Nov 22 | Kelli's Top-Notch Team |
-| George Holani | - | QUESTIONABLE | Nov 29 | - |
-| Hunter Long | QUESTIONABLE | - | - | - |
+| Brandon Aiyuk | RESERVE-EX | - | - | - |
+| Jordan Whittington | IR | - | - | - |
+| Michael Wilson | IR | - | - | Auto Draft Champion |
 
 ## Jason X
 
 Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR open 0
 
-**This week:** vs Auto Draft Champion — projected 150.96 to 104.54 (margin 46.42), win probability 0.99. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Auto Draft Champion — projected 150.96 to 104.47 (margin 46.49), win probability 0.99. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $49 remaining, $10 reserve, **$39 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -189,7 +180,7 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 
 ## Injuries and IR
 
-98 players in this league's pool carry an NFL designation; 22 are on injured reserve (8 of them rostered). 1 affect Jason X.
+95 players in this league's pool carry an NFL designation; 20 are on injured reserve (7 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -198,7 +189,6 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 | Alec Pierce | Connor’s Team | 2026-11-29 |
 | Davante Adams | Connor’s Team | 2026-11-25 |
 | Jonathon Brooks | From Puka with Love | 2026-11-22 |
-| Michael Wilson | Auto Draft Champion | 2027-02-15 |
 | Puka Nacua | The Bye Week Boys | 2026-12-20 |
 | TreVeyon Henderson | Connor’s Team | 2026-12-21 |
 
@@ -218,30 +208,30 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. Ranked 212 of 212 expected.
 | --- | --- | --- | --- | --- |
 | QB | 24 | 55 | 24 | yes |
 | RB | 60 | 136 | 60 | yes |
-| WR | 60 | 202 | 60 | yes |
-| TE | 24 | 127 | 24 | yes |
+| WR | 60 | 203 | 60 | yes |
+| TE | 24 | 129 | 24 | yes |
 | K | 24 | 35 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
 
 ESPN `appliedTotal` vs recomputed league scoring: max absolute delta **0.0** across 636 values (tolerance 0.01). `appliedTotal` is the authoritative value; this is drift detection only.
 
-14 ranked player(s) are on `Jason X` (team id 1) and carry `is_jason_x`, which drives the pale-yellow row highlight in the daily PDF. 0 owner(s) unresolved.
+15 ranked player(s) are on `Jason X` (team id 1) and carry `is_jason_x`, which drives the pale-yellow row highlight in the daily PDF. 0 owner(s) unresolved.
 
 Top 5 overall by three-game average:
 
 | # | Player | Pos | Team | Weeks | Avg | Owner |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Joe Burrow | QB | CIN | 7, 8, 9 | 33.97 | Burrow's Bunch |
-| 2 | Christian McCaffrey | RB | SF | 7, 9, 10 | 32.27 | Auto Draft Champion |
-| 3 | Tony Pollard | RB | TEN | 7, 8, 10 | 31.03 | Burrow's Bunch |
-| 4 | Tee Higgins | WR | CIN | 7, 8, 9 | 29.50 | 🔥Certified Dumpster Fire 🔥 |
+| 1 | Joe Burrow | QB | CIN | 8, 9, 10 | 36.73 | Burrow's Bunch |
+| 2 | Ja'Marr Chase | WR | CIN | 8, 9, 10 | 34.90 | Burrow's Bunch |
+| 3 | Christian McCaffrey | RB | SF | 7, 9, 10 | 32.33 | Auto Draft Champion |
+| 4 | Tony Pollard | RB | TEN | 7, 8, 10 | 31.03 | Burrow's Bunch |
 | 5 | Jahmyr Gibbs | RB | DET | 8, 9, 10 | 28.80 | Giant Packer Fan |
 
 Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1048 total | 265 executed ownership changes | 522 lineup-only moves | 192 draft picks | 0 pending
+1049 total | 265 executed ownership changes | 523 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
