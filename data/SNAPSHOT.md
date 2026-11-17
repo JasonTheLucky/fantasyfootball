@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-16T18:14:53.117341+00:00` |
-| Fetched at (CT) | **Mon Nov 16, 12:14 PM CST** |
+| Fetched at (UTC) | `2026-11-17T00:32:05.052761+00:00` |
+| Fetched at (CT) | **Mon Nov 16, 6:32 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 196 |
 | Available players (FA + waivers) | 865 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.71s |
+| Fetch duration | 8.93s |
 | ESPN calls | 35 |
-| Workflow run | `43926732800` |
+| Workflow run | `43988358954` |
 
 ## Freshness and completeness gates
 
@@ -129,19 +129,24 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Mon Nov 16, 6:23 AM CST`: 7 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Mon Nov 16, 12:14 PM CST`: 58 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Andy Dalton | INACTIVE | - | - | - |
-| Carnell Tate | INACTIVE | QUESTIONABLE | Nov 22 | Connor’s Team |
-| Drake London | QUESTIONABLE | - | - | 🔥Certified Dumpster Fire 🔥 |
-| Drake Maye | QUESTIONABLE | DOUBTFUL | Nov 29 | Connor’s Team |
-| Jack Strand | INACTIVE | - | - | - |
-| Shane Buechele | INACTIVE | Out | - | - |
-| Zachariah Branch | INACTIVE | QUESTIONABLE | Nov 29 | - |
+| AJ Dillon | INACTIVE | - | - | - |
+| Anthony Gould | - | QUESTIONABLE | Nov 19 | - |
+| Athan Kaliakmanis | INACTIVE | - | - | - |
+| Behren Morton | INACTIVE | - | - | - |
+| Ben VanSumeren | INACTIVE | - | - | - |
+| Brandin Cooks | INACTIVE | - | - | - |
+| Brenen Thompson | DOUBTFUL | INACTIVE | Nov 22 | - |
+| Brevin Jordan | INACTIVE | QUESTIONABLE | Nov 19 | - |
+| Brian Robinson Jr. | IR | - | - | - |
+| CJ Donaldson | INACTIVE | QUESTIONABLE | Nov 22 | - |
+| CJ Williams | INACTIVE | - | - | - |
+| Chris Bell | INACTIVE | QUESTIONABLE | Nov 22 | - |
 
 ## Jason X
 
@@ -183,7 +188,7 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 
 ## Injuries and IR
 
-92 players in this league's pool carry an NFL designation; 20 are on injured reserve (7 of them rostered). 1 affect Jason X.
+68 players in this league's pool carry an NFL designation; 21 are on injured reserve (8 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -191,6 +196,7 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 | --- | --- | --- |
 | Alec Pierce | Connor’s Team | 2026-11-29 |
 | Davante Adams | Connor’s Team | 2026-11-25 |
+| Jacory Croskey-Merritt | 🔥Certified Dumpster Fire 🔥 | 2026-11-23 |
 | Jonathon Brooks | From Puka with Love | 2026-11-22 |
 | Puka Nacua | The Bye Week Boys | 2026-12-20 |
 | TreVeyon Henderson | Connor’s Team | 2026-12-21 |
@@ -234,7 +240,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1049 total | 265 executed ownership changes | 523 lineup-only moves | 192 draft picks | 0 pending
+1051 total | 265 executed ownership changes | 525 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
