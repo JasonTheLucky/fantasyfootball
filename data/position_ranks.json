@@ -2,8 +2,8 @@
   "usage": "Section 8 of the daily report, precomputed. Every team is ranked 1 to team_count at QB, RB, WR, TE, K and D/ST, where 1 is the strongest room; each rank is used exactly once per position. A room's score is the weighted sum of its players' ESPN rest-of-season projections: weight 1.0 for each starting slot, 0.5 and 0.25 for the third and fourth RB or WR (FLEX plus bye and injury cover), 0.2 for a backup QB, TE or D/ST, and nothing for a second kicker. Ties break on depth_score, then team id. The projection already prices in byes and expected missed time, so an injured star counts for what ESPN expects him to add from here. matrix is one row per team in seed order with the ranks, FAAB remaining, waiver rank and the strongest and weakest positions (top and bottom quarter of the league). by_position shows the scores and which players counted. trade_fits tests every 1-for-1 trade and every 2-for-1 trade (two Jason X players for one of theirs) against each other team, scoring each by how much it changes both sides' best QB/RB/RB/WR/WR/TE/FLEX lineup on rest-of-season projection. A trade is listed only when both sides gain at least min_gain_points, and in a 2-for-1 both players sent must start for the other team. A 2-for-1 frees a Jason X roster spot and costs the other team one: their_bench_open says whether they have it or must drop someone. best_trade is the one whose smaller gain is largest, so it is the most clearly good for both teams; partners are sorted by that, and a partner with mutual false has no trade that helps both. K and D/ST are streamed rather than traded, so they are left out.",
   "league_id": "1787259003",
   "season": 2026,
-  "scoring_period_id": 10,
-  "fetched_at": "2026-11-17T06:20:47.731926+00:00",
+  "scoring_period_id": 11,
+  "fetched_at": "2026-11-17T12:16:50.234118+00:00",
   "complete": true,
   "team_count": 12,
   "positions": [
@@ -49,9 +49,9 @@
       "team_name": "Burrow's Bunch",
       "is_jason_x": false,
       "playoff_seed": 1,
-      "record": "7-2",
+      "record": "8-2",
       "faab_remaining": 144,
-      "waiver_rank": 10,
+      "waiver_rank": 12,
       "ranks": {
         "QB": 4,
         "RB": 2,
@@ -73,9 +73,9 @@
       "team_name": "Jason X",
       "is_jason_x": true,
       "playoff_seed": 2,
-      "record": "6-3",
+      "record": "7-3",
       "faab_remaining": 49,
-      "waiver_rank": 7,
+      "waiver_rank": 11,
       "ranks": {
         "QB": 7,
         "RB": 4,
@@ -96,9 +96,9 @@
       "team_name": "Giant Packer Fan",
       "is_jason_x": false,
       "playoff_seed": 3,
-      "record": "6-3",
+      "record": "7-3",
       "faab_remaining": 195,
-      "waiver_rank": 6,
+      "waiver_rank": 10,
       "ranks": {
         "QB": 1,
         "RB": 1,
@@ -120,9 +120,9 @@
       "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
       "is_jason_x": false,
       "playoff_seed": 4,
-      "record": "5-4",
+      "record": "6-4",
       "faab_remaining": 171,
-      "waiver_rank": 5,
+      "waiver_rank": 9,
       "ranks": {
         "QB": 2,
         "RB": 8,
@@ -140,13 +140,59 @@
       ]
     },
     {
+      "team_id": 6,
+      "team_name": "From Puka with Love",
+      "is_jason_x": false,
+      "playoff_seed": 5,
+      "record": "5-5",
+      "faab_remaining": 115,
+      "waiver_rank": 8,
+      "ranks": {
+        "QB": 10,
+        "RB": 6,
+        "WR": 11,
+        "TE": 6,
+        "K": 10,
+        "D/ST": 10
+      },
+      "strongest": [],
+      "weakest": [
+        "QB",
+        "WR",
+        "K",
+        "D/ST"
+      ]
+    },
+    {
+      "team_id": 2,
+      "team_name": "The Bye Week Boys",
+      "is_jason_x": false,
+      "playoff_seed": 6,
+      "record": "5-5",
+      "faab_remaining": 95,
+      "waiver_rank": 7,
+      "ranks": {
+        "QB": 6,
+        "RB": 12,
+        "WR": 8,
+        "TE": 12,
+        "K": 9,
+        "D/ST": 5
+      },
+      "strongest": [],
+      "weakest": [
+        "RB",
+        "TE"
+      ]
+    },
+    {
       "team_id": 3,
       "team_name": "Auto Draft Champion",
       "is_jason_x": false,
-      "playoff_seed": 5,
-      "record": "5-4",
+      "playoff_seed": 7,
+      "record": "5-5",
       "faab_remaining": 198,
-      "waiver_rank": 4,
+      "waiver_rank": 6,
       "ranks": {
         "QB": 11,
         "RB": 5,
@@ -163,82 +209,13 @@
       ]
     },
     {
-      "team_id": 6,
-      "team_name": "From Puka with Love",
-      "is_jason_x": false,
-      "playoff_seed": 6,
-      "record": "5-4",
-      "faab_remaining": 115,
-      "waiver_rank": 12,
-      "ranks": {
-        "QB": 10,
-        "RB": 6,
-        "WR": 11,
-        "TE": 6,
-        "K": 10,
-        "D/ST": 9
-      },
-      "strongest": [],
-      "weakest": [
-        "QB",
-        "WR",
-        "K"
-      ]
-    },
-    {
-      "team_id": 2,
-      "team_name": "The Bye Week Boys",
-      "is_jason_x": false,
-      "playoff_seed": 7,
-      "record": "4-5",
-      "faab_remaining": 95,
-      "waiver_rank": 8,
-      "ranks": {
-        "QB": 6,
-        "RB": 12,
-        "WR": 8,
-        "TE": 12,
-        "K": 9,
-        "D/ST": 5
-      },
-      "strongest": [],
-      "weakest": [
-        "RB",
-        "TE"
-      ]
-    },
-    {
-      "team_id": 9,
-      "team_name": "Nicole's Gnarly Team",
-      "is_jason_x": false,
-      "playoff_seed": 8,
-      "record": "4-5",
-      "faab_remaining": 200,
-      "waiver_rank": 3,
-      "ranks": {
-        "QB": 3,
-        "RB": 9,
-        "WR": 5,
-        "TE": 10,
-        "K": 6,
-        "D/ST": 10
-      },
-      "strongest": [
-        "QB"
-      ],
-      "weakest": [
-        "TE",
-        "D/ST"
-      ]
-    },
-    {
       "team_id": 10,
       "team_name": "Kelli's Top-Notch Team",
       "is_jason_x": false,
-      "playoff_seed": 9,
-      "record": "4-5",
+      "playoff_seed": 8,
+      "record": "5-5",
       "faab_remaining": 198,
-      "waiver_rank": 2,
+      "waiver_rank": 5,
       "ranks": {
         "QB": 5,
         "RB": 3,
@@ -256,13 +233,36 @@
       ]
     },
     {
+      "team_id": 9,
+      "team_name": "Nicole's Gnarly Team",
+      "is_jason_x": false,
+      "playoff_seed": 9,
+      "record": "4-6",
+      "faab_remaining": 200,
+      "waiver_rank": 4,
+      "ranks": {
+        "QB": 3,
+        "RB": 9,
+        "WR": 5,
+        "TE": 10,
+        "K": 6,
+        "D/ST": 9
+      },
+      "strongest": [
+        "QB"
+      ],
+      "weakest": [
+        "TE"
+      ]
+    },
+    {
       "team_id": 7,
       "team_name": "Connor\u2019s Team",
       "is_jason_x": false,
       "playoff_seed": 10,
-      "record": "3-6",
+      "record": "3-7",
       "faab_remaining": 179,
-      "waiver_rank": 9,
+      "waiver_rank": 3,
       "ranks": {
         "QB": 12,
         "RB": 10,
@@ -284,9 +284,9 @@
       "team_name": "Commanders of Chaos",
       "is_jason_x": false,
       "playoff_seed": 11,
-      "record": "3-6",
+      "record": "3-7",
       "faab_remaining": 200,
-      "waiver_rank": 1,
+      "waiver_rank": 2,
       "ranks": {
         "QB": 8,
         "RB": 11,
@@ -306,9 +306,9 @@
       "team_name": "Cole-Train",
       "is_jason_x": false,
       "playoff_seed": 12,
-      "record": "2-7",
+      "record": "2-8",
       "faab_remaining": 25,
-      "waiver_rank": 11,
+      "waiver_rank": 1,
       "ranks": {
         "QB": 9,
         "RB": 7,
@@ -2320,32 +2320,6 @@
       },
       {
         "rank": 9,
-        "team_id": 6,
-        "team_name": "From Puka with Love",
-        "is_jason_x": false,
-        "score": 48.5,
-        "depth_score": 8.0,
-        "players": [
-          {
-            "player_id": -16009,
-            "name": "Packers D/ST",
-            "position": "D/ST",
-            "pro_team": "GB",
-            "ros_projected_points": 40.5,
-            "weight": 1.0
-          },
-          {
-            "player_id": -16003,
-            "name": "Bears D/ST",
-            "position": "D/ST",
-            "pro_team": "CHI",
-            "ros_projected_points": 40.0,
-            "weight": 0.2
-          }
-        ]
-      },
-      {
-        "rank": 10,
         "team_id": 9,
         "team_name": "Nicole's Gnarly Team",
         "is_jason_x": false,
@@ -2358,6 +2332,24 @@
             "position": "D/ST",
             "pro_team": "BAL",
             "ros_projected_points": 42.9,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "team_id": 6,
+        "team_name": "From Puka with Love",
+        "is_jason_x": false,
+        "score": 40.0,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16003,
+            "name": "Bears D/ST",
+            "position": "D/ST",
+            "pro_team": "CHI",
+            "ros_projected_points": 40.0,
             "weight": 1.0
           }
         ]
@@ -2534,18 +2526,18 @@
             "shape": "2-for-1",
             "jason_gives": [
               {
-                "player_id": 4711533,
-                "name": "Ollie Gordon II",
-                "position": "RB",
-                "pro_team": "MIA",
-                "ros_projected_points": 125.7
-              },
-              {
                 "player_id": 4696981,
                 "name": "Cam Skattebo",
                 "position": "RB",
                 "pro_team": "NYG",
                 "ros_projected_points": 132.9
+              },
+              {
+                "player_id": 4711533,
+                "name": "Ollie Gordon II",
+                "position": "RB",
+                "pro_team": "MIA",
+                "ros_projected_points": 125.7
               }
             ],
             "jason_gets": {
@@ -2572,18 +2564,18 @@
           "shape": "2-for-1",
           "jason_gives": [
             {
-              "player_id": 4248528,
-              "name": "Christian Watson",
-              "position": "WR",
-              "pro_team": "GB",
-              "ros_projected_points": 109.0
-            },
-            {
               "player_id": 4696981,
               "name": "Cam Skattebo",
               "position": "RB",
               "pro_team": "NYG",
               "ros_projected_points": 132.9
+            },
+            {
+              "player_id": 4248528,
+              "name": "Christian Watson",
+              "position": "WR",
+              "pro_team": "GB",
+              "ros_projected_points": 109.0
             }
           ],
           "jason_gets": {
@@ -2597,25 +2589,25 @@
           "their_gain": 13.9,
           "frees_jason_roster_spots": 1,
           "their_roster_spots_needed": 1,
-          "their_bench_open": 0
+          "their_bench_open": 1
         },
         "other_trades": [
           {
             "shape": "2-for-1",
             "jason_gives": [
               {
-                "player_id": 4248528,
-                "name": "Christian Watson",
-                "position": "WR",
-                "pro_team": "GB",
-                "ros_projected_points": 109.0
-              },
-              {
                 "player_id": 4711533,
                 "name": "Ollie Gordon II",
                 "position": "RB",
                 "pro_team": "MIA",
                 "ros_projected_points": 125.7
+              },
+              {
+                "player_id": 4248528,
+                "name": "Christian Watson",
+                "position": "WR",
+                "pro_team": "GB",
+                "ros_projected_points": 109.0
               }
             ],
             "jason_gets": {
@@ -2629,7 +2621,7 @@
             "their_gain": 6.7,
             "frees_jason_roster_spots": 1,
             "their_roster_spots_needed": 1,
-            "their_bench_open": 0
+            "their_bench_open": 1
           }
         ]
       },
@@ -2642,18 +2634,18 @@
           "shape": "2-for-1",
           "jason_gives": [
             {
-              "player_id": 4430878,
-              "name": "Jaxon Smith-Njigba",
-              "position": "WR",
-              "pro_team": "SEA",
-              "ros_projected_points": 155.6
-            },
-            {
               "player_id": 4882093,
               "name": "Bhayshul Tuten",
               "position": "RB",
               "pro_team": "JAX",
               "ros_projected_points": 146.6
+            },
+            {
+              "player_id": 4430878,
+              "name": "Jaxon Smith-Njigba",
+              "position": "WR",
+              "pro_team": "SEA",
+              "ros_projected_points": 155.6
             }
           ],
           "jason_gets": {
@@ -2674,18 +2666,18 @@
             "shape": "2-for-1",
             "jason_gives": [
               {
-                "player_id": 4248528,
-                "name": "Christian Watson",
-                "position": "WR",
-                "pro_team": "GB",
-                "ros_projected_points": 109.0
-              },
-              {
                 "player_id": 4426348,
                 "name": "Jayden Daniels",
                 "position": "QB",
                 "pro_team": "WSH",
                 "ros_projected_points": 170.4
+              },
+              {
+                "player_id": 4248528,
+                "name": "Christian Watson",
+                "position": "WR",
+                "pro_team": "GB",
+                "ros_projected_points": 109.0
               }
             ],
             "jason_gets": {
