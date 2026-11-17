@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-17T00:32:05.052761+00:00` |
-| Fetched at (CT) | **Mon Nov 16, 6:32 PM CST** |
+| Fetched at (UTC) | `2026-11-17T06:20:59.495133+00:00` |
+| Fetched at (CT) | **Tue Nov 17, 12:20 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **10** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 196 |
 | Available players (FA + waivers) | 865 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.93s |
+| Fetch duration | 11.76s |
 | ESPN calls | 35 |
-| Workflow run | `43988358954` |
+| Workflow run | `44030508646` |
 
 ## Freshness and completeness gates
 
@@ -36,11 +36,11 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Connor’s Team | 96.72 | Kelli's Top-Notch Team | 134.46 | NO |
-| Commanders of Chaos | 84.5 | 🔥Certified Dumpster Fire 🔥 | 112.04 | NO |
+| Connor’s Team | 115.72 | Kelli's Top-Notch Team | 143.26 | NO |
+| Commanders of Chaos | 95.9 | 🔥Certified Dumpster Fire 🔥 | 112.04 | NO |
 | From Puka with Love | 115.72 | The Bye Week Boys | 145.28 | NO |
-| Auto Draft Champion | 96.18 | Jason X | 150.96 | NO |
-| Nicole's Gnarly Team | 140.92 | Burrow's Bunch | 240.16 | NO |
+| Auto Draft Champion | 107.18 | Jason X | 150.96 | NO |
+| Nicole's Gnarly Team | 144.92 | Burrow's Bunch | 240.16 | NO |
 | Cole-Train | 97.12 | Giant Packer Fan | 116.54 | NO |
 
 ## Rosters
@@ -79,7 +79,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (35)
+## Injury designations (34)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -114,7 +114,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Kelli's Top-Notch Team | Wan'Dale Robinson | WR | QUESTIONABLE | WR | yes |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
 | Kelli's Top-Notch Team | Geno Smith | QB | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | David Montgomery | RB | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Kyle Monangai | RB | OUT | BENCH | NO |
@@ -129,30 +128,24 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Mon Nov 16, 12:14 PM CST`: 58 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Mon Nov 16, 6:32 PM CST`: 6 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| AJ Dillon | INACTIVE | - | - | - |
-| Anthony Gould | - | QUESTIONABLE | Nov 19 | - |
-| Athan Kaliakmanis | INACTIVE | - | - | - |
-| Behren Morton | INACTIVE | - | - | - |
-| Ben VanSumeren | INACTIVE | - | - | - |
-| Brandin Cooks | INACTIVE | - | - | - |
-| Brenen Thompson | DOUBTFUL | INACTIVE | Nov 22 | - |
-| Brevin Jordan | INACTIVE | QUESTIONABLE | Nov 19 | - |
-| Brian Robinson Jr. | IR | - | - | - |
-| CJ Donaldson | INACTIVE | QUESTIONABLE | Nov 22 | - |
-| CJ Williams | INACTIVE | - | - | - |
-| Chris Bell | INACTIVE | QUESTIONABLE | Nov 22 | - |
+| Alec Pierce | IR | - | - | Connor’s Team |
+| David Montgomery | QUESTIONABLE | - | - | 🔥Certified Dumpster Fire 🔥 |
+| Dyami Brown | IR | - | - | - |
+| Jeshaun Jones | QUESTIONABLE | - | - | - |
+| Josh Whyle | IR | - | - | - |
+| Puka Nacua | IR | - | - | The Bye Week Boys |
 
 ## Jason X
 
 Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR open 0
 
-**This week:** vs Auto Draft Champion — projected 150.96 to 104.47 (margin 46.49), win probability 0.99. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Auto Draft Champion — projected 150.96 to 107.18 (margin 43.78), win probability 1.0. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $49 remaining, $10 reserve, **$39 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -188,17 +181,15 @@ Record 6-3 · FAAB **$49** of $200 · waiver rank 7 · bench open **2** · IR op
 
 ## Injuries and IR
 
-68 players in this league's pool carry an NFL designation; 21 are on injured reserve (8 of them rostered). 1 affect Jason X.
+62 players in this league's pool carry an NFL designation; 17 are on injured reserve (6 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
 | Player | Fantasy team | Expected return |
 | --- | --- | --- |
-| Alec Pierce | Connor’s Team | 2026-11-29 |
 | Davante Adams | Connor’s Team | 2026-11-25 |
 | Jacory Croskey-Merritt | 🔥Certified Dumpster Fire 🔥 | 2026-11-23 |
 | Jonathon Brooks | From Puka with Love | 2026-11-22 |
-| Puka Nacua | The Bye Week Boys | 2026-12-20 |
 | TreVeyon Henderson | Connor’s Team | 2026-12-21 |
 
 **In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team), Treylon Burks (Jason X).
@@ -217,8 +208,8 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. Ranked 212 of 212 expected.
 | --- | --- | --- | --- | --- |
 | QB | 24 | 55 | 24 | yes |
 | RB | 60 | 136 | 60 | yes |
-| WR | 60 | 203 | 60 | yes |
-| TE | 24 | 129 | 24 | yes |
+| WR | 60 | 204 | 60 | yes |
+| TE | 24 | 130 | 24 | yes |
 | K | 24 | 35 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
 
