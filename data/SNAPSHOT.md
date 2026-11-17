@@ -4,18 +4,18 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-17T12:16:58.584676+00:00` |
-| Fetched at (CT) | **Tue Nov 17, 6:16 AM CST** |
+| Fetched at (UTC) | `2026-11-17T18:14:47.525775+00:00` |
+| Fetched at (CT) | **Tue Nov 17, 12:14 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 195 |
-| Available players (FA + waivers) | 866 |
+| Rostered players | 192 |
+| Available players (FA + waivers) | 869 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.35s |
+| Fetch duration | 10.08s |
 | ESPN calls | 38 |
-| Workflow run | `44081634348` |
+| Workflow run | `44145687433` |
 
 ## Freshness and completeness gates
 
@@ -47,10 +47,10 @@
 
 | # | Team | Owner | Roster | Start | Bench | IR | Bench open |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Jason X | Jason Prinsen | 15 | 9 | 5 | 1 | 2 |
+| 1 | Jason X | Jason Prinsen | 15 | 9 | 6 | 0 | 1 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
-| 4 | Cole-Train | Jeffrey Clark | 17 | 9 | 7 | 1 | 0 |
+| 4 | Cole-Train | Jeffrey Clark | 14 | 9 | 4 | 1 | 3 |
 | 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
@@ -84,7 +84,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
-| The Bye Week Boys | DeVonta Smith | WR | OUT | BENCH | NO |
+| The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Omar Cooper Jr. | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Puka Nacua | WR | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | De'Zhaun Stribling | WR | INJURY_RESERVE | BENCH | NO |
@@ -95,11 +95,11 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Cole-Train | Josh Jacobs | RB | OUT | BENCH | NO |
 | Cole-Train | Jordan Addison | WR | OUT | BENCH | NO |
 | Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
-| Burrow's Bunch | Kenneth Walker III | RB | OUT | BENCH | NO |
+| Burrow's Bunch | Kenneth Walker III | RB | QUESTIONABLE | BENCH | NO |
 | Burrow's Bunch | Luther Burden III | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Woody Marks | RB | DOUBTFUL | RB | yes |
 | From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | WR | yes |
-| From Puka with Love | Ladd McConkey | WR | OUT | BENCH | NO |
+| From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Jonathon Brooks | RB | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | WR | yes |
@@ -107,40 +107,53 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | Carnell Tate | WR | OUT | BENCH | NO |
-| Giant Packer Fan | T.J. Hockenson | TE | OUT | BENCH | NO |
-| Nicole's Gnarly Team | Mike Evans | WR | OUT | BENCH | NO |
+| Connor’s Team | Carnell Tate | WR | QUESTIONABLE | BENCH | NO |
+| Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
+| Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Wan'Dale Robinson | WR | QUESTIONABLE | WR | yes |
-| Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
+| Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Geno Smith | QB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Kyle Monangai | RB | OUT | BENCH | NO |
+| Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
 
 ## Available player pool by position
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 16 | 42 | 111 | 188 | 186 | 323 | 866 |
+| 16 | 42 | 111 | 191 | 186 | 323 | 869 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Tue Nov 17, 12:20 AM CST`: 0 injury change(s) (0 affecting Jason X), 1 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Tue Nov 17, 6:16 AM CST`: 6 injury change(s) (0 affecting Jason X), 3 newly available, 0 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| Brenen Thompson | INACTIVE | QUESTIONABLE | Nov 22 | - |
+| Elijah Sarratt | INACTIVE | - | - | - |
+| James Conner | - | IR-R | Nov 29 | - |
+| Josh Jacobs | DOUBTFUL | QUESTIONABLE | Nov 25 | Cole-Train |
+| Kedon Slovis | INACTIVE | - | - | - |
+| Ladd McConkey | INACTIVE | QUESTIONABLE | Nov 22 | From Puka with Love |
 
 **Newly available**
 
 | Name | Position | Pro Team | Dropped By |
 | --- | --- | --- | --- |
-| Packers D/ST | D/ST | GB | From Puka with Love |
+| Corey Kiner | RB | NE | Cole-Train |
+| Devin Singletary | RB | NYG | Cole-Train |
+| Kaleb Johnson | RB | GB | Cole-Train |
 
 ## Jason X
 
-Record 7-3 · FAAB **$49** of $200 · waiver rank 11 · bench open **2** · IR open 0
+Record 7-3 · FAAB **$49** of $200 · waiver rank 11 · bench open **1** · IR open 1
 
-**This week:** vs Commanders of Chaos — projected 126.61 to 85.07 (margin 41.54), win probability 0.72. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Commanders of Chaos — projected 126.95 to 85.33 (margin 41.62), win probability 0.72. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $49 remaining, $10 reserve, **$39 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -153,15 +166,15 @@ Record 7-3 · FAAB **$49** of $200 · waiver rank 11 · bench open **2** · IR o
 
 | Slot | Player | Pos | Bye | Next | Proj | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| QB | Jayden Daniels | QB | W7 | vs CIN | 20.47 | - |
-| RB | Bhayshul Tuten | RB | W7 | @ NYG | 17.62 | - |
-| RB | Ollie Gordon II | RB | W6 | @ BUF | 14.37 | - |
-| WR | Amon-Ra St. Brown | WR | W6 | vs TB | 18.38 | - |
+| QB | Jayden Daniels | QB | W7 | vs CIN | 20.5 | - |
+| RB | Cam Skattebo | RB | W8 | vs JAX | 14.96 | - |
+| RB | Ollie Gordon II | RB | W6 | @ BUF | 14.4 | - |
+| WR | Amon-Ra St. Brown | WR | W6 | vs TB | 18.41 | - |
 | WR | Caleb Douglas | WR | W6 | @ BUF | 9.95 | - |
 | TE | Brock Bowers | TE | W13 | @ DEN | 15.79 | QUESTIONABLE (back Nov 22) |
-| FLEX | Cam Skattebo | RB | W8 | vs JAX | 14.92 | - |
-| K | Spencer Shrader | K | W13 | @ HOU | 9.37 | - |
-| D/ST | Lions D/ST | D/ST | W6 | vs TB | 5.74 | - |
+| FLEX | Bhayshul Tuten | RB | W7 | @ NYG | 17.63 | - |
+| K | Chase McLaughlin | K | W10 | @ DET | 9.51 | - |
+| D/ST | Lions D/ST | D/ST | W6 | vs TB | 5.8 | - |
 
 ## Upcoming NFL byes
 
@@ -173,7 +186,7 @@ Record 7-3 · FAAB **$49** of $200 · waiver rank 11 · bench open **2** · IR o
 
 ## Injuries and IR
 
-62 players in this league's pool carry an NFL designation; 17 are on injured reserve (6 of them rostered). 1 affect Jason X.
+61 players in this league's pool carry an NFL designation; 18 are on injured reserve (6 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -184,7 +197,7 @@ Record 7-3 · FAAB **$49** of $200 · waiver rank 11 · bench open **2** · IR o
 | Jonathon Brooks | From Puka with Love | 2026-11-22 |
 | TreVeyon Henderson | Connor’s Team | 2026-12-21 |
 
-**In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team), Treylon Burks (Jason X).
+**In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team).
 
 Jason X players with a designation:
 
@@ -223,12 +236,15 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1058 total | 266 executed ownership changes | 531 lineup-only moves | 192 draft picks | 0 pending
+1064 total | 269 executed ownership changes | 533 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-17T14:08 | Cole-Train | ROSTER | DROP Devin Singletary |
+| 2026-11-17T14:08 | Cole-Train | ROSTER | DROP Corey Kiner |
+| 2026-11-17T14:07 | Cole-Train | ROSTER | DROP Kaleb Johnson |
 | 2026-11-17T12:06 | From Puka with Love | ROSTER | DROP Packers D/ST |
 | 2026-11-15T14:22 | Commanders of Chaos | FREEAGENT | ADD Dolphins D/ST, DROP Chiefs D/ST |
 | 2026-11-15T14:22 | Commanders of Chaos | ROSTER | DROP Ryan Flournoy |
@@ -238,9 +254,6 @@ Most recent ownership changes:
 | 2026-11-13T04:15 | Giant Packer Fan | FREEAGENT | ADD 49ers D/ST |
 | 2026-11-12T20:26 | The Bye Week Boys | FREEAGENT | ADD Kyle Pitts Sr., DROP Chig Okonkwo |
 | 2026-11-12T20:22 | The Bye Week Boys | FREEAGENT | ADD Jason Sanders, DROP Cairo Santos |
-| 2026-11-12T13:39 | Jason X | FREEAGENT | ADD Fernando Mendoza, DROP Jonathon Brooks |
-| 2026-11-12T09:41 | Kelli's Top-Notch Team | FREEAGENT | ADD Colts D/ST, DROP Browns D/ST |
-| 2026-11-11T08:46 | Cole-Train | WAIVER | ADD Darren Waller, DROP Kyle Pitts Sr. |
 
 ## League format
 
