@@ -79,7 +79,7 @@
     },
     "WR": {
       "limit": 60,
-      "qualifying": 204,
+      "qualifying": 203,
       "ranked": 60,
       "sufficient": true,
       "weeks_used": [
@@ -171,7 +171,7 @@
   "diagnostics": {
     "players_seen": 1061,
     "weekly_values_collected": 4606,
-    "excluded_out_for_season": 1,
+    "excluded_out_for_season": 2,
     "espn_requests": 22,
     "page_size": 1000,
     "invalid_values": 0,
@@ -183,6 +183,13 @@
       "player_id": 4038524,
       "name": "Gardner Minshew II",
       "position": "QB",
+      "designation": "IR",
+      "expected_return": "2027-02-15"
+    },
+    {
+      "player_id": 4569587,
+      "name": "Wan'Dale Robinson",
+      "position": "WR",
       "designation": "IR",
       "expected_return": "2027-02-15"
     }
@@ -446,7 +453,6 @@
       4429025,
       4361409,
       4047650,
-      4569587,
       2977187,
       4569559,
       4686612,
@@ -4212,16 +4218,7 @@
         "owner_label": "Connor\u2019s Team",
         "owner_team_id": 7,
         "fantasy_status": "ROSTERED",
-        "is_jason_x": false,
-        "injury": {
-          "designation": "IR",
-          "nfl_status": "Injured Reserve",
-          "on_nfl_ir": true,
-          "expected_return": "2026-11-25",
-          "expected_return_label": "Nov 25",
-          "injury_type": "Hamstring"
-        },
-        "on_nfl_ir": true
+        "is_jason_x": false
       },
       {
         "player_id": 4429022,
@@ -5301,9 +5298,9 @@
         "avg_3_game": 9.033333,
         "avg_3_game_display": "9.03",
         "rank": 11,
-        "owner_label": "FREE AGENT",
-        "owner_team_id": null,
-        "fantasy_status": "AVAILABLE",
+        "owner_label": "The Bye Week Boys",
+        "owner_team_id": 2,
+        "fantasy_status": "ROSTERED",
         "is_jason_x": false
       },
       {
@@ -5553,10 +5550,10 @@
         "avg_3_game": 7.1,
         "avg_3_game_display": "7.10",
         "rank": 20,
-        "owner_label": "FREE AGENT",
-        "owner_team_id": null,
-        "fantasy_status": "AVAILABLE",
-        "is_jason_x": false
+        "owner_label": "Jason X",
+        "owner_team_id": 1,
+        "fantasy_status": "ROSTERED",
+        "is_jason_x": true
       },
       {
         "player_id": 4430802,
@@ -6509,10 +6506,10 @@
         "avg_3_game": 10.333333,
         "avg_3_game_display": "10.33",
         "rank": 6,
-        "owner_label": "Jason X",
-        "owner_team_id": 1,
-        "fantasy_status": "ROSTERED",
-        "is_jason_x": true
+        "owner_label": "WAIVERS",
+        "owner_team_id": null,
+        "fantasy_status": "AVAILABLE",
+        "is_jason_x": false
       },
       {
         "player_id": -16009,
@@ -6911,5 +6908,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 11,
-  "fetched_at": "2026-11-18T12:16:28.982358+00:00"
+  "fetched_at": "2026-11-18T18:13:04.900036+00:00"
 }

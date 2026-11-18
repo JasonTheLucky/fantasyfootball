@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-18T12:16:37.389998+00:00` |
-| Fetched at (CT) | **Wed Nov 18, 6:16 AM CST** |
+| Fetched at (UTC) | `2026-11-18T18:13:13.879580+00:00` |
+| Fetched at (CT) | **Wed Nov 18, 12:13 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 194 |
 | Available players (FA + waivers) | 867 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.41s |
+| Fetch duration | 8.98s |
 | ESPN calls | 38 |
-| Workflow run | `44302340004` |
+| Workflow run | `44367233381` |
 
 ## Freshness and completeness gates
 
@@ -84,7 +84,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
-| The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | BENCH | NO |
+| The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | Omar Cooper Jr. | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Puka Nacua | WR | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
@@ -95,8 +95,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Cole-Train | Jordan Addison | WR | OUT | BENCH | NO |
 | Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | Kenneth Walker III | RB | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Woody Marks | RB | DOUBTFUL | RB | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Woody Marks | RB | DOUBTFUL | BENCH | NO |
 | From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Jonathon Brooks | RB | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
@@ -118,43 +118,40 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 15 | 43 | 111 | 190 | 185 | 323 | 867 |
+| 16 | 43 | 111 | 191 | 183 | 323 | 867 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Wed Nov 18, 12:20 AM CST`: 0 injury change(s) (0 affecting Jason X), 6 newly available, 8 claimed, 0 moved between teams.
+Compared with the snapshot taken `Wed Nov 18, 6:16 AM CST`: 2 injury change(s) (0 affecting Jason X), 2 newly available, 2 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| Davante Adams | IR | - | - | Connor’s Team |
+| Isaiah Williams | - | QUESTIONABLE | Nov 22 | - |
 
 **Newly available**
 
 | Name | Position | Pro Team | Dropped By |
 | --- | --- | --- | --- |
-| Andre Szmyt | K | CLE | Burrow's Bunch |
-| De'Zhaun Stribling | WR | SF | The Bye Week Boys |
-| Geno Smith | QB | NYJ | Kelli's Top-Notch Team |
-| Kyle Pitts Sr. | TE | ATL | The Bye Week Boys |
-| Spencer Shrader | K | IND | Jason X |
-| Wan'Dale Robinson | WR | TEN | Kelli's Top-Notch Team |
+| Bam Knight | RB | ARI | The Bye Week Boys |
+| Lions D/ST | D/ST | DET | Jason X |
 
 **Claimed**
 
 | Name | Position | Pro Team | Added By |
 | --- | --- | --- | --- |
-| **Bo Nix** | QB | DEN | Jason X |
-| **Courtland Sutton** | WR | DEN | Jason X |
-| Cairo Santos | K | CHI | Burrow's Bunch |
-| Chiefs D/ST | D/ST | KC | The Bye Week Boys |
-| Dalton Schultz | TE | HOU | Kelli's Top-Notch Team |
-| Emari Demercado | RB | HOU | From Puka with Love |
-| Michael Mayer | TE | LV | The Bye Week Boys |
-| Xavier Hutchinson | WR | HOU | Kelli's Top-Notch Team |
+| **Chig Okonkwo** | TE | WSH | Jason X |
+| Pat Freiermuth | TE | PIT | The Bye Week Boys |
 
 ## Jason X
 
 Record 7-3 · FAAB **$40** of $200 · waiver rank 11 · bench open **0** · IR open 1
 
-**This week:** vs Commanders of Chaos — projected 126.91 to 82.12 (margin 44.79), win probability 0.73. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Commanders of Chaos — projected 126.27 to 82.12 (margin 44.15), win probability 0.73. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -171,13 +168,13 @@ No open bench spot: any add needs a drop.
 | --- | --- | --- | --- | --- | --- | --- |
 | QB | Jayden Daniels | QB | W7 | vs CIN | 20.47 | - |
 | RB | Cam Skattebo | RB | W8 | vs JAX | 14.96 | - |
-| RB | Ollie Gordon II | RB | W6 | @ BUF | 14.4 | - |
+| RB | Ollie Gordon II | RB | W6 | @ BUF | 14.41 | - |
 | WR | Amon-Ra St. Brown | WR | W6 | vs TB | 18.41 | - |
-| WR | Caleb Douglas | WR | W6 | @ BUF | 9.95 | - |
+| WR | Courtland Sutton | WR | W10 | vs LV | 10.47 | - |
 | TE | Brock Bowers | TE | W13 | @ DEN | 15.79 | QUESTIONABLE (back Nov 22) |
 | FLEX | Bhayshul Tuten | RB | W7 | @ NYG | 17.63 | - |
 | K | Chase McLaughlin | K | W10 | @ DET | 9.51 | - |
-| D/ST | Lions D/ST | D/ST | W6 | vs TB | 5.8 | - |
+| D/ST | Buccaneers D/ST | D/ST | W10 | @ DET | 4.63 | - |
 
 ## Upcoming NFL byes
 
@@ -189,13 +186,12 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-59 players in this league's pool carry an NFL designation; 18 are on injured reserve (5 of them rostered). 1 affect Jason X.
+59 players in this league's pool carry an NFL designation; 17 are on injured reserve (4 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
 | Player | Fantasy team | Expected return |
 | --- | --- | --- |
-| Davante Adams | Connor’s Team | 2026-11-25 |
 | Jacory Croskey-Merritt | 🔥Certified Dumpster Fire 🔥 | 2026-11-23 |
 | Jonathon Brooks | From Puka with Love | 2026-11-22 |
 
@@ -215,7 +211,7 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]. Ranked 212 of 212 expecte
 | --- | --- | --- | --- | --- |
 | QB | 24 | 55 | 24 | yes |
 | RB | 60 | 136 | 60 | yes |
-| WR | 60 | 204 | 60 | yes |
+| WR | 60 | 203 | 60 | yes |
 | TE | 24 | 130 | 24 | yes |
 | K | 24 | 35 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
@@ -238,12 +234,14 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1084 total | 277 executed ownership changes | 542 lineup-only moves | 192 draft picks | 0 pending
+1091 total | 279 executed ownership changes | 547 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-18T15:23 | The Bye Week Boys | FREEAGENT | ADD Pat Freiermuth, DROP Bam Knight |
+| 2026-11-18T12:48 | Jason X | FREEAGENT | ADD Chig Okonkwo, DROP Lions D/ST |
 | 2026-11-18T11:02 | Kelli's Top-Notch Team | FREEAGENT | ADD Dalton Schultz, DROP Geno Smith |
 | 2026-11-18T11:01 | Kelli's Top-Notch Team | FREEAGENT | ADD Xavier Hutchinson, DROP Wan'Dale Robinson |
 | 2026-11-18T08:36 | The Bye Week Boys | WAIVER | ADD Michael Mayer, DROP Kyle Pitts Sr. |
@@ -254,8 +252,6 @@ Most recent ownership changes:
 | 2026-11-18T08:36 | From Puka with Love | WAIVER | ADD Emari Demercado |
 | 2026-11-17T14:08 | Cole-Train | ROSTER | DROP Devin Singletary |
 | 2026-11-17T14:08 | Cole-Train | ROSTER | DROP Corey Kiner |
-| 2026-11-17T14:07 | Cole-Train | ROSTER | DROP Kaleb Johnson |
-| 2026-11-17T12:06 | From Puka with Love | ROSTER | DROP Packers D/ST |
 
 ## League format
 
