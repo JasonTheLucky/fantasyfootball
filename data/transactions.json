@@ -1,16 +1,112 @@
 {
   "counts": {
-    "total": 1069,
-    "ownership_changes": 339,
-    "executed_ownership_changes": 269,
-    "lineup_only_moves": 538,
+    "total": 1084,
+    "ownership_changes": 350,
+    "executed_ownership_changes": 277,
+    "lineup_only_moves": 542,
     "draft_picks": 192,
     "pending": 0,
-    "failed": 38,
-    "waiver_bids": 89,
-    "waiver_bids_won": 59
+    "failed": 41,
+    "waiver_bids": 97,
+    "waiver_bids_won": 64
   },
   "waiver_bids": [
+    {
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 6,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 11,
+      "date": "2026-11-18T08:36:57.232000+00:00",
+      "players_added": [
+        4429086
+      ]
+    },
+    {
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 6,
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "succeeded": false,
+      "scoring_period_id": 11,
+      "date": "2026-11-18T08:36:57.232000+00:00",
+      "players_added": [
+        4362478
+      ]
+    },
+    {
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 5,
+      "status": "FAILED_PLAYERALREADYDROPPED",
+      "succeeded": false,
+      "scoring_period_id": 11,
+      "date": "2026-11-18T08:36:57.232000+00:00",
+      "players_added": [
+        4360635
+      ]
+    },
+    {
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 3,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 11,
+      "date": "2026-11-18T08:36:57.232000+00:00",
+      "players_added": [
+        4426338
+      ]
+    },
+    {
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 8,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 11,
+      "date": "2026-11-18T08:36:57.231000+00:00",
+      "players_added": [
+        -16012
+      ]
+    },
+    {
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 6,
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "succeeded": false,
+      "scoring_period_id": 11,
+      "date": "2026-11-18T08:36:57.231000+00:00",
+      "players_added": [
+        -16012
+      ]
+    },
+    {
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 6,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 11,
+      "date": "2026-11-18T08:36:57.231000+00:00",
+      "players_added": [
+        3128429
+      ]
+    },
+    {
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 10,
+      "status": "EXECUTED",
+      "succeeded": true,
+      "scoring_period_id": 11,
+      "date": "2026-11-18T08:36:57.230000+00:00",
+      "players_added": [
+        4362478
+      ]
+    },
     {
       "team_id": 6,
       "team": "From Puka with Love",
@@ -1081,6 +1177,302 @@
     }
   ],
   "executed_ownership_changes": [
+    {
+      "id": "841600f7-5e5e-475d-a1db-f92b6273a603",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-18T11:02:40.121000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 3117256,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 10,
+          "to_team": "Kelli's Top-Notch Team",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 15864,
+          "from_team_id": 10,
+          "from_team": "Kelli's Top-Notch Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "5a1aac78-90b3-4e70-9b89-577ac686e52d",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-18T11:01:27.015000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4686422,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 10,
+          "to_team": "Kelli's Top-Notch Team",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4569587,
+          "from_team_id": 10,
+          "from_team": "Kelli's Top-Notch Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "4c0e2b67-cb5f-4bc3-9a73-2b04b0cab153",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 6,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.232000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4429086,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": "TE",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4360248,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "847a7ab5-4bc9-444e-8a12-526f8e2d7bfd",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 3,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.232000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4426338,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "221d41fb-5cf9-497c-8af6-9ef0abfb38f7",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 5,
+      "team": "Burrow's Bunch",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.232000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 17427,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 5,
+          "to_team": "Burrow's Bunch",
+          "from_slot": null,
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4258620,
+          "from_team_id": 5,
+          "from_team": "Burrow's Bunch",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "cb1c1adb-adc9-4dc7-9842-e83d771e683b",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 8,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.231000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16012,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4710714,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "5556e1f8-4640-4240-be07-94a7a3ae48c6",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 6,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.231000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 3128429,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4571557,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "33f1feb9-db9e-466e-bc93-71482c7e3fed",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 10,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.230000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4362478,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "75a8181c-541c-4753-b072-91b2b1d6be9f",
       "type": "ROSTER",
@@ -10463,6 +10855,126 @@
   "pending_transactions": [],
   "failed_transactions": [
     {
+      "id": "b0e638e4-2156-4965-8d89-6d13205cf668",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 6,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.232000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4362478,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4427728,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "4c13a6c8-2f2b-4c2b-b4ae-34e6469c25a3",
+      "type": "WAIVER",
+      "status": "FAILED_PLAYERALREADYDROPPED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 5,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.232000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4360635,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4360248,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "d88976b2-8bca-4651-bc03-ea7dbd07eb77",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 6,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.231000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16012,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16008,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "eb17473d-94b7-4886-ba24-2b0057268dcc",
       "type": "WAIVER",
       "status": "FAILED_INVALIDPLAYERSOURCE",
@@ -11912,6 +12424,166 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "935100b1-403b-4c97-b698-371886077782",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-18T11:03:03.961000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 3117256,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "TE",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4723086,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "dfe95ca1-5b88-49f2-9c9b-84f018731723",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-18T10:59:39.642000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4569618,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "WR",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4569587,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "WR",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "ebf19203-dd24-49e7-9548-a385a39ed0ef",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-18T10:59:29.434000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 4723086,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "TE",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4576297,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "d78be9c4-fdcc-43cb-9e65-385856318da5",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-18T08:43:33.684000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": -16012,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "D/ST",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": -16026,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "b841e98d-6fe5-486f-bcf0-80e2959f2def",
       "type": "ROSTER",
@@ -33867,6 +34539,422 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "841600f7-5e5e-475d-a1db-f92b6273a603",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-18T11:02:40.121000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 3117256,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 10,
+          "to_team": "Kelli's Top-Notch Team",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 15864,
+          "from_team_id": 10,
+          "from_team": "Kelli's Top-Notch Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "5a1aac78-90b3-4e70-9b89-577ac686e52d",
+      "type": "FREEAGENT",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 10,
+      "team": "Kelli's Top-Notch Team",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-18T11:01:27.015000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4686422,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 10,
+          "to_team": "Kelli's Top-Notch Team",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4569587,
+          "from_team_id": 10,
+          "from_team": "Kelli's Top-Notch Team",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "4c0e2b67-cb5f-4bc3-9a73-2b04b0cab153",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 6,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.232000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4429086,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": "TE",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4360248,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "b0e638e4-2156-4965-8d89-6d13205cf668",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 6,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.232000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4362478,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4427728,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "4c13a6c8-2f2b-4c2b-b4ae-34e6469c25a3",
+      "type": "WAIVER",
+      "status": "FAILED_PLAYERALREADYDROPPED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 5,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.232000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4360635,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4360248,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "TE",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "847a7ab5-4bc9-444e-8a12-526f8e2d7bfd",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 3,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.232000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4426338,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "221d41fb-5cf9-497c-8af6-9ef0abfb38f7",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 5,
+      "team": "Burrow's Bunch",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.232000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 17427,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 5,
+          "to_team": "Burrow's Bunch",
+          "from_slot": null,
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4258620,
+          "from_team_id": 5,
+          "from_team": "Burrow's Bunch",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "cb1c1adb-adc9-4dc7-9842-e83d771e683b",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 8,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.231000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16012,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4710714,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "d88976b2-8bca-4651-bc03-ea7dbd07eb77",
+      "type": "WAIVER",
+      "status": "FAILED_INVALIDPLAYERSOURCE",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 6,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.231000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": -16012,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16008,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "5556e1f8-4640-4240-be07-94a7a3ae48c6",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 1,
+      "team": "Jason X",
+      "bid_amount": 6,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.231000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 3128429,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 1,
+          "to_team": "Jason X",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": 4571557,
+          "from_team_id": 1,
+          "from_team": "Jason X",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "33f1feb9-db9e-466e-bc93-71482c7e3fed",
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "execution_type": "PROCESS",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 6,
+      "team": "From Puka with Love",
+      "bid_amount": 10,
+      "proposed_date": "2026-11-18T08:36:56.954000+00:00",
+      "processed_date": "2026-11-18T08:36:57.230000+00:00",
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4362478,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 6,
+          "to_team": "From Puka with Love",
+          "from_slot": null,
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "fd876a53-7cf6-4961-9360-97a76788c3bd",
       "type": "WAIVER",
       "status": "CANCELED",
@@ -51348,7 +52436,7 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 16,
+    "0": 31,
     "1": 238,
     "2": 56,
     "3": 68,
@@ -51359,10 +52447,10 @@
     "8": 123,
     "9": 91,
     "10": 82,
-    "11": 16
+    "11": 31
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 11,
-  "fetched_at": "2026-11-18T06:20:22.176455+00:00"
+  "fetched_at": "2026-11-18T12:16:28.982358+00:00"
 }
