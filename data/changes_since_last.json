@@ -1,11 +1,11 @@
 {
   "usage": "What changed since the previous snapshot, which is the delta the daily report's 'last ~24 hours' framing needs. Compared against the player_index.json present when this run started, so the window is one snapshot interval (roughly six hours), not exactly 24 hours: previous_snapshot_at says when. injury_changes is the highest-value list and is sorted with Jason X players first; direction is new, changed or cleared. became_available are players dropped by a rival and now addable. became_rostered are players claimed, which is how a target you were considering disappears. changed_team is a trade or a waiver move between teams. comparable is false on a first run or when no previous snapshot was present, in which case every list is empty and absence of change must not be reported as stability.",
   "comparable": true,
-  "previous_snapshot_at": "2026-11-17T18:14:47.525775+00:00",
-  "previous_snapshot_at_ct": "Tue Nov 17, 12:14 PM CST",
+  "previous_snapshot_at": "2026-11-18T00:32:34.714653+00:00",
+  "previous_snapshot_at_ct": "Tue Nov 17, 6:32 PM CST",
   "previous_scoring_period_id": 11,
   "counts": {
-    "injury_changes": 3,
+    "injury_changes": 1,
     "jason_x_injury_changes": 0,
     "became_available": 0,
     "became_rostered": 0,
@@ -14,46 +14,18 @@
   },
   "injury_changes": [
     {
-      "player_id": 4575131,
-      "name": "Jacory Croskey-Merritt",
+      "player_id": 4432710,
+      "name": "TreVeyon Henderson",
       "position": "RB",
-      "pro_team": "WSH",
+      "pro_team": "NE",
       "from": "IR",
-      "to": "IR-R",
-      "expected_return": "Nov 23",
-      "on_nfl_ir": true,
-      "fantasy_status": "ROSTERED",
-      "fantasy_team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
-      "is_jason_x": false,
-      "direction": "changed"
-    },
-    {
-      "player_id": 4685278,
-      "name": "Luther Burden III",
-      "position": "WR",
-      "pro_team": "CHI",
-      "from": "QUESTIONABLE",
       "to": null,
       "expected_return": null,
       "on_nfl_ir": false,
       "fantasy_status": "ROSTERED",
-      "fantasy_team": "Burrow's Bunch",
+      "fantasy_team": "Connor\u2019s Team",
       "is_jason_x": false,
       "direction": "cleared"
-    },
-    {
-      "player_id": 4569587,
-      "name": "Wan'Dale Robinson",
-      "position": "WR",
-      "pro_team": "TEN",
-      "from": "QUESTIONABLE",
-      "to": "IR",
-      "expected_return": "Dec 20",
-      "on_nfl_ir": true,
-      "fantasy_status": "ROSTERED",
-      "fantasy_team": "Kelli's Top-Notch Team",
-      "is_jason_x": false,
-      "direction": "changed"
     }
   ],
   "jason_x_injury_changes": [],
@@ -64,6 +36,6 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 11,
-  "fetched_at": "2026-11-18T00:32:21.976879+00:00",
-  "fetched_at_ct_label": "Tue Nov 17, 6:32 PM CST"
+  "fetched_at": "2026-11-18T02:17:11.245614+00:00",
+  "fetched_at_ct_label": "Tue Nov 17, 8:17 PM CST"
 }

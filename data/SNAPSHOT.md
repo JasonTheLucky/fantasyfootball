@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-18T00:32:34.714653+00:00` |
-| Fetched at (CT) | **Tue Nov 17, 6:32 PM CST** |
+| Fetched at (UTC) | `2026-11-18T02:17:21.802251+00:00` |
+| Fetched at (CT) | **Tue Nov 17, 8:17 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 192 |
 | Available players (FA + waivers) | 869 |
 | Players in lookup index | 1061 |
-| Fetch duration | 12.74s |
+| Fetch duration | 10.56s |
 | ESPN calls | 38 |
-| Workflow run | `44208624016` |
+| Workflow run | `44222090176` |
 
 ## Freshness and completeness gates
 
@@ -127,15 +127,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Tue Nov 17, 12:14 PM CST`: 3 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Tue Nov 17, 6:32 PM CST`: 1 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Jacory Croskey-Merritt | IR | IR-R | Nov 23 | 🔥Certified Dumpster Fire 🔥 |
-| Luther Burden III | QUESTIONABLE | - | - | Burrow's Bunch |
-| Wan'Dale Robinson | QUESTIONABLE | IR | Dec 20 | Kelli's Top-Notch Team |
+| TreVeyon Henderson | IR | - | - | Connor’s Team |
 
 ## Jason X
 
@@ -174,7 +172,7 @@ Record 7-3 · FAAB **$49** of $200 · waiver rank 11 · bench open **1** · IR o
 
 ## Injuries and IR
 
-60 players in this league's pool carry an NFL designation; 19 are on injured reserve (7 of them rostered). 1 affect Jason X.
+59 players in this league's pool carry an NFL designation; 18 are on injured reserve (6 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -183,7 +181,6 @@ Record 7-3 · FAAB **$49** of $200 · waiver rank 11 · bench open **1** · IR o
 | Davante Adams | Connor’s Team | 2026-11-25 |
 | Jacory Croskey-Merritt | 🔥Certified Dumpster Fire 🔥 | 2026-11-23 |
 | Jonathon Brooks | From Puka with Love | 2026-11-22 |
-| TreVeyon Henderson | Connor’s Team | 2026-12-21 |
 | Wan'Dale Robinson | Kelli's Top-Notch Team | 2026-12-20 |
 
 **In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team).
