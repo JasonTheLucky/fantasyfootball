@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-18T02:17:21.802251+00:00` |
-| Fetched at (CT) | **Tue Nov 17, 8:17 PM CST** |
+| Fetched at (UTC) | `2026-11-18T06:20:33.679206+00:00` |
+| Fetched at (CT) | **Wed Nov 18, 12:20 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 192 |
 | Available players (FA + waivers) | 869 |
 | Players in lookup index | 1061 |
-| Fetch duration | 10.56s |
+| Fetch duration | 11.5s |
 | ESPN calls | 38 |
-| Workflow run | `44222090176` |
+| Workflow run | `44250583718` |
 
 ## Freshness and completeness gates
 
@@ -127,13 +127,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Tue Nov 17, 6:32 PM CST`: 1 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| TreVeyon Henderson | IR | - | - | Connor’s Team |
+Compared with the snapshot taken `Tue Nov 17, 8:17 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
