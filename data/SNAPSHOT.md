@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-17T18:14:47.525775+00:00` |
-| Fetched at (CT) | **Tue Nov 17, 12:14 PM CST** |
+| Fetched at (UTC) | `2026-11-18T00:32:34.714653+00:00` |
+| Fetched at (CT) | **Tue Nov 17, 6:32 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 192 |
 | Available players (FA + waivers) | 869 |
 | Players in lookup index | 1061 |
-| Fetch duration | 10.08s |
+| Fetch duration | 12.74s |
 | ESPN calls | 38 |
-| Workflow run | `44145687433` |
+| Workflow run | `44208624016` |
 
 ## Freshness and completeness gates
 
@@ -79,7 +79,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (34)
+## Injury designations (33)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -96,10 +96,9 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Cole-Train | Jordan Addison | WR | OUT | BENCH | NO |
 | Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | Kenneth Walker III | RB | QUESTIONABLE | BENCH | NO |
-| Burrow's Bunch | Luther Burden III | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Woody Marks | RB | DOUBTFUL | RB | yes |
-| From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | WR | yes |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
+| From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Jonathon Brooks | RB | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | WR | yes |
@@ -111,7 +110,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
-| Kelli's Top-Notch Team | Wan'Dale Robinson | WR | QUESTIONABLE | WR | yes |
+| Kelli's Top-Notch Team | Wan'Dale Robinson | WR | INJURY_RESERVE | WR | yes |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | QUESTIONABLE | BENCH | NO |
 | Kelli's Top-Notch Team | Geno Smith | QB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
@@ -128,32 +127,21 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Tue Nov 17, 6:16 AM CST`: 6 injury change(s) (0 affecting Jason X), 3 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Tue Nov 17, 12:14 PM CST`: 3 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Brenen Thompson | INACTIVE | QUESTIONABLE | Nov 22 | - |
-| Elijah Sarratt | INACTIVE | - | - | - |
-| James Conner | - | IR-R | Nov 29 | - |
-| Josh Jacobs | DOUBTFUL | QUESTIONABLE | Nov 25 | Cole-Train |
-| Kedon Slovis | INACTIVE | - | - | - |
-| Ladd McConkey | INACTIVE | QUESTIONABLE | Nov 22 | From Puka with Love |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Corey Kiner | RB | NE | Cole-Train |
-| Devin Singletary | RB | NYG | Cole-Train |
-| Kaleb Johnson | RB | GB | Cole-Train |
+| Jacory Croskey-Merritt | IR | IR-R | Nov 23 | 🔥Certified Dumpster Fire 🔥 |
+| Luther Burden III | QUESTIONABLE | - | - | Burrow's Bunch |
+| Wan'Dale Robinson | QUESTIONABLE | IR | Dec 20 | Kelli's Top-Notch Team |
 
 ## Jason X
 
 Record 7-3 · FAAB **$49** of $200 · waiver rank 11 · bench open **1** · IR open 1
 
-**This week:** vs Commanders of Chaos — projected 126.95 to 85.33 (margin 41.62), win probability 0.72. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Commanders of Chaos — projected 126.91 to 82.12 (margin 44.79), win probability 0.73. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $49 remaining, $10 reserve, **$39 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -166,7 +154,7 @@ Record 7-3 · FAAB **$49** of $200 · waiver rank 11 · bench open **1** · IR o
 
 | Slot | Player | Pos | Bye | Next | Proj | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| QB | Jayden Daniels | QB | W7 | vs CIN | 20.5 | - |
+| QB | Jayden Daniels | QB | W7 | vs CIN | 20.47 | - |
 | RB | Cam Skattebo | RB | W8 | vs JAX | 14.96 | - |
 | RB | Ollie Gordon II | RB | W6 | @ BUF | 14.4 | - |
 | WR | Amon-Ra St. Brown | WR | W6 | vs TB | 18.41 | - |
@@ -186,7 +174,7 @@ Record 7-3 · FAAB **$49** of $200 · waiver rank 11 · bench open **1** · IR o
 
 ## Injuries and IR
 
-61 players in this league's pool carry an NFL designation; 18 are on injured reserve (6 of them rostered). 1 affect Jason X.
+60 players in this league's pool carry an NFL designation; 19 are on injured reserve (7 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -196,6 +184,7 @@ Record 7-3 · FAAB **$49** of $200 · waiver rank 11 · bench open **1** · IR o
 | Jacory Croskey-Merritt | 🔥Certified Dumpster Fire 🔥 | 2026-11-23 |
 | Jonathon Brooks | From Puka with Love | 2026-11-22 |
 | TreVeyon Henderson | Connor’s Team | 2026-12-21 |
+| Wan'Dale Robinson | Kelli's Top-Notch Team | 2026-12-20 |
 
 **In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team).
 
@@ -236,7 +225,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1064 total | 269 executed ownership changes | 533 lineup-only moves | 192 draft picks | 0 pending
+1069 total | 269 executed ownership changes | 538 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
