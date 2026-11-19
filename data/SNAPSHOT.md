@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-19T12:16:54.505100+00:00` |
-| Fetched at (CT) | **Thu Nov 19, 6:16 AM CST** |
+| Fetched at (UTC) | `2026-11-19T18:14:29.203269+00:00` |
+| Fetched at (CT) | **Thu Nov 19, 12:14 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 196 |
 | Available players (FA + waivers) | 865 |
 | Players in lookup index | 1061 |
-| Fetch duration | 9.57s |
+| Fetch duration | 8.94s |
 | ESPN calls | 38 |
-| Workflow run | `44522382299` |
+| Workflow run | `44585640852` |
 
 ## Freshness and completeness gates
 
@@ -79,7 +79,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (36)
+## Injury designations (35)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -88,7 +88,6 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Caleb Douglas | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | Jordyn Tyson | WR | QUESTIONABLE | WR | yes |
-| The Bye Week Boys | Omar Cooper Jr. | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Puka Nacua | WR | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | BENCH | NO |
@@ -124,31 +123,39 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 15 | 43 | 111 | 191 | 184 | 321 | 865 |
+| 15 | 43 | 111 | 190 | 184 | 322 | 865 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Thu Nov 19, 12:21 AM CST`: 0 injury change(s) (0 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
+Compared with the snapshot taken `Thu Nov 19, 6:16 AM CST`: 1 injury change(s) (0 affecting Jason X), 2 newly available, 2 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| Christian Kirk | - | IR | Dec 6 | - |
 
 **Newly available**
 
 | Name | Position | Pro Team | Dropped By |
 | --- | --- | --- | --- |
-| Colts D/ST | D/ST | IND | Kelli's Top-Notch Team |
+| Dolphins D/ST | D/ST | MIA | Commanders of Chaos |
+| Omar Cooper Jr. | WR | NYJ | The Bye Week Boys |
 
 **Claimed**
 
 | Name | Position | Pro Team | Added By |
 | --- | --- | --- | --- |
-| Panthers D/ST | D/ST | CAR | Kelli's Top-Notch Team |
+| Bengals D/ST | D/ST | CIN | Commanders of Chaos |
+| Mike Washington Jr. | RB | LV | The Bye Week Boys |
 
 ## Jason X
 
 Record 7-3 · FAAB **$40** of $200 · waiver rank 11 · bench open **0** · IR open 1
 
-**This week:** vs Commanders of Chaos — projected 126.27 to 82.12 (margin 44.15), win probability 0.73. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Commanders of Chaos — projected 126.27 to 107.86 (margin 18.41), win probability 0.59. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -183,7 +190,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-73 players in this league's pool carry an NFL designation; 20 are on injured reserve (4 of them rostered). 3 affect Jason X.
+74 players in this league's pool carry an NFL designation; 21 are on injured reserve (4 of them rostered). 3 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -233,12 +240,15 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1100 total | 283 executed ownership changes | 552 lineup-only moves | 192 draft picks | 0 pending
+1106 total | 286 executed ownership changes | 555 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-19T17:36 | Commanders of Chaos | FREEAGENT | ADD Bengals D/ST |
+| 2026-11-19T17:36 | Commanders of Chaos | ROSTER | DROP Dolphins D/ST |
+| 2026-11-19T16:39 | The Bye Week Boys | FREEAGENT | ADD Mike Washington Jr., DROP Omar Cooper Jr. |
 | 2026-11-19T11:47 | Kelli's Top-Notch Team | FREEAGENT | ADD Panthers D/ST, DROP Colts D/ST |
 | 2026-11-19T01:07 | Broken Hand Club | FREEAGENT | ADD Elic Ayomanor |
 | 2026-11-19T01:06 | Broken Hand Club | FREEAGENT | ADD Ryan Flournoy |
@@ -248,9 +258,6 @@ Most recent ownership changes:
 | 2026-11-18T11:02 | Kelli's Top-Notch Team | FREEAGENT | ADD Dalton Schultz, DROP Geno Smith |
 | 2026-11-18T11:01 | Kelli's Top-Notch Team | FREEAGENT | ADD Xavier Hutchinson, DROP Wan'Dale Robinson |
 | 2026-11-18T08:36 | The Bye Week Boys | WAIVER | ADD Michael Mayer, DROP Kyle Pitts Sr. |
-| 2026-11-18T08:36 | Jason X | WAIVER | ADD Bo Nix |
-| 2026-11-18T08:36 | Burrow's Bunch | WAIVER | ADD Cairo Santos, DROP Andre Szmyt |
-| 2026-11-18T08:36 | The Bye Week Boys | WAIVER | ADD Chiefs D/ST, DROP De'Zhaun Stribling |
 
 ## League format
 

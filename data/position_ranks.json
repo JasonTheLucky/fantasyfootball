@@ -3,7 +3,7 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 11,
-  "fetched_at": "2026-11-19T12:16:44.930717+00:00",
+  "fetched_at": "2026-11-19T18:14:20.266647+00:00",
   "complete": true,
   "team_count": 12,
   "positions": [
@@ -53,7 +53,7 @@
       "faab_remaining": 144,
       "waiver_rank": 12,
       "ranks": {
-        "QB": 4,
+        "QB": 5,
         "RB": 3,
         "WR": 1,
         "TE": 3,
@@ -153,7 +153,7 @@
         "WR": 11,
         "TE": 6,
         "K": 11,
-        "D/ST": 11
+        "D/ST": 12
       },
       "strongest": [],
       "weakest": [
@@ -223,7 +223,7 @@
         "WR": 10,
         "TE": 4,
         "K": 4,
-        "D/ST": 10
+        "D/ST": 11
       },
       "strongest": [
         "RB"
@@ -242,16 +242,17 @@
       "faab_remaining": 200,
       "waiver_rank": 4,
       "ranks": {
-        "QB": 5,
+        "QB": 4,
         "RB": 9,
         "WR": 5,
         "TE": 11,
         "K": 6,
-        "D/ST": 9
+        "D/ST": 10
       },
       "strongest": [],
       "weakest": [
-        "TE"
+        "TE",
+        "D/ST"
       ]
     },
     {
@@ -293,12 +294,11 @@
         "WR": 8,
         "TE": 8,
         "K": 9,
-        "D/ST": 12
+        "D/ST": 9
       },
       "strongest": [],
       "weakest": [
-        "RB",
-        "D/ST"
+        "RB"
       ]
     },
     {
@@ -339,7 +339,7 @@
     "WR": "Auto Draft Champion",
     "TE": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
     "K": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
-    "D/ST": "Commanders of Chaos"
+    "D/ST": "From Puka with Love"
   },
   "by_position": {
     "QB": [
@@ -348,7 +348,7 @@
         "team_id": 8,
         "team_name": "Giant Packer Fan",
         "is_jason_x": false,
-        "score": 210.9,
+        "score": 210.8,
         "depth_score": 25.9,
         "players": [
           {
@@ -423,6 +423,32 @@
       },
       {
         "rank": 4,
+        "team_id": 9,
+        "team_name": "Nicole's Gnarly Team",
+        "is_jason_x": false,
+        "score": 192.1,
+        "depth_score": 28.4,
+        "players": [
+          {
+            "player_id": 3139477,
+            "name": "Patrick Mahomes",
+            "position": "QB",
+            "pro_team": "KC",
+            "ros_projected_points": 163.6,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4431611,
+            "name": "Caleb Williams",
+            "position": "QB",
+            "pro_team": "CHI",
+            "ros_projected_points": 142.1,
+            "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 5,
         "team_id": 5,
         "team_name": "Burrow's Bunch",
         "is_jason_x": false,
@@ -436,32 +462,6 @@
             "pro_team": "CIN",
             "ros_projected_points": 191.9,
             "weight": 1.0
-          }
-        ]
-      },
-      {
-        "rank": 5,
-        "team_id": 9,
-        "team_name": "Nicole's Gnarly Team",
-        "is_jason_x": false,
-        "score": 191.8,
-        "depth_score": 28.4,
-        "players": [
-          {
-            "player_id": 3139477,
-            "name": "Patrick Mahomes",
-            "position": "QB",
-            "pro_team": "KC",
-            "ros_projected_points": 163.4,
-            "weight": 1.0
-          },
-          {
-            "player_id": 4431611,
-            "name": "Caleb Williams",
-            "position": "QB",
-            "pro_team": "CHI",
-            "ros_projected_points": 142.1,
-            "weight": 0.2
           }
         ]
       },
@@ -709,7 +709,7 @@
         "team_id": 5,
         "team_name": "Burrow's Bunch",
         "is_jason_x": false,
-        "score": 389.9,
+        "score": 363.1,
         "depth_score": 61.7,
         "players": [
           {
@@ -717,7 +717,7 @@
             "name": "Kenneth Walker III",
             "position": "RB",
             "pro_team": "KC",
-            "ros_projected_points": 197.3,
+            "ros_projected_points": 170.6,
             "designation": "QUESTIONABLE",
             "weight": 1.0
           },
@@ -881,7 +881,7 @@
         "team_id": 11,
         "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
         "is_jason_x": false,
-        "score": 296.8,
+        "score": 296.9,
         "depth_score": 62.2,
         "players": [
           {
@@ -1051,8 +1051,8 @@
         "team_id": 12,
         "team_name": "Commanders of Chaos",
         "is_jason_x": false,
-        "score": 244.2,
-        "depth_score": 58.6,
+        "score": 248.7,
+        "depth_score": 60.6,
         "players": [
           {
             "player_id": 4426385,
@@ -1063,19 +1063,19 @@
             "weight": 1.0
           },
           {
+            "player_id": 4685382,
+            "name": "Omarion Hampton",
+            "position": "RB",
+            "pro_team": "LAC",
+            "ros_projected_points": 91.2,
+            "weight": 1.0
+          },
+          {
             "player_id": 4569173,
             "name": "Rhamondre Stevenson",
             "position": "RB",
             "pro_team": "NE",
             "ros_projected_points": 88.6,
-            "weight": 1.0
-          },
-          {
-            "player_id": 4685382,
-            "name": "Omarion Hampton",
-            "position": "RB",
-            "pro_team": "LAC",
-            "ros_projected_points": 84.7,
             "weight": 0.5
           },
           {
@@ -1093,8 +1093,8 @@
         "team_id": 2,
         "team_name": "The Bye Week Boys",
         "is_jason_x": false,
-        "score": 227.1,
-        "depth_score": 44.0,
+        "score": 238.0,
+        "depth_score": 44.9,
         "players": [
           {
             "player_id": 4361579,
@@ -1105,27 +1105,27 @@
             "weight": 1.0
           },
           {
+            "player_id": 4832955,
+            "name": "Emmett Johnson",
+            "position": "RB",
+            "pro_team": "KC",
+            "ros_projected_points": 74.5,
+            "weight": 1.0
+          },
+          {
             "player_id": 3054850,
             "name": "Alvin Kamara",
             "position": "RB",
             "pro_team": "NO",
             "ros_projected_points": 64.5,
-            "weight": 1.0
-          },
-          {
-            "player_id": 4832955,
-            "name": "Emmett Johnson",
-            "position": "RB",
-            "pro_team": "KC",
-            "ros_projected_points": 63.1,
             "weight": 0.5
           },
           {
-            "player_id": 4870808,
-            "name": "Jeremiyah Love",
+            "player_id": 4686658,
+            "name": "Mike Washington Jr.",
             "position": "RB",
-            "pro_team": "ARI",
-            "ros_projected_points": 49.7,
+            "pro_team": "LV",
+            "ros_projected_points": 50.4,
             "weight": 0.25
           }
         ]
@@ -1307,7 +1307,7 @@
         "team_id": 9,
         "team_name": "Nicole's Gnarly Team",
         "is_jason_x": false,
-        "score": 319.3,
+        "score": 306.9,
         "depth_score": 67.7,
         "players": [
           {
@@ -1323,7 +1323,7 @@
             "name": "Mike Evans",
             "position": "WR",
             "pro_team": "SF",
-            "ros_projected_points": 103.7,
+            "ros_projected_points": 91.2,
             "designation": "QUESTIONABLE",
             "weight": 1.0
           },
@@ -1350,8 +1350,8 @@
         "team_id": 8,
         "team_name": "Giant Packer Fan",
         "is_jason_x": false,
-        "score": 301.7,
-        "depth_score": 51.1,
+        "score": 301.8,
+        "depth_score": 51.3,
         "players": [
           {
             "player_id": 4262921,
@@ -1382,7 +1382,7 @@
             "name": "Xavier Worthy",
             "position": "WR",
             "pro_team": "KC",
-            "ros_projected_points": 55.1,
+            "ros_projected_points": 55.8,
             "weight": 0.25
           }
         ]
@@ -1479,7 +1479,7 @@
         "team_id": 2,
         "team_name": "The Bye Week Boys",
         "is_jason_x": false,
-        "score": 283.7,
+        "score": 283.6,
         "depth_score": 64.4,
         "players": [
           {
@@ -1566,7 +1566,7 @@
         "team_id": 6,
         "team_name": "From Puka with Love",
         "is_jason_x": false,
-        "score": 242.1,
+        "score": 242.8,
         "depth_score": 60.2,
         "players": [
           {
@@ -1583,7 +1583,7 @@
             "name": "Deebo Samuel Sr.",
             "position": "WR",
             "pro_team": "SF",
-            "ros_projected_points": 88.0,
+            "ros_projected_points": 88.7,
             "weight": 1.0
           },
           {
@@ -1591,7 +1591,7 @@
             "name": "Ladd McConkey",
             "position": "WR",
             "pro_team": "LAC",
-            "ros_projected_points": 82.6,
+            "ros_projected_points": 82.7,
             "designation": "QUESTIONABLE",
             "weight": 0.5
           },
@@ -1681,7 +1681,7 @@
         "team_id": 4,
         "team_name": "Broken Hand Club",
         "is_jason_x": false,
-        "score": 124.4,
+        "score": 125.8,
         "depth_score": 13.2,
         "players": [
           {
@@ -1689,7 +1689,7 @@
             "name": "George Kittle",
             "position": "TE",
             "pro_team": "SF",
-            "ros_projected_points": 111.3,
+            "ros_projected_points": 112.6,
             "weight": 1.0
           },
           {
@@ -2193,7 +2193,7 @@
         "team_id": 5,
         "team_name": "Burrow's Bunch",
         "is_jason_x": false,
-        "score": 66.5,
+        "score": 66.3,
         "depth_score": 9.9,
         "players": [
           {
@@ -2201,7 +2201,7 @@
             "name": "Steelers D/ST",
             "position": "D/ST",
             "pro_team": "PIT",
-            "ros_projected_points": 56.6,
+            "ros_projected_points": 56.5,
             "weight": 1.0
           },
           {
@@ -2325,7 +2325,7 @@
         "team_id": 3,
         "team_name": "Auto Draft Champion",
         "is_jason_x": false,
-        "score": 49.2,
+        "score": 49.1,
         "depth_score": 6.8,
         "players": [
           {
@@ -2333,7 +2333,7 @@
             "name": "Texans D/ST",
             "position": "D/ST",
             "pro_team": "HOU",
-            "ros_projected_points": 42.4,
+            "ros_projected_points": 42.3,
             "weight": 1.0
           },
           {
@@ -2348,6 +2348,24 @@
       },
       {
         "rank": 9,
+        "team_id": 12,
+        "team_name": "Commanders of Chaos",
+        "is_jason_x": false,
+        "score": 47.6,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": -16004,
+            "name": "Bengals D/ST",
+            "position": "D/ST",
+            "pro_team": "CIN",
+            "ros_projected_points": 47.6,
+            "weight": 1.0
+          }
+        ]
+      },
+      {
+        "rank": 10,
         "team_id": 9,
         "team_name": "Nicole's Gnarly Team",
         "is_jason_x": false,
@@ -2365,7 +2383,7 @@
         ]
       },
       {
-        "rank": 10,
+        "rank": 11,
         "team_id": 10,
         "team_name": "Kelli's Top-Notch Team",
         "is_jason_x": false,
@@ -2383,7 +2401,7 @@
         ]
       },
       {
-        "rank": 11,
+        "rank": 12,
         "team_id": 6,
         "team_name": "From Puka with Love",
         "is_jason_x": false,
@@ -2396,24 +2414,6 @@
             "position": "D/ST",
             "pro_team": "CHI",
             "ros_projected_points": 39.4,
-            "weight": 1.0
-          }
-        ]
-      },
-      {
-        "rank": 12,
-        "team_id": 12,
-        "team_name": "Commanders of Chaos",
-        "is_jason_x": false,
-        "score": 29.9,
-        "depth_score": 0.0,
-        "players": [
-          {
-            "player_id": -16015,
-            "name": "Dolphins D/ST",
-            "position": "D/ST",
-            "pro_team": "MIA",
-            "ros_projected_points": 29.9,
             "weight": 1.0
           }
         ]
@@ -2567,8 +2567,8 @@
             "pro_team": "SF",
             "ros_projected_points": 165.3
           },
-          "jason_gain": 18.5,
-          "their_gain": 14.7,
+          "jason_gain": 18.6,
+          "their_gain": 14.6,
           "frees_jason_roster_spots": 1,
           "their_roster_spots_needed": 1,
           "their_bench_open": 1
@@ -2599,8 +2599,8 @@
               "pro_team": "SF",
               "ros_projected_points": 165.3
             },
-            "jason_gain": 8.6,
-            "their_gain": 9.3,
+            "jason_gain": 8.7,
+            "their_gain": 9.2,
             "frees_jason_roster_spots": 1,
             "their_roster_spots_needed": 1,
             "their_bench_open": 1
@@ -2676,7 +2676,7 @@
             "ros_projected_points": 143.7
           },
           "jason_gain": 10.7,
-          "their_gain": 15.8,
+          "their_gain": 15.7,
           "frees_jason_roster_spots": 1,
           "their_roster_spots_needed": 1,
           "their_bench_open": 0
@@ -2708,7 +2708,7 @@
               "ros_projected_points": 143.7
             },
             "jason_gain": 19.2,
-            "their_gain": 7.2,
+            "their_gain": 7.1,
             "frees_jason_roster_spots": 1,
             "their_roster_spots_needed": 1,
             "their_bench_open": 0
