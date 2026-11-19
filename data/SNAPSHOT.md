@@ -4,18 +4,18 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-19T00:32:07.880070+00:00` |
-| Fetched at (CT) | **Wed Nov 18, 6:32 PM CST** |
+| Fetched at (UTC) | `2026-11-19T06:21:22.322736+00:00` |
+| Fetched at (CT) | **Thu Nov 19, 12:21 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
-| Rostered players | 194 |
-| Available players (FA + waivers) | 867 |
+| Rostered players | 196 |
+| Available players (FA + waivers) | 865 |
 | Players in lookup index | 1061 |
-| Fetch duration | 9.98s |
+| Fetch duration | 10.15s |
 | ESPN calls | 38 |
-| Workflow run | `44429738029` |
+| Workflow run | `44471521931` |
 
 ## Freshness and completeness gates
 
@@ -41,7 +41,7 @@
 | Jason X | 0.0 | Commanders of Chaos | 0.0 | NO |
 | Burrow's Bunch | 0.0 | From Puka with Love | 0.0 | NO |
 | Giant Packer Fan | 0.0 | Auto Draft Champion | 0.0 | NO |
-| Cole-Train | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
+| Broken Hand Club | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
 
 ## Rosters
 
@@ -50,7 +50,7 @@
 | 1 | Jason X | Jason Prinsen | 16 | 9 | 7 | 0 | 0 |
 | 2 | The Bye Week Boys | Ravinder Battu | 17 | 9 | 7 | 1 | 0 |
 | 3 | Auto Draft Champion | Amanda Spence | 16 | 9 | 6 | 1 | 1 |
-| 4 | Cole-Train | Jeffrey Clark | 14 | 9 | 4 | 1 | 3 |
+| 4 | Broken Hand Club | Jeffrey Clark | 16 | 9 | 6 | 1 | 1 |
 | 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 17 | 9 | 7 | 1 | 0 |
 | 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
@@ -75,7 +75,7 @@
 | From Puka with Love | **$105** | $95 | 52.5% | 9 |
 | The Bye Week Boys | **$81** | $119 | 40.5% | 10 |
 | Jason X | **$40** | $160 | 20.0% | 11 |
-| Cole-Train | **$25** | $175 | 12.5% | 1 |
+| Broken Hand Club | **$25** | $175 | 12.5% | 1 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
@@ -94,10 +94,10 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Cole-Train | Darren Waller | TE | QUESTIONABLE | FLEX | yes |
-| Cole-Train | Josh Jacobs | RB | OUT | BENCH | NO |
-| Cole-Train | Jordan Addison | WR | OUT | BENCH | NO |
-| Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
+| Broken Hand Club | Josh Jacobs | RB | OUT | BENCH | NO |
+| Broken Hand Club | Jordan Addison | WR | OUT | BENCH | NO |
+| Broken Hand Club | Darren Waller | TE | QUESTIONABLE | BENCH | NO |
+| Broken Hand Club | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | Kenneth Walker III | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Woody Marks | RB | OUT | BENCH | NO |
@@ -124,30 +124,27 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 16 | 43 | 111 | 191 | 183 | 323 | 867 |
+| 15 | 43 | 111 | 191 | 184 | 321 | 865 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Wed Nov 18, 12:13 PM CST`: 35 injury change(s) (2 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Wed Nov 18, 6:32 PM CST`: 0 injury change(s) (0 affecting Jason X), 1 newly available, 3 claimed, 0 moved between teams.
 
-**Injury changes**
+**Newly available**
 
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| **Bhayshul Tuten** | - | QUESTIONABLE | Nov 22 | Jason X |
-| **Caleb Douglas** | - | QUESTIONABLE | Nov 22 | Jason X |
-| Adam Randall | IR-R | - | - | - |
-| Brandon Aiyuk | - | RESERVE-EX | Nov 29 | - |
-| Brevin Jordan | QUESTIONABLE | OUT | Nov 29 | - |
-| CJ Donaldson | QUESTIONABLE | - | - | - |
-| Caleb Lohner | - | IR-R | Nov 22 | - |
-| Charlie Kolar | - | QUESTIONABLE | Nov 22 | - |
-| Chris Rodriguez Jr. | - | QUESTIONABLE | Nov 22 | - |
-| Dalton Kincaid | - | QUESTIONABLE | Nov 22 | Connor’s Team |
-| Darren Waller | - | QUESTIONABLE | Nov 22 | Cole-Train |
-| De'Zhaun Stribling | - | IR | Dec 6 | - |
+| Name | Position | Pro Team | Dropped By |
+| --- | --- | --- | --- |
+| Mike Gesicki | TE | CIN | 🔥Certified Dumpster Fire 🔥 |
+
+**Claimed**
+
+| Name | Position | Pro Team | Added By |
+| --- | --- | --- | --- |
+| Elic Ayomanor | WR | TEN | Broken Hand Club |
+| Jets D/ST | D/ST | NYJ | 🔥Certified Dumpster Fire 🔥 |
+| Ryan Flournoy | WR | DAL | Broken Hand Club |
 
 ## Jason X
 
@@ -238,12 +235,15 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1091 total | 279 executed ownership changes | 547 lineup-only moves | 192 draft picks | 0 pending
+1099 total | 282 executed ownership changes | 552 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-19T01:07 | Broken Hand Club | FREEAGENT | ADD Elic Ayomanor |
+| 2026-11-19T01:06 | Broken Hand Club | FREEAGENT | ADD Ryan Flournoy |
+| 2026-11-19T00:45 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Jets D/ST, DROP Mike Gesicki |
 | 2026-11-18T15:23 | The Bye Week Boys | FREEAGENT | ADD Pat Freiermuth, DROP Bam Knight |
 | 2026-11-18T12:48 | Jason X | FREEAGENT | ADD Chig Okonkwo, DROP Lions D/ST |
 | 2026-11-18T11:02 | Kelli's Top-Notch Team | FREEAGENT | ADD Dalton Schultz, DROP Geno Smith |
@@ -253,9 +253,6 @@ Most recent ownership changes:
 | 2026-11-18T08:36 | Burrow's Bunch | WAIVER | ADD Cairo Santos, DROP Andre Szmyt |
 | 2026-11-18T08:36 | The Bye Week Boys | WAIVER | ADD Chiefs D/ST, DROP De'Zhaun Stribling |
 | 2026-11-18T08:36 | Jason X | WAIVER | ADD Courtland Sutton, DROP Spencer Shrader |
-| 2026-11-18T08:36 | From Puka with Love | WAIVER | ADD Emari Demercado |
-| 2026-11-17T14:08 | Cole-Train | ROSTER | DROP Devin Singletary |
-| 2026-11-17T14:08 | Cole-Train | ROSTER | DROP Corey Kiner |
 
 ## League format
 
