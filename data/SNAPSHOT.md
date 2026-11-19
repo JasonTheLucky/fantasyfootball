@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-19T06:21:22.322736+00:00` |
-| Fetched at (CT) | **Thu Nov 19, 12:21 AM CST** |
+| Fetched at (UTC) | `2026-11-19T12:16:54.505100+00:00` |
+| Fetched at (CT) | **Thu Nov 19, 6:16 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 196 |
 | Available players (FA + waivers) | 865 |
 | Players in lookup index | 1061 |
-| Fetch duration | 10.15s |
+| Fetch duration | 9.57s |
 | ESPN calls | 38 |
-| Workflow run | `44471521931` |
+| Workflow run | `44522382299` |
 
 ## Freshness and completeness gates
 
@@ -130,21 +130,19 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Wed Nov 18, 6:32 PM CST`: 0 injury change(s) (0 affecting Jason X), 1 newly available, 3 claimed, 0 moved between teams.
+Compared with the snapshot taken `Thu Nov 19, 12:21 AM CST`: 0 injury change(s) (0 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
 
 **Newly available**
 
 | Name | Position | Pro Team | Dropped By |
 | --- | --- | --- | --- |
-| Mike Gesicki | TE | CIN | 🔥Certified Dumpster Fire 🔥 |
+| Colts D/ST | D/ST | IND | Kelli's Top-Notch Team |
 
 **Claimed**
 
 | Name | Position | Pro Team | Added By |
 | --- | --- | --- | --- |
-| Elic Ayomanor | WR | TEN | Broken Hand Club |
-| Jets D/ST | D/ST | NYJ | 🔥Certified Dumpster Fire 🔥 |
-| Ryan Flournoy | WR | DAL | Broken Hand Club |
+| Panthers D/ST | D/ST | CAR | Kelli's Top-Notch Team |
 
 ## Jason X
 
@@ -235,12 +233,13 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1099 total | 282 executed ownership changes | 552 lineup-only moves | 192 draft picks | 0 pending
+1100 total | 283 executed ownership changes | 552 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-19T11:47 | Kelli's Top-Notch Team | FREEAGENT | ADD Panthers D/ST, DROP Colts D/ST |
 | 2026-11-19T01:07 | Broken Hand Club | FREEAGENT | ADD Elic Ayomanor |
 | 2026-11-19T01:06 | Broken Hand Club | FREEAGENT | ADD Ryan Flournoy |
 | 2026-11-19T00:45 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Jets D/ST, DROP Mike Gesicki |
@@ -252,7 +251,6 @@ Most recent ownership changes:
 | 2026-11-18T08:36 | Jason X | WAIVER | ADD Bo Nix |
 | 2026-11-18T08:36 | Burrow's Bunch | WAIVER | ADD Cairo Santos, DROP Andre Szmyt |
 | 2026-11-18T08:36 | The Bye Week Boys | WAIVER | ADD Chiefs D/ST, DROP De'Zhaun Stribling |
-| 2026-11-18T08:36 | Jason X | WAIVER | ADD Courtland Sutton, DROP Spencer Shrader |
 
 ## League format
 
