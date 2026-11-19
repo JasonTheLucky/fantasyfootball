@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-18T18:13:13.879580+00:00` |
-| Fetched at (CT) | **Wed Nov 18, 12:13 PM CST** |
+| Fetched at (UTC) | `2026-11-19T00:32:07.880070+00:00` |
+| Fetched at (CT) | **Wed Nov 18, 6:32 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 194 |
 | Available players (FA + waivers) | 867 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.98s |
+| Fetch duration | 9.98s |
 | ESPN calls | 38 |
-| Workflow run | `44367233381` |
+| Workflow run | `44429738029` |
 
 ## Freshness and completeness gates
 
@@ -79,29 +79,34 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (30)
+## Injury designations (36)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
+| Jason X | Bhayshul Tuten | RB | QUESTIONABLE | FLEX | yes |
+| Jason X | Caleb Douglas | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | FLEX | yes |
+| The Bye Week Boys | Jordyn Tyson | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Omar Cooper Jr. | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Puka Nacua | WR | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
+| Cole-Train | Darren Waller | TE | QUESTIONABLE | FLEX | yes |
 | Cole-Train | Josh Jacobs | RB | OUT | BENCH | NO |
 | Cole-Train | Jordan Addison | WR | OUT | BENCH | NO |
 | Cole-Train | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | Kenneth Walker III | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
-| From Puka with Love | Woody Marks | RB | DOUBTFUL | BENCH | NO |
+| From Puka with Love | Woody Marks | RB | OUT | BENCH | NO |
 | From Puka with Love | Jaylen Waddle | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Jonathon Brooks | RB | INJURY_RESERVE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | A.J. Brown | WR | QUESTIONABLE | WR | yes |
 | Connor’s Team | Drake Maye | QB | DOUBTFUL | QB | yes |
+| Connor’s Team | Dalton Kincaid | TE | QUESTIONABLE | TE | yes |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
@@ -109,10 +114,11 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Giant Packer Fan | T.J. Hockenson | TE | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
-| Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | QUESTIONABLE | BENCH | NO |
+| Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Matt Gay | K | QUESTIONABLE | K | yes |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Kyle Monangai | RB | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
 
 ## Available player pool by position
 
@@ -124,28 +130,24 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Wed Nov 18, 6:16 AM CST`: 2 injury change(s) (0 affecting Jason X), 2 newly available, 2 claimed, 0 moved between teams.
+Compared with the snapshot taken `Wed Nov 18, 12:13 PM CST`: 35 injury change(s) (2 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Davante Adams | IR | - | - | Connor’s Team |
-| Isaiah Williams | - | QUESTIONABLE | Nov 22 | - |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Bam Knight | RB | ARI | The Bye Week Boys |
-| Lions D/ST | D/ST | DET | Jason X |
-
-**Claimed**
-
-| Name | Position | Pro Team | Added By |
-| --- | --- | --- | --- |
-| **Chig Okonkwo** | TE | WSH | Jason X |
-| Pat Freiermuth | TE | PIT | The Bye Week Boys |
+| **Bhayshul Tuten** | - | QUESTIONABLE | Nov 22 | Jason X |
+| **Caleb Douglas** | - | QUESTIONABLE | Nov 22 | Jason X |
+| Adam Randall | IR-R | - | - | - |
+| Brandon Aiyuk | - | RESERVE-EX | Nov 29 | - |
+| Brevin Jordan | QUESTIONABLE | OUT | Nov 29 | - |
+| CJ Donaldson | QUESTIONABLE | - | - | - |
+| Caleb Lohner | - | IR-R | Nov 22 | - |
+| Charlie Kolar | - | QUESTIONABLE | Nov 22 | - |
+| Chris Rodriguez Jr. | - | QUESTIONABLE | Nov 22 | - |
+| Dalton Kincaid | - | QUESTIONABLE | Nov 22 | Connor’s Team |
+| Darren Waller | - | QUESTIONABLE | Nov 22 | Cole-Train |
+| De'Zhaun Stribling | - | IR | Dec 6 | - |
 
 ## Jason X
 
@@ -172,7 +174,7 @@ No open bench spot: any add needs a drop.
 | WR | Amon-Ra St. Brown | WR | W6 | vs TB | 18.41 | - |
 | WR | Courtland Sutton | WR | W10 | vs LV | 10.47 | - |
 | TE | Brock Bowers | TE | W13 | @ DEN | 15.79 | QUESTIONABLE (back Nov 22) |
-| FLEX | Bhayshul Tuten | RB | W7 | @ NYG | 17.63 | - |
+| FLEX | Bhayshul Tuten | RB | W7 | @ NYG | 17.63 | QUESTIONABLE (back Nov 22) |
 | K | Chase McLaughlin | K | W10 | @ DET | 9.51 | - |
 | D/ST | Buccaneers D/ST | D/ST | W10 | @ DET | 4.63 | - |
 
@@ -186,7 +188,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-59 players in this league's pool carry an NFL designation; 17 are on injured reserve (4 of them rostered). 1 affect Jason X.
+73 players in this league's pool carry an NFL designation; 20 are on injured reserve (4 of them rostered). 3 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -201,6 +203,8 @@ Jason X players with a designation:
 
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
+| Caleb Douglas | BENCH | QUESTIONABLE | Nov 22 | Shoulder |
+| Bhayshul Tuten | FLEX | QUESTIONABLE | Nov 22 | Ankle |
 | Brock Bowers | TE | QUESTIONABLE | Nov 22 | Ankle |
 
 ## Recent form (last 3 completed games)
