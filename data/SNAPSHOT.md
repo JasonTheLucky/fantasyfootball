@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-20T12:16:38.443129+00:00` |
-| Fetched at (CT) | **Fri Nov 20, 6:16 AM CST** |
+| Fetched at (UTC) | `2026-11-20T18:14:30.598206+00:00` |
+| Fetched at (CT) | **Fri Nov 20, 12:14 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 196 |
 | Available players (FA + waivers) | 865 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.94s |
+| Fetch duration | 9.56s |
 | ESPN calls | 38 |
-| Workflow run | `44734395690` |
+| Workflow run | `44790818945` |
 
 ## Freshness and completeness gates
 
@@ -129,7 +129,17 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 20, 12:20 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Fri Nov 20, 6:16 AM CST`: 5 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| Davante Adams | - | IR | Nov 25 | Connor’s Team |
+| Ian Thomas | - | QUESTIONABLE | Nov 22 | - |
+| Isaiah Williams | QUESTIONABLE | OUT | Nov 29 | - |
+| Omar Cooper Jr. | QUESTIONABLE | OUT | Nov 29 | - |
+| Terrance Ferguson | - | IR-R | Nov 25 | - |
 
 ## Jason X
 
@@ -170,15 +180,16 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-77 players in this league's pool carry an NFL designation; 20 are on injured reserve (5 of them rostered). 3 affect Jason X.
+80 players in this league's pool carry an NFL designation; 22 are on injured reserve (6 of them rostered). 3 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
 | Player | Fantasy team | Expected return |
 | --- | --- | --- |
+| Davante Adams | Connor’s Team | 2026-11-25 |
 | Jacory Croskey-Merritt | 🔥Certified Dumpster Fire 🔥 | 2026-11-23 |
 | Jonathon Brooks | From Puka with Love | 2026-11-22 |
-| Puka Nacua | The Bye Week Boys | 2026-12-20 |
+| Puka Nacua | The Bye Week Boys | 2027-01-10 |
 
 **In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team).
 
