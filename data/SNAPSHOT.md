@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-19T18:14:29.203269+00:00` |
-| Fetched at (CT) | **Thu Nov 19, 12:14 PM CST** |
+| Fetched at (UTC) | `2026-11-20T00:29:22.524220+00:00` |
+| Fetched at (CT) | **Thu Nov 19, 6:29 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 196 |
 | Available players (FA + waivers) | 865 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.94s |
+| Fetch duration | 9.22s |
 | ESPN calls | 38 |
-| Workflow run | `44585640852` |
+| Workflow run | `44646227843` |
 
 ## Freshness and completeness gates
 
@@ -79,14 +79,13 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (35)
+## Injury designations (34)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
 | Jason X | Bhayshul Tuten | RB | QUESTIONABLE | FLEX | yes |
 | Jason X | Caleb Douglas | WR | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | FLEX | yes |
 | The Bye Week Boys | Jordyn Tyson | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Puka Nacua | WR | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
@@ -129,33 +128,30 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Thu Nov 19, 6:16 AM CST`: 1 injury change(s) (0 affecting Jason X), 2 newly available, 2 claimed, 0 moved between teams.
+Compared with the snapshot taken `Thu Nov 19, 12:14 PM CST`: 14 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Christian Kirk | - | IR | Dec 6 | - |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Dolphins D/ST | D/ST | MIA | Commanders of Chaos |
-| Omar Cooper Jr. | WR | NYJ | The Bye Week Boys |
-
-**Claimed**
-
-| Name | Position | Pro Team | Added By |
-| --- | --- | --- | --- |
-| Bengals D/ST | D/ST | CIN | Commanders of Chaos |
-| Mike Washington Jr. | RB | LV | The Bye Week Boys |
+| Anthony Gould | QUESTIONABLE | - | - | - |
+| Brevin Jordan | OUT | INACTIVE | Nov 29 | - |
+| Carson Beck | - | QUESTIONABLE | Nov 22 | - |
+| Colson Yankoff | QUESTIONABLE | - | - | - |
+| DeVonta Smith | QUESTIONABLE | - | - | The Bye Week Boys |
+| Jordan James | - | QUESTIONABLE | Nov 22 | - |
+| Luke Schoonmaker | - | QUESTIONABLE | Nov 22 | - |
+| Marvin Harrison Jr. | OUT | INACTIVE | Nov 29 | Kelli's Top-Notch Team |
+| Mo Alie-Cox | IR | - | - | - |
+| Puka Nacua | - | IR | Dec 20 | The Bye Week Boys |
+| Riley Leonard | - | INACTIVE | Nov 29 | - |
+| Tyler Goodson | IR | - | - | - |
 
 ## Jason X
 
 Record 7-3 · FAAB **$40** of $200 · waiver rank 11 · bench open **0** · IR open 1
 
-**This week:** vs Commanders of Chaos — projected 126.27 to 107.86 (margin 18.41), win probability 0.59. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Commanders of Chaos — projected 126.27 to 107.89 (margin 18.38), win probability 0.59. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -190,7 +186,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-74 players in this league's pool carry an NFL designation; 21 are on injured reserve (4 of them rostered). 3 affect Jason X.
+74 players in this league's pool carry an NFL designation; 20 are on injured reserve (5 of them rostered). 3 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -198,6 +194,7 @@ No open bench spot: any add needs a drop.
 | --- | --- | --- |
 | Jacory Croskey-Merritt | 🔥Certified Dumpster Fire 🔥 | 2026-11-23 |
 | Jonathon Brooks | From Puka with Love | 2026-11-22 |
+| Puka Nacua | The Bye Week Boys | 2026-12-20 |
 
 **In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team).
 
