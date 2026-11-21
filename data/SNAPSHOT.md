@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-21T00:30:18.002439+00:00` |
-| Fetched at (CT) | **Fri Nov 20, 6:30 PM CST** |
+| Fetched at (UTC) | `2026-11-21T06:18:16.652347+00:00` |
+| Fetched at (CT) | **Sat Nov 21, 12:18 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 195 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.91s |
+| Fetch duration | 10.38s |
 | ESPN calls | 38 |
-| Workflow run | `44844225236` |
+| Workflow run | `44874877043` |
 
 ## Freshness and completeness gates
 
@@ -124,30 +124,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 20, 12:14 PM CST`: 25 injury change(s) (3 affecting Jason X), 1 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Fri Nov 20, 6:30 PM CST`: 1 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| **Bhayshul Tuten** | QUESTIONABLE | - | - | Jason X |
-| **Caleb Douglas** | QUESTIONABLE | - | - | Jason X |
-| **Treylon Burks** | - | QUESTIONABLE | Nov 23 | Jason X |
-| A.J. Brown | QUESTIONABLE | DOUBTFUL | Nov 29 | Connor’s Team |
-| Brenen Thompson | QUESTIONABLE | DOUBTFUL | Nov 22 | - |
-| Britain Covey | QUESTIONABLE | - | - | - |
-| Chris Bell | QUESTIONABLE | - | - | - |
-| Chris Rodriguez Jr. | QUESTIONABLE | - | - | - |
-| Dalton Kincaid | QUESTIONABLE | DOUBTFUL | Nov 22 | Connor’s Team |
-| Dontayvion Wicks | QUESTIONABLE | OUT | Nov 26 | - |
-| Drake Maye | DOUBTFUL | OUT | Dec 21 | Connor’s Team |
-| Geno Smith | QUESTIONABLE | - | - | - |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Jonathon Brooks | RB | CAR | From Puka with Love |
+| Brevin Jordan | INACTIVE | - | - | - |
 
 ## Jason X
 
@@ -188,7 +171,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-69 players in this league's pool carry an NFL designation; 22 are on injured reserve (5 of them rostered). 2 affect Jason X.
+68 players in this league's pool carry an NFL designation; 22 are on injured reserve (5 of them rostered). 2 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
