@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-21T06:18:16.652347+00:00` |
-| Fetched at (CT) | **Sat Nov 21, 12:18 AM CST** |
+| Fetched at (UTC) | `2026-11-21T12:16:13.436456+00:00` |
+| Fetched at (CT) | **Sat Nov 21, 6:16 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 195 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1061 |
-| Fetch duration | 10.38s |
+| Fetch duration | 9.6s |
 | ESPN calls | 38 |
-| Workflow run | `44874877043` |
+| Workflow run | `44903025755` |
 
 ## Freshness and completeness gates
 
@@ -124,13 +124,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 20, 6:30 PM CST`: 1 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Brevin Jordan | INACTIVE | - | - | - |
+Compared with the snapshot taken `Sat Nov 21, 12:18 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
