@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-21T12:16:13.436456+00:00` |
-| Fetched at (CT) | **Sat Nov 21, 6:16 AM CST** |
+| Fetched at (UTC) | `2026-11-21T18:13:01.903000+00:00` |
+| Fetched at (CT) | **Sat Nov 21, 12:13 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 195 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1061 |
-| Fetch duration | 9.6s |
+| Fetch duration | 10.22s |
 | ESPN calls | 38 |
-| Workflow run | `44903025755` |
+| Workflow run | `44934259301` |
 
 ## Freshness and completeness gates
 
@@ -124,13 +124,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sat Nov 21, 12:18 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sat Nov 21, 6:16 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
 Record 7-3 · FAAB **$40** of $200 · waiver rank 11 · bench open **0** · IR open 1
 
-**This week:** vs Commanders of Chaos — projected 126.27 to 107.97 (margin 18.3), win probability 0.59. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Commanders of Chaos — projected 126.18 to 107.97 (margin 18.21), win probability 0.59. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -153,7 +153,7 @@ No open bench spot: any add needs a drop.
 | TE | Brock Bowers | TE | W13 | @ DEN | 15.79 | QUESTIONABLE (back Nov 22) |
 | FLEX | Bhayshul Tuten | RB | W7 | @ NYG | 17.63 | - |
 | K | Chase McLaughlin | K | W10 | @ DET | 9.51 | - |
-| D/ST | Buccaneers D/ST | D/ST | W10 | @ DET | 4.63 | - |
+| D/ST | Buccaneers D/ST | D/ST | W10 | @ DET | 4.53 | - |
 
 ## Upcoming NFL byes
 
