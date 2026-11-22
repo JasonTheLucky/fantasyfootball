@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-22T06:18:35.227998+00:00` |
-| Fetched at (CT) | **Sun Nov 22, 12:18 AM CST** |
+| Fetched at (UTC) | `2026-11-22T12:15:48.299958+00:00` |
+| Fetched at (CT) | **Sun Nov 22, 6:15 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 195 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1061 |
-| Fetch duration | 12.63s |
+| Fetch duration | 10.84s |
 | ESPN calls | 38 |
-| Workflow run | `44993114919` |
+| Workflow run | `45021343014` |
 
 ## Freshness and completeness gates
 
@@ -53,7 +53,7 @@
 | 4 | Broken Hand Club | Jeffrey Clark | 16 | 9 | 6 | 1 | 1 |
 | 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
-| 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
+| 7 | Connor’s Team | Connor Hartland | 17 | 8 | 8 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
@@ -99,12 +99,12 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | From Puka with Love | Woody Marks | RB | OUT | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Drake Maye | QB | OUT | QB | yes |
-| Connor’s Team | Dalton Kincaid | TE | DOUBTFUL | TE | yes |
 | Connor’s Team | Carnell Tate | WR | QUESTIONABLE | WR | yes |
 | Connor’s Team | A.J. Brown | WR | DOUBTFUL | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
+| Connor’s Team | Dalton Kincaid | TE | DOUBTFUL | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
@@ -124,7 +124,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sat Nov 21, 6:33 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sun Nov 22, 12:18 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
@@ -214,7 +214,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1109 total | 287 executed ownership changes | 557 lineup-only moves | 192 draft picks | 0 pending
+1110 total | 287 executed ownership changes | 558 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
