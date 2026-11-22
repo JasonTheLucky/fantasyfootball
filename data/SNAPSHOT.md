@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-21T18:13:01.903000+00:00` |
-| Fetched at (CT) | **Sat Nov 21, 12:13 PM CST** |
+| Fetched at (UTC) | `2026-11-22T00:33:33.473366+00:00` |
+| Fetched at (CT) | **Sat Nov 21, 6:33 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 195 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1061 |
-| Fetch duration | 10.22s |
+| Fetch duration | 8.84s |
 | ESPN calls | 38 |
-| Workflow run | `44934259301` |
+| Workflow run | `44967188403` |
 
 ## Freshness and completeness gates
 
@@ -83,8 +83,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
-| Jason X | Treylon Burks | WR | QUESTIONABLE | BENCH | NO |
+| Jason X | Brock Bowers | TE | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Seth McGowan | RB | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Puka Nacua | WR | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
@@ -110,6 +109,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Matt Gay | K | QUESTIONABLE | K | yes |
+| 🔥Certified Dumpster Fire 🔥 | Kyren Williams | RB | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Rachaad White | RB | QUESTIONABLE | BENCH | NO |
@@ -124,13 +124,26 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sat Nov 21, 6:16 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sat Nov 21, 12:13 PM CST`: 8 injury change(s) (1 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| **Treylon Burks** | QUESTIONABLE | - | - | Jason X |
+| Carson Beck | QUESTIONABLE | OUT | Nov 29 | - |
+| Dontayvion Wicks | OUT | IR | Dec 19 | - |
+| Kyren Williams | - | QUESTIONABLE | Nov 25 | 🔥Certified Dumpster Fire 🔥 |
+| Malik Willis | IR | - | - | - |
+| Roman Wilson | IR-R | QUESTIONABLE | Nov 22 | - |
+| Tyjae Spears | QUESTIONABLE | IR | Dec 20 | - |
+| Will Shipley | IR-R | QUESTIONABLE | Nov 22 | - |
 
 ## Jason X
 
 Record 7-3 · FAAB **$40** of $200 · waiver rank 11 · bench open **0** · IR open 1
 
-**This week:** vs Commanders of Chaos — projected 126.18 to 107.97 (margin 18.21), win probability 0.59. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Commanders of Chaos — projected 120.63 to 107.97 (margin 12.66), win probability 0.57. Posture: **favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -150,7 +163,7 @@ No open bench spot: any add needs a drop.
 | RB | Ollie Gordon II | RB | W6 | @ BUF | 14.41 | - |
 | WR | Amon-Ra St. Brown | WR | W6 | vs TB | 18.41 | - |
 | WR | Courtland Sutton | WR | W10 | vs LV | 10.47 | - |
-| TE | Brock Bowers | TE | W13 | @ DEN | 15.79 | QUESTIONABLE (back Nov 22) |
+| TE | Chig Okonkwo | TE | W7 | vs CIN | 10.24 | - |
 | FLEX | Bhayshul Tuten | RB | W7 | @ NYG | 17.63 | - |
 | K | Chase McLaughlin | K | W10 | @ DET | 9.51 | - |
 | D/ST | Buccaneers D/ST | D/ST | W10 | @ DET | 4.53 | - |
@@ -165,7 +178,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-68 players in this league's pool carry an NFL designation; 22 are on injured reserve (5 of them rostered). 2 affect Jason X.
+67 players in this league's pool carry an NFL designation; 21 are on injured reserve (5 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -181,8 +194,7 @@ Jason X players with a designation:
 
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
-| Treylon Burks | BENCH | QUESTIONABLE | Nov 23 | Foot |
-| Brock Bowers | TE | QUESTIONABLE | Nov 22 | Ankle |
+| Brock Bowers | BENCH | QUESTIONABLE | Nov 22 | Ankle |
 
 ## Recent form (last 3 completed games)
 
@@ -215,7 +227,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1108 total | 287 executed ownership changes | 556 lineup-only moves | 192 draft picks | 0 pending
+1109 total | 287 executed ownership changes | 557 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 

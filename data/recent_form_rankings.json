@@ -1264,16 +1264,7 @@
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
-        "is_jason_x": false,
-        "injury": {
-          "designation": "IR",
-          "nfl_status": "Injured Reserve",
-          "on_nfl_ir": true,
-          "expected_return": "2026-12-13",
-          "expected_return_label": "Dec 13",
-          "injury_type": "Abdomen"
-        },
-        "on_nfl_ir": true
+        "is_jason_x": false
       },
       {
         "player_id": 4431452,
@@ -2730,7 +2721,16 @@
         "owner_label": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
         "owner_team_id": 11,
         "fantasy_status": "ROSTERED",
-        "is_jason_x": false
+        "is_jason_x": false,
+        "injury": {
+          "designation": "QUESTIONABLE",
+          "nfl_status": "Questionable",
+          "on_nfl_ir": false,
+          "expected_return": "2026-11-25",
+          "expected_return_label": "Nov 25",
+          "injury_type": "Toe"
+        },
+        "on_nfl_ir": false
       },
       {
         "player_id": 4697815,
@@ -4600,14 +4600,14 @@
         "fantasy_status": "AVAILABLE",
         "is_jason_x": false,
         "injury": {
-          "designation": "IR-R",
-          "nfl_status": "Injured Reserve",
-          "on_nfl_ir": true,
+          "designation": "QUESTIONABLE",
+          "nfl_status": "Questionable",
+          "on_nfl_ir": false,
           "expected_return": "2026-11-22",
           "expected_return_label": "Nov 22",
           "injury_type": "Hand"
         },
-        "on_nfl_ir": true
+        "on_nfl_ir": false
       },
       {
         "player_id": 4869645,
@@ -4952,16 +4952,7 @@
         "owner_label": "Jason X",
         "owner_team_id": 1,
         "fantasy_status": "ROSTERED",
-        "is_jason_x": true,
-        "injury": {
-          "designation": "QUESTIONABLE",
-          "nfl_status": "Questionable",
-          "on_nfl_ir": false,
-          "expected_return": "2026-11-23",
-          "expected_return_label": "Nov 23",
-          "injury_type": "Foot"
-        },
-        "on_nfl_ir": false
+        "is_jason_x": true
       },
       {
         "player_id": 4384852,
@@ -6988,5 +6979,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 11,
-  "fetched_at": "2026-11-21T18:12:51.683634+00:00"
+  "fetched_at": "2026-11-22T00:33:24.629888+00:00"
 }
