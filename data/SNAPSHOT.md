@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-22T00:33:33.473366+00:00` |
-| Fetched at (CT) | **Sat Nov 21, 6:33 PM CST** |
+| Fetched at (UTC) | `2026-11-22T06:18:35.227998+00:00` |
+| Fetched at (CT) | **Sun Nov 22, 12:18 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 195 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1061 |
-| Fetch duration | 8.84s |
+| Fetch duration | 12.63s |
 | ESPN calls | 38 |
-| Workflow run | `44967188403` |
+| Workflow run | `44993114919` |
 
 ## Freshness and completeness gates
 
@@ -124,20 +124,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sat Nov 21, 12:13 PM CST`: 8 injury change(s) (1 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| **Treylon Burks** | QUESTIONABLE | - | - | Jason X |
-| Carson Beck | QUESTIONABLE | OUT | Nov 29 | - |
-| Dontayvion Wicks | OUT | IR | Dec 19 | - |
-| Kyren Williams | - | QUESTIONABLE | Nov 25 | 🔥Certified Dumpster Fire 🔥 |
-| Malik Willis | IR | - | - | - |
-| Roman Wilson | IR-R | QUESTIONABLE | Nov 22 | - |
-| Tyjae Spears | QUESTIONABLE | IR | Dec 20 | - |
-| Will Shipley | IR-R | QUESTIONABLE | Nov 22 | - |
+Compared with the snapshot taken `Sat Nov 21, 6:33 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
