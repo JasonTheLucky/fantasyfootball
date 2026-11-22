@@ -4,18 +4,18 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-22T12:15:48.299958+00:00` |
-| Fetched at (CT) | **Sun Nov 22, 6:15 AM CST** |
+| Fetched at (UTC) | `2026-11-22T18:13:26.609855+00:00` |
+| Fetched at (CT) | **Sun Nov 22, 12:13 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 195 |
-| Available players (FA + waivers) | 866 |
-| Players in lookup index | 1061 |
-| Fetch duration | 10.84s |
+| Available players (FA + waivers) | 867 |
+| Players in lookup index | 1062 |
+| Fetch duration | 10.22s |
 | ESPN calls | 38 |
-| Workflow run | `45021343014` |
+| Workflow run | `45053805576` |
 
 ## Freshness and completeness gates
 
@@ -36,12 +36,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 2.1 | 🔥Certified Dumpster Fire 🔥 | 44.56 | NO |
-| The Bye Week Boys | 0.0 | Connor’s Team | 0.0 | NO |
-| Jason X | 0.0 | Commanders of Chaos | 0.0 | NO |
-| Burrow's Bunch | 0.0 | From Puka with Love | 10.6 | NO |
-| Giant Packer Fan | 6.0 | Auto Draft Champion | 18.2 | NO |
-| Broken Hand Club | 14.8 | Nicole's Gnarly Team | 0.0 | NO |
+| Kelli's Top-Notch Team | 14.9 | 🔥Certified Dumpster Fire 🔥 | 45.76 | NO |
+| The Bye Week Boys | 21.0 | Connor’s Team | 3.9 | NO |
+| Jason X | 10.0 | Commanders of Chaos | 2.5 | NO |
+| Burrow's Bunch | 14.0 | From Puka with Love | 25.56 | NO |
+| Giant Packer Fan | 17.54 | Auto Draft Champion | 28.3 | NO |
+| Broken Hand Club | 16.68 | Nicole's Gnarly Team | 23.34 | NO |
 
 ## Rosters
 
@@ -79,32 +79,30 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (30)
+## Injury designations (28)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Seth McGowan | RB | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Puka Nacua | WR | INJURY_RESERVE | BENCH | NO |
+| The Bye Week Boys | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Broken Hand Club | Josh Jacobs | RB | OUT | BENCH | NO |
 | Broken Hand Club | Jordan Addison | WR | OUT | BENCH | NO |
-| Broken Hand Club | Darren Waller | TE | QUESTIONABLE | BENCH | NO |
 | Broken Hand Club | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | Kenneth Walker III | RB | OUT | BENCH | NO |
 | From Puka with Love | Ladd McConkey | WR | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Woody Marks | RB | OUT | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Drake Maye | QB | OUT | QB | yes |
-| Connor’s Team | Carnell Tate | WR | QUESTIONABLE | WR | yes |
 | Connor’s Team | A.J. Brown | WR | DOUBTFUL | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | Dalton Kincaid | TE | DOUBTFUL | BENCH | NO |
+| Connor’s Team | Dalton Kincaid | TE | OUT | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
@@ -118,19 +116,54 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 15 | 43 | 111 | 191 | 184 | 322 | 866 |
+| 15 | 43 | 112 | 192 | 182 | 323 | 867 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sun Nov 22, 12:18 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sun Nov 22, 6:15 AM CST`: 38 injury change(s) (0 affecting Jason X), 4 newly available, 4 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| AJ Dillon | - | INACTIVE | Nov 30 | - |
+| Adam Randall | - | INACTIVE | Nov 29 | - |
+| Alec Pierce | - | IR | out for the season | Connor’s Team |
+| Audric Estime | - | INACTIVE | Nov 29 | - |
+| Baker Mayfield | QUESTIONABLE | - | - | - |
+| Carnell Tate | QUESTIONABLE | - | - | Connor’s Team |
+| Carson Beck | OUT | INACTIVE | Nov 29 | - |
+| Case Keenum | - | INACTIVE | Nov 26 | - |
+| Cole Payton | - | INACTIVE | Nov 26 | - |
+| Dalton Kincaid | DOUBTFUL | INACTIVE | Nov 26 | Connor’s Team |
+| Darren Waller | QUESTIONABLE | - | - | Broken Hand Club |
+| Drew Allar | - | INACTIVE | Nov 27 | - |
+
+**Newly available**
+
+| Name | Position | Pro Team | Dropped By |
+| --- | --- | --- | --- |
+| Deshaun Watson | QB | CLE | Nicole's Gnarly Team |
+| Jason Sanders | K | NYJ | The Bye Week Boys |
+| Panthers D/ST | D/ST | CAR | Kelli's Top-Notch Team |
+| Puka Nacua | WR | LAR | The Bye Week Boys |
+
+**Claimed**
+
+| Name | Position | Pro Team | Added By |
+| --- | --- | --- | --- |
+| Dawson Knox | TE | BUF | Nicole's Gnarly Team |
+| Lions D/ST | D/ST | DET | Kelli's Top-Notch Team |
+| Terrance Ferguson | TE | LAR | The Bye Week Boys |
+| Wil Lutz | K | DEN | The Bye Week Boys |
 
 ## Jason X
 
 Record 7-3 · FAAB **$40** of $200 · waiver rank 11 · bench open **0** · IR open 1
 
-**This week:** vs Commanders of Chaos — projected 120.63 to 107.97 (margin 12.66), win probability 0.57. Posture: **favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs Commanders of Chaos — projected 118.24 to 104.88 (margin 13.36), win probability 0.57. Posture: **favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -145,12 +178,12 @@ No open bench spot: any add needs a drop.
 
 | Slot | Player | Pos | Bye | Next | Proj | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| QB | Jayden Daniels | QB | W7 | vs CIN | 20.47 | - |
+| QB | Jayden Daniels | QB | W7 | vs CIN | 20.46 | - |
 | RB | Cam Skattebo | RB | W8 | vs JAX | 14.96 | - |
 | RB | Ollie Gordon II | RB | W6 | @ BUF | 14.41 | - |
 | WR | Amon-Ra St. Brown | WR | W6 | vs TB | 18.41 | - |
 | WR | Courtland Sutton | WR | W10 | vs LV | 10.47 | - |
-| TE | Chig Okonkwo | TE | W7 | vs CIN | 10.24 | - |
+| TE | Chig Okonkwo | TE | W7 | vs CIN | 10.23 | - |
 | FLEX | Bhayshul Tuten | RB | W7 | @ NYG | 17.63 | - |
 | K | Chase McLaughlin | K | W10 | @ DET | 9.51 | - |
 | D/ST | Buccaneers D/ST | D/ST | W10 | @ DET | 4.53 | - |
@@ -165,15 +198,16 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-67 players in this league's pool carry an NFL designation; 21 are on injured reserve (5 of them rostered). 1 affect Jason X.
+77 players in this league's pool carry an NFL designation; 21 are on injured reserve (6 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
 | Player | Fantasy team | Expected return |
 | --- | --- | --- |
-| Davante Adams | Connor’s Team | 2026-12-03 |
+| Alec Pierce | Connor’s Team | 2027-02-15 |
+| Davante Adams | Connor’s Team | 2026-12-13 |
 | Jacory Croskey-Merritt | 🔥Certified Dumpster Fire 🔥 | 2026-11-23 |
-| Puka Nacua | The Bye Week Boys | 2027-01-10 |
+| Terrance Ferguson | The Bye Week Boys | 2026-11-25 |
 
 **In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team).
 
@@ -191,9 +225,9 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]. Ranked 212 of 212 expecte
 | --- | --- | --- | --- | --- |
 | QB | 24 | 56 | 24 | yes |
 | RB | 60 | 137 | 60 | yes |
-| WR | 60 | 203 | 60 | yes |
+| WR | 60 | 202 | 60 | yes |
 | TE | 24 | 130 | 24 | yes |
-| K | 24 | 35 | 24 | yes |
+| K | 24 | 36 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
 
 ESPN `appliedTotal` vs recomputed league scoring: max absolute delta **0.0** across 636 values (tolerance 0.01). `appliedTotal` is the authoritative value; this is drift detection only.
@@ -208,18 +242,22 @@ Top 5 overall by three-game average:
 | 2 | Ja'Marr Chase | WR | CIN | 8, 9, 10 | 34.90 | Burrow's Bunch |
 | 3 | Christian McCaffrey | RB | SF | 7, 9, 10 | 32.33 | Auto Draft Champion |
 | 4 | Tony Pollard | RB | TEN | 7, 8, 10 | 31.03 | Burrow's Bunch |
-| 5 | Jahmyr Gibbs | RB | DET | 8, 9, 10 | 28.80 | Giant Packer Fan |
+| 5 | C.J. Stroud | QB | HOU | 9, 10, 11 | 27.42 | 🔥Certified Dumpster Fire 🔥 |
 
 Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1110 total | 287 executed ownership changes | 558 lineup-only moves | 192 draft picks | 0 pending
+1120 total | 291 executed ownership changes | 564 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-22T17:43 | Kelli's Top-Notch Team | FREEAGENT | ADD Lions D/ST, DROP Panthers D/ST |
+| 2026-11-22T15:10 | The Bye Week Boys | FREEAGENT | ADD Terrance Ferguson, DROP Puka Nacua |
+| 2026-11-22T15:08 | The Bye Week Boys | FREEAGENT | ADD Wil Lutz, DROP Jason Sanders |
+| 2026-11-22T15:03 | Nicole's Gnarly Team | FREEAGENT | ADD Dawson Knox, DROP Deshaun Watson |
 | 2026-11-20T19:36 | From Puka with Love | ROSTER | DROP Jonathon Brooks |
 | 2026-11-19T17:36 | Commanders of Chaos | FREEAGENT | ADD Bengals D/ST |
 | 2026-11-19T17:36 | Commanders of Chaos | ROSTER | DROP Dolphins D/ST |
@@ -228,10 +266,6 @@ Most recent ownership changes:
 | 2026-11-19T01:07 | Broken Hand Club | FREEAGENT | ADD Elic Ayomanor |
 | 2026-11-19T01:06 | Broken Hand Club | FREEAGENT | ADD Ryan Flournoy |
 | 2026-11-19T00:45 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Jets D/ST, DROP Mike Gesicki |
-| 2026-11-18T15:23 | The Bye Week Boys | FREEAGENT | ADD Pat Freiermuth, DROP Bam Knight |
-| 2026-11-18T12:48 | Jason X | FREEAGENT | ADD Chig Okonkwo, DROP Lions D/ST |
-| 2026-11-18T11:02 | Kelli's Top-Notch Team | FREEAGENT | ADD Dalton Schultz, DROP Geno Smith |
-| 2026-11-18T11:01 | Kelli's Top-Notch Team | FREEAGENT | ADD Xavier Hutchinson, DROP Wan'Dale Robinson |
 
 ## League format
 
