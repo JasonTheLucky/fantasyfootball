@@ -3,7 +3,7 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 11,
-  "fetched_at": "2026-11-22T18:13:16.385795+00:00",
+  "fetched_at": "2026-11-23T00:34:03.841113+00:00",
   "complete": true,
   "team_count": 12,
   "positions": [
@@ -102,7 +102,7 @@
       "ranks": {
         "QB": 1,
         "RB": 1,
-        "WR": 7,
+        "WR": 6,
         "TE": 5,
         "K": 2,
         "D/ST": 1
@@ -264,7 +264,7 @@
       "ranks": {
         "QB": 12,
         "RB": 10,
-        "WR": 6,
+        "WR": 7,
         "TE": 12,
         "K": 1,
         "D/ST": 6
@@ -593,7 +593,7 @@
             "position": "QB",
             "pro_team": "MIN",
             "ros_projected_points": 0.0,
-            "designation": "OUT",
+            "designation": "INACTIVE",
             "weight": 0.2
           }
         ]
@@ -691,6 +691,7 @@
             "position": "RB",
             "pro_team": "PHI",
             "ros_projected_points": 114.8,
+            "designation": "QUESTIONABLE",
             "weight": 0.5
           },
           {
@@ -921,7 +922,7 @@
         "team_id": 11,
         "team_name": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
         "is_jason_x": false,
-        "score": 271.3,
+        "score": 272.5,
         "depth_score": 62.2,
         "players": [
           {
@@ -929,7 +930,7 @@
             "name": "Kyren Williams",
             "position": "RB",
             "pro_team": "LAR",
-            "ros_projected_points": 105.5,
+            "ros_projected_points": 106.7,
             "designation": "QUESTIONABLE",
             "weight": 1.0
           },
@@ -965,8 +966,8 @@
         "team_id": 9,
         "team_name": "Nicole's Gnarly Team",
         "is_jason_x": false,
-        "score": 262.3,
-        "depth_score": 41.6,
+        "score": 263.0,
+        "depth_score": 42.3,
         "players": [
           {
             "player_id": 4362238,
@@ -989,7 +990,7 @@
             "name": "Blake Corum",
             "position": "RB",
             "pro_team": "LAR",
-            "ros_projected_points": 83.2,
+            "ros_projected_points": 84.7,
             "weight": 0.5
           },
           {
@@ -1244,7 +1245,7 @@
             "position": "WR",
             "pro_team": "MIN",
             "ros_projected_points": 87.5,
-            "designation": "OUT",
+            "designation": "INACTIVE",
             "weight": 0.5
           },
           {
@@ -1321,7 +1322,6 @@
             "position": "WR",
             "pro_team": "SF",
             "ros_projected_points": 103.0,
-            "designation": "QUESTIONABLE",
             "weight": 1.0
           },
           {
@@ -1344,49 +1344,6 @@
       },
       {
         "rank": 6,
-        "team_id": 7,
-        "team_name": "Connor\u2019s Team",
-        "is_jason_x": false,
-        "score": 306.5,
-        "depth_score": 68.1,
-        "players": [
-          {
-            "player_id": 4701936,
-            "name": "Matthew Golden",
-            "position": "WR",
-            "pro_team": "GB",
-            "ros_projected_points": 129.7,
-            "weight": 1.0
-          },
-          {
-            "player_id": 4871023,
-            "name": "Carnell Tate",
-            "position": "WR",
-            "pro_team": "TEN",
-            "ros_projected_points": 108.7,
-            "weight": 1.0
-          },
-          {
-            "player_id": 16800,
-            "name": "Davante Adams",
-            "position": "WR",
-            "pro_team": "LAR",
-            "ros_projected_points": 100.4,
-            "designation": "IR",
-            "weight": 0.5
-          },
-          {
-            "player_id": 4688813,
-            "name": "Josh Downs",
-            "position": "WR",
-            "pro_team": "KC",
-            "ros_projected_points": 71.7,
-            "weight": 0.25
-          }
-        ]
-      },
-      {
-        "rank": 7,
         "team_id": 8,
         "team_name": "Giant Packer Fan",
         "is_jason_x": false,
@@ -1423,6 +1380,49 @@
             "position": "WR",
             "pro_team": "KC",
             "ros_projected_points": 55.8,
+            "weight": 0.25
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "team_id": 7,
+        "team_name": "Connor\u2019s Team",
+        "is_jason_x": false,
+        "score": 298.3,
+        "depth_score": 60.0,
+        "players": [
+          {
+            "player_id": 4701936,
+            "name": "Matthew Golden",
+            "position": "WR",
+            "pro_team": "GB",
+            "ros_projected_points": 129.7,
+            "weight": 1.0
+          },
+          {
+            "player_id": 4871023,
+            "name": "Carnell Tate",
+            "position": "WR",
+            "pro_team": "TEN",
+            "ros_projected_points": 108.7,
+            "weight": 1.0
+          },
+          {
+            "player_id": 16800,
+            "name": "Davante Adams",
+            "position": "WR",
+            "pro_team": "LAR",
+            "ros_projected_points": 84.1,
+            "designation": "IR",
+            "weight": 0.5
+          },
+          {
+            "player_id": 4688813,
+            "name": "Josh Downs",
+            "position": "WR",
+            "pro_team": "KC",
+            "ros_projected_points": 71.7,
             "weight": 0.25
           }
         ]
@@ -1465,6 +1465,7 @@
             "position": "WR",
             "pro_team": "CAR",
             "ros_projected_points": 68.0,
+            "designation": "QUESTIONABLE",
             "weight": 0.25
           }
         ]
@@ -1584,7 +1585,6 @@
             "position": "WR",
             "pro_team": "LAC",
             "ros_projected_points": 82.7,
-            "designation": "QUESTIONABLE",
             "weight": 0.5
           },
           {
@@ -1707,7 +1707,7 @@
             "position": "TE",
             "pro_team": "LV",
             "ros_projected_points": 97.7,
-            "designation": "QUESTIONABLE",
+            "designation": "INACTIVE",
             "weight": 1.0
           },
           {
@@ -1803,7 +1803,7 @@
             "name": "Sam LaPorta",
             "position": "TE",
             "pro_team": "DET",
-            "ros_projected_points": 83.1,
+            "ros_projected_points": 83.2,
             "weight": 1.0
           },
           {
@@ -2153,7 +2153,6 @@
             "position": "K",
             "pro_team": "LV",
             "ros_projected_points": 58.7,
-            "designation": "QUESTIONABLE",
             "weight": 1.0
           }
         ]
@@ -2181,7 +2180,7 @@
             "name": "Broncos D/ST",
             "position": "D/ST",
             "pro_team": "DEN",
-            "ros_projected_points": 52.1,
+            "ros_projected_points": 52.2,
             "weight": 0.2
           }
         ]
@@ -2233,7 +2232,7 @@
             "name": "Jets D/ST",
             "position": "D/ST",
             "pro_team": "NYJ",
-            "ros_projected_points": 41.5,
+            "ros_projected_points": 41.6,
             "weight": 0.2
           }
         ]
@@ -2469,7 +2468,7 @@
         "position": "TE",
         "pro_team": "LV",
         "ros_projected_points": 97.7,
-        "designation": "QUESTIONABLE"
+        "designation": "INACTIVE"
       },
       {
         "slot": "FLEX",
@@ -2670,7 +2669,7 @@
             "pro_team": "ATL",
             "ros_projected_points": 143.7
           },
-          "jason_gain": 10.6,
+          "jason_gain": 10.7,
           "their_gain": 15.7,
           "frees_jason_roster_spots": 1,
           "their_roster_spots_needed": 1,
@@ -2686,7 +2685,7 @@
                 "position": "TE",
                 "pro_team": "LV",
                 "ros_projected_points": 97.7,
-                "designation": "QUESTIONABLE"
+                "designation": "INACTIVE"
               },
               {
                 "player_id": 4248528,
@@ -2703,7 +2702,7 @@
               "pro_team": "ARI",
               "ros_projected_points": 107.9
             },
-            "jason_gain": 10.2,
+            "jason_gain": 10.3,
             "their_gain": 16.1,
             "frees_jason_roster_spots": 1,
             "their_roster_spots_needed": 1,
@@ -2889,7 +2888,7 @@
                 "position": "TE",
                 "pro_team": "LV",
                 "ros_projected_points": 97.7,
-                "designation": "QUESTIONABLE"
+                "designation": "INACTIVE"
               },
               {
                 "player_id": 4248528,
@@ -2949,7 +2948,7 @@
         "team_id": 7,
         "team_name": "Connor\u2019s Team",
         "mutual": true,
-        "mutual_trades_found": 7,
+        "mutual_trades_found": 8,
         "best_trade": {
           "shape": "2-for-1",
           "jason_gives": [
@@ -3047,45 +3046,6 @@
         ]
       },
       {
-        "team_id": 9,
-        "team_name": "Nicole's Gnarly Team",
-        "mutual": true,
-        "mutual_trades_found": 1,
-        "best_trade": {
-          "shape": "2-for-1",
-          "jason_gives": [
-            {
-              "player_id": 4711533,
-              "name": "Ollie Gordon II",
-              "position": "RB",
-              "pro_team": "MIA",
-              "ros_projected_points": 124.5
-            },
-            {
-              "player_id": 4432665,
-              "name": "Brock Bowers",
-              "position": "TE",
-              "pro_team": "LV",
-              "ros_projected_points": 97.7,
-              "designation": "QUESTIONABLE"
-            }
-          ],
-          "jason_gets": {
-            "player_id": 4241389,
-            "name": "CeeDee Lamb",
-            "position": "WR",
-            "pro_team": "DAL",
-            "ros_projected_points": 147.7
-          },
-          "jason_gain": 10.2,
-          "their_gain": 5.0,
-          "frees_jason_roster_spots": 1,
-          "their_roster_spots_needed": 1,
-          "their_bench_open": 0
-        },
-        "other_trades": []
-      },
-      {
         "team_id": 2,
         "team_name": "The Bye Week Boys",
         "mutual": false,
@@ -3096,6 +3056,14 @@
       {
         "team_id": 5,
         "team_name": "Burrow's Bunch",
+        "mutual": false,
+        "mutual_trades_found": 0,
+        "best_trade": null,
+        "other_trades": []
+      },
+      {
+        "team_id": 9,
+        "team_name": "Nicole's Gnarly Team",
         "mutual": false,
         "mutual_trades_found": 0,
         "best_trade": null,

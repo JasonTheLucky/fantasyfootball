@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 1120,
+    "total": 1121,
     "ownership_changes": 364,
     "executed_ownership_changes": 291,
-    "lineup_only_moves": 564,
+    "lineup_only_moves": 565,
     "draft_picks": 192,
     "pending": 0,
     "failed": 41,
@@ -12924,6 +12924,46 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "509cfb4c-0fee-474e-bdad-4112d87baa9f",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 11,
+      "team_id": 5,
+      "team": "Burrow's Bunch",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-23T00:16:25.989000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 3042519,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "RB",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 4696044,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "RB",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "c300f8c8-3883-4dca-926a-7f60e196725a",
       "type": "ROSTER",
@@ -54388,7 +54428,7 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 67,
+    "0": 68,
     "1": 238,
     "2": 56,
     "3": 68,
@@ -54399,10 +54439,10 @@
     "8": 123,
     "9": 91,
     "10": 82,
-    "11": 67
+    "11": 68
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 11,
-  "fetched_at": "2026-11-22T18:13:16.385795+00:00"
+  "fetched_at": "2026-11-23T00:34:03.841113+00:00"
 }
