@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-23T06:28:40.635449+00:00` |
-| Fetched at (CT) | **Mon Nov 23, 12:28 AM CST** |
+| Fetched at (UTC) | `2026-11-23T12:18:36.881650+00:00` |
+| Fetched at (CT) | **Mon Nov 23, 6:18 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 195 |
 | Available players (FA + waivers) | 868 |
 | Players in lookup index | 1063 |
-| Fetch duration | 12.81s |
+| Fetch duration | 12.63s |
 | ESPN calls | 38 |
-| Workflow run | `45124314681` |
+| Workflow run | `45173018949` |
 
 ## Freshness and completeness gates
 
@@ -121,16 +121,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sun Nov 22, 6:34 PM CST`: 4 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Brandon Aiyuk | RESERVE-EX | - | - | - |
-| Jalen McMillan | IR | - | - | 🔥Certified Dumpster Fire 🔥 |
-| Justin Herbert | - | QUESTIONABLE | Nov 29 | - |
-| Wan'Dale Robinson | IR | - | - | - |
+Compared with the snapshot taken `Mon Nov 23, 12:28 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 

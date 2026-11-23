@@ -1,75 +1,18 @@
 {
   "usage": "What changed since the previous snapshot, which is the delta the daily report's 'last ~24 hours' framing needs. Compared against the player_index.json present when this run started, so the window is one snapshot interval (roughly six hours), not exactly 24 hours: previous_snapshot_at says when. injury_changes is the highest-value list and is sorted with Jason X players first; direction is new, changed or cleared. became_available are players dropped by a rival and now addable. became_rostered are players claimed, which is how a target you were considering disappears. changed_team is a trade or a waiver move between teams. comparable is false on a first run or when no previous snapshot was present, in which case every list is empty and absence of change must not be reported as stability.",
   "comparable": true,
-  "previous_snapshot_at": "2026-11-23T00:34:13.539839+00:00",
-  "previous_snapshot_at_ct": "Sun Nov 22, 6:34 PM CST",
+  "previous_snapshot_at": "2026-11-23T06:28:40.635449+00:00",
+  "previous_snapshot_at_ct": "Mon Nov 23, 12:28 AM CST",
   "previous_scoring_period_id": 11,
   "counts": {
-    "injury_changes": 4,
+    "injury_changes": 0,
     "jason_x_injury_changes": 0,
     "became_available": 0,
     "became_rostered": 0,
     "changed_team": 0,
     "new_to_pool": 0
   },
-  "injury_changes": [
-    {
-      "player_id": 4360438,
-      "name": "Brandon Aiyuk",
-      "position": "WR",
-      "pro_team": "SF",
-      "from": "RESERVE-EX",
-      "to": null,
-      "expected_return": null,
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "cleared"
-    },
-    {
-      "player_id": 4430834,
-      "name": "Jalen McMillan",
-      "position": "WR",
-      "pro_team": "TB",
-      "from": "IR",
-      "to": null,
-      "expected_return": null,
-      "on_nfl_ir": false,
-      "fantasy_status": "ROSTERED",
-      "fantasy_team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
-      "is_jason_x": false,
-      "direction": "cleared"
-    },
-    {
-      "player_id": 4038941,
-      "name": "Justin Herbert",
-      "position": "QB",
-      "pro_team": "LAC",
-      "from": null,
-      "to": "QUESTIONABLE",
-      "expected_return": "Nov 29",
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "new"
-    },
-    {
-      "player_id": 4569587,
-      "name": "Wan'Dale Robinson",
-      "position": "WR",
-      "pro_team": "TEN",
-      "from": "IR",
-      "to": null,
-      "expected_return": null,
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "cleared"
-    }
-  ],
+  "injury_changes": [],
   "jason_x_injury_changes": [],
   "became_available": [],
   "became_rostered": [],
@@ -78,6 +21,6 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 11,
-  "fetched_at": "2026-11-23T06:28:27.828358+00:00",
-  "fetched_at_ct_label": "Mon Nov 23, 12:28 AM CST"
+  "fetched_at": "2026-11-23T12:18:24.249130+00:00",
+  "fetched_at_ct_label": "Mon Nov 23, 6:18 AM CST"
 }
