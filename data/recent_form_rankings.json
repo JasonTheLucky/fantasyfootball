@@ -1139,7 +1139,7 @@
         "fantasy_status": "ROSTERED",
         "is_jason_x": false,
         "injury": {
-          "designation": "INACTIVE",
+          "designation": "QUESTIONABLE",
           "nfl_status": "Out",
           "on_nfl_ir": false,
           "expected_return": "2026-11-29",
@@ -1267,7 +1267,16 @@
         "owner_label": "WAIVERS",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
-        "is_jason_x": false
+        "is_jason_x": false,
+        "injury": {
+          "designation": "IR",
+          "nfl_status": "Injured Reserve",
+          "on_nfl_ir": true,
+          "expected_return": "2026-12-13",
+          "expected_return_label": "Dec 13",
+          "injury_type": "Abdomen"
+        },
+        "on_nfl_ir": true
       },
       {
         "player_id": 4426338,
@@ -1793,7 +1802,7 @@
         "fantasy_status": "ROSTERED",
         "is_jason_x": false,
         "injury": {
-          "designation": "INACTIVE",
+          "designation": "QUESTIONABLE",
           "nfl_status": "Out",
           "on_nfl_ir": false,
           "expected_return": "2026-11-26",
@@ -2145,7 +2154,16 @@
         "owner_label": "Jason X",
         "owner_team_id": 1,
         "fantasy_status": "ROSTERED",
-        "is_jason_x": true
+        "is_jason_x": true,
+        "injury": {
+          "designation": "QUESTIONABLE",
+          "nfl_status": "Questionable",
+          "on_nfl_ir": false,
+          "expected_return": "2026-11-29",
+          "expected_return_label": "Nov 29",
+          "injury_type": "Lower Body"
+        },
+        "on_nfl_ir": false
       },
       {
         "player_id": 4569987,
@@ -2845,7 +2863,7 @@
         "fantasy_status": "ROSTERED",
         "is_jason_x": false,
         "injury": {
-          "designation": "INACTIVE",
+          "designation": "QUESTIONABLE",
           "nfl_status": "Out",
           "on_nfl_ir": false,
           "expected_return": "2026-11-29",
@@ -2908,16 +2926,7 @@
         "owner_label": "WAIVERS",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
-        "is_jason_x": false,
-        "injury": {
-          "designation": "INACTIVE",
-          "nfl_status": "Out",
-          "on_nfl_ir": false,
-          "expected_return": "2026-11-29",
-          "expected_return_label": "Nov 29",
-          "injury_type": "Coach's Decision"
-        },
-        "on_nfl_ir": false
+        "is_jason_x": false
       },
       {
         "player_id": 4429160,
@@ -4078,6 +4087,15 @@
         "owner_team_id": 6,
         "fantasy_status": "ROSTERED",
         "is_jason_x": false,
+        "injury": {
+          "designation": "IR",
+          "nfl_status": "Injured Reserve",
+          "on_nfl_ir": true,
+          "expected_return": "2026-11-29",
+          "expected_return_label": "Nov 29",
+          "injury_type": "Shoulder"
+        },
+        "on_nfl_ir": true,
         "in_fantasy_ir_slot": true
       },
       {
@@ -5043,7 +5061,7 @@
         "fantasy_status": "ROSTERED",
         "is_jason_x": true,
         "injury": {
-          "designation": "INACTIVE",
+          "designation": "QUESTIONABLE",
           "nfl_status": "Out",
           "on_nfl_ir": false,
           "expected_return": "2026-11-29",
@@ -5304,7 +5322,7 @@
         "fantasy_status": "ROSTERED",
         "is_jason_x": false,
         "injury": {
-          "designation": "INACTIVE",
+          "designation": "QUESTIONABLE",
           "nfl_status": "Out",
           "on_nfl_ir": false,
           "expected_return": "2026-11-26",
@@ -6955,5 +6973,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 11,
-  "fetched_at": "2026-11-23T12:18:24.249130+00:00"
+  "fetched_at": "2026-11-23T18:14:10.477277+00:00"
 }

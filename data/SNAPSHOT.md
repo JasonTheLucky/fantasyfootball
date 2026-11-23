@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-23T12:18:36.881650+00:00` |
-| Fetched at (CT) | **Mon Nov 23, 6:18 AM CST** |
+| Fetched at (UTC) | `2026-11-23T18:14:19.722626+00:00` |
+| Fetched at (CT) | **Mon Nov 23, 12:14 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 195 |
 | Available players (FA + waivers) | 868 |
 | Players in lookup index | 1063 |
-| Fetch duration | 12.63s |
+| Fetch duration | 9.25s |
 | ESPN calls | 38 |
-| Workflow run | `45173018949` |
+| Workflow run | `45236147330` |
 
 ## Freshness and completeness gates
 
@@ -79,10 +79,11 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (27)
+## Injury designations (28)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
+| Jason X | Bhayshul Tuten | RB | QUESTIONABLE | FLEX | yes |
 | Jason X | Brock Bowers | TE | OUT | BENCH | NO |
 | The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Seth McGowan | RB | QUESTIONABLE | BENCH | NO |
@@ -121,7 +122,24 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Mon Nov 23, 12:28 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Mon Nov 23, 6:18 AM CST`: 53 injury change(s) (2 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| **Bhayshul Tuten** | - | QUESTIONABLE | Nov 29 | Jason X |
+| **Brock Bowers** | INACTIVE | QUESTIONABLE | Nov 29 | Jason X |
+| AJ Dillon | INACTIVE | - | - | - |
+| Adam Randall | INACTIVE | - | - | - |
+| Audric Estime | INACTIVE | - | - | - |
+| Brenen Thompson | INACTIVE | QUESTIONABLE | Nov 29 | - |
+| Brevin Jordan | - | QUESTIONABLE | Nov 29 | - |
+| CJ Williams | INACTIVE | - | - | - |
+| Carson Beck | INACTIVE | QUESTIONABLE | Nov 29 | - |
+| Case Keenum | INACTIVE | - | - | - |
+| Cole Payton | INACTIVE | - | - | - |
+| Dallen Bentley | INACTIVE | - | - | - |
 
 ## Jason X
 
@@ -148,7 +166,7 @@ No open bench spot: any add needs a drop.
 | WR | Amon-Ra St. Brown | WR | W6 | vs TB | 18.41 | - |
 | WR | Courtland Sutton | WR | W10 | vs LV | 10.47 | - |
 | TE | Chig Okonkwo | TE | W7 | vs CIN | 10.23 | - |
-| FLEX | Bhayshul Tuten | RB | W7 | @ NYG | 17.63 | - |
+| FLEX | Bhayshul Tuten | RB | W7 | @ NYG | 17.63 | QUESTIONABLE (back Nov 29) |
 | K | Chase McLaughlin | K | W10 | @ DET | 9.51 | - |
 | D/ST | Buccaneers D/ST | D/ST | W10 | @ DET | 4.53 | - |
 
@@ -162,7 +180,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-90 players in this league's pool carry an NFL designation; 19 are on injured reserve (5 of them rostered). 1 affect Jason X.
+60 players in this league's pool carry an NFL designation; 20 are on injured reserve (6 of them rostered). 2 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -173,13 +191,14 @@ No open bench spot: any add needs a drop.
 | Jacory Croskey-Merritt | 🔥Certified Dumpster Fire 🔥 | 2026-11-23 |
 | Terrance Ferguson | The Bye Week Boys | 2026-11-25 |
 
-**In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jalen McMillan (🔥Certified Dumpster Fire 🔥), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team).
+**In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jalen McMillan (🔥Certified Dumpster Fire 🔥), Jeremiyah Love (The Bye Week Boys), Travis Etienne Jr. (Connor’s Team).
 
 Jason X players with a designation:
 
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
-| Brock Bowers | BENCH | INACTIVE | Nov 29 | Ankle |
+| Brock Bowers | BENCH | QUESTIONABLE | Nov 29 | Ankle |
+| Bhayshul Tuten | FLEX | QUESTIONABLE | Nov 29 | Lower Body |
 
 ## Recent form (last 3 completed games)
 
