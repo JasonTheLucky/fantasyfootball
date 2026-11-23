@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-23T00:34:13.539839+00:00` |
-| Fetched at (CT) | **Sun Nov 22, 6:34 PM CST** |
+| Fetched at (UTC) | `2026-11-23T06:28:40.635449+00:00` |
+| Fetched at (CT) | **Mon Nov 23, 12:28 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 195 |
 | Available players (FA + waivers) | 868 |
 | Players in lookup index | 1063 |
-| Fetch duration | 9.7s |
+| Fetch duration | 12.81s |
 | ESPN calls | 38 |
-| Workflow run | `45089505032` |
+| Workflow run | `45124314681` |
 
 ## Freshness and completeness gates
 
@@ -36,12 +36,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 108.0 | 🔥Certified Dumpster Fire 🔥 | 63.16 | NO |
-| The Bye Week Boys | 112.66 | Connor’s Team | 64.7 | NO |
-| Jason X | 37.4 | Commanders of Chaos | 89.66 | NO |
-| Burrow's Bunch | 77.0 | From Puka with Love | 99.3 | NO |
-| Giant Packer Fan | 112.26 | Auto Draft Champion | 118.08 | NO |
-| Broken Hand Club | 110.86 | Nicole's Gnarly Team | 112.56 | NO |
+| Kelli's Top-Notch Team | 130.2 | 🔥Certified Dumpster Fire 🔥 | 63.16 | NO |
+| The Bye Week Boys | 116.74 | Connor’s Team | 67.7 | NO |
+| Jason X | 39.5 | Commanders of Chaos | 89.66 | NO |
+| Burrow's Bunch | 92.9 | From Puka with Love | 107.0 | NO |
+| Giant Packer Fan | 127.96 | Auto Draft Champion | 132.28 | NO |
+| Broken Hand Club | 134.06 | Nicole's Gnarly Team | 112.56 | NO |
 
 ## Rosters
 
@@ -121,30 +121,22 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Sun Nov 22, 12:13 PM CST`: 33 injury change(s) (1 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Sun Nov 22, 6:34 PM CST`: 4 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| **Brock Bowers** | QUESTIONABLE | INACTIVE | Nov 29 | Jason X |
-| Ben VanSumeren | - | QUESTIONABLE | Nov 26 | - |
-| Brenen Thompson | DOUBTFUL | INACTIVE | Nov 29 | - |
-| CJ Williams | - | INACTIVE | Nov 29 | - |
-| Charlie Kolar | QUESTIONABLE | - | - | - |
-| Dallen Bentley | - | INACTIVE | Nov 27 | - |
-| Dareke Young | - | QUESTIONABLE | Nov 22 | - |
-| Demarcus Robinson | - | INACTIVE | Nov 29 | - |
-| Dont'e Thornton Jr. | - | INACTIVE | Nov 29 | - |
-| Greg Desrosiers Jr. | - | INACTIVE | Nov 29 | - |
-| Isaiah Williams | OUT | INACTIVE | Nov 29 | - |
-| Jalen Coker | - | QUESTIONABLE | Nov 30 | The Bye Week Boys |
+| Brandon Aiyuk | RESERVE-EX | - | - | - |
+| Jalen McMillan | IR | - | - | 🔥Certified Dumpster Fire 🔥 |
+| Justin Herbert | - | QUESTIONABLE | Nov 29 | - |
+| Wan'Dale Robinson | IR | - | - | - |
 
 ## Jason X
 
 Record 7-3 · FAAB **$40** of $200 · waiver rank 11 · bench open **0** · IR open 1
 
-**This week:** vs Commanders of Chaos — projected 72.0 to 94.69 (margin -22.69), win probability 0.08. Posture: **heavy underdog**. Chase ceiling: prefer upside over floor, since a safe lineup still loses.
+**This week:** vs Commanders of Chaos — projected 70.2 to 94.69 (margin -24.49), win probability 0.04. Posture: **heavy underdog**. Chase ceiling: prefer upside over floor, since a safe lineup still loses.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -179,7 +171,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-92 players in this league's pool carry an NFL designation; 21 are on injured reserve (6 of them rostered). 1 affect Jason X.
+90 players in this league's pool carry an NFL designation; 19 are on injured reserve (5 of them rostered). 1 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -190,7 +182,7 @@ No open bench spot: any add needs a drop.
 | Jacory Croskey-Merritt | 🔥Certified Dumpster Fire 🔥 | 2026-11-23 |
 | Terrance Ferguson | The Bye Week Boys | 2026-11-25 |
 
-**In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team).
+**In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jalen McMillan (🔥Certified Dumpster Fire 🔥), Jeremiyah Love (The Bye Week Boys), Romeo Doubs (From Puka with Love), Travis Etienne Jr. (Connor’s Team).
 
 Jason X players with a designation:
 
@@ -206,7 +198,7 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]. Ranked 212 of 212 expecte
 | --- | --- | --- | --- | --- |
 | QB | 24 | 56 | 24 | yes |
 | RB | 60 | 139 | 60 | yes |
-| WR | 60 | 206 | 60 | yes |
+| WR | 60 | 207 | 60 | yes |
 | TE | 24 | 131 | 24 | yes |
 | K | 24 | 36 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
@@ -221,15 +213,15 @@ Top 5 overall by three-game average:
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Joe Burrow | QB | CIN | 8, 9, 10 | 36.73 | Burrow's Bunch |
 | 2 | Ja'Marr Chase | WR | CIN | 8, 9, 10 | 34.90 | Burrow's Bunch |
-| 3 | Christian McCaffrey | RB | SF | 7, 9, 10 | 32.33 | Auto Draft Champion |
-| 4 | Dak Prescott | QB | DAL | 9, 10, 11 | 31.94 | From Puka with Love |
+| 3 | Dak Prescott | QB | DAL | 9, 10, 11 | 31.94 | From Puka with Love |
+| 4 | Christian McCaffrey | RB | SF | 9, 10, 11 | 29.73 | Auto Draft Champion |
 | 5 | CeeDee Lamb | WR | DAL | 9, 10, 11 | 29.30 | Nicole's Gnarly Team |
 
 Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1121 total | 291 executed ownership changes | 565 lineup-only moves | 192 draft picks | 0 pending
+1128 total | 291 executed ownership changes | 572 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
