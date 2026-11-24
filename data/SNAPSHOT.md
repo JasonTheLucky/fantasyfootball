@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-23T18:14:19.722626+00:00` |
-| Fetched at (CT) | **Mon Nov 23, 12:14 PM CST** |
+| Fetched at (UTC) | `2026-11-24T00:28:39.351670+00:00` |
+| Fetched at (CT) | **Mon Nov 23, 6:28 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 195 |
 | Available players (FA + waivers) | 868 |
 | Players in lookup index | 1063 |
-| Fetch duration | 9.25s |
+| Fetch duration | 10.65s |
 | ESPN calls | 38 |
-| Workflow run | `45236147330` |
+| Workflow run | `45297428091` |
 
 ## Freshness and completeness gates
 
@@ -79,15 +79,13 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (28)
+## Injury designations (24)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
 | Jason X | Bhayshul Tuten | RB | QUESTIONABLE | FLEX | yes |
 | Jason X | Brock Bowers | TE | OUT | BENCH | NO |
-| The Bye Week Boys | Jalen Coker | WR | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Seth McGowan | RB | QUESTIONABLE | BENCH | NO |
-| The Bye Week Boys | Terrance Ferguson | TE | INJURY_RESERVE | BENCH | NO |
+| The Bye Week Boys | Seth McGowan | RB | OUT | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
@@ -107,10 +105,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | FLEX | yes |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Kyren Williams | RB | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Jacory Croskey-Merritt | RB | INJURY_RESERVE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Rachaad White | RB | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Dallas Goedert | TE | QUESTIONABLE | TE | yes |
 
 ## Available player pool by position
 
@@ -122,24 +118,36 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Mon Nov 23, 6:18 AM CST`: 53 injury change(s) (2 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Mon Nov 23, 12:14 PM CST`: 17 injury change(s) (0 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| **Bhayshul Tuten** | - | QUESTIONABLE | Nov 29 | Jason X |
-| **Brock Bowers** | INACTIVE | QUESTIONABLE | Nov 29 | Jason X |
-| AJ Dillon | INACTIVE | - | - | - |
-| Adam Randall | INACTIVE | - | - | - |
-| Audric Estime | INACTIVE | - | - | - |
-| Brenen Thompson | INACTIVE | QUESTIONABLE | Nov 29 | - |
-| Brevin Jordan | - | QUESTIONABLE | Nov 29 | - |
-| CJ Williams | INACTIVE | - | - | - |
-| Carson Beck | INACTIVE | QUESTIONABLE | Nov 29 | - |
-| Case Keenum | INACTIVE | - | - | - |
-| Cole Payton | INACTIVE | - | - | - |
-| Dallen Bentley | INACTIVE | - | - | - |
+| Athan Kaliakmanis | - | INACTIVE | Nov 29 | - |
+| Cam Grandy | - | INACTIVE | Nov 29 | - |
+| Christian Kirk | IR | - | - | - |
+| Dallas Goedert | - | QUESTIONABLE | Nov 26 | Commanders of Chaos |
+| George Holani | QUESTIONABLE | IR | Dec 25 | - |
+| Jacory Croskey-Merritt | IR-R | - | - | 🔥Certified Dumpster Fire 🔥 |
+| Jake Ferguson | OUT | QUESTIONABLE | Nov 26 | - |
+| Jalen Coker | QUESTIONABLE | - | - | The Bye Week Boys |
+| Jeremiyah Love | - | IR | Dec 6 | The Bye Week Boys |
+| Jordan Addison | OUT | DOUBTFUL | Nov 29 | Broken Hand Club |
+| Kyren Williams | QUESTIONABLE | - | - | 🔥Certified Dumpster Fire 🔥 |
+| Rachaad White | QUESTIONABLE | - | - | Commanders of Chaos |
+
+**Newly available**
+
+| Name | Position | Pro Team | Dropped By |
+| --- | --- | --- | --- |
+| Terrance Ferguson | TE | LAR | The Bye Week Boys |
+
+**Claimed**
+
+| Name | Position | Pro Team | Added By |
+| --- | --- | --- | --- |
+| Mike Gesicki | TE | CIN | The Bye Week Boys |
 
 ## Jason X
 
@@ -180,25 +188,23 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-60 players in this league's pool carry an NFL designation; 20 are on injured reserve (6 of them rostered). 2 affect Jason X.
+62 players in this league's pool carry an NFL designation; 20 are on injured reserve (5 of them rostered). 2 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
 | Player | Fantasy team | Expected return |
 | --- | --- | --- |
-| Alec Pierce | Connor’s Team | 2027-02-15 |
+| Alec Pierce | Connor’s Team | 2027-01-10 |
 | Davante Adams | Connor’s Team | 2026-12-13 |
-| Jacory Croskey-Merritt | 🔥Certified Dumpster Fire 🔥 | 2026-11-23 |
-| Terrance Ferguson | The Bye Week Boys | 2026-11-25 |
 
-**In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jalen McMillan (🔥Certified Dumpster Fire 🔥), Jeremiyah Love (The Bye Week Boys), Travis Etienne Jr. (Connor’s Team).
+**In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jalen McMillan (🔥Certified Dumpster Fire 🔥), Travis Etienne Jr. (Connor’s Team).
 
 Jason X players with a designation:
 
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
 | Brock Bowers | BENCH | QUESTIONABLE | Nov 29 | Ankle |
-| Bhayshul Tuten | FLEX | QUESTIONABLE | Nov 29 | Lower Body |
+| Bhayshul Tuten | FLEX | QUESTIONABLE | Nov 29 | Ankle |
 
 ## Recent form (last 3 completed games)
 
@@ -209,7 +215,7 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]. Ranked 212 of 212 expecte
 | QB | 24 | 56 | 24 | yes |
 | RB | 60 | 139 | 60 | yes |
 | WR | 60 | 207 | 60 | yes |
-| TE | 24 | 131 | 24 | yes |
+| TE | 24 | 130 | 24 | yes |
 | K | 24 | 36 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
 
@@ -231,12 +237,13 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1128 total | 291 executed ownership changes | 572 lineup-only moves | 192 draft picks | 0 pending
+1136 total | 292 executed ownership changes | 579 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-23T19:47 | The Bye Week Boys | FREEAGENT | ADD Mike Gesicki, DROP Terrance Ferguson |
 | 2026-11-22T17:43 | Kelli's Top-Notch Team | FREEAGENT | ADD Lions D/ST, DROP Panthers D/ST |
 | 2026-11-22T15:10 | The Bye Week Boys | FREEAGENT | ADD Terrance Ferguson, DROP Puka Nacua |
 | 2026-11-22T15:08 | The Bye Week Boys | FREEAGENT | ADD Wil Lutz, DROP Jason Sanders |
@@ -248,7 +255,6 @@ Most recent ownership changes:
 | 2026-11-19T11:47 | Kelli's Top-Notch Team | FREEAGENT | ADD Panthers D/ST, DROP Colts D/ST |
 | 2026-11-19T01:07 | Broken Hand Club | FREEAGENT | ADD Elic Ayomanor |
 | 2026-11-19T01:06 | Broken Hand Club | FREEAGENT | ADD Ryan Flournoy |
-| 2026-11-19T00:45 | 🔥Certified Dumpster Fire 🔥 | FREEAGENT | ADD Jets D/ST, DROP Mike Gesicki |
 
 ## League format
 
