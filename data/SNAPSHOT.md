@@ -4,18 +4,18 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-24T06:21:06.014067+00:00` |
-| Fetched at (CT) | **Tue Nov 24, 12:21 AM CST** |
+| Fetched at (UTC) | `2026-11-24T12:18:11.996084+00:00` |
+| Fetched at (CT) | **Tue Nov 24, 6:18 AM CST** |
 | DATA STATUS | **PASS** |
-| Scoring period (week) | **11** |
+| Scoring period (week) | **12** |
 | League id | `1787259003` |
 | Teams retrieved | 12 / 12 |
 | Rostered players | 195 |
 | Available players (FA + waivers) | 868 |
 | Players in lookup index | 1063 |
-| Fetch duration | 8.71s |
-| ESPN calls | 38 |
-| Workflow run | `45339758949` |
+| Fetch duration | 11.37s |
+| ESPN calls | 41 |
+| Workflow run | `45392139047` |
 
 ## Freshness and completeness gates
 
@@ -32,16 +32,16 @@
 | NFL injury report retrieved | yes |
 | NFL schedule and byes retrieved | yes |
 
-## Week 11 matchups
+## Week 12 matchups
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 130.2 | 🔥Certified Dumpster Fire 🔥 | 83.96 | NO |
-| The Bye Week Boys | 116.74 | Connor’s Team | 81.4 | NO |
-| Jason X | 67.16 | Commanders of Chaos | 89.66 | NO |
-| Burrow's Bunch | 122.9 | From Puka with Love | 117.0 | NO |
-| Giant Packer Fan | 127.96 | Auto Draft Champion | 132.28 | NO |
-| Broken Hand Club | 134.06 | Nicole's Gnarly Team | 121.16 | NO |
+| The Bye Week Boys | 0.0 | Kelli's Top-Notch Team | 0.0 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 0.0 | Jason X | 0.0 | NO |
+| Connor’s Team | 0.0 | Burrow's Bunch | 0.0 | NO |
+| Commanders of Chaos | 0.0 | Giant Packer Fan | 0.0 | NO |
+| From Puka with Love | 0.0 | Broken Hand Club | 0.0 | NO |
+| Auto Draft Champion | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
 
 ## Rosters
 
@@ -53,7 +53,7 @@
 | 4 | Broken Hand Club | Jeffrey Clark | 16 | 9 | 6 | 1 | 1 |
 | 5 | Burrow's Bunch | Norberto Vargas | 16 | 9 | 7 | 0 | 0 |
 | 6 | From Puka with Love | Brandon Daab | 16 | 9 | 6 | 1 | 1 |
-| 7 | Connor’s Team | Connor Hartland | 17 | 8 | 8 | 1 | 0 |
+| 7 | Connor’s Team | Connor Hartland | 17 | 9 | 7 | 1 | 0 |
 | 8 | Giant Packer Fan | Brian Seehafer | 16 | 9 | 7 | 0 | 0 |
 | 9 | Nicole's Gnarly Team | Nicole Brandau | 16 | 9 | 7 | 0 | 0 |
 | 10 | Kelli's Top-Notch Team | Kelli Medvesky | 16 | 9 | 7 | 0 | 0 |
@@ -65,17 +65,17 @@
 | Team | Remaining | Spent | % left | Waiver rank |
 | --- | --- | --- | --- | --- |
 | Nicole's Gnarly Team | **$200** | $0 | 100.0% | 4 |
-| Commanders of Chaos | **$200** | $0 | 100.0% | 2 |
-| Auto Draft Champion | **$198** | $2 | 99.0% | 6 |
-| Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 5 |
-| Giant Packer Fan | **$195** | $5 | 97.5% | 8 |
-| Connor’s Team | **$179** | $21 | 89.5% | 3 |
+| Commanders of Chaos | **$200** | $0 | 100.0% | 3 |
+| Auto Draft Champion | **$198** | $2 | 99.0% | 9 |
+| Kelli's Top-Notch Team | **$198** | $2 | 99.0% | 6 |
+| Giant Packer Fan | **$195** | $5 | 97.5% | 10 |
+| Connor’s Team | **$179** | $21 | 89.5% | 1 |
 | 🔥Certified Dumpster Fire 🔥 | **$171** | $29 | 85.5% | 7 |
 | Burrow's Bunch | **$144** | $56 | 72.0% | 12 |
-| From Puka with Love | **$105** | $95 | 52.5% | 9 |
-| The Bye Week Boys | **$81** | $119 | 40.5% | 10 |
+| From Puka with Love | **$105** | $95 | 52.5% | 5 |
+| The Bye Week Boys | **$81** | $119 | 40.5% | 8 |
 | Jason X | **$40** | $160 | 20.0% | 11 |
-| Broken Hand Club | **$25** | $175 | 12.5% | 1 |
+| Broken Hand Club | **$25** | $175 | 12.5% | 2 |
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
@@ -83,8 +83,8 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Bhayshul Tuten | RB | QUESTIONABLE | FLEX | yes |
-| Jason X | Brock Bowers | TE | OUT | BENCH | NO |
+| Jason X | Brock Bowers | TE | OUT | TE | yes |
+| Jason X | Bhayshul Tuten | RB | QUESTIONABLE | RB | yes |
 | The Bye Week Boys | Seth McGowan | RB | OUT | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Sam LaPorta | TE | QUESTIONABLE | TE | yes |
@@ -98,11 +98,11 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | From Puka with Love | Woody Marks | RB | OUT | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Drake Maye | QB | OUT | QB | yes |
+| Connor’s Team | Dalton Kincaid | TE | OUT | TE | yes |
 | Connor’s Team | A.J. Brown | WR | DOUBTFUL | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
-| Connor’s Team | Dalton Kincaid | TE | OUT | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | FLEX | yes |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | OUT | BENCH | NO |
@@ -119,22 +119,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Mon Nov 23, 6:28 PM CST`: 4 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Gardner Minshew II | IR | - | - | - |
-| Isaac Guerendo | PUP-R | - | - | - |
-| James Conner | IR-R | - | - | - |
-| Sam LaPorta | - | QUESTIONABLE | Nov 26 | Auto Draft Champion |
+Compared with the snapshot taken `Tue Nov 24, 12:21 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
-Record 7-3 · FAAB **$40** of $200 · waiver rank 11 · bench open **0** · IR open 1
+Record 7-4 · FAAB **$40** of $200 · waiver rank 11 · bench open **0** · IR open 1
 
-**This week:** vs Commanders of Chaos — projected 67.16 to 89.66 (margin -22.5), win probability 0.0. Posture: **heavy underdog**. Chase ceiling: prefer upside over floor, since a safe lineup still loses.
+**This week:** vs 🔥Certified Dumpster Fire 🔥 — projected 132.32 to 119.96 (margin 12.36), win probability 0.56. Posture: **favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -149,21 +140,22 @@ No open bench spot: any add needs a drop.
 
 | Slot | Player | Pos | Bye | Next | Proj | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| QB | Jayden Daniels | QB | W7 | vs CIN | 20.46 | - |
-| RB | Cam Skattebo | RB | W8 | vs JAX | 14.96 | - |
-| RB | Ollie Gordon II | RB | W6 | @ BUF | 14.41 | - |
-| WR | Amon-Ra St. Brown | WR | W6 | vs TB | 18.41 | - |
-| WR | Courtland Sutton | WR | W10 | vs LV | 10.47 | - |
-| TE | Chig Okonkwo | TE | W7 | vs CIN | 10.23 | - |
-| FLEX | Bhayshul Tuten | RB | W7 | @ NYG | 17.63 | QUESTIONABLE (back Nov 29) |
-| K | Chase McLaughlin | K | W10 | @ DET | 9.51 | - |
-| D/ST | Buccaneers D/ST | D/ST | W10 | @ DET | 4.53 | - |
+| QB | Jayden Daniels | QB | W7 | @ ARI | 23.47 | - |
+| RB | Cam Skattebo | RB | W8 | @ IND | 18.08 | - |
+| RB | Bhayshul Tuten | RB | W7 | vs TEN | 19.44 | QUESTIONABLE (back Nov 29) |
+| WR | Jaxon Smith-Njigba | WR | W11 | @ SF | 22.54 | - |
+| WR | Christian Watson | WR | W11 | @ LAR | 14.64 | - |
+| TE | Brock Bowers | TE | W13 | @ CLE | 15.53 | QUESTIONABLE (back Nov 29) |
+| FLEX | Amon-Ra St. Brown | WR | W6 | vs CHI | 18.42 | - |
+| K | Chase McLaughlin | K | W10 | vs CAR | 9.31 | - |
+| D/ST | Buccaneers D/ST | D/ST | W10 | vs CAR | 6.41 | - |
+
+**Week 13 bye pressure:** Brock Bowers (TE).
 
 ## Upcoming NFL byes
 
 | Week | Teams on bye |
 | --- | --- |
-| 11 | ATL, CLE, GB, LAR, NE, SEA |
 | 13 | BAL, IND, LV, NYJ |
 | 14 | ARI, DAL |
 
@@ -184,12 +176,12 @@ Jason X players with a designation:
 
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
-| Brock Bowers | BENCH | QUESTIONABLE | Nov 29 | Ankle |
-| Bhayshul Tuten | FLEX | QUESTIONABLE | Nov 29 | Ankle |
+| Bhayshul Tuten | RB | QUESTIONABLE | Nov 29 | Ankle |
+| Brock Bowers | TE | QUESTIONABLE | Nov 29 | Ankle |
 
 ## Recent form (last 3 completed games)
 
-Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]. Ranked 212 of 212 expected.
+Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]. Ranked 212 of 212 expected.
 
 | Pos | Limit | Qualifying | Ranked | At limit |
 | --- | --- | --- | --- | --- |
@@ -218,7 +210,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1136 total | 292 executed ownership changes | 579 lineup-only moves | 192 draft picks | 0 pending
+1140 total | 292 executed ownership changes | 583 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
