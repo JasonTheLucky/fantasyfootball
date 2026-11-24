@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-24T00:28:39.351670+00:00` |
-| Fetched at (CT) | **Mon Nov 23, 6:28 PM CST** |
+| Fetched at (UTC) | `2026-11-24T06:21:06.014067+00:00` |
+| Fetched at (CT) | **Tue Nov 24, 12:21 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **11** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 195 |
 | Available players (FA + waivers) | 868 |
 | Players in lookup index | 1063 |
-| Fetch duration | 10.65s |
+| Fetch duration | 8.71s |
 | ESPN calls | 38 |
-| Workflow run | `45297428091` |
+| Workflow run | `45339758949` |
 
 ## Freshness and completeness gates
 
@@ -36,12 +36,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| Kelli's Top-Notch Team | 130.2 | 🔥Certified Dumpster Fire 🔥 | 63.16 | NO |
-| The Bye Week Boys | 116.74 | Connor’s Team | 67.7 | NO |
-| Jason X | 39.5 | Commanders of Chaos | 89.66 | NO |
-| Burrow's Bunch | 92.9 | From Puka with Love | 107.0 | NO |
+| Kelli's Top-Notch Team | 130.2 | 🔥Certified Dumpster Fire 🔥 | 83.96 | NO |
+| The Bye Week Boys | 116.74 | Connor’s Team | 81.4 | NO |
+| Jason X | 67.16 | Commanders of Chaos | 89.66 | NO |
+| Burrow's Bunch | 122.9 | From Puka with Love | 117.0 | NO |
 | Giant Packer Fan | 127.96 | Auto Draft Champion | 132.28 | NO |
-| Broken Hand Club | 134.06 | Nicole's Gnarly Team | 112.56 | NO |
+| Broken Hand Club | 134.06 | Nicole's Gnarly Team | 121.16 | NO |
 
 ## Rosters
 
@@ -79,7 +79,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (24)
+## Injury designations (25)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -87,6 +87,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Brock Bowers | TE | OUT | BENCH | NO |
 | The Bye Week Boys | Seth McGowan | RB | OUT | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
+| Auto Draft Champion | Sam LaPorta | TE | QUESTIONABLE | TE | yes |
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Kyler Murray | QB | OUT | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
@@ -118,42 +119,22 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Mon Nov 23, 12:14 PM CST`: 17 injury change(s) (0 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
+Compared with the snapshot taken `Mon Nov 23, 6:28 PM CST`: 4 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Athan Kaliakmanis | - | INACTIVE | Nov 29 | - |
-| Cam Grandy | - | INACTIVE | Nov 29 | - |
-| Christian Kirk | IR | - | - | - |
-| Dallas Goedert | - | QUESTIONABLE | Nov 26 | Commanders of Chaos |
-| George Holani | QUESTIONABLE | IR | Dec 25 | - |
-| Jacory Croskey-Merritt | IR-R | - | - | 🔥Certified Dumpster Fire 🔥 |
-| Jake Ferguson | OUT | QUESTIONABLE | Nov 26 | - |
-| Jalen Coker | QUESTIONABLE | - | - | The Bye Week Boys |
-| Jeremiyah Love | - | IR | Dec 6 | The Bye Week Boys |
-| Jordan Addison | OUT | DOUBTFUL | Nov 29 | Broken Hand Club |
-| Kyren Williams | QUESTIONABLE | - | - | 🔥Certified Dumpster Fire 🔥 |
-| Rachaad White | QUESTIONABLE | - | - | Commanders of Chaos |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Terrance Ferguson | TE | LAR | The Bye Week Boys |
-
-**Claimed**
-
-| Name | Position | Pro Team | Added By |
-| --- | --- | --- | --- |
-| Mike Gesicki | TE | CIN | The Bye Week Boys |
+| Gardner Minshew II | IR | - | - | - |
+| Isaac Guerendo | PUP-R | - | - | - |
+| James Conner | IR-R | - | - | - |
+| Sam LaPorta | - | QUESTIONABLE | Nov 26 | Auto Draft Champion |
 
 ## Jason X
 
 Record 7-3 · FAAB **$40** of $200 · waiver rank 11 · bench open **0** · IR open 1
 
-**This week:** vs Commanders of Chaos — projected 70.2 to 94.69 (margin -24.49), win probability 0.04. Posture: **heavy underdog**. Chase ceiling: prefer upside over floor, since a safe lineup still loses.
+**This week:** vs Commanders of Chaos — projected 67.16 to 89.66 (margin -22.5), win probability 0.0. Posture: **heavy underdog**. Chase ceiling: prefer upside over floor, since a safe lineup still loses.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -188,7 +169,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-62 players in this league's pool carry an NFL designation; 20 are on injured reserve (5 of them rostered). 2 affect Jason X.
+60 players in this league's pool carry an NFL designation; 18 are on injured reserve (5 of them rostered). 2 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -212,7 +193,7 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]. Ranked 212 of 212 expecte
 
 | Pos | Limit | Qualifying | Ranked | At limit |
 | --- | --- | --- | --- | --- |
-| QB | 24 | 56 | 24 | yes |
+| QB | 24 | 57 | 24 | yes |
 | RB | 60 | 139 | 60 | yes |
 | WR | 60 | 207 | 60 | yes |
 | TE | 24 | 130 | 24 | yes |
@@ -221,17 +202,17 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]. Ranked 212 of 212 expecte
 
 ESPN `appliedTotal` vs recomputed league scoring: max absolute delta **0.0** across 636 values (tolerance 0.01). `appliedTotal` is the authoritative value; this is drift detection only.
 
-16 ranked player(s) are on `Jason X` (team id 1) and carry `is_jason_x`, which drives the pale-yellow row highlight in the daily PDF. 0 owner(s) unresolved.
+15 ranked player(s) are on `Jason X` (team id 1) and carry `is_jason_x`, which drives the pale-yellow row highlight in the daily PDF. 0 owner(s) unresolved.
 
 Top 5 overall by three-game average:
 
 | # | Player | Pos | Team | Weeks | Avg | Owner |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Joe Burrow | QB | CIN | 8, 9, 10 | 36.73 | Burrow's Bunch |
-| 2 | Ja'Marr Chase | WR | CIN | 8, 9, 10 | 34.90 | Burrow's Bunch |
-| 3 | Dak Prescott | QB | DAL | 9, 10, 11 | 31.94 | From Puka with Love |
-| 4 | Christian McCaffrey | RB | SF | 9, 10, 11 | 29.73 | Auto Draft Champion |
-| 5 | CeeDee Lamb | WR | DAL | 9, 10, 11 | 29.30 | Nicole's Gnarly Team |
+| 1 | Dak Prescott | QB | DAL | 9, 10, 11 | 31.94 | From Puka with Love |
+| 2 | Christian McCaffrey | RB | SF | 9, 10, 11 | 29.73 | Auto Draft Champion |
+| 3 | Joe Burrow | QB | CIN | 9, 10, 11 | 29.53 | Burrow's Bunch |
+| 4 | CeeDee Lamb | WR | DAL | 9, 10, 11 | 29.30 | Nicole's Gnarly Team |
+| 5 | Jahmyr Gibbs | RB | DET | 9, 10, 11 | 29.13 | Giant Packer Fan |
 
 Owner in **bold** means `is_jason_x` is true.
 
