@@ -1,69 +1,108 @@
 {
   "usage": "What changed since the previous snapshot, which is the delta the daily report's 'last ~24 hours' framing needs. Compared against the player_index.json present when this run started, so the window is one snapshot interval (roughly six hours), not exactly 24 hours: previous_snapshot_at says when. injury_changes is the highest-value list and is sorted with Jason X players first; direction is new, changed or cleared. became_available are players dropped by a rival and now addable. became_rostered are players claimed, which is how a target you were considering disappears. changed_team is a trade or a waiver move between teams. comparable is false on a first run or when no previous snapshot was present, in which case every list is empty and absence of change must not be reported as stability.",
   "comparable": true,
-  "previous_snapshot_at": "2026-11-25T02:01:01.420031+00:00",
-  "previous_snapshot_at_ct": "Tue Nov 24, 8:01 PM CST",
+  "previous_snapshot_at": "2026-11-25T06:21:23.315414+00:00",
+  "previous_snapshot_at_ct": "Wed Nov 25, 12:21 AM CST",
   "previous_scoring_period_id": 12,
   "counts": {
-    "injury_changes": 3,
+    "injury_changes": 0,
     "jason_x_injury_changes": 0,
-    "became_available": 0,
-    "became_rostered": 0,
+    "became_available": 4,
+    "became_rostered": 6,
     "changed_team": 0,
     "new_to_pool": 0
   },
-  "injury_changes": [
+  "injury_changes": [],
+  "jason_x_injury_changes": [],
+  "became_available": [
     {
-      "player_id": 4678008,
-      "name": "Jonathon Brooks",
-      "position": "RB",
-      "pro_team": "CAR",
-      "from": "IR-R",
-      "to": null,
-      "expected_return": null,
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "cleared"
+      "player_id": -16002,
+      "name": "Bills D/ST",
+      "position": "D/ST",
+      "pro_team": "BUF",
+      "dropped_by": "Burrow's Bunch",
+      "now": "WAIVERS"
     },
     {
-      "player_id": 3916387,
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "pro_team": "BAL",
-      "from": "IR",
-      "to": null,
-      "expected_return": null,
-      "on_nfl_ir": false,
-      "fantasy_status": "ROSTERED",
-      "fantasy_team": "Broken Hand Club",
-      "is_jason_x": false,
-      "direction": "cleared"
+      "player_id": -16012,
+      "name": "Chiefs D/ST",
+      "position": "D/ST",
+      "pro_team": "KC",
+      "dropped_by": "The Bye Week Boys",
+      "now": "WAIVERS"
     },
     {
-      "player_id": 4428557,
-      "name": "Tyjae Spears",
-      "position": "RB",
+      "player_id": 4883647,
+      "name": "Elic Ayomanor",
+      "position": "WR",
       "pro_team": "TEN",
-      "from": "IR",
-      "to": null,
-      "expected_return": null,
-      "on_nfl_ir": false,
-      "fantasy_status": "AVAILABLE",
-      "fantasy_team": null,
-      "is_jason_x": false,
-      "direction": "cleared"
+      "dropped_by": "Broken Hand Club",
+      "now": "WAIVERS"
+    },
+    {
+      "player_id": 4686468,
+      "name": "Seth McGowan",
+      "position": "RB",
+      "pro_team": "IND",
+      "dropped_by": "The Bye Week Boys",
+      "now": "WAIVERS"
     }
   ],
-  "jason_x_injury_changes": [],
-  "became_available": [],
-  "became_rostered": [],
+  "became_rostered": [
+    {
+      "player_id": 4360438,
+      "name": "Brandon Aiyuk",
+      "position": "WR",
+      "pro_team": "FA",
+      "added_by": "The Bye Week Boys",
+      "is_jason_x": false
+    },
+    {
+      "player_id": 4431268,
+      "name": "Chimere Dike",
+      "position": "WR",
+      "pro_team": "TEN",
+      "added_by": "Broken Hand Club",
+      "is_jason_x": false
+    },
+    {
+      "player_id": 4362619,
+      "name": "Chris Rodriguez Jr.",
+      "position": "RB",
+      "pro_team": "JAX",
+      "added_by": "The Bye Week Boys",
+      "is_jason_x": false
+    },
+    {
+      "player_id": -16019,
+      "name": "Giants D/ST",
+      "position": "D/ST",
+      "pro_team": "NYG",
+      "added_by": "Burrow's Bunch",
+      "is_jason_x": false
+    },
+    {
+      "player_id": 4603186,
+      "name": "Jack Bech",
+      "position": "WR",
+      "pro_team": "LV",
+      "added_by": "From Puka with Love",
+      "is_jason_x": false
+    },
+    {
+      "player_id": 4430968,
+      "name": "Kimani Vidal",
+      "position": "RB",
+      "pro_team": "LAC",
+      "added_by": "Broken Hand Club",
+      "is_jason_x": false
+    }
+  ],
   "changed_team": [],
   "new_to_pool": [],
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 12,
-  "fetched_at": "2026-11-25T06:21:12.859384+00:00",
-  "fetched_at_ct_label": "Wed Nov 25, 12:21 AM CST"
+  "fetched_at": "2026-11-25T12:19:03.943275+00:00",
+  "fetched_at_ct_label": "Wed Nov 25, 6:19 AM CST"
 }
