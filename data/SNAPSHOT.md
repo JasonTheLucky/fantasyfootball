@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-25T00:31:53.469075+00:00` |
-| Fetched at (CT) | **Tue Nov 24, 6:31 PM CST** |
+| Fetched at (UTC) | `2026-11-25T02:01:01.420031+00:00` |
+| Fetched at (CT) | **Tue Nov 24, 8:01 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 194 |
 | Available players (FA + waivers) | 869 |
 | Players in lookup index | 1063 |
-| Fetch duration | 11.19s |
+| Fetch duration | 9.76s |
 | ESPN calls | 41 |
-| Workflow run | `45518740228` |
+| Workflow run | `45529861669` |
 
 ## Freshness and completeness gates
 
@@ -118,24 +118,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Tue Nov 24, 12:14 PM CST`: 12 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Ben Skowronek | - | QUESTIONABLE | Nov 27 | - |
-| Ben VanSumeren | QUESTIONABLE | IR | Dec 27 | - |
-| Caleb Lohner | IR-R | - | - | - |
-| Dallas Goedert | QUESTIONABLE | - | - | Commanders of Chaos |
-| Denzel Boston | - | QUESTIONABLE | Nov 29 | Giant Packer Fan |
-| J.K. Dobbins | - | OUT | Dec 6 | Broken Hand Club |
-| Jake Ferguson | QUESTIONABLE | DOUBTFUL | Nov 26 | - |
-| Noah Gray | QUESTIONABLE | - | - | - |
-| Sam LaPorta | QUESTIONABLE | - | - | Auto Draft Champion |
-| Saquon Barkley | QUESTIONABLE | - | - | Kelli's Top-Notch Team |
-| Tanner McKee | QUESTIONABLE | - | - | - |
-| Tyler Badie | - | IR-R | Nov 27 | - |
+Compared with the snapshot taken `Tue Nov 24, 6:31 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
