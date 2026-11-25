@@ -1,18 +1,61 @@
 {
   "usage": "What changed since the previous snapshot, which is the delta the daily report's 'last ~24 hours' framing needs. Compared against the player_index.json present when this run started, so the window is one snapshot interval (roughly six hours), not exactly 24 hours: previous_snapshot_at says when. injury_changes is the highest-value list and is sorted with Jason X players first; direction is new, changed or cleared. became_available are players dropped by a rival and now addable. became_rostered are players claimed, which is how a target you were considering disappears. changed_team is a trade or a waiver move between teams. comparable is false on a first run or when no previous snapshot was present, in which case every list is empty and absence of change must not be reported as stability.",
   "comparable": true,
-  "previous_snapshot_at": "2026-11-25T00:31:53.469075+00:00",
-  "previous_snapshot_at_ct": "Tue Nov 24, 6:31 PM CST",
+  "previous_snapshot_at": "2026-11-25T02:01:01.420031+00:00",
+  "previous_snapshot_at_ct": "Tue Nov 24, 8:01 PM CST",
   "previous_scoring_period_id": 12,
   "counts": {
-    "injury_changes": 0,
+    "injury_changes": 3,
     "jason_x_injury_changes": 0,
     "became_available": 0,
     "became_rostered": 0,
     "changed_team": 0,
     "new_to_pool": 0
   },
-  "injury_changes": [],
+  "injury_changes": [
+    {
+      "player_id": 4678008,
+      "name": "Jonathon Brooks",
+      "position": "RB",
+      "pro_team": "CAR",
+      "from": "IR-R",
+      "to": null,
+      "expected_return": null,
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "cleared"
+    },
+    {
+      "player_id": 3916387,
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "pro_team": "BAL",
+      "from": "IR",
+      "to": null,
+      "expected_return": null,
+      "on_nfl_ir": false,
+      "fantasy_status": "ROSTERED",
+      "fantasy_team": "Broken Hand Club",
+      "is_jason_x": false,
+      "direction": "cleared"
+    },
+    {
+      "player_id": 4428557,
+      "name": "Tyjae Spears",
+      "position": "RB",
+      "pro_team": "TEN",
+      "from": "IR",
+      "to": null,
+      "expected_return": null,
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "cleared"
+    }
+  ],
   "jason_x_injury_changes": [],
   "became_available": [],
   "became_rostered": [],
@@ -21,6 +64,6 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 12,
-  "fetched_at": "2026-11-25T02:00:51.656906+00:00",
-  "fetched_at_ct_label": "Tue Nov 24, 8:00 PM CST"
+  "fetched_at": "2026-11-25T06:21:12.859384+00:00",
+  "fetched_at_ct_label": "Wed Nov 25, 12:21 AM CST"
 }

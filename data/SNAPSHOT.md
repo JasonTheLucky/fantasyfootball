@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-25T02:01:01.420031+00:00` |
-| Fetched at (CT) | **Tue Nov 24, 8:01 PM CST** |
+| Fetched at (UTC) | `2026-11-25T06:21:23.315414+00:00` |
+| Fetched at (CT) | **Wed Nov 25, 12:21 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 194 |
 | Available players (FA + waivers) | 869 |
 | Players in lookup index | 1063 |
-| Fetch duration | 9.76s |
+| Fetch duration | 10.46s |
 | ESPN calls | 41 |
-| Workflow run | `45529861669` |
+| Workflow run | `45559936706` |
 
 ## Freshness and completeness gates
 
@@ -118,7 +118,15 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Tue Nov 24, 6:31 PM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Tue Nov 24, 8:01 PM CST`: 3 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| Jonathon Brooks | IR-R | - | - | - |
+| Lamar Jackson | IR | - | - | Broken Hand Club |
+| Tyjae Spears | IR | - | - | - |
 
 ## Jason X
 
@@ -160,7 +168,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-56 players in this league's pool carry an NFL designation; 20 are on injured reserve (5 of them rostered). 2 affect Jason X.
+53 players in this league's pool carry an NFL designation; 17 are on injured reserve (4 of them rostered). 2 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -169,7 +177,7 @@ No open bench spot: any add needs a drop.
 | Alec Pierce | Connor’s Team | 2027-01-10 |
 | Davante Adams | Connor’s Team | 2026-12-13 |
 
-**In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jalen McMillan (🔥Certified Dumpster Fire 🔥), Travis Etienne Jr. (Connor’s Team).
+**In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Jalen McMillan (🔥Certified Dumpster Fire 🔥), Lamar Jackson (Broken Hand Club), Travis Etienne Jr. (Connor’s Team).
 
 Jason X players with a designation:
 
@@ -209,7 +217,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1148 total | 293 executed ownership changes | 588 lineup-only moves | 192 draft picks | 0 pending
+1149 total | 293 executed ownership changes | 588 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
