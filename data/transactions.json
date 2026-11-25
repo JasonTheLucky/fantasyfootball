@@ -1,9 +1,9 @@
 {
   "counts": {
-    "total": 1145,
-    "ownership_changes": 367,
+    "total": 1148,
+    "ownership_changes": 368,
     "executed_ownership_changes": 293,
-    "lineup_only_moves": 586,
+    "lineup_only_moves": 588,
     "draft_picks": 192,
     "pending": 0,
     "failed": 41,
@@ -12992,6 +12992,86 @@
     }
   ],
   "lineup_only_moves": [
+    {
+      "id": "6c7f6e97-3d8e-4c71-993f-e18b842259ba",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 12,
+      "team_id": 8,
+      "team": "Giant Packer Fan",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-24T22:54:14.769000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": 2971573,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "K",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": 3917232,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "K",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
+      "id": "ee3c57ad-a5a9-4bab-a256-2d26723c0065",
+      "type": "ROSTER",
+      "status": "EXECUTED",
+      "execution_type": "EXECUTE",
+      "is_pending": false,
+      "scoring_period_id": 12,
+      "team_id": 8,
+      "team": "Giant Packer Fan",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-24T22:53:53.901000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "LINEUP",
+          "player_id": -16007,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "D/ST",
+          "to_slot": "BENCH",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "LINEUP",
+          "player_id": -16025,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": "D/ST",
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
     {
       "id": "c1b630d3-d1d4-417f-89c5-7e7e03085fe3",
       "type": "ROSTER",
@@ -37071,6 +37151,46 @@
   ],
   "all_ownership_changes": [
     {
+      "id": "85d1ee2c-7b4f-4164-bb10-d82d418d44de",
+      "type": "WAIVER",
+      "status": "CANCELED",
+      "execution_type": "CANCEL",
+      "is_pending": false,
+      "scoring_period_id": 12,
+      "team_id": 2,
+      "team": "The Bye Week Boys",
+      "bid_amount": 0,
+      "proposed_date": "2026-11-24T22:16:50.889000+00:00",
+      "processed_date": null,
+      "is_league_manager": false,
+      "items": [
+        {
+          "item_type": "ADD",
+          "player_id": 4603186,
+          "from_team_id": 0,
+          "from_team": null,
+          "to_team_id": 2,
+          "to_team": "The Bye Week Boys",
+          "from_slot": null,
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        },
+        {
+          "item_type": "DROP",
+          "player_id": -16012,
+          "from_team_id": 2,
+          "from_team": "The Bye Week Boys",
+          "to_team_id": 0,
+          "to_team": null,
+          "from_slot": "BENCH",
+          "to_slot": null,
+          "overall_pick_number": 0,
+          "is_keeper": false
+        }
+      ]
+    },
+    {
       "id": "92533297-d43d-4efe-ab6f-b26e4f1ccb55",
       "type": "ROSTER",
       "status": "EXECUTED",
@@ -55576,7 +55696,7 @@
     }
   ],
   "rows_per_scoring_period": {
-    "0": 6,
+    "0": 9,
     "1": 238,
     "2": 56,
     "3": 68,
@@ -55588,10 +55708,10 @@
     "9": 91,
     "10": 82,
     "11": 86,
-    "12": 6
+    "12": 9
   },
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 12,
-  "fetched_at": "2026-11-24T18:14:09.660330+00:00"
+  "fetched_at": "2026-11-25T00:31:42.274708+00:00"
 }

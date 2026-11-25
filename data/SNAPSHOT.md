@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-24T18:14:20.488333+00:00` |
-| Fetched at (CT) | **Tue Nov 24, 12:14 PM CST** |
+| Fetched at (UTC) | `2026-11-25T00:31:53.469075+00:00` |
+| Fetched at (CT) | **Tue Nov 24, 6:31 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 194 |
 | Available players (FA + waivers) | 869 |
 | Players in lookup index | 1063 |
-| Fetch duration | 10.83s |
+| Fetch duration | 11.19s |
 | ESPN calls | 41 |
-| Workflow run | `45457272832` |
+| Workflow run | `45518740228` |
 
 ## Freshness and completeness gates
 
@@ -79,7 +79,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (25)
+## Injury designations (24)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -87,12 +87,12 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Bhayshul Tuten | RB | QUESTIONABLE | RB | yes |
 | The Bye Week Boys | Seth McGowan | RB | OUT | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
-| Auto Draft Champion | Sam LaPorta | TE | QUESTIONABLE | TE | yes |
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Broken Hand Club | Josh Jacobs | RB | QUESTIONABLE | BENCH | NO |
 | Broken Hand Club | Jordan Addison | WR | DOUBTFUL | BENCH | NO |
+| Broken Hand Club | J.K. Dobbins | RB | OUT | BENCH | NO |
 | Broken Hand Club | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
 | Burrow's Bunch | Kenneth Walker III | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Woody Marks | RB | QUESTIONABLE | BENCH | NO |
@@ -103,11 +103,10 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
+| Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
-| Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | FLEX | yes |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Dallas Goedert | TE | QUESTIONABLE | TE | yes |
 
 ## Available player pool by position
 
@@ -119,22 +118,24 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Tue Nov 24, 6:18 AM CST`: 4 injury change(s) (0 affecting Jason X), 1 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Tue Nov 24, 12:14 PM CST`: 12 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Athan Kaliakmanis | INACTIVE | - | - | - |
-| Cam Grandy | INACTIVE | - | - | - |
-| Raheim Sanders | - | IR-R | Nov 29 | - |
-| Robert Henry Jr. | INACTIVE | - | - | - |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Emari Demercado | RB | HOU | From Puka with Love |
+| Ben Skowronek | - | QUESTIONABLE | Nov 27 | - |
+| Ben VanSumeren | QUESTIONABLE | IR | Dec 27 | - |
+| Caleb Lohner | IR-R | - | - | - |
+| Dallas Goedert | QUESTIONABLE | - | - | Commanders of Chaos |
+| Denzel Boston | - | QUESTIONABLE | Nov 29 | Giant Packer Fan |
+| J.K. Dobbins | - | OUT | Dec 6 | Broken Hand Club |
+| Jake Ferguson | QUESTIONABLE | DOUBTFUL | Nov 26 | - |
+| Noah Gray | QUESTIONABLE | - | - | - |
+| Sam LaPorta | QUESTIONABLE | - | - | Auto Draft Champion |
+| Saquon Barkley | QUESTIONABLE | - | - | Kelli's Top-Notch Team |
+| Tanner McKee | QUESTIONABLE | - | - | - |
+| Tyler Badie | - | IR-R | Nov 27 | - |
 
 ## Jason X
 
@@ -176,7 +177,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-58 players in this league's pool carry an NFL designation; 19 are on injured reserve (5 of them rostered). 2 affect Jason X.
+56 players in this league's pool carry an NFL designation; 20 are on injured reserve (5 of them rostered). 2 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -225,7 +226,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1145 total | 293 executed ownership changes | 586 lineup-only moves | 192 draft picks | 0 pending
+1148 total | 293 executed ownership changes | 588 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
