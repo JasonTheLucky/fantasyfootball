@@ -1,100 +1,133 @@
 {
   "usage": "What changed since the previous snapshot, which is the delta the daily report's 'last ~24 hours' framing needs. Compared against the player_index.json present when this run started, so the window is one snapshot interval (roughly six hours), not exactly 24 hours: previous_snapshot_at says when. injury_changes is the highest-value list and is sorted with Jason X players first; direction is new, changed or cleared. became_available are players dropped by a rival and now addable. became_rostered are players claimed, which is how a target you were considering disappears. changed_team is a trade or a waiver move between teams. comparable is false on a first run or when no previous snapshot was present, in which case every list is empty and absence of change must not be reported as stability.",
   "comparable": true,
-  "previous_snapshot_at": "2026-11-25T06:21:23.315414+00:00",
-  "previous_snapshot_at_ct": "Wed Nov 25, 12:21 AM CST",
+  "previous_snapshot_at": "2026-11-25T12:19:14.411971+00:00",
+  "previous_snapshot_at_ct": "Wed Nov 25, 6:19 AM CST",
   "previous_scoring_period_id": 12,
   "counts": {
-    "injury_changes": 0,
+    "injury_changes": 4,
     "jason_x_injury_changes": 0,
-    "became_available": 4,
-    "became_rostered": 6,
+    "became_available": 3,
+    "became_rostered": 4,
     "changed_team": 0,
     "new_to_pool": 0
   },
-  "injury_changes": [],
+  "injury_changes": [
+    {
+      "player_id": 4430834,
+      "name": "Jalen McMillan",
+      "position": "WR",
+      "pro_team": "TB",
+      "from": null,
+      "to": "IR-R",
+      "expected_return": "Nov 30",
+      "on_nfl_ir": true,
+      "fantasy_status": "ROSTERED",
+      "fantasy_team": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
+      "is_jason_x": false,
+      "direction": "new"
+    },
+    {
+      "player_id": 4567048,
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "pro_team": "KC",
+      "from": "QUESTIONABLE",
+      "to": "OUT",
+      "expected_return": "Dec 3",
+      "on_nfl_ir": false,
+      "fantasy_status": "ROSTERED",
+      "fantasy_team": "Burrow's Bunch",
+      "is_jason_x": false,
+      "direction": "changed"
+    },
+    {
+      "player_id": 4240472,
+      "name": "Noah Gray",
+      "position": "TE",
+      "pro_team": "KC",
+      "from": null,
+      "to": "QUESTIONABLE",
+      "expected_return": "Nov 26",
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "new"
+    },
+    {
+      "player_id": 4431545,
+      "name": "Will Shipley",
+      "position": "RB",
+      "pro_team": "PHI",
+      "from": "QUESTIONABLE",
+      "to": null,
+      "expected_return": null,
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "cleared"
+    }
+  ],
   "jason_x_injury_changes": [],
   "became_available": [
     {
-      "player_id": -16002,
-      "name": "Bills D/ST",
-      "position": "D/ST",
-      "pro_team": "BUF",
+      "player_id": 4426338,
+      "name": "Bo Nix",
+      "position": "QB",
+      "pro_team": "DEN",
+      "dropped_by": "Jason X",
+      "now": "WAIVERS"
+    },
+    {
+      "player_id": 17427,
+      "name": "Cairo Santos",
+      "position": "K",
+      "pro_team": "CHI",
       "dropped_by": "Burrow's Bunch",
       "now": "WAIVERS"
     },
     {
-      "player_id": -16012,
-      "name": "Chiefs D/ST",
-      "position": "D/ST",
-      "pro_team": "KC",
-      "dropped_by": "The Bye Week Boys",
-      "now": "WAIVERS"
-    },
-    {
-      "player_id": 4883647,
-      "name": "Elic Ayomanor",
+      "player_id": 3128429,
+      "name": "Courtland Sutton",
       "position": "WR",
-      "pro_team": "TEN",
-      "dropped_by": "Broken Hand Club",
-      "now": "WAIVERS"
-    },
-    {
-      "player_id": 4686468,
-      "name": "Seth McGowan",
-      "position": "RB",
-      "pro_team": "IND",
-      "dropped_by": "The Bye Week Boys",
+      "pro_team": "DEN",
+      "dropped_by": "Jason X",
       "now": "WAIVERS"
     }
   ],
   "became_rostered": [
     {
-      "player_id": 4360438,
-      "name": "Brandon Aiyuk",
+      "player_id": 3122840,
+      "name": "Deshaun Watson",
+      "position": "QB",
+      "pro_team": "CLE",
+      "added_by": "Jason X",
+      "is_jason_x": true
+    },
+    {
+      "player_id": 4723820,
+      "name": "Omar Cooper Jr.",
       "position": "WR",
-      "pro_team": "FA",
-      "added_by": "The Bye Week Boys",
-      "is_jason_x": false
+      "pro_team": "NYJ",
+      "added_by": "Jason X",
+      "is_jason_x": true
     },
     {
-      "player_id": 4431268,
-      "name": "Chimere Dike",
-      "position": "WR",
-      "pro_team": "TEN",
-      "added_by": "Broken Hand Club",
-      "is_jason_x": false
-    },
-    {
-      "player_id": 4362619,
-      "name": "Chris Rodriguez Jr.",
-      "position": "RB",
-      "pro_team": "JAX",
-      "added_by": "The Bye Week Boys",
-      "is_jason_x": false
-    },
-    {
-      "player_id": -16019,
-      "name": "Giants D/ST",
-      "position": "D/ST",
+      "player_id": 5082424,
+      "name": "Dominic Zvada",
+      "position": "K",
       "pro_team": "NYG",
       "added_by": "Burrow's Bunch",
       "is_jason_x": false
     },
     {
-      "player_id": 4603186,
-      "name": "Jack Bech",
+      "player_id": 4710855,
+      "name": "Konata Mumpfield",
       "position": "WR",
-      "pro_team": "LV",
-      "added_by": "From Puka with Love",
-      "is_jason_x": false
-    },
-    {
-      "player_id": 4430968,
-      "name": "Kimani Vidal",
-      "position": "RB",
-      "pro_team": "LAC",
-      "added_by": "Broken Hand Club",
+      "pro_team": "LAR",
+      "added_by": "Burrow's Bunch",
       "is_jason_x": false
     }
   ],
@@ -103,6 +136,6 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 12,
-  "fetched_at": "2026-11-25T12:19:03.943275+00:00",
-  "fetched_at_ct_label": "Wed Nov 25, 6:19 AM CST"
+  "fetched_at": "2026-11-25T18:13:55.101200+00:00",
+  "fetched_at_ct_label": "Wed Nov 25, 12:13 PM CST"
 }
