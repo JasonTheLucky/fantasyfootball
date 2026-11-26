@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-26T12:18:14.116658+00:00` |
-| Fetched at (CT) | **Thu Nov 26, 6:18 AM CST** |
+| Fetched at (UTC) | `2026-11-26T18:14:15.848974+00:00` |
+| Fetched at (CT) | **Thu Nov 26, 12:14 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1063 |
-| Fetch duration | 10.6s |
+| Fetch duration | 10.71s |
 | ESPN calls | 41 |
-| Workflow run | `45818347463` |
+| Workflow run | `45874251880` |
 
 ## Freshness and completeness gates
 
@@ -36,12 +36,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| The Bye Week Boys | 0.0 | Kelli's Top-Notch Team | 0.0 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 16.5 | Jason X | 16.5 | NO |
+| The Bye Week Boys | 0.0 | Kelli's Top-Notch Team | 10.0 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 16.5 | Jason X | 23.1 | NO |
 | Connor’s Team | 4.9 | Burrow's Bunch | 0.0 | NO |
-| Commanders of Chaos | 3.6 | Giant Packer Fan | 0.0 | NO |
-| From Puka with Love | 0.0 | Broken Hand Club | 0.0 | NO |
-| Auto Draft Champion | 0.0 | Nicole's Gnarly Team | 0.0 | NO |
+| Commanders of Chaos | 3.6 | Giant Packer Fan | 2.2 | NO |
+| From Puka with Love | 9.0 | Broken Hand Club | 1.84 | NO |
+| Auto Draft Champion | 0.0 | Nicole's Gnarly Team | 3.0 | NO |
 
 ## Rosters
 
@@ -109,7 +109,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | BENCH | NO |
-| Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
+| Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Brock Purdy | QB | QUESTIONABLE | QB | yes |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | QUESTIONABLE | BENCH | NO |
@@ -124,19 +124,43 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 16 | 43 | 112 | 191 | 183 | 321 | 866 |
+| 16 | 43 | 112 | 190 | 184 | 321 | 866 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Thu Nov 26, 12:21 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Thu Nov 26, 6:18 AM CST`: 5 injury change(s) (0 affecting Jason X), 2 newly available, 2 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| Case Keenum | - | INACTIVE | Dec 6 | - |
+| Davante Adams | IR | - | - | Connor’s Team |
+| Puka Nacua | IR | - | - | - |
+| Roschon Johnson | OUT | INACTIVE | Dec 6 | - |
+| Terrance Ferguson | IR | - | - | - |
+
+**Newly available**
+
+| Name | Position | Pro Team | Dropped By |
+| --- | --- | --- | --- |
+| Dawson Knox | TE | BUF | Nicole's Gnarly Team |
+| Michael Mayer | TE | LV | The Bye Week Boys |
+
+**Claimed**
+
+| Name | Position | Pro Team | Added By |
+| --- | --- | --- | --- |
+| Bam Knight | RB | ARI | The Bye Week Boys |
+| Kyle Pitts Sr. | TE | ATL | Nicole's Gnarly Team |
 
 ## Jason X
 
 Record 7-4 · FAAB **$40** of $200 · waiver rank 8 · bench open **0** · IR open 1
 
-**This week:** vs 🔥Certified Dumpster Fire 🔥 — projected 144.39 to 117.92 (margin 26.47), win probability 0.64. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs 🔥Certified Dumpster Fire 🔥 — projected 149.87 to 117.92 (margin 31.95), win probability 0.67. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -172,14 +196,13 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-77 players in this league's pool carry an NFL designation; 18 are on injured reserve (5 of them rostered). 6 affect Jason X.
+75 players in this league's pool carry an NFL designation; 15 are on injured reserve (4 of them rostered). 6 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
 | Player | Fantasy team | Expected return |
 | --- | --- | --- |
 | Alec Pierce | Connor’s Team | 2027-01-10 |
-| Davante Adams | Connor’s Team | 2026-12-13 |
 
 **In a fantasy IR slot without an NFL IR designation:** Isiah Pacheco (Auto Draft Champion), Kenneth Walker III (Burrow's Bunch), Lamar Jackson (Broken Hand Club), Travis Etienne Jr. (Connor’s Team).
 
@@ -202,8 +225,8 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]. Ranked 212 of 212 exp
 | --- | --- | --- | --- | --- |
 | QB | 24 | 57 | 24 | yes |
 | RB | 60 | 139 | 60 | yes |
-| WR | 60 | 207 | 60 | yes |
-| TE | 24 | 130 | 24 | yes |
+| WR | 60 | 208 | 60 | yes |
+| TE | 24 | 131 | 24 | yes |
 | K | 24 | 36 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
 
@@ -219,18 +242,20 @@ Top 5 overall by three-game average:
 | 2 | Christian McCaffrey | RB | SF | 9, 10, 11 | 29.73 | Auto Draft Champion |
 | 3 | Joe Burrow | QB | CIN | 9, 10, 11 | 29.53 | Burrow's Bunch |
 | 4 | CeeDee Lamb | WR | DAL | 9, 10, 11 | 29.30 | Nicole's Gnarly Team |
-| 5 | Jahmyr Gibbs | RB | DET | 9, 10, 11 | 29.13 | Giant Packer Fan |
+| 5 | Brock Purdy | QB | SF | 9, 10, 11 | 28.38 | Kelli's Top-Notch Team |
 
 Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1175 total | 305 executed ownership changes | 599 lineup-only moves | 192 draft picks | 0 pending
+1180 total | 307 executed ownership changes | 602 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-26T16:48 | The Bye Week Boys | FREEAGENT | ADD Bam Knight, DROP Michael Mayer |
+| 2026-11-26T14:45 | Nicole's Gnarly Team | FREEAGENT | ADD Kyle Pitts Sr., DROP Dawson Knox |
 | 2026-11-26T04:27 | Broken Hand Club | FREEAGENT | ADD Austin Ekeler, DROP Darren Waller |
 | 2026-11-25T19:35 | The Bye Week Boys | FREEAGENT | ADD Jason Sanders, DROP Wil Lutz |
 | 2026-11-25T17:31 | Burrow's Bunch | FREEAGENT | ADD Dominic Zvada, DROP Cairo Santos |
@@ -241,8 +266,6 @@ Most recent ownership changes:
 | 2026-11-25T08:46 | Broken Hand Club | WAIVER | ADD Kimani Vidal |
 | 2026-11-25T08:46 | Burrow's Bunch | WAIVER | ADD Giants D/ST, DROP Bills D/ST |
 | 2026-11-25T08:46 | The Bye Week Boys | WAIVER | ADD Brandon Aiyuk, DROP Chiefs D/ST |
-| 2026-11-25T08:46 | The Bye Week Boys | WAIVER | ADD Chris Rodriguez Jr., DROP Seth McGowan |
-| 2026-11-25T08:46 | From Puka with Love | WAIVER | ADD Jack Bech |
 
 ## League format
 

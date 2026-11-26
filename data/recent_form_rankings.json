@@ -86,7 +86,7 @@
     },
     "WR": {
       "limit": 60,
-      "qualifying": 207,
+      "qualifying": 208,
       "ranked": 60,
       "sufficient": true,
       "weeks_used": [
@@ -105,10 +105,13 @@
     },
     "TE": {
       "limit": 24,
-      "qualifying": 130,
+      "qualifying": 131,
       "ranked": 24,
       "sufficient": true,
       "weeks_used": [
+        1,
+        2,
+        3,
         8,
         9,
         10,
@@ -180,13 +183,13 @@
   },
   "diagnostics": {
     "players_seen": 1063,
-    "weekly_values_collected": 5032,
-    "excluded_out_for_season": 3,
+    "weekly_values_collected": 5045,
+    "excluded_out_for_season": 1,
     "espn_requests": 24,
     "page_size": 1000,
     "invalid_values": 0,
-    "not_played_excluded": 2212,
-    "zero_point_games_kept": 1419
+    "not_played_excluded": 2242,
+    "zero_point_games_kept": 1424
   },
   "excluded_out_for_season": [
     {
@@ -194,20 +197,6 @@
       "name": "Luke Musgrave",
       "position": "TE",
       "designation": "PUP-R",
-      "expected_return": "2027-02-15"
-    },
-    {
-      "player_id": 4570037,
-      "name": "Terrance Ferguson",
-      "position": "TE",
-      "designation": "IR",
-      "expected_return": "2027-02-15"
-    },
-    {
-      "player_id": 4426515,
-      "name": "Puka Nacua",
-      "position": "WR",
-      "designation": "IR",
       "expected_return": "2027-02-15"
     }
   ],
@@ -223,16 +212,15 @@
       4036378,
       3122840,
       4426348,
-      3046779,
       3917315,
       4038941,
       3918298,
+      3046779,
       4242512,
       4426338,
       4685720,
       4360689,
       4431452,
-      4431611,
       3912547,
       4040715,
       4837248,
@@ -246,6 +234,7 @@
       15864,
       3924327,
       4685201,
+      4431611,
       3052587,
       4038524,
       4035671,
@@ -414,17 +403,18 @@
     ],
     "WR": [
       4241389,
+      4426515,
       4362628,
       4426354,
       4430878,
       4432620,
       16737,
-      4374302,
       4248528,
       4258173,
       4360761,
       4701936,
       3915416,
+      4374302,
       4362921,
       4871023,
       4685278,
@@ -440,14 +430,12 @@
       4569618,
       3126486,
       4361432,
-      4431299,
       2976212,
       16800,
       4612826,
       3121422,
       4431268,
       4366031,
-      4426388,
       4427095,
       4595348,
       4373678,
@@ -457,6 +445,7 @@
       4686422,
       2991662,
       4688813,
+      4426388,
       4600981,
       3916433,
       4567750,
@@ -466,6 +455,7 @@
       4869645,
       4603186,
       4372016,
+      4431299,
       4710855,
       4880281,
       4360939,
@@ -514,7 +504,6 @@
       4241463,
       4432773,
       4386544,
-      4869748,
       4429684,
       4597500,
       4723820,
@@ -522,9 +511,9 @@
       4608810,
       4692835,
       3676833,
+      4869748,
       4686472,
       4597703,
-      5123663,
       3043116,
       4699354,
       3051889,
@@ -536,6 +525,7 @@
       4635008,
       4696882,
       4567096,
+      5123663,
       4635009,
       16731,
       3116165,
@@ -581,7 +571,6 @@
       4360763,
       4426948,
       5150247,
-      2580216,
       4575665,
       4690070,
       4692590,
@@ -590,6 +579,7 @@
       4683151,
       4372414,
       16733,
+      2580216,
       3123075,
       3126997,
       3871102,
@@ -641,6 +631,7 @@
       3121023,
       3051876,
       4683243,
+      4570037,
       4430802,
       4430027,
       3116164,
@@ -768,8 +759,6 @@
       4869461,
       3051909,
       4258620,
-      17427,
-      4689936,
       5208518,
       17372,
       2985659,
@@ -784,6 +773,8 @@
       4034949,
       4249087,
       4243371,
+      17427,
+      4689936,
       10621,
       4697745,
       4363538,
@@ -1118,34 +1109,6 @@
         "is_jason_x": true
       },
       {
-        "player_id": 3046779,
-        "name": "Jared Goff",
-        "position": "QB",
-        "pro_team": "DET",
-        "games": [
-          {
-            "scoring_period_id": 9,
-            "points": 5.3
-          },
-          {
-            "scoring_period_id": 10,
-            "points": 24.42
-          },
-          {
-            "scoring_period_id": 11,
-            "points": 22.36
-          }
-        ],
-        "avg_3_game_exact": 17.36,
-        "avg_3_game": 17.36,
-        "avg_3_game_display": "17.36",
-        "rank": 11,
-        "owner_label": "Broken Hand Club",
-        "owner_team_id": 4,
-        "fantasy_status": "ROSTERED",
-        "is_jason_x": false
-      },
-      {
         "player_id": 3917315,
         "name": "Kyler Murray",
         "position": "QB",
@@ -1167,7 +1130,7 @@
         "avg_3_game_exact": 17.353333333333335,
         "avg_3_game": 17.353333,
         "avg_3_game_display": "17.35",
-        "rank": 12,
+        "rank": 11,
         "owner_label": "Auto Draft Champion",
         "owner_team_id": 3,
         "fantasy_status": "ROSTERED",
@@ -1204,7 +1167,7 @@
         "avg_3_game_exact": 17.040000000000003,
         "avg_3_game": 17.04,
         "avg_3_game_display": "17.04",
-        "rank": 13,
+        "rank": 12,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -1241,9 +1204,37 @@
         "avg_3_game_exact": 16.453333333333333,
         "avg_3_game": 16.453333,
         "avg_3_game_display": "16.45",
-        "rank": 14,
+        "rank": 13,
         "owner_label": "Giant Packer Fan",
         "owner_team_id": 8,
+        "fantasy_status": "ROSTERED",
+        "is_jason_x": false
+      },
+      {
+        "player_id": 3046779,
+        "name": "Jared Goff",
+        "position": "QB",
+        "pro_team": "DET",
+        "games": [
+          {
+            "scoring_period_id": 10,
+            "points": 24.42
+          },
+          {
+            "scoring_period_id": 11,
+            "points": 22.36
+          },
+          {
+            "scoring_period_id": 12,
+            "points": 1.84
+          }
+        ],
+        "avg_3_game_exact": 16.206666666666667,
+        "avg_3_game": 16.206667,
+        "avg_3_game_display": "16.21",
+        "rank": 14,
+        "owner_label": "Broken Hand Club",
+        "owner_team_id": 4,
         "fantasy_status": "ROSTERED",
         "is_jason_x": false
       },
@@ -1406,34 +1397,6 @@
         "on_nfl_ir": false
       },
       {
-        "player_id": 4431611,
-        "name": "Caleb Williams",
-        "position": "QB",
-        "pro_team": "CHI",
-        "games": [
-          {
-            "scoring_period_id": 8,
-            "points": 13.98
-          },
-          {
-            "scoring_period_id": 9,
-            "points": 14.76
-          },
-          {
-            "scoring_period_id": 11,
-            "points": 14.34
-          }
-        ],
-        "avg_3_game_exact": 14.36,
-        "avg_3_game": 14.36,
-        "avg_3_game_display": "14.36",
-        "rank": 20,
-        "owner_label": "Nicole's Gnarly Team",
-        "owner_team_id": 9,
-        "fantasy_status": "ROSTERED",
-        "is_jason_x": false
-      },
-      {
         "player_id": 3912547,
         "name": "Sam Darnold",
         "position": "QB",
@@ -1455,7 +1418,7 @@
         "avg_3_game_exact": 14.173333333333332,
         "avg_3_game": 14.173333,
         "avg_3_game_display": "14.17",
-        "rank": 21,
+        "rank": 20,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -1483,7 +1446,7 @@
         "avg_3_game_exact": 13.713333333333333,
         "avg_3_game": 13.713333,
         "avg_3_game_display": "13.71",
-        "rank": 22,
+        "rank": 21,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -1511,7 +1474,7 @@
         "avg_3_game_exact": 13.673333333333332,
         "avg_3_game": 13.673333,
         "avg_3_game_display": "13.67",
-        "rank": 23,
+        "rank": 22,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -1539,11 +1502,40 @@
         "avg_3_game_exact": 13.540000000000001,
         "avg_3_game": 13.54,
         "avg_3_game_display": "13.54",
-        "rank": 24,
+        "rank": 23,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
         "is_jason_x": false
+      },
+      {
+        "player_id": 3916387,
+        "name": "Lamar Jackson",
+        "position": "QB",
+        "pro_team": "BAL",
+        "games": [
+          {
+            "scoring_period_id": 3,
+            "points": 20.44
+          },
+          {
+            "scoring_period_id": 4,
+            "points": 18.88
+          },
+          {
+            "scoring_period_id": 8,
+            "points": 0.0
+          }
+        ],
+        "avg_3_game_exact": 13.106666666666667,
+        "avg_3_game": 13.106667,
+        "avg_3_game_display": "13.11",
+        "rank": 24,
+        "owner_label": "Broken Hand Club",
+        "owner_team_id": 4,
+        "fantasy_status": "ROSTERED",
+        "is_jason_x": false,
+        "in_fantasy_ir_slot": true
       }
     ],
     "RB": [
@@ -1582,21 +1574,21 @@
         "pro_team": "DET",
         "games": [
           {
-            "scoring_period_id": 9,
-            "points": 13.4
-          },
-          {
             "scoring_period_id": 10,
             "points": 46.2
           },
           {
             "scoring_period_id": 11,
             "points": 27.8
+          },
+          {
+            "scoring_period_id": 12,
+            "points": 2.2
           }
         ],
-        "avg_3_game_exact": 29.133333333333336,
-        "avg_3_game": 29.133333,
-        "avg_3_game_display": "29.13",
+        "avg_3_game_exact": 25.400000000000002,
+        "avg_3_game": 25.4,
+        "avg_3_game_display": "25.40",
         "rank": 2,
         "owner_label": "Giant Packer Fan",
         "owner_team_id": 8,
@@ -3314,6 +3306,34 @@
         "is_jason_x": false
       },
       {
+        "player_id": 4426515,
+        "name": "Puka Nacua",
+        "position": "WR",
+        "pro_team": "LAR",
+        "games": [
+          {
+            "scoring_period_id": 7,
+            "points": 21.8
+          },
+          {
+            "scoring_period_id": 8,
+            "points": 25.0
+          },
+          {
+            "scoring_period_id": 9,
+            "points": 37.0
+          }
+        ],
+        "avg_3_game_exact": 27.933333333333334,
+        "avg_3_game": 27.933333,
+        "avg_3_game_display": "27.93",
+        "rank": 2,
+        "owner_label": "WAIVERS",
+        "owner_team_id": null,
+        "fantasy_status": "AVAILABLE",
+        "is_jason_x": false
+      },
+      {
         "player_id": 4362628,
         "name": "Ja'Marr Chase",
         "position": "WR",
@@ -3335,7 +3355,7 @@
         "avg_3_game_exact": 26.566666666666666,
         "avg_3_game": 26.566667,
         "avg_3_game_display": "26.57",
-        "rank": 2,
+        "rank": 3,
         "owner_label": "Burrow's Bunch",
         "owner_team_id": 5,
         "fantasy_status": "ROSTERED",
@@ -3363,7 +3383,7 @@
         "avg_3_game_exact": 26.03333333333333,
         "avg_3_game": 26.033333,
         "avg_3_game_display": "26.03",
-        "rank": 3,
+        "rank": 4,
         "owner_label": "Burrow's Bunch",
         "owner_team_id": 5,
         "fantasy_status": "ROSTERED",
@@ -3391,7 +3411,7 @@
         "avg_3_game_exact": 24.333333333333332,
         "avg_3_game": 24.333333,
         "avg_3_game_display": "24.33",
-        "rank": 4,
+        "rank": 5,
         "owner_label": "Jason X",
         "owner_team_id": 1,
         "fantasy_status": "ROSTERED",
@@ -3428,7 +3448,7 @@
         "avg_3_game_exact": 22.2,
         "avg_3_game": 22.2,
         "avg_3_game_display": "22.20",
-        "rank": 5,
+        "rank": 6,
         "owner_label": "Burrow's Bunch",
         "owner_team_id": 5,
         "fantasy_status": "ROSTERED",
@@ -3456,7 +3476,7 @@
         "avg_3_game_exact": 21.866666666666664,
         "avg_3_game": 21.866667,
         "avg_3_game_display": "21.87",
-        "rank": 6,
+        "rank": 7,
         "owner_label": "Nicole's Gnarly Team",
         "owner_team_id": 9,
         "fantasy_status": "ROSTERED",
@@ -3470,34 +3490,6 @@
           "injury_type": "Achilles"
         },
         "on_nfl_ir": false
-      },
-      {
-        "player_id": 4374302,
-        "name": "Amon-Ra St. Brown",
-        "position": "WR",
-        "pro_team": "DET",
-        "games": [
-          {
-            "scoring_period_id": 9,
-            "points": 16.6
-          },
-          {
-            "scoring_period_id": 10,
-            "points": 27.8
-          },
-          {
-            "scoring_period_id": 11,
-            "points": 14.7
-          }
-        ],
-        "avg_3_game_exact": 19.7,
-        "avg_3_game": 19.7,
-        "avg_3_game_display": "19.70",
-        "rank": 7,
-        "owner_label": "Jason X",
-        "owner_team_id": 1,
-        "fantasy_status": "ROSTERED",
-        "is_jason_x": true
       },
       {
         "player_id": 4248528,
@@ -3649,6 +3641,34 @@
         "is_jason_x": false
       },
       {
+        "player_id": 4374302,
+        "name": "Amon-Ra St. Brown",
+        "position": "WR",
+        "pro_team": "DET",
+        "games": [
+          {
+            "scoring_period_id": 10,
+            "points": 27.8
+          },
+          {
+            "scoring_period_id": 11,
+            "points": 14.7
+          },
+          {
+            "scoring_period_id": 12,
+            "points": 6.6
+          }
+        ],
+        "avg_3_game_exact": 16.366666666666667,
+        "avg_3_game": 16.366667,
+        "avg_3_game_display": "16.37",
+        "rank": 13,
+        "owner_label": "Jason X",
+        "owner_team_id": 1,
+        "fantasy_status": "ROSTERED",
+        "is_jason_x": true
+      },
+      {
         "player_id": 4362921,
         "name": "Tyquan Thornton",
         "position": "WR",
@@ -3670,7 +3690,7 @@
         "avg_3_game_exact": 15.633333333333333,
         "avg_3_game": 15.633333,
         "avg_3_game_display": "15.63",
-        "rank": 13,
+        "rank": 14,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -3698,7 +3718,7 @@
         "avg_3_game_exact": 14.9,
         "avg_3_game": 14.9,
         "avg_3_game_display": "14.90",
-        "rank": 14,
+        "rank": 15,
         "owner_label": "Connor\u2019s Team",
         "owner_team_id": 7,
         "fantasy_status": "ROSTERED",
@@ -3726,7 +3746,7 @@
         "avg_3_game_exact": 14.866666666666667,
         "avg_3_game": 14.866667,
         "avg_3_game_display": "14.87",
-        "rank": 15,
+        "rank": 16,
         "owner_label": "Burrow's Bunch",
         "owner_team_id": 5,
         "fantasy_status": "ROSTERED",
@@ -3754,7 +3774,7 @@
         "avg_3_game_exact": 14.833333333333334,
         "avg_3_game": 14.833333,
         "avg_3_game_display": "14.83",
-        "rank": 16,
+        "rank": 17,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -3791,7 +3811,7 @@
         "avg_3_game_exact": 14.700000000000001,
         "avg_3_game": 14.7,
         "avg_3_game_display": "14.70",
-        "rank": 17,
+        "rank": 18,
         "owner_label": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
         "owner_team_id": 11,
         "fantasy_status": "ROSTERED",
@@ -3819,7 +3839,7 @@
         "avg_3_game_exact": 14.666666666666666,
         "avg_3_game": 14.666667,
         "avg_3_game_display": "14.67",
-        "rank": 18,
+        "rank": 19,
         "owner_label": "Auto Draft Champion",
         "owner_team_id": 3,
         "fantasy_status": "ROSTERED",
@@ -3847,7 +3867,7 @@
         "avg_3_game_exact": 14.033333333333333,
         "avg_3_game": 14.033333,
         "avg_3_game_display": "14.03",
-        "rank": 19,
+        "rank": 20,
         "owner_label": "The Bye Week Boys",
         "owner_team_id": 2,
         "fantasy_status": "ROSTERED",
@@ -3875,7 +3895,7 @@
         "avg_3_game_exact": 13.733333333333334,
         "avg_3_game": 13.733333,
         "avg_3_game_display": "13.73",
-        "rank": 20,
+        "rank": 21,
         "owner_label": "Commanders of Chaos",
         "owner_team_id": 12,
         "fantasy_status": "ROSTERED",
@@ -3912,7 +3932,7 @@
         "avg_3_game_exact": 13.633333333333333,
         "avg_3_game": 13.633333,
         "avg_3_game_display": "13.63",
-        "rank": 21,
+        "rank": 22,
         "owner_label": "From Puka with Love",
         "owner_team_id": 6,
         "fantasy_status": "ROSTERED",
@@ -3940,7 +3960,7 @@
         "avg_3_game_exact": 13.200000000000001,
         "avg_3_game": 13.2,
         "avg_3_game_display": "13.20",
-        "rank": 22,
+        "rank": 23,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -3968,7 +3988,7 @@
         "avg_3_game_exact": 13.066666666666668,
         "avg_3_game": 13.066667,
         "avg_3_game_display": "13.07",
-        "rank": 23,
+        "rank": 24,
         "owner_label": "Burrow's Bunch",
         "owner_team_id": 5,
         "fantasy_status": "ROSTERED",
@@ -3996,7 +4016,7 @@
         "avg_3_game_exact": 12.966666666666667,
         "avg_3_game": 12.966667,
         "avg_3_game_display": "12.97",
-        "rank": 24,
+        "rank": 25,
         "owner_label": "Giant Packer Fan",
         "owner_team_id": 8,
         "fantasy_status": "ROSTERED",
@@ -4024,7 +4044,7 @@
         "avg_3_game_exact": 12.933333333333335,
         "avg_3_game": 12.933333,
         "avg_3_game_display": "12.93",
-        "rank": 25,
+        "rank": 26,
         "owner_label": "Kelli's Top-Notch Team",
         "owner_team_id": 10,
         "fantasy_status": "ROSTERED",
@@ -4052,7 +4072,7 @@
         "avg_3_game_exact": 12.700000000000001,
         "avg_3_game": 12.7,
         "avg_3_game_display": "12.70",
-        "rank": 26,
+        "rank": 27,
         "owner_label": "From Puka with Love",
         "owner_team_id": 6,
         "fantasy_status": "ROSTERED",
@@ -4080,7 +4100,7 @@
         "avg_3_game_exact": 12.533333333333333,
         "avg_3_game": 12.533333,
         "avg_3_game_display": "12.53",
-        "rank": 27,
+        "rank": 28,
         "owner_label": "From Puka with Love",
         "owner_team_id": 6,
         "fantasy_status": "ROSTERED",
@@ -4095,34 +4115,6 @@
         },
         "on_nfl_ir": true,
         "in_fantasy_ir_slot": true
-      },
-      {
-        "player_id": 4431299,
-        "name": "Rome Odunze",
-        "position": "WR",
-        "pro_team": "CHI",
-        "games": [
-          {
-            "scoring_period_id": 8,
-            "points": 12.7
-          },
-          {
-            "scoring_period_id": 9,
-            "points": 16.0
-          },
-          {
-            "scoring_period_id": 11,
-            "points": 8.5
-          }
-        ],
-        "avg_3_game_exact": 12.4,
-        "avg_3_game": 12.4,
-        "avg_3_game_display": "12.40",
-        "rank": 28,
-        "owner_label": "Nicole's Gnarly Team",
-        "owner_team_id": 9,
-        "fantasy_status": "ROSTERED",
-        "is_jason_x": false
       },
       {
         "player_id": 2976212,
@@ -4187,16 +4179,7 @@
         "owner_label": "Connor\u2019s Team",
         "owner_team_id": 7,
         "fantasy_status": "ROSTERED",
-        "is_jason_x": false,
-        "injury": {
-          "designation": "IR",
-          "nfl_status": "Injured Reserve",
-          "on_nfl_ir": true,
-          "expected_return": "2026-12-13",
-          "expected_return_label": "Dec 13",
-          "injury_type": "Hamstring"
-        },
-        "on_nfl_ir": true
+        "is_jason_x": false
       },
       {
         "player_id": 4612826,
@@ -4311,34 +4294,6 @@
         "is_jason_x": false
       },
       {
-        "player_id": 4426388,
-        "name": "Jameson Williams",
-        "position": "WR",
-        "pro_team": "DET",
-        "games": [
-          {
-            "scoring_period_id": 9,
-            "points": 5.0
-          },
-          {
-            "scoring_period_id": 10,
-            "points": 9.0
-          },
-          {
-            "scoring_period_id": 11,
-            "points": 21.3
-          }
-        ],
-        "avg_3_game_exact": 11.766666666666666,
-        "avg_3_game": 11.766667,
-        "avg_3_game_display": "11.77",
-        "rank": 35,
-        "owner_label": "Kelli's Top-Notch Team",
-        "owner_team_id": 10,
-        "fantasy_status": "ROSTERED",
-        "is_jason_x": false
-      },
-      {
         "player_id": 4427095,
         "name": "DeMario Douglas",
         "position": "WR",
@@ -4360,7 +4315,7 @@
         "avg_3_game_exact": 11.733333333333334,
         "avg_3_game": 11.733333,
         "avg_3_game_display": "11.73",
-        "rank": 36,
+        "rank": 35,
         "owner_label": "From Puka with Love",
         "owner_team_id": 6,
         "fantasy_status": "ROSTERED",
@@ -4388,7 +4343,7 @@
         "avg_3_game_exact": 11.733333333333334,
         "avg_3_game": 11.733333,
         "avg_3_game_display": "11.73",
-        "rank": 37,
+        "rank": 36,
         "owner_label": "Broken Hand Club",
         "owner_team_id": 4,
         "fantasy_status": "ROSTERED",
@@ -4416,7 +4371,7 @@
         "avg_3_game_exact": 11.533333333333333,
         "avg_3_game": 11.533333,
         "avg_3_game_display": "11.53",
-        "rank": 38,
+        "rank": 37,
         "owner_label": "Auto Draft Champion",
         "owner_team_id": 3,
         "fantasy_status": "ROSTERED",
@@ -4444,7 +4399,7 @@
         "avg_3_game_exact": 11.466666666666667,
         "avg_3_game": 11.466667,
         "avg_3_game_display": "11.47",
-        "rank": 39,
+        "rank": 38,
         "owner_label": "Commanders of Chaos",
         "owner_team_id": 12,
         "fantasy_status": "ROSTERED",
@@ -4472,7 +4427,7 @@
         "avg_3_game_exact": 11.033333333333333,
         "avg_3_game": 11.033333,
         "avg_3_game_display": "11.03",
-        "rank": 40,
+        "rank": 39,
         "owner_label": "Commanders of Chaos",
         "owner_team_id": 12,
         "fantasy_status": "ROSTERED",
@@ -4509,7 +4464,7 @@
         "avg_3_game_exact": 10.833333333333334,
         "avg_3_game": 10.833333,
         "avg_3_game_display": "10.83",
-        "rank": 41,
+        "rank": 40,
         "owner_label": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
         "owner_team_id": 11,
         "fantasy_status": "ROSTERED",
@@ -4537,7 +4492,7 @@
         "avg_3_game_exact": 10.333333333333334,
         "avg_3_game": 10.333333,
         "avg_3_game_display": "10.33",
-        "rank": 42,
+        "rank": 41,
         "owner_label": "Kelli's Top-Notch Team",
         "owner_team_id": 10,
         "fantasy_status": "ROSTERED",
@@ -4565,7 +4520,7 @@
         "avg_3_game_exact": 10.233333333333334,
         "avg_3_game": 10.233333,
         "avg_3_game_display": "10.23",
-        "rank": 43,
+        "rank": 42,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -4593,9 +4548,37 @@
         "avg_3_game_exact": 10.200000000000001,
         "avg_3_game": 10.2,
         "avg_3_game_display": "10.20",
-        "rank": 44,
+        "rank": 43,
         "owner_label": "Connor\u2019s Team",
         "owner_team_id": 7,
+        "fantasy_status": "ROSTERED",
+        "is_jason_x": false
+      },
+      {
+        "player_id": 4426388,
+        "name": "Jameson Williams",
+        "position": "WR",
+        "pro_team": "DET",
+        "games": [
+          {
+            "scoring_period_id": 10,
+            "points": 9.0
+          },
+          {
+            "scoring_period_id": 11,
+            "points": 21.3
+          },
+          {
+            "scoring_period_id": 12,
+            "points": 0.0
+          }
+        ],
+        "avg_3_game_exact": 10.1,
+        "avg_3_game": 10.1,
+        "avg_3_game_display": "10.10",
+        "rank": 44,
+        "owner_label": "Kelli's Top-Notch Team",
+        "owner_team_id": 10,
         "fantasy_status": "ROSTERED",
         "is_jason_x": false
       },
@@ -4879,6 +4862,34 @@
         "is_jason_x": false
       },
       {
+        "player_id": 4431299,
+        "name": "Rome Odunze",
+        "position": "WR",
+        "pro_team": "CHI",
+        "games": [
+          {
+            "scoring_period_id": 9,
+            "points": 16.0
+          },
+          {
+            "scoring_period_id": 11,
+            "points": 8.5
+          },
+          {
+            "scoring_period_id": 12,
+            "points": 1.9
+          }
+        ],
+        "avg_3_game_exact": 8.799999999999999,
+        "avg_3_game": 8.8,
+        "avg_3_game_display": "8.80",
+        "rank": 54,
+        "owner_label": "Nicole's Gnarly Team",
+        "owner_team_id": 9,
+        "fantasy_status": "ROSTERED",
+        "is_jason_x": false
+      },
+      {
         "player_id": 4710855,
         "name": "Konata Mumpfield",
         "position": "WR",
@@ -4900,7 +4911,7 @@
         "avg_3_game_exact": 8.666666666666666,
         "avg_3_game": 8.666667,
         "avg_3_game_display": "8.67",
-        "rank": 54,
+        "rank": 55,
         "owner_label": "Burrow's Bunch",
         "owner_team_id": 5,
         "fantasy_status": "ROSTERED",
@@ -4928,7 +4939,7 @@
         "avg_3_game_exact": 8.666666666666666,
         "avg_3_game": 8.666667,
         "avg_3_game_display": "8.67",
-        "rank": 55,
+        "rank": 56,
         "owner_label": "The Bye Week Boys",
         "owner_team_id": 2,
         "fantasy_status": "ROSTERED",
@@ -4956,7 +4967,7 @@
         "avg_3_game_exact": 8.5,
         "avg_3_game": 8.5,
         "avg_3_game_display": "8.50",
-        "rank": 56,
+        "rank": 57,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -4993,7 +5004,7 @@
         "avg_3_game_exact": 8.366666666666665,
         "avg_3_game": 8.366667,
         "avg_3_game_display": "8.37",
-        "rank": 57,
+        "rank": 58,
         "owner_label": "From Puka with Love",
         "owner_team_id": 6,
         "fantasy_status": "ROSTERED",
@@ -5021,7 +5032,7 @@
         "avg_3_game_exact": 8.333333333333334,
         "avg_3_game": 8.333333,
         "avg_3_game_display": "8.33",
-        "rank": 58,
+        "rank": 59,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -5049,36 +5060,8 @@
         "avg_3_game_exact": 8.266666666666667,
         "avg_3_game": 8.266667,
         "avg_3_game_display": "8.27",
-        "rank": 59,
-        "owner_label": "WAIVERS",
-        "owner_team_id": null,
-        "fantasy_status": "AVAILABLE",
-        "is_jason_x": false
-      },
-      {
-        "player_id": 4879194,
-        "name": "Josh Cameron",
-        "position": "WR",
-        "pro_team": "JAX",
-        "games": [
-          {
-            "scoring_period_id": 9,
-            "points": 1.6
-          },
-          {
-            "scoring_period_id": 10,
-            "points": 15.7
-          },
-          {
-            "scoring_period_id": 11,
-            "points": 7.4
-          }
-        ],
-        "avg_3_game_exact": 8.233333333333333,
-        "avg_3_game": 8.233333,
-        "avg_3_game_display": "8.23",
         "rank": 60,
-        "owner_label": "FREE AGENT",
+        "owner_label": "WAIVERS",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
         "is_jason_x": false
@@ -5654,6 +5637,34 @@
         "is_jason_x": false
       },
       {
+        "player_id": 4570037,
+        "name": "Terrance Ferguson",
+        "position": "TE",
+        "pro_team": "LAR",
+        "games": [
+          {
+            "scoring_period_id": 1,
+            "points": 0.0
+          },
+          {
+            "scoring_period_id": 2,
+            "points": 17.4
+          },
+          {
+            "scoring_period_id": 3,
+            "points": 1.9
+          }
+        ],
+        "avg_3_game_exact": 6.433333333333333,
+        "avg_3_game": 6.433333,
+        "avg_3_game_display": "6.43",
+        "rank": 20,
+        "owner_label": "WAIVERS",
+        "owner_team_id": null,
+        "fantasy_status": "AVAILABLE",
+        "is_jason_x": false
+      },
+      {
         "player_id": 4430802,
         "name": "Darnell Washington",
         "position": "TE",
@@ -5675,7 +5686,7 @@
         "avg_3_game_exact": 6.366666666666667,
         "avg_3_game": 6.366667,
         "avg_3_game_display": "6.37",
-        "rank": 20,
+        "rank": 21,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -5703,7 +5714,7 @@
         "avg_3_game_exact": 6.333333333333333,
         "avg_3_game": 6.333333,
         "avg_3_game_display": "6.33",
-        "rank": 21,
+        "rank": 22,
         "owner_label": "Auto Draft Champion",
         "owner_team_id": 3,
         "fantasy_status": "ROSTERED",
@@ -5731,7 +5742,7 @@
         "avg_3_game_exact": 5.8999999999999995,
         "avg_3_game": 5.9,
         "avg_3_game_display": "5.90",
-        "rank": 22,
+        "rank": 23,
         "owner_label": "The Bye Week Boys",
         "owner_team_id": 2,
         "fantasy_status": "ROSTERED",
@@ -5759,37 +5770,9 @@
         "avg_3_game_exact": 5.8999999999999995,
         "avg_3_game": 5.9,
         "avg_3_game_display": "5.90",
-        "rank": 23,
+        "rank": 24,
         "owner_label": "Burrow's Bunch",
         "owner_team_id": 5,
-        "fantasy_status": "ROSTERED",
-        "is_jason_x": false
-      },
-      {
-        "player_id": 3046439,
-        "name": "Hunter Henry",
-        "position": "TE",
-        "pro_team": "NE",
-        "games": [
-          {
-            "scoring_period_id": 8,
-            "points": 6.0
-          },
-          {
-            "scoring_period_id": 9,
-            "points": 6.5
-          },
-          {
-            "scoring_period_id": 10,
-            "points": 4.2
-          }
-        ],
-        "avg_3_game_exact": 5.566666666666666,
-        "avg_3_game": 5.566667,
-        "avg_3_game_display": "5.57",
-        "rank": 24,
-        "owner_label": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
-        "owner_team_id": 11,
         "fantasy_status": "ROSTERED",
         "is_jason_x": false
       }
@@ -6188,62 +6171,6 @@
         "is_jason_x": false
       },
       {
-        "player_id": 17427,
-        "name": "Cairo Santos",
-        "position": "K",
-        "pro_team": "CHI",
-        "games": [
-          {
-            "scoring_period_id": 8,
-            "points": 11.0
-          },
-          {
-            "scoring_period_id": 9,
-            "points": 9.0
-          },
-          {
-            "scoring_period_id": 11,
-            "points": 8.0
-          }
-        ],
-        "avg_3_game_exact": 9.333333333333334,
-        "avg_3_game": 9.333333,
-        "avg_3_game_display": "9.33",
-        "rank": 15,
-        "owner_label": "WAIVERS",
-        "owner_team_id": null,
-        "fantasy_status": "AVAILABLE",
-        "is_jason_x": false
-      },
-      {
-        "player_id": 4689936,
-        "name": "Jake Bates",
-        "position": "K",
-        "pro_team": "DET",
-        "games": [
-          {
-            "scoring_period_id": 9,
-            "points": 15.0
-          },
-          {
-            "scoring_period_id": 10,
-            "points": 5.0
-          },
-          {
-            "scoring_period_id": 11,
-            "points": 8.0
-          }
-        ],
-        "avg_3_game_exact": 9.333333333333334,
-        "avg_3_game": 9.333333,
-        "avg_3_game_display": "9.33",
-        "rank": 16,
-        "owner_label": "Nicole's Gnarly Team",
-        "owner_team_id": 9,
-        "fantasy_status": "ROSTERED",
-        "is_jason_x": false
-      },
-      {
         "player_id": 5208518,
         "name": "Charlie Smyth",
         "position": "K",
@@ -6265,7 +6192,7 @@
         "avg_3_game_exact": 9.333333333333334,
         "avg_3_game": 9.333333,
         "avg_3_game_display": "9.33",
-        "rank": 17,
+        "rank": 15,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -6293,7 +6220,7 @@
         "avg_3_game_exact": 8.666666666666666,
         "avg_3_game": 8.666667,
         "avg_3_game_display": "8.67",
-        "rank": 18,
+        "rank": 16,
         "owner_label": "Kelli's Top-Notch Team",
         "owner_team_id": 10,
         "fantasy_status": "ROSTERED",
@@ -6321,7 +6248,7 @@
         "avg_3_game_exact": 8.666666666666666,
         "avg_3_game": 8.666667,
         "avg_3_game_display": "8.67",
-        "rank": 19,
+        "rank": 17,
         "owner_label": "WAIVERS",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -6349,7 +6276,7 @@
         "avg_3_game_exact": 8.666666666666666,
         "avg_3_game": 8.666667,
         "avg_3_game_display": "8.67",
-        "rank": 20,
+        "rank": 18,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -6377,7 +6304,7 @@
         "avg_3_game_exact": 8.333333333333334,
         "avg_3_game": 8.333333,
         "avg_3_game_display": "8.33",
-        "rank": 21,
+        "rank": 19,
         "owner_label": "Jason X",
         "owner_team_id": 1,
         "fantasy_status": "ROSTERED",
@@ -6405,7 +6332,7 @@
         "avg_3_game_exact": 8.333333333333334,
         "avg_3_game": 8.333333,
         "avg_3_game_display": "8.33",
-        "rank": 22,
+        "rank": 20,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
         "fantasy_status": "AVAILABLE",
@@ -6433,7 +6360,7 @@
         "avg_3_game_exact": 8.0,
         "avg_3_game": 8.0,
         "avg_3_game_display": "8.00",
-        "rank": 23,
+        "rank": 21,
         "owner_label": "Broken Hand Club",
         "owner_team_id": 4,
         "fantasy_status": "ROSTERED",
@@ -6461,6 +6388,62 @@
         "avg_3_game_exact": 8.0,
         "avg_3_game": 8.0,
         "avg_3_game_display": "8.00",
+        "rank": 22,
+        "owner_label": "FREE AGENT",
+        "owner_team_id": null,
+        "fantasy_status": "AVAILABLE",
+        "is_jason_x": false
+      },
+      {
+        "player_id": 3043234,
+        "name": "Zane Gonzalez",
+        "position": "K",
+        "pro_team": "FA",
+        "games": [
+          {
+            "scoring_period_id": 8,
+            "points": 8.0
+          },
+          {
+            "scoring_period_id": 9,
+            "points": 10.0
+          },
+          {
+            "scoring_period_id": 10,
+            "points": 4.0
+          }
+        ],
+        "avg_3_game_exact": 7.333333333333333,
+        "avg_3_game": 7.333333,
+        "avg_3_game_display": "7.33",
+        "rank": 23,
+        "owner_label": "FREE AGENT",
+        "owner_team_id": null,
+        "fantasy_status": "AVAILABLE",
+        "is_jason_x": false
+      },
+      {
+        "player_id": 4568263,
+        "name": "Ryan Fitzgerald",
+        "position": "K",
+        "pro_team": "CAR",
+        "games": [
+          {
+            "scoring_period_id": 9,
+            "points": 2.0
+          },
+          {
+            "scoring_period_id": 10,
+            "points": 11.0
+          },
+          {
+            "scoring_period_id": 11,
+            "points": 9.0
+          }
+        ],
+        "avg_3_game_exact": 7.333333333333333,
+        "avg_3_game": 7.333333,
+        "avg_3_game_display": "7.33",
         "rank": 24,
         "owner_label": "FREE AGENT",
         "owner_team_id": null,
@@ -6504,21 +6487,21 @@
         "pro_team": "CHI",
         "games": [
           {
-            "scoring_period_id": 8,
-            "points": 10.0
-          },
-          {
             "scoring_period_id": 9,
             "points": 13.0
           },
           {
             "scoring_period_id": 11,
             "points": 15.0
+          },
+          {
+            "scoring_period_id": 12,
+            "points": 9.0
           }
         ],
-        "avg_3_game_exact": 12.666666666666666,
-        "avg_3_game": 12.666667,
-        "avg_3_game_display": "12.67",
+        "avg_3_game_exact": 12.333333333333334,
+        "avg_3_game": 12.333333,
+        "avg_3_game_display": "12.33",
         "rank": 2,
         "owner_label": "From Puka with Love",
         "owner_team_id": 6,
@@ -6644,16 +6627,16 @@
         "pro_team": "DET",
         "games": [
           {
-            "scoring_period_id": 9,
-            "points": 10.0
-          },
-          {
             "scoring_period_id": 10,
             "points": 13.0
           },
           {
             "scoring_period_id": 11,
             "points": 6.0
+          },
+          {
+            "scoring_period_id": 12,
+            "points": 10.0
           }
         ],
         "avg_3_game_exact": 9.666666666666666,
@@ -7034,5 +7017,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 12,
-  "fetched_at": "2026-11-26T12:18:03.520806+00:00"
+  "fetched_at": "2026-11-26T18:14:05.134733+00:00"
 }

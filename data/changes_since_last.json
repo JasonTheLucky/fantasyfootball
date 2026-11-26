@@ -1,26 +1,131 @@
 {
   "usage": "What changed since the previous snapshot, which is the delta the daily report's 'last ~24 hours' framing needs. Compared against the player_index.json present when this run started, so the window is one snapshot interval (roughly six hours), not exactly 24 hours: previous_snapshot_at says when. injury_changes is the highest-value list and is sorted with Jason X players first; direction is new, changed or cleared. became_available are players dropped by a rival and now addable. became_rostered are players claimed, which is how a target you were considering disappears. changed_team is a trade or a waiver move between teams. comparable is false on a first run or when no previous snapshot was present, in which case every list is empty and absence of change must not be reported as stability.",
   "comparable": true,
-  "previous_snapshot_at": "2026-11-26T06:21:07.455191+00:00",
-  "previous_snapshot_at_ct": "Thu Nov 26, 12:21 AM CST",
+  "previous_snapshot_at": "2026-11-26T12:18:14.116658+00:00",
+  "previous_snapshot_at_ct": "Thu Nov 26, 6:18 AM CST",
   "previous_scoring_period_id": 12,
   "counts": {
-    "injury_changes": 0,
+    "injury_changes": 5,
     "jason_x_injury_changes": 0,
-    "became_available": 0,
-    "became_rostered": 0,
+    "became_available": 2,
+    "became_rostered": 2,
     "changed_team": 0,
     "new_to_pool": 0
   },
-  "injury_changes": [],
+  "injury_changes": [
+    {
+      "player_id": 15168,
+      "name": "Case Keenum",
+      "position": "QB",
+      "pro_team": "CHI",
+      "from": null,
+      "to": "INACTIVE",
+      "expected_return": "Dec 6",
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "new"
+    },
+    {
+      "player_id": 16800,
+      "name": "Davante Adams",
+      "position": "WR",
+      "pro_team": "LAR",
+      "from": "IR",
+      "to": null,
+      "expected_return": null,
+      "on_nfl_ir": false,
+      "fantasy_status": "ROSTERED",
+      "fantasy_team": "Connor\u2019s Team",
+      "is_jason_x": false,
+      "direction": "cleared"
+    },
+    {
+      "player_id": 4426515,
+      "name": "Puka Nacua",
+      "position": "WR",
+      "pro_team": "LAR",
+      "from": "IR",
+      "to": null,
+      "expected_return": null,
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "cleared"
+    },
+    {
+      "player_id": 4426386,
+      "name": "Roschon Johnson",
+      "position": "RB",
+      "pro_team": "CHI",
+      "from": "OUT",
+      "to": "INACTIVE",
+      "expected_return": "Dec 6",
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "changed"
+    },
+    {
+      "player_id": 4570037,
+      "name": "Terrance Ferguson",
+      "position": "TE",
+      "pro_team": "LAR",
+      "from": "IR",
+      "to": null,
+      "expected_return": null,
+      "on_nfl_ir": false,
+      "fantasy_status": "AVAILABLE",
+      "fantasy_team": null,
+      "is_jason_x": false,
+      "direction": "cleared"
+    }
+  ],
   "jason_x_injury_changes": [],
-  "became_available": [],
-  "became_rostered": [],
+  "became_available": [
+    {
+      "player_id": 3930086,
+      "name": "Dawson Knox",
+      "position": "TE",
+      "pro_team": "BUF",
+      "dropped_by": "Nicole's Gnarly Team",
+      "now": "WAIVERS"
+    },
+    {
+      "player_id": 4429086,
+      "name": "Michael Mayer",
+      "position": "TE",
+      "pro_team": "LV",
+      "dropped_by": "The Bye Week Boys",
+      "now": "WAIVERS"
+    }
+  ],
+  "became_rostered": [
+    {
+      "player_id": 4427728,
+      "name": "Bam Knight",
+      "position": "RB",
+      "pro_team": "ARI",
+      "added_by": "The Bye Week Boys",
+      "is_jason_x": false
+    },
+    {
+      "player_id": 4360248,
+      "name": "Kyle Pitts Sr.",
+      "position": "TE",
+      "pro_team": "ATL",
+      "added_by": "Nicole's Gnarly Team",
+      "is_jason_x": false
+    }
+  ],
   "changed_team": [],
   "new_to_pool": [],
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 12,
-  "fetched_at": "2026-11-26T12:18:03.520806+00:00",
-  "fetched_at_ct_label": "Thu Nov 26, 6:18 AM CST"
+  "fetched_at": "2026-11-26T18:14:05.134733+00:00",
+  "fetched_at_ct_label": "Thu Nov 26, 12:14 PM CST"
 }
