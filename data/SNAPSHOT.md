@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-25T18:14:04.558348+00:00` |
-| Fetched at (CT) | **Wed Nov 25, 12:14 PM CST** |
+| Fetched at (UTC) | `2026-11-26T00:31:10.517700+00:00` |
+| Fetched at (CT) | **Wed Nov 25, 6:31 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1063 |
-| Fetch duration | 9.46s |
+| Fetch duration | 10.73s |
 | ESPN calls | 41 |
-| Workflow run | `45672975156` |
+| Workflow run | `45729277465` |
 
 ## Freshness and completeness gates
 
@@ -79,34 +79,45 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (24)
+## Injury designations (35)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
+| Jason X | Jaxon Smith-Njigba | WR | QUESTIONABLE | WR | yes |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
 | Jason X | Bhayshul Tuten | RB | QUESTIONABLE | RB | yes |
+| Jason X | Treylon Burks | WR | QUESTIONABLE | BENCH | NO |
 | Jason X | Omar Cooper Jr. | WR | QUESTIONABLE | BENCH | NO |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | BENCH | NO |
 | Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
-| Broken Hand Club | Josh Jacobs | RB | QUESTIONABLE | BENCH | NO |
+| Broken Hand Club | Josh Jacobs | RB | OUT | BENCH | NO |
 | Broken Hand Club | Jordan Addison | WR | DOUBTFUL | BENCH | NO |
-| Broken Hand Club | J.K. Dobbins | RB | OUT | BENCH | NO |
+| Broken Hand Club | J.K. Dobbins | RB | SUSPENSION | BENCH | NO |
 | Broken Hand Club | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
+| Burrow's Bunch | Isaiah Likely | TE | QUESTIONABLE | TE | yes |
 | Burrow's Bunch | Kenneth Walker III | RB | OUT | IR | NO |
 | From Puka with Love | Woody Marks | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Drake Maye | QB | OUT | QB | yes |
 | Connor’s Team | Dalton Kincaid | TE | QUESTIONABLE | TE | yes |
+| Connor’s Team | Derrick Henry | RB | QUESTIONABLE | RB | yes |
 | Connor’s Team | A.J. Brown | WR | DOUBTFUL | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | BENCH | NO |
+| Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
+| Kelli's Top-Notch Team | Brock Purdy | QB | QUESTIONABLE | QB | yes |
 | Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | QUESTIONABLE | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
+| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | WR | yes |
+| Commanders of Chaos | Harold Fannin Jr. | TE | QUESTIONABLE | TE | yes |
+| Commanders of Chaos | Tetairoa McMillan | WR | QUESTIONABLE | WR | yes |
+| Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
 
 ## Available player pool by position
 
@@ -118,33 +129,36 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Wed Nov 25, 6:19 AM CST`: 4 injury change(s) (0 affecting Jason X), 3 newly available, 4 claimed, 0 moved between teams.
+Compared with the snapshot taken `Wed Nov 25, 12:14 PM CST`: 34 injury change(s) (2 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Jalen McMillan | - | IR-R | Nov 30 | 🔥Certified Dumpster Fire 🔥 |
-| Kenneth Walker III | QUESTIONABLE | OUT | Dec 3 | Burrow's Bunch |
-| Noah Gray | - | QUESTIONABLE | Nov 26 | - |
-| Will Shipley | QUESTIONABLE | - | - | - |
+| **Jaxon Smith-Njigba** | - | QUESTIONABLE | Nov 29 | Jason X |
+| **Treylon Burks** | - | QUESTIONABLE | Nov 29 | Jason X |
+| Blake Whiteheart | - | QUESTIONABLE | Nov 29 | - |
+| Bo Melton | QUESTIONABLE | - | - | - |
+| Brock Purdy | - | QUESTIONABLE | Nov 29 | Kelli's Top-Notch Team |
+| Dareke Young | QUESTIONABLE | - | - | - |
+| David Njoku | - | QUESTIONABLE | Nov 29 | - |
+| De'Zhaun Stribling | - | IR | Dec 13 | - |
+| Derrick Henry | - | QUESTIONABLE | Nov 29 | Connor’s Team |
+| Drew Ogletree | - | QUESTIONABLE | Nov 29 | - |
+| Harold Fannin Jr. | - | QUESTIONABLE | Nov 29 | Commanders of Chaos |
+| Isaiah Likely | - | QUESTIONABLE | Nov 29 | Burrow's Bunch |
 
 **Newly available**
 
 | Name | Position | Pro Team | Dropped By |
 | --- | --- | --- | --- |
-| Bo Nix | QB | DEN | Jason X |
-| Cairo Santos | K | CHI | Burrow's Bunch |
-| Courtland Sutton | WR | DEN | Jason X |
+| Wil Lutz | K | DEN | The Bye Week Boys |
 
 **Claimed**
 
 | Name | Position | Pro Team | Added By |
 | --- | --- | --- | --- |
-| **Deshaun Watson** | QB | CLE | Jason X |
-| **Omar Cooper Jr.** | WR | NYJ | Jason X |
-| Dominic Zvada | K | NYG | Burrow's Bunch |
-| Konata Mumpfield | WR | LAR | Burrow's Bunch |
+| Jason Sanders | K | NYJ | The Bye Week Boys |
 
 ## Jason X
 
@@ -168,7 +182,7 @@ No open bench spot: any add needs a drop.
 | QB | Jayden Daniels | QB | W7 | @ ARI | 22.9 | - |
 | RB | Cam Skattebo | RB | W8 | @ IND | 18.09 | - |
 | RB | Bhayshul Tuten | RB | W7 | vs TEN | 19.46 | QUESTIONABLE (back Nov 29) |
-| WR | Jaxon Smith-Njigba | WR | W11 | @ SF | 22.54 | - |
+| WR | Jaxon Smith-Njigba | WR | W11 | @ SF | 22.54 | QUESTIONABLE (back Nov 29) |
 | WR | Christian Watson | WR | W11 | @ LAR | 14.64 | - |
 | TE | Brock Bowers | TE | W13 | @ CLE | 15.54 | QUESTIONABLE (back Nov 29) |
 | FLEX | Amon-Ra St. Brown | WR | W6 | vs CHI | 18.43 | - |
@@ -186,7 +200,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-54 players in this league's pool carry an NFL designation; 18 are on injured reserve (5 of them rostered). 3 affect Jason X.
+70 players in this league's pool carry an NFL designation; 18 are on injured reserve (5 of them rostered). 5 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -202,8 +216,10 @@ Jason X players with a designation:
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
 | Omar Cooper Jr. | BENCH | QUESTIONABLE | Nov 29 | Ankle |
+| Treylon Burks | BENCH | QUESTIONABLE | Nov 29 | Foot |
 | Bhayshul Tuten | RB | QUESTIONABLE | Nov 29 | Ankle |
 | Brock Bowers | TE | QUESTIONABLE | Nov 29 | Ankle |
+| Jaxon Smith-Njigba | WR | QUESTIONABLE | Nov 29 | Ankle |
 
 ## Recent form (last 3 completed games)
 
@@ -236,12 +252,13 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1169 total | 303 executed ownership changes | 595 lineup-only moves | 192 draft picks | 0 pending
+1173 total | 304 executed ownership changes | 598 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-25T19:35 | The Bye Week Boys | FREEAGENT | ADD Jason Sanders, DROP Wil Lutz |
 | 2026-11-25T17:31 | Burrow's Bunch | FREEAGENT | ADD Dominic Zvada, DROP Cairo Santos |
 | 2026-11-25T17:30 | Burrow's Bunch | FREEAGENT | ADD Konata Mumpfield |
 | 2026-11-25T13:30 | Jason X | FREEAGENT | ADD Deshaun Watson, DROP Bo Nix |
@@ -253,7 +270,6 @@ Most recent ownership changes:
 | 2026-11-25T08:46 | The Bye Week Boys | WAIVER | ADD Chris Rodriguez Jr., DROP Seth McGowan |
 | 2026-11-25T08:46 | From Puka with Love | WAIVER | ADD Jack Bech |
 | 2026-11-24T17:02 | From Puka with Love | ROSTER | DROP Emari Demercado |
-| 2026-11-23T19:47 | The Bye Week Boys | FREEAGENT | ADD Mike Gesicki, DROP Terrance Ferguson |
 
 ## League format
 
