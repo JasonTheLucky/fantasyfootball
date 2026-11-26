@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-26T06:21:07.455191+00:00` |
-| Fetched at (CT) | **Thu Nov 26, 12:21 AM CST** |
+| Fetched at (UTC) | `2026-11-26T12:18:14.116658+00:00` |
+| Fetched at (CT) | **Thu Nov 26, 6:18 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1063 |
-| Fetch duration | 11.58s |
+| Fetch duration | 10.6s |
 | ESPN calls | 41 |
-| Workflow run | `45767556483` |
+| Workflow run | `45818347463` |
 
 ## Freshness and completeness gates
 
@@ -130,37 +130,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Wed Nov 25, 6:31 PM CST`: 7 injury change(s) (1 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| **Christian Watson** | - | QUESTIONABLE | Dec 6 | Jason X |
-| Davis Allen | - | QUESTIONABLE | Dec 3 | - |
-| Drew Lock | - | QUESTIONABLE | Nov 29 | - |
-| Jalen Milroe | - | QUESTIONABLE | Nov 29 | - |
-| Jordan Watkins | - | QUESTIONABLE | Nov 29 | - |
-| Nick Kallerup | - | QUESTIONABLE | Nov 29 | - |
-| Tyler Higbee | - | QUESTIONABLE | Dec 3 | - |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Darren Waller | TE | CAR | Broken Hand Club |
-
-**Claimed**
-
-| Name | Position | Pro Team | Added By |
-| --- | --- | --- | --- |
-| Austin Ekeler | RB | WSH | Broken Hand Club |
+Compared with the snapshot taken `Thu Nov 26, 12:21 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
 Record 7-4 · FAAB **$40** of $200 · waiver rank 8 · bench open **0** · IR open 1
 
-**This week:** vs 🔥Certified Dumpster Fire 🔥 — projected 144.38 to 117.92 (margin 26.46), win probability 0.64. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs 🔥Certified Dumpster Fire 🔥 — projected 144.39 to 117.92 (margin 26.47), win probability 0.64. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -179,9 +155,9 @@ No open bench spot: any add needs a drop.
 | RB | Cam Skattebo | RB | W8 | @ IND | 18.09 | - |
 | RB | Ollie Gordon II | RB | W6 | vs NYJ | 14.55 | - |
 | WR | Jaxon Smith-Njigba | WR | W11 | @ SF | 22.54 | QUESTIONABLE (back Nov 29) |
-| WR | Christian Watson | WR | W11 | @ LAR | 14.64 | QUESTIONABLE (back Dec 6) |
+| WR | Christian Watson | WR | W11 | @ LAR | 14.63 | QUESTIONABLE (back Dec 6) |
 | TE | Brock Bowers | TE | W13 | @ CLE | 15.54 | QUESTIONABLE (back Nov 29) |
-| FLEX | Amon-Ra St. Brown | WR | W6 | vs CHI | 18.43 | - |
+| FLEX | Amon-Ra St. Brown | WR | W6 | vs CHI | 18.44 | - |
 | K | Chase McLaughlin | K | W10 | vs CAR | 9.32 | - |
 | D/ST | Buccaneers D/ST | D/ST | W10 | vs CAR | 6.5 | - |
 
