@@ -3,7 +3,7 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 12,
-  "fetched_at": "2026-11-26T00:30:59.786710+00:00",
+  "fetched_at": "2026-11-26T06:20:55.873590+00:00",
   "per_position": 25,
   "projection_scoring_period_id": 12,
   "counts": {
@@ -14,8 +14,8 @@
     "K": 25,
     "D/ST": 16
   },
-  "free_agents_in_pool": 857,
-  "waivers_in_pool": 9,
+  "free_agents_in_pool": 821,
+  "waivers_in_pool": 45,
   "players_by_position": {
     "QB": [
       {
@@ -28,8 +28,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-27T08:00:00+00:00",
         "waiver_process_ct": "Fri Nov 27, 2:00 AM CST",
-        "percent_owned": 73.77,
-        "percent_change": -5.26,
+        "percent_owned": 73.25,
+        "percent_change": -5.68,
         "bye_week": 10,
         "projected_points": 14.68,
         "upcoming": [
@@ -66,8 +66,8 @@
         "pro_team": "LAC",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 36.02,
-        "percent_change": -0.43,
+        "percent_owned": 35.96,
+        "percent_change": -0.46,
         "bye_week": 7,
         "projected_points": 16.84,
         "injury": {
@@ -106,14 +106,46 @@
       },
       {
         "rank": 3,
+        "player_id": 4837248,
+        "name": "Fernando Mendoza",
+        "position": "QB",
+        "pro_team": "LV",
+        "availability_status": "FREEAGENT",
+        "acquisition": "FREE AGENT",
+        "percent_owned": 30.38,
+        "percent_change": 8.1,
+        "bye_week": 13,
+        "projected_points": 16.76,
+        "upcoming": [
+          {
+            "scoring_period_id": 12,
+            "bye": false,
+            "opponent_pro_team_id": 5,
+            "opponent": "CLE",
+            "at_home": false,
+            "kickoff_utc": "2026-11-30T01:20:00+00:00",
+            "kickoff_ct": "Sun Nov 29, 7:20 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 13,
+            "bye": true
+          }
+        ],
+        "recent_form_rank": 23,
+        "recent_form_position": "QB",
+        "recent_form_avg": "13.67"
+      },
+      {
+        "rank": 4,
         "player_id": 4688380,
         "name": "Cam Ward",
         "position": "QB",
         "pro_team": "TEN",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 30.05,
-        "percent_change": -6.57,
+        "percent_owned": 29.25,
+        "percent_change": -7.23,
         "bye_week": 9,
         "projected_points": 12.55,
         "upcoming": [
@@ -143,71 +175,15 @@
         "recent_form_avg": "23.87"
       },
       {
-        "rank": 4,
-        "player_id": 4837248,
-        "name": "Fernando Mendoza",
-        "position": "QB",
-        "pro_team": "LV",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 29.48,
-        "percent_change": 7.2,
-        "bye_week": 13,
-        "projected_points": 16.76,
-        "upcoming": [
-          {
-            "scoring_period_id": 12,
-            "bye": false,
-            "opponent_pro_team_id": 5,
-            "opponent": "CLE",
-            "at_home": false,
-            "kickoff_utc": "2026-11-30T01:20:00+00:00",
-            "kickoff_ct": "Sun Nov 29, 7:20 PM CST",
-            "start_time_tbd": false
-          },
-          {
-            "scoring_period_id": 13,
-            "bye": true
-          }
-        ],
-        "recent_form_rank": 23,
-        "recent_form_position": "QB",
-        "recent_form_avg": "13.67"
-      },
-      {
         "rank": 5,
-        "player_id": 8439,
-        "name": "Aaron Rodgers",
-        "position": "QB",
-        "pro_team": "FA",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 28.85,
-        "percent_change": -9.87,
-        "projected_points": 0.0,
-        "upcoming": [
-          {
-            "scoring_period_id": 12,
-            "bye": true
-          },
-          {
-            "scoring_period_id": 13,
-            "bye": true
-          }
-        ],
-        "recent_form_position": "QB",
-        "recent_form_note": "outside the ranked top 24"
-      },
-      {
-        "rank": 6,
         "player_id": 4433970,
         "name": "J.J. McCarthy",
         "position": "QB",
         "pro_team": "NYG",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 27.99,
-        "percent_change": 3.08,
+        "percent_owned": 28.78,
+        "percent_change": 3.89,
         "bye_week": 8,
         "projected_points": 17.36,
         "upcoming": [
@@ -237,6 +213,30 @@
         "recent_form_avg": "13.54"
       },
       {
+        "rank": 6,
+        "player_id": 8439,
+        "name": "Aaron Rodgers",
+        "position": "QB",
+        "pro_team": "FA",
+        "availability_status": "FREEAGENT",
+        "acquisition": "FREE AGENT",
+        "percent_owned": 26.48,
+        "percent_change": -12.03,
+        "projected_points": 0.0,
+        "upcoming": [
+          {
+            "scoring_period_id": 12,
+            "bye": true
+          },
+          {
+            "scoring_period_id": 13,
+            "bye": true
+          }
+        ],
+        "recent_form_position": "QB",
+        "recent_form_note": "outside the ranked top 24"
+      },
+      {
         "rank": 7,
         "player_id": 4040715,
         "name": "Jalen Hurts",
@@ -244,8 +244,8 @@
         "pro_team": "PHI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 25.47,
-        "percent_change": -0.26,
+        "percent_owned": 25.4,
+        "percent_change": -0.32,
         "bye_week": 10,
         "projected_points": 0.0,
         "upcoming": [
@@ -282,8 +282,8 @@
         "pro_team": "NYG",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 19.68,
-        "percent_change": -0.11,
+        "percent_owned": 19.65,
+        "percent_change": -0.14,
         "bye_week": 8,
         "projected_points": 0.0,
         "upcoming": [
@@ -318,8 +318,8 @@
         "pro_team": "TB",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 18.66,
-        "percent_change": 0.82,
+        "percent_owned": 18.82,
+        "percent_change": 0.99,
         "bye_week": 10,
         "projected_points": 14.78,
         "upcoming": [
@@ -355,8 +355,8 @@
         "pro_team": "SEA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 18.35,
-        "percent_change": 0.09,
+        "percent_owned": 18.4,
+        "percent_change": 0.16,
         "bye_week": 11,
         "projected_points": 13.16,
         "upcoming": [
@@ -393,8 +393,8 @@
         "pro_team": "NYJ",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 17.15,
-        "percent_change": 1.02,
+        "percent_owned": 17.41,
+        "percent_change": 1.28,
         "bye_week": 13,
         "projected_points": 16.25,
         "upcoming": [
@@ -424,8 +424,8 @@
         "pro_team": "BAL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 12.57,
-        "percent_change": -0.79,
+        "percent_owned": 12.46,
+        "percent_change": -0.88,
         "bye_week": 13,
         "projected_points": 12.41,
         "upcoming": [
@@ -455,8 +455,8 @@
         "pro_team": "FA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 9.15,
-        "percent_change": -0.99,
+        "percent_owned": 8.94,
+        "percent_change": -1.15,
         "projected_points": 0.0,
         "upcoming": [
           {
@@ -479,8 +479,8 @@
         "pro_team": "ATL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 8.84,
-        "percent_change": -0.49,
+        "percent_owned": 8.78,
+        "percent_change": -0.54,
         "bye_week": 11,
         "projected_points": 11.97,
         "upcoming": [
@@ -516,10 +516,18 @@
         "pro_team": "SEA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 8.33,
-        "percent_change": -2.17,
+        "percent_owned": 8.06,
+        "percent_change": -2.36,
         "bye_week": 11,
         "projected_points": 0.0,
+        "injury": {
+          "designation": "QUESTIONABLE",
+          "nfl_status": "Questionable",
+          "on_nfl_ir": false,
+          "expected_return": "2026-11-29",
+          "expected_return_label": "Nov 29",
+          "injury_type": "Elbow"
+        },
         "upcoming": [
           {
             "scoring_period_id": 12,
@@ -553,8 +561,8 @@
         "pro_team": "MIA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 6.06,
-        "percent_change": -0.2,
+        "percent_owned": 6.01,
+        "percent_change": -0.24,
         "bye_week": 6,
         "projected_points": 0.0,
         "injury": {
@@ -599,8 +607,8 @@
         "pro_team": "PHI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 4.08,
-        "percent_change": 0.54,
+        "percent_owned": 4.26,
+        "percent_change": 0.73,
         "bye_week": 10,
         "projected_points": 16.19,
         "upcoming": [
@@ -635,8 +643,8 @@
         "pro_team": "IND",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 2.88,
-        "percent_change": 2.64,
+        "percent_owned": 3.06,
+        "percent_change": 2.82,
         "bye_week": 13,
         "projected_points": 13.83,
         "upcoming": [
@@ -666,8 +674,8 @@
         "pro_team": "NYG",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 2.45,
-        "percent_change": -0.08,
+        "percent_owned": 2.43,
+        "percent_change": -0.09,
         "bye_week": 8,
         "projected_points": 1.68,
         "upcoming": [
@@ -703,8 +711,8 @@
         "pro_team": "PIT",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 1.41,
-        "percent_change": 1.36,
+        "percent_owned": 1.67,
+        "percent_change": 1.62,
         "bye_week": 9,
         "projected_points": 14.99,
         "upcoming": [
@@ -740,8 +748,8 @@
         "pro_team": "CLE",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 1.23,
-        "percent_change": -0.1,
+        "percent_owned": 1.22,
+        "percent_change": -0.11,
         "bye_week": 11,
         "projected_points": 0.0,
         "upcoming": [
@@ -777,8 +785,8 @@
         "pro_team": "MIA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 1.17,
-        "percent_change": -0.2,
+        "percent_owned": 1.16,
+        "percent_change": -0.21,
         "bye_week": 6,
         "projected_points": 14.13,
         "upcoming": [
@@ -813,8 +821,8 @@
         "pro_team": "PHI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 0.99,
-        "percent_change": -0.05,
+        "percent_owned": 0.98,
+        "percent_change": -0.06,
         "bye_week": 10,
         "projected_points": 0.0,
         "upcoming": [
@@ -850,7 +858,7 @@
         "pro_team": "ARI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 0.97,
+        "percent_owned": 0.96,
         "percent_change": -0.05,
         "bye_week": 14,
         "projected_points": 12.49,
@@ -894,8 +902,8 @@
         "pro_team": "NE",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 0.91,
-        "percent_change": 0.5,
+        "percent_owned": 0.96,
+        "percent_change": 0.55,
         "bye_week": 11,
         "projected_points": 14.67,
         "upcoming": [
@@ -933,8 +941,8 @@
         "pro_team": "CAR",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 31.08,
-        "percent_change": -0.17,
+        "percent_owned": 31.02,
+        "percent_change": -0.21,
         "bye_week": 5,
         "projected_points": 4.28,
         "injury": {
@@ -977,8 +985,8 @@
         "pro_team": "MIA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 26.2,
-        "percent_change": -0.15,
+        "percent_owned": 26.16,
+        "percent_change": -0.19,
         "bye_week": 6,
         "projected_points": 0.0,
         "upcoming": [
@@ -1013,9 +1021,11 @@
         "name": "MarShawn Lloyd",
         "position": "RB",
         "pro_team": "GB",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 25.99,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
+        "percent_owned": 25.97,
         "percent_change": -0.57,
         "bye_week": 11,
         "projected_points": 5.31,
@@ -1052,8 +1062,8 @@
         "pro_team": "TEN",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 17.15,
-        "percent_change": -0.71,
+        "percent_owned": 17.02,
+        "percent_change": -0.8,
         "bye_week": 9,
         "projected_points": 0.0,
         "upcoming": [
@@ -1089,8 +1099,8 @@
         "pro_team": "NE",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 16.63,
-        "percent_change": -1.75,
+        "percent_owned": 16.48,
+        "percent_change": -1.84,
         "bye_week": 11,
         "projected_points": 6.33,
         "upcoming": [
@@ -1115,7 +1125,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 57,
+        "recent_form_rank": 58,
         "recent_form_position": "RB",
         "recent_form_avg": "5.93"
       },
@@ -1127,8 +1137,8 @@
         "pro_team": "NO",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 16.29,
-        "percent_change": -3.59,
+        "percent_owned": 15.8,
+        "percent_change": -3.9,
         "bye_week": 8,
         "projected_points": 0.0,
         "upcoming": [
@@ -1165,8 +1175,8 @@
         "pro_team": "SEA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 15.25,
-        "percent_change": -0.86,
+        "percent_owned": 15.08,
+        "percent_change": -0.99,
         "bye_week": 11,
         "projected_points": 0.0,
         "upcoming": [
@@ -1203,8 +1213,8 @@
         "pro_team": "ATL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 14.6,
-        "percent_change": -0.27,
+        "percent_owned": 14.54,
+        "percent_change": -0.31,
         "bye_week": 11,
         "projected_points": 0.0,
         "upcoming": [
@@ -1229,7 +1239,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 33,
+        "recent_form_rank": 34,
         "recent_form_position": "RB",
         "recent_form_avg": "10.10"
       },
@@ -1241,8 +1251,8 @@
         "pro_team": "NYG",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 12.0,
-        "percent_change": -1.39,
+        "percent_owned": 11.78,
+        "percent_change": -1.56,
         "bye_week": 8,
         "projected_points": 3.55,
         "upcoming": [
@@ -1280,8 +1290,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-26T08:00:00+00:00",
         "waiver_process_ct": "Thu Nov 26, 2:00 AM CST",
-        "percent_owned": 11.99,
-        "percent_change": -4.78,
+        "percent_owned": 11.66,
+        "percent_change": -4.85,
         "bye_week": 13,
         "projected_points": 0.0,
         "injury": {
@@ -1314,52 +1324,14 @@
       },
       {
         "rank": 11,
-        "player_id": 3068267,
-        "name": "Austin Ekeler",
-        "position": "RB",
-        "pro_team": "WSH",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 8.42,
-        "percent_change": 2.25,
-        "bye_week": 7,
-        "projected_points": 9.19,
-        "upcoming": [
-          {
-            "scoring_period_id": 12,
-            "bye": false,
-            "opponent_pro_team_id": 22,
-            "opponent": "ARI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-29T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 29, 3:25 PM CST",
-            "start_time_tbd": false
-          },
-          {
-            "scoring_period_id": 13,
-            "bye": false,
-            "opponent_pro_team_id": 10,
-            "opponent": "TEN",
-            "at_home": false,
-            "kickoff_utc": "2026-12-06T18:00:00+00:00",
-            "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
-            "start_time_tbd": false
-          }
-        ],
-        "recent_form_rank": 53,
-        "recent_form_position": "RB",
-        "recent_form_avg": "7.00"
-      },
-      {
-        "rank": 12,
         "player_id": 4596334,
         "name": "Keaton Mitchell",
         "position": "RB",
         "pro_team": "LAC",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 8.14,
-        "percent_change": -0.28,
+        "percent_owned": 8.09,
+        "percent_change": -0.32,
         "bye_week": 7,
         "projected_points": 6.07,
         "injury": {
@@ -1396,15 +1368,15 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 13,
+        "rank": 12,
         "player_id": 4360238,
         "name": "Dameon Pierce",
         "position": "RB",
         "pro_team": "PHI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 8.11,
-        "percent_change": -0.27,
+        "percent_owned": 8.05,
+        "percent_change": -0.31,
         "bye_week": 10,
         "projected_points": 0.0,
         "upcoming": [
@@ -1429,9 +1401,46 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 34,
+        "recent_form_rank": 35,
         "recent_form_position": "RB",
         "recent_form_avg": "10.00"
+      },
+      {
+        "rank": 13,
+        "player_id": 4427728,
+        "name": "Bam Knight",
+        "position": "RB",
+        "pro_team": "ARI",
+        "availability_status": "FREEAGENT",
+        "acquisition": "FREE AGENT",
+        "percent_owned": 7.71,
+        "percent_change": 0.71,
+        "bye_week": 14,
+        "projected_points": 8.49,
+        "upcoming": [
+          {
+            "scoring_period_id": 12,
+            "bye": false,
+            "opponent_pro_team_id": 28,
+            "opponent": "WSH",
+            "at_home": true,
+            "kickoff_utc": "2026-11-29T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 29, 3:25 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 13,
+            "bye": false,
+            "opponent_pro_team_id": 21,
+            "opponent": "PHI",
+            "at_home": true,
+            "kickoff_utc": "2026-12-06T21:05:00+00:00",
+            "kickoff_ct": "Sun Dec 6, 3:05 PM CST",
+            "start_time_tbd": false
+          }
+        ],
+        "recent_form_position": "RB",
+        "recent_form_note": "outside the ranked top 60"
       },
       {
         "rank": 14,
@@ -1443,8 +1452,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-26T08:00:00+00:00",
         "waiver_process_ct": "Thu Nov 26, 2:00 AM CST",
-        "percent_owned": 7.8,
-        "percent_change": -3.83,
+        "percent_owned": 7.41,
+        "percent_change": -4.02,
         "bye_week": 8,
         "projected_points": 0.0,
         "upcoming": [
@@ -1474,51 +1483,16 @@
       },
       {
         "rank": 15,
-        "player_id": 4427728,
-        "name": "Bam Knight",
-        "position": "RB",
-        "pro_team": "ARI",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 7.59,
-        "percent_change": 0.58,
-        "bye_week": 14,
-        "projected_points": 8.49,
-        "upcoming": [
-          {
-            "scoring_period_id": 12,
-            "bye": false,
-            "opponent_pro_team_id": 28,
-            "opponent": "WSH",
-            "at_home": true,
-            "kickoff_utc": "2026-11-29T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 29, 3:25 PM CST",
-            "start_time_tbd": false
-          },
-          {
-            "scoring_period_id": 13,
-            "bye": false,
-            "opponent_pro_team_id": 21,
-            "opponent": "PHI",
-            "at_home": true,
-            "kickoff_utc": "2026-12-06T21:05:00+00:00",
-            "kickoff_ct": "Sun Dec 6, 3:05 PM CST",
-            "start_time_tbd": false
-          }
-        ],
-        "recent_form_position": "RB",
-        "recent_form_note": "outside the ranked top 60"
-      },
-      {
-        "rank": 16,
         "player_id": 4819231,
         "name": "Kaleb Johnson",
         "position": "RB",
         "pro_team": "GB",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
         "percent_owned": 6.89,
-        "percent_change": -0.03,
+        "percent_change": -0.01,
         "bye_week": 11,
         "projected_points": 5.52,
         "upcoming": [
@@ -1543,18 +1517,19 @@
             "start_time_tbd": false
           }
         ],
+        "recent_form_rank": 53,
         "recent_form_position": "RB",
-        "recent_form_note": "outside the ranked top 60"
+        "recent_form_avg": "7.07"
       },
       {
-        "rank": 17,
+        "rank": 16,
         "player_id": 4429013,
         "name": "Tank Bigsby",
         "position": "RB",
         "pro_team": "PHI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 4.47,
+        "percent_owned": 4.46,
         "percent_change": -0.03,
         "bye_week": 10,
         "projected_points": 0.0,
@@ -1580,20 +1555,20 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 59,
+        "recent_form_rank": 60,
         "recent_form_position": "RB",
         "recent_form_avg": "5.60"
       },
       {
-        "rank": 18,
+        "rank": 17,
         "player_id": 4426386,
         "name": "Roschon Johnson",
         "position": "RB",
         "pro_team": "CHI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 3.33,
-        "percent_change": -0.16,
+        "percent_owned": 3.28,
+        "percent_change": -0.2,
         "bye_week": 10,
         "projected_points": 0.0,
         "injury": {
@@ -1630,14 +1605,14 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 19,
+        "rank": 18,
         "player_id": 4360516,
         "name": "Tyrone Tracy Jr.",
         "position": "RB",
         "pro_team": "NYG",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 3.05,
+        "percent_owned": 3.04,
         "percent_change": 0.05,
         "bye_week": 8,
         "projected_points": 0.0,
@@ -1668,15 +1643,15 @@
         "recent_form_avg": "10.77"
       },
       {
-        "rank": 20,
+        "rank": 19,
         "player_id": 4431545,
         "name": "Will Shipley",
         "position": "RB",
         "pro_team": "PHI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 2.96,
-        "percent_change": 0.56,
+        "percent_owned": 2.95,
+        "percent_change": 0.55,
         "bye_week": 10,
         "projected_points": 4.81,
         "upcoming": [
@@ -1705,14 +1680,14 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 21,
+        "rank": 20,
         "player_id": 3045147,
         "name": "James Conner",
         "position": "RB",
         "pro_team": "ARI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 2.45,
+        "percent_owned": 2.44,
         "percent_change": -0.08,
         "bye_week": 14,
         "projected_points": 0.0,
@@ -1741,7 +1716,7 @@
         "recent_form_note": "fewer than 3 games played"
       },
       {
-        "rank": 22,
+        "rank": 21,
         "player_id": 4682745,
         "name": "Jaylen Wright",
         "position": "RB",
@@ -1749,7 +1724,7 @@
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
         "percent_owned": 2.43,
-        "percent_change": -0.01,
+        "percent_change": 0.0,
         "bye_week": 6,
         "projected_points": 6.04,
         "upcoming": [
@@ -1778,14 +1753,14 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 23,
+        "rank": 22,
         "player_id": 4429501,
         "name": "Ray Davis",
         "position": "RB",
         "pro_team": "BUF",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 2.38,
+        "percent_owned": 2.37,
         "percent_change": 0.01,
         "bye_week": 7,
         "projected_points": 1.48,
@@ -1815,15 +1790,15 @@
         "recent_form_note": "outside the ranked top 60"
       },
       {
-        "rank": 24,
+        "rank": 23,
         "player_id": 3915411,
         "name": "Ty Johnson",
         "position": "RB",
         "pro_team": "BUF",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 2.3,
-        "percent_change": 0.19,
+        "percent_owned": 2.32,
+        "percent_change": 0.21,
         "bye_week": 7,
         "projected_points": 5.16,
         "upcoming": [
@@ -1848,20 +1823,20 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 55,
+        "recent_form_rank": 56,
         "recent_form_position": "RB",
         "recent_form_avg": "6.60"
       },
       {
-        "rank": 25,
+        "rank": 24,
         "player_id": 4241555,
         "name": "Elijah Mitchell",
         "position": "RB",
         "pro_team": "PHI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 2.27,
-        "percent_change": -0.37,
+        "percent_owned": 2.22,
+        "percent_change": -0.4,
         "bye_week": 10,
         "projected_points": 0.0,
         "upcoming": [
@@ -1886,9 +1861,54 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 56,
+        "recent_form_rank": 57,
         "recent_form_position": "RB",
         "recent_form_avg": "6.57"
+      },
+      {
+        "rank": 25,
+        "player_id": 4429835,
+        "name": "George Holani",
+        "position": "RB",
+        "pro_team": "SEA",
+        "availability_status": "FREEAGENT",
+        "acquisition": "FREE AGENT",
+        "percent_owned": 1.92,
+        "percent_change": -0.1,
+        "bye_week": 11,
+        "projected_points": 0.0,
+        "injury": {
+          "designation": "IR",
+          "nfl_status": "Injured Reserve",
+          "on_nfl_ir": true,
+          "expected_return": "2026-12-25",
+          "expected_return_label": "Dec 25",
+          "injury_type": "Knee - MCL"
+        },
+        "upcoming": [
+          {
+            "scoring_period_id": 12,
+            "bye": false,
+            "opponent_pro_team_id": 25,
+            "opponent": "SF",
+            "at_home": false,
+            "kickoff_utc": "2026-11-29T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 29, 3:25 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 13,
+            "bye": false,
+            "opponent_pro_team_id": 6,
+            "opponent": "DAL",
+            "at_home": true,
+            "kickoff_utc": "2026-12-08T01:15:00+00:00",
+            "kickoff_ct": "Mon Dec 7, 7:15 PM CST",
+            "start_time_tbd": false
+          }
+        ],
+        "recent_form_position": "RB",
+        "recent_form_note": "outside the ranked top 60"
       }
     ],
     "WR": [
@@ -1898,10 +1918,12 @@
         "name": "Puka Nacua",
         "position": "WR",
         "pro_team": "LAR",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 77.92,
-        "percent_change": -5.05,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
+        "percent_owned": 77.72,
+        "percent_change": -4.75,
         "bye_week": 11,
         "projected_points": 0.0,
         "injury": {
@@ -1947,8 +1969,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-27T08:00:00+00:00",
         "waiver_process_ct": "Fri Nov 27, 2:00 AM CST",
-        "percent_owned": 63.53,
-        "percent_change": -3.23,
+        "percent_owned": 63.23,
+        "percent_change": -3.43,
         "bye_week": 10,
         "projected_points": 7.51,
         "upcoming": [
@@ -1973,7 +1995,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 58,
+        "recent_form_rank": 59,
         "recent_form_position": "WR",
         "recent_form_avg": "8.27"
       },
@@ -1985,8 +2007,8 @@
         "pro_team": "LV",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 49.9,
-        "percent_change": -1.39,
+        "percent_owned": 49.7,
+        "percent_change": -1.54,
         "bye_week": 13,
         "projected_points": 7.92,
         "upcoming": [
@@ -2016,8 +2038,8 @@
         "pro_team": "PIT",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 39.03,
-        "percent_change": -1.85,
+        "percent_owned": 38.74,
+        "percent_change": -2.08,
         "bye_week": 9,
         "projected_points": 6.76,
         "upcoming": [
@@ -2053,8 +2075,8 @@
         "pro_team": "TEN",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 37.73,
-        "percent_change": -1.45,
+        "percent_owned": 37.42,
+        "percent_change": -1.65,
         "bye_week": 9,
         "projected_points": 0.0,
         "upcoming": [
@@ -2090,8 +2112,8 @@
         "pro_team": "PIT",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 36.93,
-        "percent_change": -0.11,
+        "percent_owned": 36.86,
+        "percent_change": -0.16,
         "bye_week": 9,
         "projected_points": 4.74,
         "injury": {
@@ -2135,8 +2157,8 @@
         "pro_team": "JAX",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 31.13,
-        "percent_change": -0.3,
+        "percent_owned": 31.08,
+        "percent_change": -0.34,
         "bye_week": 7,
         "projected_points": 6.07,
         "upcoming": [
@@ -2172,8 +2194,8 @@
         "pro_team": "WSH",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 29.52,
-        "percent_change": -0.38,
+        "percent_owned": 29.43,
+        "percent_change": -0.45,
         "bye_week": 7,
         "projected_points": 0.0,
         "upcoming": [
@@ -2210,8 +2232,8 @@
         "pro_team": "LAC",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 21.65,
-        "percent_change": -0.25,
+        "percent_owned": 21.61,
+        "percent_change": -0.29,
         "bye_week": 7,
         "projected_points": 6.24,
         "upcoming": [
@@ -2247,8 +2269,8 @@
         "pro_team": "SF",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 18.06,
-        "percent_change": 0.11,
+        "percent_owned": 18.04,
+        "percent_change": 0.1,
         "bye_week": 8,
         "projected_points": 0.0,
         "injury": {
@@ -2291,8 +2313,8 @@
         "pro_team": "SEA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 16.95,
-        "percent_change": -0.24,
+        "percent_owned": 16.91,
+        "percent_change": -0.27,
         "bye_week": 11,
         "projected_points": 6.37,
         "upcoming": [
@@ -2326,8 +2348,10 @@
         "name": "Jayden Reed",
         "position": "WR",
         "pro_team": "GB",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
         "percent_owned": 16.51,
         "percent_change": -0.12,
         "bye_week": 11,
@@ -2364,7 +2388,7 @@
         "pro_team": "NE",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 15.99,
+        "percent_owned": 15.97,
         "percent_change": -0.45,
         "bye_week": 11,
         "projected_points": 8.5,
@@ -2402,8 +2426,8 @@
         "pro_team": "BUF",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 15.63,
-        "percent_change": -0.94,
+        "percent_owned": 15.49,
+        "percent_change": -1.04,
         "bye_week": 7,
         "projected_points": 4.95,
         "upcoming": [
@@ -2441,8 +2465,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-26T08:00:00+00:00",
         "waiver_process_ct": "Thu Nov 26, 2:00 AM CST",
-        "percent_owned": 13.94,
-        "percent_change": -4.46,
+        "percent_owned": 13.64,
+        "percent_change": -4.6,
         "bye_week": 9,
         "projected_points": 6.89,
         "upcoming": [
@@ -2467,7 +2491,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 57,
+        "recent_form_rank": 58,
         "recent_form_position": "WR",
         "recent_form_avg": "8.33"
       },
@@ -2479,8 +2503,8 @@
         "pro_team": "FA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 12.74,
-        "percent_change": -0.42,
+        "percent_owned": 12.68,
+        "percent_change": -0.46,
         "upcoming": [
           {
             "scoring_period_id": 12,
@@ -2501,8 +2525,8 @@
         "pro_team": "PHI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 10.44,
-        "percent_change": -0.66,
+        "percent_owned": 10.34,
+        "percent_change": -0.73,
         "bye_week": 10,
         "projected_points": 0.0,
         "injury": {
@@ -2546,8 +2570,8 @@
         "pro_team": "DEN",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 8.94,
-        "percent_change": -1.99,
+        "percent_owned": 8.82,
+        "percent_change": -2.04,
         "bye_week": 10,
         "projected_points": 6.67,
         "upcoming": [
@@ -2584,8 +2608,8 @@
         "pro_team": "NYG",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 8.19,
-        "percent_change": -0.49,
+        "percent_owned": 8.14,
+        "percent_change": -0.53,
         "bye_week": 8,
         "projected_points": 6.96,
         "upcoming": [
@@ -2621,8 +2645,8 @@
         "pro_team": "PIT",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 7.29,
-        "percent_change": -0.85,
+        "percent_owned": 7.18,
+        "percent_change": -0.89,
         "bye_week": 9,
         "projected_points": 6.68,
         "upcoming": [
@@ -2658,7 +2682,7 @@
         "pro_team": "SEA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 7.18,
+        "percent_owned": 7.17,
         "percent_change": -0.1,
         "bye_week": 11,
         "projected_points": 5.21,
@@ -2693,9 +2717,11 @@
         "name": "Tutu Atwell",
         "position": "WR",
         "pro_team": "LAR",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 7.03,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
+        "percent_owned": 7.01,
         "percent_change": -0.92,
         "bye_week": 11,
         "projected_points": 6.72,
@@ -2732,8 +2758,8 @@
         "pro_team": "BAL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 6.86,
-        "percent_change": 0.17,
+        "percent_owned": 6.85,
+        "percent_change": 0.16,
         "bye_week": 13,
         "projected_points": 5.73,
         "injury": {
@@ -2760,7 +2786,7 @@
             "bye": true
           }
         ],
-        "recent_form_rank": 55,
+        "recent_form_rank": 56,
         "recent_form_position": "WR",
         "recent_form_avg": "8.50"
       },
@@ -2772,8 +2798,8 @@
         "pro_team": "BAL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 6.12,
-        "percent_change": -1.1,
+        "percent_owned": 6.06,
+        "percent_change": -1.11,
         "bye_week": 13,
         "projected_points": 4.99,
         "upcoming": [
@@ -2803,8 +2829,8 @@
         "pro_team": "PHI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 5.41,
-        "percent_change": 0.69,
+        "percent_owned": 5.52,
+        "percent_change": 0.81,
         "bye_week": 10,
         "projected_points": 8.46,
         "upcoming": [
@@ -2842,8 +2868,8 @@
         "pro_team": "ATL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 72.92,
-        "percent_change": 0.35,
+        "percent_owned": 72.97,
+        "percent_change": 0.42,
         "bye_week": 11,
         "projected_points": 8.38,
         "upcoming": [
@@ -2879,8 +2905,8 @@
         "pro_team": "NO",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 33.14,
-        "percent_change": -1.9,
+        "percent_owned": 32.87,
+        "percent_change": -2.11,
         "bye_week": 8,
         "projected_points": 5.38,
         "injury": {
@@ -2924,8 +2950,8 @@
         "pro_team": "DAL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 30.38,
-        "percent_change": -0.36,
+        "percent_owned": 30.28,
+        "percent_change": -0.45,
         "bye_week": 14,
         "projected_points": 0.0,
         "injury": {
@@ -2963,14 +2989,54 @@
       },
       {
         "rank": 4,
+        "player_id": 2576925,
+        "name": "Darren Waller",
+        "position": "TE",
+        "pro_team": "CAR",
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-11-27T08:00:00+00:00",
+        "waiver_process_ct": "Fri Nov 27, 2:00 AM CST",
+        "percent_owned": 26.46,
+        "percent_change": -1.24,
+        "bye_week": 5,
+        "projected_points": 7.31,
+        "upcoming": [
+          {
+            "scoring_period_id": 12,
+            "bye": false,
+            "opponent_pro_team_id": 27,
+            "opponent": "TB",
+            "at_home": false,
+            "kickoff_utc": "2026-12-01T01:15:00+00:00",
+            "kickoff_ct": "Mon Nov 30, 7:15 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 13,
+            "bye": false,
+            "opponent_pro_team_id": 16,
+            "opponent": "MIN",
+            "at_home": false,
+            "kickoff_utc": "2026-12-06T21:25:00+00:00",
+            "kickoff_ct": "Sun Dec 6, 3:25 PM CST",
+            "start_time_tbd": false
+          }
+        ],
+        "recent_form_rank": 7,
+        "recent_form_position": "TE",
+        "recent_form_avg": "11.53"
+      },
+      {
+        "rank": 5,
         "player_id": 5083315,
         "name": "Kenyon Sadiq",
         "position": "TE",
         "pro_team": "NYJ",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 14.98,
-        "percent_change": -0.16,
+        "percent_owned": 14.95,
+        "percent_change": -0.18,
         "bye_week": 13,
         "projected_points": 5.13,
         "upcoming": [
@@ -2993,17 +3059,27 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 5,
+        "rank": 6,
         "player_id": 2573401,
         "name": "Tyler Higbee",
         "position": "TE",
         "pro_team": "LAR",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 9.45,
-        "percent_change": 2.35,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
+        "percent_owned": 9.53,
+        "percent_change": 2.44,
         "bye_week": 11,
         "projected_points": 7.67,
+        "injury": {
+          "designation": "QUESTIONABLE",
+          "nfl_status": "Questionable",
+          "on_nfl_ir": false,
+          "expected_return": "2026-12-03",
+          "expected_return_label": "Dec 3",
+          "injury_type": "Chest"
+        },
         "upcoming": [
           {
             "scoring_period_id": 12,
@@ -3030,15 +3106,17 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 6,
+        "rank": 7,
         "player_id": 4570037,
         "name": "Terrance Ferguson",
         "position": "TE",
         "pro_team": "LAR",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 8.27,
-        "percent_change": -1.21,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
+        "percent_owned": 8.24,
+        "percent_change": -1.03,
         "bye_week": 11,
         "projected_points": 0.0,
         "injury": {
@@ -3075,15 +3153,15 @@
         "recent_form_note": "excluded from the rankings: out for the season"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "player_id": 4430802,
         "name": "Darnell Washington",
         "position": "TE",
         "pro_team": "PIT",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 6.37,
-        "percent_change": -0.44,
+        "percent_owned": 6.31,
+        "percent_change": -0.49,
         "bye_week": 9,
         "projected_points": 6.05,
         "upcoming": [
@@ -3108,20 +3186,20 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 21,
+        "recent_form_rank": 20,
         "recent_form_position": "TE",
         "recent_form_avg": "6.37"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "player_id": 4808766,
         "name": "Mason Taylor",
         "position": "TE",
         "pro_team": "NYJ",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 4.69,
-        "percent_change": -0.51,
+        "percent_owned": 4.63,
+        "percent_change": -0.55,
         "bye_week": 13,
         "projected_points": 6.1,
         "upcoming": [
@@ -3144,15 +3222,15 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "player_id": 4243331,
         "name": "Cade Otton",
         "position": "TE",
         "pro_team": "TB",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 3.97,
-        "percent_change": -0.54,
+        "percent_owned": 3.93,
+        "percent_change": -0.55,
         "bye_week": 10,
         "projected_points": 7.42,
         "upcoming": [
@@ -3181,15 +3259,15 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "player_id": 4831959,
         "name": "Eli Raridon",
         "position": "TE",
         "pro_team": "NE",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 3.22,
-        "percent_change": -0.24,
+        "percent_owned": 3.19,
+        "percent_change": -0.26,
         "bye_week": 11,
         "projected_points": 7.08,
         "upcoming": [
@@ -3218,15 +3296,15 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "player_id": 3051876,
         "name": "Evan Engram",
         "position": "TE",
         "pro_team": "DEN",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 3.09,
-        "percent_change": 0.61,
+        "percent_owned": 3.17,
+        "percent_change": 0.7,
         "bye_week": 10,
         "projected_points": 6.71,
         "upcoming": [
@@ -3251,20 +3329,59 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 19,
+        "recent_form_rank": 18,
         "recent_form_position": "TE",
         "recent_form_avg": "6.90"
       },
       {
-        "rank": 12,
+        "rank": 13,
+        "player_id": 4242557,
+        "name": "Colby Parkinson",
+        "position": "TE",
+        "pro_team": "LAR",
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
+        "percent_owned": 2.42,
+        "percent_change": -0.07,
+        "bye_week": 11,
+        "projected_points": 7.01,
+        "upcoming": [
+          {
+            "scoring_period_id": 12,
+            "bye": false,
+            "opponent_pro_team_id": 9,
+            "opponent": "GB",
+            "at_home": true,
+            "kickoff_utc": "2026-11-26T01:00:00+00:00",
+            "kickoff_ct": "Wed Nov 25, 7:00 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 13,
+            "bye": false,
+            "opponent_pro_team_id": 12,
+            "opponent": "KC",
+            "at_home": true,
+            "kickoff_utc": "2026-12-04T01:15:00+00:00",
+            "kickoff_ct": "Thu Dec 3, 7:15 PM CST",
+            "start_time_tbd": false
+          }
+        ],
+        "recent_form_position": "TE",
+        "recent_form_note": "outside the ranked top 24"
+      },
+      {
+        "rank": 14,
         "player_id": 4686728,
         "name": "Gunnar Helm",
         "position": "TE",
         "pro_team": "TEN",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 2.45,
-        "percent_change": -0.32,
+        "percent_owned": 2.41,
+        "percent_change": -0.34,
         "bye_week": 9,
         "projected_points": 5.52,
         "upcoming": [
@@ -3294,45 +3411,7 @@
         "recent_form_avg": "8.10"
       },
       {
-        "rank": 13,
-        "player_id": 4242557,
-        "name": "Colby Parkinson",
-        "position": "TE",
-        "pro_team": "LAR",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 2.42,
-        "percent_change": -0.07,
-        "bye_week": 11,
-        "projected_points": 7.01,
-        "upcoming": [
-          {
-            "scoring_period_id": 12,
-            "bye": false,
-            "opponent_pro_team_id": 9,
-            "opponent": "GB",
-            "at_home": true,
-            "kickoff_utc": "2026-11-26T01:00:00+00:00",
-            "kickoff_ct": "Wed Nov 25, 7:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
-            "scoring_period_id": 13,
-            "bye": false,
-            "opponent_pro_team_id": 12,
-            "opponent": "KC",
-            "at_home": true,
-            "kickoff_utc": "2026-12-04T01:15:00+00:00",
-            "kickoff_ct": "Thu Dec 3, 7:15 PM CST",
-            "start_time_tbd": false
-          }
-        ],
-        "recent_form_rank": 23,
-        "recent_form_position": "TE",
-        "recent_form_avg": "6.07"
-      },
-      {
-        "rank": 14,
+        "rank": 15,
         "player_id": 4367209,
         "name": "Greg Dulcich",
         "position": "TE",
@@ -3369,14 +3448,14 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "player_id": 4595342,
         "name": "Oronde Gadsden",
         "position": "TE",
         "pro_team": "LAC",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 1.21,
+        "percent_owned": 1.2,
         "percent_change": -0.03,
         "bye_week": 7,
         "projected_points": 2.54,
@@ -3406,7 +3485,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "player_id": 3123076,
         "name": "David Njoku",
         "position": "TE",
@@ -3451,15 +3530,15 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "player_id": 4708049,
         "name": "Gavin Bartholomew",
         "position": "TE",
         "pro_team": "MIN",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 0.87,
-        "percent_change": -0.13,
+        "percent_owned": 0.85,
+        "percent_change": -0.14,
         "bye_week": 6,
         "projected_points": 2.42,
         "upcoming": [
@@ -3488,14 +3567,14 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "player_id": 4372780,
         "name": "Tommy Tremble",
         "position": "TE",
         "pro_team": "CAR",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 0.79,
+        "percent_owned": 0.78,
         "percent_change": -0.1,
         "bye_week": 5,
         "projected_points": 5.83,
@@ -3526,14 +3605,14 @@
         "recent_form_avg": "8.00"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "player_id": 4360967,
         "name": "Brevyn Spann-Ford",
         "position": "TE",
         "pro_team": "DAL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 0.39,
+        "percent_owned": 0.38,
         "percent_change": -0.02,
         "bye_week": 14,
         "projected_points": 3.58,
@@ -3563,7 +3642,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 20,
+        "rank": 21,
         "player_id": 4258595,
         "name": "Cole Kmet",
         "position": "TE",
@@ -3600,14 +3679,14 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 21,
+        "rank": 22,
         "player_id": 4240472,
         "name": "Noah Gray",
         "position": "TE",
         "pro_team": "KC",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 0.25,
+        "percent_owned": 0.24,
         "percent_change": -0.01,
         "bye_week": 5,
         "projected_points": 3.75,
@@ -3645,7 +3724,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 22,
+        "rank": 23,
         "player_id": 15835,
         "name": "Zach Ertz",
         "position": "TE",
@@ -3682,7 +3761,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 23,
+        "rank": 24,
         "player_id": 3127310,
         "name": "Drew Sample",
         "position": "TE",
@@ -3719,7 +3798,7 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 24,
+        "rank": 25,
         "player_id": 4431574,
         "name": "Eli Stowers",
         "position": "TE",
@@ -3754,43 +3833,6 @@
         ],
         "recent_form_position": "TE",
         "recent_form_note": "outside the ranked top 24"
-      },
-      {
-        "rank": 25,
-        "player_id": 4036131,
-        "name": "Noah Fant",
-        "position": "TE",
-        "pro_team": "NO",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 0.19,
-        "percent_change": 0.01,
-        "bye_week": 8,
-        "projected_points": 3.04,
-        "upcoming": [
-          {
-            "scoring_period_id": 12,
-            "bye": false,
-            "opponent_pro_team_id": 4,
-            "opponent": "CIN",
-            "at_home": false,
-            "kickoff_utc": "2026-11-29T18:00:00+00:00",
-            "kickoff_ct": "Sun Nov 29, 12:00 PM CST",
-            "start_time_tbd": false
-          },
-          {
-            "scoring_period_id": 13,
-            "bye": false,
-            "opponent_pro_team_id": 9,
-            "opponent": "GB",
-            "at_home": true,
-            "kickoff_utc": "2026-12-06T18:00:00+00:00",
-            "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
-            "start_time_tbd": false
-          }
-        ],
-        "recent_form_position": "TE",
-        "recent_form_note": "outside the ranked top 24"
       }
     ],
     "K": [
@@ -3802,8 +3844,8 @@
         "pro_team": "IND",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 74.57,
-        "percent_change": -9.72,
+        "percent_owned": 73.73,
+        "percent_change": -10.47,
         "bye_week": 13,
         "projected_points": 9.56,
         "upcoming": [
@@ -3822,7 +3864,7 @@
             "bye": true
           }
         ],
-        "recent_form_rank": 21,
+        "recent_form_rank": 22,
         "recent_form_position": "K",
         "recent_form_avg": "8.33"
       },
@@ -3834,8 +3876,8 @@
         "pro_team": "SEA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 53.28,
-        "percent_change": -1.33,
+        "percent_owned": 53.08,
+        "percent_change": -1.48,
         "bye_week": 11,
         "projected_points": 7.43,
         "upcoming": [
@@ -3871,8 +3913,8 @@
         "pro_team": "SF",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 31.75,
-        "percent_change": -0.34,
+        "percent_owned": 31.69,
+        "percent_change": -0.4,
         "bye_week": 8,
         "projected_points": 6.47,
         "upcoming": [
@@ -3910,8 +3952,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-12-02T08:00:00+00:00",
         "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
-        "percent_owned": 29.73,
-        "percent_change": -1.29,
+        "percent_owned": 29.59,
+        "percent_change": -1.4,
         "bye_week": 10,
         "projected_points": 8.86,
         "upcoming": [
@@ -3936,7 +3978,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 13,
+        "recent_form_rank": 15,
         "recent_form_position": "K",
         "recent_form_avg": "9.33"
       },
@@ -3948,8 +3990,8 @@
         "pro_team": "BAL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 16.8,
-        "percent_change": -0.31,
+        "percent_owned": 16.7,
+        "percent_change": -0.4,
         "bye_week": 13,
         "projected_points": 0.0,
         "upcoming": [
@@ -3979,8 +4021,8 @@
         "pro_team": "FA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 15.68,
-        "percent_change": -0.17,
+        "percent_owned": 15.65,
+        "percent_change": -0.2,
         "projected_points": 0.0,
         "upcoming": [
           {
@@ -3992,7 +4034,7 @@
             "bye": true
           }
         ],
-        "recent_form_rank": 23,
+        "recent_form_rank": 24,
         "recent_form_position": "K",
         "recent_form_avg": "8.00"
       },
@@ -4006,8 +4048,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-27T08:00:00+00:00",
         "waiver_process_ct": "Fri Nov 27, 2:00 AM CST",
-        "percent_owned": 14.67,
-        "percent_change": -1.28,
+        "percent_owned": 14.51,
+        "percent_change": -1.42,
         "bye_week": 10,
         "projected_points": 7.79,
         "upcoming": [
@@ -4032,7 +4074,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 17,
+        "recent_form_rank": 19,
         "recent_form_position": "K",
         "recent_form_avg": "8.67"
       },
@@ -4044,8 +4086,8 @@
         "pro_team": "CLE",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 7.39,
-        "percent_change": 4.67,
+        "percent_owned": 8.11,
+        "percent_change": 5.39,
         "bye_week": 11,
         "projected_points": 10.93,
         "upcoming": [
@@ -4070,20 +4112,58 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 12,
+        "recent_form_rank": 14,
         "recent_form_position": "K",
         "recent_form_avg": "9.67"
       },
       {
         "rank": 9,
+        "player_id": 5081335,
+        "name": "Drew Stevens",
+        "position": "K",
+        "pro_team": "WSH",
+        "availability_status": "FREEAGENT",
+        "acquisition": "FREE AGENT",
+        "percent_owned": 5.93,
+        "percent_change": 3.01,
+        "bye_week": 7,
+        "projected_points": 10.21,
+        "upcoming": [
+          {
+            "scoring_period_id": 12,
+            "bye": false,
+            "opponent_pro_team_id": 22,
+            "opponent": "ARI",
+            "at_home": false,
+            "kickoff_utc": "2026-11-29T21:25:00+00:00",
+            "kickoff_ct": "Sun Nov 29, 3:25 PM CST",
+            "start_time_tbd": false
+          },
+          {
+            "scoring_period_id": 13,
+            "bye": false,
+            "opponent_pro_team_id": 10,
+            "opponent": "TEN",
+            "at_home": false,
+            "kickoff_utc": "2026-12-06T18:00:00+00:00",
+            "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
+            "start_time_tbd": false
+          }
+        ],
+        "recent_form_rank": 7,
+        "recent_form_position": "K",
+        "recent_form_avg": "11.00"
+      },
+      {
+        "rank": 10,
         "player_id": 4568263,
         "name": "Ryan Fitzgerald",
         "position": "K",
         "pro_team": "CAR",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 5.85,
-        "percent_change": -0.19,
+        "percent_owned": 5.81,
+        "percent_change": -0.22,
         "bye_week": 5,
         "projected_points": 7.37,
         "upcoming": [
@@ -4112,53 +4192,17 @@
         "recent_form_note": "outside the ranked top 24"
       },
       {
-        "rank": 10,
-        "player_id": 5081335,
-        "name": "Drew Stevens",
-        "position": "K",
-        "pro_team": "WSH",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 5.6,
-        "percent_change": 2.69,
-        "bye_week": 7,
-        "projected_points": 10.21,
-        "upcoming": [
-          {
-            "scoring_period_id": 12,
-            "bye": false,
-            "opponent_pro_team_id": 22,
-            "opponent": "ARI",
-            "at_home": false,
-            "kickoff_utc": "2026-11-29T21:25:00+00:00",
-            "kickoff_ct": "Sun Nov 29, 3:25 PM CST",
-            "start_time_tbd": false
-          },
-          {
-            "scoring_period_id": 13,
-            "bye": false,
-            "opponent_pro_team_id": 10,
-            "opponent": "TEN",
-            "at_home": false,
-            "kickoff_utc": "2026-12-06T18:00:00+00:00",
-            "kickoff_ct": "Sun Dec 6, 12:00 PM CST",
-            "start_time_tbd": false
-          }
-        ],
-        "recent_form_rank": 6,
-        "recent_form_position": "K",
-        "recent_form_avg": "11.00"
-      },
-      {
         "rank": 11,
         "player_id": 4869461,
         "name": "Trey Smack",
         "position": "K",
         "pro_team": "GB",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
         "percent_owned": 5.43,
-        "percent_change": -0.07,
+        "percent_change": -0.06,
         "bye_week": 11,
         "projected_points": 7.2,
         "upcoming": [
@@ -4183,9 +4227,9 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 24,
+        "recent_form_rank": 12,
         "recent_form_position": "K",
-        "recent_form_avg": "7.67"
+        "recent_form_avg": "10.00"
       },
       {
         "rank": 12,
@@ -4221,7 +4265,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 18,
+        "recent_form_rank": 20,
         "recent_form_position": "K",
         "recent_form_avg": "8.67"
       },
@@ -4233,8 +4277,8 @@
         "pro_team": "FA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 1.76,
-        "percent_change": -0.08,
+        "percent_owned": 1.74,
+        "percent_change": -0.09,
         "projected_points": 0.0,
         "upcoming": [
           {
@@ -4358,7 +4402,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 15,
+        "recent_form_rank": 17,
         "recent_form_position": "K",
         "recent_form_avg": "9.33"
       },
@@ -4370,7 +4414,7 @@
         "pro_team": "BAL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 0.65,
+        "percent_owned": 0.64,
         "percent_change": -0.03,
         "bye_week": 13,
         "projected_points": 7.3,
@@ -4399,8 +4443,10 @@
         "name": "Blake Grupe",
         "position": "K",
         "pro_team": "LAR",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
         "percent_owned": 0.55,
         "percent_change": -0.01,
         "bye_week": 11,
@@ -4437,7 +4483,7 @@
         "pro_team": "MIA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 0.53,
+        "percent_owned": 0.54,
         "percent_change": 0.05,
         "bye_week": 6,
         "projected_points": 9.02,
@@ -4463,7 +4509,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 11,
+        "recent_form_rank": 13,
         "recent_form_position": "K",
         "recent_form_avg": "9.67"
       },
@@ -4473,10 +4519,12 @@
         "name": "Brandon McManus",
         "position": "K",
         "pro_team": "LAR",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 0.46,
-        "percent_change": 0.1,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
+        "percent_owned": 0.47,
+        "percent_change": 0.11,
         "bye_week": 11,
         "projected_points": 8.12,
         "upcoming": [
@@ -4501,9 +4549,9 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 19,
+        "recent_form_rank": 5,
         "recent_form_position": "K",
-        "recent_form_avg": "8.33"
+        "recent_form_avg": "12.00"
       },
       {
         "rank": 21,
@@ -4671,8 +4719,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-26T08:00:00+00:00",
         "waiver_process_ct": "Thu Nov 26, 2:00 AM CST",
-        "percent_owned": 70.29,
-        "percent_change": -15.21,
+        "percent_owned": 68.85,
+        "percent_change": -16.46,
         "bye_week": 5,
         "projected_points": 5.18,
         "upcoming": [
@@ -4711,8 +4759,8 @@
         "acquisition": "WAIVERS",
         "waiver_process_date": "2026-11-26T08:00:00+00:00",
         "waiver_process_ct": "Thu Nov 26, 2:00 AM CST",
-        "percent_owned": 62.53,
-        "percent_change": -17.55,
+        "percent_owned": 60.25,
+        "percent_change": -19.59,
         "bye_week": 7,
         "projected_points": 4.08,
         "upcoming": [
@@ -4749,8 +4797,8 @@
         "pro_team": "CLE",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 33.2,
-        "percent_change": 2.49,
+        "percent_owned": 33.62,
+        "percent_change": 2.92,
         "bye_week": 11,
         "projected_points": 6.69,
         "upcoming": [
@@ -4786,8 +4834,8 @@
         "pro_team": "NE",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 31.21,
-        "percent_change": 1.28,
+        "percent_owned": 31.46,
+        "percent_change": 1.54,
         "bye_week": 11,
         "projected_points": 5.84,
         "upcoming": [
@@ -4823,8 +4871,8 @@
         "pro_team": "PHI",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 26.77,
-        "percent_change": -0.52,
+        "percent_owned": 26.64,
+        "percent_change": -0.64,
         "bye_week": 10,
         "projected_points": 2.95,
         "upcoming": [
@@ -4849,7 +4897,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 14,
+        "recent_form_rank": 13,
         "recent_form_position": "D/ST",
         "recent_form_avg": "7.33"
       },
@@ -4859,10 +4907,12 @@
         "name": "Packers D/ST",
         "position": "D/ST",
         "pro_team": "GB",
-        "availability_status": "FREEAGENT",
-        "acquisition": "FREE AGENT",
-        "percent_owned": 24.89,
-        "percent_change": -0.68,
+        "availability_status": "WAIVERS",
+        "acquisition": "WAIVERS",
+        "waiver_process_date": "2026-12-02T08:00:00+00:00",
+        "waiver_process_ct": "Wed Dec 2, 2:00 AM CST",
+        "percent_owned": 24.87,
+        "percent_change": -0.66,
         "bye_week": 11,
         "projected_points": 4.21,
         "upcoming": [
@@ -4887,9 +4937,9 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 9,
+        "recent_form_rank": 18,
         "recent_form_position": "D/ST",
-        "recent_form_avg": "9.00"
+        "recent_form_avg": "5.67"
       },
       {
         "rank": 7,
@@ -4899,8 +4949,8 @@
         "pro_team": "LAC",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 19.24,
-        "percent_change": 1.71,
+        "percent_owned": 20.02,
+        "percent_change": 2.53,
         "bye_week": 7,
         "projected_points": 7.48,
         "upcoming": [
@@ -4936,8 +4986,8 @@
         "pro_team": "CAR",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 16.64,
-        "percent_change": -3.81,
+        "percent_owned": 16.19,
+        "percent_change": -4.19,
         "bye_week": 5,
         "projected_points": 5.18,
         "upcoming": [
@@ -4962,7 +5012,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 17,
+        "recent_form_rank": 16,
         "recent_form_position": "D/ST",
         "recent_form_avg": "5.67"
       },
@@ -4974,8 +5024,8 @@
         "pro_team": "DAL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 13.23,
-        "percent_change": 3.97,
+        "percent_owned": 14.3,
+        "percent_change": 5.04,
         "bye_week": 14,
         "projected_points": 7.28,
         "upcoming": [
@@ -5011,8 +5061,8 @@
         "pro_team": "IND",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 9.84,
-        "percent_change": -1.42,
+        "percent_owned": 9.5,
+        "percent_change": -1.74,
         "bye_week": 13,
         "projected_points": 5.05,
         "upcoming": [
@@ -5031,7 +5081,7 @@
             "bye": true
           }
         ],
-        "recent_form_rank": 18,
+        "recent_form_rank": 17,
         "recent_form_position": "D/ST",
         "recent_form_avg": "5.67"
       },
@@ -5043,8 +5093,8 @@
         "pro_team": "LV",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 3.38,
-        "percent_change": 0.07,
+        "percent_owned": 3.39,
+        "percent_change": 0.09,
         "bye_week": 13,
         "projected_points": 4.73,
         "upcoming": [
@@ -5074,8 +5124,8 @@
         "pro_team": "NO",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 3.18,
-        "percent_change": -0.29,
+        "percent_owned": 3.12,
+        "percent_change": -0.34,
         "bye_week": 8,
         "projected_points": 2.71,
         "upcoming": [
@@ -5112,8 +5162,8 @@
         "pro_team": "MIA",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 2.51,
-        "percent_change": -0.2,
+        "percent_owned": 2.46,
+        "percent_change": -0.24,
         "bye_week": 6,
         "projected_points": 4.77,
         "upcoming": [
@@ -5138,7 +5188,7 @@
             "start_time_tbd": false
           }
         ],
-        "recent_form_rank": 12,
+        "recent_form_rank": 11,
         "recent_form_position": "D/ST",
         "recent_form_avg": "8.00"
       },
@@ -5150,8 +5200,8 @@
         "pro_team": "TEN",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 2.13,
-        "percent_change": -0.06,
+        "percent_owned": 2.11,
+        "percent_change": -0.08,
         "bye_week": 9,
         "projected_points": 2.22,
         "upcoming": [
@@ -5187,8 +5237,8 @@
         "pro_team": "ATL",
         "availability_status": "FREEAGENT",
         "acquisition": "FREE AGENT",
-        "percent_owned": 1.46,
-        "percent_change": -0.05,
+        "percent_owned": 1.45,
+        "percent_change": -0.06,
         "bye_week": 11,
         "projected_points": 3.38,
         "upcoming": [

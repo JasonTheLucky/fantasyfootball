@@ -3,7 +3,7 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 12,
-  "fetched_at": "2026-11-26T00:30:59.786710+00:00",
+  "fetched_at": "2026-11-26T06:20:55.873590+00:00",
   "complete": true,
   "team_count": 12,
   "positions": [
@@ -56,13 +56,14 @@
         "QB": 4,
         "RB": 2,
         "WR": 1,
-        "TE": 4,
+        "TE": 3,
         "K": 4,
         "D/ST": 2
       },
       "strongest": [
         "RB",
         "WR",
+        "TE",
         "D/ST"
       ],
       "weakest": []
@@ -102,7 +103,7 @@
         "QB": 1,
         "RB": 1,
         "WR": 7,
-        "TE": 3,
+        "TE": 2,
         "K": 1,
         "D/ST": 1
       },
@@ -289,12 +290,11 @@
         "QB": 9,
         "RB": 7,
         "WR": 6,
-        "TE": 2,
+        "TE": 4,
         "K": 3,
         "D/ST": 8
       },
       "strongest": [
-        "TE",
         "K"
       ],
       "weakest": []
@@ -872,8 +872,8 @@
         "team_id": 4,
         "team_name": "Broken Hand Club",
         "is_jason_x": false,
-        "score": 255.1,
-        "depth_score": 37.1,
+        "score": 261.3,
+        "depth_score": 43.2,
         "players": [
           {
             "player_id": 4702555,
@@ -893,19 +893,19 @@
             "weight": 1.0
           },
           {
+            "player_id": 3068267,
+            "name": "Austin Ekeler",
+            "position": "RB",
+            "pro_team": "WSH",
+            "ros_projected_points": 61.0,
+            "weight": 0.5
+          },
+          {
             "player_id": 4685247,
             "name": "Braelon Allen",
             "position": "RB",
             "pro_team": "NYJ",
             "ros_projected_points": 50.9,
-            "weight": 0.5
-          },
-          {
-            "player_id": 4430968,
-            "name": "Kimani Vidal",
-            "position": "RB",
-            "pro_team": "LAC",
-            "ros_projected_points": 46.6,
             "weight": 0.25
           }
         ]
@@ -1197,6 +1197,7 @@
             "position": "WR",
             "pro_team": "GB",
             "ros_projected_points": 107.5,
+            "designation": "QUESTIONABLE",
             "weight": 0.5
           },
           {
@@ -1669,32 +1670,6 @@
       },
       {
         "rank": 2,
-        "team_id": 4,
-        "team_name": "Broken Hand Club",
-        "is_jason_x": false,
-        "score": 107.3,
-        "depth_score": 10.6,
-        "players": [
-          {
-            "player_id": 3040151,
-            "name": "George Kittle",
-            "position": "TE",
-            "pro_team": "SF",
-            "ros_projected_points": 96.6,
-            "weight": 1.0
-          },
-          {
-            "player_id": 2576925,
-            "name": "Darren Waller",
-            "position": "TE",
-            "pro_team": "CAR",
-            "ros_projected_points": 53.1,
-            "weight": 0.2
-          }
-        ]
-      },
-      {
-        "rank": 3,
         "team_id": 8,
         "team_name": "Giant Packer Fan",
         "is_jason_x": false,
@@ -1720,7 +1695,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 3,
         "team_id": 5,
         "team_name": "Burrow's Bunch",
         "is_jason_x": false,
@@ -1743,6 +1718,24 @@
             "pro_team": "JAX",
             "ros_projected_points": 55.2,
             "weight": 0.2
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "team_id": 4,
+        "team_name": "Broken Hand Club",
+        "is_jason_x": false,
+        "score": 96.6,
+        "depth_score": 0.0,
+        "players": [
+          {
+            "player_id": 3040151,
+            "name": "George Kittle",
+            "position": "TE",
+            "pro_team": "SF",
+            "ros_projected_points": 96.6,
+            "weight": 1.0
           }
         ]
       },
@@ -2471,7 +2464,8 @@
         "name": "Christian Watson",
         "position": "WR",
         "pro_team": "GB",
-        "ros_projected_points": 107.5
+        "ros_projected_points": 107.5,
+        "designation": "QUESTIONABLE"
       }
     ],
     "jason_spare": [
@@ -2541,7 +2535,8 @@
               "name": "Christian Watson",
               "position": "WR",
               "pro_team": "GB",
-              "ros_projected_points": 107.5
+              "ros_projected_points": 107.5,
+              "designation": "QUESTIONABLE"
             },
             {
               "player_id": 3122840,
@@ -2638,18 +2633,18 @@
           "shape": "2-for-1",
           "jason_gives": [
             {
-              "player_id": 4374302,
-              "name": "Amon-Ra St. Brown",
-              "position": "WR",
-              "pro_team": "DET",
-              "ros_projected_points": 131.1
-            },
-            {
               "player_id": 4711533,
               "name": "Ollie Gordon II",
               "position": "RB",
               "pro_team": "MIA",
               "ros_projected_points": 87.2
+            },
+            {
+              "player_id": 4374302,
+              "name": "Amon-Ra St. Brown",
+              "position": "WR",
+              "pro_team": "DET",
+              "ros_projected_points": 131.1
             }
           ],
           "jason_gets": {
@@ -2681,7 +2676,8 @@
                 "name": "Christian Watson",
                 "position": "WR",
                 "pro_team": "GB",
-                "ros_projected_points": 107.5
+                "ros_projected_points": 107.5,
+                "designation": "QUESTIONABLE"
               }
             ],
             "jason_gets": {
@@ -2712,7 +2708,8 @@
               "name": "Christian Watson",
               "position": "WR",
               "pro_team": "GB",
-              "ros_projected_points": 107.5
+              "ros_projected_points": 107.5,
+              "designation": "QUESTIONABLE"
             },
             {
               "player_id": 4711533,
@@ -2744,7 +2741,8 @@
                 "name": "Christian Watson",
                 "position": "WR",
                 "pro_team": "GB",
-                "ros_projected_points": 107.5
+                "ros_projected_points": 107.5,
+                "designation": "QUESTIONABLE"
               },
               {
                 "player_id": 4711533,
