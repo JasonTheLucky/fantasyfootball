@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-26T18:14:15.848974+00:00` |
-| Fetched at (CT) | **Thu Nov 26, 12:14 PM CST** |
+| Fetched at (UTC) | `2026-11-27T00:31:30.836663+00:00` |
+| Fetched at (CT) | **Thu Nov 26, 6:31 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1063 |
-| Fetch duration | 10.71s |
+| Fetch duration | 12.58s |
 | ESPN calls | 41 |
-| Workflow run | `45874251880` |
+| Workflow run | `45917184834` |
 
 ## Freshness and completeness gates
 
@@ -36,12 +36,12 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| The Bye Week Boys | 0.0 | Kelli's Top-Notch Team | 10.0 | NO |
-| 🔥Certified Dumpster Fire 🔥 | 16.5 | Jason X | 23.1 | NO |
-| Connor’s Team | 4.9 | Burrow's Bunch | 0.0 | NO |
-| Commanders of Chaos | 3.6 | Giant Packer Fan | 2.2 | NO |
-| From Puka with Love | 9.0 | Broken Hand Club | 1.84 | NO |
-| Auto Draft Champion | 0.0 | Nicole's Gnarly Team | 3.0 | NO |
+| The Bye Week Boys | 69.3 | Kelli's Top-Notch Team | 14.2 | NO |
+| 🔥Certified Dumpster Fire 🔥 | 16.5 | Jason X | 40.1 | NO |
+| Connor’s Team | 4.9 | Burrow's Bunch | 7.8 | NO |
+| Commanders of Chaos | 12.6 | Giant Packer Fan | 54.2 | NO |
+| From Puka with Love | 41.82 | Broken Hand Club | 17.82 | NO |
+| Auto Draft Champion | 14.4 | Nicole's Gnarly Team | 23.3 | NO |
 
 ## Rosters
 
@@ -79,7 +79,7 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (36)
+## Injury designations (37)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
@@ -97,12 +97,12 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Broken Hand Club | Jordan Addison | WR | DOUBTFUL | BENCH | NO |
 | Broken Hand Club | J.K. Dobbins | RB | SUSPENSION | BENCH | NO |
 | Broken Hand Club | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
+| Burrow's Bunch | Parker Washington | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | Isaiah Likely | TE | QUESTIONABLE | TE | yes |
 | Burrow's Bunch | Kenneth Walker III | RB | OUT | IR | NO |
 | From Puka with Love | Woody Marks | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Drake Maye | QB | OUT | QB | yes |
-| Connor’s Team | Dalton Kincaid | TE | QUESTIONABLE | TE | yes |
 | Connor’s Team | Derrick Henry | RB | QUESTIONABLE | RB | yes |
 | Connor’s Team | A.J. Brown | WR | DOUBTFUL | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
@@ -110,15 +110,16 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
 | Giant Packer Fan | Denzel Boston | WR | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | Mike Evans | WR | QUESTIONABLE | FLEX | yes |
+| Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
+| Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | FLEX | yes |
+| Kelli's Top-Notch Team | Colston Loveland | TE | QUESTIONABLE | TE | yes |
 | Kelli's Top-Notch Team | Brock Purdy | QB | QUESTIONABLE | QB | yes |
-| Kelli's Top-Notch Team | Marvin Harrison Jr. | WR | QUESTIONABLE | BENCH | NO |
-| 🔥Certified Dumpster Fire 🔥 | Stefon Diggs | WR | QUESTIONABLE | BENCH | NO |
+| Kelli's Top-Notch Team | Dalton Schultz | TE | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
-| Commanders of Chaos | Zay Flowers | WR | QUESTIONABLE | WR | yes |
-| Commanders of Chaos | Harold Fannin Jr. | TE | QUESTIONABLE | TE | yes |
 | Commanders of Chaos | Tetairoa McMillan | WR | QUESTIONABLE | WR | yes |
 | Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
+| Commanders of Chaos | Dallas Goedert | TE | OUT | BENCH | NO |
 
 ## Available player pool by position
 
@@ -130,37 +131,30 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Thu Nov 26, 6:18 AM CST`: 5 injury change(s) (0 affecting Jason X), 2 newly available, 2 claimed, 0 moved between teams.
+Compared with the snapshot taken `Thu Nov 26, 12:14 PM CST`: 36 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| Case Keenum | - | INACTIVE | Dec 6 | - |
-| Davante Adams | IR | - | - | Connor’s Team |
-| Puka Nacua | IR | - | - | - |
-| Roschon Johnson | OUT | INACTIVE | Dec 6 | - |
-| Terrance Ferguson | IR | - | - | - |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Dawson Knox | TE | BUF | Nicole's Gnarly Team |
-| Michael Mayer | TE | LV | The Bye Week Boys |
-
-**Claimed**
-
-| Name | Position | Pro Team | Added By |
-| --- | --- | --- | --- |
-| Bam Knight | RB | ARI | The Bye Week Boys |
-| Kyle Pitts Sr. | TE | ATL | Nicole's Gnarly Team |
+| Ben Skowronek | QUESTIONABLE | IR | Dec 27 | - |
+| Blake Whiteheart | QUESTIONABLE | - | - | - |
+| Caleb Lohner | - | IR-R | Dec 6 | - |
+| Caleb Williams | - | QUESTIONABLE | Dec 6 | Nicole's Gnarly Team |
+| Cole Payton | - | INACTIVE | Dec 6 | - |
+| Colston Loveland | - | QUESTIONABLE | Dec 6 | Kelli's Top-Notch Team |
+| Dallas Goedert | - | OUT | Dec 6 | Commanders of Chaos |
+| Dalton Kincaid | QUESTIONABLE | - | - | Connor’s Team |
+| Dalton Schultz | - | QUESTIONABLE | Nov 29 | Kelli's Top-Notch Team |
+| Darren Waller | - | QUESTIONABLE | Nov 30 | - |
+| Dontayvion Wicks | IR | - | - | - |
+| Drew Ogletree | QUESTIONABLE | - | - | - |
 
 ## Jason X
 
 Record 7-4 · FAAB **$40** of $200 · waiver rank 8 · bench open **0** · IR open 1
 
-**This week:** vs 🔥Certified Dumpster Fire 🔥 — projected 149.87 to 117.92 (margin 31.95), win probability 0.67. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs 🔥Certified Dumpster Fire 🔥 — projected 149.55 to 117.92 (margin 31.63), win probability 0.68. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -196,7 +190,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-75 players in this league's pool carry an NFL designation; 15 are on injured reserve (4 of them rostered). 6 affect Jason X.
+76 players in this league's pool carry an NFL designation; 13 are on injured reserve (4 of them rostered). 6 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -223,8 +217,8 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]. Ranked 212 of 212 exp
 
 | Pos | Limit | Qualifying | Ranked | At limit |
 | --- | --- | --- | --- | --- |
-| QB | 24 | 57 | 24 | yes |
-| RB | 60 | 139 | 60 | yes |
+| QB | 24 | 58 | 24 | yes |
+| RB | 60 | 140 | 60 | yes |
 | WR | 60 | 208 | 60 | yes |
 | TE | 24 | 131 | 24 | yes |
 | K | 24 | 36 | 24 | yes |
@@ -238,10 +232,10 @@ Top 5 overall by three-game average:
 
 | # | Player | Pos | Team | Weeks | Avg | Owner |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Dak Prescott | QB | DAL | 9, 10, 11 | 31.94 | From Puka with Love |
-| 2 | Christian McCaffrey | RB | SF | 9, 10, 11 | 29.73 | Auto Draft Champion |
-| 3 | Joe Burrow | QB | CIN | 9, 10, 11 | 29.53 | Burrow's Bunch |
-| 4 | CeeDee Lamb | WR | DAL | 9, 10, 11 | 29.30 | Nicole's Gnarly Team |
+| 1 | Jahmyr Gibbs | RB | DET | 10, 11, 12 | 42.73 | Giant Packer Fan |
+| 2 | Dak Prescott | QB | DAL | 10, 11, 12 | 30.31 | From Puka with Love |
+| 3 | Christian McCaffrey | RB | SF | 9, 10, 11 | 29.73 | Auto Draft Champion |
+| 4 | Joe Burrow | QB | CIN | 9, 10, 11 | 29.53 | Burrow's Bunch |
 | 5 | Brock Purdy | QB | SF | 9, 10, 11 | 28.38 | Kelli's Top-Notch Team |
 
 Owner in **bold** means `is_jason_x` is true.
