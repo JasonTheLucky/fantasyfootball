@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-27T06:21:14.418324+00:00` |
-| Fetched at (CT) | **Fri Nov 27, 12:21 AM CST** |
+| Fetched at (UTC) | `2026-11-27T12:18:26.755161+00:00` |
+| Fetched at (CT) | **Fri Nov 27, 6:18 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1063 |
-| Fetch duration | 10.51s |
+| Fetch duration | 10.82s |
 | ESPN calls | 41 |
-| Workflow run | `45951257312` |
+| Workflow run | `45997493260` |
 
 ## Freshness and completeness gates
 
@@ -132,16 +132,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Thu Nov 26, 6:31 PM CST`: 4 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Dallas Goedert | OUT | QUESTIONABLE | Dec 6 | Commanders of Chaos |
-| DeVonta Smith | - | QUESTIONABLE | Dec 6 | The Bye Week Boys |
-| Jalen Royals | - | QUESTIONABLE | Dec 3 | - |
-| Terrance Ferguson | - | IR | out for the season | - |
+Compared with the snapshot taken `Fri Nov 27, 12:21 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
@@ -235,7 +226,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1180 total | 307 executed ownership changes | 602 lineup-only moves | 192 draft picks | 0 pending
+1182 total | 307 executed ownership changes | 604 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
