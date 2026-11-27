@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-27T12:18:26.755161+00:00` |
-| Fetched at (CT) | **Fri Nov 27, 6:18 AM CST** |
+| Fetched at (UTC) | `2026-11-27T18:13:47.445364+00:00` |
+| Fetched at (CT) | **Fri Nov 27, 12:13 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1063 |
-| Fetch duration | 10.82s |
+| Fetch duration | 9.96s |
 | ESPN calls | 41 |
-| Workflow run | `45997493260` |
+| Workflow run | `46047831738` |
 
 ## Freshness and completeness gates
 
@@ -88,7 +88,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Jason X | Christian Watson | WR | QUESTIONABLE | WR | yes |
 | Jason X | Bhayshul Tuten | RB | QUESTIONABLE | BENCH | NO |
 | Jason X | Treylon Burks | WR | QUESTIONABLE | BENCH | NO |
-| Jason X | Omar Cooper Jr. | WR | QUESTIONABLE | BENCH | NO |
+| Jason X | Omar Cooper Jr. | WR | OUT | BENCH | NO |
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | BENCH | NO |
@@ -98,14 +98,14 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Broken Hand Club | Jordan Addison | WR | DOUBTFUL | BENCH | NO |
 | Broken Hand Club | J.K. Dobbins | RB | SUSPENSION | BENCH | NO |
 | Broken Hand Club | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
-| Burrow's Bunch | Parker Washington | WR | QUESTIONABLE | WR | yes |
 | Burrow's Bunch | Isaiah Likely | TE | QUESTIONABLE | TE | yes |
+| Burrow's Bunch | Parker Washington | WR | OUT | BENCH | NO |
 | Burrow's Bunch | Kenneth Walker III | RB | OUT | IR | NO |
 | From Puka with Love | Woody Marks | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Drake Maye | QB | OUT | QB | yes |
 | Connor’s Team | Derrick Henry | RB | QUESTIONABLE | RB | yes |
-| Connor’s Team | A.J. Brown | WR | DOUBTFUL | BENCH | NO |
+| Connor’s Team | A.J. Brown | WR | OUT | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | Alec Pierce | WR | INJURY_RESERVE | BENCH | NO |
@@ -114,7 +114,7 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | Caleb Williams | QB | QUESTIONABLE | BENCH | NO |
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | FLEX | yes |
-| Kelli's Top-Notch Team | Colston Loveland | TE | QUESTIONABLE | TE | yes |
+| Kelli's Top-Notch Team | Colston Loveland | TE | DOUBTFUL | TE | yes |
 | Kelli's Top-Notch Team | Brock Purdy | QB | QUESTIONABLE | QB | yes |
 | Kelli's Top-Notch Team | Dalton Schultz | TE | QUESTIONABLE | BENCH | NO |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
@@ -132,7 +132,18 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 27, 12:21 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Fri Nov 27, 6:18 AM CST`: 6 injury change(s) (1 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+
+**Injury changes**
+
+| Name | From | To | Expected Return | Fantasy Team |
+| --- | --- | --- | --- | --- |
+| **Omar Cooper Jr.** | QUESTIONABLE | OUT | Dec 13 | Jason X |
+| A.J. Brown | DOUBTFUL | OUT | Dec 6 | Connor’s Team |
+| Carson Beck | QUESTIONABLE | OUT | Dec 6 | - |
+| Colston Loveland | QUESTIONABLE | DOUBTFUL | Dec 6 | Kelli's Top-Notch Team |
+| Davis Allen | QUESTIONABLE | DOUBTFUL | Dec 3 | - |
+| Parker Washington | QUESTIONABLE | OUT | Dec 6 | Burrow's Bunch |
 
 ## Jason X
 
@@ -189,7 +200,7 @@ Jason X players with a designation:
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
 | Bhayshul Tuten | BENCH | QUESTIONABLE | Nov 29 | Ankle |
-| Omar Cooper Jr. | BENCH | QUESTIONABLE | Nov 29 | Ankle |
+| Omar Cooper Jr. | BENCH | OUT | Dec 13 | Ankle |
 | Treylon Burks | BENCH | QUESTIONABLE | Nov 29 | Foot |
 | Brock Bowers | TE | QUESTIONABLE | Nov 29 | Ankle |
 | Christian Watson | WR | QUESTIONABLE | Dec 6 | Concussion |
@@ -226,7 +237,7 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1182 total | 307 executed ownership changes | 604 lineup-only moves | 192 draft picks | 0 pending
+1183 total | 307 executed ownership changes | 605 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
