@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-28T00:29:14.212387+00:00` |
-| Fetched at (CT) | **Fri Nov 27, 6:29 PM CST** |
+| Fetched at (UTC) | `2026-11-28T06:18:28.163027+00:00` |
+| Fetched at (CT) | **Sat Nov 28, 12:18 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1063 |
-| Fetch duration | 9.92s |
+| Fetch duration | 9.13s |
 | ESPN calls | 41 |
-| Workflow run | `46088104119` |
+| Workflow run | `46115972234` |
 
 ## Freshness and completeness gates
 
@@ -125,36 +125,13 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 27, 12:13 PM CST`: 36 injury change(s) (3 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
+Compared with the snapshot taken `Fri Nov 27, 6:29 PM CST`: 1 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| **Bhayshul Tuten** | QUESTIONABLE | OUT | Dec 6 | Jason X |
-| **Jaxon Smith-Njigba** | QUESTIONABLE | - | - | Jason X |
-| **Treylon Burks** | QUESTIONABLE | - | - | Jason X |
-| Brenen Thompson | QUESTIONABLE | DOUBTFUL | Nov 29 | - |
-| Brevin Jordan | QUESTIONABLE | OUT | Dec 6 | - |
-| Brock Purdy | QUESTIONABLE | OUT | Dec 6 | Kelli's Top-Notch Team |
-| Dallen Bentley | - | INACTIVE | Dec 6 | - |
-| Dalton Schultz | QUESTIONABLE | - | - | Kelli's Top-Notch Team |
-| Derrick Henry | QUESTIONABLE | - | - | Connor’s Team |
-| Drew Allar | - | INACTIVE | Dec 6 | - |
-| Drew Lock | QUESTIONABLE | - | - | - |
-| Drew Ogletree | - | QUESTIONABLE | Nov 29 | - |
-
-**Newly available**
-
-| Name | Position | Pro Team | Dropped By |
-| --- | --- | --- | --- |
-| Chad Ryland | K | ARI | Kelli's Top-Notch Team |
-
-**Claimed**
-
-| Name | Position | Pro Team | Added By |
-| --- | --- | --- | --- |
-| J.J. McCarthy | QB | NYG | Kelli's Top-Notch Team |
+| Terrance Ferguson | IR | - | - | - |
 
 ## Jason X
 
@@ -196,7 +173,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-77 players in this league's pool carry an NFL designation; 14 are on injured reserve (4 of them rostered). 4 affect Jason X.
+76 players in this league's pool carry an NFL designation; 13 are on injured reserve (4 of them rostered). 4 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -224,7 +201,7 @@ Weeks considered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]. Ranked 212 of 212 exp
 | QB | 24 | 58 | 24 | yes |
 | RB | 60 | 141 | 60 | yes |
 | WR | 60 | 208 | 60 | yes |
-| TE | 24 | 130 | 24 | yes |
+| TE | 24 | 131 | 24 | yes |
 | K | 24 | 36 | 24 | yes |
 | D/ST | 20 | 32 | 20 | yes |
 

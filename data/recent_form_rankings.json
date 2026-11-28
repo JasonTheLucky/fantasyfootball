@@ -105,10 +105,13 @@
     },
     "TE": {
       "limit": 24,
-      "qualifying": 130,
+      "qualifying": 131,
       "ranked": 24,
       "sufficient": true,
       "weeks_used": [
+        1,
+        2,
+        3,
         8,
         9,
         10,
@@ -182,7 +185,7 @@
   "diagnostics": {
     "players_seen": 1063,
     "weekly_values_collected": 5151,
-    "excluded_out_for_season": 2,
+    "excluded_out_for_season": 1,
     "espn_requests": 24,
     "page_size": 1000,
     "invalid_values": 0,
@@ -195,13 +198,6 @@
       "name": "Luke Musgrave",
       "position": "TE",
       "designation": "PUP-R",
-      "expected_return": "2027-02-15"
-    },
-    {
-      "player_id": 4570037,
-      "name": "Terrance Ferguson",
-      "position": "TE",
-      "designation": "IR",
       "expected_return": "2027-02-15"
     }
   ],
@@ -638,6 +634,7 @@
       4723086,
       3051876,
       4683243,
+      4570037,
       3116164,
       4430539,
       4385690,
@@ -5597,6 +5594,34 @@
         "on_nfl_ir": false
       },
       {
+        "player_id": 4570037,
+        "name": "Terrance Ferguson",
+        "position": "TE",
+        "pro_team": "LAR",
+        "games": [
+          {
+            "scoring_period_id": 1,
+            "points": 0.0
+          },
+          {
+            "scoring_period_id": 2,
+            "points": 17.4
+          },
+          {
+            "scoring_period_id": 3,
+            "points": 1.9
+          }
+        ],
+        "avg_3_game_exact": 6.433333333333333,
+        "avg_3_game": 6.433333,
+        "avg_3_game_display": "6.43",
+        "rank": 19,
+        "owner_label": "WAIVERS",
+        "owner_team_id": null,
+        "fantasy_status": "AVAILABLE",
+        "is_jason_x": false
+      },
+      {
         "player_id": 3116164,
         "name": "Mike Gesicki",
         "position": "TE",
@@ -5618,7 +5643,7 @@
         "avg_3_game_exact": 5.8999999999999995,
         "avg_3_game": 5.9,
         "avg_3_game_display": "5.90",
-        "rank": 19,
+        "rank": 20,
         "owner_label": "The Bye Week Boys",
         "owner_team_id": 2,
         "fantasy_status": "ROSTERED",
@@ -5646,7 +5671,7 @@
         "avg_3_game_exact": 5.8999999999999995,
         "avg_3_game": 5.9,
         "avg_3_game_display": "5.90",
-        "rank": 20,
+        "rank": 21,
         "owner_label": "Burrow's Bunch",
         "owner_team_id": 5,
         "fantasy_status": "ROSTERED",
@@ -5674,7 +5699,7 @@
         "avg_3_game_exact": 5.633333333333333,
         "avg_3_game": 5.633333,
         "avg_3_game_display": "5.63",
-        "rank": 21,
+        "rank": 22,
         "owner_label": "Connor\u2019s Team",
         "owner_team_id": 7,
         "fantasy_status": "ROSTERED",
@@ -5702,7 +5727,7 @@
         "avg_3_game_exact": 5.566666666666666,
         "avg_3_game": 5.566667,
         "avg_3_game_display": "5.57",
-        "rank": 22,
+        "rank": 23,
         "owner_label": "\ud83d\udd25Certified Dumpster Fire \ud83d\udd25",
         "owner_team_id": 11,
         "fantasy_status": "ROSTERED",
@@ -5730,7 +5755,7 @@
         "avg_3_game_exact": 5.566666666666666,
         "avg_3_game": 5.566667,
         "avg_3_game_display": "5.57",
-        "rank": 23,
+        "rank": 24,
         "owner_label": "Commanders of Chaos",
         "owner_team_id": 12,
         "fantasy_status": "ROSTERED",
@@ -5744,34 +5769,6 @@
           "injury_type": "Shoulder"
         },
         "on_nfl_ir": false
-      },
-      {
-        "player_id": 4361516,
-        "name": "Daniel Bellinger",
-        "position": "TE",
-        "pro_team": "TEN",
-        "games": [
-          {
-            "scoring_period_id": 8,
-            "points": 6.6
-          },
-          {
-            "scoring_period_id": 10,
-            "points": 8.6
-          },
-          {
-            "scoring_period_id": 11,
-            "points": 1.5
-          }
-        ],
-        "avg_3_game_exact": 5.566666666666666,
-        "avg_3_game": 5.566667,
-        "avg_3_game_display": "5.57",
-        "rank": 24,
-        "owner_label": "FREE AGENT",
-        "owner_team_id": null,
-        "fantasy_status": "AVAILABLE",
-        "is_jason_x": false
       }
     ],
     "K": [
@@ -7014,5 +7011,5 @@
   "league_id": "1787259003",
   "season": 2026,
   "scoring_period_id": 12,
-  "fetched_at": "2026-11-28T00:29:04.289831+00:00"
+  "fetched_at": "2026-11-28T06:18:19.028252+00:00"
 }
