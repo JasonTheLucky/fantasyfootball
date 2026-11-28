@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-27T18:13:47.445364+00:00` |
-| Fetched at (CT) | **Fri Nov 27, 12:13 PM CST** |
+| Fetched at (UTC) | `2026-11-28T00:29:14.212387+00:00` |
+| Fetched at (CT) | **Fri Nov 27, 6:29 PM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1063 |
-| Fetch duration | 9.96s |
+| Fetch duration | 9.92s |
 | ESPN calls | 41 |
-| Workflow run | `46047831738` |
+| Workflow run | `46088104119` |
 
 ## Freshness and completeness gates
 
@@ -36,11 +36,11 @@
 
 | Away | Pts | Home | Pts | Final |
 | --- | --- | --- | --- | --- |
-| The Bye Week Boys | 107.4 | Kelli's Top-Notch Team | 35.7 | NO |
+| The Bye Week Boys | 107.4 | Kelli's Top-Notch Team | 45.7 | NO |
 | 🔥Certified Dumpster Fire 🔥 | 16.5 | Jason X | 40.1 | NO |
 | Connor’s Team | 8.2 | Burrow's Bunch | 11.7 | NO |
-| Commanders of Chaos | 16.5 | Giant Packer Fan | 79.84 | NO |
-| From Puka with Love | 50.74 | Broken Hand Club | 17.82 | NO |
+| Commanders of Chaos | 16.5 | Giant Packer Fan | 85.44 | NO |
+| From Puka with Love | 61.04 | Broken Hand Club | 33.02 | NO |
 | Auto Draft Champion | 20.7 | Nicole's Gnarly Team | 39.56 | NO |
 
 ## Rosters
@@ -79,32 +79,26 @@
 
 Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY. Waiver rank breaks ties between equal bids.
 
-## Injury designations (38)
+## Injury designations (31)
 
 | Team | Player | Pos | Status | Slot | Starting |
 | --- | --- | --- | --- | --- | --- |
-| Jason X | Jaxon Smith-Njigba | WR | QUESTIONABLE | WR | yes |
 | Jason X | Brock Bowers | TE | QUESTIONABLE | TE | yes |
 | Jason X | Christian Watson | WR | QUESTIONABLE | WR | yes |
-| Jason X | Bhayshul Tuten | RB | QUESTIONABLE | BENCH | NO |
-| Jason X | Treylon Burks | WR | QUESTIONABLE | BENCH | NO |
+| Jason X | Bhayshul Tuten | RB | OUT | BENCH | NO |
 | Jason X | Omar Cooper Jr. | WR | OUT | BENCH | NO |
 | The Bye Week Boys | DeVonta Smith | WR | QUESTIONABLE | WR | yes |
 | The Bye Week Boys | Jeremiyah Love | RB | INJURY_RESERVE | IR | NO |
 | Auto Draft Champion | Michael Wilson | WR | INJURY_RESERVE | BENCH | NO |
-| Auto Draft Champion | Kyler Murray | QB | QUESTIONABLE | BENCH | NO |
 | Auto Draft Champion | Isiah Pacheco | RB | INJURY_RESERVE | IR | NO |
 | Broken Hand Club | Josh Jacobs | RB | OUT | BENCH | NO |
-| Broken Hand Club | Jordan Addison | WR | DOUBTFUL | BENCH | NO |
+| Broken Hand Club | Jordan Addison | WR | OUT | BENCH | NO |
 | Broken Hand Club | J.K. Dobbins | RB | SUSPENSION | BENCH | NO |
 | Broken Hand Club | Lamar Jackson | QB | INJURY_RESERVE | IR | NO |
-| Burrow's Bunch | Isaiah Likely | TE | QUESTIONABLE | TE | yes |
 | Burrow's Bunch | Parker Washington | WR | OUT | BENCH | NO |
 | Burrow's Bunch | Kenneth Walker III | RB | OUT | IR | NO |
-| From Puka with Love | Woody Marks | RB | QUESTIONABLE | BENCH | NO |
 | From Puka with Love | Romeo Doubs | WR | INJURY_RESERVE | IR | NO |
 | Connor’s Team | Drake Maye | QB | OUT | QB | yes |
-| Connor’s Team | Derrick Henry | RB | QUESTIONABLE | RB | yes |
 | Connor’s Team | A.J. Brown | WR | OUT | BENCH | NO |
 | Connor’s Team | Davante Adams | WR | INJURY_RESERVE | BENCH | NO |
 | Connor’s Team | TreVeyon Henderson | RB | INJURY_RESERVE | BENCH | NO |
@@ -115,41 +109,58 @@ Minimum bid $0. Waivers process at 11:00 UTC on MONDAY, WEDNESDAY, THURSDAY, FRI
 | Nicole's Gnarly Team | RJ Harvey | RB | INJURY_RESERVE | BENCH | NO |
 | Kelli's Top-Notch Team | Saquon Barkley | RB | QUESTIONABLE | FLEX | yes |
 | Kelli's Top-Notch Team | Colston Loveland | TE | DOUBTFUL | TE | yes |
-| Kelli's Top-Notch Team | Brock Purdy | QB | QUESTIONABLE | QB | yes |
-| Kelli's Top-Notch Team | Dalton Schultz | TE | QUESTIONABLE | BENCH | NO |
+| Kelli's Top-Notch Team | Brock Purdy | QB | OUT | BENCH | NO |
+| 🔥Certified Dumpster Fire 🔥 | Tee Higgins | WR | QUESTIONABLE | WR | yes |
 | 🔥Certified Dumpster Fire 🔥 | Jalen McMillan | WR | INJURY_RESERVE | IR | NO |
 | Commanders of Chaos | Tetairoa McMillan | WR | QUESTIONABLE | WR | yes |
-| Commanders of Chaos | Jakobi Meyers | WR | QUESTIONABLE | BENCH | NO |
 | Commanders of Chaos | Dallas Goedert | TE | QUESTIONABLE | BENCH | NO |
 
 ## Available player pool by position
 
 | D/ST | K | QB | RB | TE | WR | Total |
 | --- | --- | --- | --- | --- | --- | --- |
-| 16 | 43 | 112 | 190 | 184 | 321 | 866 |
+| 16 | 44 | 111 | 190 | 184 | 321 | 866 |
 
 This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Availability is never inferred from a player's absence from the rosters above.
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 27, 6:18 AM CST`: 6 injury change(s) (1 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
+Compared with the snapshot taken `Fri Nov 27, 12:13 PM CST`: 36 injury change(s) (3 affecting Jason X), 1 newly available, 1 claimed, 0 moved between teams.
 
 **Injury changes**
 
 | Name | From | To | Expected Return | Fantasy Team |
 | --- | --- | --- | --- | --- |
-| **Omar Cooper Jr.** | QUESTIONABLE | OUT | Dec 13 | Jason X |
-| A.J. Brown | DOUBTFUL | OUT | Dec 6 | Connor’s Team |
-| Carson Beck | QUESTIONABLE | OUT | Dec 6 | - |
-| Colston Loveland | QUESTIONABLE | DOUBTFUL | Dec 6 | Kelli's Top-Notch Team |
-| Davis Allen | QUESTIONABLE | DOUBTFUL | Dec 3 | - |
-| Parker Washington | QUESTIONABLE | OUT | Dec 6 | Burrow's Bunch |
+| **Bhayshul Tuten** | QUESTIONABLE | OUT | Dec 6 | Jason X |
+| **Jaxon Smith-Njigba** | QUESTIONABLE | - | - | Jason X |
+| **Treylon Burks** | QUESTIONABLE | - | - | Jason X |
+| Brenen Thompson | QUESTIONABLE | DOUBTFUL | Nov 29 | - |
+| Brevin Jordan | QUESTIONABLE | OUT | Dec 6 | - |
+| Brock Purdy | QUESTIONABLE | OUT | Dec 6 | Kelli's Top-Notch Team |
+| Dallen Bentley | - | INACTIVE | Dec 6 | - |
+| Dalton Schultz | QUESTIONABLE | - | - | Kelli's Top-Notch Team |
+| Derrick Henry | QUESTIONABLE | - | - | Connor’s Team |
+| Drew Allar | - | INACTIVE | Dec 6 | - |
+| Drew Lock | QUESTIONABLE | - | - | - |
+| Drew Ogletree | - | QUESTIONABLE | Nov 29 | - |
+
+**Newly available**
+
+| Name | Position | Pro Team | Dropped By |
+| --- | --- | --- | --- |
+| Chad Ryland | K | ARI | Kelli's Top-Notch Team |
+
+**Claimed**
+
+| Name | Position | Pro Team | Added By |
+| --- | --- | --- | --- |
+| J.J. McCarthy | QB | NYG | Kelli's Top-Notch Team |
 
 ## Jason X
 
 Record 7-4 · FAAB **$40** of $200 · waiver rank 8 · bench open **0** · IR open 1
 
-**This week:** vs 🔥Certified Dumpster Fire 🔥 — projected 149.55 to 117.92 (margin 31.63), win probability 0.68. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
+**This week:** vs 🔥Certified Dumpster Fire 🔥 — projected 149.4 to 117.94 (margin 31.46), win probability 0.68. Posture: **heavy favourite**. Protect the floor: prefer the safer projection and avoid volatile swings.
 
 **FAAB plan** — $40 remaining, $8 reserve, **$32 discretionary**. Tiers are shares of remaining, already costed:
 
@@ -167,12 +178,12 @@ No open bench spot: any add needs a drop.
 | QB | Jayden Daniels | QB | W7 | @ ARI | 22.9 | - |
 | RB | Cam Skattebo | RB | W8 | @ IND | 18.09 | - |
 | RB | Ollie Gordon II | RB | W6 | vs NYJ | 14.55 | - |
-| WR | Jaxon Smith-Njigba | WR | W11 | @ SF | 22.54 | QUESTIONABLE (back Nov 29) |
+| WR | Jaxon Smith-Njigba | WR | W11 | @ SF | 22.54 | - |
 | WR | Christian Watson | WR | W11 | @ LAR | 14.63 | QUESTIONABLE (back Dec 6) |
 | TE | Brock Bowers | TE | W13 | @ CLE | 15.54 | QUESTIONABLE (back Nov 29) |
 | FLEX | Amon-Ra St. Brown | WR | W6 | vs CHI | 18.44 | - |
 | K | Chase McLaughlin | K | W10 | vs CAR | 9.32 | - |
-| D/ST | Buccaneers D/ST | D/ST | W10 | vs CAR | 6.5 | - |
+| D/ST | Buccaneers D/ST | D/ST | W10 | vs CAR | 6.35 | - |
 
 **Week 13 bye pressure:** Brock Bowers (TE).
 
@@ -185,7 +196,7 @@ No open bench spot: any add needs a drop.
 
 ## Injuries and IR
 
-79 players in this league's pool carry an NFL designation; 14 are on injured reserve (4 of them rostered). 6 affect Jason X.
+77 players in this league's pool carry an NFL designation; 14 are on injured reserve (4 of them rostered). 4 affect Jason X.
 
 **On NFL injured reserve while holding an active roster spot** - these could be moved to the fantasy IR slot:
 
@@ -199,12 +210,10 @@ Jason X players with a designation:
 
 | Player | Slot | Designation | Expected return | Injury |
 | --- | --- | --- | --- | --- |
-| Bhayshul Tuten | BENCH | QUESTIONABLE | Nov 29 | Ankle |
+| Bhayshul Tuten | BENCH | OUT | Dec 6 | Ankle |
 | Omar Cooper Jr. | BENCH | OUT | Dec 13 | Ankle |
-| Treylon Burks | BENCH | QUESTIONABLE | Nov 29 | Foot |
 | Brock Bowers | TE | QUESTIONABLE | Nov 29 | Ankle |
 | Christian Watson | WR | QUESTIONABLE | Dec 6 | Concussion |
-| Jaxon Smith-Njigba | WR | QUESTIONABLE | Nov 29 | Ankle |
 
 ## Recent form (last 3 completed games)
 
@@ -237,12 +246,13 @@ Owner in **bold** means `is_jason_x` is true.
 
 ## Transactions
 
-1183 total | 307 executed ownership changes | 605 lineup-only moves | 192 draft picks | 0 pending
+1186 total | 308 executed ownership changes | 607 lineup-only moves | 192 draft picks | 0 pending
 
 Most recent ownership changes:
 
 | When | Team | Type | Moves |
 | --- | --- | --- | --- |
+| 2026-11-27T23:42 | Kelli's Top-Notch Team | FREEAGENT | ADD J.J. McCarthy, DROP Chad Ryland |
 | 2026-11-26T16:48 | The Bye Week Boys | FREEAGENT | ADD Bam Knight, DROP Michael Mayer |
 | 2026-11-26T14:45 | Nicole's Gnarly Team | FREEAGENT | ADD Kyle Pitts Sr., DROP Dawson Knox |
 | 2026-11-26T04:27 | Broken Hand Club | FREEAGENT | ADD Austin Ekeler, DROP Darren Waller |
@@ -254,7 +264,6 @@ Most recent ownership changes:
 | 2026-11-25T08:46 | Broken Hand Club | WAIVER | ADD Chimere Dike, DROP Elic Ayomanor |
 | 2026-11-25T08:46 | Broken Hand Club | WAIVER | ADD Kimani Vidal |
 | 2026-11-25T08:46 | Burrow's Bunch | WAIVER | ADD Giants D/ST, DROP Bills D/ST |
-| 2026-11-25T08:46 | The Bye Week Boys | WAIVER | ADD Brandon Aiyuk, DROP Chiefs D/ST |
 
 ## League format
 
