@@ -4,8 +4,8 @@
 
 | Field | Value |
 | --- | --- |
-| Fetched at (UTC) | `2026-11-28T06:18:28.163027+00:00` |
-| Fetched at (CT) | **Sat Nov 28, 12:18 AM CST** |
+| Fetched at (UTC) | `2026-11-28T12:15:58.260569+00:00` |
+| Fetched at (CT) | **Sat Nov 28, 6:15 AM CST** |
 | DATA STATUS | **PASS** |
 | Scoring period (week) | **12** |
 | League id | `1787259003` |
@@ -13,9 +13,9 @@
 | Rostered players | 197 |
 | Available players (FA + waivers) | 866 |
 | Players in lookup index | 1063 |
-| Fetch duration | 9.13s |
+| Fetch duration | 10.36s |
 | ESPN calls | 41 |
-| Workflow run | `46115972234` |
+| Workflow run | `46143756878` |
 
 ## Freshness and completeness gates
 
@@ -125,13 +125,7 @@ This pool comes from ESPN's own `filterStatus` of `FREEAGENT` and `WAIVERS`. Ava
 
 ## What changed since the last snapshot
 
-Compared with the snapshot taken `Fri Nov 27, 6:29 PM CST`: 1 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
-
-**Injury changes**
-
-| Name | From | To | Expected Return | Fantasy Team |
-| --- | --- | --- | --- | --- |
-| Terrance Ferguson | IR | - | - | - |
+Compared with the snapshot taken `Sat Nov 28, 12:18 AM CST`: 0 injury change(s) (0 affecting Jason X), 0 newly available, 0 claimed, 0 moved between teams.
 
 ## Jason X
 
